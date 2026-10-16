@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1428">
+  <title>Book Design &amp; Print · Design Fundamentals</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/guide.css">
+</head>
+<body class="page-guide">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="loader" id="loader" data-label="07 Book Design &amp; Print" aria-hidden="true">
+    <p class="loader-label">SSHD2382 / Design Fundamentals</p>
+    <div class="loader-box">
+      <span class="plus tl"></span><span class="plus tr"></span><span class="plus bl"></span><span class="plus br"></span>
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg>
+    </div>
+    <p class="loader-count" data-count-slots></p>
+    <p class="loader-page"></p>
+  </div>
+  <header class="site-head">
+    <a class="logo" href="index.html" aria-label="Design Fundamentals, home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg><span>Fundamentals<sup>&reg;</sup></span></a>
+    <nav class="head-nav" aria-label="Site">
+      <a class="pill pill-solid" href="index.html#browse" data-magnetic><span data-text="Browse">Browse</span></a>
+      <button class="pill pill-line" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-magnetic><span data-text="Menu">Menu</span><i class="burger" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <div class="menu-panel" id="menu" inert>
+    <div class="menu-inner">
+      <p class="menu-label">(Guides)</p>
+      <ol class="menu-list"><li><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span class="menu-num">01</span><span class="menu-name">Design Basics &amp; Composition</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="02_colour.html" data-label="02 Colour"><span class="menu-num">02</span><span class="menu-name">Colour</span><span class="menu-week">Week 8</span></a></li><li><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span class="menu-num">03</span><span class="menu-name">Typography &amp; Lettering</span><span class="menu-week">Week 9</span></a></li><li><a href="04_layout-grid.html" data-label="04 Layout &amp; Grid Systems"><span class="menu-num">04</span><span class="menu-name">Layout &amp; Grid Systems</span><span class="menu-week">Week 3, 4, 5</span></a></li><li><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span class="menu-num">05</span><span class="menu-name">Logo &amp; Branding</span><span class="menu-week">Week 10, 11</span></a></li><li><a href="06_packaging.html" data-label="06 Packaging"><span class="menu-num">06</span><span class="menu-name">Packaging</span><span class="menu-week">Week 11</span></a></li><li><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span class="menu-num">07</span><span class="menu-name">Book Design &amp; Print</span><span class="menu-week">Week 5, 9</span></a></li><li><a href="08_infographics.html" data-label="08 Information Graphics"><span class="menu-num">08</span><span class="menu-name">Information Graphics</span><span class="menu-week">Week 4</span></a></li><li><a href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span class="menu-num">09</span><span class="menu-name">Interaction, Web &amp; UX</span><span class="menu-week">Week 11 (and 4)</span></a></li><li><a href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span class="menu-num">10</span><span class="menu-name">Graphic Design Practice</span><span class="menu-week">Week 1, 11</span></a></li><li><a href="11_interior.html" data-label="11 Interior Design"><span class="menu-num">11</span><span class="menu-name">Interior Design</span><span class="menu-week">Further reading</span></a></li><li><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span class="menu-num">12</span><span class="menu-name">Architecture &amp; Space</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="13_product.html" data-label="13 Product Design"><span class="menu-num">13</span><span class="menu-name">Product Design</span><span class="menu-week">Week 11 (and 6–7)</span></a></li><li><a href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span class="menu-num">14</span><span class="menu-name">Design &amp; Art History</span><span class="menu-week">Week 1</span></a></li><li><a href="15_theory-psychology.html" data-label="15 Design Theory &amp; Psychology"><span class="menu-num">15</span><span class="menu-name">Design Theory &amp; Psychology</span><span class="menu-week">Week 4, 6–7, 10</span></a></li><li><a href="16_pattern-ornament.html" data-label="16 Pattern &amp; Ornament"><span class="menu-num">16</span><span class="menu-name">Pattern &amp; Ornament</span><span class="menu-week">Week 8 (and 6–7)</span></a></li><li><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span class="menu-num">18</span><span class="menu-name">Magazines &amp; Annuals</span><span class="menu-week">Week 1–13</span></a></li><li><a href="20_advertising.html" data-label="20 Advertising"><span class="menu-num">20</span><span class="menu-name">Advertising</span><span class="menu-week">Week 10, 11</span></a></li></ol>
+      <div class="menu-foot"><span>SSHD2382 Design Fundamentals</span><span>Eighteen guides, thirteen weeks</span><a href="index.html">Home</a></div>
+    </div>
+  </div>
+  <canvas class="scene" id="scene" data-scene="page" data-cat="07" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <p class="side-brand">SSHD2382 / Guides</p>
+      <label class="visually-hidden" for="q">Search categories</label>
+      <input class="search" id="q" type="search" placeholder="Name, term, or category" autocomplete="off">
+      <p class="empty" id="empty" hidden>No category matches.</p>
+      <nav aria-label="Categories"><div class="side-group"><p class="side-label">Categories</p><a href="01_design-basics.html" data-search="01 design basics design basics &amp; composition point, line, plane, composition, and the four design principles week 2, 6–7 1. scope 2. core concepts 3. proportion &amp; geometry 4. principles &amp; methods 5. selected figures 6. source bookshelf 7. study cues 7. each book 藝術·設計的平面構成 藝術·設計的立體構成 藝術·設計的紙的構成 藝術·設計的光的構成 平面設計原理 通用設計法則 美國視覺設計學院叢書：設計元素（平面設計樣式） 寫給大家看的設計書：實例與創意 黃金比例 設計的教室 設計的方法 談繪畫構圖 1000多個圖形元素：獨特的設計元素 設計中的點線面 平面設計法則 設計幾何學：關於比例與構成的研究 藝術·設計的平面構成（繁體版） 探索幾何：平面視覺構建 好造型的設計元素 和諧之美：探索設計中的黃金比例 分寸設計：發現黃金比例恆久之美 設計元素：平面設計樣式（英文原書） 寫給大家看的設計書（第3版） 設計元素：平面設計樣式 國際平面設計基礎教程：規格設計（format） 國際平面設計基礎教程：圖形設計（image） 國際平面設計基礎教程：設計思維（thinking） 寫給大家看的設計書（第4版） 平面設計的七大要素 綜合造型設計基礎 美國視覺設計學院用書：設計元素（平面設計樣式） 視覺原理 設計力：寫給大家的平面設計法則 通用設計法則（英文版） the elements of graphic design: space, unity, page architecture, and type universal principles of design design elements: a graphic style manual robin williams design workshop geometry of design: studies in proportion and composition the design method: a philosophy and process for functional visual communication 1000 graphic elements: special details for distinctive designs the essential principles of graphic design geometry of design: studies in proportion and composition design elements: understanding the rules and knowing when to break them geometry of design: studies in proportion and composition , 2nd edition (revised and updated) design elements: a graphic style manual the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual basics design 01: format basics design 04: image basics design 08: design thinking the non-designer&#x27;s design book: design and typographic principles for the visual novice , 4th edition the 7 essentials of graphic design design elements: a graphic style manual principles of visual perception universal principles of design"><span class="side-num">01</span> Design Basics &amp; Composition</a><a href="02_colour.html" data-search="02 colour colour hue, value, chroma, colour systems, palettes, and colour psychology week 8 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術·設計的色彩構成 寫給大家看的色彩書1：設計配色基礎 寫給大家看的色彩書2：色彩怎麼選，設計怎麼做 梁景紅談：色彩設計法則 配色設計原理 七日掌握設計配色基礎 配色設計從入門到精通 平面設計配色全攻略 美國色彩基礎教材 色彩應用：平面設計配色經典創意 黑白灰設計：摒棄有彩色的設計法則 美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式 觀念之色：中國傳統色彩研究 色彩搭配的黃金法則 新手配色寶典：2000個配色案例不怕你不會 像藝術家一樣思考之三：貝蒂的色彩 國際平面設計基礎教程：colour色彩設計 平面設計綜合配色手冊 色彩怎麼選，設計怎麼做 色彩感知學 色彩構成 色彩設計：日本平面設計師參考手冊 色彩設計的100個亮點 色彩設計的原理 設計入門教室3：色彩設計的原理 設計密碼：綜合配色完全攻略 color basics color design workbook: a real-world guide to using color in graphic design drawing for graphic design: understanding conceptual principles and practical techniques to create unique, effective design solutions color: a course in mastering the art of mixing colors basics design 05: colour 100 bright ideas for colour"><span class="side-num">02</span> Colour</a><a href="03_typography.html" data-search="03 typography typography &amp; lettering letter structure, classification, typesetting, and mixed chinese and latin type week 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book typography 字誌：issue 01 typography 字誌：issue 05_pdf 自由字在：字體設計與創意 中國字體設計人：一字一生 西文字體1：字體的背景知識和使用方法 西文字體2：經典款字體及其表現方法 文字設計的原理_文字設計所必須的信息和技巧 新概念字體基礎&amp;應用_蘇克 説文解字 字言字語 字體傳奇 影響世界的helvetica 治字百方 字型散步 街道文字_小林章 西文排版_排版的基礎和規範 漢字書法之美_蔣勳 文字的故事 意匠文字 設計師的字體世界 文字的力與美 漢字的誘惑 中國美術字史圖説 漢字設計與應用 十二生肖形意字 書法字體設計技巧與應用 平面排版_基本的基本 tokoy tdc vol.28⭐ 排版的風格 字體設計的規則與藝術 tokoy tdc vol.29⭐ 字體呈現3⭐ 字體設計基礎 【會員專供】中國近現代字體應用文獻展 【會員專供】文字設計在中國邀請展 【會員專供】超語境國際文字設計論壇 世界文字發展史_11407704 今日字體 創意字體設計與製作-www.afx365.com 國際平面設計基礎教程-typography字體設計 字型之不思議 字型之不思議 小冊-手寫 字體呈現-q 字體呈現二（完整） 字體呈現小冊一 字體呈現小冊二 字體怡人 字體設計100+1 字體，海報設計部分 展覽，印刷字體部分（雙頁） 序言 排版造型_白井敬尚 文字設計的原理 書於竹帛中國古代的文字記錄_12270059 歐文字體ⅰ 歐文字體ⅱ 自由“字”在 字體設計與創意13696100(1) 設計入門教室 2 文字設計的原理 designing type basics design 03: typography written on bamboo and silk: the beginnings of chinese books and inscriptions"><span class="side-num">03</span> Typography &amp; Lettering</a><a href="04_layout-grid.html" data-search="04 layout grid layout &amp; grid systems grids, hierarchy, and arranging image with text week 3, 4, 5 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 日本版式設計原理_p159 跨平台的視覺設計版式設計原理 破譯文字編排設計 破譯網格設計 美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書 版式設計：日本平面設計師參考手冊 超越平凡的平面設計：怎樣做好版式 版式設計+給你靈感的全球最佳版式創意方案 柵格系統與版式設計 國際版式設計基礎教程 七日掌握版面設計基礎 美國編排設計教程 平面設計中的網格系統 版式設計風暴ⅱ 網格系統與版式設計 創意版式設計_王紹強 版面設計的原理_設計前必須知道的事情 版式設計全攻略(佐) 進階理解版式設計 版式設計：合適最好 版式設計從入門到精通 版面設計網格構成 版式設計原理_案例篇：提升版式設計的55個技巧 秩序之美_網頁中的網格設計 日本版式設計原理 版式設計法則 版式創意大爆炸 版式設計+2版式創意方案 版式設計風暴 [商業版式設計的方法] 版式編排設計 版式設計 今日版式 印刷的終結：戴維·卡森的自由版式設計 國際平面設計基礎教程-grids網格設計 國際平面設計基礎教程-layout版式設計(第2版) 版式設計-www.afx365.com 版式設計原理 版式設計原理-全綵教程 版式設計實用手冊-www.afx365.com 版式設計實用手冊.suni視覺設計.全綵版 版式設計從入門到精通-www.afx365.com 版面設計黃金法則 破譯文字編排設計-www.afx365.com 秩序之美——網頁中的網格設計英文版 編排設計教程 設計入門教室 1 版面設計的原理 超越平凡的平面設計 版式設計原理與應用 typography workbook: a real-world guide to using type in graphic design making and breaking the grid: a graphic design layout workshop graphic designer&#x27;s essential reference: visual elements, techniques, and layout strategies for busy designers before &amp; after page design grid systems: principles of organizing type best practices for graphic designers, grids and page layouts: an essential guide for understanding and applying page design principles typographic systems grid systems: principles of organizing type layout: making it fit: finding the right balance between content and space ordering disorder: grid principles for web design the end of print: the graphic design of david carson basics design 07: grids basics design 02: layout , 2nd edition typography workbook: a real-world guide to using type in graphic design ordering disorder: grid principles for web design typographic systems before &amp; after: how to design cool stuff"><span class="side-num">04</span> Layout &amp; Grid Systems</a><a href="05_logo-branding.html" data-search="05 logo branding logo &amp; branding mark types, identity systems, and brand strategy week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book logo 百年 設計品牌（原田進） 用設計做品牌 品牌設計+：給你靈感的 best 品牌形象方案 品牌設計+：創造 top 品牌的色彩應用方案 品牌設計+：創造 brand 力的動態 logo 設計（1） 標誌設計 logo design 標誌新語 iii really good logos explained designing brand identity 超越 logo 設計 brand 創新與設計：創意、建構和維護精彩品牌標識之完全指南 標誌設計指南 logo design workbook 品牌標誌：top 設計 150 例 消費森林 × 品牌再生：李永銓的設計七大法則 品牌中的色彩 圖案無限：品牌中的圖案 品牌簡單之道 what brand 什麼是品牌設計 品牌 100 一個 logo 的誕生 視覺美食：最佳餐飲品牌設計 溝通時尚品牌 100 個經典 logo 品牌設計之美：冷色調的色彩詮釋 logo：29 個經典的前世今生 logo 百年 品牌至上：logo 設計法則與案例應用解析 品牌識別法則：100 條原理 no logo：顛覆品牌全球統治 脫穎而出的品牌致勝秘密 精簡：無印良品與品牌理念打造 電商品牌形象設計 品牌標誌：頂級設計 150 例 設計品牌 世界標誌大典 1 品牌設計法則（徐適） 日本彩色商標與企業識別 10 解構 logo 設計：300 例國際 logo 分析與解讀 超越 logo 設計：國際頂級平面設計師的成功法則 超越 logo 設計：國際頂級平面設計師的成功法則 logo design love: a guide to creating iconic brand identities designing brand identity: a complete guide to creating, building, and maintaining strong brands logo design workbook: a hands-on guide to creating logos creative solutions: logos: making a strong mark: 150 strategies for logos that last brandsimple: how the best brands keep it simple and succeed what is branding? logo life: life histories of 100 famous logos tm: the untold stories behind 29 classic logos brand identity essentials: 100 principles for designing logos and building brands no logo: taking aim at the brand bullies designing brand identity: an essential guide for the whole branding team creative solutions: logos: making a strong mark: 150 strategies for logos that last deconstructing logo design: 300+ international logos analyzed and explained logo design love: a guide to creating iconic brand identities logo design love: a guide to creating iconic brand identities"><span class="side-num">05</span> Logo &amp; Branding</a><a href="06_packaging.html" data-search="06 packaging packaging structure, the shelf, materials, and brand week 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 創造品牌的包裝設計 現代設計色彩教材叢書：包裝設計色彩 包裝設計藝術：王紹強 紙品包裝結構解析 新包裝 環保包裝設計 50 trade secrets of great design packaging 1000 package designs：a comprehensive guide 拿來就用的包裝設計 食品包裝設計 包裝設計+：給你靈感的包裝方案 包裝設計家：靳埭強與他的設計師朋友 簡約包裝 simply packaging 中式元素視覺傳達：包裝設計 packaging the brand: the relationship between packaging design and brand identity simply packaging"><span class="side-num">06</span> Packaging</a><a href="07_book-print.html" data-search="07 book print book design &amp; print book structure, paper, binding, and print week 5, 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2015 中國最美的書 書籍設計-安德魯 書形：138種創意書籍和印刷紙品設計 如何設計一本畫冊 平面印刷色彩：四色與專色 國際平面設計基礎教程：print&amp;finish印前印後 世界書籍藝術流派 中外裝幀藝術論集 中國古籍版本概要 出版物設計完全手冊 印刷工藝：燙印與凹凸 印前校色實用教程 印前輸出培訓參考：全綵教程-200p 嶄新印通拼版教程 平版印刷拼版手冊 平面設計及印刷業務人員常識備忘手冊 書籍設計 書藝問道 現代圖書設計 範式革命：中國現代書籍設計的發端 1862-1937 電腦印前技術完全手冊（第2版） book design basics design 06: print and finish publication design workbook: a real-world guide to designing magazines, newspapers, and newsletters book design new book design" aria-current="page"><span class="side-num">07</span> Book Design &amp; Print</a><a href="08_infographics.html" data-search="08 infographics information graphics visualising information and explaining with diagrams week 4 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 圖解力 以圖釋義：信息圖表設計 信息圖表設計入門 信息圖表設計：全球創意入門"><span class="side-num">08</span> Information Graphics</a><a href="09_interaction-ux.html" data-search="09 interaction ux interaction, web &amp; ux goal-directed design, usability, and interface principles week 11 (and 4) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book about face 3：交互設計精髓 about face 4：交互設計精髓（中文彩版） android 交互視覺設計規範 贏在用戶：web 人物角色創建和應用實踐指南 don&#x27;t make me think（英文第 2 版） ui 羣英匯：用戶體驗、交互與視覺設計方法論 web 界面設計 形式感：網頁視覺設計創意拓展與快速表現 關鍵設計報告：改變過去影響未來的交互設計法則 點石成金：訪客至上的網頁秘籍 認知與設計：理解 ui 設計準則 簡約至上：交互設計四策略 見微知著：web 用戶體驗解構 與世界 ui 設計師同行 ux 設計之道：以用戶體驗為中心的 web 設計（第 2 版） ui 設計黃金法則：觸動人心的 100 種用戶界面 sexy web design：creating interfaces that work 用戶體驗的要素：以用戶為中心的 web 設計 網頁設計（web designer emag） 點石成金：訪客至上的網頁設計秘笈 ios 9 界面設計規範剖析及實戰 不要讓我思考（don&#x27;t make me think） 贏在用戶：web 人物角色創建和應用實踐指南 軟件觀念革命：交互設計精髓 一目瞭然：web 軟件顯性設計之路 就這麼簡單：web 開發中的可用性和用戶體驗 微交互：細節設計成就卓越產品 怦然心動：情感化交互設計指南 用戶體驗度量 用戶體驗要素：以用戶為中心的產品設計（原書第 2 版） 眾妙之門：網站 ui 設計之道 瞬間之美：web 界面設計如何讓用戶心動 破繭成蝶：用戶體驗設計師的成長之路 簡約至上：交互設計四策略 網頁設計創意書 認知與設計：理解 ui 設計準則 認知與設計：理解 ui 設計準則（第 2 版） 贏在用戶：web 人物角色創建和應用實踐指南 體驗·度：簡單可依賴的用戶體驗（彩版） about face 3: the essentials of interaction design , 3rd edition about face: the essentials of interaction design , 4th edition the user is always right: a practical guide to creating and using personas for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing web interfaces: principles and patterns for rich interactions designing interactions don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing with the mind in mind: simple guide to understanding user interface design rules simple and usable web, mobile, and interaction design a project guide to ux design: for user experience designers in the field or in the making , 2nd edition digital design essentials: 100 ways to design better desktop, web, and mobile interfaces the elements of user experience: user-centered design for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition don&#x27;t make me think: a common sense approach to web usability , 2nd edition the user is always right: a practical guide to creating and using personas for the web about face 2.0: the essentials of interaction design designing the obvious: a common sense approach to web application design microinteractions: designing with details seductive interaction design: creating playful, fun, and effective user experiences measuring the user experience: collecting, analyzing, and presenting usability metrics the elements of user experience: user-centered design for the web and beyond , 2nd edition the smashing book designing the moment: web interface design concepts in action simple and usable web, mobile, and interaction design the web designer&#x27;s idea book: the ultimate guide to themes, trends and styles in website design designing with the mind in mind: simple guide to understanding user interface design rules designing with the mind in mind: simple guide to understanding user interface design guidelines , 2nd edition the user is always right: a practical guide to creating and using personas for the web"><span class="side-num">09</span> Interaction, Web &amp; UX</a><a href="10_graphic-practice.html" data-search="10 graphic practice graphic design practice process, design thinking, creative methods, and practice week 1, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 100 個改變平面設計的觀念 嘿，設計 圖解平面設計規範 40 天成為資深設計師 ideo：設計改變一切 創意之道（the copy book） 非常規標誌設計：6 個不必遵守的基礎原則 最佳設計 100 細則 少即是多：減法設計 視覺傳達設計實踐 1000 retail graphics 高效設計溝通之道（原書第 2 版） 完成設計：從理論到實踐 美國視覺傳達完全教程 零 zerro：世界符號大全 平面與空間 創意工場：提升設計技巧的 80 個挑戰 日本的手感設計 設計的品格 設計並不重要 我的第一本設計書 平面設計過程 小平面 北歐設計 王志弘作品收集 做喜歡的事：25 個亞太創意設計工作室 做喜歡的事：25 個歐美創意設計工作室 設計修辭法 設計與死 設計的覺醒 平面設計死了嗎 放眼德國設計 放眼法國設計 漫遊英國設計 漫步日本設計 荷蘭設計 設計的手感 歲寒三友：詩意設計作品集 廣州美術學院碩士研究生作品集 靳埭強與格呂特納的海報對話 靳埭強設計獎 陳幼堅最新作品 平面設計八人 設計集 設計心法 100+1 靳叔說：設計語錄 設計的圖謀：改變世界的80個日常創意陰謀 遺產與更新：中國設計教育反思 設計師演講錄：icograda 世界設計大會 設計創意流程：用mba思維成就設計高效能 全球優秀93位平面設計師作品集 遊遊遊：說說我的設計私想 對話日本設計 設計師不讀書 設計質 大話設計師 從製造到設計：20世紀德國設計 意東方：設計中的東方元素（一） 49個成就平面設計的關鍵詞 企業形象設計家：靳埭強與他的設計師朋友 海報設計家：靳埭強與他的設計師朋友 生活·心源：靳埭強設計與藝術 靳埭強·身度心道：中國文化為本的設計·繪畫·教育 ideo 設計現象探究：patterns 2010 設計效果圖 設計百年：20世紀平面設計的先驅 設計解決 像設計師那樣思考 圖形設計新元素 如何把國外作品轉化為自己的能力（第二部） 平面設計：我的第2語言 為什麼設計 理性設計 至關重要的設計 解決100個煩惱的100種設計 設計推導學 中國古代設計思想史略 什麼是平面設計？ 創意工場：提升設計技巧的80個挑戰 動畫分鏡台本設計 吳東龍的東京設計生活100 寫給大家看的設計書（第三版） 好設計的造型元素 完成設計：從理論到實踐 宣傳冊設計與製作 平面設計200年 新興實踐：設計的專業、價值與途徑 日本當代插圖集 最全設計規範 服務的細節：完全商品陳列115例 為真實世界的設計 生命的幻象：迪士尼動畫造型設計 異想天開：設計初始 知日・設計力 移動設計 符號與數字：平面中的視覺表達 第三種創新：設計驅動式創新 編輯設計 至關重要的設計 至關重要的設計（布倫納） 蘋果首席設計師：喬納森傳 視覺傳達設計 視覺傳達設計考研手繪 視覺營銷：零售店櫥窗與店內陳列 託尼克：設計為何 設計＋生活：佐藤 設計＋生活：奎內克 設計＋生活：姚爾丹 設計＋生活：孔喬 設計＋生活：府烈茶 設計＋生活：王翰尼 設計＋生活：白同異 設計＋生活：蒙古齊 設計＋生活：雷又西 設計中的錯視 設計五感：亂 設計五感：惡 設計五感：拙 設計五感：精 設計入門教室：設計的基本規則 設計力就是溝通力 設計，在人人設計的時代 設計密碼 設計師不可不知的 100 種世界經典平面設計圖書 設計思維手冊：斯坦福創新方法論 設計思維與方法 設計方法與策略：代爾夫特設計指南 設計的意義 設計的細節：日本經典設計透析 設計與革新：關於未來設計的 50 種思考 設計風尚 5：創意節日宣傳頁設計與製作 設計高手的秘密 設計，在人人設計的時代：社會創新設計導論 這樣擺，最好賣：賣場中的商品陳列技巧 造像量度：佛像唐卡設計比例圖 關於設計的思考 非平面 靳埭強設計獎：平面設計作品集 騰訊網 ued 體驗設計之旅 100 ideas that changed graphic design change by design: how design thinking transforms organizations and inspires innovation the copy book: how 32 of the world&#x27;s best advertising writers write their advertising no rules! logos: radical design solutions that break the rules universal principles of design communicating design: developing web site documentation for design and planning , 2nd edition design evolution: theory into practice graphic communications today creative workshop: 80 challenges to sharpen your design skills graphic design process: from problem to solution: 20 case studies design and the creative process atlas of graphic designers designers don&#x27;t read the graphic design idea book: inspiration from 50 masters a century of graphic design: graphic design pioneers of the 20th century how to think like a great graphic designer graphic design: the new basics graphic design as a second language do you matter? how great design will make people love your company what is graphic design? creative workshop: 80 challenges to sharpen your design skills the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual design evolution: theory into practice graphic style: from victorian to hipster design for the real world: human ecology and social change the illusion of life: disney animation design-driven innovation: changing the rules of competition by radically innovating what things mean editing by design: for designers, art directors, and editors: the classic guide to winning readers do you matter? how great design will make people love your company do you matter? how great design will make people love your company jony ive: the genius behind apple&#x27;s greatest products graphic design solutions visual merchandising: windows and in-store displays for retail why we design design, when everybody designs: an introduction to design for social innovation bibliographic: 100 classic graphic design books delft design guide: design strategies and methods design, form, and chaos design, when everybody designs: an introduction to design for social innovation thoughts on design unflattening"><span class="side-num">10</span> Graphic Design Practice</a><a href="11_interior.html" data-search="11 interior interior design drawings, scale, light, materials, construction, and furnishing further reading 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 零基礎學建築識圖 室內裝飾裝修施工完全圖解教程 室內設計節點手冊：常用節點 室內設計節點手冊：酒店固定傢俱 材料收口 裝飾工藝解析：吊頂篇 裝飾工藝解析：地面篇 裝飾工藝解析：牆面篇 室內設計師必知的100個節點 室內裝飾裝修材料應用與選購 室內設計材料選用實戰手冊 石材應用手冊 設計師的材料清單·室內篇 圖解照明設計 室內照明設計精品教程 室內燈光設計 室內設計師專用燈光設計手冊 室內設計師燈光設計細部解析 照明設計終極聖經 家居色彩設計指南 設計師談家居色彩搭配 設計配色基礎 輕·重·緩·急：搭出耐看配色 人體工程學與室內設計 住宅的設計尺寸剖析書 圖解住宅尺寸與格局設計 室內施工圖實戰教程 室內施工圖製圖標準 室內空間佈局與尺度設計 室內細部設計cad圖集 室內設計尺寸關鍵術 室內設計數據手冊：空間與尺度 室內設計與人體工程學 家裝常用數據尺寸速查 工裝設計尺度數據手冊 人機工程學（第五版） 年輕設計師必修的七堂課 網紅室內設計師ip運營法則 裝修設計師談單簽單一課通 軟裝談單寶典 住宅格局破解術 住宅格局解剖圖鑑 住宅設計剖析手冊 住宅設計解剖書 住得優雅：住宅設計的34個法則 圖解極簡主義設計 室內住宅設計圖解 室內空間設計手冊 室內設計·思維與方法 室內設計基礎 小家越住越大2 打造讓孩子自主學習的住宅 樓梯設計的9個法則 淺談家庭中央空調的使用 牆面設計 裝修設計解剖書 解構收納 設計中的設計 設計師要懂的心理學 室內精細化設計研究 傢俱設計資料圖集 室內設計風格圖文速查 軟裝改造解剖書 軟裝設計元素搭配手冊 軟裝設計師手冊 軟裝風格速查 the lighting bible the interior plan: concepts and exercises 100 things every designer needs to know about people"><span class="side-num">11</span> Interior Design</a><a href="12_architecture-space.html" data-search="12 architecture space architecture &amp; space form, space, order, and proportion week 2, 6–7 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 建築：形式、空間和秩序（第 3 版） 反造型 architecture: form, space, and order , 3rd edition"><span class="side-num">12</span> Architecture &amp; Space</a><a href="13_product.html" data-search="13 product product design minimalism, ten principles of good design, and muji week 11 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 簡約不簡單：極簡風格產品設計 產品極簡主義 無印良品的設計 解密無印良品 20 世紀 50–80 年代中國、德國產品設計回望 無印良品世界觀 創新產品設計與手繪 深澤直人 意識的核心 product design now naoto fukasawa"><span class="side-num">13</span> Product Design</a><a href="14_design-art-history.html" data-search="14 design art history design &amp; art history from manuscripts and arts and crafts through the bauhaus to the digital era week 1 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術簡史 世界平面設計史 醜的歷史 美的歷史 世界當代藝術史 世界現代設計史 中國現代設計與包豪斯 包豪斯道路：歷史、遺澤、世界與中國 包豪斯 運動中的視覺：新包豪斯的基礎 包豪斯：大師和學生們 包豪斯藏品精選集 包豪斯理想：過去與現在 世界現代設計史 中國 外國 工業設計史（第四版） 現代設計百科全書：平面設計的歷史、語言及經典應用 藝術的真相：通往藝術之路 藝術與物理學：時空和光的藝術觀與物理觀 設計藝術史 重要的不是藝術 錢君匋的藝術世界 art: a brief history , 4th edition vision in motion the bauhaus: masters &amp; students by themselves the bauhaus ideal then &amp; now: an illustrated guide to modernist design graphic design, referenced: a visual guide to the language, applications, and history of graphic design gateways to art: understanding the visual arts art &amp; physics: parallel visions in space, time, and light"><span class="side-num">14</span> Design &amp; Art History</a><a href="15_theory-psychology.html" data-search="15 theory psychology design theory &amp; psychology gestalt, cognition, emotional design, and kenya hara week 4, 6–7, 10 1. scope 2. perception 3. cognition &amp; behaviour 4. aesthetics &amp; philosophy 5. principles &amp; methods 6. selected figures 7. source bookshelf 8. study cues 7. each book 審醜：萬物美學 原研哉的設計世界 視覺藝術原理（第八版） 設計心理學 1：日常的設計 設計心理學 2：與複雜共處 設計心理學 3：情感化設計 設計心理學 4：未來設計 日本的八個審美意識 點線面 日式設計美學 康定斯基論點線面 藝術與視知覺 藝術中的精神 圖像與眼睛：圖畫再現心理學的再研究 象徵的圖像：貢布里希圖像文集 設計私語錄：通心粉的孔洞之謎 悲劇的誕生：尼采美學文選 設計中的色彩心理學 設計之美 藝術與視知覺：新編 設計中的設計 設計師要懂心理學（迷你書） 設計心理學 設計心理學（唐納德·a·諾曼） 情感化設計 感性美學 我眼中的設計之美 日式平面美學 淺談設計之美 為什麼設計 重構美學 白 社會心理學（第八版） 藝術與錯覺：圖畫再現的心理學研究 視覺思維 視覺思維（阿恩海姆） 視覺藝術的含義 設計中的設計 設計中的設計（全本） 設計中的設計（原研哉） 設計師要懂心理學 設計心理學（247 頁本） 設計心理學（中文版） 設計美學（廣州美術學院藝術設計教程） 設計與視知覺 象徵的圖像：貢布里希圖像學文集 ugly: the aesthetics of everything prebles&#x27; artforms: an introduction to the visual arts , 8th edition the design of everyday things , revised and expanded edition living with complexity emotional design: why we love (or hate) everyday things the design of future things art and visual perception: a psychology of the creative eye , the new version the image and the eye: further studies in the psychology of pictorial representation symbolic images: studies in the art of the renaissance beautiful thing: an introduction to design art and visual perception: a psychology of the creative eye , the new version 100 things every designer needs to know about people the design of everyday things the design of everyday things emotional design: why we love (or hate) everyday things social psychology , 8th edition art and illusion: a study in the psychology of pictorial representation visual thinking visual thinking meaning in the visual arts: papers in and on art history 100 things every designer needs to know about people the design of everyday things the design of everyday things symbolic images: studies in the art of the renaissance"><span class="side-num">15</span> Design Theory &amp; Psychology</a><a href="16_pattern-ornament.html" data-search="16 pattern ornament pattern &amp; ornament pattern structure, chinese and western motifs, and auspicious meaning week 8 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book (new)世界裝飾紋樣圖典(4000餘種圖案+紋飾百科全書+裝飾藝術寶庫) l&#x27;art arabe 01 秩序感：裝飾藝術的心理學研究 中國紋樣集錦：examples of chinese ornament the grammar of ornament 中國紋樣全集 魏晉南北朝·隋唐·五代卷 世界裝飾圖案-1887-85p圖版 中國紋樣全集 宋·元·明·清卷 中國紋樣全集 戰國·秦·漢卷 中國紋樣全集 新石器時代和商·西周·春秋卷 中國經典紋樣圖鑑 摩洛哥傳統裝飾藝術 敦煌線描 民間美術：湖北挑花、土錦、藍印花布 裝飾文叢特別策劃卷7 貴州傳統蠟染-攝影集 the sense of order: a study in the psychology of decorative art examples of chinese ornament selected from objects in the south kensington museum and other collections"><span class="side-num">16</span> Pattern &amp; Ornament</a><a href="18_magazines-annuals.html" data-search="18 magazines annuals magazines &amp; annuals how to look at annuals and magazines week 1–13 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2021日本平面設計年鑑 45th publication design annual apd亞太設計年鑑no.17(1) brand 12 brand no.36-生活使用手冊2：文創熱量 brand no.37-字己 brand no.38-手工印刷 brand no.39-物料進化 brand no.40-文化時光機1868-1988 brand no.41-看圖説話，你的信息時代 brand no.42.-你好，藝術pdf brand no.43-小物志 brand no.44-貓狗日誌 design 360 雜誌(1) gallery 形錄 全球最佳圖形設計 vol.09 idea 377 novum201901 apd9亞太平面設計年鑑 apd5亞太設計年鑑 中國品牌設計年鑑 2013 日本字體與平面設計大獎年鑑 國家博物館-仙山圖特展 國家博物館-宋末民初上海畫壇 國家博物館-宋代花箋特展 國家博物館-蘇州片及其影響 國家博物館-瓶花與盆景畫特展 國家博物館-書畫菁華特展 idea+10 1 舉一反百的聰明設計法則 idea+10 2 一計點睛的即效設計處方 red-dot-award-concept-2011-2012 red_dot_award_design_concept_2013-2014 brand brand gallery 國際設計年鑑2014 日本品牌與包裝設計年鑑 2016 日本平面創意設計年鑑 2002-2004 疾風迅雷 杉浦康平雜誌設計的半個世紀 眾妙之門：移動web設計精髓（德）smashing雜誌 essentials of mobile design"><span class="side-num">18</span> Magazines &amp; Annuals</a><a href="20_advertising.html" data-search="20 advertising advertising positioning, aida, creative tactics, and point of purchase week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 1001 個廣告法則 pop 廣告設計 智威湯遜手冊 美國廣告設計實用教程 廣告公司的秘密：平面設計師就業寶典 advertising by design: creating visual communications with graphic impact"><span class="side-num">20</span> Advertising</a></div></nav>
+    </aside>
+    <main class="main" id="content" tabindex="-1">
+      <div class="topbar">
+        <button class="side-toggle" type="button">Guides</button>
+        <nav class="jump" aria-label="On this page"><a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a></nav>
+      </div>
+      <p class="kicker"><a href="index.html">SSHD2382</a> · Category 07</p>
+      <div class="digest">
+<h1 id="book-design-print">Book Design &amp; Print</h1>
+<p class="meta">Category 07 · Course link: Week 5 Image, Text and Layout Composition, Week 9 Typography and Visual Refinement · Main references: Lü Jingren, <span lang="zh-Hant">《書藝問道》</span>; Andrew Haslam, <span lang="zh-Hant">《書籍設計》</span>; <span lang="zh-Hant">《現代圖書設計》</span>; <span lang="zh-Hant">《範式革命：中國現代書籍設計的發端 1862–1937》</span>; <span lang="zh-Hant">《世界書籍藝術流派》</span>; <span lang="zh-Hant">《中外裝幀藝術論集》</span>; <span lang="zh-Hant">《中國古籍版本概要》</span>; <span lang="zh-Hant">《出版物設計完全手冊》</span>; <span lang="zh-Hant">《如何設計一本畫冊》</span>; <span lang="zh-Hant">《書形：138 種創意書籍和印刷紙品設計》</span>; Gavin Ambrose, <span lang="zh-Hant">《PRINT &amp; FINISH 印前印後》</span>; <span lang="zh-Hant">《平面印刷色彩：四色與專色》</span>; <span lang="zh-Hant">《印刷工藝：燙印與凹凸》</span>; <span lang="zh-Hant">《印前校色實用教程》</span>; <span lang="zh-Hant">《平版印刷拼版手冊》</span>; <span lang="zh-Hant">《電腦印前技術完全手冊》</span>; <span lang="zh-Hant">《2013–2015 中國最美的書》</span></p>
+
+<h2 id="1-scope">1. Scope</h2>
+<p>This category has 21 books, divided into two main parts, "the book" and "print":</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Content</th>
+<th>Key books</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Book design</td>
+<td>Book structure, format, layout, covers, and the ideas and history of binding</td>
+<td><span lang="zh-Hant">《書藝問道》</span>, Haslam's <span lang="zh-Hant">《書籍設計》</span>, <span lang="zh-Hant">《現代圖書設計》</span>, <span lang="zh-Hant">《範式革命》</span>, <span lang="zh-Hant">《中國古籍版本概要》</span></td>
+</tr>
+<tr>
+<td>Prepress</td>
+<td>File preparation, colour management, imposition, output</td>
+<td><span lang="zh-Hant">《電腦印前技術完全手冊》</span>, <span lang="zh-Hant">《印前校色》</span>, <span lang="zh-Hant">《平版印刷拼版手冊》</span></td>
+</tr>
+<tr>
+<td>Print &amp; finish</td>
+<td>Printing methods, spot colour, paper, foil stamping, embossing and debossing, binding</td>
+<td><em>PRINT &amp; FINISH</em>, <span lang="zh-Hant">《四色與專色》</span>, <span lang="zh-Hant">《燙印與凹凸》</span>, <span lang="zh-Hant">《書形》</span></td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid">flowchart LR
+  ed[&quot;Editorial&lt;br/&gt;content, structure, pacing&quot;] --&gt; des[&quot;Design&lt;br/&gt;format, grid, type, cover&quot;]
+  des --&gt; pre[&quot;Prepress&lt;br/&gt;bleed, separation, imposition, proofing&quot;]
+  pre --&gt; prn[&quot;Print&lt;br/&gt;offset, digital, screen, letterpress&quot;]
+  prn --&gt; fin[&quot;Finish&lt;br/&gt;foil, embossing, die-cut, lamination&quot;]
+  fin --&gt; bind[&quot;Binding&lt;br/&gt;perfect, sewn, case&quot;]
+</pre>
+<h2 id="2-core-concepts">2. Core Concepts</h2>
+<h3 id="21">2.1 Parts of a Book</h3>
+<div class="chart">
+<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <g stroke="#1d1d1f" stroke-width="1.5">
+    <rect x="20" y="40" width="80" height="160" fill="#f3f0ea"/>
+    <rect x="100" y="40" width="200" height="160" fill="#fff"/>
+    <rect x="300" y="40" width="40" height="160" fill="#c8102e"/>
+    <rect x="340" y="40" width="200" height="160" fill="#fff"/>
+    <rect x="540" y="40" width="80" height="160" fill="#f3f0ea"/>
+  </g>
+  <g stroke="#c8102e" stroke-dasharray="4 3"><line x1="100" y1="30" x2="100" y2="210"/><line x1="540" y1="30" x2="540" y2="210"/></g>
+  <g text-anchor="middle" fill="#1d1d1f">
+    <text x="60" y="124">Back</text><text x="60" y="140" font-size="10">flap</text>
+    <text x="200" y="110">Back cover</text><text x="200" y="130" font-size="10" fill="#5b5b66">Blurb · endorsements · ISBN barcode · price</text>
+    <text x="320" y="124" fill="#fff" transform="rotate(-90 320 124)">Spine</text>
+    <text x="440" y="110">Front cover</text><text x="440" y="130" font-size="10" fill="#5b5b66">Title · author · publisher · key visual</text>
+    <text x="580" y="124">Front</text><text x="580" y="140" font-size="10">flap</text>
+    <text x="440" y="30" font-size="11" fill="#5b5b66">Head</text><text x="440" y="222" font-size="11" fill="#5b5b66">Tail</text>
+    <text x="660" y="124" font-size="11" fill="#5b5b66" transform="rotate(90 660 124)">Fore-edge</text>
+  </g>
+  <text x="350" y="245" text-anchor="middle" fill="#5b5b66" font-size="11">Cover / jacket net: spine width = pages ÷ 2 × paper thickness (+ board thickness for hardbacks); always calculate from the actual paper.</text>
+</svg>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Includes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exterior</td>
+<td>Dust jacket, belly band, front cover, back cover, spine, flaps, endpapers, slipcase, ribbon marker, headband</td>
+</tr>
+<tr>
+<td>Front matter</td>
+<td>Title page, copyright page, dedication, contents, preface, notes for readers</td>
+</tr>
+<tr>
+<td>Body</td>
+<td>Chapter openers, main text, plates, notes</td>
+</tr>
+<tr>
+<td>Back matter</td>
+<td>Appendices, bibliography, index, afterword</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22">2.2 Three Levels of Book Design (Lü Jingren)</h3>
+<p>In <span lang="zh-Hant">《書藝問道》</span>, Lü Jingren stresses that book design is not just "cover design" but a three-in-one whole:</p>
+<div class="cards">
+<div><strong>Binding & cover</strong>The outer form of the book: format, materials, cover, binding method.</div>
+<div><strong>Typography & layout</strong>The inner order of the book: grid, type, text–image relationships, page rhythm.</div>
+<div><strong>Editorial design</strong>Planning the content structure and reading experience together with the author and editor, so that form takes part in the storytelling.</div>
+</div>
+
+<p>He also describes the book as a carrier for the "five senses": beyond sight, there is the touch of the paper, the sound of turning pages, the smell of ink and paper, and the sense of time in reading. Kohei Sugiura's ideas, such as "the book is a universe" and "the book with many subjects", have deeply influenced book design in China and Japan.</p>
+<h3 id="23">2.3 The Evolution of Chinese Book Forms</h3>
+<pre class="mermaid">timeline
+  title Chinese book forms
+  Pre-Qin to Han : Bamboo and wooden slips tied with cord
+  Han to Tang : Silk books, scroll binding
+  Tang : Sutra folding, whirlwind binding
+  Song : Butterfly binding, centre column inward
+  Yuan and Ming : Wrapped-back binding, centre column outward
+  Ming and Qing : Thread binding, four-hole stitching
+  Late Qing and Republic : Paperback, hardback, Western letterpress arrives
+</pre>
+<p><span lang="zh-Hant">《範式革命》</span> records the changes of 1862–1937: lead type and lithography replaced woodblock printing, horizontal typesetting and Western binding appeared, and Lu Xun, Tao Yuanqing, Qian Juntao, Feng Zikai and others pioneered modern cover design with prints, patterns and decorative lettering.</p>
+<h3 id="24">2.4 Format and Paper</h3>
+<ul>
+<li><strong>Format</strong>: how many equal parts a full sheet is cut into. Mainland China commonly uses <strong>standard size</strong> (787 × 1092 mm) and <strong>large size</strong> (889 × 1194 mm) full sheets; for example, standard 16mo is about 185 × 260 mm and large 16mo about 210 × 285 mm. Internationally, the ISO A series is more common (A4 = 210 × 297 mm).</li>
+<li><strong>Paper weight</strong>: given in g/m² (gsm). Text paper is usually 70–120 gsm, covers 200–350 gsm.</li>
+<li><strong>Grain</strong>: the paper fibres should run parallel to the spine; otherwise the pages will cockle and be hard to open.</li>
+<li><strong>Coated and uncoated</strong>: coated (art) paper gives sharp halftone dots and vivid colour; book paper and woodfree paper absorb ink, have a matt surface and suit long reading.</li>
+</ul>
+<h2 id="3-principles-methods">3. Principles &amp; Methods</h2>
+<h3 id="31">3.1 Printing Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Principle</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Offset lithography</td>
+<td>Oil and water repel each other; the image is transferred via a rubber blanket</td>
+<td>Large runs of books, magazines and posters; unit cost falls as quantity rises</td>
+</tr>
+<tr>
+<td>Digital</td>
+<td>Toner or inkjet, no plates needed</td>
+<td>Short runs, variable data, proofs</td>
+</tr>
+<tr>
+<td>Letterpress</td>
+<td>Raised areas take the ink and are pressed into the paper</td>
+<td>Business cards, invitations; a tactile impression</td>
+</tr>
+<tr>
+<td>Screen</td>
+<td>Ink is pushed through a mesh screen</td>
+<td>Thick ink layers, special materials, posters</td>
+</tr>
+<tr>
+<td>Gravure</td>
+<td>Recessed areas hold the ink</td>
+<td>Long-run packaging, banknotes, fine images</td>
+</tr>
+<tr>
+<td>Flexography</td>
+<td>Flexible relief plate</td>
+<td>Packaging, corrugated board, plastic bags</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32">3.2 Four-Colour and Spot Colour</h3>
+<div class="chart">
+<svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <g opacity=".85" style="mix-blend-mode:multiply">
+    <circle cx="70" cy="70" r="40" fill="#00aeef"/><circle cx="110" cy="70" r="40" fill="#ec008c"/><circle cx="90" cy="104" r="40" fill="#fff200"/>
+  </g>
+  <rect x="160" y="40" width="50" height="70" fill="#1d1d1f"/>
+  <text x="115" y="165" text-anchor="middle" fill="#1d1d1f">Four-colour CMYK: halftone dots overprint to mix</text>
+  <rect x="300" y="30" width="90" height="90" fill="#ff6f00"/><rect x="400" y="30" width="90" height="90" fill="#c9a227"/><rect x="500" y="30" width="90" height="90" fill="#00a3a1"/>
+  <text x="345" y="140" text-anchor="middle" fill="#5b5b66" font-size="11">Fluorescent orange</text><text x="445" y="140" text-anchor="middle" fill="#5b5b66" font-size="11">Metallic gold</text><text x="545" y="140" text-anchor="middle" fill="#5b5b66" font-size="11">Brand colour</text>
+  <text x="445" y="165" text-anchor="middle" fill="#1d1d1f">Spot colour (e.g. Pantone): premixed ink, one plate per colour</text>
+</svg>
+</div>
+
+<ul>
+<li><strong>CMYK</strong> can print most photographic colours, but its gamut is limited: vivid oranges and greens, fluorescent colours and metallics cannot be printed.</li>
+<li><strong>Spot colours</strong> are used when a brand colour must be exact, when four-colour cannot reproduce a colour, or when only one or two colours are needed to save cost.</li>
+<li>RGB colours on screen must be converted to CMYK or to specified spot colours before you hand over files, and checked against a physical colour guide—do not trust the colour on screen.</li>
+<li><strong>Total ink coverage</strong> (TAC) is usually kept to around 300%. Large black areas can use "rich black" (e.g. C40 M30 Y30 K100), but small text should use K100 only.</li>
+</ul>
+<h3 id="33">3.3 Prepress Checklist</h3>
+<ol>
+<li><strong>Bleed</strong>: extend artwork 3 mm beyond the trim line.</li>
+<li><strong>Safe area</strong>: keep important text at least 3–5 mm inside the trim line.</li>
+<li><strong>Resolution</strong>: images at 300 ppi at actual print size; line art at 1200 ppi.</li>
+<li><strong>Colour mode</strong>: CMYK or specified spot colours; check for stray RGB or unwanted spot colours.</li>
+<li><strong>Fonts</strong>: embed them or convert to outlines; check for missing glyphs.</li>
+<li><strong>Overprint and trapping</strong>: black text is usually set to overprint, so that no white gaps show if registration is slightly off.</li>
+<li><strong>Page count</strong>: a saddle-stitched page count must be a multiple of 4; perfect and sewn bindings are counted in signatures.</li>
+<li><strong>Proof</strong>: a digital proof or a press proof. Sign off and start the press run only after checking colour and content.</li>
+</ol>
+<h3 id="34">3.4 Imposition and Signatures</h3>
+<p>A large sheet printed on both sides and then folded becomes a "signature".</p>
+<table>
+<thead>
+<tr>
+<th>Number of folds</th>
+<th>Pages per signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 fold</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>2 folds</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>3 folds</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>4 folds</td>
+<td>32 pages</td>
+</tr>
+</tbody>
+</table>
+<p>Imposition means deciding the position and orientation of each page on the large sheet, so that the page numbers run in order after folding. The actual layout varies with the folding machine and the printer, so first ask the printer for an imposition dummy (a folded sample) to confirm it.</p>
+<h3 id="35">3.5 Binding Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Features</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saddle stitch</td>
+<td>Folded in half and stapled through the spine</td>
+<td>Thin booklets, magazines, programmes (up to about 64 pages)</td>
+</tr>
+<tr>
+<td>Perfect binding</td>
+<td>Spine milled, then glued</td>
+<td>Paperbacks, thick catalogues; does not open fully flat</td>
+</tr>
+<tr>
+<td>Sewn binding</td>
+<td>Each signature sewn with thread, then glued</td>
+<td>Durable books, art books</td>
+</tr>
+<tr>
+<td>Case binding</td>
+<td>Hardboard case; can have a rounded spine and headbands</td>
+<td>Collector's editions, art books</td>
+</tr>
+<tr>
+<td>Exposed spine</td>
+<td>Spine left uncovered; opens flat to 180°</td>
+<td>Design books, notebooks</td>
+</tr>
+<tr>
+<td>Stab binding</td>
+<td>Chinese-style thread binding</td>
+<td>Ancient books, cultural products</td>
+</tr>
+<tr>
+<td>Accordion</td>
+<td>A long sheet folded back and forth</td>
+<td>Long images, exhibition booklets</td>
+</tr>
+<tr>
+<td>Wire-o</td>
+<td>Opens completely flat</td>
+<td>Calendars, manuals, cookbooks</td>
+</tr>
+</tbody>
+</table>
+<h3 id="36">3.6 Finishing</h3>
+<ul>
+<li><strong>Foil stamping</strong>: heat and pressure transfer metallic or coloured foil onto the paper; a copper or zinc block must be made.</li>
+<li><strong>Embossing / Debossing</strong>: male and female dies press the paper up or down. This can be done in the same pass as foil stamping ("foil embossing").</li>
+<li><strong>Spot UV</strong>: varnish is applied to chosen areas, creating a gloss-and-matt contrast.</li>
+<li><strong>Die-cutting</strong>: a cutting die cuts special shapes or windows.</li>
+<li><strong>Lamination</strong>: gloss, matt or soft-touch film. It protects the surface but makes recycling harder.</li>
+</ul>
+<p><span lang="zh-Hant">《燙印與凹凸》</span> advises that finishes should serve the content: choosing one or two finishes that echo the theme is more powerful than piling them all on.</p>
+<h2 id="4-selected-figures">4. Selected Figures</h2>
+<div class="figs">
+<figure><img src="assets/book-print/designers-palette.jpg" alt="The book designer's palette"><figcaption>Building a book's character through cover colour and paper. Source: Haslam, <span lang="zh-Hant">《書籍設計》</span>, p.30</figcaption></figure>
+<figure><img src="assets/book-print/production-roles.jpg" alt="Division of labour in publishing"><figcaption>How content and image work is divided in book production. Source: Lü Jingren, <span lang="zh-Hant">《書藝問道》</span>, p.207</figcaption></figure>
+<figure><img src="assets/book-print/book-case.jpg" alt="Slipcase"><figcaption>How a slipcase and its volumes fit together. Source: same book, p.35</figcaption></figure>
+<figure><img src="assets/book-print/boxed-set.jpg" alt="Boxed set"><figcaption>The overall design of a multi-volume boxed set. Source: same book, p.305</figcaption></figure>
+<figure><img src="assets/book-print/binding-structure.jpg" alt="Binding structure"><figcaption>Diagram of signatures and binding structure. Source: Ambrose, <em>PRINT & FINISH</em>, p.40</figcaption></figure>
+<figure><img src="assets/book-print/foil-plates.jpg" alt="Foil stamping blocks"><figcaption>Metal blocks used for foil stamping. Source: <span lang="zh-Hant">《印刷工藝：燙印與凹凸》</span>, p.11</figcaption></figure>
+<figure><img src="assets/book-print/letterpress-emboss.jpg" alt="Embossed business card"><figcaption>An embossed business card conveys the brand through touch. Source: same book, p.218</figcaption></figure>
+<figure><img src="assets/book-print/republican-cover.jpg" alt="Stories from Abroad"><figcaption>Cover of Lu Xun and Zhou Zuoren's <span lang="zh-Hant">《域外小說集》</span> (1909). Source: <span lang="zh-Hant">《範式革命》</span>, p.116</figcaption></figure>
+<figure><img src="assets/book-print/republican-woodcut-cover.jpg" alt="Republican-era woodcut cover"><figcaption>A Republican-era cover built from woodcut and decorative lettering. Source: same book, p.216</figcaption></figure>
+<figure><img src="assets/book-print/century-thick-book.jpg" alt="Century"><figcaption>Using the book's thickness and fore-edge as design elements. Source: <span lang="zh-Hant">《現代圖書設計》</span>, p.21</figcaption></figure>
+</div>
+
+<h2 id="5-source-bookshelf">5. Source Bookshelf</h2>
+<p>Suggested reading order: Haslam, <span lang="zh-Hant">《書籍設計》</span> (introduction to structure) → Lü Jingren, <span lang="zh-Hant">《書藝問道》</span> (ideas) → <em>PRINT &amp; FINISH</em> (techniques) → <span lang="zh-Hant">《平面印刷色彩：四色與專色》</span> → <span lang="zh-Hant">《範式革命》</span> (history).</p>
+<!-- BOOKSHELF:START -->
+
+<details><summary>Show 21 titles</summary>
+
+- <a href="#b-the-most-beautiful-books-of-china-2015"><span lang="zh-Hant">2015 中國最美的書</span></a>
+- <a href="#b-book-design-andrew-haslam">[071]<span lang="zh-Hant">書籍設計-安德魯</span></a>
+- <a href="#b-book-forms-138-creative-designs-for-books-and-printed-paper">[128]<span lang="zh-Hant">書形：138種創意書籍和印刷紙品設計</span></a>
+- <a href="#b-how-to-design-a-brochure">[182]<span lang="zh-Hant">如何設計一本畫冊</span></a>
+- <a href="#b-colour-in-print-four-colour-and-spot-colour">[196]<span lang="zh-Hant">平面印刷色彩：四色與專色</span></a>
+- <a href="#b-basics-design-print-finish">[235]<span lang="zh-Hant">國際平面設計基礎教程：PRINT&amp;FINISH印前印後</span></a>
+- <a href="#b-schools-of-book-art-around-the-world"><span lang="zh-Hant">世界書籍藝術流派</span></a>
+- <a href="#b-essays-on-chinese-and-foreign-book-design"><span lang="zh-Hant">中外裝幀藝術論集</span></a>
+- <a href="#b-an-outline-of-editions-of-ancient-chinese-books"><span lang="zh-Hant">中國古籍版本概要</span></a>
+- <a href="#b-the-complete-handbook-of-publication-design"><span lang="zh-Hant">出版物設計完全手冊</span></a>
+- <a href="#b-print-finishing-foil-stamping-and-embossing"><span lang="zh-Hant">印刷工藝：燙印與凹凸</span></a>
+- <a href="#b-a-practical-guide-to-prepress-colour-calibration"><span lang="zh-Hant">印前校色實用教程</span></a>
+- <a href="#b-prepress-output-training-reference-full-colour-tutorial-200p"><span lang="zh-Hant">印前輸出培訓參考：全綵教程-200P</span></a>
+- <a href="#b-zhanxin-yintong-imposition-tutorial"><span lang="zh-Hant">嶄新印通拼版教程</span></a>
+- <a href="#b-offset-lithography-imposition-handbook"><span lang="zh-Hant">平版印刷拼版手冊</span></a>
+- <a href="#b-a-handbook-of-essentials-for-graphic-designers-and-print"><span lang="zh-Hant">平面設計及印刷業務人員常識備忘手冊</span></a>
+- <a href="#b-book-design"><span lang="zh-Hant">書籍設計</span></a>
+- <a href="#b-questioning-the-art-of-the-book"><span lang="zh-Hant">書藝問道</span></a>
+- <a href="#b-new-book-design"><span lang="zh-Hant">現代圖書設計</span></a>
+- <a href="#b-paradigm-revolution-the-beginnings-of-modern-chinese-book"><span lang="zh-Hant">範式革命：中國現代書籍設計的發端 1862-1937</span></a>
+- <a href="#b-the-complete-handbook-of-computer-prepress-technology-2nd"><span lang="zh-Hant">電腦印前技術完全手冊（第2版）</span></a>
+
+</details>
+
+<!-- BOOKSHELF:END -->
+
+<h2 id="6-study-cues">6. Study Cues</h2>
+<ol>
+<li>Take a hardback and identify its parts: dust jacket, endpapers, title page, spine, headband, ribbon marker and so on.</li>
+<li>A 240-page book uses 0.1 mm text paper. Roughly how wide is the paperback spine? (Answer: about 12 mm, plus the thickness of the cover stock.)</li>
+<li>Explain why the page count of a saddle-stitched publication must be a multiple of 4.</li>
+<li>When should you use spot colour rather than four-colour? Give two examples.</li>
+<li>Check your assignment files against the prepress checklist: do the bleed, resolution, colour mode and fonts all pass?</li>
+<li>Compare butterfly binding, wrapped-back binding and thread binding: which way does the centre column face, and how do you turn the pages?</li>
+</ol>
+<!-- BOOKS:START -->
+
+<h2 id="7-each-book">7. Each Book</h2>
+<p>Each book in the bookshelf is described below. Every title above links to its section.</p>
+<h3 class="book" id="b-the-most-beautiful-books-of-china-2015"><span lang="zh-Hant">2015 中國最美的書</span></h3>
+<p><strong>Scope.</strong> This is the catalogue of the "Most Beautiful Books of China" for 2013 to 2015. It also includes letters from the judges and the Chinese books from these years that went on to win in the "Best Book Design from all over the World" competition. Each selected book has its own entry. Use it to learn how to describe a whole book: it helps you build judgement before a book design assignment, but it is not a step-by-step manual.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The book is arranged by year: 2013, 2014, 2015. Each year first lists the jury, then introduces the winning books one by one.</li>
+<li>The judges' letters come from different places, including Lü Jingren and judges from Germany, Japan, Korea, Hong Kong, Macau and Taiwan. The standards come from many sides, so read for the one point each judge cares about.</li>
+<li>The subjects of the selected books already state their design problems: Chinese characters, manuscripts, local gazetteers, art books, poetry collections, exhibition catalogues. Each has its own reading task.</li>
+<li>"Most beautiful" lies in the book as a whole: the order, the materials, and how text and images are put together. <span lang="zh-Hant">《兔兒爺丟了耳朵》</span>, <span lang="zh-Hant">《平如美棠》</span>, <span lang="zh-Hant">《上海字記》</span> and <span lang="zh-Hant">《漢字大爆炸》</span> are all whole-book solutions.</li>
+<li>The exercise for reading this catalogue is to write, in one sentence, which whole-book decision makes someone else's book beautiful.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Choose one book from each of the three years, and write whether its beauty lies in structure, materials or typography.</li>
+<li>Pick one judge's letter, compare it with one winning book, and see whether the book meets the standard the judge describes.</li>
+<li>When you make your own book, borrow a question (how to present a manuscript, how to bind an illustrated story) and leave the style with the original book.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-the-most-beautiful-books-of-china-2015-1.jpg" alt="Lord Rabbit Lost His Ears"><figcaption><span lang="zh-Hant">《兔兒爺丟了耳朵》</span>, with its Chinese and English titles side by side, is one of the selected books in the catalogue. Source: <span lang="zh-Hant">《2015 中國最美的書》</span>, p.171</figcaption></figure>
+<figure><img src="assets/book-print/books/b-the-most-beautiful-books-of-china-2015-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《2015 中國最美的書》</span>, p.134</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose one selected book and say in one sentence where in the whole book its beauty lies.</li>
+<li>Among the judges' letters, which judge's standard is closest to the point you would insist on when making a book? Write the book title and your reason.</li>
+</ol>
+<h3 class="book" id="b-book-design-andrew-haslam"><span lang="zh-Hant">書籍設計-安德魯</span></h3>
+<p><strong>Original title:</strong> <em>Book Design</em></p>
+<p><strong>Author:</strong> Andrew Haslam</p>
+<p><strong>Scope.</strong> This is a textbook on book design. The first part asks what a book is, from the history of its carriers to the commercial value of publishing. The middle part is the designer's palette: grid, printing, type, editorial structure, images and covers. The last part moves into production, with paper as one of its chapters. Use it to build a checklist of the decisions you have to make when designing a book.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The form of the book moved from the scroll to a stack of pages you can turn. The history of paper runs from papyrus and Chinese papermaking to its later spread to Europe; for movable type, the book covers clay type in Korea, woodblock printing in China and Gutenberg's lead type.</li>
+<li>Dictionary definitions stop at "portable sheets of paper" and "words written on paper". The author's own definition adds time: a book must preserve knowledge, speak to literate readers, and be portable.</li>
+<li>Movable type turned copying into repeatable production. While reproducing content, early printers also decided the typeface and the layout.</li>
+<li>The palette breaks design into parts: grid, print colour, type, editorial structure, image communication, covers and jackets. Each one is a separate choice.</li>
+<li>The barcode on the back cover has specific constraints: it must not be covered by the flaps or inner cover, its size should be about 85% to 120% of the original, it must be black bars on a white ground, and it needs about 2 mm of clear space around it.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First write your own definition of "book" in one sentence, then compare it with the seventh definition in the book to see whether you left out portability, preservation or communication to readers.</li>
+<li>Before designing a book, fill in a palette: grid, type, images, cover, paper. Write only one decision and one sentence of reasoning for each.</li>
+<li>Take the back cover of a paperback and check the barcode against the book's four rules.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-book-design-andrew-haslam-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《書籍設計-安德魯》</span> (Andrew Haslam), p.122</figcaption></figure>
+<figure><img src="assets/book-print/books/b-book-design-andrew-haslam-2.jpg" alt="Barcode on the back cover"><figcaption>The barcode must be visible on the back cover, with black bars on white, a clear margin around it, and a size within the permitted scaling range. Source: <span lang="zh-Hant">《書籍設計-安德魯》</span> (Andrew Haslam), p.162</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Compared with "words printed on paper", which two extra layers of meaning does the author's definition of a book add?</li>
+<li>Check the back cover of a paperback: is the barcode covered by a flap, is it black on white, and is there clear space around it?</li>
+</ol>
+<h3 class="book" id="b-book-forms-138-creative-designs-for-books-and-printed-paper"><span lang="zh-Hant">書形：138種創意書籍和印刷紙品設計</span></h3>
+<p><strong>Scope.</strong> This is a catalogue of work showing creative forms for books and printed matter. Each entry usually states the type of work, client, designer, specifications and techniques, followed by a short text on where the concept came from. Use it to learn "how form carries out a concept", and to practise writing a complete specification for a piece of work.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The Murcia tax annual report turns "gathering" into a piggy bank, and the way it opens corresponds to taxes being put into public services. The form itself is the sentence.</li>
+<li>The techniques field matters as much as the concept field: offset printing, clay casing, screen printing, blind embossing, die-cutting, thread binding, laser engraving and acrylic are all listed beside the work.</li>
+<li>"Book forms" here include annual reports, promotional brochures, magazines, picture books and even an edible exhibition booklet. The test is how the printed piece is held in the hand.</li>
+<li><span lang="zh-Hant">《正負》</span> aims to be both artistic and informative, focusing on details of typesetting that are easily overlooked; it is produced with screen printing and inkjet printing.</li>
+<li>Specifications are always given in millimetres. When comparing two pieces, compare their sizes first, then their concepts.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each piece that catches your eye, copy just four lines: type of work, specifications, techniques, a one-sentence concept.</li>
+<li>If the concept is a metaphor (a piggy bank, the supply chain from tree to paper), check whether the way it opens or its material really acts out that metaphor.</li>
+<li>Use the same four lines to write a specification card for your own assignment.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-book-forms-138-creative-designs-for-books-and-printed-paper-1.jpg" alt="Laser engraving and special materials"><figcaption>The techniques on this page include offset printing and laser engraving, and the materials listed include twin-wall board, acrylic and elastic rubber. Source: <span lang="zh-Hant">《書形：138種創意書籍和印刷紙品設計》</span>, p.166</figcaption></figure>
+<figure><img src="assets/book-print/books/b-book-forms-138-creative-designs-for-books-and-printed-paper-2.jpg" alt="Positive Negative"><figcaption><span lang="zh-Hant">《正負》</span> turns easily overlooked details of typesetting into both art and information, printed by screen and inkjet. Source: <span lang="zh-Hant">《書形：138種創意書籍和印刷紙品設計》</span>, p.114</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Fill in a card for the "piggy bank" annual report using "type, specifications, techniques, one-sentence concept".</li>
+<li>Choose one piece and explain what is left of the concept once you take away its special material or its way of opening.</li>
+</ol>
+<h3 class="book" id="b-how-to-design-a-brochure"><span lang="zh-Hant">如何設計一本畫冊</span></h3>
+<p><strong>Scope.</strong> This book is about brochures: corporate image brochures, product brochures, leaflets, promotional brochures and commemorative albums. The first part covers the types. It then breaks design down into basic elements, production techniques and market factors, using cases such as the Pfizer annual report, a Richard Serra exhibition booklet and LARDBOOK to show what each layer does.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Elements come in four layers. Conceptual elements are things like point, line and plane, which can be sensed but are not necessarily drawn; visual elements are size, shape and colour; relational elements are direction, position, space and centre of gravity; practical elements are meaning, purpose and function.</li>
+<li>A good brochure must do four things at once: combine company, market and product into one whole, hold up visually, stay consistent from front to back, and have a clear display function.</li>
+<li>The type decides the task. A corporate image brochure, a product brochure, a leaflet and a promotional brochure each need people to remember a different thing.</li>
+<li>The cases write the task into the layout. The Canon annual report puts product features alongside portraits of its people; the Pfizer annual report uses a clean layout to present the company's philosophy and the character of its industry.</li>
+<li>Production techniques get their own section. The elements decide the image; the techniques decide how the brochure is finally made.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before working on the layout, write down the type and the one function this brochure must fulfil.</li>
+<li>Take one spread and write one sentence for each of the four layers: conceptual, visual, relational, practical.</li>
+<li>Put the cover, the first spread and the last spread side by side, and check that they belong to the same book.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-how-to-design-a-brochure-1.jpg" alt="Norwegian design case"><figcaption>The case credits the design company Havnevik and the designer Tom Emil Olsen, from Norway. Source: <span lang="zh-Hant">《如何設計一本畫冊》</span>, p.97</figcaption></figure>
+<figure><img src="assets/book-print/books/b-how-to-design-a-brochure-2.jpg" alt="LARDBOOK"><figcaption>A page from <em>LARDBOOK</em> names the design company Build, the designer Michael C. Place, the client and the UK. Source: <span lang="zh-Hant">《如何設計一本畫冊》</span>, p.69</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Use the four layers (conceptual, visual, relational, practical) to describe one spread of a brochure you have to hand.</li>
+<li>What is the one thing a corporate image brochure must make people remember, and how does that differ for a product brochure? Give one example of each.</li>
+</ol>
+<h3 class="book" id="b-colour-in-print-four-colour-and-spot-colour"><span lang="zh-Hant">平面印刷色彩：四色與專色</span></h3>
+<p><strong>Scope.</strong> This is a casebook on how printed colour works. It covers packaging, posters, brand identity and books, with a separate section on stochastic (FM) screening. The focus is the job that four-colour and spot colour each do, and how paper changes the same colour. Use it when choosing colours, to write down "which fact does this colour stand for".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Colour can carry out a product's metaphor. Three books of "food for the mind" are made into tins, with labels that imitate the nutrition panels on food cans. Tea-tasting wrapping papers use tea-set motifs or the geometric shapes of sweets.</li>
+<li>Brand facts can fix the shape and the number of colours. The "tre" (three) in tre·tea becomes a triangular prism, with one bird on each of its three faces: a white bird for white tea, a black bird for black tea, and a multicoloured bird for tropical tea.</li>
+<li>Spot colours and special papers each have a target. Ordinary gifts use spot gold, children's gifts use colourful illustrated paper, and wedding gifts use blue-green. Another example prints information in fluorescent orange on black Plike paper, and switches the inside pages to Rives paper so the illustrations look brighter.</li>
+<li>A sense of place comes from a very short set of colours. Hornhuset uses Mediterranean sea blue, bright yellow and ivory white, to match its small dishes and takeaway food.</li>
+<li>The key visual for an arts festival also needs a source. Ars Cameralis draws a unicorn and a rhinoceros in a way close to stained glass, illuminated manuscripts and mosaic, and the colours serve a fairy-tale experience.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before choosing a colour, write one sentence on "which fact this colour is": the type of tea, who the gift is for, or the climate of the place.</li>
+<li>Mark the colours that must not drift (metallics, fluorescents, brand colours that must stay stable) as spot colours, and leave the rest to four-colour.</li>
+<li>When you study a case, note the paper name and the ink as well, not just a colour name.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-colour-in-print-four-colour-and-spot-colour-1.jpg" alt="Spot colours for gifts"><figcaption>Ordinary gifts use spot gold, children's gifts use colourful illustrated paper, and blue-green marks wedding gifts. Source: <span lang="zh-Hant">《平面印刷色彩：四色與專色》</span>, p.173</figcaption></figure>
+<figure><img src="assets/book-print/books/b-colour-in-print-four-colour-and-spot-colour-2.jpg" alt="Fluorescent orange on black paper"><figcaption>The information is printed in fluorescent orange on black Plike paper, while the inside illustrations are digitally printed on Rives paper to make the colours brighter. Source: <span lang="zh-Hant">《平面印刷色彩：四色與專色》</span>, p.195</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>For the three birds of tre·tea, which brand fact does each colour match, and which fact does the shape of the pack match?</li>
+<li>If one colour has to stay stable across different papers, would you print it in four-colour or as a spot colour? Explain with an example from the book.</li>
+</ol>
+<h3 class="book" id="b-basics-design-print-finish"><span lang="zh-Hant">國際平面設計基礎教程：PRINT&amp;FINISH印前印後</span></h3>
+<p><strong>Original title:</strong> <em>Basics Design 06: Print and Finish</em></p>
+<p><strong>Scope.</strong> This is a basic textbook on prepress and finishing. Its chapters cover, in order, substrates, printing technologies, printing processes, finishing, binding, and how these techniques come together in one piece of work. Each case names the client, the designer and the reason for choosing that process. The opening pages explain how to read the book using the navigation bar, the introductions and the project information.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A substrate is the material that carries the text and images. It can be ordinary paper, textured specialty paper or board, and can even extend to cups and T-shirts. The choice must suit both the physical properties of the material and the purpose of the project.</li>
+<li>A colour magazine needs high-quality images, while a newspaper thinks about cost first, so the two ask different things of paper. The colour, weight and texture of the paper change the final visual effect, and a special paper can even become part of a corporate identity.</li>
+<li>Decide the substrate at the very start of the design. Finishing needs a reason: the headings of a Dutch health handbook are embossed so that the white letters gain thickness over the images.</li>
+<li>Edge decoration was originally meant to make a book last longer. Using it on VH1's time-sensitive printed matter deliberately sets the process against the character of the medium.</li>
+<li>Perforation can turn an envelope and its pages into one piece. The reader tears along the holes, so no separate envelope is needed.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>On your first sketch, write down the substrate and one finishing process, with one sentence on why you chose it.</li>
+<li>Record your own projects in the book's case format: client, process, why.</li>
+<li>Ask whether the process makes the piece last longer, saves a component, or deliberately contradicts the content.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-basics-design-print-finish-1.jpg" alt="Edge decoration"><figcaption>Edge decoration was originally meant to make a book last longer. Used on a TV channel's time-sensitive printed matter, it creates a deliberate contradiction. Source: <span lang="zh-Hant">《國際平面設計基礎教程：PRINT&amp;FINISH印前印後》</span>, p.160</figcaption></figure>
+<figure><img src="assets/book-print/books/b-basics-design-print-finish-2.jpg" alt="Perforation as an envelope"><figcaption>The pages are perforated around the edges so readers can tear them open to read. Envelope and pages become one piece, saving the cost of a separate envelope. Source: <span lang="zh-Hant">《國際平面設計基礎教程：PRINT&amp;FINISH印前印後》</span>, p.111</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Which two things must you consider together when choosing a substrate? Write one sentence each about a colour magazine and a newspaper.</li>
+<li>Choose one finishing process for your project, and say whether it solves a problem of lifespan, of cost, or of a contradiction in meaning.</li>
+</ol>
+<h3 class="book" id="b-schools-of-book-art-around-the-world"><span lang="zh-Hant">世界書籍藝術流派</span></h3>
+<p><strong>Author:</strong> Yu Binnan</p>
+<p><strong>Scope.</strong> Yu Binnan introduces twentieth-century book art by country and by genre. Germany, Britain, the United States, France, Switzerland and Japan each get a chapter, followed by children's books and literary books. The thread running through the book is how illustration, type, layout and cover were brought back together into one book. Use it to build a historical map of book art.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The movement that began with William Morris asked for the book to become a whole again, made of type, layout, illustration and cover. Early Jugendstil stressed flatness, the movement of line, and illustrations embedded in the layout; Edward Gordon Craig and Heinrich Vogeler are the examples given.</li>
+<li>Phototypesetting could enlarge, reduce, widen, narrow, slant and freely arrange letters, which metal type could hardly do. This photographic layout was first used in advertising, dust jackets, covers and title pages, and was still seen as experimental at the time.</li>
+<li>"Fashionable" layouts have a touch of humour and are used for special occasions. They are of almost no use for body text that needs slow reading and careful thought. Massin's design for <span lang="zh-Hant">《貧苦的女歌手》</span> is cited as the most memorable example.</li>
+<li>After the revival of illustration, Max Slevogt's lithographs for <span lang="zh-Hant">《浮士德》</span>, whether in the margins or filling the page, had to set off the text and be set off by it in turn. George Grosz, Alfred Kubin and Janusz Grabiański took the subject matter from satire to fairy tale.</li>
+<li>Expressionism is traced from the Die Brücke group, founded in Dresden in 1905. The book places it in the history of book illustration, where exaggeration and distortion express dissatisfaction with the way things are.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Pick one illustrator and note whether the images hug the edge of the text, fill a whole page, or overlap the type.</li>
+<li>Split your own project into "dust jackets and advertising" and "body text that needs slow reading", and allow a different amount of freedom in each.</li>
+<li>When you cite a school or movement, name one book and one visual rule, not just the name of the movement.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-schools-of-book-art-around-the-world-1.jpg" alt="Copyright page"><figcaption>The copyright page gives the format, the number of printed sheets, the first edition date of December 1987, and the book number and price. Source: <span lang="zh-Hant">《世界書籍藝術流派》</span>, p.6</figcaption></figure>
+<figure><img src="assets/book-print/books/b-schools-of-book-art-around-the-world-2.jpg" alt="Book plates from several countries"><figcaption>The plates set side by side examples of book art such as the Cuban <span lang="zh-Hant">《工人的手》</span> and a Hungarian <span lang="zh-Hant">《莎士比亞》</span>. Source: <span lang="zh-Hant">《世界書籍藝術流派》</span>, p.87</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What freedoms did phototypesetting give letters that metal type could hardly offer? According to the book, on which parts of a book was this freedom first used?</li>
+<li>Use the principle that "illustration must form a whole with the layout" to check an illustrated book you have seen: do the images and the text set each other off, or does each go its own way?</li>
+</ol>
+<h3 class="book" id="b-essays-on-chinese-and-foreign-book-design"><span lang="zh-Hant">中外裝幀藝術論集</span></h3>
+<p><strong>Scope.</strong> This is a collection of essays on book design. Its core chapters describe how Lu Xun treated blank pages, deckle (uncut) edges, type and covers, and how he worked with Tao Yuanqing and Xu Qinwen. Later essays discuss Fan Yixin and Ma Rujin, the relationship between art editors and text editors, and the tension between the spirit of the times and national character. Use it to think about how strong an idea a cover can still have when it is built mainly from text.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Lu Xun cared about the blank endpapers at the front of a book and about generous head and foot margins. A page crammed with black text, on paper that smells of ink, feels oppressive. Head and foot margins differ between China and the West: Chinese books traditionally make the head margin larger than the foot. What matters is leaving room for the reader to write.</li>
+<li>He promoted uncut deckle edges, calling himself an early member of the "deckle-edge party", and was particular about printing, platemaking and paper. He objected to a line beginning with a punctuation circle, a dotted line, or the second half of a bracket.</li>
+<li>His covers are mostly built from text, with variety coming from calligraphy and seal carving. <span lang="zh-Hant">《吶喊》</span> puts a title that looks carved with a knife on a black block, printed on a deep red ground, and the red is described as a heavy force. The red of <span lang="zh-Hant">《桃色的雲》</span> is like a morning glow, paired with band-shaped ornaments in the style of Han dynasty pictorial art.</li>
+<li>He gave Tao Yuanqing the content and references, but also allowed the cover to stray from the subject and develop freely. Before printing, he waited until Tao Yuanqing was satisfied before the plates went on press.</li>
+<li>Other essays in the collection break the idea down into subject, intent and inspiration, then discuss black and white, colour and means of expression, and argue that book design, as a combined art, still keeps its own independence.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Set the head and foot margins and the endpapers first, and state whether this blank space is there for breathing room or for readers to write in.</li>
+<li>Make a cover built mainly from text: one background colour, one treatment of the title, and one sentence on what this colour does emotionally.</li>
+<li>If you work with an illustrator, write down one thing you will not restrict.</li>
+</ul>
+<p><strong>Study cues</strong></p>
+<ol>
+<li>When Lu Xun said new books had "no room to spare", which parts of the page did he mean? How does this relate to wanting to write in a book while reading?</li>
+<li><span lang="zh-Hant">《吶喊》</span> and <span lang="zh-Hant">《桃色的雲》</span> both use red. What does each red do? Why could they not be swapped?</li>
+</ol>
+<h3 class="book" id="b-an-outline-of-editions-of-ancient-chinese-books"><span lang="zh-Hant">中國古籍版本概要</span></h3>
+<p><strong>Scope.</strong> This is an introduction to the editions of ancient Chinese books. It starts from the origin of the word <em>banben</em> ("edition"), moves through manuscripts, hand copies and the debate over when woodblock printing began, then covers colour-overprinted and other kinds of editions, and ends with how to judge whether an edition is genuine and how good it is. Use it to learn to describe a copy clearly by its line format and page layout when you look at facsimile pages of old books.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li><em>Ban</em> originally meant a wooden slip shaved for writing on, and <em>ben</em> was the copy held in the hand when collating texts; in the Han dynasty most books were bamboo slips and silk. By the Northern Song the two were already used together as <em>banben</em>, and Ye Mengde said that before the Tang all books were manuscripts, while printed books gradually increased after the Five Dynasties.</li>
+<li>Ye Mengde's worry was that once books were easy to obtain, scholars would read and recite them less carefully; and since people took printed editions as the standard, errors in old copies could no longer be corrected. In this book, "edition" covers both manuscripts and printed books.</li>
+<li>The book traces the form of the book from bamboo and wooden slips bound into rolls. On when woodblock printing began, it sets out the Han, Six Dynasties, Sui and Tang theories side by side, citing evidence such as the ban on printed calendars in the ninth year of the Taihe era and the copying and printing of the poems of Yuan Zhen and Bai Juyi, and lets the evidence line itself up.</li>
+<li>Judging an edition means reading the page: lines per half-leaf, characters per line, whether commentary is in double lines, black or white fish-mouth (<em>heikou</em> or <em>baikou</em>), border lines, the centre fold column, taboo characters and binding style. The book records the Yuan dynasty Peng Yinweng edition as ten lines per half-leaf, twenty-one characters per line, black fish-mouth and double borders.</li>
+<li>The purpose of judging is written into the chapter title: to tell genuine from fake and good from poor, with real examples of detecting forgeries.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When describing a facsimile page of an old book, follow the book's checklist: lines per half-leaf, characters per line, black or white fish-mouth, single or double borders, and whether there are taboo characters. Mark any item you cannot see as not visible.</li>
+<li>When you read that "printing began in a certain year", first ask which piece of evidence the claim rests on.</li>
+<li>Record manuscripts and printed books as two families within editions, and note how each was reproduced.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-an-outline-of-editions-of-ancient-chinese-books-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《中國古籍版本概要》</span>, p.1</figcaption></figure>
+<figure><img src="assets/book-print/books/b-an-outline-of-editions-of-ancient-chinese-books-2.jpg" alt="Line format of Yuan printed editions"><figcaption>The page describes the Yuan dynasty Peng Yinweng edition and the Dade "nine circuits" edition by lines per half-leaf, characters per line, black fish-mouth and double borders. Source: <span lang="zh-Hant">《中國古籍版本概要》</span>, p.127</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why does "edition" in this book include both manuscripts and printed books? What did Ye Mengde fear readers would lose once printed books became common?</li>
+<li>Take a facsimile page of an old book and write down the lines per half-leaf, the characters per line, and whether it has a black or white fish-mouth. Mark any item you cannot see.</li>
+</ol>
+<h3 class="book" id="b-the-complete-handbook-of-publication-design"><span lang="zh-Hant">出版物設計完全手冊</span></h3>
+<p><strong>Original title:</strong> <em>Publication Design Workbook: A Real-World Guide to Designing Magazines, Newspapers, and Newsletters</em></p>
+<p><strong>Scope.</strong> This is a handbook that runs from concept to printed piece, in translation. Its contents go from "designing for reading" to the history of printing since Gutenberg and publications in the age of pixels, dealing in between with the perception of colour and with choosing and mixing typefaces. Use it to write a concept checklist before you start laying out pages.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>An idea starts from content, information and organisation. The design brief is a concept checklist, and the visual sources should be built on the main function of that idea.</li>
+<li>An idea does more than one job. Besides its main function, it must resonate with readers and carry the brand's influence. Write these three layers separately.</li>
+<li>Colour is split into form and psychology. Form deals with how people perceive colour; psychology deals with how social habits shape that perception.</li>
+<li>The typography chapter treats choosing and mixing together. It cares about proportion and freshness in reading, not about collecting lots of typefaces first.</li>
+<li>Printed matter is viewed across time: the 42-line Bible shows how early movable type changed the book, and later sections cover space, contrast, asymmetry and the grid. A carefully designed printed piece may outlive the event it was made for.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before making visuals, write three lines: the information readers must get, the resonance you hope to create, and the one thing the brand must not lose.</li>
+<li>When choosing type, state who is reading and for how long at a stretch, then decide type sizes and how to mix typefaces.</li>
+<li>Ask which part of this printed piece must still be readable in ten years, and make the hierarchy of that part slower and clearer.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-the-complete-handbook-of-publication-design-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《出版物設計完全手冊》</span>, p.187</figcaption></figure>
+<figure><img src="assets/book-print/books/b-the-complete-handbook-of-publication-design-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《出版物設計完全手冊》</span>, p.15</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Into which layers of function does the book divide a design concept? Write one sentence for each layer about a booklet you are working on.</li>
+<li>If this printed piece outlives the event itself, which part deserves to be made more slowly? Why?</li>
+</ol>
+<h3 class="book" id="b-print-finishing-foil-stamping-and-embossing"><span lang="zh-Hant">印刷工藝：燙印與凹凸</span></h3>
+<p><strong>Scope.</strong> This book is entirely about foil stamping and embossing. The first part covers anodised aluminium foil, stamping dies, stamping machines, temperature and workflow, and the differences between cold foil, 3D (sculpted) foil and holographic foil. The second part uses wedding invitations, wine labels, tea brands and art exhibition visuals to show how a finishing process becomes the focus of an image.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Gold foil can be used on paper, wood, plastic and leather. The book lists two functions: raising recognition and added value, and strengthening protection against counterfeiting.</li>
+<li>Embossing is common on books, magazines, cards and packaging. Besides explaining its uses, the book shows close-up details of a hand-cranked embossing press.</li>
+<li>A process should carry out a fact in the content. One wedding invitation drops the usual bold red and gold for silver foil on peach card, with the dragon and phoenix reduced to lines. Harlow, the birthplace of fibre optics, uses holographic foil that splits into many colours in the light.</li>
+<li>Cold foil, 3D foil and holographic foil are different tools. A rice wine brand uses 3D foil to raise a fine-line "map of wine makers", a tea brand uses 3D foil to show the texture of tea leaves, and an art exhibition uses laser foil to strengthen its vivid patterns.</li>
+<li>Quality is tied to temperature and workflow. A metallic effect that looks right in the artwork still has to survive the die and the temperature before it holds up.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Use foil or embossing only on one element that must become the focus: a year, a word, or a logo. Keep everything else flat.</li>
+<li>Next to the sketch, write the fact that this metallic colour or holographic effect stands for, such as celebration, light, or long life.</li>
+<li>When you cannot do real foil stamping yet, mark on the artwork whether you mean hot foil, cold foil, blind embossing, 3D foil or holographic foil.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-print-finishing-foil-stamping-and-embossing-1.jpg" alt="Two functions of gold foil"><figcaption>Gold foil can be used on paper, wood, plastic and leather. The book stresses that it raises recognition and also gives some protection against counterfeiting. Source: <span lang="zh-Hant">《印刷工藝：燙印與凹凸》</span>, p.6</figcaption></figure>
+<figure><img src="assets/book-print/books/b-print-finishing-foil-stamping-and-embossing-2.jpg" alt="Hand-cranked embossing press"><figcaption>Embossing is common on books, magazines, cards and packaging. This page shows a close-up of a hand-cranked embossing press. Source: <span lang="zh-Hant">《印刷工藝：燙印與凹凸》</span>, p.141</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Which quality in the content is each of hot foil, 3D foil and holographic foil best at stressing? Give one brand from the book for each.</li>
+<li>After the wedding invitation case drops bold red and gold, which part of a traditional invitation's work does the peach card take on, and which part does the silver foil take on?</li>
+</ol>
+<h3 class="book" id="b-a-practical-guide-to-prepress-colour-calibration"><span lang="zh-Hant">印前校色實用教程</span></h3>
+<p><strong>Scope.</strong> This is a hands-on tutorial on prepress colour calibration. It goes from a stable viewing environment to standard light sources, then step by step to making an ICC profile for your monitor. The aim is to make the screen and the proof comparable. Use it to set up fixed viewing conditions before sending work to print.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Calibrate in a stable environment. The surroundings should be as close to neutral grey as possible, and the ambient light should be soft, steady and without an obvious colour cast, and should not shine directly on the screen or into your eyes. Daylight is unstable, so close the doors and windows while calibrating.</li>
+<li>To compare a proof with the screen, you need a lamp that lights only the proof: it should not shine into your eyes or affect the screen, its colour temperature should be 5000K or 6500K, its colour rendering index above 90, and its light bright enough and even.</li>
+<li>ISO 3664 sets the standard colour temperature for viewing prints at 5000K. The book notes that many printers and output centres in mainland China still use 6500K. For designers, the key is to stick with one for the whole job, because clients often view proofs where there is no standard light booth.</li>
+<li>Standard illuminants A, B and C have different colour temperatures. The book explains that artificial light sources that truly match D65 are still hard to make accurately, and mixed light such as D75 is used for fine colour judgement like grading raw cotton, not as an everyday setting for viewing proofs.</li>
+<li>To prepare the computer: switch it on at least half an hour before calibrating, change the desktop to light grey, then use the system's display calibration tool to create an ICC profile and save it in your own folder.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before each argument about "the colour is wrong", first write down the colour temperature, whether there is daylight in the room, and how long the monitor has been on.</li>
+<li>Fix each project at either 5000K or 6500K, and do not switch halfway.</li>
+<li>Name ICC files by "date plus monitor", and compare proofs only under the lamp that does not light the screen.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-a-practical-guide-to-prepress-colour-calibration-1.jpg" alt="Making a monitor ICC profile"><figcaption>This page begins the steps for making a monitor ICC profile, after first explaining standard illuminants and the conditions for fine colour judgement. Source: <span lang="zh-Hant">《印前校色實用教程》</span>, p.9</figcaption></figure>
+<figure><img src="assets/book-print/books/b-a-practical-guide-to-prepress-colour-calibration-2.jpg" alt="Saving the ICC profile"><figcaption>After calibration, copy the ICC file into a folder you have created and keep it there. Source: <span lang="zh-Hant">《印前校色實用教程》</span>, p.24</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why should you shut out daylight when calibrating, and wait at least half an hour after switching on the monitor? Which of 5000K and 6500K would you fix on?</li>
+<li>Why is an ordinary fluorescent lamp with a colour rendering index only in the seventies unsuitable for comparing proofs with the screen?</li>
+</ol>
+<h3 class="book" id="b-prepress-output-training-reference-full-colour-tutorial-200p"><span lang="zh-Hant">印前輸出培訓參考：全綵教程-200P</span></h3>
+<p><strong>Scope.</strong> This is a training reference for prepress output. It starts from plates, inks, paper and surface chemistry, then moves on to halftone dots, linearisation and output settings, including saving PS files and page setup and registration marks in FounderType FIT. Use it before handing work to an output centre, to match materials and software settings on one checklist.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>CTP plates are divided by imaging method into photosensitive and thermal; photosensitive plates are further split into silver halide and photopolymer. Ink is made of pigment, binder (vehicle) and additives, and it dries by oxidation, absorption, evaporation, or UV or heat curing.</li>
+<li>Sheet-fed offset mostly uses inks that dry by oxidation, while web offset suits inks that dry by absorption. The drying method decides the paper and the schedule, not just the colour.</li>
+<li>Paper goes through pulping, papermaking, coating and converting. The papers commonly used for books, magazines and newspapers are newsprint, letterpress paper, offset (woodfree) paper and coated art paper: newsprint for newspapers and less demanding books, coated paper for colour pictorials, fine sample books and high-end labels.</li>
+<li>Halftone dots get their own section, right next to binding: sewn binding, wire stitching, thread sewing, saddle stitching and thread-sealed binding. Output needs to know how this sheet will finally be folded and bound.</li>
+<li>The output settings are very specific: make the page the same size as the file, do not use OPI, leave security at the default, print a linearisation report and save the linearisation file, and add alignment marks in FIT.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before output, write three lines: the plate type, how the ink dries, and which class the paper belongs to.</li>
+<li>Check against the book's output list: linearisation saved, PS saved, OPI off, registration marks added.</li>
+<li>When a photo looks dull, first work out whether the problem is the dots or the paper, then decide whether to rescan.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-prepress-output-training-reference-full-colour-tutorial-200p-1.jpg" alt="Page setup in FIT"><figcaption>Output in FounderType FIT starts from "Page Setup", and the menu holds both imagesetter output and printing. Source: <span lang="zh-Hant">《印前輸出培訓參考：全綵教程-200P》</span>, p.100</figcaption></figure>
+<figure><img src="assets/book-print/books/b-prepress-output-training-reference-full-colour-tutorial-200p-2.jpg" alt="Binding and halftone dots"><figcaption>The page first lists binding methods such as thread sewing, wire stitching and saddle stitching, then moves on to printing dots. Source: <span lang="zh-Hant">《印前輸出培訓參考：全綵教程-200P》</span>, p.22</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How do inks dry differently in sheet-fed offset and web offset? How does this affect what you expect of the paper and the schedule?</li>
+<li>Which kind of printed job in the book suits newsprint, offset paper and coated paper respectively? Which should your project use?</li>
+</ol>
+<h3 class="book" id="b-zhanxin-yintong-imposition-tutorial"><span lang="zh-Hant">嶄新印通拼版教程</span></h3>
+<p><strong>Scope.</strong> This is an imposition tutorial for Zhanxin Yintong V6.5. The software aims to handle all four colours in a single imposition, impose a whole book in one go, and save film. The tutorial follows the File and Edit menus through press sheets, bleed, creep (binding-edge shift), work-and-turn short signatures and composite press sheets. Use it alongside the menus the first time you impose book signatures.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The core features come down to three points: impose once and all four colours are done; a whole book can be imposed in one go; film can be saved automatically or by hand.</li>
+<li>The File menu separates projects, press-sheet LAY files, output to ImageHarbor, single- or double-page output to a laser printer, and PDF export. A PDF can be used to make an e-book, while film output carries separation data and whether each page is rotated.</li>
+<li>Bleed lets lines, images and text run beyond the page so that no white edge shows after trimming. You can change one page, or change four adjacent pages and then apply the setting to all pages.</li>
+<li>The spacing at the binding edge adjusts automatically with paper thickness: the higher the page number on the press sheet, the smaller this spacing. When the first signature already needs creep, you can set a custom page shift; short signatures can be set as the same work-and-turn job.</li>
+<li>Composite press sheets can be exported and reused later in a free-form press sheet. In the page frame size you can directly change the trim size, the bleed and whether transparency is enabled.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before opening the software, write down the binding method, page count and bleed. The rows and columns, page size and resolution in the press-sheet template follow from these three.</li>
+<li>Before outputting film or exporting a PDF, check the imposition with single- or double-page laser proofs.</li>
+<li>For thicker books, switch on binding-edge adjustment and check whether the inner pages slide into the gutter.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-zhanxin-yintong-imposition-tutorial-1.jpg" alt="Page frame size and bleed"><figcaption>In the page frame size you can directly change the trim size, the bleed and whether transparency is enabled. Source: <span lang="zh-Hant">《嶄新印通拼版教程》</span>, p.116</figcaption></figure>
+<figure><img src="assets/book-print/books/b-zhanxin-yintong-imposition-tutorial-2.jpg" alt="Composite press sheet"><figcaption>A composite press sheet that has been set up can be exported and reused later when setting up a free-form press sheet. Source: <span lang="zh-Hant">《嶄新印通拼版教程》</span>, p.82</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Bleed prevents white edges after trimming. What is the difference between changing the bleed on one page and applying the bleed of four adjacent pages to all of them?</li>
+<li>Why should the binding-edge spacing get smaller as the book gets thicker? When the first signature already needs creep, which command in the book should you use?</li>
+</ol>
+<h3 class="book" id="b-offset-lithography-imposition-handbook"><span lang="zh-Hant">平版印刷拼版手冊</span></h3>
+<p><strong>Scope.</strong> This is an illustrated imposition handbook for sheet-fed offset. Each entry is named by binding, press, page count and folding method, for example saddle-stitched work-and-tumble, perfect-bound head-to-head, cover with fold-out flap, and accordion fold, and gives formulas for the width and height of the cut sheet. Use it when imposing a cover or signatures, to copy the allowances from the diagram rather than leaving space by feel.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Each diagram puts the binding and folding method in its title: head-aligned or foot-aligned, work-and-tumble or sheetwise, vertical three-panel fold or mixed fold. Pick the wrong title and every millimetre figure after it will be wrong.</li>
+<li>Bleed is usually 3 mm on each side, and some schemes allow 5 mm. The gripper edge on covers is mostly 11 to 12 mm; if the cover is to be varnished, UV coated or laminated, the tail edge must be at least 5 mm and the side lay margin no less than 5 mm, or the lamination will not reach the edge.</li>
+<li>A perfect-bound cover must add the spine width: the thickness of the book block plus about 1 mm of glue. On a six-page cover, the outer and inner fold-out flaps also have to be shortened by formula so they can fold in.</li>
+<li>Some web and folding schemes state the paper: coated and offset papers of 105 gsm or less. With thicker paper, you have to choose another folding method.</li>
+<li>The fold mark must go on the correct side so the imposition software can add it automatically. Head-aligned and foot-aligned are different diagrams and cannot be mixed.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Decide the binding first, then find the matching diagram and put the finished width and height into its cut-sheet formula.</li>
+<li>If the cover is to be laminated or UV coated, first set the tail edge and side lay to the book's minimums, then draw the trim lines.</li>
+<li>Write on the sketch whether it is head-aligned or foot-aligned, and make sure the fold mark is on the side the software requires.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-offset-lithography-imposition-handbook-1.jpg" alt="Foot-aligned imposition"><figcaption>This entry is a foot-aligned imposition for perfect binding on a web press, with 4 pages hand-inserted, on paper of 105 gsm or less. Source: <span lang="zh-Hant">《平版印刷拼版手冊》</span>, p.19</figcaption></figure>
+<figure><img src="assets/book-print/books/b-offset-lithography-imposition-handbook-2.jpg" alt="Fold mark and head-aligned imposition"><figcaption>The fold mark must go on the correct side so the imposition software can add it automatically; this page shows a head-aligned scheme for 24mo, 12 pages, mixed fold. Source: <span lang="zh-Hant">《平版印刷拼版手冊》</span>, p.62</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>When a cover is to be laminated or UV coated, what is the minimum tail edge and side lay? What goes wrong if you leave too little?</li>
+<li>Which term differs between the cut-sheet width formulas for a saddle-stitched cover and a perfect-bound cover? What dimension of the book does that term represent?</li>
+</ol>
+<h3 class="book" id="b-a-handbook-of-essentials-for-graphic-designers-and-print"><span lang="zh-Hant">平面設計及印刷業務人員常識備忘手冊</span></h3>
+<p><strong>Scope.</strong> This is a file-delivery reminder for graphic designers and print sales staff. It focuses on the checks to make before output: gradients, fonts, RGB to CMYK conversion, spot colour names, setting sizes numerically, setting pages to the finished trim size, collecting fonts and images, and running a preflight. Use it as a checklist before sending files to an output centre.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Gradients tend to show banding. The book's method is to build the gradient as a bitmap in Photoshop, add noise, and then place it in the layout software. A gradient from Illustrator processed through Photoshop often has weaker midtones than one made directly in Photoshop.</li>
+<li>Output centres handle PostScript fonts better. A TrueType font with the same name will conflict and has to be downloaded to the RIP separately. Bold and italic must use the font's own weight or style, not a style command that fakes bold or slants the letters, or the effect will disappear when printed.</li>
+<li>Small type with thin strokes, such as very small Bodoni, should not be built from separated colours. If the registration is slightly off, the thin parts will show white.</li>
+<li>Convert RGB to CMYK before placing images in the layout software. Spot and process colours must not be set the wrong way round; colour names in Illustrator, FreeHand and the layout software must match, or a process colour will be treated as a spot colour and an extra plate will appear.</li>
+<li>Enter sizes as numbers. Set the page to the actual finished size and let the software generate the trim marks. When delivering files, include the images used and both the screen and outline fonts, then use a preflight tool to check for missing pages, wrong colours and PostScript errors.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Every time you deliver files, run through these eight items: gradients, fonts, CMYK, colour names, numerical sizes, finished-size pages, collected folder, preflight report.</li>
+<li>Output a set of separation proofs and check whether there is an extra spot colour plate you did not order.</li>
+<li>If a typeface has no bold weight, use a rule or a second colour for emphasis instead of the bold command.</li>
+</ul>
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why should you not rely on the "Bold" or "Italic" command in the font menu to make text bold? What do you actually get after output?</li>
+<li>How does setting a spot colour as a process colour, or a process colour as a spot colour, affect a set of films? Which name should you check before delivering files?</li>
+</ol>
+<h3 class="book" id="b-book-design"><span lang="zh-Hant">書籍設計</span></h3>
+<p><strong>Original title:</strong> <em>Book Design</em></p>
+<p><strong>Scope.</strong> This book runs from "what is a book" to how a book is born. The first part covers the origins, definition and commercial value of the book and the influence of printing. Next come the roles in publishing, from author, agent, publisher and book developer to commissioning editor, editor, proofreader and consultant. Only then come the designer's drawing board, text and image, and production. Use it to understand where the designer stands in the whole production chain.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Format starts with folding. Fold a sheet once and you get four pages, called a folio; fold it again and you get eight pages, called a quarto. Before a format becomes a style, it is a fold of paper.</li>
+<li>A chain of roles brings a book into being. The text a designer receives has already passed through the author, the agent, the publisher and several levels of editor. Only when you know who has the right to change the content do you know how far your design can go.</li>
+<li>Text and image share one chapter. If a cover takes a stylistic approach, the content should be its visual starting point, keeping a balance between the spirit of the author's original work and the designer's personal creativity. The book's example uses hazy poetic imagery to give readers something to ponder.</li>
+<li>The production chapter describes CMYK as a sequence of steps: the paper passes in turn through four sets of blanket and impression cylinders, printing halftone images and solid text in register.</li>
+<li>So the book designer's drawing board includes people, pages and the printing press, not just the cover.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Fold a sheet of paper twice, label the folio and the quarto, and mark which edge is the head.</li>
+<li>List the roles involved in this project, and note who has to approve the cover.</li>
+<li>When making a stylised cover, write two sentences: one on the spirit of the book, one on the creative idea you want to add. Check that the two do not cancel each other out.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-book-design-1.jpg" alt="Stylistic expression on a cover"><figcaption>A stylistic cover takes the content as its starting point and must strike a balance between the spirit of the author's original work and the designer's personal creativity. Source: <span lang="zh-Hant">《書籍設計》</span>, p.169</figcaption></figure>
+<figure><img src="assets/book-print/books/b-book-design-2.jpg" alt="Four-colour printing steps"><figcaption>The paper passes in turn through four sets of blanket and impression cylinders, printing halftone images and solid text in register. Source: <span lang="zh-Hant">《書籍設計》</span>, p.218</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How many pages do you get when you fold a sheet once, and then once more? How does this relate directly to "folio" and "quarto"?</li>
+<li>When a cover carries a strong personal style from the designer, what does the book remind you to keep hold of? Write two sentences about the book you are working on: one on what the content needs, one on what you want to add.</li>
+</ol>
+<h3 class="book" id="b-questioning-the-art-of-the-book"><span lang="zh-Hant">書藝問道</span></h3>
+<p><strong>Author:</strong> Lü Jingren</p>
+<p><strong>Scope.</strong> This is a collection of Lü Jingren's writings on book design. It runs from bronze inscriptions, bamboo slips, wooden tablets, silk and scrolls to leaf binding and butterfly binding, then sets out his own concepts: the five senses of the book, "book architecture" (<em>shuzhu</em>), editorial design before layout, binding last, and design that is worth what it costs. Use it to break the habit of thinking "book design means designing the cover".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Once you receive a text, there are three steps. The first is editorial design: take the text apart like a film director, and work with the author, editor and production to find a way of telling it. The second is layout design: type, type size, images, space, the rhythm of grey tones, and hierarchy. Binding is the last step, and the three steps must still echo one another.</li>
+<li>The five senses anticipate what readers feel when they pick up the book: sight, the smell of ink and paper, the feel in the hand, the sound of turning pages and the voice reading in your head, and the taste for the book's character. Reading a paper book includes its form, its touch and interaction, not just recognising words.</li>
+<li>He uses the phrase from <span lang="zh-Hant">《考工記》</span>, "the right season, the energy of the land, fine materials, skilled work", to argue that art and craft must come together. Tradition should be carried on by making something new from the old: neither copying the ancients nor taking Western methods as the only standard.</li>
+<li>Information visualisation in books turns the order and logic of information into a language that is easy to grasp and remember. What the designer builds for readers is a reading space.</li>
+<li>Design should be worth what it costs. Digital communication is convenient, but it also means editors no longer meet in person; he stresses the human warmth in passing a manuscript along. The book's examples include the dragon-scale binding of <span lang="zh-Hant">《三十二篆體金剛般若波羅蜜經》</span>, an Olympic photo book shaped like the Water Cube, and Zhu Yingchun's <span lang="zh-Hant">《蟻吃》</span>.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Take a new text through the three steps: first set the order of the narrative, then the rhythm of the pages, and only last decide what the binding lets the hand feel.</li>
+<li>Besides sight, choose one more sense, and state which paper, ink or way of turning pages creates it.</li>
+<li>If you borrow a traditional binding, write down what is new about it this time, not just its old name.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-questioning-the-art-of-the-book-1.jpg" alt="Dragon-scale binding and Serindia"><figcaption>The page sets side by side the dragon-scale binding of <span lang="zh-Hant">《三十二篆體金剛般若波羅蜜經》</span> and design notes for <span lang="zh-Hant">《西域考古圖記》</span>. Source: <span lang="zh-Hant">《書藝問道》</span>, p.73</figcaption></figure>
+<figure><img src="assets/book-print/books/b-questioning-the-art-of-the-book-2.jpg" alt="Water Cube and Ant Mutterings"><figcaption>The outer cover of the Olympic photo book takes the structure of the Water Cube, and the same page also records Zhu Yingchun's <span lang="zh-Hant">《蟻吃》</span>. Source: <span lang="zh-Hant">《書藝問道》</span>, p.315</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What are Lü Jingren's three steps after receiving a text? Why does binding come last?</li>
+<li>Of the five senses, besides sight, which one will your next book let readers meet? Does it depend on the paper, the ink, or the sound of turning pages?</li>
+</ol>
+<h3 class="book" id="b-new-book-design"><span lang="zh-Hant">現代圖書設計</span></h3>
+<p><strong>Original title:</strong> <em>New Book Design</em></p>
+<p><strong>Scope.</strong> This is a translated introduction to contemporary book design. Its contents are divided into Packaging, Navigation, Structure, Special Features, a Glossary and an Index. It interviews the publisher Lars Müller and the designers Derek Birdsall and Irma Boom, and uses materials, binding and belly bands to discuss examples that turn the book into an object. Use it to tell apart "books that can go on a shelf" and "books made once as works of art".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Some books, together with their accessories, become objects. Helmut Newton's <em>SUMO</em> weighs tens of kilograms and comes with an aluminium stand designed by Philippe Starck; Irma Boom's book for SHV runs to more than two thousand pages, took several years of work with historians, and was a limited-edition gift.</li>
+<li>Uniqueness often comes from the material itself. Freitag uses recycled truck tarpaulin for its covers and bags, so every copy is different; Paul Smith's book has a synthetic resin slipcase, changes paper and printing within the text, and includes loose posters and a magnifying glass.</li>
+<li>The metal cover of <em>Spoon</em> bends into the curve of a spoon, and the inside pages bend with it. The design also disrupts the neat edges of the other books on the shelf.</li>
+<li>Most books are still bound by the limits of cover, format and binding. The business model of foreign editions keeps text layouts conservative. These unusual books mark the boundary; they are not everyday models.</li>
+<li>The interviews show positions. Birdsall did not give in to the temptations of computer typesetting at the time; Boom's books are the result of long collaboration. The glossary chapter is useful for checking binding terms.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Sort the cases into "shelf books" and "object books". Borrow from object books only when the print run and budget really are special.</li>
+<li>When you see a metal, inflatable or cloth cover, write down how it changes the inside pages and the shelf, not just whether it looks good in the photo.</li>
+<li>When you read an interview, note which then-popular approach the designer rejected.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-new-book-design-1.jpg" alt="Contents page"><figcaption>The contents divide the book into Packaging, Navigation, Structure and Special Features, followed by the Glossary and Index. Source: <span lang="zh-Hant">《現代圖書設計》</span>, p.7</figcaption></figure>
+<figure><img src="assets/book-print/books/b-new-book-design-2.jpg" alt="Format and page count"><figcaption>The case lists the publisher Robin Kinross, a format of 233mm×172mm, 168 pages, and two edition years, 1996 and 2001. Source: <span lang="zh-Hant">《現代圖書設計》</span>, p.123</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How does the curve of the metal cover of <em>Spoon</em> affect the inside pages? Is it still just cover decoration?</li>
+<li>Why, according to the book, are most book layouts still conservative? If your project has to sit on an ordinary shelf, which "every copy is different" approach would you give up?</li>
+</ol>
+<h3 class="book" id="b-paradigm-revolution-the-beginnings-of-modern-chinese-book"><span lang="zh-Hant">範式革命：中國現代書籍設計的發端 1862-1937</span></h3>
+<p><strong>Author:</strong> Zhao Jian</p>
+<p><strong>Scope.</strong> Borrowing Thomas Kuhn's concept of the paradigm, Zhao Jian studies how Chinese book design shifted from thread-bound books to paperbacks between 1862 and 1937. The book has four chapters: paradigm theory, the decline of the traditional paradigm, the paperback in the New Culture movement, and the foundations of early modern book design, covers, and the formation of "book binding and design" (<em>zhuangzhen</em>) as a profession. Use it to explain why a whole system of making books can be replaced.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A paradigm here is the whole way a community copies, binds and reads books, including its signs, technology, physical form and distribution. The shift was driven by new ideas and by changes in social institutions from the late Qing onwards.</li>
+<li>The traditional paradigm covers the origins of the Chinese book, the social function of reproduction technology, physical forms, and carving and printing. As thread-bound publishing declined, Western learning brought new books. The preface names the key words of this history as "crisis" and "choice".</li>
+<li>The prelude to the paperback was the early Western-style book and a new publishing industry. The paperback is seen as a symbol of the New Culture, and the book also describes wrapped-back binding after the revolution and the basic structure of the paperback.</li>
+<li>The foundations of early modern design were new members of the metal type family and changes in page structure and reading habits. Covers moved from text to images, and cover art shows both "borrowing" (<em>nalai</em>, taking from abroad) and transformation.</li>
+<li>Only after "book binding and design" was given a name did it form a professional community. The plates show Tao Yuanqing's wire-stitched paperback and Feng Zikai's cover for <span lang="zh-Hant">《文壇逸話》</span>, as well as the 1911 cover of <span lang="zh-Hant">《小説月報》</span> in 16mo format.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When describing a historical book, fill in four boxes: who published it, what technology reproduced it, how it is bound, and what the cover is doing.</li>
+<li>Use "crisis" to frame your question: what new content could the old form no longer hold?</li>
+<li>Before making your own book, state which paradigm you stand in: the ritual of thread binding, the continuous reading of the paperback, or some point where the two join.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-paradigm-revolution-the-beginnings-of-modern-chinese-book-1.jpg" alt="Covers by Tao Yuanqing and Feng Zikai"><figcaption>The plates include a wire-stitched paperback cover designed by Tao Yuanqing and Feng Zikai's cover for <span lang="zh-Hant">《文壇逸話》</span>. Source: <span lang="zh-Hant">《範式革命：中國現代書籍設計的發端 1862-1937》</span>, p.210</figcaption></figure>
+<figure><img src="assets/book-print/books/b-paradigm-revolution-the-beginnings-of-modern-chinese-book-2.jpg" alt="Short Story Magazine cover"><figcaption>The cover of <span lang="zh-Hant">《小説月報》</span> from the third year of the Xuantong reign (1911) and its special supplement are both 16mo. Source: <span lang="zh-Hant">《範式革命：中國現代書籍設計的發端 1862-1937》</span>, p.132</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What kind of overall change in book design does Zhao Jian use Kuhn's "paradigm" to explain?</li>
+<li>After the thread-bound paradigm entered its crisis, what new habits appeared in paperback layouts and covers? Support your answer with a year or a work from the book.</li>
+</ol>
+<h3 class="book" id="b-the-complete-handbook-of-computer-prepress-technology-2nd"><span lang="zh-Hant">電腦印前技術完全手冊（第2版）</span></h3>
+<p><strong>Scope.</strong> This is the second edition of a hands-on manual for computer prepress, in two parts: image and text processing and output, and binding, imposition and worked examples. It describes a printed piece as ten stages, from taking the brief to printing, then grounds the process in specific jobs through InDesign examples of a poster, a newspaper and a book, plus appendices on paper sizes, folding, paper thickness and type size conversion.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The ten stages are: taking the brief, input, adjustment, text, layout, saving, printing, output, proofing and press printing. They group into three processes: pre-production, layout and output. The book's chapters explain the terms in this order.</li>
+<li>Taking the brief is the stage where things most often go wrong. If sales staff are not familiar with production and printing, they may promise the client an effect the process cannot achieve. The book suggests that, where possible, a designer should listen to the client's requirements too, and then rewrite them into a plan that can actually be made.</li>
+<li>The materials a client hands over include text manuscripts and images or project files on various disks. The input stage has to decide separately on the scanning medium, scan type, mode, resolution, enlargement, filters and descreening.</li>
+<li>The second part covers imposition by type of job: 16mo single sheets and folded leaflets, covers, folders, business cards, tickets, cassette and CD inserts, mixed (gang) imposition, and how to calculate a magazine spine, followed by carrier bags and spot-colour packaging boxes.</li>
+<li>The appendices are tables to look up while working: international standard formats, paper sizes, folding styles, paper thickness, type sizes and point sizes, envelope sizes, and grammage conversion.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Place the project you are working on within these ten stages, and mark which step you are on now. If a scan was not descreened, do not leave the fix until the output stage.</li>
+<li>When taking a brief, write the client's own words and your rewritten production process side by side, one sentence each.</li>
+<li>To calculate a spine, look up the thickness table; for tickets or cards, look at the mixed imposition examples. Do not force a signature diagram onto them.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/book-print/books/b-the-complete-handbook-of-computer-prepress-technology-2nd-1.jpg" alt="Snapping anchor points to guides"><figcaption>An imposition example shows how to select anchor points and drag them onto a guide to align an image. Source: <span lang="zh-Hant">《電腦印前技術完全手冊（第2版）》</span>, p.286</figcaption></figure>
+<figure><img src="assets/book-print/books/b-the-complete-handbook-of-computer-prepress-technology-2nd-2.jpg" alt="Conversion tables in the appendix"><figcaption>The appendix gathers conversions for type sizes and point sizes, stroke weights, envelope sizes and paper grammage. Source: <span lang="zh-Hant">《電腦印前技術完全手冊（第2版）》</span>, p.9</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Write one sentence each turning taking the brief, input, layout and output into an action in this week's project. Which step is most likely to be committed to too early?</li>
+<li>Why should you think separately about descreening and resolution when scanning, instead of just dragging images into the layout?</li>
+</ol>
+<!-- BOOKS:END -->
+      </div>
+
+      <nav class="pager" aria-label="Categories"><a href="06_packaging.html" data-label="06 Packaging"><span>Previous guide</span><strong>06 Packaging</strong><i aria-hidden="true">&rarr;</i></a><a class="next" href="08_infographics.html" data-label="08 Information Graphics"><span>Next guide</span><strong>08 Information Graphics</strong><i aria-hidden="true">&rarr;</i></a></nav>
+    </main>
+    <aside class="rail" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a>
+    </aside>
+  </div>
+  <script src="js/guide.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scene.js"></script>
+  <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, theme: "dark", themeVariables: { background: "#101b34", primaryColor: "#1b2b4d", primaryTextColor: "#e6eef8", primaryBorderColor: "#4e6586", lineColor: "#8ea0b8", fontFamily: "Source Sans 3, sans-serif" } });
+  </script>
+</body>
+</html>

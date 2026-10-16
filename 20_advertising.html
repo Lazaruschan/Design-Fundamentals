@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1428">
+  <title>Advertising · Design Fundamentals</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/guide.css">
+</head>
+<body class="page-guide">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="loader" id="loader" data-label="20 Advertising" aria-hidden="true">
+    <p class="loader-label">SSHD2382 / Design Fundamentals</p>
+    <div class="loader-box">
+      <span class="plus tl"></span><span class="plus tr"></span><span class="plus bl"></span><span class="plus br"></span>
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg>
+    </div>
+    <p class="loader-count" data-count-slots></p>
+    <p class="loader-page"></p>
+  </div>
+  <header class="site-head">
+    <a class="logo" href="index.html" aria-label="Design Fundamentals, home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg><span>Fundamentals<sup>&reg;</sup></span></a>
+    <nav class="head-nav" aria-label="Site">
+      <a class="pill pill-solid" href="index.html#browse" data-magnetic><span data-text="Browse">Browse</span></a>
+      <button class="pill pill-line" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-magnetic><span data-text="Menu">Menu</span><i class="burger" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <div class="menu-panel" id="menu" inert>
+    <div class="menu-inner">
+      <p class="menu-label">(Guides)</p>
+      <ol class="menu-list"><li><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span class="menu-num">01</span><span class="menu-name">Design Basics &amp; Composition</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="02_colour.html" data-label="02 Colour"><span class="menu-num">02</span><span class="menu-name">Colour</span><span class="menu-week">Week 8</span></a></li><li><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span class="menu-num">03</span><span class="menu-name">Typography &amp; Lettering</span><span class="menu-week">Week 9</span></a></li><li><a href="04_layout-grid.html" data-label="04 Layout &amp; Grid Systems"><span class="menu-num">04</span><span class="menu-name">Layout &amp; Grid Systems</span><span class="menu-week">Week 3, 4, 5</span></a></li><li><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span class="menu-num">05</span><span class="menu-name">Logo &amp; Branding</span><span class="menu-week">Week 10, 11</span></a></li><li><a href="06_packaging.html" data-label="06 Packaging"><span class="menu-num">06</span><span class="menu-name">Packaging</span><span class="menu-week">Week 11</span></a></li><li><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span class="menu-num">07</span><span class="menu-name">Book Design &amp; Print</span><span class="menu-week">Week 5, 9</span></a></li><li><a href="08_infographics.html" data-label="08 Information Graphics"><span class="menu-num">08</span><span class="menu-name">Information Graphics</span><span class="menu-week">Week 4</span></a></li><li><a href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span class="menu-num">09</span><span class="menu-name">Interaction, Web &amp; UX</span><span class="menu-week">Week 11 (and 4)</span></a></li><li><a href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span class="menu-num">10</span><span class="menu-name">Graphic Design Practice</span><span class="menu-week">Week 1, 11</span></a></li><li><a href="11_interior.html" data-label="11 Interior Design"><span class="menu-num">11</span><span class="menu-name">Interior Design</span><span class="menu-week">Further reading</span></a></li><li><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span class="menu-num">12</span><span class="menu-name">Architecture &amp; Space</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="13_product.html" data-label="13 Product Design"><span class="menu-num">13</span><span class="menu-name">Product Design</span><span class="menu-week">Week 11 (and 6–7)</span></a></li><li><a href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span class="menu-num">14</span><span class="menu-name">Design &amp; Art History</span><span class="menu-week">Week 1</span></a></li><li><a href="15_theory-psychology.html" data-label="15 Design Theory &amp; Psychology"><span class="menu-num">15</span><span class="menu-name">Design Theory &amp; Psychology</span><span class="menu-week">Week 4, 6–7, 10</span></a></li><li><a href="16_pattern-ornament.html" data-label="16 Pattern &amp; Ornament"><span class="menu-num">16</span><span class="menu-name">Pattern &amp; Ornament</span><span class="menu-week">Week 8 (and 6–7)</span></a></li><li><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span class="menu-num">18</span><span class="menu-name">Magazines &amp; Annuals</span><span class="menu-week">Week 1–13</span></a></li><li><a href="20_advertising.html" data-label="20 Advertising"><span class="menu-num">20</span><span class="menu-name">Advertising</span><span class="menu-week">Week 10, 11</span></a></li></ol>
+      <div class="menu-foot"><span>SSHD2382 Design Fundamentals</span><span>Eighteen guides, thirteen weeks</span><a href="index.html">Home</a></div>
+    </div>
+  </div>
+  <canvas class="scene" id="scene" data-scene="page" data-cat="20" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <p class="side-brand">SSHD2382 / Guides</p>
+      <label class="visually-hidden" for="q">Search categories</label>
+      <input class="search" id="q" type="search" placeholder="Name, term, or category" autocomplete="off">
+      <p class="empty" id="empty" hidden>No category matches.</p>
+      <nav aria-label="Categories"><div class="side-group"><p class="side-label">Categories</p><a href="01_design-basics.html" data-search="01 design basics design basics &amp; composition point, line, plane, composition, and the four design principles week 2, 6–7 1. scope 2. core concepts 3. proportion &amp; geometry 4. principles &amp; methods 5. selected figures 6. source bookshelf 7. study cues 7. each book 藝術·設計的平面構成 藝術·設計的立體構成 藝術·設計的紙的構成 藝術·設計的光的構成 平面設計原理 通用設計法則 美國視覺設計學院叢書：設計元素（平面設計樣式） 寫給大家看的設計書：實例與創意 黃金比例 設計的教室 設計的方法 談繪畫構圖 1000多個圖形元素：獨特的設計元素 設計中的點線面 平面設計法則 設計幾何學：關於比例與構成的研究 藝術·設計的平面構成（繁體版） 探索幾何：平面視覺構建 好造型的設計元素 和諧之美：探索設計中的黃金比例 分寸設計：發現黃金比例恆久之美 設計元素：平面設計樣式（英文原書） 寫給大家看的設計書（第3版） 設計元素：平面設計樣式 國際平面設計基礎教程：規格設計（format） 國際平面設計基礎教程：圖形設計（image） 國際平面設計基礎教程：設計思維（thinking） 寫給大家看的設計書（第4版） 平面設計的七大要素 綜合造型設計基礎 美國視覺設計學院用書：設計元素（平面設計樣式） 視覺原理 設計力：寫給大家的平面設計法則 通用設計法則（英文版） the elements of graphic design: space, unity, page architecture, and type universal principles of design design elements: a graphic style manual robin williams design workshop geometry of design: studies in proportion and composition the design method: a philosophy and process for functional visual communication 1000 graphic elements: special details for distinctive designs the essential principles of graphic design geometry of design: studies in proportion and composition design elements: understanding the rules and knowing when to break them geometry of design: studies in proportion and composition , 2nd edition (revised and updated) design elements: a graphic style manual the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual basics design 01: format basics design 04: image basics design 08: design thinking the non-designer&#x27;s design book: design and typographic principles for the visual novice , 4th edition the 7 essentials of graphic design design elements: a graphic style manual principles of visual perception universal principles of design"><span class="side-num">01</span> Design Basics &amp; Composition</a><a href="02_colour.html" data-search="02 colour colour hue, value, chroma, colour systems, palettes, and colour psychology week 8 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術·設計的色彩構成 寫給大家看的色彩書1：設計配色基礎 寫給大家看的色彩書2：色彩怎麼選，設計怎麼做 梁景紅談：色彩設計法則 配色設計原理 七日掌握設計配色基礎 配色設計從入門到精通 平面設計配色全攻略 美國色彩基礎教材 色彩應用：平面設計配色經典創意 黑白灰設計：摒棄有彩色的設計法則 美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式 觀念之色：中國傳統色彩研究 色彩搭配的黃金法則 新手配色寶典：2000個配色案例不怕你不會 像藝術家一樣思考之三：貝蒂的色彩 國際平面設計基礎教程：colour色彩設計 平面設計綜合配色手冊 色彩怎麼選，設計怎麼做 色彩感知學 色彩構成 色彩設計：日本平面設計師參考手冊 色彩設計的100個亮點 色彩設計的原理 設計入門教室3：色彩設計的原理 設計密碼：綜合配色完全攻略 color basics color design workbook: a real-world guide to using color in graphic design drawing for graphic design: understanding conceptual principles and practical techniques to create unique, effective design solutions color: a course in mastering the art of mixing colors basics design 05: colour 100 bright ideas for colour"><span class="side-num">02</span> Colour</a><a href="03_typography.html" data-search="03 typography typography &amp; lettering letter structure, classification, typesetting, and mixed chinese and latin type week 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book typography 字誌：issue 01 typography 字誌：issue 05_pdf 自由字在：字體設計與創意 中國字體設計人：一字一生 西文字體1：字體的背景知識和使用方法 西文字體2：經典款字體及其表現方法 文字設計的原理_文字設計所必須的信息和技巧 新概念字體基礎&amp;應用_蘇克 説文解字 字言字語 字體傳奇 影響世界的helvetica 治字百方 字型散步 街道文字_小林章 西文排版_排版的基礎和規範 漢字書法之美_蔣勳 文字的故事 意匠文字 設計師的字體世界 文字的力與美 漢字的誘惑 中國美術字史圖説 漢字設計與應用 十二生肖形意字 書法字體設計技巧與應用 平面排版_基本的基本 tokoy tdc vol.28⭐ 排版的風格 字體設計的規則與藝術 tokoy tdc vol.29⭐ 字體呈現3⭐ 字體設計基礎 【會員專供】中國近現代字體應用文獻展 【會員專供】文字設計在中國邀請展 【會員專供】超語境國際文字設計論壇 世界文字發展史_11407704 今日字體 創意字體設計與製作-www.afx365.com 國際平面設計基礎教程-typography字體設計 字型之不思議 字型之不思議 小冊-手寫 字體呈現-q 字體呈現二（完整） 字體呈現小冊一 字體呈現小冊二 字體怡人 字體設計100+1 字體，海報設計部分 展覽，印刷字體部分（雙頁） 序言 排版造型_白井敬尚 文字設計的原理 書於竹帛中國古代的文字記錄_12270059 歐文字體ⅰ 歐文字體ⅱ 自由“字”在 字體設計與創意13696100(1) 設計入門教室 2 文字設計的原理 designing type basics design 03: typography written on bamboo and silk: the beginnings of chinese books and inscriptions"><span class="side-num">03</span> Typography &amp; Lettering</a><a href="04_layout-grid.html" data-search="04 layout grid layout &amp; grid systems grids, hierarchy, and arranging image with text week 3, 4, 5 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 日本版式設計原理_p159 跨平台的視覺設計版式設計原理 破譯文字編排設計 破譯網格設計 美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書 版式設計：日本平面設計師參考手冊 超越平凡的平面設計：怎樣做好版式 版式設計+給你靈感的全球最佳版式創意方案 柵格系統與版式設計 國際版式設計基礎教程 七日掌握版面設計基礎 美國編排設計教程 平面設計中的網格系統 版式設計風暴ⅱ 網格系統與版式設計 創意版式設計_王紹強 版面設計的原理_設計前必須知道的事情 版式設計全攻略(佐) 進階理解版式設計 版式設計：合適最好 版式設計從入門到精通 版面設計網格構成 版式設計原理_案例篇：提升版式設計的55個技巧 秩序之美_網頁中的網格設計 日本版式設計原理 版式設計法則 版式創意大爆炸 版式設計+2版式創意方案 版式設計風暴 [商業版式設計的方法] 版式編排設計 版式設計 今日版式 印刷的終結：戴維·卡森的自由版式設計 國際平面設計基礎教程-grids網格設計 國際平面設計基礎教程-layout版式設計(第2版) 版式設計-www.afx365.com 版式設計原理 版式設計原理-全綵教程 版式設計實用手冊-www.afx365.com 版式設計實用手冊.suni視覺設計.全綵版 版式設計從入門到精通-www.afx365.com 版面設計黃金法則 破譯文字編排設計-www.afx365.com 秩序之美——網頁中的網格設計英文版 編排設計教程 設計入門教室 1 版面設計的原理 超越平凡的平面設計 版式設計原理與應用 typography workbook: a real-world guide to using type in graphic design making and breaking the grid: a graphic design layout workshop graphic designer&#x27;s essential reference: visual elements, techniques, and layout strategies for busy designers before &amp; after page design grid systems: principles of organizing type best practices for graphic designers, grids and page layouts: an essential guide for understanding and applying page design principles typographic systems grid systems: principles of organizing type layout: making it fit: finding the right balance between content and space ordering disorder: grid principles for web design the end of print: the graphic design of david carson basics design 07: grids basics design 02: layout , 2nd edition typography workbook: a real-world guide to using type in graphic design ordering disorder: grid principles for web design typographic systems before &amp; after: how to design cool stuff"><span class="side-num">04</span> Layout &amp; Grid Systems</a><a href="05_logo-branding.html" data-search="05 logo branding logo &amp; branding mark types, identity systems, and brand strategy week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book logo 百年 設計品牌（原田進） 用設計做品牌 品牌設計+：給你靈感的 best 品牌形象方案 品牌設計+：創造 top 品牌的色彩應用方案 品牌設計+：創造 brand 力的動態 logo 設計（1） 標誌設計 logo design 標誌新語 iii really good logos explained designing brand identity 超越 logo 設計 brand 創新與設計：創意、建構和維護精彩品牌標識之完全指南 標誌設計指南 logo design workbook 品牌標誌：top 設計 150 例 消費森林 × 品牌再生：李永銓的設計七大法則 品牌中的色彩 圖案無限：品牌中的圖案 品牌簡單之道 what brand 什麼是品牌設計 品牌 100 一個 logo 的誕生 視覺美食：最佳餐飲品牌設計 溝通時尚品牌 100 個經典 logo 品牌設計之美：冷色調的色彩詮釋 logo：29 個經典的前世今生 logo 百年 品牌至上：logo 設計法則與案例應用解析 品牌識別法則：100 條原理 no logo：顛覆品牌全球統治 脫穎而出的品牌致勝秘密 精簡：無印良品與品牌理念打造 電商品牌形象設計 品牌標誌：頂級設計 150 例 設計品牌 世界標誌大典 1 品牌設計法則（徐適） 日本彩色商標與企業識別 10 解構 logo 設計：300 例國際 logo 分析與解讀 超越 logo 設計：國際頂級平面設計師的成功法則 超越 logo 設計：國際頂級平面設計師的成功法則 logo design love: a guide to creating iconic brand identities designing brand identity: a complete guide to creating, building, and maintaining strong brands logo design workbook: a hands-on guide to creating logos creative solutions: logos: making a strong mark: 150 strategies for logos that last brandsimple: how the best brands keep it simple and succeed what is branding? logo life: life histories of 100 famous logos tm: the untold stories behind 29 classic logos brand identity essentials: 100 principles for designing logos and building brands no logo: taking aim at the brand bullies designing brand identity: an essential guide for the whole branding team creative solutions: logos: making a strong mark: 150 strategies for logos that last deconstructing logo design: 300+ international logos analyzed and explained logo design love: a guide to creating iconic brand identities logo design love: a guide to creating iconic brand identities"><span class="side-num">05</span> Logo &amp; Branding</a><a href="06_packaging.html" data-search="06 packaging packaging structure, the shelf, materials, and brand week 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 創造品牌的包裝設計 現代設計色彩教材叢書：包裝設計色彩 包裝設計藝術：王紹強 紙品包裝結構解析 新包裝 環保包裝設計 50 trade secrets of great design packaging 1000 package designs：a comprehensive guide 拿來就用的包裝設計 食品包裝設計 包裝設計+：給你靈感的包裝方案 包裝設計家：靳埭強與他的設計師朋友 簡約包裝 simply packaging 中式元素視覺傳達：包裝設計 packaging the brand: the relationship between packaging design and brand identity simply packaging"><span class="side-num">06</span> Packaging</a><a href="07_book-print.html" data-search="07 book print book design &amp; print book structure, paper, binding, and print week 5, 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2015 中國最美的書 書籍設計-安德魯 書形：138種創意書籍和印刷紙品設計 如何設計一本畫冊 平面印刷色彩：四色與專色 國際平面設計基礎教程：print&amp;finish印前印後 世界書籍藝術流派 中外裝幀藝術論集 中國古籍版本概要 出版物設計完全手冊 印刷工藝：燙印與凹凸 印前校色實用教程 印前輸出培訓參考：全綵教程-200p 嶄新印通拼版教程 平版印刷拼版手冊 平面設計及印刷業務人員常識備忘手冊 書籍設計 書藝問道 現代圖書設計 範式革命：中國現代書籍設計的發端 1862-1937 電腦印前技術完全手冊（第2版） book design basics design 06: print and finish publication design workbook: a real-world guide to designing magazines, newspapers, and newsletters book design new book design"><span class="side-num">07</span> Book Design &amp; Print</a><a href="08_infographics.html" data-search="08 infographics information graphics visualising information and explaining with diagrams week 4 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 圖解力 以圖釋義：信息圖表設計 信息圖表設計入門 信息圖表設計：全球創意入門"><span class="side-num">08</span> Information Graphics</a><a href="09_interaction-ux.html" data-search="09 interaction ux interaction, web &amp; ux goal-directed design, usability, and interface principles week 11 (and 4) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book about face 3：交互設計精髓 about face 4：交互設計精髓（中文彩版） android 交互視覺設計規範 贏在用戶：web 人物角色創建和應用實踐指南 don&#x27;t make me think（英文第 2 版） ui 羣英匯：用戶體驗、交互與視覺設計方法論 web 界面設計 形式感：網頁視覺設計創意拓展與快速表現 關鍵設計報告：改變過去影響未來的交互設計法則 點石成金：訪客至上的網頁秘籍 認知與設計：理解 ui 設計準則 簡約至上：交互設計四策略 見微知著：web 用戶體驗解構 與世界 ui 設計師同行 ux 設計之道：以用戶體驗為中心的 web 設計（第 2 版） ui 設計黃金法則：觸動人心的 100 種用戶界面 sexy web design：creating interfaces that work 用戶體驗的要素：以用戶為中心的 web 設計 網頁設計（web designer emag） 點石成金：訪客至上的網頁設計秘笈 ios 9 界面設計規範剖析及實戰 不要讓我思考（don&#x27;t make me think） 贏在用戶：web 人物角色創建和應用實踐指南 軟件觀念革命：交互設計精髓 一目瞭然：web 軟件顯性設計之路 就這麼簡單：web 開發中的可用性和用戶體驗 微交互：細節設計成就卓越產品 怦然心動：情感化交互設計指南 用戶體驗度量 用戶體驗要素：以用戶為中心的產品設計（原書第 2 版） 眾妙之門：網站 ui 設計之道 瞬間之美：web 界面設計如何讓用戶心動 破繭成蝶：用戶體驗設計師的成長之路 簡約至上：交互設計四策略 網頁設計創意書 認知與設計：理解 ui 設計準則 認知與設計：理解 ui 設計準則（第 2 版） 贏在用戶：web 人物角色創建和應用實踐指南 體驗·度：簡單可依賴的用戶體驗（彩版） about face 3: the essentials of interaction design , 3rd edition about face: the essentials of interaction design , 4th edition the user is always right: a practical guide to creating and using personas for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing web interfaces: principles and patterns for rich interactions designing interactions don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing with the mind in mind: simple guide to understanding user interface design rules simple and usable web, mobile, and interaction design a project guide to ux design: for user experience designers in the field or in the making , 2nd edition digital design essentials: 100 ways to design better desktop, web, and mobile interfaces the elements of user experience: user-centered design for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition don&#x27;t make me think: a common sense approach to web usability , 2nd edition the user is always right: a practical guide to creating and using personas for the web about face 2.0: the essentials of interaction design designing the obvious: a common sense approach to web application design microinteractions: designing with details seductive interaction design: creating playful, fun, and effective user experiences measuring the user experience: collecting, analyzing, and presenting usability metrics the elements of user experience: user-centered design for the web and beyond , 2nd edition the smashing book designing the moment: web interface design concepts in action simple and usable web, mobile, and interaction design the web designer&#x27;s idea book: the ultimate guide to themes, trends and styles in website design designing with the mind in mind: simple guide to understanding user interface design rules designing with the mind in mind: simple guide to understanding user interface design guidelines , 2nd edition the user is always right: a practical guide to creating and using personas for the web"><span class="side-num">09</span> Interaction, Web &amp; UX</a><a href="10_graphic-practice.html" data-search="10 graphic practice graphic design practice process, design thinking, creative methods, and practice week 1, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 100 個改變平面設計的觀念 嘿，設計 圖解平面設計規範 40 天成為資深設計師 ideo：設計改變一切 創意之道（the copy book） 非常規標誌設計：6 個不必遵守的基礎原則 最佳設計 100 細則 少即是多：減法設計 視覺傳達設計實踐 1000 retail graphics 高效設計溝通之道（原書第 2 版） 完成設計：從理論到實踐 美國視覺傳達完全教程 零 zerro：世界符號大全 平面與空間 創意工場：提升設計技巧的 80 個挑戰 日本的手感設計 設計的品格 設計並不重要 我的第一本設計書 平面設計過程 小平面 北歐設計 王志弘作品收集 做喜歡的事：25 個亞太創意設計工作室 做喜歡的事：25 個歐美創意設計工作室 設計修辭法 設計與死 設計的覺醒 平面設計死了嗎 放眼德國設計 放眼法國設計 漫遊英國設計 漫步日本設計 荷蘭設計 設計的手感 歲寒三友：詩意設計作品集 廣州美術學院碩士研究生作品集 靳埭強與格呂特納的海報對話 靳埭強設計獎 陳幼堅最新作品 平面設計八人 設計集 設計心法 100+1 靳叔說：設計語錄 設計的圖謀：改變世界的80個日常創意陰謀 遺產與更新：中國設計教育反思 設計師演講錄：icograda 世界設計大會 設計創意流程：用mba思維成就設計高效能 全球優秀93位平面設計師作品集 遊遊遊：說說我的設計私想 對話日本設計 設計師不讀書 設計質 大話設計師 從製造到設計：20世紀德國設計 意東方：設計中的東方元素（一） 49個成就平面設計的關鍵詞 企業形象設計家：靳埭強與他的設計師朋友 海報設計家：靳埭強與他的設計師朋友 生活·心源：靳埭強設計與藝術 靳埭強·身度心道：中國文化為本的設計·繪畫·教育 ideo 設計現象探究：patterns 2010 設計效果圖 設計百年：20世紀平面設計的先驅 設計解決 像設計師那樣思考 圖形設計新元素 如何把國外作品轉化為自己的能力（第二部） 平面設計：我的第2語言 為什麼設計 理性設計 至關重要的設計 解決100個煩惱的100種設計 設計推導學 中國古代設計思想史略 什麼是平面設計？ 創意工場：提升設計技巧的80個挑戰 動畫分鏡台本設計 吳東龍的東京設計生活100 寫給大家看的設計書（第三版） 好設計的造型元素 完成設計：從理論到實踐 宣傳冊設計與製作 平面設計200年 新興實踐：設計的專業、價值與途徑 日本當代插圖集 最全設計規範 服務的細節：完全商品陳列115例 為真實世界的設計 生命的幻象：迪士尼動畫造型設計 異想天開：設計初始 知日・設計力 移動設計 符號與數字：平面中的視覺表達 第三種創新：設計驅動式創新 編輯設計 至關重要的設計 至關重要的設計（布倫納） 蘋果首席設計師：喬納森傳 視覺傳達設計 視覺傳達設計考研手繪 視覺營銷：零售店櫥窗與店內陳列 託尼克：設計為何 設計＋生活：佐藤 設計＋生活：奎內克 設計＋生活：姚爾丹 設計＋生活：孔喬 設計＋生活：府烈茶 設計＋生活：王翰尼 設計＋生活：白同異 設計＋生活：蒙古齊 設計＋生活：雷又西 設計中的錯視 設計五感：亂 設計五感：惡 設計五感：拙 設計五感：精 設計入門教室：設計的基本規則 設計力就是溝通力 設計，在人人設計的時代 設計密碼 設計師不可不知的 100 種世界經典平面設計圖書 設計思維手冊：斯坦福創新方法論 設計思維與方法 設計方法與策略：代爾夫特設計指南 設計的意義 設計的細節：日本經典設計透析 設計與革新：關於未來設計的 50 種思考 設計風尚 5：創意節日宣傳頁設計與製作 設計高手的秘密 設計，在人人設計的時代：社會創新設計導論 這樣擺，最好賣：賣場中的商品陳列技巧 造像量度：佛像唐卡設計比例圖 關於設計的思考 非平面 靳埭強設計獎：平面設計作品集 騰訊網 ued 體驗設計之旅 100 ideas that changed graphic design change by design: how design thinking transforms organizations and inspires innovation the copy book: how 32 of the world&#x27;s best advertising writers write their advertising no rules! logos: radical design solutions that break the rules universal principles of design communicating design: developing web site documentation for design and planning , 2nd edition design evolution: theory into practice graphic communications today creative workshop: 80 challenges to sharpen your design skills graphic design process: from problem to solution: 20 case studies design and the creative process atlas of graphic designers designers don&#x27;t read the graphic design idea book: inspiration from 50 masters a century of graphic design: graphic design pioneers of the 20th century how to think like a great graphic designer graphic design: the new basics graphic design as a second language do you matter? how great design will make people love your company what is graphic design? creative workshop: 80 challenges to sharpen your design skills the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual design evolution: theory into practice graphic style: from victorian to hipster design for the real world: human ecology and social change the illusion of life: disney animation design-driven innovation: changing the rules of competition by radically innovating what things mean editing by design: for designers, art directors, and editors: the classic guide to winning readers do you matter? how great design will make people love your company do you matter? how great design will make people love your company jony ive: the genius behind apple&#x27;s greatest products graphic design solutions visual merchandising: windows and in-store displays for retail why we design design, when everybody designs: an introduction to design for social innovation bibliographic: 100 classic graphic design books delft design guide: design strategies and methods design, form, and chaos design, when everybody designs: an introduction to design for social innovation thoughts on design unflattening"><span class="side-num">10</span> Graphic Design Practice</a><a href="11_interior.html" data-search="11 interior interior design drawings, scale, light, materials, construction, and furnishing further reading 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 零基礎學建築識圖 室內裝飾裝修施工完全圖解教程 室內設計節點手冊：常用節點 室內設計節點手冊：酒店固定傢俱 材料收口 裝飾工藝解析：吊頂篇 裝飾工藝解析：地面篇 裝飾工藝解析：牆面篇 室內設計師必知的100個節點 室內裝飾裝修材料應用與選購 室內設計材料選用實戰手冊 石材應用手冊 設計師的材料清單·室內篇 圖解照明設計 室內照明設計精品教程 室內燈光設計 室內設計師專用燈光設計手冊 室內設計師燈光設計細部解析 照明設計終極聖經 家居色彩設計指南 設計師談家居色彩搭配 設計配色基礎 輕·重·緩·急：搭出耐看配色 人體工程學與室內設計 住宅的設計尺寸剖析書 圖解住宅尺寸與格局設計 室內施工圖實戰教程 室內施工圖製圖標準 室內空間佈局與尺度設計 室內細部設計cad圖集 室內設計尺寸關鍵術 室內設計數據手冊：空間與尺度 室內設計與人體工程學 家裝常用數據尺寸速查 工裝設計尺度數據手冊 人機工程學（第五版） 年輕設計師必修的七堂課 網紅室內設計師ip運營法則 裝修設計師談單簽單一課通 軟裝談單寶典 住宅格局破解術 住宅格局解剖圖鑑 住宅設計剖析手冊 住宅設計解剖書 住得優雅：住宅設計的34個法則 圖解極簡主義設計 室內住宅設計圖解 室內空間設計手冊 室內設計·思維與方法 室內設計基礎 小家越住越大2 打造讓孩子自主學習的住宅 樓梯設計的9個法則 淺談家庭中央空調的使用 牆面設計 裝修設計解剖書 解構收納 設計中的設計 設計師要懂的心理學 室內精細化設計研究 傢俱設計資料圖集 室內設計風格圖文速查 軟裝改造解剖書 軟裝設計元素搭配手冊 軟裝設計師手冊 軟裝風格速查 the lighting bible the interior plan: concepts and exercises 100 things every designer needs to know about people"><span class="side-num">11</span> Interior Design</a><a href="12_architecture-space.html" data-search="12 architecture space architecture &amp; space form, space, order, and proportion week 2, 6–7 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 建築：形式、空間和秩序（第 3 版） 反造型 architecture: form, space, and order , 3rd edition"><span class="side-num">12</span> Architecture &amp; Space</a><a href="13_product.html" data-search="13 product product design minimalism, ten principles of good design, and muji week 11 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 簡約不簡單：極簡風格產品設計 產品極簡主義 無印良品的設計 解密無印良品 20 世紀 50–80 年代中國、德國產品設計回望 無印良品世界觀 創新產品設計與手繪 深澤直人 意識的核心 product design now naoto fukasawa"><span class="side-num">13</span> Product Design</a><a href="14_design-art-history.html" data-search="14 design art history design &amp; art history from manuscripts and arts and crafts through the bauhaus to the digital era week 1 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術簡史 世界平面設計史 醜的歷史 美的歷史 世界當代藝術史 世界現代設計史 中國現代設計與包豪斯 包豪斯道路：歷史、遺澤、世界與中國 包豪斯 運動中的視覺：新包豪斯的基礎 包豪斯：大師和學生們 包豪斯藏品精選集 包豪斯理想：過去與現在 世界現代設計史 中國 外國 工業設計史（第四版） 現代設計百科全書：平面設計的歷史、語言及經典應用 藝術的真相：通往藝術之路 藝術與物理學：時空和光的藝術觀與物理觀 設計藝術史 重要的不是藝術 錢君匋的藝術世界 art: a brief history , 4th edition vision in motion the bauhaus: masters &amp; students by themselves the bauhaus ideal then &amp; now: an illustrated guide to modernist design graphic design, referenced: a visual guide to the language, applications, and history of graphic design gateways to art: understanding the visual arts art &amp; physics: parallel visions in space, time, and light"><span class="side-num">14</span> Design &amp; Art History</a><a href="15_theory-psychology.html" data-search="15 theory psychology design theory &amp; psychology gestalt, cognition, emotional design, and kenya hara week 4, 6–7, 10 1. scope 2. perception 3. cognition &amp; behaviour 4. aesthetics &amp; philosophy 5. principles &amp; methods 6. selected figures 7. source bookshelf 8. study cues 7. each book 審醜：萬物美學 原研哉的設計世界 視覺藝術原理（第八版） 設計心理學 1：日常的設計 設計心理學 2：與複雜共處 設計心理學 3：情感化設計 設計心理學 4：未來設計 日本的八個審美意識 點線面 日式設計美學 康定斯基論點線面 藝術與視知覺 藝術中的精神 圖像與眼睛：圖畫再現心理學的再研究 象徵的圖像：貢布里希圖像文集 設計私語錄：通心粉的孔洞之謎 悲劇的誕生：尼采美學文選 設計中的色彩心理學 設計之美 藝術與視知覺：新編 設計中的設計 設計師要懂心理學（迷你書） 設計心理學 設計心理學（唐納德·a·諾曼） 情感化設計 感性美學 我眼中的設計之美 日式平面美學 淺談設計之美 為什麼設計 重構美學 白 社會心理學（第八版） 藝術與錯覺：圖畫再現的心理學研究 視覺思維 視覺思維（阿恩海姆） 視覺藝術的含義 設計中的設計 設計中的設計（全本） 設計中的設計（原研哉） 設計師要懂心理學 設計心理學（247 頁本） 設計心理學（中文版） 設計美學（廣州美術學院藝術設計教程） 設計與視知覺 象徵的圖像：貢布里希圖像學文集 ugly: the aesthetics of everything prebles&#x27; artforms: an introduction to the visual arts , 8th edition the design of everyday things , revised and expanded edition living with complexity emotional design: why we love (or hate) everyday things the design of future things art and visual perception: a psychology of the creative eye , the new version the image and the eye: further studies in the psychology of pictorial representation symbolic images: studies in the art of the renaissance beautiful thing: an introduction to design art and visual perception: a psychology of the creative eye , the new version 100 things every designer needs to know about people the design of everyday things the design of everyday things emotional design: why we love (or hate) everyday things social psychology , 8th edition art and illusion: a study in the psychology of pictorial representation visual thinking visual thinking meaning in the visual arts: papers in and on art history 100 things every designer needs to know about people the design of everyday things the design of everyday things symbolic images: studies in the art of the renaissance"><span class="side-num">15</span> Design Theory &amp; Psychology</a><a href="16_pattern-ornament.html" data-search="16 pattern ornament pattern &amp; ornament pattern structure, chinese and western motifs, and auspicious meaning week 8 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book (new)世界裝飾紋樣圖典(4000餘種圖案+紋飾百科全書+裝飾藝術寶庫) l&#x27;art arabe 01 秩序感：裝飾藝術的心理學研究 中國紋樣集錦：examples of chinese ornament the grammar of ornament 中國紋樣全集 魏晉南北朝·隋唐·五代卷 世界裝飾圖案-1887-85p圖版 中國紋樣全集 宋·元·明·清卷 中國紋樣全集 戰國·秦·漢卷 中國紋樣全集 新石器時代和商·西周·春秋卷 中國經典紋樣圖鑑 摩洛哥傳統裝飾藝術 敦煌線描 民間美術：湖北挑花、土錦、藍印花布 裝飾文叢特別策劃卷7 貴州傳統蠟染-攝影集 the sense of order: a study in the psychology of decorative art examples of chinese ornament selected from objects in the south kensington museum and other collections"><span class="side-num">16</span> Pattern &amp; Ornament</a><a href="18_magazines-annuals.html" data-search="18 magazines annuals magazines &amp; annuals how to look at annuals and magazines week 1–13 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2021日本平面設計年鑑 45th publication design annual apd亞太設計年鑑no.17(1) brand 12 brand no.36-生活使用手冊2：文創熱量 brand no.37-字己 brand no.38-手工印刷 brand no.39-物料進化 brand no.40-文化時光機1868-1988 brand no.41-看圖説話，你的信息時代 brand no.42.-你好，藝術pdf brand no.43-小物志 brand no.44-貓狗日誌 design 360 雜誌(1) gallery 形錄 全球最佳圖形設計 vol.09 idea 377 novum201901 apd9亞太平面設計年鑑 apd5亞太設計年鑑 中國品牌設計年鑑 2013 日本字體與平面設計大獎年鑑 國家博物館-仙山圖特展 國家博物館-宋末民初上海畫壇 國家博物館-宋代花箋特展 國家博物館-蘇州片及其影響 國家博物館-瓶花與盆景畫特展 國家博物館-書畫菁華特展 idea+10 1 舉一反百的聰明設計法則 idea+10 2 一計點睛的即效設計處方 red-dot-award-concept-2011-2012 red_dot_award_design_concept_2013-2014 brand brand gallery 國際設計年鑑2014 日本品牌與包裝設計年鑑 2016 日本平面創意設計年鑑 2002-2004 疾風迅雷 杉浦康平雜誌設計的半個世紀 眾妙之門：移動web設計精髓（德）smashing雜誌 essentials of mobile design"><span class="side-num">18</span> Magazines &amp; Annuals</a><a href="20_advertising.html" data-search="20 advertising advertising positioning, aida, creative tactics, and point of purchase week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 1001 個廣告法則 pop 廣告設計 智威湯遜手冊 美國廣告設計實用教程 廣告公司的秘密：平面設計師就業寶典 advertising by design: creating visual communications with graphic impact" aria-current="page"><span class="side-num">20</span> Advertising</a></div></nav>
+    </aside>
+    <main class="main" id="content" tabindex="-1">
+      <div class="topbar">
+        <button class="side-toggle" type="button">Guides</button>
+        <nav class="jump" aria-label="On this page"><a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a></nav>
+      </div>
+      <p class="kicker"><a href="index.html">SSHD2382</a> · Category 20</p>
+      <div class="digest">
+<h1 id="advertising">Advertising</h1>
+<p class="meta">Category 20 · Course link: Week 10 Basic Semiotic Concepts, Week 11 Strategic Design and Future Workflows · Main references: <span lang="zh-Hant">《1001 個廣告法則：來自全球最成功的廣告宣傳創意和策略》</span>, <span lang="zh-Hant">《美國廣告設計實用教程》</span>, <span lang="zh-Hant">《POP 廣告設計》</span>, <span lang="zh-Hant">《智威湯遜手冊》</span>, <span lang="zh-Hant">《廣告公司的秘密：平面設計師就業寶典》</span></p>
+
+<h2 id="1-scope">1. Scope</h2>
+<p>This category has 5 complete books, which together cover the three stages of advertising work:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Question</th>
+<th>Key books</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strategy</td>
+<td>What are we selling, to whom, and what do we promise?</td>
+<td><span lang="zh-Hant">《1001 個廣告法則》</span>, <span lang="zh-Hant">《智威湯遜手冊》</span></td>
+</tr>
+<tr>
+<td>Creative</td>
+<td>How do we use one idea to make people remember and act?</td>
+<td><span lang="zh-Hant">《美國廣告設計實用教程》</span></td>
+</tr>
+<tr>
+<td>Execution</td>
+<td>How do we make it work in shops and in print?</td>
+<td><span lang="zh-Hant">《POP 廣告設計》</span>, <span lang="zh-Hant">《廣告公司的秘密》</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The task of advertising can be summed up in three verbs: <strong>Inform, Persuade, Inspire desire</strong> (the title of Part One of <span lang="zh-Hant">《美國廣告設計實用教程》</span>).</p>
+</blockquote>
+<h2 id="2-core-concepts">2. Core Concepts</h2>
+<h3 id="21">2.1 Five Key Questions for a Campaign Strategy</h3>
+<p>Chapter 1 of <span lang="zh-Hant">《1001 個廣告法則》</span> asks you to write down five answers before you start designing:</p>
+<ol>
+<li><strong>What is your product?</strong> Not its specifications, but the problem it solves for customers.</li>
+<li><strong>What is your promise?</strong> One clear, believable and distinctive benefit.</li>
+<li><strong>Who is your target audience?</strong> Age, lifestyle, values, media habits.</li>
+<li><strong>What is your goal?</strong> To raise awareness, change attitudes, encourage trial, or increase repeat purchases?</li>
+<li><strong>What is your budget?</strong> It decides the media, the frequency and the scale of production.</li>
+</ol>
+<h3 id="22-positioning">2.2 Positioning</h3>
+<p>Positioning means deciding which place the brand occupies in the consumer's mind. The book lists 54 ways to position a brand. Common ones include:</p>
+<table>
+<thead>
+<tr>
+<th>Positioning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Original / first</td>
+<td>"The first brand to..."</td>
+</tr>
+<tr>
+<td>Follower / challenger</td>
+<td>"We're number two, so we try harder"</td>
+</tr>
+<tr>
+<td>Low price</td>
+<td>Everyday low prices, value for money</td>
+</tr>
+<tr>
+<td>High price / prestige</td>
+<td>Using price to express quality and status</td>
+</tr>
+<tr>
+<td>Durability, safety, quality</td>
+<td>Building trust through product attributes</td>
+</tr>
+<tr>
+<td>Emotion / lifestyle</td>
+<td>Not talking about the product, but about who the user becomes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23-aida">2.3 AIDA: How Advertising Works</h3>
+<div class="chart">
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13">
+  <path d="M40 20 H360 L330 65 H70 Z" fill="#c8102e"/>
+  <path d="M70 70 H330 L300 115 H100 Z" fill="#a50d26"/>
+  <path d="M100 120 H300 L270 165 H130 Z" fill="#5b5b66"/>
+  <path d="M130 170 H270 L240 215 H160 Z" fill="#1d1d1f"/>
+  <g fill="#fff" text-anchor="middle" font-weight="bold">
+    <text x="200" y="48">Attention</text><text x="200" y="98">Interest</text><text x="200" y="148">Desire</text><text x="200" y="198">Action</text>
+  </g>
+  <g fill="#1d1d1f" font-size="12">
+    <text x="380" y="48">Headline, visual, surprise: stop in 3 s</text>
+    <text x="380" y="98">An audience-relevant question or insight</text>
+    <text x="380" y="148">Benefits, proof, emotional connection</text>
+    <text x="380" y="198">Clear next step: buy, enquire, visit</text>
+  </g>
+</svg>
+</div>
+
+<h3 id="24">2.4 The Parts of a Print Advertisement</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Headline</td>
+<td>The first words people read; carries the core idea</td>
+</tr>
+<tr>
+<td>Visual</td>
+<td>Works with the headline to create a meaning where "one plus one is more than two"</td>
+</tr>
+<tr>
+<td>Body copy</td>
+<td>Adds reasons and proof</td>
+</tr>
+<tr>
+<td>Tagline / Slogan</td>
+<td>A line the brand uses over the long term</td>
+</tr>
+<tr>
+<td>Signature</td>
+<td>Logo, product image, contact details</td>
+</tr>
+<tr>
+<td>Call to action</td>
+<td>Tells readers what to do next</td>
+</tr>
+</tbody>
+</table>
+<p>The relationship between image and text is the core semiotic question in advertising (see Week 10). The image provides the <strong>denotation</strong> (what you see), and the headline steers it towards a particular <strong>connotation</strong> (how you should understand it). In a good advertisement, the image and the text are often incomplete on their own; only together do they produce the "aha" moment.</p>
+<h2 id="3-principles-methods">3. Principles &amp; Methods</h2>
+<h3 id="31-the-creative-revolution">3.1 The Creative Revolution</h3>
+<p><span lang="zh-Hant">《美國廣告設計實用教程》</span> looks back on the "Creative Revolution" in American advertising in the 1960s. Led by Bill Bernbach's DDB, <strong>copywriters and art directors worked in pairs</strong> to develop ideas together, replacing the old process in which the copywriter finished the text and then handed it to an artist for layout. Advertising moved away from listing selling points towards winning people over with wit, honesty, humour and one "Big Idea". George Lois, Lou Dorfsman and Milton Glaser's I❤NY, all covered in the book, are examples of this approach.</p>
+<h3 id="32">3.2 Common Creative Techniques</h3>
+<div class="cards">
+<div><strong>Exaggeration</strong>Push the product's benefit to an extreme so that people understand it at a glance.</div>
+<div><strong>Metaphor</strong>Replace the product with something else and let the audience make the connection themselves.</div>
+<div><strong>Juxtaposition</strong>Put two unexpected elements together to create tension.</div>
+<div><strong>Demonstration</strong>Show the product's effect directly, or a before-and-after comparison.</div>
+<div><strong>Humour</strong>Lowers people's guard and makes the ad more memorable, but must not overshadow the message.</div>
+<div><strong>Ambient</strong>Use real surroundings such as escalators, clothes hangers and street furniture as part of the advertisement.</div>
+</div>
+
+<h3 id="33">3.3 Roles and Workflow in an Advertising Agency</h3>
+<pre class="mermaid">flowchart LR
+  client[&quot;Client&lt;br/&gt;business needs&quot;] --&gt; ae[&quot;Account&lt;br/&gt;brief, budget, timing&quot;]
+  ae --&gt; plan[&quot;Planning&lt;br/&gt;audience insight, positioning&quot;]
+  plan --&gt; cre[&quot;Creative&lt;br/&gt;copywriter + art director&quot;]
+  cre --&gt; prod[&quot;Production&lt;br/&gt;photography, illustration, prepress&quot;]
+  prod --&gt; media[&quot;Media&lt;br/&gt;scheduling, placement&quot;]
+  media -.evaluate results.-&gt; client
+</pre>
+<p><span lang="zh-Hant">《廣告公司的秘密》</span> describes "a day in an advertising agency" from a graphic designer's point of view: receive the <strong>job ticket</strong> (work order) → prepare the original artwork → finish the artwork in Photoshop and layout software → imposition → film output and proofing → prepress checks. It reminds newcomers that however good the idea is, if you do not understand halftone dots, inks, paper and spot colours, the work cannot be printed accurately (see <a href="07_book-print.html">07 Book Design &amp; Print</a>).</p>
+<h3 id="34-pop">3.4 POP Advertising (In-store Advertising)</h3>
+<p>POP (Point of Purchase advertising) is where consumers make their final decision. <span lang="zh-Hant">《POP 廣告設計》</span> sums up its functions:</p>
+<ol>
+<li><strong>Informing</strong> people about new products and offers.</li>
+<li><strong>Acting as a silent salesperson</strong>.</li>
+<li><strong>Prompting the final purchase</strong>: many buying decisions are only made inside the shop.</li>
+<li><strong>Creating a selling atmosphere</strong>, for example with festive and seasonal themes.</li>
+<li><strong>Shaping the brand image</strong>.</li>
+<li><strong>Highlighting distinctive features</strong>, so the product stands out among similar products.</li>
+</ol>
+<p>Forms include window displays, hanging banners, shelf talkers, floor stickers, standees, counter display stands and display boxes (which overlap with the PDQ display boxes in <a href="06_packaging.html">06 Packaging</a>). Current trends are <strong>systematisation</strong> (consistent with the whole campaign), <strong>integration</strong> (linking online and offline) and <strong>customer participation</strong>.</p>
+<h3 id="35">3.5 Checking Your Own Advertisement</h3>
+<ul>
+<li>Can you state the idea of the ad in one sentence?</li>
+<li>If you remove the logo, can people still tell which brand it is?</li>
+<li>Seen from three metres away, are the visual and headline still clear?</li>
+<li>Is the promise true, and can it be kept?</li>
+<li>After reading, does the audience know what to do?</li>
+</ul>
+<h2 id="4-selected-figures">4. Selected Figures</h2>
+<div class="figs">
+<figure><img src="assets/advertising/empty-head-ad.jpg" alt="Print ad where image and text complete each other"><figcaption>A print ad that only works because the headline and the image depend on each other. Source: <span lang="zh-Hant">《1001 個廣告法則》</span>, p.46</figcaption></figure>
+<figure><img src="assets/advertising/escalator-ad.jpg" alt="Escalator ad"><figcaption>An ambient ad that uses the shape of an escalator. Source: same book, p.71</figcaption></figure>
+<figure><img src="assets/advertising/pirelli.jpg" alt="Pirelli"><figcaption>Pirelli, "Sticks to the road": visual exaggeration demonstrates grip. Source: same book, p.103</figcaption></figure>
+<figure><img src="assets/advertising/passover-ad.jpg" alt="Passover ad"><figcaption>A holiday ad built from typography and cultural symbols. Source: <span lang="zh-Hant">《美國廣告設計實用教程》</span>, p.28</figcaption></figure>
+<figure><img src="assets/advertising/sunglasses-ad.jpg" alt="Sunglasses ad"><figcaption>A single product image and white space create a sense of quality. Source: same book, p.106</figcaption></figure>
+<figure><img src="assets/advertising/hanger-ad.jpg" alt="Clothes hanger ad"><figcaption>A creative idea that uses an everyday object (a clothes hanger) as the medium. Source: same book, p.242</figcaption></figure>
+<figure><img src="assets/advertising/swatch-pop.jpg" alt="Swatch POP"><figcaption>A Swatch in-store display that extends the shape of the product. Source: <span lang="zh-Hant">《POP 廣告設計》</span>, p.68</figcaption></figure>
+<figure><img src="assets/advertising/pop-display.jpg" alt="POP display stand"><figcaption>A counter display stand built around a ranking. Source: same book, p.113</figcaption></figure>
+<figure><img src="assets/advertising/pop-shelf.jpg" alt="In-store POP"><figcaption>POP placement on in-store shelves. Source: same book, p.31</figcaption></figure>
+</div>
+
+<h2 id="5-source-bookshelf">5. Source Bookshelf</h2>
+<p>Suggested reading order: <span lang="zh-Hant">《1001 個廣告法則》</span>, chapters 1 and 2 (strategy and positioning) → <span lang="zh-Hant">《美國廣告設計實用教程》</span> (creative work and cases) → <span lang="zh-Hant">《POP 廣告設計》</span> → <span lang="zh-Hant">《廣告公司的秘密》</span> (practice).</p>
+<!-- BOOKSHELF:START -->
+
+<details><summary>Show 5 titles</summary>
+
+- <a href="#b-1001-advertising-tips"><span lang="zh-Hant">1001 個廣告法則</span></a>
+- <a href="#b-pop-advertising-design"><span lang="zh-Hant">POP 廣告設計</span></a>
+- <a href="#b-the-j-walter-thompson-handbook">[088]<span lang="zh-Hant">智威湯遜手冊</span></a>
+- <a href="#b-a-practical-course-in-american-advertising-design">[338]<span lang="zh-Hant">美國廣告設計實用教程</span></a>
+- <a href="#b-secrets-of-the-advertising-agency-a-career-guide-for"><span lang="zh-Hant">廣告公司的秘密：平面設計師就業寶典</span></a>
+
+</details>
+
+<!-- BOOKSHELF:END -->
+
+<h2 id="6-study-cues">6. Study Cues</h2>
+<ol>
+<li>Write answers to the "five key questions" for a small local shop, then write a one-line positioning statement.</li>
+<li>Find an ad that made a strong impression on you and analyse its headline, visual and image–text relationship: what is the denotation? What is the connotation?</li>
+<li>Break down an online ad using the four AIDA stages, and point out which element is responsible for each stage.</li>
+<li>Choose a location on campus (stairs, a lift, a vending machine) and develop an ambient ad for it.</li>
+<li>Design a shelf talker whose brand can be seen from three metres away and whose offer can be understood within one metre.</li>
+</ol>
+<!-- BOOKS:START -->
+
+<h2 id="7-each-book">7. Each Book</h2>
+<p>Each book in the bookshelf is described below. Every title above links to its section.</p>
+<h3 class="book" id="b-1001-advertising-tips"><span lang="zh-Hant">1001 個廣告法則</span></h3>
+<p><strong>Scope.</strong> A book of short entries on advertising strategy and execution, running from planning, promise and audience to layout. Use it as a checklist, not as 1001 rules you must memorise. When you use it, pick the few entries that are relevant to your assignment.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>When planning, first answer: what the product is, what the promise is, and who the target audience is. Audiences are often divided first by age and gender, and then by life situation.</li>
+<li>Rosser Reeves's "Unique Selling Proposition": every ad must make a specific proposition to the consumer. Pretty sentences alone are not enough.</li>
+<li>A slogan must be memorable and consistent with what the brand actually does. The book uses old examples such as KitKat, KFC and Ivory soap to show how "one line sets the product apart".</li>
+<li>If a layout has several images, one must be the main image; body copy should usually not fill the whole layout.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before you start, write three lines: the product, one promise, one audience. If you cannot write these three lines, you are not ready to make the visual.</li>
+<li>The promise must be something this product can deliver and that competitors cannot easily claim as well.</li>
+<li>Layout check: which image is the main one? Does the body copy overpower the image? What should the reader do next?</li>
+<li>When collecting slogans, separate "strategy" (the promise) from "tone" (humorous, sexy, direct). Do not copy only the tone.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/advertising/books/b-1001-advertising-tips-1.jpg" alt="The main image in an ad layout"><figcaption>With several images, one should stand out, and body copy should not fill the layout. Source: <span lang="zh-Hant">《1001 個廣告法則》</span>, p.165</figcaption></figure>
+<figure><img src="assets/advertising/books/b-1001-advertising-tips-2.jpg" alt="What people buy is an image"><figcaption>A discussion of how consumers often buy an image, not just the product itself. Source: same book, p.71</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Write three promises for a drink you often buy, cut them down to one, and explain why.</li>
+<li>Find an ad and identify its main image, its promise and its audience. Do the three clash?</li>
+</ol>
+<h3 class="book" id="b-pop-advertising-design"><span lang="zh-Hant">POP 廣告設計</span></h3>
+<p><strong>Scope.</strong> A textbook on point-of-purchase (POP) advertising, from its definition and origins to its various forms. POP is advertising placed inside shops to help complete the final step of a purchase; it is not outdoor brand-image advertising.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>POP works through a set of media used together (counter, shelf, floor, shop window), not a single poster. It is called "the silent salesperson".</li>
+<li>Once supermarkets and self-service shopping appeared, products had to explain themselves to customers. POP grew up in this gap.</li>
+<li>The form must fit the point of sale: a small display for watches and an outdoor standee for drinks differ in size and viewing distance.</li>
+<li>The goal is still sales and brand impression. Atmosphere is a means, not an end.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First write down the viewing conditions: how far away the customer stands, how many seconds they have, and whether they will pick it up. Then decide the size and type sizes.</li>
+<li>Check any POP set at three distances at least: walking past, you see the brand; stopping, you see the product name; picking it up, you see the price or how to use it.</li>
+<li>Look at it next to the packaging. POP should not create a new image that has nothing to do with the packaging.</li>
+<li>When making a mock-up, use a paper model at actual scale, place it next to a shelf and take a photo to check whether the text is still readable.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/advertising/books/b-pop-advertising-design-1.jpg" alt="The sales goal of POP"><figcaption>Whatever its form, POP must ultimately increase sales and build brand impression. Source: <span lang="zh-Hant">《POP 廣告設計》</span>, p.42</figcaption></figure>
+<figure><img src="assets/advertising/books/b-pop-advertising-design-2.jpg" alt="Watch POP"><figcaption>A counter display for small goods such as watches; the size must suit close-up viewing. Source: same book, p.68</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why did POP become especially necessary only after supermarkets spread? Give an example from a shop you have visited.</li>
+<li>Design information for a chewing gum at three distances: three metres, one metre, and in the hand. Write one sentence for each.</li>
+</ol>
+<h3 class="book" id="b-the-j-walter-thompson-handbook"><span lang="zh-Hant">智威湯遜手冊</span></h3>
+<p><strong>Scope.</strong> A Chinese compilation of the internal methods of J. Walter Thompson. It is short, and covers strategic tools rather than layout techniques. Use it to understand how an agency turns "how consumers buy" into a brief.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A campaign usually includes creative work, media and market research. Afterwards, sales and consumer research are used to evaluate whether it reached its goals.</li>
+<li>The "buying system" divides the thinking and actions of consumers before they make a decision into several stages. The stages differ from product to product.</li>
+<li>Advertising is only one part of the marketing mix. Promotions, public relations, displays and direct marketing may each be responsible for a particular stage.</li>
+<li>The value of the tools lies in pointing out needs the client has not yet stated clearly, not just in making an existing slogan look better.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Draw six buying stages for a brand (from noticing to buying again), and in each box write what is happening now and what we want to push.</li>
+<li>In a brief, separate "where we are" from "where we want to go". Without the first, creative work turns into a matter of taste.</li>
+<li>When evaluating, look at both sales figures and whether consumers can repeat the promise. With only one of these, you cannot judge whether the ad worked.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/advertising/books/b-the-j-walter-thompson-handbook-1.jpg" alt="J. Walter Thompson signature"><figcaption>The J. Walter Thompson signature logo. This handbook compiles the company's strategic tools. Source: <span lang="zh-Hant">《智威湯遜手冊》</span>, p.1</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Use the buying stages to analyse the last drink you bought: at which step were you persuaded?</li>
+<li>If sales rise but nobody remembers the ad, which marketing tool might be doing the work?</li>
+</ol>
+<h3 class="book" id="b-a-practical-course-in-american-advertising-design"><span lang="zh-Hant">美國廣告設計實用教程</span></h3>
+<p><strong>Original title:</strong> <em>Advertising by Design: Creating Visual Communications with Graphic Impact</em></p>
+<p><strong>Scope.</strong> This textbook presents advertising as a complete process: inform, persuade, inspire desire, with a short history of advertising and case studies. It helps build a sense of process, that "an ad is more than a poster".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The framework of Part One is inform, persuade, inspire desire. The order of the three changes with the product, but none can be left out.</li>
+<li>The book includes a short history of advertising and the "Creative Revolution", which moved advertising from simple hard selling to building brands with concepts and tone of voice.</li>
+<li>Some ads are driven by copy, others by the visual (the book uses dramatic public-health ads as examples). Decide first which one is the main engine.</li>
+<li>The cases note their period and typeface features, a reminder that visual styles belong to their time and cannot be applied casually to a brief from another era.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write a three-line script for an ad: what the reader learns, what they believe, what they want to do. The visual must serve these three lines.</li>
+<li>Decide whether the ad is copy-led or visual-led, then cut the other side down.</li>
+<li>When you borrow the type or photography of a particular era, state that you are borrowing "the tone of that era", rather than pretending it is neutral good looks.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/advertising/books/b-a-practical-course-in-american-advertising-design-1.jpg" alt="Visual-led ad"><figcaption>An example of an ad driven by the visual. Source: <span lang="zh-Hant">《美國廣告設計實用教程》</span>, p.203</figcaption></figure>
+<figure><img src="assets/advertising/books/b-a-practical-course-in-american-advertising-design-2.jpg" alt="Era and typeface"><figcaption>Type and images carry the features of a particular era. Source: same book, p.44</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Break an ad you like into "inform, persuade, inspire desire". Which part is weakest?</li>
+<li>Is it copy-led or visual-led? If you swapped them, would the message fall apart?</li>
+</ol>
+<h3 class="book" id="b-secrets-of-the-advertising-agency-a-career-guide-for"><span lang="zh-Hant">廣告公司的秘密：平面設計師就業寶典</span></h3>
+<p><strong>Scope.</strong> This book uses a day in an advertising agency to introduce print practice: calibrating monitors, scanning, halftone dots, inks, paper, and how to make single sheets and folded leaflets. It fills in "what happens after you hand over the file", not creative methods.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Designers must be able to specify a job clearly on the job ticket: output screen ruling, proofing paper, ink colours, single- or double-sided, quantity.</li>
+<li>Fine printing often uses a higher screen ruling (the book mentions 175 or 200 lines), with dots so fine that the naked eye cannot easily separate them.</li>
+<li>Screens are RGB; print is CMYK. Calibration gives you a reliable sense of colour when adjusting it; it does not mean the colour on screen is the final result.</li>
+<li>A proof is a prediction, not the finished product. Double-sided proofs involve front-to-back registration, and the necessary steps cannot be skipped.</li>
+<li>Later chapters deal separately with single sheets, two-panel, three-panel and multi-panel folded leaflets, because the fold decides how the layout is divided.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before handing in, fill in your own job ticket: size, bleed, colour mode, whether fonts are converted to outlines, image resolution, folding method, special colours.</li>
+<li>Make a proof or laser print on the paper the printer will use, and check whether the back shows through and whether fold lines cut through text.</li>
+<li>Treat on-screen colour as a reference only. Check important brand colours against a swatch book or a printed sample from the last run.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/advertising/books/b-secrets-of-the-advertising-agency-a-career-guide-for-1.jpg" alt="Spot colour and four-colour printing"><figcaption>On metal or plastic, a base of white ink sometimes has to be printed before the four colours. Source: <span lang="zh-Hant">《廣告公司的秘密》</span>, p.332</figcaption></figure>
+<figure><img src="assets/advertising/books/b-secrets-of-the-advertising-agency-a-career-guide-for-2.jpg" alt="Chapters on folded leaflets"><figcaption>After single sheets, the book covers the production of two-panel, three-panel and multi-panel folded leaflets separately. Source: same book, p.6</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why can you not treat the colours you see on screen as the printed result?</li>
+<li>If a double-sided coupon is needed in such a small quantity that it is not worth putting on a press, what method does the book suggest for producing it?</li>
+</ol>
+<!-- BOOKS:END -->
+      </div>
+
+      <nav class="pager" aria-label="Categories"><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span>Previous guide</span><strong>18 Magazines &amp; Annuals</strong><i aria-hidden="true">&rarr;</i></a></nav>
+    </main>
+    <aside class="rail" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a>
+    </aside>
+  </div>
+  <script src="js/guide.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scene.js"></script>
+  <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, theme: "dark", themeVariables: { background: "#101b34", primaryColor: "#1b2b4d", primaryTextColor: "#e6eef8", primaryBorderColor: "#4e6586", lineColor: "#8ea0b8", fontFamily: "Source Sans 3, sans-serif" } });
+  </script>
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1428">
+  <title>Product Design · Design Fundamentals</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/guide.css">
+</head>
+<body class="page-guide">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="loader" id="loader" data-label="13 Product Design" aria-hidden="true">
+    <p class="loader-label">SSHD2382 / Design Fundamentals</p>
+    <div class="loader-box">
+      <span class="plus tl"></span><span class="plus tr"></span><span class="plus bl"></span><span class="plus br"></span>
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg>
+    </div>
+    <p class="loader-count" data-count-slots></p>
+    <p class="loader-page"></p>
+  </div>
+  <header class="site-head">
+    <a class="logo" href="index.html" aria-label="Design Fundamentals, home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg><span>Fundamentals<sup>&reg;</sup></span></a>
+    <nav class="head-nav" aria-label="Site">
+      <a class="pill pill-solid" href="index.html#browse" data-magnetic><span data-text="Browse">Browse</span></a>
+      <button class="pill pill-line" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-magnetic><span data-text="Menu">Menu</span><i class="burger" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <div class="menu-panel" id="menu" inert>
+    <div class="menu-inner">
+      <p class="menu-label">(Guides)</p>
+      <ol class="menu-list"><li><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span class="menu-num">01</span><span class="menu-name">Design Basics &amp; Composition</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="02_colour.html" data-label="02 Colour"><span class="menu-num">02</span><span class="menu-name">Colour</span><span class="menu-week">Week 8</span></a></li><li><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span class="menu-num">03</span><span class="menu-name">Typography &amp; Lettering</span><span class="menu-week">Week 9</span></a></li><li><a href="04_layout-grid.html" data-label="04 Layout &amp; Grid Systems"><span class="menu-num">04</span><span class="menu-name">Layout &amp; Grid Systems</span><span class="menu-week">Week 3, 4, 5</span></a></li><li><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span class="menu-num">05</span><span class="menu-name">Logo &amp; Branding</span><span class="menu-week">Week 10, 11</span></a></li><li><a href="06_packaging.html" data-label="06 Packaging"><span class="menu-num">06</span><span class="menu-name">Packaging</span><span class="menu-week">Week 11</span></a></li><li><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span class="menu-num">07</span><span class="menu-name">Book Design &amp; Print</span><span class="menu-week">Week 5, 9</span></a></li><li><a href="08_infographics.html" data-label="08 Information Graphics"><span class="menu-num">08</span><span class="menu-name">Information Graphics</span><span class="menu-week">Week 4</span></a></li><li><a href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span class="menu-num">09</span><span class="menu-name">Interaction, Web &amp; UX</span><span class="menu-week">Week 11 (and 4)</span></a></li><li><a href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span class="menu-num">10</span><span class="menu-name">Graphic Design Practice</span><span class="menu-week">Week 1, 11</span></a></li><li><a href="11_interior.html" data-label="11 Interior Design"><span class="menu-num">11</span><span class="menu-name">Interior Design</span><span class="menu-week">Further reading</span></a></li><li><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span class="menu-num">12</span><span class="menu-name">Architecture &amp; Space</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="13_product.html" data-label="13 Product Design"><span class="menu-num">13</span><span class="menu-name">Product Design</span><span class="menu-week">Week 11 (and 6–7)</span></a></li><li><a href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span class="menu-num">14</span><span class="menu-name">Design &amp; Art History</span><span class="menu-week">Week 1</span></a></li><li><a href="15_theory-psychology.html" data-label="15 Design Theory &amp; Psychology"><span class="menu-num">15</span><span class="menu-name">Design Theory &amp; Psychology</span><span class="menu-week">Week 4, 6–7, 10</span></a></li><li><a href="16_pattern-ornament.html" data-label="16 Pattern &amp; Ornament"><span class="menu-num">16</span><span class="menu-name">Pattern &amp; Ornament</span><span class="menu-week">Week 8 (and 6–7)</span></a></li><li><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span class="menu-num">18</span><span class="menu-name">Magazines &amp; Annuals</span><span class="menu-week">Week 1–13</span></a></li><li><a href="20_advertising.html" data-label="20 Advertising"><span class="menu-num">20</span><span class="menu-name">Advertising</span><span class="menu-week">Week 10, 11</span></a></li></ol>
+      <div class="menu-foot"><span>SSHD2382 Design Fundamentals</span><span>Eighteen guides, thirteen weeks</span><a href="index.html">Home</a></div>
+    </div>
+  </div>
+  <canvas class="scene" id="scene" data-scene="page" data-cat="13" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <p class="side-brand">SSHD2382 / Guides</p>
+      <label class="visually-hidden" for="q">Search categories</label>
+      <input class="search" id="q" type="search" placeholder="Name, term, or category" autocomplete="off">
+      <p class="empty" id="empty" hidden>No category matches.</p>
+      <nav aria-label="Categories"><div class="side-group"><p class="side-label">Categories</p><a href="01_design-basics.html" data-search="01 design basics design basics &amp; composition point, line, plane, composition, and the four design principles week 2, 6–7 1. scope 2. core concepts 3. proportion &amp; geometry 4. principles &amp; methods 5. selected figures 6. source bookshelf 7. study cues 7. each book 藝術·設計的平面構成 藝術·設計的立體構成 藝術·設計的紙的構成 藝術·設計的光的構成 平面設計原理 通用設計法則 美國視覺設計學院叢書：設計元素（平面設計樣式） 寫給大家看的設計書：實例與創意 黃金比例 設計的教室 設計的方法 談繪畫構圖 1000多個圖形元素：獨特的設計元素 設計中的點線面 平面設計法則 設計幾何學：關於比例與構成的研究 藝術·設計的平面構成（繁體版） 探索幾何：平面視覺構建 好造型的設計元素 和諧之美：探索設計中的黃金比例 分寸設計：發現黃金比例恆久之美 設計元素：平面設計樣式（英文原書） 寫給大家看的設計書（第3版） 設計元素：平面設計樣式 國際平面設計基礎教程：規格設計（format） 國際平面設計基礎教程：圖形設計（image） 國際平面設計基礎教程：設計思維（thinking） 寫給大家看的設計書（第4版） 平面設計的七大要素 綜合造型設計基礎 美國視覺設計學院用書：設計元素（平面設計樣式） 視覺原理 設計力：寫給大家的平面設計法則 通用設計法則（英文版） the elements of graphic design: space, unity, page architecture, and type universal principles of design design elements: a graphic style manual robin williams design workshop geometry of design: studies in proportion and composition the design method: a philosophy and process for functional visual communication 1000 graphic elements: special details for distinctive designs the essential principles of graphic design geometry of design: studies in proportion and composition design elements: understanding the rules and knowing when to break them geometry of design: studies in proportion and composition , 2nd edition (revised and updated) design elements: a graphic style manual the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual basics design 01: format basics design 04: image basics design 08: design thinking the non-designer&#x27;s design book: design and typographic principles for the visual novice , 4th edition the 7 essentials of graphic design design elements: a graphic style manual principles of visual perception universal principles of design"><span class="side-num">01</span> Design Basics &amp; Composition</a><a href="02_colour.html" data-search="02 colour colour hue, value, chroma, colour systems, palettes, and colour psychology week 8 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術·設計的色彩構成 寫給大家看的色彩書1：設計配色基礎 寫給大家看的色彩書2：色彩怎麼選，設計怎麼做 梁景紅談：色彩設計法則 配色設計原理 七日掌握設計配色基礎 配色設計從入門到精通 平面設計配色全攻略 美國色彩基礎教材 色彩應用：平面設計配色經典創意 黑白灰設計：摒棄有彩色的設計法則 美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式 觀念之色：中國傳統色彩研究 色彩搭配的黃金法則 新手配色寶典：2000個配色案例不怕你不會 像藝術家一樣思考之三：貝蒂的色彩 國際平面設計基礎教程：colour色彩設計 平面設計綜合配色手冊 色彩怎麼選，設計怎麼做 色彩感知學 色彩構成 色彩設計：日本平面設計師參考手冊 色彩設計的100個亮點 色彩設計的原理 設計入門教室3：色彩設計的原理 設計密碼：綜合配色完全攻略 color basics color design workbook: a real-world guide to using color in graphic design drawing for graphic design: understanding conceptual principles and practical techniques to create unique, effective design solutions color: a course in mastering the art of mixing colors basics design 05: colour 100 bright ideas for colour"><span class="side-num">02</span> Colour</a><a href="03_typography.html" data-search="03 typography typography &amp; lettering letter structure, classification, typesetting, and mixed chinese and latin type week 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book typography 字誌：issue 01 typography 字誌：issue 05_pdf 自由字在：字體設計與創意 中國字體設計人：一字一生 西文字體1：字體的背景知識和使用方法 西文字體2：經典款字體及其表現方法 文字設計的原理_文字設計所必須的信息和技巧 新概念字體基礎&amp;應用_蘇克 説文解字 字言字語 字體傳奇 影響世界的helvetica 治字百方 字型散步 街道文字_小林章 西文排版_排版的基礎和規範 漢字書法之美_蔣勳 文字的故事 意匠文字 設計師的字體世界 文字的力與美 漢字的誘惑 中國美術字史圖説 漢字設計與應用 十二生肖形意字 書法字體設計技巧與應用 平面排版_基本的基本 tokoy tdc vol.28⭐ 排版的風格 字體設計的規則與藝術 tokoy tdc vol.29⭐ 字體呈現3⭐ 字體設計基礎 【會員專供】中國近現代字體應用文獻展 【會員專供】文字設計在中國邀請展 【會員專供】超語境國際文字設計論壇 世界文字發展史_11407704 今日字體 創意字體設計與製作-www.afx365.com 國際平面設計基礎教程-typography字體設計 字型之不思議 字型之不思議 小冊-手寫 字體呈現-q 字體呈現二（完整） 字體呈現小冊一 字體呈現小冊二 字體怡人 字體設計100+1 字體，海報設計部分 展覽，印刷字體部分（雙頁） 序言 排版造型_白井敬尚 文字設計的原理 書於竹帛中國古代的文字記錄_12270059 歐文字體ⅰ 歐文字體ⅱ 自由“字”在 字體設計與創意13696100(1) 設計入門教室 2 文字設計的原理 designing type basics design 03: typography written on bamboo and silk: the beginnings of chinese books and inscriptions"><span class="side-num">03</span> Typography &amp; Lettering</a><a href="04_layout-grid.html" data-search="04 layout grid layout &amp; grid systems grids, hierarchy, and arranging image with text week 3, 4, 5 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 日本版式設計原理_p159 跨平台的視覺設計版式設計原理 破譯文字編排設計 破譯網格設計 美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書 版式設計：日本平面設計師參考手冊 超越平凡的平面設計：怎樣做好版式 版式設計+給你靈感的全球最佳版式創意方案 柵格系統與版式設計 國際版式設計基礎教程 七日掌握版面設計基礎 美國編排設計教程 平面設計中的網格系統 版式設計風暴ⅱ 網格系統與版式設計 創意版式設計_王紹強 版面設計的原理_設計前必須知道的事情 版式設計全攻略(佐) 進階理解版式設計 版式設計：合適最好 版式設計從入門到精通 版面設計網格構成 版式設計原理_案例篇：提升版式設計的55個技巧 秩序之美_網頁中的網格設計 日本版式設計原理 版式設計法則 版式創意大爆炸 版式設計+2版式創意方案 版式設計風暴 [商業版式設計的方法] 版式編排設計 版式設計 今日版式 印刷的終結：戴維·卡森的自由版式設計 國際平面設計基礎教程-grids網格設計 國際平面設計基礎教程-layout版式設計(第2版) 版式設計-www.afx365.com 版式設計原理 版式設計原理-全綵教程 版式設計實用手冊-www.afx365.com 版式設計實用手冊.suni視覺設計.全綵版 版式設計從入門到精通-www.afx365.com 版面設計黃金法則 破譯文字編排設計-www.afx365.com 秩序之美——網頁中的網格設計英文版 編排設計教程 設計入門教室 1 版面設計的原理 超越平凡的平面設計 版式設計原理與應用 typography workbook: a real-world guide to using type in graphic design making and breaking the grid: a graphic design layout workshop graphic designer&#x27;s essential reference: visual elements, techniques, and layout strategies for busy designers before &amp; after page design grid systems: principles of organizing type best practices for graphic designers, grids and page layouts: an essential guide for understanding and applying page design principles typographic systems grid systems: principles of organizing type layout: making it fit: finding the right balance between content and space ordering disorder: grid principles for web design the end of print: the graphic design of david carson basics design 07: grids basics design 02: layout , 2nd edition typography workbook: a real-world guide to using type in graphic design ordering disorder: grid principles for web design typographic systems before &amp; after: how to design cool stuff"><span class="side-num">04</span> Layout &amp; Grid Systems</a><a href="05_logo-branding.html" data-search="05 logo branding logo &amp; branding mark types, identity systems, and brand strategy week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book logo 百年 設計品牌（原田進） 用設計做品牌 品牌設計+：給你靈感的 best 品牌形象方案 品牌設計+：創造 top 品牌的色彩應用方案 品牌設計+：創造 brand 力的動態 logo 設計（1） 標誌設計 logo design 標誌新語 iii really good logos explained designing brand identity 超越 logo 設計 brand 創新與設計：創意、建構和維護精彩品牌標識之完全指南 標誌設計指南 logo design workbook 品牌標誌：top 設計 150 例 消費森林 × 品牌再生：李永銓的設計七大法則 品牌中的色彩 圖案無限：品牌中的圖案 品牌簡單之道 what brand 什麼是品牌設計 品牌 100 一個 logo 的誕生 視覺美食：最佳餐飲品牌設計 溝通時尚品牌 100 個經典 logo 品牌設計之美：冷色調的色彩詮釋 logo：29 個經典的前世今生 logo 百年 品牌至上：logo 設計法則與案例應用解析 品牌識別法則：100 條原理 no logo：顛覆品牌全球統治 脫穎而出的品牌致勝秘密 精簡：無印良品與品牌理念打造 電商品牌形象設計 品牌標誌：頂級設計 150 例 設計品牌 世界標誌大典 1 品牌設計法則（徐適） 日本彩色商標與企業識別 10 解構 logo 設計：300 例國際 logo 分析與解讀 超越 logo 設計：國際頂級平面設計師的成功法則 超越 logo 設計：國際頂級平面設計師的成功法則 logo design love: a guide to creating iconic brand identities designing brand identity: a complete guide to creating, building, and maintaining strong brands logo design workbook: a hands-on guide to creating logos creative solutions: logos: making a strong mark: 150 strategies for logos that last brandsimple: how the best brands keep it simple and succeed what is branding? logo life: life histories of 100 famous logos tm: the untold stories behind 29 classic logos brand identity essentials: 100 principles for designing logos and building brands no logo: taking aim at the brand bullies designing brand identity: an essential guide for the whole branding team creative solutions: logos: making a strong mark: 150 strategies for logos that last deconstructing logo design: 300+ international logos analyzed and explained logo design love: a guide to creating iconic brand identities logo design love: a guide to creating iconic brand identities"><span class="side-num">05</span> Logo &amp; Branding</a><a href="06_packaging.html" data-search="06 packaging packaging structure, the shelf, materials, and brand week 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 創造品牌的包裝設計 現代設計色彩教材叢書：包裝設計色彩 包裝設計藝術：王紹強 紙品包裝結構解析 新包裝 環保包裝設計 50 trade secrets of great design packaging 1000 package designs：a comprehensive guide 拿來就用的包裝設計 食品包裝設計 包裝設計+：給你靈感的包裝方案 包裝設計家：靳埭強與他的設計師朋友 簡約包裝 simply packaging 中式元素視覺傳達：包裝設計 packaging the brand: the relationship between packaging design and brand identity simply packaging"><span class="side-num">06</span> Packaging</a><a href="07_book-print.html" data-search="07 book print book design &amp; print book structure, paper, binding, and print week 5, 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2015 中國最美的書 書籍設計-安德魯 書形：138種創意書籍和印刷紙品設計 如何設計一本畫冊 平面印刷色彩：四色與專色 國際平面設計基礎教程：print&amp;finish印前印後 世界書籍藝術流派 中外裝幀藝術論集 中國古籍版本概要 出版物設計完全手冊 印刷工藝：燙印與凹凸 印前校色實用教程 印前輸出培訓參考：全綵教程-200p 嶄新印通拼版教程 平版印刷拼版手冊 平面設計及印刷業務人員常識備忘手冊 書籍設計 書藝問道 現代圖書設計 範式革命：中國現代書籍設計的發端 1862-1937 電腦印前技術完全手冊（第2版） book design basics design 06: print and finish publication design workbook: a real-world guide to designing magazines, newspapers, and newsletters book design new book design"><span class="side-num">07</span> Book Design &amp; Print</a><a href="08_infographics.html" data-search="08 infographics information graphics visualising information and explaining with diagrams week 4 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 圖解力 以圖釋義：信息圖表設計 信息圖表設計入門 信息圖表設計：全球創意入門"><span class="side-num">08</span> Information Graphics</a><a href="09_interaction-ux.html" data-search="09 interaction ux interaction, web &amp; ux goal-directed design, usability, and interface principles week 11 (and 4) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book about face 3：交互設計精髓 about face 4：交互設計精髓（中文彩版） android 交互視覺設計規範 贏在用戶：web 人物角色創建和應用實踐指南 don&#x27;t make me think（英文第 2 版） ui 羣英匯：用戶體驗、交互與視覺設計方法論 web 界面設計 形式感：網頁視覺設計創意拓展與快速表現 關鍵設計報告：改變過去影響未來的交互設計法則 點石成金：訪客至上的網頁秘籍 認知與設計：理解 ui 設計準則 簡約至上：交互設計四策略 見微知著：web 用戶體驗解構 與世界 ui 設計師同行 ux 設計之道：以用戶體驗為中心的 web 設計（第 2 版） ui 設計黃金法則：觸動人心的 100 種用戶界面 sexy web design：creating interfaces that work 用戶體驗的要素：以用戶為中心的 web 設計 網頁設計（web designer emag） 點石成金：訪客至上的網頁設計秘笈 ios 9 界面設計規範剖析及實戰 不要讓我思考（don&#x27;t make me think） 贏在用戶：web 人物角色創建和應用實踐指南 軟件觀念革命：交互設計精髓 一目瞭然：web 軟件顯性設計之路 就這麼簡單：web 開發中的可用性和用戶體驗 微交互：細節設計成就卓越產品 怦然心動：情感化交互設計指南 用戶體驗度量 用戶體驗要素：以用戶為中心的產品設計（原書第 2 版） 眾妙之門：網站 ui 設計之道 瞬間之美：web 界面設計如何讓用戶心動 破繭成蝶：用戶體驗設計師的成長之路 簡約至上：交互設計四策略 網頁設計創意書 認知與設計：理解 ui 設計準則 認知與設計：理解 ui 設計準則（第 2 版） 贏在用戶：web 人物角色創建和應用實踐指南 體驗·度：簡單可依賴的用戶體驗（彩版） about face 3: the essentials of interaction design , 3rd edition about face: the essentials of interaction design , 4th edition the user is always right: a practical guide to creating and using personas for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing web interfaces: principles and patterns for rich interactions designing interactions don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing with the mind in mind: simple guide to understanding user interface design rules simple and usable web, mobile, and interaction design a project guide to ux design: for user experience designers in the field or in the making , 2nd edition digital design essentials: 100 ways to design better desktop, web, and mobile interfaces the elements of user experience: user-centered design for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition don&#x27;t make me think: a common sense approach to web usability , 2nd edition the user is always right: a practical guide to creating and using personas for the web about face 2.0: the essentials of interaction design designing the obvious: a common sense approach to web application design microinteractions: designing with details seductive interaction design: creating playful, fun, and effective user experiences measuring the user experience: collecting, analyzing, and presenting usability metrics the elements of user experience: user-centered design for the web and beyond , 2nd edition the smashing book designing the moment: web interface design concepts in action simple and usable web, mobile, and interaction design the web designer&#x27;s idea book: the ultimate guide to themes, trends and styles in website design designing with the mind in mind: simple guide to understanding user interface design rules designing with the mind in mind: simple guide to understanding user interface design guidelines , 2nd edition the user is always right: a practical guide to creating and using personas for the web"><span class="side-num">09</span> Interaction, Web &amp; UX</a><a href="10_graphic-practice.html" data-search="10 graphic practice graphic design practice process, design thinking, creative methods, and practice week 1, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 100 個改變平面設計的觀念 嘿，設計 圖解平面設計規範 40 天成為資深設計師 ideo：設計改變一切 創意之道（the copy book） 非常規標誌設計：6 個不必遵守的基礎原則 最佳設計 100 細則 少即是多：減法設計 視覺傳達設計實踐 1000 retail graphics 高效設計溝通之道（原書第 2 版） 完成設計：從理論到實踐 美國視覺傳達完全教程 零 zerro：世界符號大全 平面與空間 創意工場：提升設計技巧的 80 個挑戰 日本的手感設計 設計的品格 設計並不重要 我的第一本設計書 平面設計過程 小平面 北歐設計 王志弘作品收集 做喜歡的事：25 個亞太創意設計工作室 做喜歡的事：25 個歐美創意設計工作室 設計修辭法 設計與死 設計的覺醒 平面設計死了嗎 放眼德國設計 放眼法國設計 漫遊英國設計 漫步日本設計 荷蘭設計 設計的手感 歲寒三友：詩意設計作品集 廣州美術學院碩士研究生作品集 靳埭強與格呂特納的海報對話 靳埭強設計獎 陳幼堅最新作品 平面設計八人 設計集 設計心法 100+1 靳叔說：設計語錄 設計的圖謀：改變世界的80個日常創意陰謀 遺產與更新：中國設計教育反思 設計師演講錄：icograda 世界設計大會 設計創意流程：用mba思維成就設計高效能 全球優秀93位平面設計師作品集 遊遊遊：說說我的設計私想 對話日本設計 設計師不讀書 設計質 大話設計師 從製造到設計：20世紀德國設計 意東方：設計中的東方元素（一） 49個成就平面設計的關鍵詞 企業形象設計家：靳埭強與他的設計師朋友 海報設計家：靳埭強與他的設計師朋友 生活·心源：靳埭強設計與藝術 靳埭強·身度心道：中國文化為本的設計·繪畫·教育 ideo 設計現象探究：patterns 2010 設計效果圖 設計百年：20世紀平面設計的先驅 設計解決 像設計師那樣思考 圖形設計新元素 如何把國外作品轉化為自己的能力（第二部） 平面設計：我的第2語言 為什麼設計 理性設計 至關重要的設計 解決100個煩惱的100種設計 設計推導學 中國古代設計思想史略 什麼是平面設計？ 創意工場：提升設計技巧的80個挑戰 動畫分鏡台本設計 吳東龍的東京設計生活100 寫給大家看的設計書（第三版） 好設計的造型元素 完成設計：從理論到實踐 宣傳冊設計與製作 平面設計200年 新興實踐：設計的專業、價值與途徑 日本當代插圖集 最全設計規範 服務的細節：完全商品陳列115例 為真實世界的設計 生命的幻象：迪士尼動畫造型設計 異想天開：設計初始 知日・設計力 移動設計 符號與數字：平面中的視覺表達 第三種創新：設計驅動式創新 編輯設計 至關重要的設計 至關重要的設計（布倫納） 蘋果首席設計師：喬納森傳 視覺傳達設計 視覺傳達設計考研手繪 視覺營銷：零售店櫥窗與店內陳列 託尼克：設計為何 設計＋生活：佐藤 設計＋生活：奎內克 設計＋生活：姚爾丹 設計＋生活：孔喬 設計＋生活：府烈茶 設計＋生活：王翰尼 設計＋生活：白同異 設計＋生活：蒙古齊 設計＋生活：雷又西 設計中的錯視 設計五感：亂 設計五感：惡 設計五感：拙 設計五感：精 設計入門教室：設計的基本規則 設計力就是溝通力 設計，在人人設計的時代 設計密碼 設計師不可不知的 100 種世界經典平面設計圖書 設計思維手冊：斯坦福創新方法論 設計思維與方法 設計方法與策略：代爾夫特設計指南 設計的意義 設計的細節：日本經典設計透析 設計與革新：關於未來設計的 50 種思考 設計風尚 5：創意節日宣傳頁設計與製作 設計高手的秘密 設計，在人人設計的時代：社會創新設計導論 這樣擺，最好賣：賣場中的商品陳列技巧 造像量度：佛像唐卡設計比例圖 關於設計的思考 非平面 靳埭強設計獎：平面設計作品集 騰訊網 ued 體驗設計之旅 100 ideas that changed graphic design change by design: how design thinking transforms organizations and inspires innovation the copy book: how 32 of the world&#x27;s best advertising writers write their advertising no rules! logos: radical design solutions that break the rules universal principles of design communicating design: developing web site documentation for design and planning , 2nd edition design evolution: theory into practice graphic communications today creative workshop: 80 challenges to sharpen your design skills graphic design process: from problem to solution: 20 case studies design and the creative process atlas of graphic designers designers don&#x27;t read the graphic design idea book: inspiration from 50 masters a century of graphic design: graphic design pioneers of the 20th century how to think like a great graphic designer graphic design: the new basics graphic design as a second language do you matter? how great design will make people love your company what is graphic design? creative workshop: 80 challenges to sharpen your design skills the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual design evolution: theory into practice graphic style: from victorian to hipster design for the real world: human ecology and social change the illusion of life: disney animation design-driven innovation: changing the rules of competition by radically innovating what things mean editing by design: for designers, art directors, and editors: the classic guide to winning readers do you matter? how great design will make people love your company do you matter? how great design will make people love your company jony ive: the genius behind apple&#x27;s greatest products graphic design solutions visual merchandising: windows and in-store displays for retail why we design design, when everybody designs: an introduction to design for social innovation bibliographic: 100 classic graphic design books delft design guide: design strategies and methods design, form, and chaos design, when everybody designs: an introduction to design for social innovation thoughts on design unflattening"><span class="side-num">10</span> Graphic Design Practice</a><a href="11_interior.html" data-search="11 interior interior design drawings, scale, light, materials, construction, and furnishing further reading 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 零基礎學建築識圖 室內裝飾裝修施工完全圖解教程 室內設計節點手冊：常用節點 室內設計節點手冊：酒店固定傢俱 材料收口 裝飾工藝解析：吊頂篇 裝飾工藝解析：地面篇 裝飾工藝解析：牆面篇 室內設計師必知的100個節點 室內裝飾裝修材料應用與選購 室內設計材料選用實戰手冊 石材應用手冊 設計師的材料清單·室內篇 圖解照明設計 室內照明設計精品教程 室內燈光設計 室內設計師專用燈光設計手冊 室內設計師燈光設計細部解析 照明設計終極聖經 家居色彩設計指南 設計師談家居色彩搭配 設計配色基礎 輕·重·緩·急：搭出耐看配色 人體工程學與室內設計 住宅的設計尺寸剖析書 圖解住宅尺寸與格局設計 室內施工圖實戰教程 室內施工圖製圖標準 室內空間佈局與尺度設計 室內細部設計cad圖集 室內設計尺寸關鍵術 室內設計數據手冊：空間與尺度 室內設計與人體工程學 家裝常用數據尺寸速查 工裝設計尺度數據手冊 人機工程學（第五版） 年輕設計師必修的七堂課 網紅室內設計師ip運營法則 裝修設計師談單簽單一課通 軟裝談單寶典 住宅格局破解術 住宅格局解剖圖鑑 住宅設計剖析手冊 住宅設計解剖書 住得優雅：住宅設計的34個法則 圖解極簡主義設計 室內住宅設計圖解 室內空間設計手冊 室內設計·思維與方法 室內設計基礎 小家越住越大2 打造讓孩子自主學習的住宅 樓梯設計的9個法則 淺談家庭中央空調的使用 牆面設計 裝修設計解剖書 解構收納 設計中的設計 設計師要懂的心理學 室內精細化設計研究 傢俱設計資料圖集 室內設計風格圖文速查 軟裝改造解剖書 軟裝設計元素搭配手冊 軟裝設計師手冊 軟裝風格速查 the lighting bible the interior plan: concepts and exercises 100 things every designer needs to know about people"><span class="side-num">11</span> Interior Design</a><a href="12_architecture-space.html" data-search="12 architecture space architecture &amp; space form, space, order, and proportion week 2, 6–7 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 建築：形式、空間和秩序（第 3 版） 反造型 architecture: form, space, and order , 3rd edition"><span class="side-num">12</span> Architecture &amp; Space</a><a href="13_product.html" data-search="13 product product design minimalism, ten principles of good design, and muji week 11 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 簡約不簡單：極簡風格產品設計 產品極簡主義 無印良品的設計 解密無印良品 20 世紀 50–80 年代中國、德國產品設計回望 無印良品世界觀 創新產品設計與手繪 深澤直人 意識的核心 product design now naoto fukasawa" aria-current="page"><span class="side-num">13</span> Product Design</a><a href="14_design-art-history.html" data-search="14 design art history design &amp; art history from manuscripts and arts and crafts through the bauhaus to the digital era week 1 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術簡史 世界平面設計史 醜的歷史 美的歷史 世界當代藝術史 世界現代設計史 中國現代設計與包豪斯 包豪斯道路：歷史、遺澤、世界與中國 包豪斯 運動中的視覺：新包豪斯的基礎 包豪斯：大師和學生們 包豪斯藏品精選集 包豪斯理想：過去與現在 世界現代設計史 中國 外國 工業設計史（第四版） 現代設計百科全書：平面設計的歷史、語言及經典應用 藝術的真相：通往藝術之路 藝術與物理學：時空和光的藝術觀與物理觀 設計藝術史 重要的不是藝術 錢君匋的藝術世界 art: a brief history , 4th edition vision in motion the bauhaus: masters &amp; students by themselves the bauhaus ideal then &amp; now: an illustrated guide to modernist design graphic design, referenced: a visual guide to the language, applications, and history of graphic design gateways to art: understanding the visual arts art &amp; physics: parallel visions in space, time, and light"><span class="side-num">14</span> Design &amp; Art History</a><a href="15_theory-psychology.html" data-search="15 theory psychology design theory &amp; psychology gestalt, cognition, emotional design, and kenya hara week 4, 6–7, 10 1. scope 2. perception 3. cognition &amp; behaviour 4. aesthetics &amp; philosophy 5. principles &amp; methods 6. selected figures 7. source bookshelf 8. study cues 7. each book 審醜：萬物美學 原研哉的設計世界 視覺藝術原理（第八版） 設計心理學 1：日常的設計 設計心理學 2：與複雜共處 設計心理學 3：情感化設計 設計心理學 4：未來設計 日本的八個審美意識 點線面 日式設計美學 康定斯基論點線面 藝術與視知覺 藝術中的精神 圖像與眼睛：圖畫再現心理學的再研究 象徵的圖像：貢布里希圖像文集 設計私語錄：通心粉的孔洞之謎 悲劇的誕生：尼采美學文選 設計中的色彩心理學 設計之美 藝術與視知覺：新編 設計中的設計 設計師要懂心理學（迷你書） 設計心理學 設計心理學（唐納德·a·諾曼） 情感化設計 感性美學 我眼中的設計之美 日式平面美學 淺談設計之美 為什麼設計 重構美學 白 社會心理學（第八版） 藝術與錯覺：圖畫再現的心理學研究 視覺思維 視覺思維（阿恩海姆） 視覺藝術的含義 設計中的設計 設計中的設計（全本） 設計中的設計（原研哉） 設計師要懂心理學 設計心理學（247 頁本） 設計心理學（中文版） 設計美學（廣州美術學院藝術設計教程） 設計與視知覺 象徵的圖像：貢布里希圖像學文集 ugly: the aesthetics of everything prebles&#x27; artforms: an introduction to the visual arts , 8th edition the design of everyday things , revised and expanded edition living with complexity emotional design: why we love (or hate) everyday things the design of future things art and visual perception: a psychology of the creative eye , the new version the image and the eye: further studies in the psychology of pictorial representation symbolic images: studies in the art of the renaissance beautiful thing: an introduction to design art and visual perception: a psychology of the creative eye , the new version 100 things every designer needs to know about people the design of everyday things the design of everyday things emotional design: why we love (or hate) everyday things social psychology , 8th edition art and illusion: a study in the psychology of pictorial representation visual thinking visual thinking meaning in the visual arts: papers in and on art history 100 things every designer needs to know about people the design of everyday things the design of everyday things symbolic images: studies in the art of the renaissance"><span class="side-num">15</span> Design Theory &amp; Psychology</a><a href="16_pattern-ornament.html" data-search="16 pattern ornament pattern &amp; ornament pattern structure, chinese and western motifs, and auspicious meaning week 8 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book (new)世界裝飾紋樣圖典(4000餘種圖案+紋飾百科全書+裝飾藝術寶庫) l&#x27;art arabe 01 秩序感：裝飾藝術的心理學研究 中國紋樣集錦：examples of chinese ornament the grammar of ornament 中國紋樣全集 魏晉南北朝·隋唐·五代卷 世界裝飾圖案-1887-85p圖版 中國紋樣全集 宋·元·明·清卷 中國紋樣全集 戰國·秦·漢卷 中國紋樣全集 新石器時代和商·西周·春秋卷 中國經典紋樣圖鑑 摩洛哥傳統裝飾藝術 敦煌線描 民間美術：湖北挑花、土錦、藍印花布 裝飾文叢特別策劃卷7 貴州傳統蠟染-攝影集 the sense of order: a study in the psychology of decorative art examples of chinese ornament selected from objects in the south kensington museum and other collections"><span class="side-num">16</span> Pattern &amp; Ornament</a><a href="18_magazines-annuals.html" data-search="18 magazines annuals magazines &amp; annuals how to look at annuals and magazines week 1–13 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2021日本平面設計年鑑 45th publication design annual apd亞太設計年鑑no.17(1) brand 12 brand no.36-生活使用手冊2：文創熱量 brand no.37-字己 brand no.38-手工印刷 brand no.39-物料進化 brand no.40-文化時光機1868-1988 brand no.41-看圖説話，你的信息時代 brand no.42.-你好，藝術pdf brand no.43-小物志 brand no.44-貓狗日誌 design 360 雜誌(1) gallery 形錄 全球最佳圖形設計 vol.09 idea 377 novum201901 apd9亞太平面設計年鑑 apd5亞太設計年鑑 中國品牌設計年鑑 2013 日本字體與平面設計大獎年鑑 國家博物館-仙山圖特展 國家博物館-宋末民初上海畫壇 國家博物館-宋代花箋特展 國家博物館-蘇州片及其影響 國家博物館-瓶花與盆景畫特展 國家博物館-書畫菁華特展 idea+10 1 舉一反百的聰明設計法則 idea+10 2 一計點睛的即效設計處方 red-dot-award-concept-2011-2012 red_dot_award_design_concept_2013-2014 brand brand gallery 國際設計年鑑2014 日本品牌與包裝設計年鑑 2016 日本平面創意設計年鑑 2002-2004 疾風迅雷 杉浦康平雜誌設計的半個世紀 眾妙之門：移動web設計精髓（德）smashing雜誌 essentials of mobile design"><span class="side-num">18</span> Magazines &amp; Annuals</a><a href="20_advertising.html" data-search="20 advertising advertising positioning, aida, creative tactics, and point of purchase week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 1001 個廣告法則 pop 廣告設計 智威湯遜手冊 美國廣告設計實用教程 廣告公司的秘密：平面設計師就業寶典 advertising by design: creating visual communications with graphic impact"><span class="side-num">20</span> Advertising</a></div></nav>
+    </aside>
+    <main class="main" id="content" tabindex="-1">
+      <div class="topbar">
+        <button class="side-toggle" type="button">Guides</button>
+        <nav class="jump" aria-label="On this page"><a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a></nav>
+      </div>
+      <p class="kicker"><a href="index.html">SSHD2382</a> · Category 13</p>
+      <div class="digest">
+<h1 id="product-design">Product Design</h1>
+<p class="meta">Category 13 · Course link: Week 11 Strategic Design and Future Workflows (also related to Week 6–7 Design Principles) · Main references: <span lang="zh-Hant">《無印良品的設計》</span>; Tadamitsu Matsui, <span lang="zh-Hant">《解密無印良品》</span> and <span lang="zh-Hant">《無印良品世界觀》</span>; <span lang="zh-Hant">《產品極簡主義》</span>; <span lang="zh-Hant">《簡約不簡單：極簡風格產品設計》</span>; Campos, <span lang="zh-Hant">《創新產品設計與手繪》</span>; <span lang="zh-Hant">《20 世紀 50–80 年代中國、德國產品設計回望》</span>; Naoto Fukasawa, <span lang="zh-Hant">《意識的核心》</span></p>
+
+<h2 id="1-scope">1. Scope</h2>
+<p>This category has about 9 books, and their themes are tightly focused: <strong>minimalism</strong> and <strong>Muji</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Key books</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Origins of minimalism</td>
+<td><span lang="zh-Hant">《產品極簡主義》</span>, <span lang="zh-Hant">《簡約不簡單》</span></td>
+<td>Constructivism, De Stijl, Bauhaus, "less is more", "less, but better"</td>
+</tr>
+<tr>
+<td>Muji</td>
+<td><span lang="zh-Hant">《無印良品的設計》</span>, <span lang="zh-Hant">《解密無印良品》</span>, <span lang="zh-Hant">《無印良品世界觀》</span></td>
+<td>Product development process, observing daily life, systematised management, globalisation</td>
+</tr>
+<tr>
+<td>Product design methods</td>
+<td>Campos, <span lang="zh-Hant">《創新產品設計與手繪》</span></td>
+<td>Sketching, form development, prototyping</td>
+</tr>
+<tr>
+<td>Design and society</td>
+<td><span lang="zh-Hant">《中國、德國產品設計回望》</span></td>
+<td>Product design under different political and economic systems</td>
+</tr>
+<tr>
+<td>Design philosophy</td>
+<td>Naoto Fukasawa, <span lang="zh-Hant">《意識的核心》</span></td>
+<td>Design without thought</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-core-concepts">2. Core Concepts</h2>
+<h3 id="21">2.1 The Origins of Minimalism</h3>
+<pre class="mermaid">timeline
+  title Origins of product minimalism
+  1910s–20s : Russian Constructivism : Dutch De Stijl
+  1919–1933 : Bauhaus Weimar Dessau Berlin
+  1947 : Mies, Less is more
+  1950s–60s : Ulm School of Design : Braun and Rams
+  1980 : Muji is born
+  1990s–now : Naoto Fukasawa : Nendo : Contemporary Nordic design
+</pre>
+<ul>
+<li><strong>Constructivism and De Stijl</strong>: used geometric shapes, primary colours and structure to express a new age, and rejected ornament (Vladimir Tatlin's design for the Monument to the Third International is the classic example).</li>
+<li><strong>Bauhaus</strong>: the unity of art and technology; standardisation and industrial production in the service of ordinary people.</li>
+<li><strong>Ludwig Mies van der Rohe</strong>: "less is more" — achieving the greatest expressive power with the fewest elements.</li>
+<li><strong>Dieter Rams</strong>: "less, but better" (Weniger, aber besser) — not less for its own sake, but removing what is unnecessary so that what is necessary becomes better.</li>
+</ul>
+<h3 id="22">2.2 Rams's Ten Principles of Good Design</h3>
+<div class="cards">
+<div><strong>1 Innovative</strong>Technological progress opens up new design possibilities.</div>
+<div><strong>2 Useful</strong>A product is made to be used.</div>
+<div><strong>3 Aesthetic</strong>The beauty of a product affects the lives of the people who use it.</div>
+<div><strong>4 Understandable</strong>The product's structure is clear, so the product "speaks for itself".</div>
+<div><strong>5 Unobtrusive</strong>A product is a tool, not decoration or a work of art.</div>
+<div><strong>6 Honest</strong>It does not exaggerate the product's function or value.</div>
+<div><strong>7 Long-lasting</strong>It avoids fashion and stands the test of time.</div>
+<div><strong>8 Thorough</strong>Every detail has been considered.</div>
+<div><strong>9 Environmentally friendly</strong>It saves resources and reduces pollution.</div>
+<div><strong>10 As little design as possible</strong>A return to purity and simplicity.</div>
+</div>
+
+<p><span lang="zh-Hant">《簡約不簡單》</span> arranges these as "ten commandments of design" and proposes two working methods for minimalist design: <strong>do only one thing at a time</strong>; <strong>know where the problem lies</strong>.</p>
+<h3 id="23">2.3 Japanese Minimalism</h3>
+<p><span lang="zh-Hant">《產品極簡主義》</span> interviews Nendo and other Japanese design teams and sums up the features of Japanese minimalism:</p>
+<ul>
+<li><strong>Humour and surprise</strong>: adding a small "aha" moment to a minimal form (a technique Nendo often uses).</li>
+<li><strong>Design without thought</strong>: Naoto Fukasawa argues that design should fit the unconscious behaviour people already have — for example his wall-mounted CD player, which starts playing when you pull a cord, as naturally as switching on an extractor fan.</li>
+<li><strong>Material and touch</strong>: close attention to the feel and warmth of the material itself.</li>
+<li><strong>Empty space and <em>ma</em> (interval)</strong>: linked to Kenya Hara's aesthetics of "white" (see <a href="15_theory-psychology.html">15 Design Theory &amp; Psychology</a>).</li>
+</ul>
+<h3 id="24">2.4 Muji: "This Will Do"</h3>
+<p>Muji was born in Japan in 1980. Creators including Ikko Tanaka, Kazuko Koike and Takashi Sugimoto helped shape its concept. Its three original principles were:</p>
+<table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Selection of materials</td>
+<td>Choose suitable, inexpensive materials, including materials that were overlooked in the past</td>
+</tr>
+<tr>
+<td>Streamlining of processes</td>
+<td>Leave out processing steps that do not affect quality (for example, no bleaching, and not cutting off irregularly shaped parts)</td>
+</tr>
+<tr>
+<td>Simplification of packaging</td>
+<td>Remove unnecessary packaging and cut costs with uniform, plain packaging</td>
+</tr>
+</tbody>
+</table>
+<p>Muji does not aim for "this is the best" (strong desire and individuality) but for "<strong>this will do</strong>" — a confident restraint. After Kenya Hara became art director, he expressed the idea of "emptiness" through the "Horizon" advertising series: the brand is like an empty container into which each person puts their own meaning.</p>
+<h2 id="3-principles-methods">3. Principles &amp; Methods</h2>
+<h3 id="31">3.1 Muji's Product Development</h3>
+<p><span lang="zh-Hant">《無印良品的設計》</span> uses diagrams to reveal its product development process:</p>
+<pre class="mermaid">flowchart LR
+  obs[&quot;Observe daily life&lt;br/&gt;visit users at home&quot;] --&gt; idea[&quot;Find needs&lt;br/&gt;feel how life is lived&quot;]
+  idea --&gt; board[&quot;Advisory board&lt;br/&gt;outside designers join&quot;]
+  board --&gt; proto[&quot;Prototypes and trials&quot;]
+  proto --&gt; check[&quot;Weekly detail checks&quot;]
+  check --&gt; launch[&quot;Launch and store display&quot;]
+  launch -.customer feedback.-&gt; obs
+</pre>
+<ul>
+<li><strong>Observation research</strong>: designers visit users' homes and photograph where every object is kept and how it is used. They look for problems in real life, not in market data.</li>
+<li><strong>Redesigning home appliances</strong>: when appliances got stuck competing on price and features, Muji chose to make them blend quietly into daily life, "like a wall".</li>
+<li><strong>Systematisation: MUJIGRAM</strong>: in <span lang="zh-Hant">《解密無印良品》</span>, Tadamitsu Matsui explains that Muji wrote its store operations, product development and service into manuals. "Once a decision is made, it is carried through to the end", and the manuals are constantly updated — so the philosophy can be reproduced around the world (<span lang="zh-Hant">《無印良品世界觀》</span>).</li>
+</ul>
+<h3 id="32">3.2 The Product Design Development Process</h3>
+<p>Campos's <span lang="zh-Hant">《創新產品設計與手繪》</span> collects a large number of designers' process sketches. They can be summarised as:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Tools</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Concept sketches</td>
+<td>Pencil, marker</td>
+<td>Explore many directions quickly</td>
+</tr>
+<tr>
+<td>Form development</td>
+<td>Sketches from several angles, sections</td>
+<td>Study proportion, operation and structure</td>
+</tr>
+<tr>
+<td>Rough models</td>
+<td>Paper, foam, clay</td>
+<td>Feel the size and weight in your hand</td>
+</tr>
+<tr>
+<td>Digital modelling</td>
+<td>CAD, 3D modelling</td>
+<td>Precise dimensions, mould feasibility</td>
+</tr>
+<tr>
+<td>Prototype</td>
+<td>3D printing, CNC</td>
+<td>Test function and user response</td>
+</tr>
+<tr>
+<td>Preparing for mass production</td>
+<td>Engineering drawings, material and surface finish specifications</td>
+<td>Communicate with the factory</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33">3.3 Life Cycle and Eco-design</h3>
+<div class="chart">
+<svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <circle cx="160" cy="140" r="110" fill="none" stroke="#e2e2e8" stroke-width="22"/>
+  <g fill="#c8102e"><circle cx="160" cy="30" r="8"/><circle cx="255" cy="85" r="8"/><circle cx="255" cy="195" r="8"/><circle cx="160" cy="250" r="8"/><circle cx="65" cy="195" r="8"/><circle cx="65" cy="85" r="8"/></g>
+  <g fill="#1d1d1f" font-size="11">
+    <text x="160" y="16" text-anchor="middle">Material choice</text>
+    <text x="268" y="80">Manufacture</text>
+    <text x="268" y="200">Transport</text>
+    <text x="160" y="272" text-anchor="middle">Use</text>
+    <text x="52" y="200" text-anchor="end">After use</text>
+    <text x="52" y="80" text-anchor="end">Disposal</text>
+  </g>
+  <text x="160" y="136" text-anchor="middle" font-weight="bold" fill="#1d1d1f">Product life cycle</text>
+  <text x="160" y="154" text-anchor="middle" fill="#5b5b66" font-size="11">Life cycle</text>
+  <g fill="#1d1d1f" font-size="12">
+    <text x="330" y="60" font-weight="bold">Design strategies at each stage</text>
+    <text x="330" y="88">Materials: less, single, recyclable, low-pollution</text>
+    <text x="330" y="112">Manufacture: fewer processes, less energy</text>
+    <text x="330" y="136">Transport: light, stackable, less packaging</text>
+    <text x="330" y="160">Use: energy-saving, durable, repairable</text>
+    <text x="330" y="184">After use: upgradable, reusable, resellable</text>
+    <text x="330" y="208">Disposal: easy to take apart, sort, recycle</text>
+  </g>
+</svg>
+</div>
+<div class="caption">The eco-design wheel from <span lang="zh-Hant">《中國、德國產品設計回望》</span> spreads environmental concerns across every stage of the product life cycle, instead of leaving them to "recycling" at the very end.</div>
+
+<h3 id="34">3.4 Design and Society: China and Germany Compared</h3>
+<p><span lang="zh-Hant">《20 世紀 50–80 年代中國、德國產品設計回望》</span> compares products from two societies in the same period:</p>
+<ul>
+<li><strong>Germany</strong>: the Ulm School of Design and Braun established a rational, systematic approach to industrial design; East and West Germany each developed different product languages.</li>
+<li><strong>China</strong>: under the planned economy, product design stressed durability and standardisation. Revolutionary symbols and political images were common on the surface (for example the red-covered book of quotations, and everyday goods printed with slogans), showing how design carried the ideology of its time.</li>
+</ul>
+<p>This reminds us that the form of a product is never just the result of function and aesthetics. It is also a product of <strong>economics, technology and politics</strong>.</p>
+<h3 id="35">3.5 Minimal Does Not Mean Crude</h3>
+<ul>
+<li>Minimalism <strong>removes distraction</strong> so that function and material become clearer; crudeness <strong>removes thinking</strong>.</li>
+<li>Minimalism often needs <strong>more</strong> engineering and detailing: hidden screws, precise tolerances, one-piece moulding.</li>
+<li>A minimal product should be <strong>understandable</strong>: if users need a manual to find the buttons, it is not good minimalism (see Norman's affordances and signifiers, <a href="15_theory-psychology.html">15</a>).</li>
+</ul>
+<h2 id="4-selected-figures">4. Selected Figures</h2>
+<div class="figs">
+<figure><img src="assets/product/muji-appliance-ui.jpg" alt="Muji appliance interface"><figcaption>The control panel of a Muji appliance: only the necessary buttons and words are kept. Source: <span lang="zh-Hant">《無印良品的設計》</span>, p.23</figcaption></figure>
+<figure><img src="assets/product/muji-horizon.jpg" alt="Horizon"><figcaption>Visuals from Muji's "Horizon" series: expressing the brand through "emptiness". Source: same book, p.55</figcaption></figure>
+<figure><img src="assets/product/muji-store.jpg" alt="Muji store"><figcaption>The store display continues the plainness and order of the products. Source: same book, p.123</figcaption></figure>
+<figure><img src="assets/product/tatlin-tower.jpg" alt="Tatlin's Tower"><figcaption>Tatlin's design for the Monument to the Third International: a symbol of Constructivism. Source: <span lang="zh-Hant">《產品極簡主義》</span>, p.13</figcaption></figure>
+<figure><img src="assets/product/wall-mounted-cd.jpg" alt="Minimal product"><figcaption>A wall-mounted product built from a single circle. Source: same book, p.199</figcaption></figure>
+<figure><img src="assets/product/bauhaus-dessau.jpg" alt="Bauhaus Dessau building"><figcaption>The Bauhaus building in Dessau. Source: <span lang="zh-Hant">《簡約不簡單》</span>, p.20</figcaption></figure>
+<figure><img src="assets/product/cup-sketches.jpg" alt="Cup sketches"><figcaption>Concept sketches for cups. Source: same book, p.198</figcaption></figure>
+<figure><img src="assets/product/form-development.jpg" alt="Form development"><figcaption>The development process from sketch to form. Source: Campos, <span lang="zh-Hant">《創新產品設計與手繪》</span>, p.54</figcaption></figure>
+<figure><img src="assets/product/kitchen-timer.jpg" alt="Kitchen timer"><figcaption>A German mechanical timer: clear markings and operation. Source: <span lang="zh-Hant">《中國、德國產品設計回望》</span>, p.59</figcaption></figure>
+<figure><img src="assets/product/mao-red-book.jpg" alt="Book of quotations"><figcaption>The red-covered book of quotations: design carrying the ideology of its time. Source: same book, p.109</figcaption></figure>
+<figure><img src="assets/product/eco-design-wheel.jpg" alt="Eco-design wheel"><figcaption>The wheel of eco-design considerations. Source: same book, p.143</figcaption></figure>
+</div>
+
+<h2 id="5-source-bookshelf">5. Source Bookshelf</h2>
+<p>Suggested reading order: <span lang="zh-Hant">《產品極簡主義》</span> (origins) → <span lang="zh-Hant">《無印良品的設計》</span> (process) → <span lang="zh-Hant">《解密無印良品》</span> (management) → Campos, <span lang="zh-Hant">《創新產品設計與手繪》</span> (methods).</p>
+<!-- BOOKSHELF:START -->
+
+<details><summary>Show 9 titles</summary>
+
+- <a href="#b-simplicity-is-not-simple-minimalist-product-design">[132]<span lang="zh-Hant">簡約不簡單：極簡風格產品設計</span></a>
+- <a href="#b-product-minimalism">[135]<span lang="zh-Hant">產品極簡主義</span></a>
+- <a href="#b-the-design-of-muji">[243]<span lang="zh-Hant">無印良品的設計</span></a>
+- <a href="#b-decoding-muji">[244]<span lang="zh-Hant">解密無印良品</span></a>
+- <a href="#b-a-look-back-at-chinese-and-german-product-design-1950s1980s">[263]<span lang="zh-Hant">20 世紀 50–80 年代中國、德國產品設計回望</span></a>
+- <a href="#b-the-muji-worldview">[266]<span lang="zh-Hant">無印良品世界觀</span></a>
+- <a href="#b-innovative-product-design-and-hand-sketching"><span lang="zh-Hant">創新產品設計與手繪</span></a>
+- <a href="#b-naoto-fukasawa"><span lang="zh-Hant">深澤直人</span></a>
+- <a href="#b-naoto-fukasawa-the-core-of-consciousness"><span lang="zh-Hant">意識的核心</span></a>
+
+</details>
+
+<!-- BOOKSHELF:END -->
+
+<h2 id="6-study-cues">6. Study Cues</h2>
+<ol>
+<li>Score a product you use every day against Rams's ten principles. Which one is weakest?</li>
+<li>Visit a friend's home and watch how they use an everyday object (for example a cup or a remote control). Record three needs that are not being met.</li>
+<li>Draw 20 concept sketches for an everyday object, then pick one and make a paper model.</li>
+<li>Explain the difference between "this will do" and "this is the best", and give an example of a brand.</li>
+<li>Choose a product and propose one environmental improvement for each of the six stages of its life cycle.</li>
+<li>Where is the line between minimal and crude? Explain using a product you think is "too crude".</li>
+</ol>
+<!-- BOOKS:START -->
+
+<h2 id="7-each-book">7. Each Book</h2>
+<p>Each book in the bookshelf is described below. Every title above links to its section.</p>
+<h3 class="book" id="b-simplicity-is-not-simple-minimalist-product-design"><span lang="zh-Hant">簡約不簡單：極簡風格產品設計</span></h3>
+<p><strong>Scope.</strong> This is an introductory explanation of minimalist product design. It moves from "what is minimalism" to the Bauhaus, then uses Mies's "less is more" to look at real objects. Read it first to build your vocabulary, then move on to the books on Rams and Muji.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Minimalism is not another word for "emptiness". Mies described it as "less is more": remove unnecessary ornament and let technology and function become the expression.</li>
+<li>The book uses the three phases of the Bauhaus (Weimar, Dessau, Berlin) to show where these ideas came from. It then uses the Farnsworth House to show how glass, steel and the absence of extra parts combine into a single whole.</li>
+<li>Applied to everyday objects, minimalism means doing one thing at a time and letting people see what that one thing is.</li>
+<li>The small objects in the book (for example a clock you can write on in its empty space, or a rack held together without glue) show that fewer parts can still have a clear purpose.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When you describe a product, first write down "the one thing it does", then list the parts you could remove. It only counts as minimal if the function still works after they are gone.</li>
+<li>Check yourself with two working rules: do one thing at a time; know where the problem is first.</li>
+<li>Do not treat "white, sans-serif, very few buttons" as a recipe for the minimal look. Change the structure first, then talk about appearance.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/product/books/b-simplicity-is-not-simple-minimalist-product-design-1.jpg" alt="Minimal clock"><figcaption>The clock face stays blank, with the indication kept to one necessary point, and the empty space can hold notes. Source: <span lang="zh-Hant">《簡約不簡單：極簡風格產品設計》</span>, p.41</figcaption></figure>
+<figure><img src="assets/product/books/b-simplicity-is-not-simple-minimalist-product-design-2.jpg" alt="Glue-free rack"><figcaption>One structure can hold clothes, books or small kitchen items without using glue. Source: same book, p.113</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Explain "less is more" in your own words. How is it different from "nothing at all"?</li>
+<li>Choose a piece of stationery, write down three things it does at the same time, then try to change it so it does only one.</li>
+</ol>
+<h3 class="book" id="b-product-minimalism"><span lang="zh-Hant">產品極簡主義</span></h3>
+<p><strong>Scope.</strong> This book places minimalist products back in their regions and origins: Germany, the Nordic countries and Japan, as well as Constructivism, De Stijl and the Bauhaus. It also lists Dieter Rams's ten principles of good design in full, so it works well as a scoring sheet.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The line of origins runs: Russian Constructivism, Dutch De Stijl, the Bauhaus, then Mies's "less is more", and finally Braun and Rams.</li>
+<li>The ten principles of good design: innovative, useful, aesthetic, understandable, unobtrusive, honest, long-lasting, thorough, environmentally friendly, as little design as possible.</li>
+<li>Japanese minimalism has other sources: restraint in the use of materials, and the habit of "removing the unnecessary" that came from Zen becoming part of daily life. The book uses objects by studios such as nendo to show that minimalism can still hold a quiet ingenuity.</li>
+<li>The book compares Apple's later products with Rams: less, but every part still does work.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Score an everyday product against the ten principles. The two lowest scores show where to redesign; do not try to change all ten at once.</li>
+<li>When you analyse a Japanese or Nordic product, record separately "what has been removed" and "what feeling it still gives" (warmth, weight, sound).</li>
+<li>When you make your own model, start with one material and one type of joint. Write down a reason before you add a second.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/product/books/b-product-minimalism-1.jpg" alt="Multi-purpose stationery box"><figcaption>A small stationery box is a pen holder, card holder and document box at once; its functions come from structure, not decoration. Source: <span lang="zh-Hant">《產品極簡主義》</span>, p.153</figcaption></figure>
+<figure><img src="assets/product/books/b-product-minimalism-2.jpg" alt="Screen series"><figcaption>A series of screens: the form comes from how the material stands up, not from added patterns. Source: same book, p.67</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>It does not matter if you cannot recite all ten principles. Choose three, and for each give one product that meets it and one that does not.</li>
+<li>Constructivism and Japanese minimalism are both "less". How do their reasons for being less differ?</li>
+</ol>
+<h3 class="book" id="b-the-design-of-muji"><span lang="zh-Hant">無印良品的設計</span></h3>
+<p><strong>Scope.</strong> This book uses diagrams to show how Muji's products and stores are made. Its focus is on observing daily life and on the weekly detail checks; it is not a collection of brand slogans.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Product development starts by observing real homes: where water is used, how bedrooms are stored, where keys and watches are put down. The team looks at how objects are used, not at trends in a catalogue.</li>
+<li>Observation teams are made up of people from different specialisms (designers, textiles, electronics). People from the same specialism tend to notice the same things.</li>
+<li>It is best to visit relatives or friends. If the hosts do not know you well, they tidy up first, and the real look of their life disappears.</li>
+<li>The process includes an advisory board and weekly detail checks. An idea only becomes a product after repeated checking.</li>
+<li>The stores do not try to be "very fashionable shops". The attitude is to change, but not to change for the sake of change.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before starting a product project, visit a real home and take ten photos of "where things are actually kept", then write down three unmet needs.</li>
+<li>When observing, ask people questions rather than just measuring. People's explanations often reveal more than the objects themselves.</li>
+<li>Set aside one session a week to "change details only": corners, joints, label position. Do not redo the concept every time.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/product/books/b-the-design-of-muji-1.jpg" alt="Parts become a lamp"><figcaption>A plastic container plus a red part and an LED becomes a lampshade. Combining parts comes before styling. Source: <span lang="zh-Hant">《無印良品的設計》</span>, p.43</figcaption></figure>
+<figure><img src="assets/product/books/b-the-design-of-muji-2.jpg" alt="Store design"><figcaption>The stores are meant to change, but not to become spaces that chase fashion. Source: same book, p.113</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why does Muji observe the homes of people it knows, rather than tidied-up show flats?</li>
+<li>Use the "different specialisms look together" method: look at your desk with a classmate who is not a designer, and each write down three findings.</li>
+</ol>
+<h3 class="book" id="b-decoding-muji"><span lang="zh-Hant">解密無印良品</span></h3>
+<p><strong>Author:</strong> Tadamitsu Matsui</p>
+<p><strong>Scope.</strong> Tadamitsu Matsui writes about Muji's management system, not the look of its products. At its core is MUJIGRAM, a store manual some two thousand pages long: it turns individual experience into standards that can be passed on.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Without standards, there can be no improvement. The manual turns service that relied on personal intuition into a system.</li>
+<li>MUJIGRAM and the business standards manual cover store opening, product development, the sales floor and service. They contain a large number of photos and diagrams.</li>
+<li>The manual lets staff make decisions even when their manager is not there, so it raises the team's ability to act, not just the uniformity of appearance.</li>
+<li>The second half of the book applies the same method to the individual: you need the basics before you can adapt them; even communication and housework can be written as steps.</li>
+<li>In management, "this will do" means making a task repeatable, rather than relying on a hero every time.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For a group assignment, write a one-page "how we work": where files go, who proofreads the text, five checks before handing in. Next time use only this page, and rewrite any sentences that no longer work.</li>
+<li>Standards written as a photo plus one sentence are easier to carry out than abstract principles.</li>
+<li>Separate "must be the same" from "can be judged". If everything is locked down, the manual becomes an obstacle.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/product/books/b-decoding-muji-1.jpg" alt="Steps for a shop window"><figcaption>Even arranging a shop window has steps. The purpose of the manual is to find the way to do a job well. Source: Tadamitsu Matsui, <span lang="zh-Hant">《解密無印良品》</span>, p.17</figcaption></figure>
+<figure><img src="assets/product/books/b-decoding-muji-2.jpg" alt="Training and the manual"><figcaption>When there is no time for one-to-one teaching, the manual keeps the experience. Source: same book, p.74</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What problem of "the store manager not being there" is MUJIGRAM meant to solve?</li>
+<li>Write your process for doing an assignment as five steps. Which step currently exists only in your head?</li>
+</ol>
+<h3 class="book" id="b-a-look-back-at-chinese-and-german-product-design-1950s1980s"><span lang="zh-Hant">20 世紀 50–80 年代中國、德國產品設計回望</span></h3>
+<p><strong>Scope.</strong> This is a comparative book that places Chinese products alongside the industrial design of the two Germanys (the Federal Republic and the Democratic Republic) from the same period. The preface includes writing by Kan Tai-keung and others. Use it to understand that the look of a product is tied to economics, politics and technology.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The German side includes the rational tradition of Ulm and Braun, and also the industrial design of East Germany under a different system. The two cannot be merged into a single look called "German design".</li>
+<li>East Germany was founded in 1949, almost at the same time as the People's Republic of China. The book uses this history to remind readers that before looking at a product, you need to know which country and which industry produced it.</li>
+<li>The Chinese side shows everyday goods under the planned economy: durable, standardised, and sometimes carrying the images and slogans of that era.</li>
+<li>The book does not judge which side is "more beautiful". It gives you the background to classify and compare.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For any old product, first fill in four boxes: when, where, who made it, and who it was sold or allocated to. Only then write about its form.</li>
+<li>When comparing China and Germany, find one object from each with the same purpose (a lamp, a radio, a bicycle) and list the differences in three rows: function, material, decoration.</li>
+<li>Do not treat "German design" as a style filter. First ask whether it is a systematic West German product or an East German industrial product.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/product/books/b-a-look-back-at-chinese-and-german-product-design-1950s1980s-1.jpg" alt="Frontispiece portraits"><figcaption>The portrait pages at the front of the book. Source: <span lang="zh-Hant">《20 世紀 50–80 年代中國、德國產品設計回望》</span>, p.6</figcaption></figure>
+<figure><img src="assets/product/books/b-a-look-back-at-chinese-and-german-product-design-1950s1980s-2.jpg" alt="Bicycle production"><figcaption>Factories and joint ventures are used to explain how products were made. Source: same book, p.103</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why can "German design" of 1950–80 not be described as a single style?</li>
+<li>Choose an old object at home and write down the way of production it might reflect, not just whether it looks good.</li>
+</ol>
+<h3 class="book" id="b-the-muji-worldview"><span lang="zh-Hant">無印良品世界觀</span></h3>
+<p><strong>Author:</strong> Tadamitsu Matsui</p>
+<p><strong>Scope.</strong> Also by Tadamitsu Matsui, this book turns the camera overseas: how Muji opens stores in other countries, and why it prefers to go slowly. Read it together with <span lang="zh-Hant">《解密無印良品》</span>: one covers the system inside the store, the other covers expansion.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The speed of opening stores is not the goal. The next store opens only after one store has paid back its investment and made a profit. This is to avoid the failure of opening fast and then pulling out.</li>
+<li>Here, "this will do" is a kind of speed: Muji does not compete with the fastest retailers on store numbers.</li>
+<li>When the same product goes to another country, both its price and the way it is used change. What local people see as a "cheap notebook" may have nothing to do with the Japanese sense of price.</li>
+<li>Products are adapted to local ways of use; for example, a bench can go beside a dining table, in a yard, or be used to hold things. The worldview is not about copying the Japanese store exactly.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When discussing how a brand goes international, separate three things: how fast to open stores, whether to change the products, and what the price means locally.</li>
+<li>Take one Muji product and write down how its use in Hong Kong might differ from its use in the market described in the book.</li>
+<li>When you read the numbers (stores, countries), also read what the company refuses to do: it will not take on losses up front just to raise store numbers.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/product/books/b-the-muji-worldview-1.jpg" alt="Multi-use bench"><figcaption>The same bench can go beside a dining table, in a garden, or be used to hold things. Source: Tadamitsu Matsui, <span lang="zh-Hant">《無印良品世界觀》</span>, p.179</figcaption></figure>
+<figure><img src="assets/product/books/b-the-muji-worldview-2.jpg" alt="Sense of price overseas"><figcaption>The local sense of price for the same type of product may be completely different from Japan. Source: same book, p.49</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why does Muji not treat "opening more stores" as its main goal?</li>
+<li>If you brought a storage product designed for small Japanese homes to Hong Kong, would you change its size, its material or the way it is used first? Why?</li>
+</ol>
+<h3 class="book" id="b-innovative-product-design-and-hand-sketching"><span lang="zh-Hant">創新產品設計與手繪</span></h3>
+<p><strong>Original title:</strong> <em>Product Design Now</em></p>
+<p><strong>Author:</strong> Campos</p>
+<p><strong>Scope.</strong> This is a catalogue of process: products such as bicycles, home appliances and small tools appear beside the designers' sketches and short notes. Use it to learn "how sketches push a form forward", not to learn one particular drawing style.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Sketches should come before polished renderings. The bicycle sketches in the book settle the riding position, the wheels and the storage at a very early stage.</li>
+<li>Good process drawings explain one specific problem: how to let people sit naturally, how to make a series look like one family, how to fit a compass and a whistle into a small tool.</li>
+<li>Product series use similar outlines so people recognise them as a set, then use details to tell the models apart.</li>
+<li>The relationship between the body and the object (where the hand grips, where the centre of gravity is) must be visible at the sketching stage; it cannot wait until the styling stage.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Draw at least twenty small sketches for one proposal, changing only one variable in each (grip, seam, proportion).</li>
+<li>Write one sentence beside each sketch saying "what this one is solving". A drawing without a sentence is just line practice.</li>
+<li>When designing a series, first draw the shared outline, then draw two places that must be different, so you do not end up with copies of the same object.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/product/books/b-innovative-product-design-and-hand-sketching-1.jpg" alt="Outlines of a product series"><figcaption>A series uses similar outlines so people recognise the family, then details to tell the models apart. Source: Campos, <span lang="zh-Hant">《創新產品設計與手繪》</span>, p.112</figcaption></figure>
+<figure><img src="assets/product/books/b-innovative-product-design-and-hand-sketching-2.jpg" alt="Multi-purpose small tool"><figcaption>One small tool holds a compass, a thermometer, a torch and a whistle. Source: same book, p.98</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why should a product series "look like one family from a distance, but show its model up close"?</li>
+<li>Draw six sketches for a water bottle, changing only one variable in each, and write that one sentence beside each.</li>
+</ol>
+<h3 class="book" id="b-naoto-fukasawa"><span lang="zh-Hant">深澤直人</span></h3>
+<p><strong>Original title:</strong> <em>Naoto Fukasawa</em></p>
+<p><strong>Scope.</strong> This is a catalogue of works and career: from Tama Art University, Epson and IDEO to returning to Japan to set up his own studio, becoming an adviser to Muji and working on ±0. Use it to understand the context of one person's work; for the detailed arguments, read it with <span lang="zh-Hant">《意識的核心》</span>.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Naoto Fukasawa's path: product design education in Japan, IDEO in the United States, then back to Tokyo, where he put design into everyday brands rather than only making concept exhibitions.</li>
+<li>What his works share is very few parts, with tolerances and junctions handled so that nothing extra can be seen.</li>
+<li>Brands like ±0 make appliances look like everyday objects: humidifiers, clocks and small appliances, without stressing a high-tech look.</li>
+<li>The catalogue is best read in time order. Do not pull out a single product photo and treat it as a method.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make a timeline for this book with only eight points: education, first job, IDEO, return to Japan, Muji, ±0, key works, and your own one-sentence summary.</li>
+<li>For each product, write: which common part did it remove (buttons, screen, brand badge)? Can people still use it after that part is gone?</li>
+<li>Do not copy "rounded corners, white, a small screen" as the Fukasawa style. Write the behaviour first, then the form.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/product/books/b-naoto-fukasawa-1.jpg" alt="Electronic product by Naoto Fukasawa"><figcaption>An electronic product with few parts: the time information is fitted into a very small screen. Source: <span lang="zh-Hant">《深澤直人》</span>, p.6</figcaption></figure>
+<figure><img src="assets/product/books/b-naoto-fukasawa-2.jpg" alt="±0 humidifier"><figcaption>Appliances such as the ±0 humidifier turn electrical goods into everyday objects. Source: same book, p.15</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How might Naoto Fukasawa's time at IDEO have shaped the way he later worked as an adviser to Muji?</li>
+<li>Choose one of his products, point out a common part that has been removed, and explain whether its use is still clear.</li>
+</ol>
+<h3 class="book" id="b-naoto-fukasawa-the-core-of-consciousness"><span lang="zh-Hant">意識的核心</span></h3>
+<p><strong>Author:</strong> Naoto Fukasawa</p>
+<p><strong>Scope.</strong> This is a text in the style of a lecture about "design without thought". It is more useful than the catalogue of works when you write design statements: people often act without thinking first, because the environment already offers them clues about how things can be used.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>When designing a place to leave umbrellas, you should not first invent an "umbrella stand shape". Look first at how people relate to the wall and the entrance.</li>
+<li>The environment offers values for action: a log lying on its side makes people sit down; a grid railing makes people rest a milk carton on it; the dots of tactile paving make people stub out cigarettes on them. None of these are functions a designer wrote into a manual.</li>
+<li>Muji's wall-mounted CD player is the key example: pull the cord and it plays, like pulling a light switch or an extractor fan cord. People do not need to learn a new interface.</li>
+<li>Materials also carry memories. When the sheeting common on building sites is made into a bag, people know its character as soon as they touch it.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Observation exercise: record five actions you "did without thinking" (sitting down, putting down a cup, pulling a cord, leaning while walking). Beside each, write which shape in the environment invited you.</li>
+<li>When designing an interface or product, borrow an action that already exists rather than inventing a new set of gestures.</li>
+<li>When writing a design statement, use this sentence pattern: "When people ___, they already ___, so this design keeps that action working."</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/product/books/b-naoto-fukasawa-the-core-of-consciousness-1.jpg" alt="Bag made from building-site material"><figcaption>A bag made from material common on building sites: the feel itself carries memories. Source: Naoto Fukasawa, <span lang="zh-Hant">《意識的核心》</span>, p.19</figcaption></figure>
+<figure><img src="assets/product/books/b-naoto-fukasawa-the-core-of-consciousness-2.jpg" alt="Wall-mounted CD player"><figcaption>Muji's CD player: pull the cord to play, borrowing an action people already know. Source: same book, p.9</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Use "the values the environment offers" to explain why people put cups on railings.</li>
+<li>Design a switch that users can operate without learning a new action. Which old action did you borrow?</li>
+</ol>
+<!-- BOOKS:END -->
+      </div>
+
+      <nav class="pager" aria-label="Categories"><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span>Previous guide</span><strong>12 Architecture &amp; Space</strong><i aria-hidden="true">&rarr;</i></a><a class="next" href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span>Next guide</span><strong>14 Design &amp; Art History</strong><i aria-hidden="true">&rarr;</i></a></nav>
+    </main>
+    <aside class="rail" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a>
+    </aside>
+  </div>
+  <script src="js/guide.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scene.js"></script>
+  <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, theme: "dark", themeVariables: { background: "#101b34", primaryColor: "#1b2b4d", primaryTextColor: "#e6eef8", primaryBorderColor: "#4e6586", lineColor: "#8ea0b8", fontFamily: "Source Sans 3, sans-serif" } });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1428">
+  <title>Design Basics &amp; Composition · Design Fundamentals</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/guide.css">
+</head>
+<body class="page-guide">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="loader" id="loader" data-label="01 Design Basics &amp; Composition" aria-hidden="true">
+    <p class="loader-label">SSHD2382 / Design Fundamentals</p>
+    <div class="loader-box">
+      <span class="plus tl"></span><span class="plus tr"></span><span class="plus bl"></span><span class="plus br"></span>
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg>
+    </div>
+    <p class="loader-count" data-count-slots></p>
+    <p class="loader-page"></p>
+  </div>
+  <header class="site-head">
+    <a class="logo" href="index.html" aria-label="Design Fundamentals, home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg><span>Fundamentals<sup>&reg;</sup></span></a>
+    <nav class="head-nav" aria-label="Site">
+      <a class="pill pill-solid" href="index.html#browse" data-magnetic><span data-text="Browse">Browse</span></a>
+      <button class="pill pill-line" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-magnetic><span data-text="Menu">Menu</span><i class="burger" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <div class="menu-panel" id="menu" inert>
+    <div class="menu-inner">
+      <p class="menu-label">(Guides)</p>
+      <ol class="menu-list"><li><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span class="menu-num">01</span><span class="menu-name">Design Basics &amp; Composition</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="02_colour.html" data-label="02 Colour"><span class="menu-num">02</span><span class="menu-name">Colour</span><span class="menu-week">Week 8</span></a></li><li><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span class="menu-num">03</span><span class="menu-name">Typography &amp; Lettering</span><span class="menu-week">Week 9</span></a></li><li><a href="04_layout-grid.html" data-label="04 Layout &amp; Grid Systems"><span class="menu-num">04</span><span class="menu-name">Layout &amp; Grid Systems</span><span class="menu-week">Week 3, 4, 5</span></a></li><li><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span class="menu-num">05</span><span class="menu-name">Logo &amp; Branding</span><span class="menu-week">Week 10, 11</span></a></li><li><a href="06_packaging.html" data-label="06 Packaging"><span class="menu-num">06</span><span class="menu-name">Packaging</span><span class="menu-week">Week 11</span></a></li><li><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span class="menu-num">07</span><span class="menu-name">Book Design &amp; Print</span><span class="menu-week">Week 5, 9</span></a></li><li><a href="08_infographics.html" data-label="08 Information Graphics"><span class="menu-num">08</span><span class="menu-name">Information Graphics</span><span class="menu-week">Week 4</span></a></li><li><a href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span class="menu-num">09</span><span class="menu-name">Interaction, Web &amp; UX</span><span class="menu-week">Week 11 (and 4)</span></a></li><li><a href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span class="menu-num">10</span><span class="menu-name">Graphic Design Practice</span><span class="menu-week">Week 1, 11</span></a></li><li><a href="11_interior.html" data-label="11 Interior Design"><span class="menu-num">11</span><span class="menu-name">Interior Design</span><span class="menu-week">Further reading</span></a></li><li><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span class="menu-num">12</span><span class="menu-name">Architecture &amp; Space</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="13_product.html" data-label="13 Product Design"><span class="menu-num">13</span><span class="menu-name">Product Design</span><span class="menu-week">Week 11 (and 6–7)</span></a></li><li><a href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span class="menu-num">14</span><span class="menu-name">Design &amp; Art History</span><span class="menu-week">Week 1</span></a></li><li><a href="15_theory-psychology.html" data-label="15 Design Theory &amp; Psychology"><span class="menu-num">15</span><span class="menu-name">Design Theory &amp; Psychology</span><span class="menu-week">Week 4, 6–7, 10</span></a></li><li><a href="16_pattern-ornament.html" data-label="16 Pattern &amp; Ornament"><span class="menu-num">16</span><span class="menu-name">Pattern &amp; Ornament</span><span class="menu-week">Week 8 (and 6–7)</span></a></li><li><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span class="menu-num">18</span><span class="menu-name">Magazines &amp; Annuals</span><span class="menu-week">Week 1–13</span></a></li><li><a href="20_advertising.html" data-label="20 Advertising"><span class="menu-num">20</span><span class="menu-name">Advertising</span><span class="menu-week">Week 10, 11</span></a></li></ol>
+      <div class="menu-foot"><span>SSHD2382 Design Fundamentals</span><span>Eighteen guides, thirteen weeks</span><a href="index.html">Home</a></div>
+    </div>
+  </div>
+  <canvas class="scene" id="scene" data-scene="page" data-cat="01" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <p class="side-brand">SSHD2382 / Guides</p>
+      <label class="visually-hidden" for="q">Search categories</label>
+      <input class="search" id="q" type="search" placeholder="Name, term, or category" autocomplete="off">
+      <p class="empty" id="empty" hidden>No category matches.</p>
+      <nav aria-label="Categories"><div class="side-group"><p class="side-label">Categories</p><a href="01_design-basics.html" data-search="01 design basics design basics &amp; composition point, line, plane, composition, and the four design principles week 2, 6–7 1. scope 2. core concepts 3. proportion &amp; geometry 4. principles &amp; methods 5. selected figures 6. source bookshelf 7. study cues 7. each book 藝術·設計的平面構成 藝術·設計的立體構成 藝術·設計的紙的構成 藝術·設計的光的構成 平面設計原理 通用設計法則 美國視覺設計學院叢書：設計元素（平面設計樣式） 寫給大家看的設計書：實例與創意 黃金比例 設計的教室 設計的方法 談繪畫構圖 1000多個圖形元素：獨特的設計元素 設計中的點線面 平面設計法則 設計幾何學：關於比例與構成的研究 藝術·設計的平面構成（繁體版） 探索幾何：平面視覺構建 好造型的設計元素 和諧之美：探索設計中的黃金比例 分寸設計：發現黃金比例恆久之美 設計元素：平面設計樣式（英文原書） 寫給大家看的設計書（第3版） 設計元素：平面設計樣式 國際平面設計基礎教程：規格設計（format） 國際平面設計基礎教程：圖形設計（image） 國際平面設計基礎教程：設計思維（thinking） 寫給大家看的設計書（第4版） 平面設計的七大要素 綜合造型設計基礎 美國視覺設計學院用書：設計元素（平面設計樣式） 視覺原理 設計力：寫給大家的平面設計法則 通用設計法則（英文版） the elements of graphic design: space, unity, page architecture, and type universal principles of design design elements: a graphic style manual robin williams design workshop geometry of design: studies in proportion and composition the design method: a philosophy and process for functional visual communication 1000 graphic elements: special details for distinctive designs the essential principles of graphic design geometry of design: studies in proportion and composition design elements: understanding the rules and knowing when to break them geometry of design: studies in proportion and composition , 2nd edition (revised and updated) design elements: a graphic style manual the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual basics design 01: format basics design 04: image basics design 08: design thinking the non-designer&#x27;s design book: design and typographic principles for the visual novice , 4th edition the 7 essentials of graphic design design elements: a graphic style manual principles of visual perception universal principles of design" aria-current="page"><span class="side-num">01</span> Design Basics &amp; Composition</a><a href="02_colour.html" data-search="02 colour colour hue, value, chroma, colour systems, palettes, and colour psychology week 8 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術·設計的色彩構成 寫給大家看的色彩書1：設計配色基礎 寫給大家看的色彩書2：色彩怎麼選，設計怎麼做 梁景紅談：色彩設計法則 配色設計原理 七日掌握設計配色基礎 配色設計從入門到精通 平面設計配色全攻略 美國色彩基礎教材 色彩應用：平面設計配色經典創意 黑白灰設計：摒棄有彩色的設計法則 美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式 觀念之色：中國傳統色彩研究 色彩搭配的黃金法則 新手配色寶典：2000個配色案例不怕你不會 像藝術家一樣思考之三：貝蒂的色彩 國際平面設計基礎教程：colour色彩設計 平面設計綜合配色手冊 色彩怎麼選，設計怎麼做 色彩感知學 色彩構成 色彩設計：日本平面設計師參考手冊 色彩設計的100個亮點 色彩設計的原理 設計入門教室3：色彩設計的原理 設計密碼：綜合配色完全攻略 color basics color design workbook: a real-world guide to using color in graphic design drawing for graphic design: understanding conceptual principles and practical techniques to create unique, effective design solutions color: a course in mastering the art of mixing colors basics design 05: colour 100 bright ideas for colour"><span class="side-num">02</span> Colour</a><a href="03_typography.html" data-search="03 typography typography &amp; lettering letter structure, classification, typesetting, and mixed chinese and latin type week 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book typography 字誌：issue 01 typography 字誌：issue 05_pdf 自由字在：字體設計與創意 中國字體設計人：一字一生 西文字體1：字體的背景知識和使用方法 西文字體2：經典款字體及其表現方法 文字設計的原理_文字設計所必須的信息和技巧 新概念字體基礎&amp;應用_蘇克 説文解字 字言字語 字體傳奇 影響世界的helvetica 治字百方 字型散步 街道文字_小林章 西文排版_排版的基礎和規範 漢字書法之美_蔣勳 文字的故事 意匠文字 設計師的字體世界 文字的力與美 漢字的誘惑 中國美術字史圖説 漢字設計與應用 十二生肖形意字 書法字體設計技巧與應用 平面排版_基本的基本 tokoy tdc vol.28⭐ 排版的風格 字體設計的規則與藝術 tokoy tdc vol.29⭐ 字體呈現3⭐ 字體設計基礎 【會員專供】中國近現代字體應用文獻展 【會員專供】文字設計在中國邀請展 【會員專供】超語境國際文字設計論壇 世界文字發展史_11407704 今日字體 創意字體設計與製作-www.afx365.com 國際平面設計基礎教程-typography字體設計 字型之不思議 字型之不思議 小冊-手寫 字體呈現-q 字體呈現二（完整） 字體呈現小冊一 字體呈現小冊二 字體怡人 字體設計100+1 字體，海報設計部分 展覽，印刷字體部分（雙頁） 序言 排版造型_白井敬尚 文字設計的原理 書於竹帛中國古代的文字記錄_12270059 歐文字體ⅰ 歐文字體ⅱ 自由“字”在 字體設計與創意13696100(1) 設計入門教室 2 文字設計的原理 designing type basics design 03: typography written on bamboo and silk: the beginnings of chinese books and inscriptions"><span class="side-num">03</span> Typography &amp; Lettering</a><a href="04_layout-grid.html" data-search="04 layout grid layout &amp; grid systems grids, hierarchy, and arranging image with text week 3, 4, 5 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 日本版式設計原理_p159 跨平台的視覺設計版式設計原理 破譯文字編排設計 破譯網格設計 美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書 版式設計：日本平面設計師參考手冊 超越平凡的平面設計：怎樣做好版式 版式設計+給你靈感的全球最佳版式創意方案 柵格系統與版式設計 國際版式設計基礎教程 七日掌握版面設計基礎 美國編排設計教程 平面設計中的網格系統 版式設計風暴ⅱ 網格系統與版式設計 創意版式設計_王紹強 版面設計的原理_設計前必須知道的事情 版式設計全攻略(佐) 進階理解版式設計 版式設計：合適最好 版式設計從入門到精通 版面設計網格構成 版式設計原理_案例篇：提升版式設計的55個技巧 秩序之美_網頁中的網格設計 日本版式設計原理 版式設計法則 版式創意大爆炸 版式設計+2版式創意方案 版式設計風暴 [商業版式設計的方法] 版式編排設計 版式設計 今日版式 印刷的終結：戴維·卡森的自由版式設計 國際平面設計基礎教程-grids網格設計 國際平面設計基礎教程-layout版式設計(第2版) 版式設計-www.afx365.com 版式設計原理 版式設計原理-全綵教程 版式設計實用手冊-www.afx365.com 版式設計實用手冊.suni視覺設計.全綵版 版式設計從入門到精通-www.afx365.com 版面設計黃金法則 破譯文字編排設計-www.afx365.com 秩序之美——網頁中的網格設計英文版 編排設計教程 設計入門教室 1 版面設計的原理 超越平凡的平面設計 版式設計原理與應用 typography workbook: a real-world guide to using type in graphic design making and breaking the grid: a graphic design layout workshop graphic designer&#x27;s essential reference: visual elements, techniques, and layout strategies for busy designers before &amp; after page design grid systems: principles of organizing type best practices for graphic designers, grids and page layouts: an essential guide for understanding and applying page design principles typographic systems grid systems: principles of organizing type layout: making it fit: finding the right balance between content and space ordering disorder: grid principles for web design the end of print: the graphic design of david carson basics design 07: grids basics design 02: layout , 2nd edition typography workbook: a real-world guide to using type in graphic design ordering disorder: grid principles for web design typographic systems before &amp; after: how to design cool stuff"><span class="side-num">04</span> Layout &amp; Grid Systems</a><a href="05_logo-branding.html" data-search="05 logo branding logo &amp; branding mark types, identity systems, and brand strategy week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book logo 百年 設計品牌（原田進） 用設計做品牌 品牌設計+：給你靈感的 best 品牌形象方案 品牌設計+：創造 top 品牌的色彩應用方案 品牌設計+：創造 brand 力的動態 logo 設計（1） 標誌設計 logo design 標誌新語 iii really good logos explained designing brand identity 超越 logo 設計 brand 創新與設計：創意、建構和維護精彩品牌標識之完全指南 標誌設計指南 logo design workbook 品牌標誌：top 設計 150 例 消費森林 × 品牌再生：李永銓的設計七大法則 品牌中的色彩 圖案無限：品牌中的圖案 品牌簡單之道 what brand 什麼是品牌設計 品牌 100 一個 logo 的誕生 視覺美食：最佳餐飲品牌設計 溝通時尚品牌 100 個經典 logo 品牌設計之美：冷色調的色彩詮釋 logo：29 個經典的前世今生 logo 百年 品牌至上：logo 設計法則與案例應用解析 品牌識別法則：100 條原理 no logo：顛覆品牌全球統治 脫穎而出的品牌致勝秘密 精簡：無印良品與品牌理念打造 電商品牌形象設計 品牌標誌：頂級設計 150 例 設計品牌 世界標誌大典 1 品牌設計法則（徐適） 日本彩色商標與企業識別 10 解構 logo 設計：300 例國際 logo 分析與解讀 超越 logo 設計：國際頂級平面設計師的成功法則 超越 logo 設計：國際頂級平面設計師的成功法則 logo design love: a guide to creating iconic brand identities designing brand identity: a complete guide to creating, building, and maintaining strong brands logo design workbook: a hands-on guide to creating logos creative solutions: logos: making a strong mark: 150 strategies for logos that last brandsimple: how the best brands keep it simple and succeed what is branding? logo life: life histories of 100 famous logos tm: the untold stories behind 29 classic logos brand identity essentials: 100 principles for designing logos and building brands no logo: taking aim at the brand bullies designing brand identity: an essential guide for the whole branding team creative solutions: logos: making a strong mark: 150 strategies for logos that last deconstructing logo design: 300+ international logos analyzed and explained logo design love: a guide to creating iconic brand identities logo design love: a guide to creating iconic brand identities"><span class="side-num">05</span> Logo &amp; Branding</a><a href="06_packaging.html" data-search="06 packaging packaging structure, the shelf, materials, and brand week 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 創造品牌的包裝設計 現代設計色彩教材叢書：包裝設計色彩 包裝設計藝術：王紹強 紙品包裝結構解析 新包裝 環保包裝設計 50 trade secrets of great design packaging 1000 package designs：a comprehensive guide 拿來就用的包裝設計 食品包裝設計 包裝設計+：給你靈感的包裝方案 包裝設計家：靳埭強與他的設計師朋友 簡約包裝 simply packaging 中式元素視覺傳達：包裝設計 packaging the brand: the relationship between packaging design and brand identity simply packaging"><span class="side-num">06</span> Packaging</a><a href="07_book-print.html" data-search="07 book print book design &amp; print book structure, paper, binding, and print week 5, 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2015 中國最美的書 書籍設計-安德魯 書形：138種創意書籍和印刷紙品設計 如何設計一本畫冊 平面印刷色彩：四色與專色 國際平面設計基礎教程：print&amp;finish印前印後 世界書籍藝術流派 中外裝幀藝術論集 中國古籍版本概要 出版物設計完全手冊 印刷工藝：燙印與凹凸 印前校色實用教程 印前輸出培訓參考：全綵教程-200p 嶄新印通拼版教程 平版印刷拼版手冊 平面設計及印刷業務人員常識備忘手冊 書籍設計 書藝問道 現代圖書設計 範式革命：中國現代書籍設計的發端 1862-1937 電腦印前技術完全手冊（第2版） book design basics design 06: print and finish publication design workbook: a real-world guide to designing magazines, newspapers, and newsletters book design new book design"><span class="side-num">07</span> Book Design &amp; Print</a><a href="08_infographics.html" data-search="08 infographics information graphics visualising information and explaining with diagrams week 4 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 圖解力 以圖釋義：信息圖表設計 信息圖表設計入門 信息圖表設計：全球創意入門"><span class="side-num">08</span> Information Graphics</a><a href="09_interaction-ux.html" data-search="09 interaction ux interaction, web &amp; ux goal-directed design, usability, and interface principles week 11 (and 4) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book about face 3：交互設計精髓 about face 4：交互設計精髓（中文彩版） android 交互視覺設計規範 贏在用戶：web 人物角色創建和應用實踐指南 don&#x27;t make me think（英文第 2 版） ui 羣英匯：用戶體驗、交互與視覺設計方法論 web 界面設計 形式感：網頁視覺設計創意拓展與快速表現 關鍵設計報告：改變過去影響未來的交互設計法則 點石成金：訪客至上的網頁秘籍 認知與設計：理解 ui 設計準則 簡約至上：交互設計四策略 見微知著：web 用戶體驗解構 與世界 ui 設計師同行 ux 設計之道：以用戶體驗為中心的 web 設計（第 2 版） ui 設計黃金法則：觸動人心的 100 種用戶界面 sexy web design：creating interfaces that work 用戶體驗的要素：以用戶為中心的 web 設計 網頁設計（web designer emag） 點石成金：訪客至上的網頁設計秘笈 ios 9 界面設計規範剖析及實戰 不要讓我思考（don&#x27;t make me think） 贏在用戶：web 人物角色創建和應用實踐指南 軟件觀念革命：交互設計精髓 一目瞭然：web 軟件顯性設計之路 就這麼簡單：web 開發中的可用性和用戶體驗 微交互：細節設計成就卓越產品 怦然心動：情感化交互設計指南 用戶體驗度量 用戶體驗要素：以用戶為中心的產品設計（原書第 2 版） 眾妙之門：網站 ui 設計之道 瞬間之美：web 界面設計如何讓用戶心動 破繭成蝶：用戶體驗設計師的成長之路 簡約至上：交互設計四策略 網頁設計創意書 認知與設計：理解 ui 設計準則 認知與設計：理解 ui 設計準則（第 2 版） 贏在用戶：web 人物角色創建和應用實踐指南 體驗·度：簡單可依賴的用戶體驗（彩版） about face 3: the essentials of interaction design , 3rd edition about face: the essentials of interaction design , 4th edition the user is always right: a practical guide to creating and using personas for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing web interfaces: principles and patterns for rich interactions designing interactions don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing with the mind in mind: simple guide to understanding user interface design rules simple and usable web, mobile, and interaction design a project guide to ux design: for user experience designers in the field or in the making , 2nd edition digital design essentials: 100 ways to design better desktop, web, and mobile interfaces the elements of user experience: user-centered design for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition don&#x27;t make me think: a common sense approach to web usability , 2nd edition the user is always right: a practical guide to creating and using personas for the web about face 2.0: the essentials of interaction design designing the obvious: a common sense approach to web application design microinteractions: designing with details seductive interaction design: creating playful, fun, and effective user experiences measuring the user experience: collecting, analyzing, and presenting usability metrics the elements of user experience: user-centered design for the web and beyond , 2nd edition the smashing book designing the moment: web interface design concepts in action simple and usable web, mobile, and interaction design the web designer&#x27;s idea book: the ultimate guide to themes, trends and styles in website design designing with the mind in mind: simple guide to understanding user interface design rules designing with the mind in mind: simple guide to understanding user interface design guidelines , 2nd edition the user is always right: a practical guide to creating and using personas for the web"><span class="side-num">09</span> Interaction, Web &amp; UX</a><a href="10_graphic-practice.html" data-search="10 graphic practice graphic design practice process, design thinking, creative methods, and practice week 1, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 100 個改變平面設計的觀念 嘿，設計 圖解平面設計規範 40 天成為資深設計師 ideo：設計改變一切 創意之道（the copy book） 非常規標誌設計：6 個不必遵守的基礎原則 最佳設計 100 細則 少即是多：減法設計 視覺傳達設計實踐 1000 retail graphics 高效設計溝通之道（原書第 2 版） 完成設計：從理論到實踐 美國視覺傳達完全教程 零 zerro：世界符號大全 平面與空間 創意工場：提升設計技巧的 80 個挑戰 日本的手感設計 設計的品格 設計並不重要 我的第一本設計書 平面設計過程 小平面 北歐設計 王志弘作品收集 做喜歡的事：25 個亞太創意設計工作室 做喜歡的事：25 個歐美創意設計工作室 設計修辭法 設計與死 設計的覺醒 平面設計死了嗎 放眼德國設計 放眼法國設計 漫遊英國設計 漫步日本設計 荷蘭設計 設計的手感 歲寒三友：詩意設計作品集 廣州美術學院碩士研究生作品集 靳埭強與格呂特納的海報對話 靳埭強設計獎 陳幼堅最新作品 平面設計八人 設計集 設計心法 100+1 靳叔說：設計語錄 設計的圖謀：改變世界的80個日常創意陰謀 遺產與更新：中國設計教育反思 設計師演講錄：icograda 世界設計大會 設計創意流程：用mba思維成就設計高效能 全球優秀93位平面設計師作品集 遊遊遊：說說我的設計私想 對話日本設計 設計師不讀書 設計質 大話設計師 從製造到設計：20世紀德國設計 意東方：設計中的東方元素（一） 49個成就平面設計的關鍵詞 企業形象設計家：靳埭強與他的設計師朋友 海報設計家：靳埭強與他的設計師朋友 生活·心源：靳埭強設計與藝術 靳埭強·身度心道：中國文化為本的設計·繪畫·教育 ideo 設計現象探究：patterns 2010 設計效果圖 設計百年：20世紀平面設計的先驅 設計解決 像設計師那樣思考 圖形設計新元素 如何把國外作品轉化為自己的能力（第二部） 平面設計：我的第2語言 為什麼設計 理性設計 至關重要的設計 解決100個煩惱的100種設計 設計推導學 中國古代設計思想史略 什麼是平面設計？ 創意工場：提升設計技巧的80個挑戰 動畫分鏡台本設計 吳東龍的東京設計生活100 寫給大家看的設計書（第三版） 好設計的造型元素 完成設計：從理論到實踐 宣傳冊設計與製作 平面設計200年 新興實踐：設計的專業、價值與途徑 日本當代插圖集 最全設計規範 服務的細節：完全商品陳列115例 為真實世界的設計 生命的幻象：迪士尼動畫造型設計 異想天開：設計初始 知日・設計力 移動設計 符號與數字：平面中的視覺表達 第三種創新：設計驅動式創新 編輯設計 至關重要的設計 至關重要的設計（布倫納） 蘋果首席設計師：喬納森傳 視覺傳達設計 視覺傳達設計考研手繪 視覺營銷：零售店櫥窗與店內陳列 託尼克：設計為何 設計＋生活：佐藤 設計＋生活：奎內克 設計＋生活：姚爾丹 設計＋生活：孔喬 設計＋生活：府烈茶 設計＋生活：王翰尼 設計＋生活：白同異 設計＋生活：蒙古齊 設計＋生活：雷又西 設計中的錯視 設計五感：亂 設計五感：惡 設計五感：拙 設計五感：精 設計入門教室：設計的基本規則 設計力就是溝通力 設計，在人人設計的時代 設計密碼 設計師不可不知的 100 種世界經典平面設計圖書 設計思維手冊：斯坦福創新方法論 設計思維與方法 設計方法與策略：代爾夫特設計指南 設計的意義 設計的細節：日本經典設計透析 設計與革新：關於未來設計的 50 種思考 設計風尚 5：創意節日宣傳頁設計與製作 設計高手的秘密 設計，在人人設計的時代：社會創新設計導論 這樣擺，最好賣：賣場中的商品陳列技巧 造像量度：佛像唐卡設計比例圖 關於設計的思考 非平面 靳埭強設計獎：平面設計作品集 騰訊網 ued 體驗設計之旅 100 ideas that changed graphic design change by design: how design thinking transforms organizations and inspires innovation the copy book: how 32 of the world&#x27;s best advertising writers write their advertising no rules! logos: radical design solutions that break the rules universal principles of design communicating design: developing web site documentation for design and planning , 2nd edition design evolution: theory into practice graphic communications today creative workshop: 80 challenges to sharpen your design skills graphic design process: from problem to solution: 20 case studies design and the creative process atlas of graphic designers designers don&#x27;t read the graphic design idea book: inspiration from 50 masters a century of graphic design: graphic design pioneers of the 20th century how to think like a great graphic designer graphic design: the new basics graphic design as a second language do you matter? how great design will make people love your company what is graphic design? creative workshop: 80 challenges to sharpen your design skills the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual design evolution: theory into practice graphic style: from victorian to hipster design for the real world: human ecology and social change the illusion of life: disney animation design-driven innovation: changing the rules of competition by radically innovating what things mean editing by design: for designers, art directors, and editors: the classic guide to winning readers do you matter? how great design will make people love your company do you matter? how great design will make people love your company jony ive: the genius behind apple&#x27;s greatest products graphic design solutions visual merchandising: windows and in-store displays for retail why we design design, when everybody designs: an introduction to design for social innovation bibliographic: 100 classic graphic design books delft design guide: design strategies and methods design, form, and chaos design, when everybody designs: an introduction to design for social innovation thoughts on design unflattening"><span class="side-num">10</span> Graphic Design Practice</a><a href="11_interior.html" data-search="11 interior interior design drawings, scale, light, materials, construction, and furnishing further reading 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 零基礎學建築識圖 室內裝飾裝修施工完全圖解教程 室內設計節點手冊：常用節點 室內設計節點手冊：酒店固定傢俱 材料收口 裝飾工藝解析：吊頂篇 裝飾工藝解析：地面篇 裝飾工藝解析：牆面篇 室內設計師必知的100個節點 室內裝飾裝修材料應用與選購 室內設計材料選用實戰手冊 石材應用手冊 設計師的材料清單·室內篇 圖解照明設計 室內照明設計精品教程 室內燈光設計 室內設計師專用燈光設計手冊 室內設計師燈光設計細部解析 照明設計終極聖經 家居色彩設計指南 設計師談家居色彩搭配 設計配色基礎 輕·重·緩·急：搭出耐看配色 人體工程學與室內設計 住宅的設計尺寸剖析書 圖解住宅尺寸與格局設計 室內施工圖實戰教程 室內施工圖製圖標準 室內空間佈局與尺度設計 室內細部設計cad圖集 室內設計尺寸關鍵術 室內設計數據手冊：空間與尺度 室內設計與人體工程學 家裝常用數據尺寸速查 工裝設計尺度數據手冊 人機工程學（第五版） 年輕設計師必修的七堂課 網紅室內設計師ip運營法則 裝修設計師談單簽單一課通 軟裝談單寶典 住宅格局破解術 住宅格局解剖圖鑑 住宅設計剖析手冊 住宅設計解剖書 住得優雅：住宅設計的34個法則 圖解極簡主義設計 室內住宅設計圖解 室內空間設計手冊 室內設計·思維與方法 室內設計基礎 小家越住越大2 打造讓孩子自主學習的住宅 樓梯設計的9個法則 淺談家庭中央空調的使用 牆面設計 裝修設計解剖書 解構收納 設計中的設計 設計師要懂的心理學 室內精細化設計研究 傢俱設計資料圖集 室內設計風格圖文速查 軟裝改造解剖書 軟裝設計元素搭配手冊 軟裝設計師手冊 軟裝風格速查 the lighting bible the interior plan: concepts and exercises 100 things every designer needs to know about people"><span class="side-num">11</span> Interior Design</a><a href="12_architecture-space.html" data-search="12 architecture space architecture &amp; space form, space, order, and proportion week 2, 6–7 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 建築：形式、空間和秩序（第 3 版） 反造型 architecture: form, space, and order , 3rd edition"><span class="side-num">12</span> Architecture &amp; Space</a><a href="13_product.html" data-search="13 product product design minimalism, ten principles of good design, and muji week 11 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 簡約不簡單：極簡風格產品設計 產品極簡主義 無印良品的設計 解密無印良品 20 世紀 50–80 年代中國、德國產品設計回望 無印良品世界觀 創新產品設計與手繪 深澤直人 意識的核心 product design now naoto fukasawa"><span class="side-num">13</span> Product Design</a><a href="14_design-art-history.html" data-search="14 design art history design &amp; art history from manuscripts and arts and crafts through the bauhaus to the digital era week 1 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術簡史 世界平面設計史 醜的歷史 美的歷史 世界當代藝術史 世界現代設計史 中國現代設計與包豪斯 包豪斯道路：歷史、遺澤、世界與中國 包豪斯 運動中的視覺：新包豪斯的基礎 包豪斯：大師和學生們 包豪斯藏品精選集 包豪斯理想：過去與現在 世界現代設計史 中國 外國 工業設計史（第四版） 現代設計百科全書：平面設計的歷史、語言及經典應用 藝術的真相：通往藝術之路 藝術與物理學：時空和光的藝術觀與物理觀 設計藝術史 重要的不是藝術 錢君匋的藝術世界 art: a brief history , 4th edition vision in motion the bauhaus: masters &amp; students by themselves the bauhaus ideal then &amp; now: an illustrated guide to modernist design graphic design, referenced: a visual guide to the language, applications, and history of graphic design gateways to art: understanding the visual arts art &amp; physics: parallel visions in space, time, and light"><span class="side-num">14</span> Design &amp; Art History</a><a href="15_theory-psychology.html" data-search="15 theory psychology design theory &amp; psychology gestalt, cognition, emotional design, and kenya hara week 4, 6–7, 10 1. scope 2. perception 3. cognition &amp; behaviour 4. aesthetics &amp; philosophy 5. principles &amp; methods 6. selected figures 7. source bookshelf 8. study cues 7. each book 審醜：萬物美學 原研哉的設計世界 視覺藝術原理（第八版） 設計心理學 1：日常的設計 設計心理學 2：與複雜共處 設計心理學 3：情感化設計 設計心理學 4：未來設計 日本的八個審美意識 點線面 日式設計美學 康定斯基論點線面 藝術與視知覺 藝術中的精神 圖像與眼睛：圖畫再現心理學的再研究 象徵的圖像：貢布里希圖像文集 設計私語錄：通心粉的孔洞之謎 悲劇的誕生：尼采美學文選 設計中的色彩心理學 設計之美 藝術與視知覺：新編 設計中的設計 設計師要懂心理學（迷你書） 設計心理學 設計心理學（唐納德·a·諾曼） 情感化設計 感性美學 我眼中的設計之美 日式平面美學 淺談設計之美 為什麼設計 重構美學 白 社會心理學（第八版） 藝術與錯覺：圖畫再現的心理學研究 視覺思維 視覺思維（阿恩海姆） 視覺藝術的含義 設計中的設計 設計中的設計（全本） 設計中的設計（原研哉） 設計師要懂心理學 設計心理學（247 頁本） 設計心理學（中文版） 設計美學（廣州美術學院藝術設計教程） 設計與視知覺 象徵的圖像：貢布里希圖像學文集 ugly: the aesthetics of everything prebles&#x27; artforms: an introduction to the visual arts , 8th edition the design of everyday things , revised and expanded edition living with complexity emotional design: why we love (or hate) everyday things the design of future things art and visual perception: a psychology of the creative eye , the new version the image and the eye: further studies in the psychology of pictorial representation symbolic images: studies in the art of the renaissance beautiful thing: an introduction to design art and visual perception: a psychology of the creative eye , the new version 100 things every designer needs to know about people the design of everyday things the design of everyday things emotional design: why we love (or hate) everyday things social psychology , 8th edition art and illusion: a study in the psychology of pictorial representation visual thinking visual thinking meaning in the visual arts: papers in and on art history 100 things every designer needs to know about people the design of everyday things the design of everyday things symbolic images: studies in the art of the renaissance"><span class="side-num">15</span> Design Theory &amp; Psychology</a><a href="16_pattern-ornament.html" data-search="16 pattern ornament pattern &amp; ornament pattern structure, chinese and western motifs, and auspicious meaning week 8 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book (new)世界裝飾紋樣圖典(4000餘種圖案+紋飾百科全書+裝飾藝術寶庫) l&#x27;art arabe 01 秩序感：裝飾藝術的心理學研究 中國紋樣集錦：examples of chinese ornament the grammar of ornament 中國紋樣全集 魏晉南北朝·隋唐·五代卷 世界裝飾圖案-1887-85p圖版 中國紋樣全集 宋·元·明·清卷 中國紋樣全集 戰國·秦·漢卷 中國紋樣全集 新石器時代和商·西周·春秋卷 中國經典紋樣圖鑑 摩洛哥傳統裝飾藝術 敦煌線描 民間美術：湖北挑花、土錦、藍印花布 裝飾文叢特別策劃卷7 貴州傳統蠟染-攝影集 the sense of order: a study in the psychology of decorative art examples of chinese ornament selected from objects in the south kensington museum and other collections"><span class="side-num">16</span> Pattern &amp; Ornament</a><a href="18_magazines-annuals.html" data-search="18 magazines annuals magazines &amp; annuals how to look at annuals and magazines week 1–13 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2021日本平面設計年鑑 45th publication design annual apd亞太設計年鑑no.17(1) brand 12 brand no.36-生活使用手冊2：文創熱量 brand no.37-字己 brand no.38-手工印刷 brand no.39-物料進化 brand no.40-文化時光機1868-1988 brand no.41-看圖説話，你的信息時代 brand no.42.-你好，藝術pdf brand no.43-小物志 brand no.44-貓狗日誌 design 360 雜誌(1) gallery 形錄 全球最佳圖形設計 vol.09 idea 377 novum201901 apd9亞太平面設計年鑑 apd5亞太設計年鑑 中國品牌設計年鑑 2013 日本字體與平面設計大獎年鑑 國家博物館-仙山圖特展 國家博物館-宋末民初上海畫壇 國家博物館-宋代花箋特展 國家博物館-蘇州片及其影響 國家博物館-瓶花與盆景畫特展 國家博物館-書畫菁華特展 idea+10 1 舉一反百的聰明設計法則 idea+10 2 一計點睛的即效設計處方 red-dot-award-concept-2011-2012 red_dot_award_design_concept_2013-2014 brand brand gallery 國際設計年鑑2014 日本品牌與包裝設計年鑑 2016 日本平面創意設計年鑑 2002-2004 疾風迅雷 杉浦康平雜誌設計的半個世紀 眾妙之門：移動web設計精髓（德）smashing雜誌 essentials of mobile design"><span class="side-num">18</span> Magazines &amp; Annuals</a><a href="20_advertising.html" data-search="20 advertising advertising positioning, aida, creative tactics, and point of purchase week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 1001 個廣告法則 pop 廣告設計 智威湯遜手冊 美國廣告設計實用教程 廣告公司的秘密：平面設計師就業寶典 advertising by design: creating visual communications with graphic impact"><span class="side-num">20</span> Advertising</a></div></nav>
+    </aside>
+    <main class="main" id="content" tabindex="-1">
+      <div class="topbar">
+        <button class="side-toggle" type="button">Guides</button>
+        <nav class="jump" aria-label="On this page"><a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-proportion-geometry">3. Proportion &amp; Geometry</a><a href="#4-principles-methods">4. Principles &amp; Methods</a><a href="#5-selected-figures">5. Selected Figures</a><a href="#6-source-bookshelf">6. Source Bookshelf</a><a href="#7-study-cues">7. Study Cues</a><a href="#7-each-book">7. Each Book</a></nav>
+      </div>
+      <p class="kicker"><a href="index.html">SSHD2382</a> · Category 01</p>
+      <div class="digest">
+<h1 id="design-basics-composition">Design Basics &amp; Composition</h1>
+<p class="meta">Category 01 · Course link: Week 2 Visual Elements, Week 6–7 Design Principles · Main references: Naomi Asakura, <span lang="zh-Hant">《藝術·設計的平面／立體／紙／光的構成》</span>; Robin Williams, <span lang="zh-Hant">《寫給大家看的設計書》</span>; Lidwell, <span lang="zh-Hant">《通用設計法則》</span>; Samara, <span lang="zh-Hant">《設計元素》</span>; Elam, <span lang="zh-Hant">《設計幾何學》</span> / <span lang="zh-Hant">《黃金比例》</span>; Liu Guanzhong, <span lang="zh-Hant">《綜合造型設計基礎》</span></p>
+
+<h2 id="1-scope">1. Scope</h2>
+<p>"Composition" is the entry-level subject of design education. It comes from the Bauhaus foundation course and later developed in Japan into the "three compositions": <strong>planar composition, colour composition and three-dimensional composition</strong>. It does not target any one kind of product. Instead, it trains one ability: organising abstract visual elements according to rules, so that the picture gains order, rhythm and meaning.</p>
+<p>The books in this category fall roughly into three types:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Key books</th>
+<th>What you learn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Formal training</td>
+<td>Naomi Asakura's "Composition" series; Liu Guanzhong, <span lang="zh-Hant">《綜合造型設計基礎》</span></td>
+<td>Point, line and plane; texture; volume; materials; light</td>
+</tr>
+<tr>
+<td>Design principles</td>
+<td><span lang="zh-Hant">《寫給大家看的設計書》</span>, <span lang="zh-Hant">《設計元素》</span>, <span lang="zh-Hant">《通用設計法則》</span></td>
+<td>Contrast, repetition, alignment, proximity, hierarchy, white space</td>
+</tr>
+<tr>
+<td>Proportion &amp; geometry</td>
+<td><span lang="zh-Hant">《黃金比例》</span>, <span lang="zh-Hant">《設計幾何學》</span>, <span lang="zh-Hant">《分寸設計》</span></td>
+<td>The golden section, root rectangles, regulating lines</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid">flowchart LR
+  elements[&quot;Elements&lt;br/&gt;point line plane volume colour texture&quot;] --&gt; relations[&quot;Relations&lt;br/&gt;size direction position spacing&quot;]
+  relations --&gt; principles[&quot;Principles&lt;br/&gt;contrast repetition alignment proximity balance&quot;]
+  principles --&gt; order[&quot;Order&lt;br/&gt;proportion grid rhythm&quot;]
+  order --&gt; meaning[&quot;Meaning&lt;br/&gt;communication emotion brand&quot;]
+</pre>
+<h2 id="2-core-concepts">2. Core Concepts</h2>
+<h3 id="21">2.1 Elements of Form: Point, Line, Plane, Volume</h3>
+<p>Naomi Asakura divides the elements of form into <strong>visible elements</strong> (point, line, plane, volume, colour, texture) and <strong>relational elements</strong> (direction, position, space, centre of gravity). The key point is that point, line and plane are not geometric definitions. They are <strong>relative visual impressions</strong>.</p>
+<div class="chart">
+<svg viewBox="0 0 720 170" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13">
+  <g fill="#1d1d1f">
+    <circle cx="60" cy="70" r="9"/>
+    <text x="60" y="140" text-anchor="middle">Point</text>
+    <text x="60" y="158" text-anchor="middle" fill="#5b5b66" font-size="11">position, focus</text>
+    <g>
+      <circle cx="170" cy="70" r="6"/><circle cx="190" cy="70" r="6"/><circle cx="210" cy="70" r="6"/><circle cx="230" cy="70" r="6"/><circle cx="250" cy="70" r="6"/>
+    </g>
+    <text x="210" y="140" text-anchor="middle">Points become a line</text>
+    <text x="210" y="158" text-anchor="middle" fill="#5b5b66" font-size="11">a row of points → direction</text>
+    <rect x="320" y="66" width="120" height="8"/>
+    <text x="380" y="140" text-anchor="middle">Line</text>
+    <text x="380" y="158" text-anchor="middle" fill="#5b5b66" font-size="11">movement, direction, division</text>
+    <g>
+      <rect x="490" y="30" width="80" height="6"/><rect x="490" y="44" width="80" height="6"/><rect x="490" y="58" width="80" height="6"/><rect x="490" y="72" width="80" height="6"/><rect x="490" y="86" width="80" height="6"/><rect x="490" y="100" width="80" height="6"/>
+    </g>
+    <text x="530" y="140" text-anchor="middle">Lines become a plane</text>
+    <text x="530" y="158" text-anchor="middle" fill="#5b5b66" font-size="11">dense lines → grey plane</text>
+    <rect x="620" y="30" width="80" height="80" fill="#c8102e"/>
+    <text x="660" y="140" text-anchor="middle">Plane</text>
+    <text x="660" y="158" text-anchor="middle" fill="#5b5b66" font-size="11">shape, weight, figure/ground</text>
+  </g>
+</svg>
+<div class="caption">Point, line and plane turn into one another: the same element, enlarged or arranged, is read as a different element.</div>
+</div>
+
+<ul>
+<li><strong>Point</strong>: the smallest visual unit, mainly expressing "position". A single point creates a focus; two points create tension; many points form a line or a plane (points becoming a line, points becoming a plane).</li>
+<li><strong>Line</strong>: the path of a moving point, with length and direction. A line's thickness, tone, spacing and direction set its mood: horizontal lines feel stable, vertical lines dignified, diagonal lines dynamic, and curves soft. Asakura also describes the "negative line" — a line implied by the boundary between two planes.</li>
+<li><strong>Plane</strong>: made by a moving line or by enclosure, with shape and area. Geometric shapes feel rational, organic shapes natural, and accidental shapes (splashed ink, torn paper) carry a sense of chance.</li>
+<li><strong>Volume</strong>: the subject of three-dimensional composition. It covers three kinds of material — linear members, planar members (sheets) and solid blocks — as well as the division and enclosure of space.</li>
+<li><strong>Texture</strong>: the visual or tactile quality of a surface. You can create it by rubbing, spraying, scratching or repeating a unit.</li>
+</ul>
+<h3 id="22-figure-ground">2.2 Figure / Ground</h3>
+<p>Every picture contains both a "figure" (the shape we look at) and a "ground" (the background, the empty space). Good composition <strong>designs the ground on purpose</strong>: white space is not leftover space but the half that makes the figure work. Samara's <span lang="zh-Hant">《設計元素》</span> sums this up as "create space, don't fill it".</p>
+<h3 id="23-formal-rules">2.3 Formal Rules of Composition</h3>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>English</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repetition</td>
+<td>Repetition</td>
+<td>The same unit appears again and again, creating unity and rhythm</td>
+</tr>
+<tr>
+<td>Similarity</td>
+<td>Similarity</td>
+<td>Units are broadly alike with small differences, giving variety within unity</td>
+</tr>
+<tr>
+<td>Gradation</td>
+<td>Gradation</td>
+<td>Size, direction, value or spacing change step by step in proportion, creating a sense of space and movement</td>
+</tr>
+<tr>
+<td>Radiation</td>
+<td>Radiation</td>
+<td>Elements spread out from a centre (or converge on it), giving a concentrated, strong visual effect</td>
+</tr>
+<tr>
+<td>Anomaly</td>
+<td>Anomaly</td>
+<td>One deliberate break in a regular pattern, creating a focal point</td>
+</tr>
+<tr>
+<td>Contrast</td>
+<td>Contrast</td>
+<td>Differences in size, light and dark, density, curved and straight</td>
+</tr>
+<tr>
+<td>Concentration</td>
+<td>Concentration</td>
+<td>Elements are spread unevenly, dense in some areas and sparse in others, forming a visual centre of gravity</td>
+</tr>
+<tr>
+<td>Texture</td>
+<td>Texture</td>
+<td>A surface effect made by material or by repeated detail</td>
+</tr>
+<tr>
+<td>Division</td>
+<td>Division</td>
+<td>Cutting the picture by proportion (equal parts, golden ratio, root ratios)</td>
+</tr>
+<tr>
+<td>Balance</td>
+<td>Balance</td>
+<td>Symmetrical balance feels steady; asymmetrical balance reaches stability through weight and distance</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24-crap">2.4 The Four Design Principles: C.R.A.P.</h3>
+<p>In <span lang="zh-Hant">《寫給大家看的設計書》</span>, Robin Williams reduces the layout knowledge that even non-designers need to four principles. It is the most often cited framework in the whole library:</p>
+<div class="cards">
+<div><strong>Contrast</strong>If two elements are different, make them <em>very</em> different. Contrast creates focus and hierarchy and avoids the hesitation of "almost the same".</div>
+<div><strong>Repetition</strong>Repeat typefaces, colours, lines and spacing throughout the work to build consistency and identity.</div>
+<div><strong>Alignment</strong>Nothing should be placed at random. Every element should have a visual connection with another element on the page.</div>
+<div><strong>Proximity</strong>Put related items together so they form one visual unit; move unrelated items apart.</div>
+</div>
+
+<p><span lang="zh-Hant">《設計的教室》</span> adds an important point: <strong>every object's position should have a reason</strong>. A designer should be able to explain in words "why it goes here" — alignment suggests a connection, connections build logic, and logic makes a design explainable.</p>
+<h3 id="25-20-samara">2.5 Samara's 20 Rules of Good Design</h3>
+<p>The rules set out in Timothy Samara's <span lang="zh-Hant">《設計元素》</span> work as a checklist for reviewing your own work (selected and rewritten):</p>
+<ol>
+<li>Have a concept.</li>
+<li>Communicate, don't decorate.</li>
+<li>Speak with one visual voice.</li>
+<li>Do not use more when less will do; the fewer the colours, the richer the result.</li>
+<li>Create space, don't fill it; be careful with symmetry — symmetry tends to feel static.</li>
+<li>Master value (light and dark); measure with your eyes, not just with numbers.</li>
+<li>Use two type families at most; treat type as you would treat an image.</li>
+<li>Look to history, but do not repeat it; ignore trends.</li>
+<li>Get moving — static means dull.</li>
+<li>You may break the rules, but you may not ignore them.</li>
+</ol>
+<h2 id="3-proportion-geometry">3. Proportion &amp; Geometry</h2>
+<p>Kimberly Elam's <span lang="zh-Hant">《設計幾何學》</span> and <span lang="zh-Hant">《黃金比例》</span> analyse proportion in nature, the human body, architecture and posters. They point out that people show a consistent preference for certain proportions, especially rectangles close to 1:1.618.</p>
+<div class="chart">
+<svg viewBox="0 0 520 330" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <g fill="none" stroke="#1d1d1f" stroke-width="1.5">
+    <rect x="10" y="10" width="485" height="300"/>
+    <line x1="310" y1="10" x2="310" y2="310"/>
+    <line x1="310" y1="195" x2="495" y2="195"/>
+    <line x1="380" y1="195" x2="380" y2="310"/>
+    <line x1="310" y1="240" x2="380" y2="240"/>
+    <line x1="355" y1="195" x2="355" y2="240"/>
+  </g>
+  <path d="M10 310 A300 300 0 0 1 310 10 A185 185 0 0 1 495 195 A115 115 0 0 1 380 310 A70 70 0 0 1 310 240 A45 45 0 0 1 355 195" fill="none" stroke="#c8102e" stroke-width="2"/>
+  <text x="160" y="165" text-anchor="middle" fill="#5b5b66">1</text>
+  <text x="402" y="105" text-anchor="middle" fill="#5b5b66">0.618</text>
+  <text x="252" y="325" text-anchor="middle" fill="#5b5b66">a : b = (a+b) : a ≈ 1 : 1.618</text>
+</svg>
+<div class="caption">The golden rectangle: cut away a square and the remaining rectangle is still a golden rectangle. The arcs joining the squares form the golden spiral.</div>
+</div>
+
+<ul>
+<li><strong>Golden section</strong>: φ ≈ 1.618. In the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13…), the ratio of two neighbouring numbers approaches φ.</li>
+<li><strong>Root rectangles</strong>: √2 (the A-series paper sizes, which keep their proportions when folded in half), √3, √5 and other "dynamic rectangles", which can be subdivided into harmonious grids.</li>
+<li><strong>Regulating lines</strong>: Le Corbusier used diagonals and parallel lines to check the proportions of a façade. Graphic designers can likewise use diagonals to align key elements.</li>
+<li><strong>A reminder</strong>: proportion is a tool, not a myth. Many analyses claiming that "masterpieces hide the golden ratio" are readings made after the fact. In practice, the value of proportion is that it provides <strong>consistent relationships</strong>, not some mysterious number.</li>
+</ul>
+<h2 id="4-principles-methods">4. Principles &amp; Methods</h2>
+<h3 id="41">4.1 How to Do Composition Exercises</h3>
+<ol>
+<li><strong>Set constraints</strong>: only black and white, only squares, only one kind of line — limits focus your attention on "relationships" rather than "subject matter".</li>
+<li><strong>Unit + structure</strong>: first design a basic form (the unit), then design the rules for arranging it (the structure or grid), then add gradation or anomaly within the pattern.</li>
+<li><strong>Compare a series</strong>: make 6–12 variations on the same theme, lay them side by side, and use your eyes to pick the one with the most tension.</li>
+<li><strong>Change the medium</strong>: flat → three-dimensional paper (folded, cut, rolled) → light and shadow, to understand how form behaves in different materials.</li>
+<li><strong>Put it into words</strong>: for every exercise, write one sentence: "The relationship I want to express is…". This trains you to make designs you can explain.</li>
+</ol>
+<h3 id="42">4.2 Layout Checklist</h3>
+<ul>
+<li>Where is the focus? Is there only one lead element? (Contrast)</li>
+<li>Is any element placed "just anywhere"? (Alignment)</li>
+<li>Is related information grouped? Is the space between groups clearly larger than the space within groups? (Proximity)</li>
+<li>Are there more typefaces, colours or line styles than you need? (Repetition)</li>
+<li>Does the white space have a shape? Is the figure/ground relationship clear?</li>
+<li>Hold it further away or squint: is the distribution of light and dark balanced?</li>
+</ul>
+<h2 id="5-selected-figures">5. Selected Figures</h2>
+<div class="figs">
+<figure><img src="assets/design-basics/rhythm-diagram.jpg" alt="Diagram of rhythm and spacing"><figcaption>The numerical relationships of rhythm. Source: Naomi Asakura, <span lang="zh-Hant">《藝術·設計的平面構成》</span>, p.21</figcaption></figure>
+<figure><img src="assets/design-basics/point-to-plane.jpg" alt="Composition exercise with points and planes"><figcaption>Points becoming a plane: repetition and variation of circle and semicircle units. Source: same book, p.83</figcaption></figure>
+<figure><img src="assets/design-basics/gradation.jpg" alt="Gradation composition"><figcaption>A gradation in value creates space and undulation. Source: same book, p.133</figcaption></figure>
+<figure><img src="assets/design-basics/line-texture.jpg" alt="Texture made with lines"><figcaption>Densely arranged lines create texture and optical illusions. Source: same book, p.187</figcaption></figure>
+<figure><img src="assets/design-basics/paper-relief.jpg" alt="Paper relief composition"><figcaption>Cutting and bending planar material: paper relief forms. Source: Naomi Asakura, <span lang="zh-Hant">《藝術·設計的立體構成》</span>, p.94</figcaption></figure>
+<figure><img src="assets/design-basics/3d-joints.jpg" alt="Joining methods in three-dimensional composition"><figcaption>Joint structures for linear and sheet materials. Source: same book, p.176</figcaption></figure>
+<figure><img src="assets/design-basics/parthenon-proportion.jpg" alt="Proportion analysis of the Parthenon"><figcaption>Golden ratio analysis of the Parthenon façade. Source: Elam, <span lang="zh-Hant">《黃金比例》</span>, p.17</figcaption></figure>
+<figure><img src="assets/design-basics/rectangle-division.jpg" alt="Rectangle division"><figcaption>Ways of dividing root rectangles and squares. Source: same book, p.33</figcaption></figure>
+<figure><img src="assets/design-basics/konkrete-kunst.jpg" alt="Geometric analysis of the Konkrete Kunst poster"><figcaption>Geometric analysis of the Swiss poster <em>Konkrete Kunst</em>. Source: same book, p.65</figcaption></figure>
+</div>
+
+<h2 id="6-source-bookshelf">6. Source Bookshelf</h2>
+<p>Suggested reading order: <span lang="zh-Hant">《寫給大家看的設計書》</span> → <span lang="zh-Hant">《設計元素》</span> → Naomi Asakura's <span lang="zh-Hant">《平面構成》</span> → <span lang="zh-Hant">《通用設計法則》</span> (use it as a reference book) → <span lang="zh-Hant">《設計幾何學》</span>.</p>
+<!-- BOOKSHELF:START -->
+
+<details><summary>Show 34 titles</summary>
+
+- <a href="#b-art-and-design-planar-composition"><span lang="zh-Hant">藝術·設計的平面構成</span></a>
+- <a href="#b-art-and-design-three-dimensional-composition"><span lang="zh-Hant">藝術·設計的立體構成</span></a>
+- <a href="#b-art-and-design-paper-composition"><span lang="zh-Hant">藝術·設計的紙的構成</span></a>
+- <a href="#b-art-and-design-light-composition"><span lang="zh-Hant">藝術·設計的光的構成</span></a>
+- <a href="#b-the-elements-of-graphic-design">[031]<span lang="zh-Hant">平面設計原理</span></a>
+- <a href="#b-universal-principles-of-design">[033]<span lang="zh-Hant">通用設計法則</span></a>
+- <a href="#b-school-of-visual-arts-series-design-elements-a-graphic">[045]<span lang="zh-Hant">美國視覺設計學院叢書：設計元素（平面設計樣式）</span></a>
+- <a href="#b-robin-williams-design-workshop">[046]<span lang="zh-Hant">寫給大家看的設計書：實例與創意</span></a>
+- <a href="#b-the-golden-ratio">[065]<span lang="zh-Hant">黃金比例</span></a>
+- <a href="#b-the-design-classroom">[077]<span lang="zh-Hant">設計的教室</span></a>
+- <a href="#b-the-design-method">[082]<span lang="zh-Hant">設計的方法</span></a>
+- <a href="#b-on-pictorial-composition">[084]<span lang="zh-Hant">談繪畫構圖</span></a>
+- <a href="#b-over-1-000-graphic-elements-distinctive-design-elements">[085]<span lang="zh-Hant">1000多個圖形元素：獨特的設計元素</span></a>
+- <a href="#b-point-line-and-plane-in-design">[110]<span lang="zh-Hant">設計中的點線面</span></a>
+- <a href="#b-graphic-design-rules">[124]<span lang="zh-Hant">平面設計法則</span></a>
+- <a href="#b-geometry-of-design-studies-in-proportion-and-composition">[148]<span lang="zh-Hant">設計幾何學：關於比例與構成的研究</span></a>
+- <a href="#b-art-and-design-planar-composition-traditional-chinese">[149]<span lang="zh-Hant">藝術·設計的平面構成（繁體版）</span></a>
+- <a href="#b-exploring-geometry-building-visual-structure-on-the-plane">[183]<span lang="zh-Hant">探索幾何：平面視覺構建</span></a>
+- <a href="#b-design-elements-of-good-form">[186]<span lang="zh-Hant">好造型的設計元素</span></a>
+- <a href="#b-the-beauty-of-harmony-exploring-the-golden-ratio-in-design">[236]<span lang="zh-Hant">和諧之美：探索設計中的黃金比例</span></a>
+- <a href="#b-a-sense-of-proportion-discovering-the-timeless-beauty-of">[237]<span lang="zh-Hant">分寸設計：發現黃金比例恆久之美</span></a>
+- <a href="#b-design-elements-a-graphic-style-manual-english-original"><span lang="zh-Hant">設計元素：平面設計樣式（英文原書）</span></a>
+- <a href="#b-the-non-designer-s-design-book-3rd-edition"><span lang="zh-Hant">寫給大家看的設計書（第3版）</span></a>
+- <a href="#b-design-elements-a-graphic-style-manual"><span lang="zh-Hant">設計元素：平面設計樣式</span></a>
+- <a href="#b-basics-design-format"><span lang="zh-Hant">國際平面設計基礎教程：規格設計（FORMAT）</span></a>
+- <a href="#b-basics-design-image"><span lang="zh-Hant">國際平面設計基礎教程：圖形設計（IMAGE）</span></a>
+- <a href="#b-basics-design-design-thinking"><span lang="zh-Hant">國際平面設計基礎教程：設計思維（THINKING）</span></a>
+- <a href="#b-the-non-designer-s-design-book-4th-edition"><span lang="zh-Hant">寫給大家看的設計書（第4版）</span></a>
+- <a href="#b-the-7-essentials-of-graphic-design"><span lang="zh-Hant">平面設計的七大要素</span></a>
+- <a href="#b-fundamentals-of-comprehensive-form-design"><span lang="zh-Hant">綜合造型設計基礎</span></a>
+- <a href="#b-american-visual-design-school-textbooks-design-elements-a"><span lang="zh-Hant">美國視覺設計學院用書：設計元素（平面設計樣式）</span></a>
+- <a href="#b-principles-of-visual-perception"><span lang="zh-Hant">視覺原理</span></a>
+- <a href="#b-design-power-graphic-design-rules-for-everyone"><span lang="zh-Hant">設計力：寫給大家的平面設計法則</span></a>
+- <a href="#b-universal-principles-of-design-english-edition"><span lang="zh-Hant">通用設計法則（英文版）</span></a>
+
+</details>
+
+<!-- BOOKSHELF:END -->
+
+<h2 id="7-study-cues">7. Study Cues</h2>
+<ol>
+<li>Using the same black square, make three compositions that feel like a "point", a "line" and a "plane". Explain how size and arrangement change the way it is read.</li>
+<li>Find a flyer that you think looks "messy". Use C.R.A.P. to point out its problems one by one, then redesign the layout.</li>
+<li>How do gradation and anomaly each create a visual focus? Give one poster example of each.</li>
+<li>Why does a sheet of A4 keep its proportions when folded in half? What are the advantages of this √2 ratio for layout design?</li>
+<li>"Communicate, don't decorate" — pick a piece of work, remove every element that does not serve the message, and compare the before and after.</li>
+<li>What moods do symmetrical and asymmetrical balance each convey? In what kinds of project would you choose each one?</li>
+</ol>
+<!-- BOOKS:START -->
+
+<h2 id="7-each-book">7. Each Book</h2>
+<p>Each book in the bookshelf is described below. Every title above links to its section.</p>
+<h3 class="book" id="b-art-and-design-planar-composition"><span lang="zh-Hant">藝術·設計的平面構成</span></h3>
+<p><strong>Author:</strong> Naomi Asakura</p>
+<p><strong>Scope.</strong> This is the planar volume of Asakura's "Basic Form" series, and it deals with form in two dimensions. Painting, printing, wallpaper, textiles and the surfaces of objects all need it, so it covers the foundation shared by every discipline rather than one way of making posters. Point, line, plane, symmetry, division, gradation and rhythm are the main threads of this volume. Volume, paper and light each have a volume of their own, so do not look for material experiments here.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>"Basic" does not mean an introductory step. It is like basic medical science: it pulls out the problems that the specialist fields share and studies them across the board.</li>
+<li>The aim of planar composition is to place forms within a given space, and to train ideas and feeling together through a large number of exercises.</li>
+<li>Points can become lines or planes, and can also be made into ripples and points of light. The thickness, tone and spacing of lines change how they are read.</li>
+<li>If form and colour are simply separated and then put back together, there is little room for creativity; the work of composition is to make the elements relate to each other.</li>
+<li>The laws of variation and unity must be present at the same time: small squares can each have a different shape, yet their direction can still be held together by two sets of parallel lines at right angles.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Do element exercises first (arranging points, the thickness and spacing of lines), then relationship exercises (symmetry, equal division, gradation).</li>
+<li>Change only one variable per exercise. For example, keep the same set of shapes and change only the value or only the direction, and watch how rhythm appears.</li>
+<li>When checking for unity, ask: which element is responsible for the whole (direction, spacing, colour or outline)?</li>
+<li>Referring to the points of light, axes of symmetry and gradation layers in the book, make a black-and-white version first, then add one accent colour.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-art-and-design-planar-composition-1.jpg" alt="Separating and recombining form and colour"><figcaption>When shapes are separated and recombined, both form and colour stay as they were, leaving little room for creativity. Source: <span lang="zh-Hant">《藝術·設計的平面構成》</span>, p.86</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-art-and-design-planar-composition-2.jpg" alt="Variation and unity in division"><figcaption>The small squares all differ in shape, but two sets of parallel lines crossing at right angles unify their direction. Source: <span lang="zh-Hant">《藝術·設計的平面構成》</span>, p.125</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Using the same set of points, create the feeling of a "line" and then of a "plane", and write down which variable you changed.</li>
+<li>Draw four colour planes of equal area. How should you divide them so that the laws of variation and unity are both visible?</li>
+</ol>
+<h3 class="book" id="b-art-and-design-three-dimensional-composition"><span lang="zh-Hant">藝術·設計的立體構成</span></h3>
+<p><strong>Author:</strong> Naomi Asakura</p>
+<p><strong>Scope.</strong> This volume studies only three-dimensional form, and the problems the planar volume did not cover. Its subjects include points of light, linear members, planar members and solid blocks, as well as arrangement, construction and low relief. It is still basic form training, not a manual of building construction or product engineering. Paper folding and physical experiments with light are left to the paper and light volumes.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The development of three-dimensional form after the war was not just that the works got better; the range of expression got wider. Three-dimensional composition deals with the basic problems within that range.</li>
+<li>The elements of composition include form, colour and structure. This volume focuses on form and the elements that make up form.</li>
+<li>A point can be invisible light: LEDs, end-point lighting, rows of light bulbs, lasers and air currents can all be made into three-dimensional points.</li>
+<li>A line must be seen in terms of its form, its texture and how it is built. Even after abstraction, you should still be able to say what the line is doing in space.</li>
+<li>Materials rewrite form. Firing can be controlled while you watch; magnetism lets metal be attracted, so form no longer depends only on glue and joints.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Decide on linear, planar or solid material first, then talk about form. Change the material and the same outline becomes a different exercise.</li>
+<li>When making a linear structure, record three things separately: the form of the line, the texture of the line, and how the lines join.</li>
+<li>Do a small experiment with an invisible point (light, air flow, magnetic force) and write down what force keeps the form standing.</li>
+<li>When you finish, photograph it from three directions. A form that looks good from only one angle is not yet finished as a three-dimensional piece.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-art-and-design-three-dimensional-composition-1.jpg" alt="Firing that can be controlled while watching"><figcaption>When firing directly with a burner, you can watch the work and control the heat at the same time. Source: <span lang="zh-Hant">《藝術·設計的立體構成》</span>, p.118</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-art-and-design-three-dimensional-composition-2.jpg" alt="Forms made using magnetism"><figcaption>Magnetic materials attract metal, and the book uses this force to make forms. Source: <span lang="zh-Hant">《藝術·設計的立體構成》</span>, p.91</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>To turn a line from the planar volume into a linear member in this volume, which three decisions must you add?</li>
+<li>Give a small experiment in which "a form is held up by an outside force" (wind, magnetism or light), and say whether the form survives when the force disappears.</li>
+</ol>
+<h3 class="book" id="b-art-and-design-paper-composition"><span lang="zh-Hant">藝術·設計的紙的構成</span></h3>
+<p><strong>Author:</strong> Naomi Asakura</p>
+<p><strong>Scope.</strong> This volume narrows the material down to paper. The first half covers paper culture: religion, dwellings, tools, toys, and today's printing, packaging and environmental issues. Only the second half is about composition: folding, cutting, relief, polyhedra, and paper in visual communication, lamps and furniture. It is not the three-dimensional volume "done again in paper", because paper's memory, translucency and ability to unfold are things other materials do not have.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Paper is both a carrier of information and an object. Maps, packaging, ritual banners and paper cuts use different properties of the same thin sheet.</li>
+<li>Folds such as the Miura fold let a large sheet open out along its diagonal; a tea room folded from washi six metres square packs down to only a few centimetres thick.</li>
+<li>Relief does not need thicker material. Pulling, curved folding and hanging lines can all create undulation in a single sheet.</li>
+<li>Polyhedra can be unfolded into cut pieces or joined into linear structures. Cut off the corners of a cube and you get a different set of parts.</li>
+<li>Paper can also move: pull a card open and an apple comes apart; squeeze the head of a polyhedron and its mouth opens. The structure itself is the mechanism.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before you start, choose one property of paper to use: fold memory, translucency, friction, cuttability, or the ability to be glued. Do not use all five at once.</li>
+<li>Make a net (unfolded pattern) for every three-dimensional piece first. Only pieces that can be laid flat and folded back up really use paper rather than board.</li>
+<li>For relief exercises, use one sheet of paper with no extra support, and only cut, fold and pull.</li>
+<li>When making a moving paper piece, write down one action — "pull open", "squeeze" or "turn the page" — and check that the mechanism can be understood at first try.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-art-and-design-paper-composition-1.jpg" alt="Paper relief made by pulling"><figcaption>Pulling techniques and curved single units used in paper relief. Source: <span lang="zh-Hant">《藝術·設計的紙的構成》</span>, p.119</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-art-and-design-paper-composition-2.jpg" alt="Paper mechanisms that pull open and open a mouth"><figcaption>Pull the card open and the apple comes apart; squeeze both ends of the polyhedron and the head opens its mouth. Source: <span lang="zh-Hant">《藝術·設計的紙的構成》</span>, p.207</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Using one sheet of A4 and only fold lines, make a relief that stands up firmly. Which fold is structural, and which is only decorative?</li>
+<li>Which property of paper do the Miura-fold map and the folded tea room share?</li>
+</ol>
+<h3 class="book" id="b-art-and-design-light-composition"><span lang="zh-Hant">藝術·設計的光的構成</span></h3>
+<p><strong>Author:</strong> Naomi Asakura</p>
+<p><strong>Scope.</strong> The fourth volume of the series treats light as a material for form. The content is divided into light art, lighting and light design for cities, and experiments: flash, fluorescent lamps, coloured light, polarised light, black light, lasers, LEDs and neon. The theory sections cover transparency, reflection, refraction, interference and diffraction, as well as afterimages, flicker and light trails. The "points of light" in the three-dimensional volume were only an introduction; the experiments and the properties of light are in this volume.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Light composition is still basic form training. The name needs to be clear first: it studies the basics of form made with light, not a catalogue of light fittings.</li>
+<li>Natural light, the development of artificial light, and light art since the twentieth century form the historical background to this practice.</li>
+<li>The same lamp has a different job on a shopfront, in a shop window, in an interior, on an exterior wall and in the cityscape. The place comes before the type of lamp.</li>
+<li>The prism is the prototype of the multi-faceted lens. Lenses can be arranged in a parallel series or radiating on three sides.</li>
+<li>"Light + movement" has to deal with afterimages and light trails. When photographing a kinetic sculpture, the number of flashes and the shading decide whether you see the form or its trail.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Change only one property of light in each experiment: reflection, refraction or flicker. If you change colour and movement at the same time, you cannot keep a record.</li>
+<li>When photographing light trails, first block any flash that goes straight into the lens, then decide from which diagonal direction the flash hits the subject.</li>
+<li>For coloured-light exercises, record "the colour of the light itself" and "the colour the lit object shows" separately.</li>
+<li>Use a set of prisms or transparent sheets to make both a parallel and a radiating series, and compare how the cut faces change the bands of light.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-art-and-design-light-composition-1.jpg" alt="Prism and lens series"><figcaption>Lens series arranged in parallel and radiating on three sides both take the prism as their prototype. Source: <span lang="zh-Hant">《藝術·設計的光的構成》</span>, p.74</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-art-and-design-light-composition-2.jpg" alt="Photographing a kinetic sculpture with flash"><figcaption>A kinetic sculpture photographed in the dark with diagonal flash, with a shade blocking light from entering the lens. Source: <span lang="zh-Hant">《藝術·設計的光的構成》</span>, p.130</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>With the points of light in the three-dimensional volume and the light trails in this one, is the viewer looking at "position" or at "time" in each case?</li>
+<li>Why do you add a shade next to the camera when photographing flash trails? If you remove it, what extra appears in the picture?</li>
+</ol>
+<h3 class="book" id="b-the-elements-of-graphic-design"><span lang="zh-Hant">平面設計原理</span></h3>
+<p><strong>Original title:</strong> <em>The Elements of Graphic Design: Space, Unity, Page Architecture, and Type</em></p>
+<p><strong>Scope.</strong> This book presents graphic design as the work of a communicator: what is on the page has to be understood. The discussion starts with space and figure/ground, moves on to the page as a visible structure, and then to type. It explains its points with publishing standards, magazine spreads and revised advertisements. It does not do point, line and plane form exercises the way Asakura does, nor does it reduce the principles to four slogans.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The basic aims of page design are recognition and readability. Consistent layout, white space, graphics and repetition are used to guide the eye.</li>
+<li>Space is like air: it is what a design breathes with. Large areas of white space make headlines stand out and give images room to expand.</li>
+<li>Simplicity is not just putting less on the page. Of two equally clear designs, the one that conveys more information is the simpler.</li>
+<li>The design process is a step-by-step filter: first remove content with no value, then, in the fine details of the layout, settle the single most important message.</li>
+<li>Proximity (grouping) is a way to achieve unity. Only when related items sit close together is the page read as a set of groups rather than a pile of parts.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before designing a page, write down "the most important message". Every other item must explain how it serves that message.</li>
+<li>Use white space to build hierarchy: leave a noticeable distance between the headline area, the image area and the text area.</li>
+<li>Check proximity: circle related labels and content as groups. The space between groups must be looser than the space within them.</li>
+<li>When revising, delete first, then adjust letter-spacing and leading. Fine-tuning comes after filtering.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-the-elements-of-graphic-design-1.jpg" alt="Achieving unity through proximity"><figcaption>Proximity (also called grouping) is used to explain how unity is achieved. Source: <span lang="zh-Hant">《平面設計原理》</span>, p.60</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-the-elements-of-graphic-design-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《平面設計原理》</span>, p.184</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Take a one-page flyer and circle the related items. Is the distance between groups greater than the distance within them?</li>
+<li>Compare two posters using the book's definition: which is simpler? Is your reason the amount of information, or just that it has fewer elements?</li>
+</ol>
+<h3 class="book" id="b-universal-principles-of-design"><span lang="zh-Hant">通用設計法則</span></h3>
+<p><strong>Original title:</strong> <em>Universal Principles of Design</em></p>
+<p><strong>Authors:</strong> William Lidwell (with Kritina Holden and Jill Butler)</p>
+<p><strong>Scope.</strong> This is a handbook you look up principle by principle, not a workbook for a composition course. Each principle comes from research and explains how people perceive, learn and use designs. The Chinese edition has two tables of contents, alphabetical and by category, running from 80/20, accessibility, affordance and alignment to archetypes. The English edition of the same name is the original text of the same principles and is useful for checking the English names; use this volume to read the explanations and examples.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Principles are not taste. The book's position is that these principles are backed by research and can be used to explain "why some designs are remembered".</li>
+<li>Principles such as the cathedral effect and the biophilia effect link ceiling height and natural scenery with people's states of mind.</li>
+<li>Affordance, alignment, consistency and legibility deal with use, not only with whether the picture looks good.</li>
+<li>Propositional density looks at how many layers of shape, meaning and association can be stacked. It is used to judge whether a work can resonate with people.</li>
+<li>The rule of thirds does not always apply. When the subject is strong, the space around it already reinforces it; forcing it onto a third point can take that strength away.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before making a decision, classify the problem: is it about perception, learning or use? Then look up only the principles in that category.</li>
+<li>Each time you apply a principle, write down "what it predicts the audience will do". Check afterwards; if the prediction fails, change the principle, not the slogan.</li>
+<li>Apply alignment and proximity to grouping information first, before thinking about style.</li>
+<li>When you see a popular composition (such as the rule of thirds), first ask whether the subject is already strong enough. If it is, protect it with white space.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-universal-principles-of-design-1.jpg" alt="Visual storytelling"><figcaption>The entry on visual storytelling points to related reference books by Will Eisner. Source: <span lang="zh-Hant">《通用設計法則》</span>, p.246</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-universal-principles-of-design-2.jpg" alt="An example where the rule of thirds should not be used"><figcaption>A boxing photograph is used as an example of where the rule of thirds should not be applied: a strong subject is reinforced by the space around it. Source: <span lang="zh-Hant">《通用設計法則》</span>, p.224</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose two principles for your project, one about "whether people can understand it" and one about "whether people can use it". Do they conflict?</li>
+<li>Find a poster whose subject is already very large. If you changed it to the rule of thirds, would the surrounding space still help the subject?</li>
+</ol>
+<h3 class="book" id="b-school-of-visual-arts-series-design-elements-a-graphic"><span lang="zh-Hant">美國視覺設計學院叢書：設計元素（平面設計樣式）</span></h3>
+<p><strong>Original title:</strong> <em>Design Elements: A Graphic Style Manual</em></p>
+<p><strong>Scope.</strong> This is the series edition of the Chinese translation of <span lang="zh-Hant">《設計元素：平面設計樣式》</span>. Its core is twenty rules of good design, followed by sections on form, space, colour, type and images. It is a style manual: it explains the rules through work, for reference and comparison. The same book also exists in a "good form" packaging, as the English original, and as two other Chinese scans; for this entry, use the rule text of the series translation, and for the plate discussions compare contrast and collage.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>You must have a concept first. Without information, a story or a point of view, beauty is just an empty shell.</li>
+<li>Use one visual language. If one element does not fit with the rest, the whole message is weakened.</li>
+<li>Limit type families to two, three at most. When the typeface changes, readers assume the function or meaning has changed.</li>
+<li>First direct attention to the most important information, then use shapes, pictures, type or colour to lead the eye to the secondary parts.</li>
+<li>Choose colour for its meaning, not by industry convention. Negative space should be designed, not left over as holes to fill.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before finalising, do a "one voice" check: are the shapes, weights, layout and concept all saying the same thing?</li>
+<li>Keep only one type family, plus sizes and italics. If you add a second family, write down the one function it is responsible for.</li>
+<li>Take a first look from thirty paces away and say the first word you read. If it is not the main headline, redo the hierarchy.</li>
+<li>When making collage, keep two kinds of material separate: hand-scanned textures, and image treatments such as transparency, silhouette, multiple exposure and blur.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-school-of-visual-arts-series-design-elements-a-graphic-1.jpg" alt="Multiple contrasts on a poster"><figcaption>On this poster, line and texture, organic shapes and geometric lettering, and large and small elements all contrast with each other. Source: <span lang="zh-Hant">《設計元素（平面設計樣式）》</span>, p.44</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-school-of-visual-arts-series-design-elements-a-graphic-2.jpg" alt="Image techniques used in collage"><figcaption>Hand-scanned material can be combined with photographs, and transparency, silhouette, multiple exposure and blur can also go into a collage. Source: <span lang="zh-Hant">《設計元素（平面設計樣式）》</span>, p.181</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Use four of the twenty rules to assess one of your own projects: concept, one visual language, number of typefaces, negative space.</li>
+<li>Cut the type families on a poster down to two. What function was the one you removed responsible for?</li>
+</ol>
+<h3 class="book" id="b-robin-williams-design-workshop"><span lang="zh-Hant">寫給大家看的設計書：實例與創意</span></h3>
+<p><strong>Original title:</strong> <em>Robin Williams Design Workshop</em></p>
+<p><strong>Authors:</strong> Robin Williams, John Tollett</p>
+<p><strong>Scope.</strong> This is the hands-on sequel to <span lang="zh-Hant">《寫給大家看的設計書》</span>, not a first explanation of the principles. Principles, type, colour, printing and file formats are set out as quizzes, followed by projects such as brochures, websites, forms, business cards and logos. The 3rd and 4th editions of <span lang="zh-Hant">《寫給大家看的設計書》</span> explain contrast, repetition, alignment and proximity; this book assumes you already know them, and then pushes you to produce a deliverable version within a schedule and a budget.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Having a layout, copy and photos is still not enough. If the apostrophes, quotation marks or spaces after full stops are wrong, the work is not at the level you think.</li>
+<li>Typographic details (accents, full stops inside or outside brackets, the apostrophe in "its", hyphens) are the designer's job and cannot be passed on to the typesetter.</li>
+<li>You must be able to tell type categories apart: slab serif, sans serif, oldstyle, modern, decorative, script. Use the wrong category and the tone is wrong.</li>
+<li>Paragraph hierarchy depends on a visible technique. You should be able to point out the difference between the left and right paragraphs.</li>
+<li>Under tight deadlines and tight budgets, typesetting produces many versions. The hard part of creativity is narrowing down, not making one more.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Start with the self-test at the front of the book: principles, typesetting, colour, printing, file formats, type. If you cannot answer a section, do not start the project from that section.</li>
+<li>For each project, make three versions in a set time, then keep only one, and write down why you dropped the other two.</li>
+<li>Before handing in, check specifically for five kinds of error: apostrophes, quotation marks, hyphens, spaces after full stops, punctuation after italics.</li>
+<li>Set up an ideas folder, and store usable directions and rejected directions separately.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-robin-williams-design-workshop-1.jpg" alt="Turning design work into play"><figcaption>The preface hopes readers will one day say: this isn't work, it's play every day. Source: <span lang="zh-Hant">《寫給大家看的設計書：實例與創意》</span>, p.7</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-robin-williams-design-workshop-2.jpg" alt="Typesetting versions that are hard to narrow down"><figcaption>With a tight deadline or budget, typesetting produces many versions that are hard to narrow down to one solution. Source: <span lang="zh-Hant">《寫給大家看的設計書：實例與創意》</span>, p.68</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Find five typographic errors in a passage of English (apostrophes, spaces, hyphens, quotation marks, punctuation position).</li>
+<li>After making three versions of the same business card project, what criterion do you use to keep one?</li>
+</ol>
+<h3 class="book" id="b-the-golden-ratio"><span lang="zh-Hant">黃金比例</span></h3>
+<p><strong>Original title:</strong> <em>Geometry of Design: Studies in Proportion and Composition</em></p>
+<p><strong>Author:</strong> Kimberly Elam</p>
+<p><strong>Scope.</strong> This volume is a Chinese translation of Kimberly Elam's study of proportion, with the title focused on "the golden ratio". It moves from people's preference for certain rectangles to nature, Greek sculpture, the Vitruvian figure, Renaissance painting, faces and architecture, and shows how to draw the golden rectangle, spiral, triangle and ellipse. <span lang="zh-Hant">《設計幾何學》</span> follows the same research through to layout analysis; <span lang="zh-Hant">《分寸設計》</span> is the second edition, with more recent case studies. <span lang="zh-Hant">《和諧之美》</span> is a collection of contemporary logo cases, not the history and drawing methods of this volume.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Gustav Fechner measured a large number of rectangular objects, and repeated experiments after Charles Lalo also showed that people prefer rectangles close to 1:1.618.</li>
+<li>The golden section can bring parts together into a whole while letting each part keep its own character. The spiral of a shell only approaches this ratio; it is not an exact mathematical match.</li>
+<li>The numbers of clockwise and anticlockwise spirals on pine cones and sunflowers are neighbouring Fibonacci numbers. The ratio of the line segments in a pentagon and a pentagram is also this ratio.</li>
+<li>Vitruvius placed the human body in a square and in a circle centred on the navel: the groin divides the body in two, and the navel sits at the golden section point. The Doryphoros and the statue of Zeus both follow this system.</li>
+<li>The body proportions of Leonardo da Vinci and Albrecht Dürer almost coincide, but their faces differ. Dürer placed the features lower and made the forehead higher, reflecting the facial ideals of his time.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When analysing a picture, first draw the enclosing golden rectangle, then draw the secondary rectangles that share its diagonal. Do not just paste a spiral on top as decoration.</li>
+<li>In figure or portrait work, check body proportions and facial proportions separately. They do not have to share the same ideal.</li>
+<li>Use neighbouring Fibonacci numbers (5:8, 8:13, 13:21) to divide the picture, and write down what content each cut passes through.</li>
+<li>When comparing with examples from nature, note whether they "approach" or "match". The shell in the book approaches.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-the-golden-ratio-1.jpg" alt="Proportion analysis simplified to a silhouette"><figcaption>Details are reduced to a silhouette, the structure on the support pole is repeated, and the stripes of the towel break up the simple shape. Source: <span lang="zh-Hant">《黃金比例》</span>, p.52</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-the-golden-ratio-2.jpg" alt="Dürer's facial proportions"><figcaption>Dürer's figure outlines draw the face with the features set low and the forehead high. Source: <span lang="zh-Hant">《黃金比例》</span>, p.15</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Use a golden rectangle to analyse a front-facing portrait: on which division line do the eyes, nose and mouth each fall?</li>
+<li>Why does the book say the nautilus "approaches" the golden spiral rather than equalling it?</li>
+</ol>
+<h3 class="book" id="b-the-design-classroom"><span lang="zh-Hant">設計的教室</span></h3>
+<p><strong>Scope.</strong> This is a workbook. Chapter 1 uses a pencil, an eraser, a pen and a paper clip to show that every position must have a reason you can put into words. Only after that does it move on to composing with basic shapes, colour and real projects. It trains the logic of graphic design; it is not an encyclopaedia of principles, nor the mathematics of the golden ratio.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Some positions in a picture can be named: the two ends, the centre, left-aligned, right-aligned, centred, equally spaced. Only positions you can name can carry your intention.</li>
+<li>Design can express feelings that words cannot, but when checking your intention, you should still try to restate it in words.</li>
+<li>Each time you add an object, the reasons for the old objects' positions change. A pen placed later gives the eraser placed earlier a new reference point.</li>
+<li>A logical design is one where objects serve as reasons for each other, and those reasons do not contradict each other.</li>
+<li>Colour needs a reason too. If the headline colour does not stand out in the palette, go back to the palette and add a colour, rather than painting it black afterwards.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Arrange four items of stationery. Each time you place one, say aloud what it aligns with and which spacing it equals. If you cannot say, place it again.</li>
+<li>When you finish, hide the names of the objects and ask someone else to restate your rules by looking only at the positions. If they cannot, the rules do not exist.</li>
+<li>When building a palette, count the headline colour as part of the same palette. Do not decide the headline on its own before the whole palette is done.</li>
+<li>Try a set of colours whose CMYK values add up to the same total, and check whether they fall into similar tones.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-the-design-classroom-1.jpg" alt="The headline colour must go back into the palette"><figcaption>The palette colours cannot hold the headline, and black would break the whole, so you go back to the palette and add a colour just for the headline. Source: <span lang="zh-Hant">《設計的教室》</span>, p.97</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-the-design-classroom-2.jpg" alt="Controlling tone with numbers"><figcaption>One colour family can be harmonised as vivid or muted; colours whose CMYK values all add up to 150 have similar tones. Source: <span lang="zh-Hant">《設計的教室》</span>, p.87</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Arrange four items of stationery on a table so that the horizontal position of each can be described as "aligned" or "equally spaced".</li>
+<li>Your headline is black and everything else is a set of grey-blues. Following this book's approach, at what step should the black have been decided?</li>
+</ol>
+<h3 class="book" id="b-the-design-method"><span lang="zh-Hant">設計的方法</span></h3>
+<p><strong>Original title:</strong> <em>The Design Method: A Philosophy and Process for Functional Visual Communication</em></p>
+<p><strong>Scope.</strong> This book is about how a studio turns a problem into a design, using projects by the author's studio smashLAB as examples. The first part takes apart eleven myths about creative work; only the second part sets out the four phases of the method: discovery, planning, creative and application. It suits visual communication problems that have not yet been clearly defined. A small poster may not need the whole process, but the principles still apply. It does not teach point, line and plane, nor does it replace the composition training of <span lang="zh-Hant">《設計的教室》</span>.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The myths include: design is a sibling of art; creativity is something ready-made; being different is good; you must wait for inspiration; talent decides everything.</li>
+<li>Another group of myths concerns ways of working: treating design as a lifestyle; treating self-expression as the goal; believing designers are smarter than clients; believing the designer is the audience; believing awards equal value; believing creativity should not be bound by rules.</li>
+<li>The phases of the method are discovery, planning, creative and application. Each phase must leave documents you can show the client.</li>
+<li>The way to understand users is to spend money and use the service yourself, experiencing it as a user does, rather than imagining them in a meeting room.</li>
+<li>Ideas need to converge. After working on an idea for a long time, often only the last twenty minutes of brainstorming are truly useful.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When starting a project, first write a list of myths: the three you are most likely to fall into this time. Pin it next to the brief.</li>
+<li>In the discovery phase, collect only problems and constraints; user personas and content tools come in the planning phase. Do not produce a style on day one.</li>
+<li>Go through the client's service yourself (queue, order, open the packaging), and use the experience to rewrite the adjectives in the brief.</li>
+<li>Put a time limit on brainstorming. Stop when time is up, and turn the sentences from the last stretch into actionable directions.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-the-design-method-1.jpg" alt="The last twenty minutes of brainstorming"><figcaption>Sorting out ideas is like tidying a room: after a long struggle, often only the last twenty minutes of brainstorming really work. Source: <span lang="zh-Hant">《設計的方法》</span>, p.140</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-the-design-method-2.jpg" alt="Experiencing a service as a user"><figcaption>Only by buying and experiencing a service as a user does can you understand what affects users. Source: <span lang="zh-Hant">《設計的方法》</span>, p.27</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>From the eleven myths, choose two you have fallen into recently, and write one example from your own work for each.</li>
+<li>For your next project, what do you plan to collect in "discovery"? On which day do you plan to start drawing in "creative"?</li>
+</ol>
+<h3 class="book" id="b-on-pictorial-composition"><span lang="zh-Hant">談繪畫構圖</span></h3>
+<p><strong>Scope.</strong> This is a textbook on composition in painting. It explains the picture through illustrated examples and is not a layout book for graphic design. It starts with the principles of unity in variety, balance, and density, then covers arrangement, line, shape, eye level, black-white-grey, the picture frame and colour, and ends with setting off and contrast. Design students can use it to understand "weight" and "viewpoint", but should not treat its figure-drawing methods as a poster grid.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Balance is a felt balance, not left-right symmetry. Curved and straight, thick and thin, long and short lines should not be equal in number; one kind should lead.</li>
+<li>The areas of black, white and grey should not be equal. Once main and secondary are separated, the picture stops looking dull. Blocks of tone can break through outlines and connect with each other, like knocking through a partition wall.</li>
+<li>Warm and cool, strong and weak, dense and pale also have weight. Half red and half yellow is a symmetry of colour and is just as rigid.</li>
+<li>Eye level changes a figure's status. Seen from above, a figure looks small however large it is drawn; with the eye level between chest and head, the viewer feels present in the scene.</li>
+<li>Setting off can also be used in reverse: on one side black sets off white, on the other white sets off black, so two groups of figures are each brought out and also echo each other.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First make an area sketch with three blocks of black, white and grey, check that they are not three equal parts, then add the line drawing.</li>
+<li>Set a rule for line exercises that "curved or straight must lead": if there are many curves, keep straight lines few and thick, or the reverse. Count them; if the numbers are equal, redraw.</li>
+<li>Do the same subject at three eye levels: high, middle and low. Write down whether the viewer is looking down, straight across or up.</li>
+<li>Use one block of black to connect dark areas that were separate (hair, clothes, shadows), and see whether the picture flows better as a result.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-on-pictorial-composition-1.jpg" alt="Eye level and the weight of a figure"><figcaption>Seen from above, a figure looks small however large it is drawn; with the eye level around chest to head height, the viewer feels present in the scene. Source: <span lang="zh-Hant">《談繪畫構圖》</span>, p.71</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-on-pictorial-composition-2.jpg" alt="A print in which black and white set each other off"><figcaption>Wu Birui's print uses black to set off white on one side and white to set off black on the other, bringing out both Lenin and the Red Army soldiers. Source: <span lang="zh-Hant">《談繪畫構圖》</span>, p.85</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Draw a balance of three lines: why does it fail when curved and straight lines are equal in number?</li>
+<li>Place the same person once at a high eye level and once at a middle eye level. Which is better for showing "looking down on him"?</li>
+</ol>
+<h3 class="book" id="b-over-1-000-graphic-elements-distinctive-design-elements"><span lang="zh-Hant">1000多個圖形元素：獨特的設計元素</span></h3>
+<p><strong>Original title:</strong> <em>1000 Graphic Elements: Special Details for Distinctive Designs</em></p>
+<p><strong>Scope.</strong> This is a specimen collection of graphic elements. It gathers commercial and artistic graphics from studios around the world, listed by work number, and touches on materials, printing and special finishes. The introduction sums up the trend of the time in one line: restraint first, with materials and special techniques used with intent. It is for browsing and comparison. It gives no composition steps and cannot replace the rules of <span lang="zh-Hant">《設計元素》</span> or Asakura's exercises.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The power of graphic elements comes from layered inks, dynamic composition and controlled colour, not from piles of post-production effects.</li>
+<li>With fewer eye-catching surface finishes, ink and graphics have to carry the expression. Bold graphics can make up for the finishes that were dropped.</li>
+<li>There are many exceptions, but the story is clear: restraint, together with strategic use of materials, is driving how graphic elements are used.</li>
+<li>Read the book by browsing studios and techniques by number, not by following chapters in textbook order.</li>
+<li>The same element (line, dot, block of colour, letter) appears again and again in work from different countries. When comparing, look at the materials and printing, not only at whether the outlines look alike.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Each time you copy down an element, also note the studio, the material and the printing method. A scrapbook that stores only shapes leaves you not knowing how they were printed when you come to use them.</li>
+<li>Subtract before you imitate: remove one special finish and see whether the graphic still stands up on its own.</li>
+<li>Use this book to find examples of "restraint", and other books to find rules. Do not mix the two into one notebook.</li>
+<li>When collecting, sort by task (emphasis, separation, packaging surface, logo detail), not by how attractive it is.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-over-1-000-graphic-elements-distinctive-design-elements-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《1000多個圖形元素》</span>, p.271</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-over-1-000-graphic-elements-distinctive-design-elements-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《1000多個圖形元素》</span>, p.151</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose an element from the book and write down one material or printing method it may depend on. If you remove that finish, what is left of the element?</li>
+<li>The introduction says "restraint first". Find a spread you think is restrained, and say whether what is held back is colour, finishing or the number of graphics.</li>
+</ol>
+<h3 class="book" id="b-point-line-and-plane-in-design"><span lang="zh-Hant">設計中的點線面</span></h3>
+<p><strong>Author:</strong> Wang Shaoqiang</p>
+<p><strong>Scope.</strong> This volume uses contemporary graphic projects to show how point, line and plane become a language of communication. The preface puts geometry back into the context of modern design: the Ulm School of Design, the golden ratio, Le Corbusier's Modulor, Josef Albers's space and surface, and the precise graphics of Sol LeWitt and Enzo Mari. The main text is a portfolio: logos, posters, calendars, records, wayfinding and identity design. It shows how things are used and does not replace Asakura's step-by-step exercises.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Geometric graphics are a tool of communication, not improvised brushwork. Minimalism and precision require structure worked out in advance.</li>
+<li>The book treats the golden ratio as a link between mathematics, the human body and nature, to explain why graphics keep returning to this number.</li>
+<li>Computer images are made of pixels, so designers already work with a mathematical grid every day.</li>
+<li>In projects, point, line and plane are often a system: a set of logos must still be recognisable when its graphics, colours and sizes change.</li>
+<li>Graphics can also be used to create "an illusion that people believe". A calendar project moves descriptions out of their original context and makes people feel nostalgic.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Classify each case with one of three words: is it mainly using point, line or plane? Each case gets only one main word.</li>
+<li>If the work is a system, find the parts that do not change (proportions, strokes, modules) and the parts that may change (colour, size, background texture).</li>
+<li>Link one historical name from the preface (Le Corbusier, Albers or LeWitt) to a contemporary case in the book, and write down the kind of precision they share.</li>
+<li>When making your own logo, set the geometric rules first, then draw. If you cannot write the rules down, you have not yet left "improvisation" behind.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-point-line-and-plane-in-design-1.jpg" alt="The logic of illusion in the prophecy calendar"><figcaption>The "Prophecy" calendar uses descriptions to move the truth out of its original context, making people nostalgic and so leading them to believe the illusion. Source: <span lang="zh-Hant">《設計中的點線面》</span>, p.146</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-point-line-and-plane-in-design-2.jpg" alt="Changing the graphics and colours of an old logo"><figcaption>The art director of the record <em>More</em> changed the graphics, colours and size of the 2004 logo. Source: <span lang="zh-Hant">《設計中的點線面》</span>, p.68</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose an identity design from the book and list which part must still stay the same four years later.</li>
+<li>What makes the illusion in the "Prophecy" calendar seem real: the geometry, the copy, or the two working together?</li>
+</ol>
+<h3 class="book" id="b-graphic-design-rules"><span lang="zh-Hant">平面設計法則</span></h3>
+<p><strong>Original title:</strong> <em>The Essential Principles of Graphic Design</em></p>
+<p><strong>Scope.</strong> This is an introductory reader divided into "basic rules" and "rules of the creative process". In the basic part, different authors write on type, colour, layout and style; the process part covers market research, ethnography, focus groups, eye tracking and online testing. It offers no single all-purpose rule. Unlike Lidwell's handbook, which names principles after research, this book is more like a map of the industry: first get to know the paths graphic design can take, then the research to do before making decisions.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Graphic design needs both creativity and logic: it conveys thinking through images, and it must also organise visual information and knowledge.</li>
+<li>Colour, type, layout and style all need to be learned, and in the end they must combine into one method. No single element can guarantee success on its own.</li>
+<li>Passion and the power to move people cannot be taught, yet they are why work is remembered. The parts that can be taught still need long practice.</li>
+<li>Typography is compared to writing: first master basic sentences, then aim for liveliness, and only then earn the right to break the rules.</li>
+<li>Research in the process (ethnography, focus groups, eye tracking) is used to reduce the mystery of "it feels right", not to replace judgement.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When reading the basic rules, take notes in four columns: type, colour, layout, style. In each column, copy only one rule you are willing to follow in your next project.</li>
+<li>For the process, write the research question first, then choose the method. Eye tracking answers "where do people look first", not "is this line of copy right".</li>
+<li>Use a real client brief to practise saying no: write down one standard you refuse to lower, and the work you plan to use to persuade the client.</li>
+<li>Read this book's process alongside the four phases of <span lang="zh-Hant">《設計的方法》</span>, and mark which steps are the same thing under different names.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-graphic-design-rules-1.jpg" alt="Unifying the visuals with a lighting concept"><figcaption>The invitations and letterheads use a lighting concept to build a visual language for the Montreal area. Source: <span lang="zh-Hant">《平面設計法則》</span>, p.195</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-graphic-design-rules-2.jpg" alt="Holding design standards with clients"><figcaption>Designers must win clients over and think for themselves; only by refusing to lower their standards can they make good work. Source: <span lang="zh-Hant">《平面設計法則》</span>, p.116</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Of the four basic rules, which is currently your weakest? What kind of exercise does this book suggest to strengthen it?</li>
+<li>What questions can eye tracking and ethnographic interviews each answer, and what can they not answer?</li>
+</ol>
+<h3 class="book" id="b-geometry-of-design-studies-in-proportion-and-composition"><span lang="zh-Hant">設計幾何學：關於比例與構成的研究</span></h3>
+<p><strong>Original title:</strong> <em>Geometry of Design: Studies in Proportion and Composition</em></p>
+<p><strong>Author:</strong> Kimberly Elam</p>
+<p><strong>Scope.</strong> This volume, like <span lang="zh-Hant">《黃金比例》</span>, belongs to Elam's study of proportion, and its subtitle states that it is about "proportion and composition". The first half again covers preference, nature, the human body, faces and architecture; read on and this volume applies the same geometry to design composition: arcs, rectangles and root ratios must explain the size and position of every element. <span lang="zh-Hant">《分寸設計》</span> is the second edition and adds reversed rectangles and a group of modern works. The focus of this volume is compositional analysis itself.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The golden section appears both in made objects and in biological growth. Biological spirals approach it; they do not equal 1:1.618 exactly at every step.</li>
+<li>The rectangle experiments of Fechner and Lalo are the psychological basis for "people prefer certain proportions"; they are not mysticism.</li>
+<li>Neighbouring Fibonacci numbers explain the double spirals of pine cones and sunflowers. The ratio of the side lengths of the triangles inside a pentagon is also the golden ratio.</li>
+<li>Every size, placement and position in a composition needs a reason. The rhythm of concentric arcs can correspond to the mathematical structures in music.</li>
+<li>The √2 rectangle has its own method of circle composition. A centred X shape can govern the whole picture; a name and a rectangle can share the 2:3:4 progression.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When analysing a work, first choose one kind of rectangle (golden or √2), then align the elements to its diagonals, circle centres or divisions.</li>
+<li>Write a proportional reason next to each element. Remove any decoration you cannot give a reason for from the composition sketch.</li>
+<li>Use whole-number ratios such as 2:3:4 for a set of type sizes or blocks, and check whether they are truly proportional and not just "one big, one small".</li>
+<li>When reading it alongside <span lang="zh-Hant">《黃金比例》</span>, split your notes into "how to draw a proportion" and "how to use proportion to explain an existing design".</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-geometry-of-design-studies-in-proportion-and-composition-1.jpg" alt="The geometric rhythm of concentric arcs"><figcaption>The rhythm of concentric arcs corresponds to the mathematical structure of music, and the size and position of every element has a reason. Source: <span lang="zh-Hant">《設計幾何學》</span>, p.79</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-geometry-of-design-studies-in-proportion-and-composition-2.jpg" alt="Composition in a root-two rectangle"><figcaption>The name and the rectangle both use 2:3:4; the circle composition suited to the √2 rectangle is governed by a centred X shape. Source: <span lang="zh-Hant">《設計幾何學》</span>, p.92</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Assign 2:3:4 to three type sizes on a poster. What kind of information does each size control?</li>
+<li>Which would you use for paper that "keeps its proportions when folded in half": the golden rectangle or the √2 rectangle? Why?</li>
+</ol>
+<h3 class="book" id="b-art-and-design-planar-composition-traditional-chinese"><span lang="zh-Hant">藝術·設計的平面構成（繁體版）</span></h3>
+<p><strong>Author:</strong> Naomi Asakura</p>
+<p><strong>Scope.</strong> This is the traditional Chinese edition of the planar composition volume; its content is the same course as the simplified Chinese <span lang="zh-Hant">《藝術·設計的平面構成》</span>. The wording differs: this edition uses Japanese-style terms such as <em>zaoxing</em> written with the character for "shape", <em>ercixuan</em> ("second dimension"), <em>yongju</em> ("implements") and <em>dongshi</em> ("dynamic force"), where the simplified edition uses <em>zaoxing</em> written with the character for "model", <em>erwei</em> ("two-dimensional"), <em>gongju</em> ("tools") and <em>dongtai</em> ("dynamics"). Use this volume to check translated terms and figure order; there is no need to learn the theory again. Volume, paper and light are still not in this book.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The purpose of planar composition is to create interesting forms and arrange them in a given space. Learn a good range of techniques, then put them into practice on paper.</li>
+<li>We live in three dimensions, yet a great deal of formal expression happens in two: printing, wallpaper, textiles, patterns on objects, and the surfaces of three-dimensional things.</li>
+<li>"Basic form" is not an entry level like a first-grade belt in judo; it is a specialist discipline that every field of form-making needs and that goes beyond the introductory.</li>
+<li>Point, line and plane are still the elements of form. Moiré patterns, points of light and line thickness are all in this volume's chapter on elements.</li>
+<li>The explanation of the laws of variation and unity is the same as in the simplified edition: small squares can differ in shape, while groups of parallel lines at right angles unify the direction.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When reading the figures, translate the traditional edition's captions back into the terms you use from the simplified edition, and make a one-page comparison (the two ways of writing <em>zaoxing</em>, <em>dongshi</em>/<em>dongtai</em>, <em>lüdong</em>/<em>yunlü</em>).</li>
+<li>Do the exercises by element as before: lines of light, parallel lines that differ in solid and broken strokes, swinging light trails. Keep only one kind of light or one kind of line per sheet.</li>
+<li>In unity exercises, allow the shapes to differ, but do not allow more than one system of direction.</li>
+<li>State the edition when citing page numbers. The figure order of the two editions is not quite the same; in the traditional edition, the light-trail figures come on earlier pages.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-art-and-design-planar-composition-traditional-chinese-1.jpg" alt="Lines of light and swinging lines"><figcaption>Lines of light, parallel lines with different solid and broken strokes and spacing, and Asakura's coloured swinging light trails. Source: <span lang="zh-Hant">《藝術·設計的平面構成》</span> (Traditional Chinese edition), p.13</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-art-and-design-planar-composition-traditional-chinese-2.jpg" alt="The laws of variation and unity"><figcaption>The small squares all differ in shape, but groups of parallel lines crossing at right angles unify their direction. Source: <span lang="zh-Hant">《藝術·設計的平面構成》</span> (Traditional Chinese edition), p.124</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>List five translated terms you tend to confuse, and write down which word the simplified and traditional editions each use.</li>
+<li>Make an exercise with "swinging lines (light trails)". What kind of time separates it from a composition of still parallel lines?</li>
+</ol>
+<h3 class="book" id="b-exploring-geometry-building-visual-structure-on-the-plane"><span lang="zh-Hant">探索幾何：平面視覺構建</span></h3>
+<p><strong>Scope.</strong> This is a collection of projects using geometric graphics, covering posters, logos, branding and packaging. A Swiss-style poster on a twelve-column grid, the bowl and noodles of a ramen shop, and the striped letters of a shelter are all finished visual identities. It lets you see how geometry enters a brand. It does not teach how to construct the golden section, nor does it replace the proportion analysis in Elam's books.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The book sees geometry as order, symmetry and limits. It quotes the view that these are the highest forms of beauty. Practice can begin by changing one geometric element in a small way.</li>
+<li>A celebration poster uses a twelve-column vertical grid together with highly saturated geometric patterns, an example of grid and graphics working together.</li>
+<li>A logo can use the geometry of concrete objects (a bowl, noodles) while also carrying the gathering and nourishment behind a meal.</li>
+<li>Stripes, letters and light can combine into a system that can be cropped and extended. The shelter's yellow stripes must be able to continue horizontally or vertically.</li>
+<li>Geometry on a portrait can be a mask: in a moving image, the portrait and information appear only after the mask fades away. Here geometry handles the first glance, not the whole content.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Copy only one geometric decision from each case: the number of grid columns, the basic shape, or the direction in which stripes extend.</li>
+<li>When making a logo, write down the object first (bowl, house, letter), then reduce it to a repeatable geometry. Do not start from an abstract circle.</li>
+<li>Check whether the system can be cropped: cut off half, and see whether the rest is still recognisable as the brand.</li>
+<li>If you use geometry to cover a photo, design a second layer of information for "after it moves away"; otherwise the mask is only decoration.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-exploring-geometry-building-visual-structure-on-the-plane-1.jpg" alt="Describing a person's identity with geometry"><figcaption>In introducing modern figures, features such as glasses, geometric patterns and human organs express multiple identities. Source: <span lang="zh-Hant">《探索幾何：平面視覺構建》</span>, p.207</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-exploring-geometry-building-visual-structure-on-the-plane-2.jpg" alt="Geometric masks and portraits"><figcaption>On the poster, each professional's face has a geometric mask; in the animated advertisement, the masks gradually fade to reveal the portraits and information. Source: <span lang="zh-Hant">《探索幾何：平面視覺構建》</span>, p.40</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a case and write down its grid or basic shape. What is this geometry communicating, beyond just "looking good"?</li>
+<li>Design a striped logo that can be cropped vertically. After cutting off a third, what identifying feature is left?</li>
+</ol>
+<h3 class="book" id="b-design-elements-of-good-form"><span lang="zh-Hant">好造型的設計元素</span></h3>
+<p><strong>Original title:</strong> <em>Design Elements: Understanding the Rules and Knowing When to Break Them</em></p>
+<p><strong>Scope.</strong> This volume turns the twenty rules of <span lang="zh-Hant">《設計元素》</span> into an introductory course for graphic designers, in this order: what graphic design is, the twenty rules, form and space, and only then colour, type, images and integration. The series edition and the two other Chinese scans are the same style manual and suit looking up work by rule; this volume suits reading from the start, because the rules are written as continuous lessons and it stresses how form moves in space. Use the English original to check the original wording.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The rules are a starting point. Later the book breaks them, but you must know the consequences before you break them.</li>
+<li>Without a concept there is no graphic design. Communication comes before decoration; any effect that does not help the meaning is superfluous.</li>
+<li>Design should make the audience understand, not only the designer. Negative space is form just as much as positive shape is.</li>
+<li>Less is there to lead the eye to where it should look. Complexity and richness are not the same thing.</li>
+<li>To define a form, look at how it moves in space and how it compares with other forms. This is the most abstract level of communication.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make a small poster following the twenty rules in order. After every five rules, stop and remove one element that does not convey meaning.</li>
+<li>Do form exercises without photos: use only shapes and spacing, so that people can see hierarchy and movement.</li>
+<li>Use gradations of value and saturation to give grid-based text a rhythm, rather than relying only on jumps in type size.</li>
+<li>When comparing with the series edition, set the examples for the same rule side by side. Take the explanations from this volume and the range of work from the style manual.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-design-elements-of-good-form-1.jpg" alt="Rhythm created by contrast and gradation"><figcaption>Contrast makes elements stand out; gradations of value and saturation give the text on the grid rhythm and movement. Source: <span lang="zh-Hant">《好造型的設計元素》</span>, p.105</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-design-elements-of-good-form-2.jpg" alt="How form moves in space"><figcaption>To define a form, look at how it moves in space and how it compares with other forms. Source: <span lang="zh-Hant">《好造型的設計元素》</span>, p.193</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Of the twenty rules, which specific cut or change in your project corresponds to "create space" and which to "less is more"?</li>
+<li>Without photos, use only three shapes to create the relationship "one is approaching, two are moving away".</li>
+</ol>
+<h3 class="book" id="b-the-beauty-of-harmony-exploring-the-golden-ratio-in-design"><span lang="zh-Hant">和諧之美：探索設計中的黃金比例</span></h3>
+<p><strong>Scope.</strong> The first part of this volume spends only a few pages on the logic of proportion: the golden section, the golden rectangle, spirals, root rectangles, and the Fibonacci, arithmetic and geometric sequences. The great majority of the book is logo, brand and packaging cases, showing how these proportions land in contemporary visual identity. It is not the analysis of the human body, architecture and masterpieces found in Elam's books, nor Asakura's composition exercises. How to read it: first learn one construction method, then look for the division lines in the cases.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Excellent work has depth in its proportions and shows a rational approach to making. Here proportion is a design decision, not a coincidence measured after the fact.</li>
+<li>The golden section, root rectangles and the three sequences are listed side by side. The golden ratio is only one of these logics.</li>
+<li>The cases focus on brand identity: how a logo is controlled by rectangles, spirals or sequences, and then extended to packaging and identity.</li>
+<li>One visual system can govern illustration, branding and products at the same time, and relate to interior space. Proportion is the shared measure of this system.</li>
+<li>The book suits designers and design students looking up cases; it is not suitable as the only geometric proof.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First practise just one construction method from the front of the book (golden rectangle or root rectangle); once you can draw it accurately, turn to the cases.</li>
+<li>For each case, add in pencil the divisions you think are there. If you cannot add the lines, do not claim it "uses the golden ratio".</li>
+<li>Record the uses of the three sequences separately: arithmetic suits an even rhythm, geometric suits rapid enlargement, and Fibonacci suits growth from small to large.</li>
+<li>If the case is a full identity, check whether the logo, packaging and space share the same proportion, rather than only the logo having a spiral.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-the-beauty-of-harmony-exploring-the-golden-ratio-in-design-1.jpg" alt="A visual system extended into space"><figcaption>One visual system governs illustration, branding and products, and interacts with the space and interior furnishings. Source: <span lang="zh-Hant">《和諧之美》</span>, p.218</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-the-beauty-of-harmony-exploring-the-golden-ratio-in-design-2.jpg" alt="Logo for natural cosmetics"><figcaption>A case page for a natural cosmetics logo, credited to the designer Ali Yahya. Source: <span lang="zh-Hant">《和諧之美》</span>, p.187</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Instead of the golden spiral, use an arithmetic sequence to size the three circles of a logo. How does the rhythm differ from the golden spiral?</li>
+<li>Choose a brand from the book and point out where proportion appears in the logo, packaging and space. Which of these is missing?</li>
+</ol>
+<h3 class="book" id="b-a-sense-of-proportion-discovering-the-timeless-beauty-of"><span lang="zh-Hant">分寸設計：發現黃金比例恆久之美</span></h3>
+<p><strong>Original title:</strong> <em>Geometry of Design: Studies in Proportion and Composition</em>, 2nd edition (revised and updated)</p>
+<p><strong>Author:</strong> Kimberly Elam</p>
+<p><strong>Scope.</strong> This is the Chinese translation of the second edition of <span lang="zh-Hant">《設計幾何學》</span>. Chapter 1 is still about proportion in the human body and nature, Chapter 2 covers architectural proportion and Le Corbusier's regulating lines, and only after that come analyses of posters, products, pictograms and corporate logos. Compared with the first edition of <span lang="zh-Hant">《設計幾何學》</span>, this volume adds the construction of rabatment (rotating the short side of a rectangle onto the long side) and a group of pages on twentieth-century works. <span lang="zh-Hant">《黃金比例》</span> stops at the perception and drawing of proportion; this volume applies proportion to specific modern designed objects.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The preference for 1:1.618 can be traced back to Stonehenge, Greek art and the Renaissance, and can also be seen in the growth of the human body, animals and plants.</li>
+<li>The rectangle experiments of Fechner and Lalo are used again to show that the preference has been measured and does not rest on legend.</li>
+<li>The power of the golden section is that it unifies the parts while letting each part keep its own character.</li>
+<li>Rabatment uses a square to find secondary areas inside a rectangle. An upright rectangle likewise has secondary rabatments in the horizontal direction.</li>
+<li>The analyses of works line up circle centres and diagonals with letters and bodies. For example, a figure's head, eye and hand can fall on the same diagonal.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First do a left and right rabatment on a blank rectangle, mark the secondary area where the squares overlap, then place text or images.</li>
+<li>When analysing a poster, find at least one circle and one diagonal, and write down three things they hold in place (letters, a face, a gesture or something else).</li>
+<li>From the architectural cases, borrow only the method of drawing regulating lines, not the style of the building façades.</li>
+<li>Read it against the table of contents of the second edition: take separate notes on the three sections (human body, architecture, modern works), so that you do not apply the proportions of Stonehenge directly to a business card.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-a-sense-of-proportion-discovering-the-timeless-beauty-of-1.jpg" alt="Secondary areas in rabatment"><figcaption>In a rectangle with left and right rabatments, the area where the squares overlap can take a secondary rabatment; an upright rectangle also has horizontal secondary rabatments. Source: <span lang="zh-Hant">《分寸設計》</span>, p.59</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-a-sense-of-proportion-discovering-the-timeless-beauty-of-2.jpg" alt="A layout controlled by circles and diagonals"><figcaption>A circle centred on one point supports the figure and the letters JOB, while a diagonal places the head, eye and hand. Source: <span lang="zh-Hant">《分寸設計》</span>, p.73</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Draw the horizontal secondary rabatment areas in an upright rectangle. Which area should the headline go into for you to have used this method?</li>
+<li>For what kinds of picture would you use the √2 analysis of the first edition, and the rabatment of this volume?</li>
+</ol>
+<h3 class="book" id="b-design-elements-a-graphic-style-manual-english-original"><span lang="zh-Hant">設計元素：平面設計樣式（英文原書）</span></h3>
+<p><strong>Original title:</strong> <em>Design Elements: A Graphic Style Manual</em></p>
+<p><strong>Scope.</strong> This is the English original of <em>Design Elements: A Graphic Style Manual</em>. Its chapters run: the twenty rules of good design, form and space, colour fundamentals, choosing type, and the world of images. The Chinese series edition, the "good form" edition and the two other scans all come from this book. Use it to check the original wording of the rules, such as "communicate, don't decorate", and how the image chapter distinguishes the literal from the non-literal. For the Chinese lesson text of the rules and the large number of work pages, rely mainly on the translations.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Design is both a verb and a noun: the process of imagining and its result. It must add meaning: explain, simplify, persuade, and sometimes entertain.</li>
+<li>Graphic design and advertising both inform the public, but the aim of graphic design is to make the message clear and to turn it into an emotional experience.</li>
+<li>The twenty rules start with "Have a concept" and include one visual voice, the one-two punch, intentional colour, movement and stillness, and avoiding symmetry for symmetry's sake.</li>
+<li>The form chapter looks at form and space separately, then discusses kinds of form. This is the foundation for the later chapters on colour and type.</li>
+<li>Images are not all realistic. The book divides them into literal, non-literal and other.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Next to each Chinese rule, copy the original English sentence. Where the translation is vague, go by the verb in the original (communicate, create, squish).</li>
+<li>When reading the image chapter, sort material into three columns: literal, non-literal, other. Put one example of your own in each column.</li>
+<li>Use the original book's chapter order to check your work: concept and form come first, then colour and type. If the order is reversed, you are usually decorating.</li>
+<li>When comparing the Chinese and English, compare only the rules; do not translate the descriptions of work sentence by sentence.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-design-elements-a-graphic-style-manual-english-original-1.jpg" alt="Literal and non-literal images"><figcaption>The image section discusses literal, non-literal and other cases. Source: <span lang="zh-Hant">《設計元素：平面設計樣式》</span> (English original), p.178</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-design-elements-a-graphic-style-manual-english-original-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《設計元素：平面設計樣式》</span> (English original), p.105</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Write down in English three rules you remember. Which rule's verb is hardest to carry out in your work?</li>
+<li>Is the image in your next poster literal, non-literal or other? How does this category affect the tone of the text?</li>
+</ol>
+<h3 class="book" id="b-the-non-designer-s-design-book-3rd-edition"><span lang="zh-Hant">寫給大家看的設計書（第3版）</span></h3>
+<p><strong>Original title:</strong> <em>The Non-Designer's Design Book: Design and Typographic Principles for the Visual Novice</em>, 3rd edition</p>
+<p><strong>Author:</strong> Robin Williams</p>
+<p><strong>Scope.</strong> This volume is the 3rd edition of the principles textbook. The story of the Joshua tree is used to show that you only see something once you can name it. The four principles are contrast, repetition, alignment and proximity, followed by colour, categories of type and type contrast. <span lang="zh-Hant">《實例與創意》</span> is projects and self-tests; the 4th edition goes into more detail on reviewing the principles, colour models, and tips for applications such as business cards and flyers. Read this volume first and fix the names of the four principles firmly in your mind.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The order of learning is: learn the four, admit that you have not been using them, then apply them. Only when you can state the problem can you control the layout.</li>
+<li>Contrast: if elements are not the same, make them clearly different. It usually decides whether a reader looks at the page in the first place.</li>
+<li>Repetition: repeat colours, shapes, line weights, typefaces and sizes throughout the piece to build organisation and unity.</li>
+<li>Alignment: nothing should be placed at random. Every element should have a visual connection with another element.</li>
+<li>Proximity: related items sit close together and become one visual unit. In practice the four happen at the same time; you rarely use only one.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When fixing a weak piece, work in order: proximity first (grouping), then alignment (find a line), then repetition (unify the parts), and finally increase the contrast.</li>
+<li>Do not make all type sizes the same or almost the same. The main headline and body text must be distinguishable at a glance.</li>
+<li>When working with colour, build tints and shades together; do not choose just one hue.</li>
+<li>Use the book's short quizzes to test yourself on type categories: oldstyle, modern, slab serif, sans serif, script, decorative.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-the-non-designer-s-design-book-3rd-edition-1.jpg" alt="Type sizes must be pulled apart"><figcaption>Do not set everything at the same or almost the same size. Source: <span lang="zh-Hant">《寫給大家看的設計書》</span> (3rd edition), p.136</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-the-non-designer-s-design-book-3rd-edition-2.jpg" alt="Building tints and shades"><figcaption>Use the software's tint control to build tints, and from them make matching shades. Source: <span lang="zh-Hant">《寫給大家看的設計書》</span> (3rd edition), p.102</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Using the logic of the Joshua tree, point out a layout problem you have "seen but could not name" in the past. Which of the four principles does it belong to?</li>
+<li>Take a poster whose elements are almost all the same size, and change only the size contrast. Does the first word you read change?</li>
+</ol>
+<h3 class="book" id="b-design-elements-a-graphic-style-manual"><span lang="zh-Hant">設計元素：平面設計樣式</span></h3>
+<p><strong>Original title:</strong> <em>Design Elements: A Graphic Style Manual</em></p>
+<p><strong>Scope.</strong> This volume is another Chinese edition of <span lang="zh-Hant">《設計元素：平面設計樣式》</span>. Its title does not carry the series name, and its twenty rules and its explanation of form and space match the series edition. The sampled figures also fall on the same kind of pages: multiple contrasts on a poster, and image techniques that can be used in collage. When reading it alongside the series edition, use this volume to check plate page numbers and sentences; to read the rule lessons systematically, use <span lang="zh-Hant">《好造型的設計元素》</span>; to check the English verbs, use the English original.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>One visual language requires everything, from large pictures to small details, to reinforce everything else. One element that does not fit in weakens the whole message.</li>
+<li>Two type families are enough; a third needs a very strong reason. By changing only size and colour, even one typeface can create groups.</li>
+<li>Hierarchy is the order in which the audience takes in information. What is seen first from a distance should be the headline, not the decoration.</li>
+<li>Colour affects hierarchy and legibility, and can group unrelated things together (colour coding). An industry's usual colour is not a reason.</li>
+<li>Negative space should be designed. Collage, meanwhile, can bring together hand-scanned textures with photographs, silhouettes and blur.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Read the twenty rules against the series edition one by one. Skip identical sentences and note different ones, so that your two sets of notes do not contradict each other.</li>
+<li>Use this volume's poster page to practise a "contrast checklist": line and texture, organic and geometric, large and small. All three pairs must be found in your work.</li>
+<li>When making a small collage sketch, require at least one treatment that is only practical on a computer (transparency, multiple exposure or blur), and write down the meaning it serves.</li>
+<li>Type exercise: use one family throughout, group only with size and colour, and make a one-page layout in the style of an annual report.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-design-elements-a-graphic-style-manual-1.jpg" alt="Multiple contrasts on a poster"><figcaption>On this poster, line and texture, organic shapes and geometric lettering, and large and small elements all contrast with each other. Source: <span lang="zh-Hant">《設計元素：平面設計樣式》</span>, p.44</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-design-elements-a-graphic-style-manual-2.jpg" alt="Image techniques used in collage"><figcaption>Hand-scanned material can be combined with photographs, and transparency, silhouette, multiple exposure and blur can also go into a collage. Source: <span lang="zh-Hant">《設計元素：平面設計樣式》</span>, p.181</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>If sentences repeat between this volume and the series edition, how will your notes avoid copying them twice? Which volume's page numbers will you use?</li>
+<li>Make a layout with only one type family. What achieves the grouping?</li>
+</ol>
+<h3 class="book" id="b-basics-design-format"><span lang="zh-Hant">國際平面設計基礎教程：規格設計（FORMAT）</span></h3>
+<p><strong>Original title:</strong> <em>Basics Design 01: Format</em></p>
+<p><strong>Scope.</strong> The format volume of the Basics Design course discusses the size, paper, folding and binding of objects. Books, magazines, posters, screens and brochures are covered separately, because lifespan, audience and cost change the format. The meaning of images is in the image volume, and the design process is in the thinking volume. This volume answers: how big should this thing be, what paper should it use, how should it fold, and how should it be bound?</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A book has to organise information together. The format is decided by the nature and amount of information, the expected lifespan, the audience and the cost.</li>
+<li>Paper is the starting point of design. Colour images need paper that can hold ink; a book with a long life needs hard-wearing paper and a hard cover; a paperback spends its money on cover finishes instead.</li>
+<li>Binding changes the structure of reading. A Z-binding can split a book into two parts, using the cover as a bridge, so they can be separate or together.</li>
+<li>Folded leaflets have their own types: a meeting fold is two Z-folds closing towards the middle; a self-cover fold uses larger first two panels to wrap the rest of the folds.</li>
+<li>Greyboard, glued binding, coated paper and transfer paper correspond respectively to packaging, hardcovers, colour printing and labels; they are not interchangeable.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before starting any printed piece, fill in four boxes: lifespan, audience, cost, amount of information. These four decide the paper and binding, not the decoration.</li>
+<li>When making a folded leaflet, first make a full-size blank paper mock-up, mark the cover, the meeting panels and the reading order, then go to press.</li>
+<li>When choosing a binding for a book, write down whether readers will need to separate the two parts. If they will, consider a Z-binding or punched holes rather than a single perfect-bound book.</li>
+<li>Keep only three columns in your paper list: name, lifespan, and which finishes it can withstand. Choose by these three columns when you need paper.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-basics-design-format-1.jpg" alt="Saddle stitching and a sticker cover"><figcaption>The cover uses saddle stitching and single-colour printing, with kiss-cut sticker paper as the cover. Source: <span lang="zh-Hant">《規格設計》</span>, p.110</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-basics-design-format-2.jpg" alt="Two folding structures"><figcaption>A meeting fold is two Z-folds closing towards the middle; a self-cover fold uses larger first two panels to wrap the rest of the folds. Source: <span lang="zh-Hant">《規格設計》</span>, p.69</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>For an event booklet meant to last one season and a portfolio meant to last ten years, which kinds of paper and binding should each lean towards?</li>
+<li>Make a meeting-fold Z-folded leaflet from blank paper. What information should go on the panel where the two sides "meet" in the middle?</li>
+</ol>
+<h3 class="book" id="b-basics-design-image"><span lang="zh-Hant">國際平面設計基礎教程：圖形設計（IMAGE）</span></h3>
+<p><strong>Original title:</strong> <em>Basics Design 04: Image</em></p>
+<p><strong>Scope.</strong> The image volume of the same course is divided into basics, applied images and technology. The technical part deals with resolution, DPI and PPI, colour distortion, CMYK and RGB. The meaning part deals with semiotics, denotation and connotation, synecdoche, metaphor, metonymy, simile and analogy. The format volume handles paper and binding, and the thinking volume handles process; this volume handles what an image is, how it is cropped and how it is printed.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Images trigger associations faster than words. A person placed next to a product links the product with a certain identity.</li>
+<li>Realistic images are mostly saved as bitmaps, while logos and line art are mostly saved as EPS. The format follows the kind of image.</li>
+<li>Resolution decides detail. Print commonly uses 300 DPI; PPI is the pixel density of a digital display; LPI is the line count of a halftone screen. The three are not the same number.</li>
+<li>Over-compressed JPGs lose colour. When enlarging beyond the limits of the original, the only option is to rescan or reshoot; turning the numbers up does not help.</li>
+<li>Cropping starts with finding the focal point. When the eyes are the focus of a portrait, the crop should make that focus stand out more, not keep more background.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When filing each image, write down three things: its use (print or screen), its DPI or PPI, and its colour mode. If one is missing, the job is not done.</li>
+<li>Do cropping exercises in three steps: find the focal point, frame it, and crop until it is the first thing seen.</li>
+<li>Meaning exercise: for the same image, write one sentence of denotation (what it shows) and one of connotation (what it makes people think of).</li>
+<li>Convert print files from RGB to CMYK before output, and check the dark colours, which are the most likely to turn muddy.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-basics-design-image-1.jpg" alt="Cropping an image around its focal point"><figcaption>First find the focal point (here the eyes), then crop so that it stands out more. Source: <span lang="zh-Hant">《圖形設計》</span>, p.125</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-basics-design-image-2.jpg" alt="Contents page on the meaning of images"><figcaption>The contents list semiotics, denotation and connotation, synecdoche, metaphor, metonymy, simile and analogy. Source: <span lang="zh-Hant">《圖形設計》</span>, p.6</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Explain in which stage of production DPI, PPI and LPI each appear. Which one does your class project currently use?</li>
+<li>Choose a portrait, write one sentence of denotation and one of connotation, then crop it again to make the connotation clearer.</li>
+</ol>
+<h3 class="book" id="b-basics-design-design-thinking"><span lang="zh-Hant">國際平面設計基礎教程：設計思維（THINKING）</span></h3>
+<p><strong>Original title:</strong> <em>Basics Design 08: Design Thinking</em></p>
+<p><strong>Scope.</strong> The thinking volume of the course presents design as seven stages: define, research, ideate, prototype, select, implement and learn. Each stage has thinking methods, such as sampling, feedback, group voting and scoring. The format and image volumes deal with objects and images; this volume deals with "which decision to make when". Like <span lang="zh-Hant">《設計的方法》</span>, it is about process, but this volume uses the steps and diagrams of a basics course and divides directions into divergence and convergence.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Design is the process of turning a brief into a solution. Innovation should be high, but it is still bound by process, so that both economic and creative needs are met.</li>
+<li>The define stage sets the conditions for success; research gathers history, users and obstacles; ideation centres on the user's purpose and can use brainstorming.</li>
+<li>Prototyping is an initial confirmation; only selection eliminates the solutions that work but are not the best. Implementation delivers, and learning is for improving the designer.</li>
+<li>Feedback runs through every stage. Later feedback looks at execution, acceptance and results, and goes back into the process to make corrections.</li>
+<li>Basic directions can start from a known point: divergence spreads out in different directions from one common point; convergence is many individuals gathering towards one centre.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each project, write one line for each of the seven stages. If you cannot write the "define" line, do not move on to composition.</li>
+<li>After ideation, score as a group using agreed criteria, rather than letting the last person to speak decide.</li>
+<li>For the same brief, make one divergent and one convergent sketch, and see which direction fits the definition sentence better.</li>
+<li>When presenting, prepare both rough sketches and polished versions, and record how the audience responds differently to the two levels of finish.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-basics-design-design-thinking-1.jpg" alt="Presentation affects perception"><figcaption>A black-and-white sketch and a lavish print feel different; humour or using the past to comment on the present also changes whether people accept or reject an idea. Source: <span lang="zh-Hant">《設計思維》</span>, p.86</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-basics-design-design-thinking-2.jpg" alt="Divergence and convergence"><figcaption>Divergence spreads out in different directions from one common point; convergence is many individuals gathering towards one centre. Source: <span lang="zh-Hant">《設計思維》</span>, p.52</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Describe the project you are working on using the seven stages. Which stage have you actually stopped at now?</li>
+<li>For the same logo, draw one divergent direction and one convergent direction. Which fits your definition sentence better?</li>
+</ol>
+<h3 class="book" id="b-the-non-designer-s-design-book-4th-edition"><span lang="zh-Hant">寫給大家看的設計書（第4版）</span></h3>
+<p><strong>Original title:</strong> <em>The Non-Designer's Design Book: Design and Typographic Principles for the Visual Novice</em>, 4th edition</p>
+<p><strong>Author:</strong> Robin Williams</p>
+<p><strong>Scope.</strong> The 4th edition still centres on the four principles, but its contents separate review, colour and applications clearly. The colour chapter covers the colour wheel, complements, triads, analogous colours, monochromatic schemes, warm and cool colours, and CMYK versus RGB. The tips that follow apply to business cards, letterheads, flyers, newsletters, brochures, postcards, newspaper ads and résumés. The type chapter turns spaces after punctuation, quotation marks, apostrophes, hyphens, letter-spacing, widows and orphans into rules. Use the 3rd edition to build the principles; use this one to apply them to specific printed pieces and to handle typesetting details.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The premise is the same: you can only fix a problem once you can name it. The four principles appear in almost every good design.</li>
+<li>A single principle rarely works alone. An example of contrast will also show proximity, alignment and repetition.</li>
+<li>Colour relationships can be learned: complementary, split complementary, analogous, shades and tints, and tone. Print and screen use different colour models.</li>
+<li>Each application has its own checklist. A business card, a flyer and a résumé are not the same layout shrunk down.</li>
+<li>Spacing separates amateurs from professionals: the space between letters, lines and paragraphs, around headings and at tabs must all be controlled by the designer. Leave only one space after punctuation.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Finish the four review quizzes before moving on to the colour quiz. If the principles are not secure, do not start with the colour wheel.</li>
+<li>For each application, copy just three tips from the book onto a one-page checklist, for example one for business cards and one for flyers.</li>
+<li>When setting type, drop the habit of "two spaces after punctuation", and change apostrophes and quotation marks to curly quotes.</li>
+<li>Within one page, check for widows, orphans and letter-spacing. Fix spacing problems before adding another typeface.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-the-non-designer-s-design-book-4th-edition-1.jpg" alt="The four principles used together"><figcaption>Besides contrast, this design also uses proximity, alignment and repetition; a page design rarely uses only one principle. Source: <span lang="zh-Hant">《寫給大家看的設計書》</span> (4th edition), p.81</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-the-non-designer-s-design-book-4th-edition-2.jpg" alt="Spacing separates amateur from professional"><figcaption>Control the space between letters, lines and paragraphs and around headings; spacing is what separates amateur work from professional work. Source: <span lang="zh-Hant">《寫給大家看的設計書》</span> (4th edition), p.147</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Pick a business card or a flyer and redo it using only the tips in this book's section on it. Are you changing the hierarchy, or the paper size?</li>
+<li>Find one double space, one straight quote and one place with letter-spacing that is too wide in your own work.</li>
+</ol>
+<h3 class="book" id="b-the-7-essentials-of-graphic-design"><span lang="zh-Hant">平面設計的七大要素</span></h3>
+<p><strong>Original title:</strong> <em>The 7 Essentials of Graphic Design</em></p>
+<p><strong>Author:</strong> Allison Goodman</p>
+<p><strong>Scope.</strong> This book organises graphic design around seven essentials. It opens with research strategy, then gives a whole chapter to typography: the art of setting type and the history of typefaces. The research part asks you to write scenarios for real customers and to deal with design fees and production budgets. It is broader than Williams's four principles, putting research, series design and type history into the same foundation course. It is also more of a single-author textbook than <span lang="zh-Hant">《平面設計法則》</span>, which is a collection by several authors.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Research can follow three paths: clarifying the problem and its answers, finding examples that already exist, and creating a unique scenario of use.</li>
+<li>A complete scenario covers who the customer is, why they buy, what price they expect, and what the project must finally achieve. The scenario gets the client and the designer to agree on a direction.</li>
+<li>For series design, first separate what changes from what stays the same. In the example of lighting packaging, the product image and number change, while the identity of the series stays the same.</li>
+<li>A budget splits into design fees and production costs. Estimate design fees as time per stage. Production costs need the printer's input, and you should not push production quotes on the client during the research stage.</li>
+<li>Typography is the one element that cannot exist without words. The weight, curves and handwritten qualities of a typeface can keep a set of letters consistent with each other.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write a half-page scenario for every project: who, in what setting, and what decision they need to make. If you cannot describe the customer, do not start on style.</li>
+<li>When designing a series, draw a table with "must change" in the left column and "must not change" in the right. The right column needs at least one of colour, typeface or graphic system.</li>
+<li>Quote in stages, and make the early payments larger than the later ones, so the client cannot take your concept and have someone cheaper finish it.</li>
+<li>For identity design, first write down the structural features of the letters (changes in weight, curves), then talk about personality.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-the-7-essentials-of-graphic-design-1.jpg" alt="Visual unity in a series design"><figcaption>Circles of different sizes arranged horizontally, a repeated background and left-aligned text make the two designs consistent in style. Source: <span lang="zh-Hant">《平面設計的七大要素》</span>, p.86</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-the-7-essentials-of-graphic-design-2.jpg" alt="A logo with handwritten qualities"><figcaption>This logo has the qualities of hand-lettering; the changes in weight and the curves keep the letters connected. Source: <span lang="zh-Hant">《平面設計的七大要素》</span>, p.102</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>For a series of packages, list three things that change and three that do not.</li>
+<li>Which structural feature keeps the letters of your logo consistent: weight, curves, or both?</li>
+</ol>
+<h3 class="book" id="b-fundamentals-of-comprehensive-form-design"><span lang="zh-Hant">綜合造型設計基礎</span></h3>
+<p><strong>Author:</strong> Liu Guanzhong</p>
+<p><strong>Scope.</strong> This is a foundation textbook on form for industrial design. Its core is form-making, and the key to form-making is morphology: shape, posture and perception. Natural forms come from internal forces, external forces and the resultant force. Man-made forms are produced within the limits of material, structure, technology, craft, scale, texture and colour. It differs from Asakura's two-dimensional composition: Asakura trains you to organise visual elements, while this book asks every form to answer "why does it look like this?", and it builds paper, a single material, into the constraints of the exercises.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Real forms divide into natural forms and man-made forms. The course deals mainly with real forms, rather than drawing shapes only as concepts.</li>
+<li>The internal forces of a natural form come from its substance, structure and growth; the external forces come from long-term pressure, pull and chemical action of the environment. What finally takes shape is the resultant force.</li>
+<li>The claws of a carnivore and the hooves of a herbivore differ in form because their purposes differ: claws must catch prey, hooves must stand and run.</li>
+<li>Man-made "making" means creating something from nothing according to human will. "Form" cannot chase beauty alone; it must emerge together with material, structure, technology and craft.</li>
+<li>The elements of form sit within a system. It is wrong to treat any one element in isolation; you must coordinate them dynamically according to the problem.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When analysing any form, write three lines: purpose, internal forces (material and structure), external forces (environment and use). If one line is missing, you are still only looking at appearance.</li>
+<li>For the paper exercises, follow the book's constraints: for example 200 mm × 200 mm, a single kind of paper, and only cutting and folding to make triangular forms of different sizes.</li>
+<li>When comparing two natural objects (claw and hoof, or shell and bone), write only about how the form serves the function, not about "what it looks like".</li>
+<li>A critique of a proposal must mention principle, material, structure and scale together. Saying only that the proportions look good does not complete this lesson.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-fundamentals-of-comprehensive-form-design-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《綜合造型設計基礎》</span>, p.85</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-fundamentals-of-comprehensive-form-design-2.jpg" alt="Triangular forms in a constrained paper material"><figcaption>Within the constraint of a 200 mm square of a single kind of paper, triangular forms of different sizes are composed through multiple cuts and folds. Source: <span lang="zh-Hant">《綜合造型設計基礎》</span>, p.53</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Use "purpose, internal forces, external forces" to explain the difference between a claw and a hoof.</li>
+<li>Make three triangular forms of different sizes from a 200 mm square of one kind of paper. Which cut is structural, and which cut is only about outline?</li>
+</ol>
+<h3 class="book" id="b-american-visual-design-school-textbooks-design-elements-a"><span lang="zh-Hant">美國視覺設計學院用書：設計元素（平面設計樣式）</span></h3>
+<p><strong>Original title:</strong> <em>Design Elements: A Graphic Style Manual</em></p>
+<p><strong>Scope.</strong> This is another Chinese translation of <span lang="zh-Hant">《設計元素：平面設計樣式》</span>, with the series name given as "Textbooks". The text of the twenty rules is the same as in the series edition, including one visual language, two or three typefaces, hierarchy, and choosing colour by meaning. The pages sampled from this copy are different: one page covers how differences between elements are read as isolation or growth, and another covers how an image is rearranged in square, portrait and landscape formats. Cross-check the rules against the series edition; use these two pages to practise "the meaning of variation" and "format orientation".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Good design makes every element reinforce the others. A neglected detail does not fit in with the rest.</li>
+<li>A change of typeface usually signals a change of function, so limit the uses of type in body content to two or three typefaces.</li>
+<li>Hierarchy is the order in which you want viewers to see the parts. Without a first point of focus, the information has no entry point.</li>
+<li>Difference between elements can be read as isolation and anxiety, or as growth, energy or a focus of force. The same change means different things in different contexts.</li>
+<li>For images, first look at their usual proportions and alignment, then imagine how they change in square, portrait and landscape formats, and only then decide on the size relationships between images.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make a progression of three elements. Note two readings beside it: isolation, or growth. Keep the one that matches your concept.</li>
+<li>Make square, portrait and landscape versions of the same photo, changing only the crop and alignment, not the filter. Choose the version that best keeps the focal point.</li>
+<li>Still use the twenty rules for the final check. This copy does not offer a different set of rules.</li>
+<li>When matching page numbers with the series edition, go by the rule titles, not the illustration page numbers. The image pages in the two scans are not the same.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-american-visual-design-school-textbooks-design-elements-a-1.jpg" alt="Difference read as isolation or growth"><figcaption>Difference between elements can be read as isolation and anxiety, or as growth, a change in energy, or a focus of force. Source: <span lang="zh-Hant">《設計元素（平面設計樣式）》</span> (Textbooks edition), p.77</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-american-visual-design-school-textbooks-design-elements-a-2.jpg" alt="How an image changes across formats"><figcaption>Start from an image's usual proportions and alignment, and imagine how it changes in a square, portrait or landscape layout. Source: <span lang="zh-Hant">《設計元素（平面設計樣式）》</span> (Textbooks edition), p.213</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Draw three shapes from small to large. Which arrangement looks "isolated", and which looks "growing"?</li>
+<li>Crop one photo as a square, a portrait and a landscape. Which one best keeps the focal point you want?</li>
+</ol>
+<h3 class="book" id="b-principles-of-visual-perception"><span lang="zh-Hant">視覺原理</span></h3>
+<p><strong>Original title:</strong> <em>Principles of Visual Perception</em></p>
+<p><strong>Scope.</strong> This is a book on visual perception. It starts with "meaning", then covers the eye, the brain, figure and ground, coherence, and depth and mastery. It explains how the viewer's mind actively produces meaning, including afterimages and simultaneous contrast. It does not teach layout steps. Williams tells you how to lay out a page; this book tells you why a page is seen as figure, as ground, or as a story you never drew.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The mind constantly adds meaning to stimuli, sometimes where none exists. Randomly paired pictures and words are often read as a witty remark.</li>
+<li>Babies already prefer patterned things, complex shapes and faces. The search for meaning is tied to survival.</li>
+<li>Meaningful material is remembered; meaningless syllables are easily forgotten. Memory techniques work by hanging meaningless numbers on meaningful images.</li>
+<li>When people cannot find meaning, they become tense, frustrated or even angry. Once a picture puzzle is solved, people laugh, because the tension is released.</li>
+<li>The eye and brain produce afterimages, and simultaneous contrast also occurs: stare at a shape and then look elsewhere, and you see an afterimage; identical patches of colour on different backgrounds do not look the same.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When you finish an abstract composition, ask others to say "what it is". If everyone invents a different story, check whether you need a clearer focal point.</li>
+<li>Use simultaneous contrast to check colour patches: put the same grey on a black ground and a white ground, predict which side will look lighter, then compare with what you see.</li>
+<li>Use afterimage experiments only to understand the lingering effect. Do not treat an afterimage as a colour that can be printed.</li>
+<li>Figure-ground exercise: make the same shape readable both as an object and as a hole. Both readings must be identifiable.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-principles-of-visual-perception-1.jpg" alt="Afterimage and simultaneous contrast"><figcaption>Stare at the star and then look at the black dot, and an afterimage appears; in the simultaneous contrast demonstration, the central squares are actually the same colour. Source: <span lang="zh-Hant">《視覺原理》</span>, p.6</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-principles-of-visual-perception-2.jpg" alt="Escher and a Japanese battle painting"><figcaption>The works on this page include Escher's <span lang="zh-Hant">《天堂與地獄》</span> and the late sixteenth-century <span lang="zh-Hant">《源氏與平家之戰》</span>. Source: <span lang="zh-Hant">《視覺原理》</span>, p.14</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Put the same grey on a black ground and a white ground. Which side looks lighter? Did the paint change, or did perception change?</li>
+<li>Why do random pictures paired with random words still often "seem to make sense"?</li>
+</ol>
+<h3 class="book" id="b-design-power-graphic-design-rules-for-everyone"><span lang="zh-Hant">設計力：寫給大家的平面設計法則</span></h3>
+<p><strong>Scope.</strong> This is an introduction for people without formal design training, including readers in marketing, PR and sales. It starts from design in everyday life: business cards, calendars, magazines. It then covers how to collect work you like, how to use professional tools, and the history within lettering. It is not a tutorial on Williams's four principles, nor a style manual of twenty rules. Its rule is: first see design in daily life and in objects, then make a flyer with very limited means.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Everything around us, from bedsheets and toothpaste to fridges, has been designed. We see it every day without noticing, because the design already fits closely with our lives.</li>
+<li>A business card can go from a fixed format to an object that conveys the company's culture and the holder's personality. When the purpose differs (credibility, or a first impression), the design differs.</li>
+<li>A calendar's basic job is to let you read dates and leave space for notes. Only as a promotional item does it add fun through shape, seasonal details or the way pages are pulled out. A functional calendar with imprecise type fails because it is too plain.</li>
+<li>Magazine inside pages were once handled by typesetters. Once designers came in, headlines and body text could both become playful design, rather than just being filled into boxes.</li>
+<li>Collecting is a method: cut out images you like by theme, find out who made them, then use the same tools as professionals. Rough drafts can be done in pencil, and the drawing style itself shows skill.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Photograph one day of your life and circle ten things that "have been designed". For each, write only one purpose: easy to use, good-looking, or more comfortable.</li>
+<li>When making an A4 event flyer, use only one typeface at first, and set the event background, aims and practical information into a hierarchy.</li>
+<li>Make functional calendars and promotional calendars separately. The first must make dates readable before anything else; only the second adds surprises of shape.</li>
+<li>Draw rough drafts in pencil, and keep them. Do not save only the finished artwork in software.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-design-power-graphic-design-rules-for-everyone-1.jpg" alt="A flyer using only one typeface"><figcaption>Taking an A4 event flyer as an example, start with only one typeface; once you know your own style, try other typefaces. Source: <span lang="zh-Hant">《設計力》</span>, p.40</figcaption></figure>
+<figure><img src="assets/design-basics/books/b-design-power-graphic-design-rules-for-everyone-2.jpg" alt="Pencil rough drafts"><figcaption>Rough drafts are mostly done in pencil. They look like unfinished pencil drawings, yet they honestly reflect the maker's ability. Source: <span lang="zh-Hant">《設計力》</span>, p.81</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Make two calendars for one event: one only for reading dates, one that should make people feel the season. What does each one sacrifice?</li>
+<li>Lay out an A4 flyer with only one typeface. Does the hierarchy come from type size, weight, or position?</li>
+</ol>
+<h3 class="book" id="b-universal-principles-of-design-english-edition"><span lang="zh-Hant">通用設計法則（英文版）</span></h3>
+<p><strong>Original title:</strong> <em>Universal Principles of Design</em></p>
+<p><strong>Authors:</strong> William Lidwell (with Kritina Holden and Jill Butler)</p>
+<p><strong>Scope.</strong> This is the English edition of Universal Principles of Design, with the same set of principles as the Chinese edition. This copy is useful as an index: the principles are listed by their original names and grouped by question, such as how to influence perception, how to help people learn, and how to improve usability. Read the Chinese edition for the explanations; use this copy to match the English terms when writing reports or looking up papers, so you do not translate Affordance, Chunking or Figure-Ground into a different set of words.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The perception group includes affordance, alignment, figure-ground relationship, proximity, signal-to-noise ratio, visibility and more. They explain what people see first.</li>
+<li>The learning group includes chunking, hierarchy, legibility, recognition over recall, storytelling and the serial position effect. They explain how people remember.</li>
+<li>The use group includes 80/20, accessibility, the aesthetic-usability effect, confirmation, constraint, control and cost-benefit. They explain whether people can complete a task.</li>
+<li>The same principle can appear under several questions. Signal-to-noise ratio relates to perception as well as to learning.</li>
+<li>The table of contents is itself a method: choose a question first, then go to the principles, rather than reading from A to Z.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When writing notes in Chinese, record the English name of each principle as well. In reports, follow this copy's spelling of the terms.</li>
+<li>When critiquing work, first choose one of the three question groups, and draw only three principles from that group, rather than applying twenty at once.</li>
+<li>Read one term you are likely to mistranslate (for example Affordance or Prägnanz) side by side with the Chinese edition, and write one sentence of your own definition for each.</li>
+<li>Use the index as a source for checklists; do not use the index page itself as an illustration.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/design-basics/books/b-universal-principles-of-design-english-edition-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《通用設計法則》</span> (English edition), p.1</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose one English principle from each of the three groups (perception, learning, use), and write down its Chinese name and one example from your own work.</li>
+<li>Why can signal-to-noise ratio appear under both "perception" and "learning"?</li>
+</ol>
+<!-- BOOKS:END -->
+      </div>
+
+      <nav class="pager" aria-label="Categories"><a class="next" href="02_colour.html" data-label="02 Colour"><span>Next guide</span><strong>02 Colour</strong><i aria-hidden="true">&rarr;</i></a></nav>
+    </main>
+    <aside class="rail" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-proportion-geometry">3. Proportion &amp; Geometry</a><a href="#4-principles-methods">4. Principles &amp; Methods</a><a href="#5-selected-figures">5. Selected Figures</a><a href="#6-source-bookshelf">6. Source Bookshelf</a><a href="#7-study-cues">7. Study Cues</a><a href="#7-each-book">7. Each Book</a>
+    </aside>
+  </div>
+  <script src="js/guide.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scene.js"></script>
+  <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, theme: "dark", themeVariables: { background: "#101b34", primaryColor: "#1b2b4d", primaryTextColor: "#e6eef8", primaryBorderColor: "#4e6586", lineColor: "#8ea0b8", fontFamily: "Source Sans 3, sans-serif" } });
+  </script>
+</body>
+</html>

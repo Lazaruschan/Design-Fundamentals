@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1428">
+  <title>Interaction, Web &amp; UX · Design Fundamentals</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/guide.css">
+</head>
+<body class="page-guide">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="loader" id="loader" data-label="09 Interaction, Web &amp; UX" aria-hidden="true">
+    <p class="loader-label">SSHD2382 / Design Fundamentals</p>
+    <div class="loader-box">
+      <span class="plus tl"></span><span class="plus tr"></span><span class="plus bl"></span><span class="plus br"></span>
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg>
+    </div>
+    <p class="loader-count" data-count-slots></p>
+    <p class="loader-page"></p>
+  </div>
+  <header class="site-head">
+    <a class="logo" href="index.html" aria-label="Design Fundamentals, home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg><span>Fundamentals<sup>&reg;</sup></span></a>
+    <nav class="head-nav" aria-label="Site">
+      <a class="pill pill-solid" href="index.html#browse" data-magnetic><span data-text="Browse">Browse</span></a>
+      <button class="pill pill-line" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-magnetic><span data-text="Menu">Menu</span><i class="burger" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <div class="menu-panel" id="menu" inert>
+    <div class="menu-inner">
+      <p class="menu-label">(Guides)</p>
+      <ol class="menu-list"><li><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span class="menu-num">01</span><span class="menu-name">Design Basics &amp; Composition</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="02_colour.html" data-label="02 Colour"><span class="menu-num">02</span><span class="menu-name">Colour</span><span class="menu-week">Week 8</span></a></li><li><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span class="menu-num">03</span><span class="menu-name">Typography &amp; Lettering</span><span class="menu-week">Week 9</span></a></li><li><a href="04_layout-grid.html" data-label="04 Layout &amp; Grid Systems"><span class="menu-num">04</span><span class="menu-name">Layout &amp; Grid Systems</span><span class="menu-week">Week 3, 4, 5</span></a></li><li><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span class="menu-num">05</span><span class="menu-name">Logo &amp; Branding</span><span class="menu-week">Week 10, 11</span></a></li><li><a href="06_packaging.html" data-label="06 Packaging"><span class="menu-num">06</span><span class="menu-name">Packaging</span><span class="menu-week">Week 11</span></a></li><li><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span class="menu-num">07</span><span class="menu-name">Book Design &amp; Print</span><span class="menu-week">Week 5, 9</span></a></li><li><a href="08_infographics.html" data-label="08 Information Graphics"><span class="menu-num">08</span><span class="menu-name">Information Graphics</span><span class="menu-week">Week 4</span></a></li><li><a href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span class="menu-num">09</span><span class="menu-name">Interaction, Web &amp; UX</span><span class="menu-week">Week 11 (and 4)</span></a></li><li><a href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span class="menu-num">10</span><span class="menu-name">Graphic Design Practice</span><span class="menu-week">Week 1, 11</span></a></li><li><a href="11_interior.html" data-label="11 Interior Design"><span class="menu-num">11</span><span class="menu-name">Interior Design</span><span class="menu-week">Further reading</span></a></li><li><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span class="menu-num">12</span><span class="menu-name">Architecture &amp; Space</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="13_product.html" data-label="13 Product Design"><span class="menu-num">13</span><span class="menu-name">Product Design</span><span class="menu-week">Week 11 (and 6–7)</span></a></li><li><a href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span class="menu-num">14</span><span class="menu-name">Design &amp; Art History</span><span class="menu-week">Week 1</span></a></li><li><a href="15_theory-psychology.html" data-label="15 Design Theory &amp; Psychology"><span class="menu-num">15</span><span class="menu-name">Design Theory &amp; Psychology</span><span class="menu-week">Week 4, 6–7, 10</span></a></li><li><a href="16_pattern-ornament.html" data-label="16 Pattern &amp; Ornament"><span class="menu-num">16</span><span class="menu-name">Pattern &amp; Ornament</span><span class="menu-week">Week 8 (and 6–7)</span></a></li><li><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span class="menu-num">18</span><span class="menu-name">Magazines &amp; Annuals</span><span class="menu-week">Week 1–13</span></a></li><li><a href="20_advertising.html" data-label="20 Advertising"><span class="menu-num">20</span><span class="menu-name">Advertising</span><span class="menu-week">Week 10, 11</span></a></li></ol>
+      <div class="menu-foot"><span>SSHD2382 Design Fundamentals</span><span>Eighteen guides, thirteen weeks</span><a href="index.html">Home</a></div>
+    </div>
+  </div>
+  <canvas class="scene" id="scene" data-scene="page" data-cat="09" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <p class="side-brand">SSHD2382 / Guides</p>
+      <label class="visually-hidden" for="q">Search categories</label>
+      <input class="search" id="q" type="search" placeholder="Name, term, or category" autocomplete="off">
+      <p class="empty" id="empty" hidden>No category matches.</p>
+      <nav aria-label="Categories"><div class="side-group"><p class="side-label">Categories</p><a href="01_design-basics.html" data-search="01 design basics design basics &amp; composition point, line, plane, composition, and the four design principles week 2, 6–7 1. scope 2. core concepts 3. proportion &amp; geometry 4. principles &amp; methods 5. selected figures 6. source bookshelf 7. study cues 7. each book 藝術·設計的平面構成 藝術·設計的立體構成 藝術·設計的紙的構成 藝術·設計的光的構成 平面設計原理 通用設計法則 美國視覺設計學院叢書：設計元素（平面設計樣式） 寫給大家看的設計書：實例與創意 黃金比例 設計的教室 設計的方法 談繪畫構圖 1000多個圖形元素：獨特的設計元素 設計中的點線面 平面設計法則 設計幾何學：關於比例與構成的研究 藝術·設計的平面構成（繁體版） 探索幾何：平面視覺構建 好造型的設計元素 和諧之美：探索設計中的黃金比例 分寸設計：發現黃金比例恆久之美 設計元素：平面設計樣式（英文原書） 寫給大家看的設計書（第3版） 設計元素：平面設計樣式 國際平面設計基礎教程：規格設計（format） 國際平面設計基礎教程：圖形設計（image） 國際平面設計基礎教程：設計思維（thinking） 寫給大家看的設計書（第4版） 平面設計的七大要素 綜合造型設計基礎 美國視覺設計學院用書：設計元素（平面設計樣式） 視覺原理 設計力：寫給大家的平面設計法則 通用設計法則（英文版） the elements of graphic design: space, unity, page architecture, and type universal principles of design design elements: a graphic style manual robin williams design workshop geometry of design: studies in proportion and composition the design method: a philosophy and process for functional visual communication 1000 graphic elements: special details for distinctive designs the essential principles of graphic design geometry of design: studies in proportion and composition design elements: understanding the rules and knowing when to break them geometry of design: studies in proportion and composition , 2nd edition (revised and updated) design elements: a graphic style manual the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual basics design 01: format basics design 04: image basics design 08: design thinking the non-designer&#x27;s design book: design and typographic principles for the visual novice , 4th edition the 7 essentials of graphic design design elements: a graphic style manual principles of visual perception universal principles of design"><span class="side-num">01</span> Design Basics &amp; Composition</a><a href="02_colour.html" data-search="02 colour colour hue, value, chroma, colour systems, palettes, and colour psychology week 8 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術·設計的色彩構成 寫給大家看的色彩書1：設計配色基礎 寫給大家看的色彩書2：色彩怎麼選，設計怎麼做 梁景紅談：色彩設計法則 配色設計原理 七日掌握設計配色基礎 配色設計從入門到精通 平面設計配色全攻略 美國色彩基礎教材 色彩應用：平面設計配色經典創意 黑白灰設計：摒棄有彩色的設計法則 美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式 觀念之色：中國傳統色彩研究 色彩搭配的黃金法則 新手配色寶典：2000個配色案例不怕你不會 像藝術家一樣思考之三：貝蒂的色彩 國際平面設計基礎教程：colour色彩設計 平面設計綜合配色手冊 色彩怎麼選，設計怎麼做 色彩感知學 色彩構成 色彩設計：日本平面設計師參考手冊 色彩設計的100個亮點 色彩設計的原理 設計入門教室3：色彩設計的原理 設計密碼：綜合配色完全攻略 color basics color design workbook: a real-world guide to using color in graphic design drawing for graphic design: understanding conceptual principles and practical techniques to create unique, effective design solutions color: a course in mastering the art of mixing colors basics design 05: colour 100 bright ideas for colour"><span class="side-num">02</span> Colour</a><a href="03_typography.html" data-search="03 typography typography &amp; lettering letter structure, classification, typesetting, and mixed chinese and latin type week 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book typography 字誌：issue 01 typography 字誌：issue 05_pdf 自由字在：字體設計與創意 中國字體設計人：一字一生 西文字體1：字體的背景知識和使用方法 西文字體2：經典款字體及其表現方法 文字設計的原理_文字設計所必須的信息和技巧 新概念字體基礎&amp;應用_蘇克 説文解字 字言字語 字體傳奇 影響世界的helvetica 治字百方 字型散步 街道文字_小林章 西文排版_排版的基礎和規範 漢字書法之美_蔣勳 文字的故事 意匠文字 設計師的字體世界 文字的力與美 漢字的誘惑 中國美術字史圖説 漢字設計與應用 十二生肖形意字 書法字體設計技巧與應用 平面排版_基本的基本 tokoy tdc vol.28⭐ 排版的風格 字體設計的規則與藝術 tokoy tdc vol.29⭐ 字體呈現3⭐ 字體設計基礎 【會員專供】中國近現代字體應用文獻展 【會員專供】文字設計在中國邀請展 【會員專供】超語境國際文字設計論壇 世界文字發展史_11407704 今日字體 創意字體設計與製作-www.afx365.com 國際平面設計基礎教程-typography字體設計 字型之不思議 字型之不思議 小冊-手寫 字體呈現-q 字體呈現二（完整） 字體呈現小冊一 字體呈現小冊二 字體怡人 字體設計100+1 字體，海報設計部分 展覽，印刷字體部分（雙頁） 序言 排版造型_白井敬尚 文字設計的原理 書於竹帛中國古代的文字記錄_12270059 歐文字體ⅰ 歐文字體ⅱ 自由“字”在 字體設計與創意13696100(1) 設計入門教室 2 文字設計的原理 designing type basics design 03: typography written on bamboo and silk: the beginnings of chinese books and inscriptions"><span class="side-num">03</span> Typography &amp; Lettering</a><a href="04_layout-grid.html" data-search="04 layout grid layout &amp; grid systems grids, hierarchy, and arranging image with text week 3, 4, 5 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 日本版式設計原理_p159 跨平台的視覺設計版式設計原理 破譯文字編排設計 破譯網格設計 美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書 版式設計：日本平面設計師參考手冊 超越平凡的平面設計：怎樣做好版式 版式設計+給你靈感的全球最佳版式創意方案 柵格系統與版式設計 國際版式設計基礎教程 七日掌握版面設計基礎 美國編排設計教程 平面設計中的網格系統 版式設計風暴ⅱ 網格系統與版式設計 創意版式設計_王紹強 版面設計的原理_設計前必須知道的事情 版式設計全攻略(佐) 進階理解版式設計 版式設計：合適最好 版式設計從入門到精通 版面設計網格構成 版式設計原理_案例篇：提升版式設計的55個技巧 秩序之美_網頁中的網格設計 日本版式設計原理 版式設計法則 版式創意大爆炸 版式設計+2版式創意方案 版式設計風暴 [商業版式設計的方法] 版式編排設計 版式設計 今日版式 印刷的終結：戴維·卡森的自由版式設計 國際平面設計基礎教程-grids網格設計 國際平面設計基礎教程-layout版式設計(第2版) 版式設計-www.afx365.com 版式設計原理 版式設計原理-全綵教程 版式設計實用手冊-www.afx365.com 版式設計實用手冊.suni視覺設計.全綵版 版式設計從入門到精通-www.afx365.com 版面設計黃金法則 破譯文字編排設計-www.afx365.com 秩序之美——網頁中的網格設計英文版 編排設計教程 設計入門教室 1 版面設計的原理 超越平凡的平面設計 版式設計原理與應用 typography workbook: a real-world guide to using type in graphic design making and breaking the grid: a graphic design layout workshop graphic designer&#x27;s essential reference: visual elements, techniques, and layout strategies for busy designers before &amp; after page design grid systems: principles of organizing type best practices for graphic designers, grids and page layouts: an essential guide for understanding and applying page design principles typographic systems grid systems: principles of organizing type layout: making it fit: finding the right balance between content and space ordering disorder: grid principles for web design the end of print: the graphic design of david carson basics design 07: grids basics design 02: layout , 2nd edition typography workbook: a real-world guide to using type in graphic design ordering disorder: grid principles for web design typographic systems before &amp; after: how to design cool stuff"><span class="side-num">04</span> Layout &amp; Grid Systems</a><a href="05_logo-branding.html" data-search="05 logo branding logo &amp; branding mark types, identity systems, and brand strategy week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book logo 百年 設計品牌（原田進） 用設計做品牌 品牌設計+：給你靈感的 best 品牌形象方案 品牌設計+：創造 top 品牌的色彩應用方案 品牌設計+：創造 brand 力的動態 logo 設計（1） 標誌設計 logo design 標誌新語 iii really good logos explained designing brand identity 超越 logo 設計 brand 創新與設計：創意、建構和維護精彩品牌標識之完全指南 標誌設計指南 logo design workbook 品牌標誌：top 設計 150 例 消費森林 × 品牌再生：李永銓的設計七大法則 品牌中的色彩 圖案無限：品牌中的圖案 品牌簡單之道 what brand 什麼是品牌設計 品牌 100 一個 logo 的誕生 視覺美食：最佳餐飲品牌設計 溝通時尚品牌 100 個經典 logo 品牌設計之美：冷色調的色彩詮釋 logo：29 個經典的前世今生 logo 百年 品牌至上：logo 設計法則與案例應用解析 品牌識別法則：100 條原理 no logo：顛覆品牌全球統治 脫穎而出的品牌致勝秘密 精簡：無印良品與品牌理念打造 電商品牌形象設計 品牌標誌：頂級設計 150 例 設計品牌 世界標誌大典 1 品牌設計法則（徐適） 日本彩色商標與企業識別 10 解構 logo 設計：300 例國際 logo 分析與解讀 超越 logo 設計：國際頂級平面設計師的成功法則 超越 logo 設計：國際頂級平面設計師的成功法則 logo design love: a guide to creating iconic brand identities designing brand identity: a complete guide to creating, building, and maintaining strong brands logo design workbook: a hands-on guide to creating logos creative solutions: logos: making a strong mark: 150 strategies for logos that last brandsimple: how the best brands keep it simple and succeed what is branding? logo life: life histories of 100 famous logos tm: the untold stories behind 29 classic logos brand identity essentials: 100 principles for designing logos and building brands no logo: taking aim at the brand bullies designing brand identity: an essential guide for the whole branding team creative solutions: logos: making a strong mark: 150 strategies for logos that last deconstructing logo design: 300+ international logos analyzed and explained logo design love: a guide to creating iconic brand identities logo design love: a guide to creating iconic brand identities"><span class="side-num">05</span> Logo &amp; Branding</a><a href="06_packaging.html" data-search="06 packaging packaging structure, the shelf, materials, and brand week 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 創造品牌的包裝設計 現代設計色彩教材叢書：包裝設計色彩 包裝設計藝術：王紹強 紙品包裝結構解析 新包裝 環保包裝設計 50 trade secrets of great design packaging 1000 package designs：a comprehensive guide 拿來就用的包裝設計 食品包裝設計 包裝設計+：給你靈感的包裝方案 包裝設計家：靳埭強與他的設計師朋友 簡約包裝 simply packaging 中式元素視覺傳達：包裝設計 packaging the brand: the relationship between packaging design and brand identity simply packaging"><span class="side-num">06</span> Packaging</a><a href="07_book-print.html" data-search="07 book print book design &amp; print book structure, paper, binding, and print week 5, 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2015 中國最美的書 書籍設計-安德魯 書形：138種創意書籍和印刷紙品設計 如何設計一本畫冊 平面印刷色彩：四色與專色 國際平面設計基礎教程：print&amp;finish印前印後 世界書籍藝術流派 中外裝幀藝術論集 中國古籍版本概要 出版物設計完全手冊 印刷工藝：燙印與凹凸 印前校色實用教程 印前輸出培訓參考：全綵教程-200p 嶄新印通拼版教程 平版印刷拼版手冊 平面設計及印刷業務人員常識備忘手冊 書籍設計 書藝問道 現代圖書設計 範式革命：中國現代書籍設計的發端 1862-1937 電腦印前技術完全手冊（第2版） book design basics design 06: print and finish publication design workbook: a real-world guide to designing magazines, newspapers, and newsletters book design new book design"><span class="side-num">07</span> Book Design &amp; Print</a><a href="08_infographics.html" data-search="08 infographics information graphics visualising information and explaining with diagrams week 4 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 圖解力 以圖釋義：信息圖表設計 信息圖表設計入門 信息圖表設計：全球創意入門"><span class="side-num">08</span> Information Graphics</a><a href="09_interaction-ux.html" data-search="09 interaction ux interaction, web &amp; ux goal-directed design, usability, and interface principles week 11 (and 4) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book about face 3：交互設計精髓 about face 4：交互設計精髓（中文彩版） android 交互視覺設計規範 贏在用戶：web 人物角色創建和應用實踐指南 don&#x27;t make me think（英文第 2 版） ui 羣英匯：用戶體驗、交互與視覺設計方法論 web 界面設計 形式感：網頁視覺設計創意拓展與快速表現 關鍵設計報告：改變過去影響未來的交互設計法則 點石成金：訪客至上的網頁秘籍 認知與設計：理解 ui 設計準則 簡約至上：交互設計四策略 見微知著：web 用戶體驗解構 與世界 ui 設計師同行 ux 設計之道：以用戶體驗為中心的 web 設計（第 2 版） ui 設計黃金法則：觸動人心的 100 種用戶界面 sexy web design：creating interfaces that work 用戶體驗的要素：以用戶為中心的 web 設計 網頁設計（web designer emag） 點石成金：訪客至上的網頁設計秘笈 ios 9 界面設計規範剖析及實戰 不要讓我思考（don&#x27;t make me think） 贏在用戶：web 人物角色創建和應用實踐指南 軟件觀念革命：交互設計精髓 一目瞭然：web 軟件顯性設計之路 就這麼簡單：web 開發中的可用性和用戶體驗 微交互：細節設計成就卓越產品 怦然心動：情感化交互設計指南 用戶體驗度量 用戶體驗要素：以用戶為中心的產品設計（原書第 2 版） 眾妙之門：網站 ui 設計之道 瞬間之美：web 界面設計如何讓用戶心動 破繭成蝶：用戶體驗設計師的成長之路 簡約至上：交互設計四策略 網頁設計創意書 認知與設計：理解 ui 設計準則 認知與設計：理解 ui 設計準則（第 2 版） 贏在用戶：web 人物角色創建和應用實踐指南 體驗·度：簡單可依賴的用戶體驗（彩版） about face 3: the essentials of interaction design , 3rd edition about face: the essentials of interaction design , 4th edition the user is always right: a practical guide to creating and using personas for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing web interfaces: principles and patterns for rich interactions designing interactions don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing with the mind in mind: simple guide to understanding user interface design rules simple and usable web, mobile, and interaction design a project guide to ux design: for user experience designers in the field or in the making , 2nd edition digital design essentials: 100 ways to design better desktop, web, and mobile interfaces the elements of user experience: user-centered design for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition don&#x27;t make me think: a common sense approach to web usability , 2nd edition the user is always right: a practical guide to creating and using personas for the web about face 2.0: the essentials of interaction design designing the obvious: a common sense approach to web application design microinteractions: designing with details seductive interaction design: creating playful, fun, and effective user experiences measuring the user experience: collecting, analyzing, and presenting usability metrics the elements of user experience: user-centered design for the web and beyond , 2nd edition the smashing book designing the moment: web interface design concepts in action simple and usable web, mobile, and interaction design the web designer&#x27;s idea book: the ultimate guide to themes, trends and styles in website design designing with the mind in mind: simple guide to understanding user interface design rules designing with the mind in mind: simple guide to understanding user interface design guidelines , 2nd edition the user is always right: a practical guide to creating and using personas for the web" aria-current="page"><span class="side-num">09</span> Interaction, Web &amp; UX</a><a href="10_graphic-practice.html" data-search="10 graphic practice graphic design practice process, design thinking, creative methods, and practice week 1, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 100 個改變平面設計的觀念 嘿，設計 圖解平面設計規範 40 天成為資深設計師 ideo：設計改變一切 創意之道（the copy book） 非常規標誌設計：6 個不必遵守的基礎原則 最佳設計 100 細則 少即是多：減法設計 視覺傳達設計實踐 1000 retail graphics 高效設計溝通之道（原書第 2 版） 完成設計：從理論到實踐 美國視覺傳達完全教程 零 zerro：世界符號大全 平面與空間 創意工場：提升設計技巧的 80 個挑戰 日本的手感設計 設計的品格 設計並不重要 我的第一本設計書 平面設計過程 小平面 北歐設計 王志弘作品收集 做喜歡的事：25 個亞太創意設計工作室 做喜歡的事：25 個歐美創意設計工作室 設計修辭法 設計與死 設計的覺醒 平面設計死了嗎 放眼德國設計 放眼法國設計 漫遊英國設計 漫步日本設計 荷蘭設計 設計的手感 歲寒三友：詩意設計作品集 廣州美術學院碩士研究生作品集 靳埭強與格呂特納的海報對話 靳埭強設計獎 陳幼堅最新作品 平面設計八人 設計集 設計心法 100+1 靳叔說：設計語錄 設計的圖謀：改變世界的80個日常創意陰謀 遺產與更新：中國設計教育反思 設計師演講錄：icograda 世界設計大會 設計創意流程：用mba思維成就設計高效能 全球優秀93位平面設計師作品集 遊遊遊：說說我的設計私想 對話日本設計 設計師不讀書 設計質 大話設計師 從製造到設計：20世紀德國設計 意東方：設計中的東方元素（一） 49個成就平面設計的關鍵詞 企業形象設計家：靳埭強與他的設計師朋友 海報設計家：靳埭強與他的設計師朋友 生活·心源：靳埭強設計與藝術 靳埭強·身度心道：中國文化為本的設計·繪畫·教育 ideo 設計現象探究：patterns 2010 設計效果圖 設計百年：20世紀平面設計的先驅 設計解決 像設計師那樣思考 圖形設計新元素 如何把國外作品轉化為自己的能力（第二部） 平面設計：我的第2語言 為什麼設計 理性設計 至關重要的設計 解決100個煩惱的100種設計 設計推導學 中國古代設計思想史略 什麼是平面設計？ 創意工場：提升設計技巧的80個挑戰 動畫分鏡台本設計 吳東龍的東京設計生活100 寫給大家看的設計書（第三版） 好設計的造型元素 完成設計：從理論到實踐 宣傳冊設計與製作 平面設計200年 新興實踐：設計的專業、價值與途徑 日本當代插圖集 最全設計規範 服務的細節：完全商品陳列115例 為真實世界的設計 生命的幻象：迪士尼動畫造型設計 異想天開：設計初始 知日・設計力 移動設計 符號與數字：平面中的視覺表達 第三種創新：設計驅動式創新 編輯設計 至關重要的設計 至關重要的設計（布倫納） 蘋果首席設計師：喬納森傳 視覺傳達設計 視覺傳達設計考研手繪 視覺營銷：零售店櫥窗與店內陳列 託尼克：設計為何 設計＋生活：佐藤 設計＋生活：奎內克 設計＋生活：姚爾丹 設計＋生活：孔喬 設計＋生活：府烈茶 設計＋生活：王翰尼 設計＋生活：白同異 設計＋生活：蒙古齊 設計＋生活：雷又西 設計中的錯視 設計五感：亂 設計五感：惡 設計五感：拙 設計五感：精 設計入門教室：設計的基本規則 設計力就是溝通力 設計，在人人設計的時代 設計密碼 設計師不可不知的 100 種世界經典平面設計圖書 設計思維手冊：斯坦福創新方法論 設計思維與方法 設計方法與策略：代爾夫特設計指南 設計的意義 設計的細節：日本經典設計透析 設計與革新：關於未來設計的 50 種思考 設計風尚 5：創意節日宣傳頁設計與製作 設計高手的秘密 設計，在人人設計的時代：社會創新設計導論 這樣擺，最好賣：賣場中的商品陳列技巧 造像量度：佛像唐卡設計比例圖 關於設計的思考 非平面 靳埭強設計獎：平面設計作品集 騰訊網 ued 體驗設計之旅 100 ideas that changed graphic design change by design: how design thinking transforms organizations and inspires innovation the copy book: how 32 of the world&#x27;s best advertising writers write their advertising no rules! logos: radical design solutions that break the rules universal principles of design communicating design: developing web site documentation for design and planning , 2nd edition design evolution: theory into practice graphic communications today creative workshop: 80 challenges to sharpen your design skills graphic design process: from problem to solution: 20 case studies design and the creative process atlas of graphic designers designers don&#x27;t read the graphic design idea book: inspiration from 50 masters a century of graphic design: graphic design pioneers of the 20th century how to think like a great graphic designer graphic design: the new basics graphic design as a second language do you matter? how great design will make people love your company what is graphic design? creative workshop: 80 challenges to sharpen your design skills the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual design evolution: theory into practice graphic style: from victorian to hipster design for the real world: human ecology and social change the illusion of life: disney animation design-driven innovation: changing the rules of competition by radically innovating what things mean editing by design: for designers, art directors, and editors: the classic guide to winning readers do you matter? how great design will make people love your company do you matter? how great design will make people love your company jony ive: the genius behind apple&#x27;s greatest products graphic design solutions visual merchandising: windows and in-store displays for retail why we design design, when everybody designs: an introduction to design for social innovation bibliographic: 100 classic graphic design books delft design guide: design strategies and methods design, form, and chaos design, when everybody designs: an introduction to design for social innovation thoughts on design unflattening"><span class="side-num">10</span> Graphic Design Practice</a><a href="11_interior.html" data-search="11 interior interior design drawings, scale, light, materials, construction, and furnishing further reading 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 零基礎學建築識圖 室內裝飾裝修施工完全圖解教程 室內設計節點手冊：常用節點 室內設計節點手冊：酒店固定傢俱 材料收口 裝飾工藝解析：吊頂篇 裝飾工藝解析：地面篇 裝飾工藝解析：牆面篇 室內設計師必知的100個節點 室內裝飾裝修材料應用與選購 室內設計材料選用實戰手冊 石材應用手冊 設計師的材料清單·室內篇 圖解照明設計 室內照明設計精品教程 室內燈光設計 室內設計師專用燈光設計手冊 室內設計師燈光設計細部解析 照明設計終極聖經 家居色彩設計指南 設計師談家居色彩搭配 設計配色基礎 輕·重·緩·急：搭出耐看配色 人體工程學與室內設計 住宅的設計尺寸剖析書 圖解住宅尺寸與格局設計 室內施工圖實戰教程 室內施工圖製圖標準 室內空間佈局與尺度設計 室內細部設計cad圖集 室內設計尺寸關鍵術 室內設計數據手冊：空間與尺度 室內設計與人體工程學 家裝常用數據尺寸速查 工裝設計尺度數據手冊 人機工程學（第五版） 年輕設計師必修的七堂課 網紅室內設計師ip運營法則 裝修設計師談單簽單一課通 軟裝談單寶典 住宅格局破解術 住宅格局解剖圖鑑 住宅設計剖析手冊 住宅設計解剖書 住得優雅：住宅設計的34個法則 圖解極簡主義設計 室內住宅設計圖解 室內空間設計手冊 室內設計·思維與方法 室內設計基礎 小家越住越大2 打造讓孩子自主學習的住宅 樓梯設計的9個法則 淺談家庭中央空調的使用 牆面設計 裝修設計解剖書 解構收納 設計中的設計 設計師要懂的心理學 室內精細化設計研究 傢俱設計資料圖集 室內設計風格圖文速查 軟裝改造解剖書 軟裝設計元素搭配手冊 軟裝設計師手冊 軟裝風格速查 the lighting bible the interior plan: concepts and exercises 100 things every designer needs to know about people"><span class="side-num">11</span> Interior Design</a><a href="12_architecture-space.html" data-search="12 architecture space architecture &amp; space form, space, order, and proportion week 2, 6–7 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 建築：形式、空間和秩序（第 3 版） 反造型 architecture: form, space, and order , 3rd edition"><span class="side-num">12</span> Architecture &amp; Space</a><a href="13_product.html" data-search="13 product product design minimalism, ten principles of good design, and muji week 11 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 簡約不簡單：極簡風格產品設計 產品極簡主義 無印良品的設計 解密無印良品 20 世紀 50–80 年代中國、德國產品設計回望 無印良品世界觀 創新產品設計與手繪 深澤直人 意識的核心 product design now naoto fukasawa"><span class="side-num">13</span> Product Design</a><a href="14_design-art-history.html" data-search="14 design art history design &amp; art history from manuscripts and arts and crafts through the bauhaus to the digital era week 1 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術簡史 世界平面設計史 醜的歷史 美的歷史 世界當代藝術史 世界現代設計史 中國現代設計與包豪斯 包豪斯道路：歷史、遺澤、世界與中國 包豪斯 運動中的視覺：新包豪斯的基礎 包豪斯：大師和學生們 包豪斯藏品精選集 包豪斯理想：過去與現在 世界現代設計史 中國 外國 工業設計史（第四版） 現代設計百科全書：平面設計的歷史、語言及經典應用 藝術的真相：通往藝術之路 藝術與物理學：時空和光的藝術觀與物理觀 設計藝術史 重要的不是藝術 錢君匋的藝術世界 art: a brief history , 4th edition vision in motion the bauhaus: masters &amp; students by themselves the bauhaus ideal then &amp; now: an illustrated guide to modernist design graphic design, referenced: a visual guide to the language, applications, and history of graphic design gateways to art: understanding the visual arts art &amp; physics: parallel visions in space, time, and light"><span class="side-num">14</span> Design &amp; Art History</a><a href="15_theory-psychology.html" data-search="15 theory psychology design theory &amp; psychology gestalt, cognition, emotional design, and kenya hara week 4, 6–7, 10 1. scope 2. perception 3. cognition &amp; behaviour 4. aesthetics &amp; philosophy 5. principles &amp; methods 6. selected figures 7. source bookshelf 8. study cues 7. each book 審醜：萬物美學 原研哉的設計世界 視覺藝術原理（第八版） 設計心理學 1：日常的設計 設計心理學 2：與複雜共處 設計心理學 3：情感化設計 設計心理學 4：未來設計 日本的八個審美意識 點線面 日式設計美學 康定斯基論點線面 藝術與視知覺 藝術中的精神 圖像與眼睛：圖畫再現心理學的再研究 象徵的圖像：貢布里希圖像文集 設計私語錄：通心粉的孔洞之謎 悲劇的誕生：尼采美學文選 設計中的色彩心理學 設計之美 藝術與視知覺：新編 設計中的設計 設計師要懂心理學（迷你書） 設計心理學 設計心理學（唐納德·a·諾曼） 情感化設計 感性美學 我眼中的設計之美 日式平面美學 淺談設計之美 為什麼設計 重構美學 白 社會心理學（第八版） 藝術與錯覺：圖畫再現的心理學研究 視覺思維 視覺思維（阿恩海姆） 視覺藝術的含義 設計中的設計 設計中的設計（全本） 設計中的設計（原研哉） 設計師要懂心理學 設計心理學（247 頁本） 設計心理學（中文版） 設計美學（廣州美術學院藝術設計教程） 設計與視知覺 象徵的圖像：貢布里希圖像學文集 ugly: the aesthetics of everything prebles&#x27; artforms: an introduction to the visual arts , 8th edition the design of everyday things , revised and expanded edition living with complexity emotional design: why we love (or hate) everyday things the design of future things art and visual perception: a psychology of the creative eye , the new version the image and the eye: further studies in the psychology of pictorial representation symbolic images: studies in the art of the renaissance beautiful thing: an introduction to design art and visual perception: a psychology of the creative eye , the new version 100 things every designer needs to know about people the design of everyday things the design of everyday things emotional design: why we love (or hate) everyday things social psychology , 8th edition art and illusion: a study in the psychology of pictorial representation visual thinking visual thinking meaning in the visual arts: papers in and on art history 100 things every designer needs to know about people the design of everyday things the design of everyday things symbolic images: studies in the art of the renaissance"><span class="side-num">15</span> Design Theory &amp; Psychology</a><a href="16_pattern-ornament.html" data-search="16 pattern ornament pattern &amp; ornament pattern structure, chinese and western motifs, and auspicious meaning week 8 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book (new)世界裝飾紋樣圖典(4000餘種圖案+紋飾百科全書+裝飾藝術寶庫) l&#x27;art arabe 01 秩序感：裝飾藝術的心理學研究 中國紋樣集錦：examples of chinese ornament the grammar of ornament 中國紋樣全集 魏晉南北朝·隋唐·五代卷 世界裝飾圖案-1887-85p圖版 中國紋樣全集 宋·元·明·清卷 中國紋樣全集 戰國·秦·漢卷 中國紋樣全集 新石器時代和商·西周·春秋卷 中國經典紋樣圖鑑 摩洛哥傳統裝飾藝術 敦煌線描 民間美術：湖北挑花、土錦、藍印花布 裝飾文叢特別策劃卷7 貴州傳統蠟染-攝影集 the sense of order: a study in the psychology of decorative art examples of chinese ornament selected from objects in the south kensington museum and other collections"><span class="side-num">16</span> Pattern &amp; Ornament</a><a href="18_magazines-annuals.html" data-search="18 magazines annuals magazines &amp; annuals how to look at annuals and magazines week 1–13 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2021日本平面設計年鑑 45th publication design annual apd亞太設計年鑑no.17(1) brand 12 brand no.36-生活使用手冊2：文創熱量 brand no.37-字己 brand no.38-手工印刷 brand no.39-物料進化 brand no.40-文化時光機1868-1988 brand no.41-看圖説話，你的信息時代 brand no.42.-你好，藝術pdf brand no.43-小物志 brand no.44-貓狗日誌 design 360 雜誌(1) gallery 形錄 全球最佳圖形設計 vol.09 idea 377 novum201901 apd9亞太平面設計年鑑 apd5亞太設計年鑑 中國品牌設計年鑑 2013 日本字體與平面設計大獎年鑑 國家博物館-仙山圖特展 國家博物館-宋末民初上海畫壇 國家博物館-宋代花箋特展 國家博物館-蘇州片及其影響 國家博物館-瓶花與盆景畫特展 國家博物館-書畫菁華特展 idea+10 1 舉一反百的聰明設計法則 idea+10 2 一計點睛的即效設計處方 red-dot-award-concept-2011-2012 red_dot_award_design_concept_2013-2014 brand brand gallery 國際設計年鑑2014 日本品牌與包裝設計年鑑 2016 日本平面創意設計年鑑 2002-2004 疾風迅雷 杉浦康平雜誌設計的半個世紀 眾妙之門：移動web設計精髓（德）smashing雜誌 essentials of mobile design"><span class="side-num">18</span> Magazines &amp; Annuals</a><a href="20_advertising.html" data-search="20 advertising advertising positioning, aida, creative tactics, and point of purchase week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 1001 個廣告法則 pop 廣告設計 智威湯遜手冊 美國廣告設計實用教程 廣告公司的秘密：平面設計師就業寶典 advertising by design: creating visual communications with graphic impact"><span class="side-num">20</span> Advertising</a></div></nav>
+    </aside>
+    <main class="main" id="content" tabindex="-1">
+      <div class="topbar">
+        <button class="side-toggle" type="button">Guides</button>
+        <nav class="jump" aria-label="On this page"><a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a></nav>
+      </div>
+      <p class="kicker"><a href="index.html">SSHD2382</a> · Category 09</p>
+      <div class="digest">
+<h1 id="interaction-web-ux">Interaction, Web &amp; UX</h1>
+<p class="meta">Category 09 · Course link: Week 11 Strategic Design and Future Workflows (also related to Week 4 Visual Hierarchy) · Main references: Jesse James Garrett, <span lang="zh-Hant">《用戶體驗要素》</span>; Alan Cooper, <span lang="zh-Hant">《About Face 交互設計精髓》</span> (3rd and 4th editions); Steve Krug, <span lang="zh-Hant">《點石成金：Don't Make Me Think》</span>; Jeff Johnson, <span lang="zh-Hant">《認知與設計：理解 UI 設計準則》</span>; Giles Colborne, <span lang="zh-Hant">《簡約至上：交互設計四策略》</span>; Dan Saffer, <span lang="zh-Hant">《微交互》</span>; Stephen Anderson, <span lang="zh-Hant">《怦然心動：情感化交互設計指南》</span>; Steve Mulder, <span lang="zh-Hant">《贏在用戶：Web 人物角色創建和應用實踐指南》</span>; Tullis and Albert, <span lang="zh-Hant">《用戶體驗度量》</span>; Bill Moggridge, <span lang="zh-Hant">《關鍵設計報告》</span>; Unger and Chandler, <span lang="zh-Hant">《UX 設計之道》</span>; Liu Jin and Li Yue, <span lang="zh-Hant">《破繭成蝶》</span>; iOS and Android interface guidelines</p>
+
+<h2 id="1-scope">1. Scope</h2>
+<p>This category holds about 39 books (some are different editions of the same book). They fall into five groups:</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Question</th>
+<th>Key books</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Framework</td>
+<td>What layers make up the user experience?</td>
+<td>Garrett, <span lang="zh-Hant">《用戶體驗要素》</span>; <span lang="zh-Hant">《UX 設計之道》</span></td>
+</tr>
+<tr>
+<td>Method</td>
+<td>How do we study users, define requirements and design behaviour?</td>
+<td>Cooper, <em>About Face</em>; Mulder, <span lang="zh-Hant">《贏在用戶》</span></td>
+</tr>
+<tr>
+<td>Usability</td>
+<td>How do we make an interface obvious at a glance, with no thinking needed?</td>
+<td>Krug, <span lang="zh-Hant">《點石成金》</span>; Colborne, <span lang="zh-Hant">《簡約至上》</span>; Johnson, <span lang="zh-Hant">《認知與設計》</span></td>
+</tr>
+<tr>
+<td>Detail &amp; emotion</td>
+<td>How do we make a product a pleasure to use?</td>
+<td>Saffer, <span lang="zh-Hant">《微交互》</span>; Anderson, <span lang="zh-Hant">《怦然心動》</span></td>
+</tr>
+<tr>
+<td>Platform &amp; practice</td>
+<td>Interface guidelines for each platform, and teamwork</td>
+<td>iOS / Android guidelines; <span lang="zh-Hant">《UI 群英匯》</span>; <span lang="zh-Hant">《破繭成蝶》</span>; <span lang="zh-Hant">《體驗·度》</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Interaction design (IxD)</strong> designs the <strong>behaviour</strong> between people and products. <strong>User experience (UX)</strong> is a person's overall experience before, during and after use. Visual design is only its most surface layer.</p>
+</blockquote>
+<h2 id="2-core-concepts">2. Core Concepts</h2>
+<h3 id="21-garrett">2.1 The Five Planes of User Experience (Garrett)</h3>
+<div class="chart">
+<svg viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <g>
+    <rect x="40" y="20" width="320" height="44" fill="#c8102e"/><text x="200" y="47" text-anchor="middle" fill="#fff" font-weight="bold">Surface</text>
+    <rect x="40" y="70" width="320" height="44" fill="#a50d26"/><text x="200" y="97" text-anchor="middle" fill="#fff" font-weight="bold">Skeleton</text>
+    <rect x="40" y="120" width="320" height="44" fill="#7a2a36"/><text x="200" y="147" text-anchor="middle" fill="#fff" font-weight="bold">Structure</text>
+    <rect x="40" y="170" width="320" height="44" fill="#5b5b66"/><text x="200" y="197" text-anchor="middle" fill="#fff" font-weight="bold">Scope</text>
+    <rect x="40" y="220" width="320" height="44" fill="#1d1d1f"/><text x="200" y="247" text-anchor="middle" fill="#fff" font-weight="bold">Strategy</text>
+  </g>
+  <g fill="#1d1d1f">
+    <text x="375" y="40">Visual design: colour, type, images, senses</text>
+    <text x="375" y="90">Interface, navigation, information design</text>
+    <text x="375" y="140">Interaction design, info architecture</text>
+    <text x="375" y="190">Functional specs, content requirements</text>
+    <text x="375" y="240">User needs, product objectives</text>
+  </g>
+  <g stroke="#5b5b66" stroke-width="1.5" fill="#5b5b66">
+    <line x1="20" y1="260" x2="20" y2="30"/><path d="M14 36 L20 22 L26 36 Z"/>
+  </g>
+  <text x="12" y="150" fill="#5b5b66" font-size="11" transform="rotate(-90 12 150)">Abstract → Concrete</text>
+  <text x="340" y="290" text-anchor="middle" fill="#5b5b66" font-size="11">Each plane is constrained by the one below. Build from the bottom up, not by drawing a pretty interface first.</text>
+</svg>
+</div>
+
+<p>Garrett points out that every plane has a "<strong>basic duality</strong>": a product can be <strong>functional</strong> (software interfaces: tasks, flows) or <strong>informational</strong> (website content: navigation, categories). The same plane has a different focus in each case.</p>
+<h3 id="22-cooper">2.2 Goal-Directed Design (Cooper)</h3>
+<p>In <em>About Face</em>, Cooper criticises the many digital products that "ask people to think like computers". He proposes starting from <strong>user goals</strong> rather than a feature list:</p>
+<pre class="mermaid">flowchart LR
+  r[&quot;Research&lt;br/&gt;interviews, observation&quot;] --&gt; m[&quot;Modeling&lt;br/&gt;personas&quot;]
+  m --&gt; q[&quot;Requirements&lt;br/&gt;scenarios&quot;]
+  q --&gt; f[&quot;Framework&lt;br/&gt;overall structure&quot;]
+  f --&gt; rf[&quot;Refinement&lt;br/&gt;detail, visuals, specs&quot;]
+  rf --&gt; s[&quot;Support&lt;br/&gt;fixes during build&quot;]
+</pre>
+<ul>
+<li><strong>Persona</strong>: a typical user archetype distilled from research data, with a name, goals, behaviour patterns and context. Mulder's <span lang="zh-Hant">《贏在用戶》</span> lists its benefits: it brings focus, builds empathy, creates consensus, saves time and leads to better decisions.</li>
+<li><strong>Three levels of goals</strong>: experience goals (how they want to feel), end goals (what they want to get done) and life goals (who they want to be).</li>
+<li><strong>Mental model vs implementation model</strong>: the interface should follow the user's mental model, not expose how the program works.</li>
+</ul>
+<h3 id="23-krug">2.3 How Users Really Use the Web (Krug)</h3>
+<p>The first principle of <span lang="zh-Hant">《點石成金》</span> is <strong>"Don't make me think!"</strong> Krug observes three facts:</p>
+<div class="cards">
+<div><strong>We don't read, we scan</strong>Users look only for words and links that relate to the task at hand.</div>
+<div><strong>We don't make optimal choices, we satisfice</strong>We click the first reasonable option we see (satisficing).</div>
+<div><strong>We don't figure out how things work, we muddle through</strong>Users don't care how something works; if it works, they keep using it.</div>
+</div>
+
+<p>So design should:</p>
+<ol>
+<li><strong>Use conventions</strong>: logo at top left, search box at the top, underlined text is a link.</li>
+<li><strong>Create a clear visual hierarchy</strong>: the more important, the more prominent; related things are grouped visually (the hierarchy principles from Week 4).</li>
+<li><strong>Break pages into clearly defined areas</strong>, so users can identify each function at a glance.</li>
+<li><strong>Make it obvious what is clickable</strong>.</li>
+<li><strong>Reduce noise</strong>: cut half the words, then cut half of what is left.</li>
+<li><strong>Make navigation work like street signs</strong>: every page should answer "What site is this? Where am I? Where can I go?" (the "trunk test"). Breadcrumbs and tabs are effective tools.</li>
+</ol>
+<h3 id="24-johnson">2.4 Cognitive Principles (Johnson)</h3>
+<p><span lang="zh-Hant">《認知與設計》</span> explains the psychology behind common UI guidelines:</p>
+<table>
+<thead>
+<tr>
+<th>Cognitive fact</th>
+<th>What it means for design</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>We perceive what we expect</td>
+<td>Be consistent and avoid ambiguity</td>
+</tr>
+<tr>
+<td>Vision automatically looks for structure (Gestalt: proximity, similarity, continuity, closure, symmetry, figure/ground)</td>
+<td>Group with spacing and similarity; see <a href="15_theory-psychology.html">15 Design Theory &amp; Psychology</a></td>
+</tr>
+<tr>
+<td>We seek structure rather than reading word by word</td>
+<td>Headings, lists, short sections</td>
+</tr>
+<tr>
+<td>Colour vision is limited, and some people have colour vision deficiency</td>
+<td>Never use colour alone to show status</td>
+</tr>
+<tr>
+<td>Peripheral vision is poor</td>
+<td>Put error messages where the user is looking</td>
+</tr>
+<tr>
+<td>Short-term memory is limited</td>
+<td>Keep options visible (recognition is easier than recall)</td>
+</tr>
+<tr>
+<td>Attention is limited; we focus on our goals</td>
+<td>Reduce distractions and give a clear task flow</td>
+</tr>
+<tr>
+<td>Hand–eye coordination follows Fitts's law</td>
+<td>Important buttons should be big and close</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-principles-methods">3. Principles &amp; Methods</h2>
+<h3 id="31-colborne">3.1 Four Strategies for Simplicity (Colborne)</h3>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>Approach</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remove</td>
+<td>Take out unnecessary features and content</td>
+<td>Keep only the features mainstream users need most</td>
+</tr>
+<tr>
+<td>Organise</td>
+<td>Group by task, alphabet, time or location</td>
+<td>Split settings into clear categories</td>
+</tr>
+<tr>
+<td>Hide</td>
+<td>Tuck advanced features away until they are needed</td>
+<td>"More options", progressive disclosure</td>
+</tr>
+<tr>
+<td>Displace</td>
+<td>Move complexity somewhere else (another device, the system, the user)</td>
+<td>Let the system fill in forms automatically</td>
+</tr>
+</tbody>
+</table>
+<p>Colborne reminds us to <strong>design for mainstream users</strong>: experts want control, beginners want guidance, and mainstream users want "to get the job done easily".</p>
+<h3 id="32-saffer">3.2 Microinteractions (Saffer)</h3>
+<p>A microinteraction is a small interaction built around <strong>a single task</strong>: a toggle, a like, pull to refresh, a password hint. It has four parts:</p>
+<pre class="mermaid">flowchart LR
+  t[&quot;Trigger&lt;br/&gt;started by user or system&quot;] --&gt; r[&quot;Rules&lt;br/&gt;what can and cannot happen&quot;]
+  r --&gt; f[&quot;Feedback&lt;br/&gt;sight, sound, touch&quot;]
+  f --&gt; l[&quot;Loops &amp; Modes&lt;br/&gt;repetition, long-term change&quot;]
+</pre>
+<h3 id="33-anderson">3.3 The Hierarchy of Emotional Design (Anderson)</h3>
+<p>Anderson shows user needs as a pyramid. From bottom to top: <strong>Functional → Reliable → Usable → Convenient → Pleasurable → Meaningful</strong>. If the lower layers are shaky, fun at the top is worthless; but a product that is merely "usable" will rarely win hearts. This echoes Norman's three levels: visceral, behavioural and reflective.</p>
+<h3 id="34">3.4 Usability Testing and Metrics</h3>
+<ul>
+<li><strong>Test small and often</strong>: Krug suggests only three or four users per round. Testing early beats one big test at the end.</li>
+<li><strong>Think aloud</strong>: ask users to say what they are thinking as they work; the observer gives no hints.</li>
+<li><strong>Metrics</strong> (<span lang="zh-Hant">《用戶體驗度量》</span>): task success rate, time on task, errors, efficiency, learnability, plus subjective satisfaction questionnaires (such as the SUS, System Usability Scale).</li>
+<li><strong>Prototype fidelity</strong>: paper prototype → wireframe → interactive prototype (Axure, Figma) → high-fidelity visual mock-up. The earlier the stage, the cheaper it is and the easier to throw away.</li>
+</ul>
+<h3 id="35">3.5 Platform Guidelines</h3>
+<p>The iOS and Android interface guidelines define the status bar, navigation bar, tab bar, lists, buttons, icon sizes and touch targets (for example, iOS recommends a minimum touch target of 44 × 44 pt). Following platform conventions lowers the learning cost; break them only with good reason.</p>
+<h3 id="36">3.6 A Short History of Interaction Design</h3>
+<p>Moggridge's <span lang="zh-Hant">《關鍵設計報告》</span> interviews the pioneers of interaction design: Douglas Engelbart invented the mouse and gave "the Mother of All Demos" in 1968; the Alto and Star at Xerox PARC established the desktop metaphor and the graphical interface; the Apple Macintosh then made them popular. This history shows that today's "conventions" were themselves designed.</p>
+<h2 id="4-selected-figures">4. Selected Figures</h2>
+<div class="figs">
+<figure><img src="assets/interaction-ux/five-planes-icons.jpg" alt="Icons for the five planes"><figcaption>Icons for the five planes, from strategy to surface. Source: Jesse James Garrett, <span lang="zh-Hant">《用戶體驗要素》</span>, p.44</figcaption></figure>
+<figure><img src="assets/interaction-ux/mental-model.jpg" alt="The user's mind"><figcaption>Users come to a product with their own understanding and expectations. Source: same book, p.31</figcaption></figure>
+<figure><img src="assets/interaction-ux/navigation-network.jpg" alt="Navigation structure"><figcaption>Nodes and paths in information architecture. Source: same book, p.64</figcaption></figure>
+<figure><img src="assets/interaction-ux/persona-segments.jpg" alt="User segments"><figcaption>Dividing users into different segments. Source: same book, p.116</figcaption></figure>
+<figure><img src="assets/interaction-ux/frustration-to-delight.jpg" alt="From frustration to delight"><figcaption>A good experience turns frustration into satisfaction. Source: same book, p.184</figcaption></figure>
+<figure><img src="assets/interaction-ux/dont-make-me-think.jpg" alt="Don't make me think"><figcaption>"Don't make me think": the gap between how designers and users think. Source: Steve Krug, <span lang="zh-Hant">《點石成金》</span>, p.17</figcaption></figure>
+<figure><img src="assets/interaction-ux/breadcrumbs-tabs.jpg" alt="Breadcrumbs"><figcaption>Breadcrumb navigation tells users "where am I". Source: same book, p.68</figcaption></figure>
+<figure><img src="assets/interaction-ux/amazon-tabs.jpg" alt="Tabs"><figcaption>Tabs: navigation as clear as physical file folders. Source: same book, p.79</figcaption></figure>
+<figure><img src="assets/interaction-ux/similarity-stars.jpg" alt="Similarity"><figcaption>Gestalt similarity: filled and hollow stars group themselves automatically. Source: Jeff Johnson, <span lang="zh-Hant">《認知與設計》</span>, p.49</figcaption></figure>
+<figure><img src="assets/interaction-ux/concept-diagram.jpg" alt="Concept diagram"><figcaption>A concept diagram that maps how the elements of a microinteraction relate. Source: Dan Saffer, <span lang="zh-Hant">《微交互》</span>, p.173</figcaption></figure>
+<figure><img src="assets/interaction-ux/early-laptop.jpg" alt="Early laptop"><figcaption>The design of the first laptop computer. Source: Bill Moggridge, <span lang="zh-Hant">《關鍵設計報告》</span>, p.138</figcaption></figure>
+</div>
+
+<h2 id="5-source-bookshelf">5. Source Bookshelf</h2>
+<p>Suggested reading order: Krug, <span lang="zh-Hant">《點石成金》</span> (the easiest way in) → Garrett, <span lang="zh-Hant">《用戶體驗要素》</span> (framework) → Johnson, <span lang="zh-Hant">《認知與設計》</span> (principles) → Colborne, <span lang="zh-Hant">《簡約至上》</span> → Cooper, <em>About Face 4</em> (reference book) → Saffer, <span lang="zh-Hant">《微交互》</span>.</p>
+<!-- BOOKSHELF:START -->
+
+<details><summary>Show 39 titles</summary>
+
+- <a href="#b-about-face-3-the-essentials-of-interaction-design"><span lang="zh-Hant">About Face 3：交互設計精髓</span></a>
+- <a href="#b-about-face-4-the-essentials-of-interaction-design-chinese"><span lang="zh-Hant">About Face 4：交互設計精髓（中文彩版）</span></a>
+- <a href="#b-android-interaction-and-visual-design-guidelines"><span lang="zh-Hant">Android 交互視覺設計規範</span></a>
+- <a href="#b-the-user-is-always-right-a-practical-guide-to-creating-and"><span lang="zh-Hant">贏在用戶：Web 人物角色創建和應用實踐指南</span></a>
+- <a href="#b-don-t-make-me-think-2nd-english-edition"><span lang="zh-Hant">Don't Make Me Think（英文第 2 版）</span></a>
+- <a href="#b-ui-masters-methods-for-user-experience-interaction-and"><span lang="zh-Hant">UI 羣英匯：用戶體驗、交互與視覺設計方法論</span></a>
+- <a href="#b-designing-web-interfaces"><span lang="zh-Hant">Web 界面設計</span></a>
+- <a href="#b-sense-of-form-creative-development-and-rapid-expression-in">[021]<span lang="zh-Hant">形式感：網頁視覺設計創意拓展與快速表現</span></a>
+- <a href="#b-designing-interactions">[039]<span lang="zh-Hant">關鍵設計報告：改變過去影響未來的交互設計法則</span></a>
+- <a href="#b-don-t-make-me-think-chinese-edition">[040]<span lang="zh-Hant">點石成金：訪客至上的網頁秘籍</span></a>
+- <a href="#b-designing-with-the-mind-in-mind">[061]<span lang="zh-Hant">認知與設計：理解 UI 設計準則</span></a>
+- <a href="#b-simple-and-usable">[066]<span lang="zh-Hant">簡約至上：交互設計四策略</span></a>
+- <a href="#b-seeing-the-big-in-the-small-deconstructing-web-user">[095]<span lang="zh-Hant">見微知著：Web 用戶體驗解構</span></a>
+- <a href="#b-walking-with-the-world-s-ui-designers">[137]<span lang="zh-Hant">與世界 UI 設計師同行</span></a>
+- <a href="#b-a-project-guide-to-ux-design-2nd-edition">[211]<span lang="zh-Hant">UX 設計之道：以用戶體驗為中心的 Web 設計（第 2 版）</span></a>
+- <a href="#b-golden-rules-of-ui-design-100-user-interfaces-that-move">[253]<span lang="zh-Hant">UI 設計黃金法則：觸動人心的 100 種用戶界面</span></a>
+- <a href="#b-sexy-web-design-creating-interfaces-that-work"><span lang="zh-Hant">Sexy Web Design：Creating Interfaces that Work</span></a>
+- <a href="#b-the-elements-of-user-experience-user-centered-design-for"><span lang="zh-Hant">用戶體驗的要素：以用戶為中心的 Web 設計</span></a>
+- <a href="#b-web-designer-magazine-emag"><span lang="zh-Hant">網頁設計（Web Designer eMag）</span></a>
+- <a href="#b-don-t-make-me-think-a-common-sense-approach-to-web-usability"><span lang="zh-Hant">點石成金：訪客至上的網頁設計秘笈</span></a>
+- <a href="#b-ios-9-interface-guidelines-analysis-and-practice"><span lang="zh-Hant">iOS 9 界面設計規範剖析及實戰</span></a>
+- <a href="#b-don-t-make-me-think-chinese-translation"><span lang="zh-Hant">不要讓我思考（Don't Make Me Think）</span></a>
+- <a href="#b-the-user-is-always-right-a-practical-guide-to-creating-and-2"><span lang="zh-Hant">贏在用戶：Web 人物角色創建和應用實踐指南</span></a>
+- <a href="#b-about-face-the-essentials-of-interaction-design-early"><span lang="zh-Hant">軟件觀念革命：交互設計精髓</span></a>
+- <a href="#b-designing-the-obvious-a-common-sense-approach-to-web"><span lang="zh-Hant">一目瞭然：Web 軟件顯性設計之路</span></a>
+- <a href="#b-just-that-simple-usability-and-user-experience-in-web"><span lang="zh-Hant">就這麼簡單：Web 開發中的可用性和用戶體驗</span></a>
+- <a href="#b-microinteractions-designing-with-details"><span lang="zh-Hant">微交互：細節設計成就卓越產品</span></a>
+- <a href="#b-seductive-interaction-design"><span lang="zh-Hant">怦然心動：情感化交互設計指南</span></a>
+- <a href="#b-measuring-the-user-experience"><span lang="zh-Hant">用戶體驗度量</span></a>
+- <a href="#b-the-elements-of-user-experience-user-centered-design-for-2"><span lang="zh-Hant">用戶體驗要素：以用戶為中心的產品設計（原書第 2 版）</span></a>
+- <a href="#b-smashing-magazine-the-art-of-website-ui-design"><span lang="zh-Hant">眾妙之門：網站 UI 設計之道</span></a>
+- <a href="#b-designing-the-moment-web-interface-design-concepts-in-action"><span lang="zh-Hant">瞬間之美：Web 界面設計如何讓用戶心動</span></a>
+- <a href="#b-from-cocoon-to-butterfly-the-growth-path-of-a-ux-designer"><span lang="zh-Hant">破繭成蝶：用戶體驗設計師的成長之路</span></a>
+- <a href="#b-simple-and-usable-web-mobile-and-interaction-design"><span lang="zh-Hant">簡約至上：交互設計四策略</span></a>
+- <a href="#b-the-web-designer-s-idea-book"><span lang="zh-Hant">網頁設計創意書</span></a>
+- <a href="#b-designing-with-the-mind-in-mind-simple-guide-to"><span lang="zh-Hant">認知與設計：理解 UI 設計準則</span></a>
+- <a href="#b-designing-with-the-mind-in-mind-simple-guide-to-2"><span lang="zh-Hant">認知與設計：理解 UI 設計準則（第 2 版）</span></a>
+- <a href="#b-the-user-is-always-right-a-practical-guide-to-creating-and-3"><span lang="zh-Hant">贏在用戶：Web 人物角色創建和應用實踐指南</span></a>
+- <a href="#b-experience-du-simple-dependable-user-experience-colour"><span lang="zh-Hant">體驗·度：簡單可依賴的用戶體驗（彩版）</span></a>
+
+</details>
+
+<!-- BOOKSHELF:END -->
+
+<h2 id="6-study-cues">6. Study Cues</h2>
+<ol>
+<li>Use Garrett's five planes to analyse your school website: what problems does each plane have?</li>
+<li>Write a persona for a campus food-ordering app: name, goals, pain points, context of use.</li>
+<li>Do the "trunk test" on any website: open a random page. Can you answer "What site is this, where am I, where can I go"?</li>
+<li>Find a complicated settings page and redesign it with the four strategies: remove, organise, hide, displace.</li>
+<li>Take apart a microinteraction you like (for example a like animation) and write down its trigger, rules, feedback and loops.</li>
+<li>Invite three classmates to complete a task while thinking aloud, and note where they get stuck.</li>
+</ol>
+<!-- BOOKS:START -->
+
+<h2 id="7-each-book">7. Each Book</h2>
+<p>Each book in the bookshelf is described below. Every title above links to its section.</p>
+<h3 class="book" id="b-about-face-3-the-essentials-of-interaction-design"><span lang="zh-Hant">About Face 3：交互設計精髓</span></h3>
+<p><strong>Original title:</strong> <em>About Face 3: The Essentials of Interaction Design</em>, 3rd edition</p>
+<p><strong>Author:</strong> Alan Cooper</p>
+<p><strong>Scope.</strong> This is the method book for goal-directed design. The preface sets the problem in the post-industrial age: copying software costs almost nothing, and the development money saved often comes back as clumsy behaviour. Cooper argues that interaction design is at once a blueprint for programmers, a basis for managers to track progress, and a source of user motivations for marketing staff. Read it before you build personas, to get clear on "whose goals are we designing for".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The industrial age competed on cutting manufacturing costs; the software age competes on whether behaviour works and feels right to people.</li>
+<li>Interaction design has moved from after-the-fact fixes and trial and error to a practice that can judge which behaviours will succeed.</li>
+<li>Personas, scenarios and goal-directed design are the core tools of this practice.</li>
+<li>"It is impossible to know what users want" usually means the designer has not done qualitative research yet. Cooper's team goes into fields such as finance, health, medicine and human resources to understand motivations.</li>
+<li>Adding features at will raises everyone's cognitive load and navigation cost; a feature that pleases one group can lower another group's satisfaction.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First write down what the finished software will look like and how it will behave, then hand that to programmers to build, and use the description to check progress.</li>
+<li>Choose a primary persona, and let their attitudes, abilities and context of use decide which kind of person the product serves.</li>
+<li>For every feature you add, ask whether it reduces or increases the navigation cost for the other users.</li>
+<li>Present research findings to design, development and marketing together, so the three groups do not each talk about a different "user".</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-about-face-3-the-essentials-of-interaction-design-1.jpg" alt="Feature creep and satisfaction"><figcaption>Expanding features at will increases cognitive load for all users; features that please some can lower satisfaction for others. Source: <span lang="zh-Hant">《About Face 3：交互設計精髓》</span>, p.73</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-about-face-3-the-essentials-of-interaction-design-2.jpg" alt="Primary persona"><figcaption>Which users a product targets is decided by the chosen primary persona and their attitudes, abilities and context of use. Source: same book, p.130</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>In your own words: why is "writing fewer lines of code" not always a saving in a software product?</li>
+<li>Pick an app you use often and point out a feature that serves only a few people but makes everyone else take an extra step.</li>
+</ol>
+<h3 class="book" id="b-about-face-4-the-essentials-of-interaction-design-chinese"><span lang="zh-Hant">About Face 4：交互設計精髓（中文彩版）</span></h3>
+<p><strong>Original title:</strong> <em>About Face: The Essentials of Interaction Design</em>, 4th edition</p>
+<p><strong>Author:</strong> Alan Cooper</p>
+<p><strong>Scope.</strong> The 4th edition admits that personal software in 1994 was mostly address books and spreadsheets, while today users carry handheld devices to play music, take photos, read the news and control their homes. The book has two parts, goal-directed design and interaction details, and covers user research, usability testing, embedded systems, control mapping, and visual design and branding. As you read this edition, notice how it applies the old goal-directed process to phones and irreversible actions.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The 1st edition was a manifesto against hard-to-use software; the 4th edition has to deal with users who already live immersed in digital media.</li>
+<li>The goal-directed process runs from research and modelling to detail. Cooper's colleagues wrote on market research, usability testing, embedded systems, control mapping and visual branding.</li>
+<li>On handheld interfaces, the title of a list or grid usually sits in the middle, Back on the left and function buttons on the right; Android calls this bar the action bar.</li>
+<li>Some controls can be used only once and cannot be undone. The book uses an ejection seat as the example: once the lever is pulled, the pilot leaves the cockpit with the seat, and there is no second chance.</li>
+<li>The examples come from design projects for medical, data and enterprise clients, not just website home pages.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First work out which stage of the process this piece of design belongs to: research, personas, usability testing, or controls and visuals.</li>
+<li>When drawing a phone's top bar, mark which side Back, the title and the actions go on, and write down what the platform calls them.</li>
+<li>For an action that cannot be undone, design it as a clearly one-off action; do not make it look like an everyday button.</li>
+<li>While reading the principles, compare them with the Cooper figures in the book to see how each principle lands in a real project.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-about-face-4-the-essentials-of-interaction-design-chinese-1.jpg" alt="Position of the action bar"><figcaption>In a list or grid, Back is on the left, the title in the middle and most functions on the right; Android calls this the action bar. Source: <span lang="zh-Hant">《About Face 4：交互設計精髓（中文彩版）》</span>, p.465</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-about-face-4-the-essentials-of-interaction-design-chinese-2.jpg" alt="Ejection seat lever"><figcaption>An ejection seat lever can be used only once and cannot be reversed; the pilot leaves the cockpit with the seat. Source: same book, p.242</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Compare the top bar of an iOS screen and an Android screen: where are Back, the title and the main action?</li>
+<li>Name a product action that "cannot be undone once done", and explain how it should be kept apart from everyday buttons.</li>
+</ol>
+<h3 class="book" id="b-android-interaction-and-visual-design-guidelines"><span lang="zh-Hant">Android 交互視覺設計規範</span></h3>
+<p><strong>Scope.</strong> These are visual guidelines for icons and widgets from around Android 2.0, not a user research method. They set the style, safe area and export sizes for launcher icons, menu icons, status bar icons, tab icons and widgets, and come with Photoshop templates. When making icons for an Android assignment, use them to check sizes and lighting; do not treat them as a book on process design.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Each icon needs a separate version for each screen density; for example, a launcher icon is 72×72 pixels at hdpi and 48×48 pixels at mdpi, exported as a transparent PNG.</li>
+<li>The icon itself must sit inside the frame, with the outer area left for shadows and special effects; square icons get a smaller frame so that all icons look the same visual weight.</li>
+<li>Menu icons (shown after pressing Menu) are drawn flat and front-on, without 3D perspective; there is a 6-pixel safe area inside the 48×48 frame, and rounded corners are used on suitable shapes.</li>
+<li>Status bar icons are smaller (25×25, with a 2-pixel safe area around them) and higher in contrast; only phone-related icons use a colour fill.</li>
+<li>Widgets must share one set of shadows with the other elements on the home screen, and have standard sizes in landscape orientation as well.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Draw the basic shape in Illustrator first, then bring it into Photoshop, scale it to the specified size, and add effects in this order: front gradient, inner shadow, outer glow, inner bevel.</li>
+<li>Keep the core graphic inside the safe area; only glows and shadows may extend into it.</li>
+<li>Check against the "do and don't" examples: perspective, rounded corners, safe area and export format.</li>
+<li>For widgets, first match the standard landscape sizes, then check that the shadows match the home screen.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-android-interaction-and-visual-design-guidelines-1.jpg" alt="Icon texture examples"><figcaption>Texture examples to refer to when drawing icons; textures and colours can be recombined into new surfaces. Source: <span lang="zh-Hant">《Android 交互視覺設計規範》</span>, p.6</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-android-interaction-and-visual-design-guidelines-2.jpg" alt="Landscape widget sizes"><figcaption>Standard widget sizes in landscape orientation; shadows must match the other elements on the home screen. Source: same book, p.19</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What are the frame sizes and safe areas for menu icons and status bar icons? Which kind uses colour?</li>
+<li>Sketch a 48×48 menu icon, marking the core graphic and the 6-pixel outer ring where shadows may go.</li>
+</ol>
+<h3 class="book" id="b-the-user-is-always-right-a-practical-guide-to-creating-and"><span lang="zh-Hant">贏在用戶：Web 人物角色創建和應用實踐指南</span></h3>
+<p><strong>Original title:</strong> <em>The User Is Always Right: A Practical Guide to Creating and Using Personas for the Web</em></p>
+<p><strong>Authors:</strong> Steve Mulder, Ziv Yaar</p>
+<p><strong>Scope.</strong> This book turns personas from a slogan into steps you can carry out: business results depend on users, you are not your user, you must have direct contact, and research findings must be able to drive decisions. The sample persona, Francis, is a first-time home buyer; the front and back of her card separate her personal description, her goals, and what the website hopes she will do. Use it after interviews, to gather scattered quotes into one persona card you can take into a meeting.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>If user-centred design stays a slogan, meetings still go round in circles; personas exist so that research findings can be used to make design decisions.</li>
+<li>A persona must state both user goals and business goals. Francis comes to the site to understand how buying a home works; the company wants her to complete particular actions.</li>
+<li>The fathers of the persona are Alan Cooper and Robert Reimann; this book carries the tool into everyday use on website projects and explains that it is still evolving.</li>
+<li>A persona card should let people see "she doesn't know where to start", not just demographics.</li>
+<li>Talking about user needs in meetings is not enough; decisions still have to be made against real users.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Check the project in five steps: do results depend on users, does the team treat itself as the user, is there direct contact, can the findings be acted on, are decisions based on research.</li>
+<li>For each persona, write a personal description, goals for the visit, what the business hopes for, and information relevant to the task (in the book's example, home-buying information).</li>
+<li>Make the persona into a two-sided card and bring it to the meeting that discusses "where to start".</li>
+<li>After the meeting, record which decisions changed because of the card, and which were still just the preference of the most senior person.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-the-user-is-always-right-a-practical-guide-to-creating-and-1.jpg" alt="Persona card for Francis"><figcaption>First-time buyer Francis doesn't know where to start; the two-sided persona card sets out what she wants and the property knowledge she must learn first. Source: <span lang="zh-Hant">《贏在用戶：Web 人物角色創建和應用實踐指南》</span>, p.152</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-the-user-is-always-right-a-practical-guide-to-creating-and-2.jpg" alt="A difficult requirements meeting"><figcaption>Meetings talk at length about changing the site for real users, yet the process often goes badly. Source: same book, p.13</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>In the style of Francis, write four lines for "someone applying for a dormitory place through the school system for the first time": who she is, her goal, what the site wants her to do, and where she gets stuck.</li>
+<li>Think back to a group discussion: did anyone substitute their own habits for the user's? If you had a persona card, which sentence could have stopped that?</li>
+</ol>
+<h3 class="book" id="b-don-t-make-me-think-2nd-english-edition"><span lang="zh-Hant">Don't Make Me Think（英文第 2 版）</span></h3>
+<p><strong>Original title:</strong> <em>Don't Make Me Think: A Common Sense Approach to Web Usability</em>, 2nd edition</p>
+<p><strong>Author:</strong> Steve Krug</p>
+<p><strong>Scope.</strong> This is the 2nd English edition of <em>Don't Make Me Think</em>. The author kept the book short on purpose, hoping people would finish it on a flight, and wanted the book's own layout to demonstrate what it teaches. The 2nd edition is still about principles rather than technology. The contents run from how people really use the web, to signpost-style navigation, cutting needless words, and what to do when your boss insists on the wrong solution.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Being short and quick to read is one of the goals; some people finish it in about two hours. The author sees this as practising what the book preaches.</li>
+<li>Because it deals with principles, not one year's technology, the 1st edition still held up years later; the author only agreed to rewrite it for the 2nd edition after teaching it.</li>
+<li>The main threads in the contents include: how people actually use web pages, choosing with rough categories like "animal, vegetable or mineral", cutting unnecessary words, and street signs and breadcrumbs.</li>
+<li>Another chapter deals with "my boss wants me to do it this way": you know what is right, but stakeholders insist on something else.</li>
+<li>Small quizzes are scattered through the book. They first ask whether you know what the site is and where to start; the answers come on later pages.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Open an unfamiliar web page and take ten seconds to answer: what site is this? Where do I start? If you can't, mark the elements that made you hesitate.</li>
+<li>Write navigation as street signs: where you are now and the next places you can go, not a pile of links of equal rank.</li>
+<li>Cut sentences that don't help a decision, then read again and see whether the task got shorter.</li>
+<li>When a proposal is rejected, write down the reasons the other side insists on and the cost users will pay, ready for the kind of persuasion scenes in Chapter 12.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-don-t-make-me-think-2nd-english-edition-1.jpg" alt="etour starting-point quiz"><figcaption>The book uses etour.com to ask: do you know where to start? The answer is on a later page. Source: <span lang="zh-Hant">《Don't Make Me Think（英文第 2 版）》</span>, p.127</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-don-t-make-me-think-2nd-english-edition-2.jpg" alt="Quiz on what works"><figcaption>Another exercise first asks readers to judge what works and what doesn't; the answers are on later pages. Source: same book, p.101</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Pick an English website and write two sentences: What is this site? Where do I start? Which one takes you more than three seconds?</li>
+<li>Cut a paragraph of explanation on that page down to only the words needed to act, and count how many words you removed.</li>
+</ol>
+<h3 class="book" id="b-ui-masters-methods-for-user-experience-interaction-and"><span lang="zh-Hant">UI 羣英匯：用戶體驗、交互與視覺設計方法論</span></h3>
+<p><strong>Scope.</strong> This is a collection of project write-ups by practitioners in mainland China, not a theory book by a single author. It is organised into web, software and icons. Chapter 1, by Yu Zongbo of Alibaba, covers an e-commerce redesign: from requirements, typical users, filter architecture and flows, and paper prototypes, to internal review and user research. Later chapters cover graphics for QQLive, game login screens and icon drawing. Use it to see how a commercial project delivers concrete documents.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Listen to users, but also choose. Following users completely and constantly educating users are both untenable.</li>
+<li>Online behaviour in e-commerce is tied to offline buying and payment habits. When there are too many search results, users want filters, which means interaction and search teams must build faceted navigation together.</li>
+<li>Taobao's 2010 home page raised and enlarged the search box and changed horizontal navigation to vertical; research reported that about 77% of people saw the search box by the 4th second.</li>
+<li>Interaction documents include concept diagrams, architecture diagrams, flow charts and paper prototypes, and only then come visuals and front-end work.</li>
+<li>Peace of mind for large payments does not come from one sentence on the detail page; it also involves resources such as instalments, prepayment and cash on delivery.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write one page on the project's current state: the existing interface, the areas to strengthen or weaken, how traffic is expected to change, and why.</li>
+<li>For a filter feature, first draw the logical architecture, then the task flow, then make a paper prototype.</li>
+<li>Compare design drafts internally first, pick representative options, take them to user research, and only then finalise.</li>
+<li>If you use a drawing tablet for icons or game interfaces, you can lay in flat colour along the outer outline instead of tracing paths with the pen tool first.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-ui-masters-methods-for-user-experience-interaction-and-1.jpg" alt="Laying in colour by outline"><figcaption>The sword's single-colour layer is filled solid along its outline, so people with a drawing tablet can finish it with brushstrokes instead of tracing paths with a mouse. Source: <span lang="zh-Hant">《UI 羣英匯：用戶體驗、交互與視覺設計方法論》</span>, p.265</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-ui-masters-methods-for-user-experience-interaction-and-2.jpg" alt="Internal review of drafts"><figcaption>Finished drafts are first compared internally to choose representative options; user research is then done on these drafts before finalising. Source: same book, p.77</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Write three filter dimensions for a product list, and draw a flow for "how a user adds and then removes a condition".</li>
+<li>For your next design draft, which two things should the internal review look at, and which task should user research ask about?</li>
+</ol>
+<h3 class="book" id="b-designing-web-interfaces"><span lang="zh-Hant">Web 界面設計</span></h3>
+<p><strong>Original title:</strong> <em>Designing Web Interfaces: Principles and Patterns for Rich Interactions</em></p>
+<p><strong>Authors:</strong> Bill Scott, Theresa Neil</p>
+<p><strong>Scope.</strong> The two authors gather their experience of rich internet applications from the Sabre years and of the Yahoo! Design Pattern Library into patterns and anti-patterns. The subject is rich interaction on the web; it is neither an information architecture textbook nor a visual design book. In 2004 Gmail and Google Maps used the technique later called Ajax to pan and zoom without reloading the whole page, in contrast to MapQuest at the time, which reloaded with every move.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The line between web and desktop has blurred, but rich interaction on web pages still has its own conditions. In-page editing comes from the desktop, but on the web it follows a different set of habits.</li>
+<li>A design pattern describes a recurring problem and the core of its solution; an anti-pattern is a common mistake to avoid.</li>
+<li>Patterns become a vocabulary for talking with clients and for designing new systems or reworking old ones.</li>
+<li>The book's principles support these patterns and discuss best practice in the web environment.</li>
+<li>Developers only dare to use the relevant technologies in everyday products once browsers support them widely.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For every interaction problem, first write "what is the recurring problem", then the core of the solution, instead of just pasting a finished picture.</li>
+<li>Compare the desktop approach with the web approach: for in-page editing, drag and drop or live updates, how do you show state without a full page reload?</li>
+<li>Collect anti-patterns: list the places in your product where "every small action reloads the whole page".</li>
+<li>When talking with developers, agree on pattern names first, then discuss visuals.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-designing-web-interfaces-1.jpg" alt="Title page with authors"><figcaption>The title page lists Bill Scott and Theresa Neil; the Chinese edition was translated by Li Songfeng. Source: <span lang="zh-Hant">《Web 界面設計》</span>, p.2</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>In two sentences, describe a web interaction you have made: what was the recurring problem, and what was the core of the solution?</li>
+<li>Find an action that still reloads the whole page, and explain what state changes users would need to see if it were done within the page.</li>
+</ol>
+<h3 class="book" id="b-sense-of-form-creative-development-and-rapid-expression-in"><span lang="zh-Hant">形式感：網頁視覺設計創意拓展與快速表現</span></h3>
+<p><strong>Scope.</strong> The author works in Tencent's design team TGideas, and the book grew out of a popular tutorial on the ZCOOL site; it calls itself an emergency handbook for visual form. It does not teach front-end coding, nor does it cover composition or colour theory systematically. It is aimed at web designers who must produce campaign pages in a short time: a strong theme, fast output, eye-catching visuals. Portals, platforms and brand sites are updated on long cycles; campaign pages often stay online for only a week to a month, but there are a great many of them.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The type of site decides the emphasis: portals stress indexing, platforms stress interaction, brand sites stress concept and multimedia, and campaign sites stress precision, speed and bold visuals.</li>
+<li>Everyday campaign pages depend more on visual form than long-term products do, because they serve one marketing push, not a complete information architecture.</li>
+<li>The book's ten methods target creative blocks. Most cases are game web pages, while the showcase section is broader, and the methods can be carried over to campaigns for other products.</li>
+<li>Sticking to a width of about 1000 pixels means giving up the picture for phone and tablet users, so full-screen, multi-device approaches have become a trend.</li>
+<li>Long-term information (data on character classes, races, dungeons, items and the like) suits a white background that wears well; campaign blocks update quickly, so their visuals can be bolder.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When you get a brief, classify it first: is this a portal, a platform, a brand site, or a campaign that comes down within a week? Then decide how bold the form can be.</li>
+<li>A campaign page should focus on one theme. Produce, against the clock, one draft that "can be seen at a glance"; do not look to this book for interaction flows.</li>
+<li>Check width: besides the fixed desktop width, look at least once at whether the main visual survives on a narrower screen.</li>
+<li>On the same page, treat "information that stays for a long time" separately from "this campaign", and keep the information area on white with less stimulation.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-sense-of-form-creative-development-and-rapid-expression-in-1.jpg" alt="Full-screen across devices"><figcaption>If a page sticks to about 1000 pixels wide, users on phones and tablets lose the picture, so the book discusses full-screen approaches across devices. Source: <span lang="zh-Hant">《形式感：網頁視覺設計創意拓展與快速表現》</span>, p.151</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-sense-of-form-creative-development-and-rapid-expression-in-2.jpg" alt="Information area on white"><figcaption>Slow-changing, long-term information sits on white, so data on classes, races, dungeons and items looks steadier. Source: same book, p.175</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Take a game or brand campaign page and circle "the campaign that lives for one week" and "the information that stays a long time". Is the visual intensity of the two kept apart?</li>
+<li>Redraw a 1000-pixel-wide main visual as a narrow-screen sketch, and write down which element must stay.</li>
+</ol>
+<h3 class="book" id="b-designing-interactions"><span lang="zh-Hant">關鍵設計報告：改變過去影響未來的交互設計法則</span></h3>
+<p><strong>Original title:</strong> <em>Designing Interactions</em></p>
+<p><strong>Author:</strong> Bill Moggridge</p>
+<p><strong>Scope.</strong> This is an oral history of interaction design by a co-founder of IDEO. Through interviews and commentary, he introduces more than forty pioneers around about ten themes, from the mouse, the desktop and the personal computer to the internet and physical interfaces. The aim is to see how these people discovered problems; it is not a step-by-step manual. Gillian Crampton Smith answers "what is interaction design?" in the book.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Interaction design as a discipline is linked to Moggridge's experience designing an early laptop, and to his way of bringing creativity and technology together.</li>
+<li>Technology moves from function to community; good interaction design needs its own language, not just interface flows.</li>
+<li>Once computing quietly enters everyday objects, how people control these bits and what form the bits take are questions the book keeps asking.</li>
+<li>Cases include a watch with a radio, chips that cause inconvenience, why the mouse, and why the desktop.</li>
+<li>Service systems are also covered; Fran Samalionis of IDEO discusses the process and ideas of service design.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each interview, note only three things: the constraints of the time, the people the designer observed, and the interaction form that remained (the mouse, the desktop or something else).</li>
+<li>Write about "the interface" and "human behaviour" separately. The book stresses that many discussions stop at surface flows and say little about behaviour.</li>
+<li>When looking at early office computers, ask whether they went beyond what people then expected of office tools.</li>
+<li>Use this book to build a timeline; do not try to extract a one-size-fits-all checklist from it.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-designing-interactions-1.jpg" alt="Service design discussion"><figcaption>In the book, young people talk about the process of service systems, and Fran Samalionis of IDEO continues the same topic. Source: <span lang="zh-Hant">《關鍵設計報告：改變過去影響未來的交互設計法則》</span>, p.284</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-designing-interactions-2.jpg" alt="Early office computer"><figcaption>Early machines like this were mostly used by secretaries and assistants for word processing; besides the price, their pace of development also exceeded what people then expected of office tools. Source: same book, p.148</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>In three sentences, retell why the mouse appeared, or why the interface became a desktop. Write only reasons given in the book.</li>
+<li>Choose a digital product you touch every day, and write down which "old tool" it corresponds to and how people originally expected to use it.</li>
+</ol>
+<h3 class="book" id="b-don-t-make-me-think-chinese-edition"><span lang="zh-Hant">點石成金：訪客至上的網頁秘籍</span></h3>
+<p><strong>Original title:</strong> <em>Don't Make Me Think: A Common Sense Approach to Web Usability</em>, 2nd edition</p>
+<p><strong>Author:</strong> Steve Krug</p>
+<p><strong>Scope.</strong> This is the preface and related chapters of the Chinese edition of the 2nd edition of <em>Don't Make Me Think</em>. Krug explains what the 2nd edition adds: explanations rewritten after his workshops, Chapter 12 "my boss wants me to do it this way", and the material on goodwill toward visitors (Chapter 10) and accessibility (Chapter 11) that had been cut earlier. To make room, he asked readers of the 1st edition to vote on what could be removed. The long section on user testing was squeezed into one chapter, and the rest was put on his website to read for free.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The principles have not been made obsolete by pop-up ads or phishing; the 2nd edition still does not become a book on web applications, which Krug thinks someone else should write.</li>
+<li>The new content falls into three kinds: points he only learned to explain clearly later, how to say no to a boss or client, and goodwill and accessibility.</li>
+<li>Examples include the marketing department demanding a pile of personal details before people can subscribe, with the result that many people use fake names.</li>
+<li>If a tab bar has no selected tab, users may not even notice in the first few seconds that it is a set of tabs. The book uses Quicken.com as an example.</li>
+<li>Staying short is the book's rule for itself: adding pages means cutting pages.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Check navigation tabs: when you land on the page, is one tab already selected?</li>
+<li>List the fields that "stakeholders insist on but that produce junk data", and prepare an alternative you can take to the meeting.</li>
+<li>If you cannot run full user testing, at least boil the testing down to a few points everyone needs to know, rather than a very long report.</li>
+<li>When redesigning, first ask old readers or old users what can be cut, then decide what to add.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-don-t-make-me-think-chinese-edition-1.jpg" alt="A selected tab"><figcaption>One tab should already be selected when you enter a site; if not, as with Quicken.com in the text, you may not see that there are tabs in the first few seconds. Source: <span lang="zh-Hant">《點石成金：訪客至上的網頁秘籍》</span>, p.78</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-don-t-make-me-think-chinese-edition-2.jpg" alt="2nd edition dedication"><figcaption>This page is the 2nd edition's dedication, written to the author's family. Source: same book, p.14</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Find a website with tab navigation, ignore the colours and look only at the shapes: can you point out at once "which page am I on now"?</li>
+<li>Write three sentences you would say to a marketing colleague who insists on a longer sign-up form, mentioning the consequences of fake data.</li>
+</ol>
+<h3 class="book" id="b-designing-with-the-mind-in-mind"><span lang="zh-Hant">認知與設計：理解 UI 設計準則</span></h3>
+<p><strong>Original title:</strong> <em>Designing with the Mind in Mind: Simple Guide to Understanding User Interface Design Rules</em></p>
+<p><strong>Scope.</strong> This book explains where interface guidelines come from, and why they cannot be followed like a recipe. It compares two well-known sets of guidelines, Shneiderman's and Nielsen and Molich's, and shows that they are similar because both come from human cognition, not because one copied the other. Chapter 1 is about how we see what we expect: experience, context and goals all change perception. Read it before memorising any checklist, to understand how to choose when guidelines conflict.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Guidelines usually describe goals, not actions. Several can apply to the same situation and conflict with each other, for example wanting many features yet easy learning, or wanting WYSIWYG yet access for blind users.</li>
+<li>Guidelines are like laws: they must be interpreted by people who understand the principles and have experience, not applied line by line.</li>
+<li>Many lists do not explain their basis. Norman's rules from the 1980s, based on cognition and error, are one of the few examples with a theoretical background.</li>
+<li>People see what they expect to see. When looking for a campus map on a website, objects related to the goal attract the eye and the cursor, and the rest are easily ignored.</li>
+<li>Instructions can be both short and clear. The book compares how Jeep shortened its "find a dealer" instructions between 2002 and 2007.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When two guidelines clash, write down the goal of this screen, then decide which guideline serves that goal.</li>
+<li>When designing an interface for finding things, make the goal-related objects prominent, and accept that the rest will be ignored.</li>
+<li>Shorten a set of instructions round by round, each time keeping only the words needed for the next step, as in the Jeep dealer example.</li>
+<li>Avoid objects that can be read two ways; with different goals, contexts and user experience, people see different things.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-designing-with-the-mind-in-mind-1.jpg" alt="Goals guide the eye"><figcaption>When looking for a campus map on a website, objects that help people reach their goal attract the eye and the cursor, while unrelated objects are more easily ignored. Source: <span lang="zh-Hant">《認知與設計：理解 UI 設計準則》</span>, p.20</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-designing-with-the-mind-in-mind-2.jpg" alt="Shortened instructions"><figcaption>Instructions can be short and still clear; the book compares how Jeep shortened its instructions for finding a local dealer between 2002 and 2007. Source: same book, p.55</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Write down a pair of conflicting goals (for example many features and easy learning), and explain which one you satisfy first on a given screen, and why.</li>
+<li>Rewrite four lines of operating instructions as two, so that people still know where to press first.</li>
+</ol>
+<h3 class="book" id="b-simple-and-usable"><span lang="zh-Hant">簡約至上：交互設計四策略</span></h3>
+<p><strong>Original title:</strong> <em>Simple and Usable Web, Mobile, and Interaction Design</em></p>
+<p><strong>Scope.</strong> This book uses products such as the Flip video camera to show that simple means users find it easy to use; it does not mean a short feature list, or reports that are easy for management to produce. The author distinguishes experts, willing adopters and mainstream users, and argues for designing for the mainstream. The later part gathers the approach into strategies that can be used together: remove, organise, hide, and displace by rearranging the layout.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The Flip had only a few buttons and a flip-out USB plug, with no driver disc; it targeted people who wanted to shoot casually and post to YouTube, not people making home blockbusters. Sony and Panasonic were still adding movie-style effects at the time.</li>
+<li>What Pogue calls "bragging value" makes people enjoy being surrounded by extra features; after 2008, extra features became a burden. Junk features in software raise maintenance costs and stop people finding what they really need.</li>
+<li>An intranet example: to get reports generated automatically, management shifted the form-filling onto the sales staff. It was simple for managers, but not for users.</li>
+<li>Of the three kinds of user, mainstream users want a sense of control. Expert users should not drive the feature list.</li>
+<li>Removing what is unnecessary, organising what stays and hiding what is not core can be used together; displacing means rearranging the interface.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When writing user stories, record frustrations first and advanced capabilities second. The book's PVR example: being able to watch and record several programmes at once ranks below solving common frustrations.</li>
+<li>Label each feature: remove, organise into an obvious place, hide on the next level, or move to another screen.</li>
+<li>Describe the same process in three sentences, one each from a manager, an engineer and a user, and see who the "simplicity" actually lands on.</li>
+<li>Get out of the office and observe what mainstream users actually do at work, at home and outdoors.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-simple-and-usable-1.jpg" alt="Four simplification strategies"><figcaption>Remove, organise and hide can be used together; displace means rearranging the interface. Source: <span lang="zh-Hant">《簡約至上：交互設計四策略》</span>, p.168</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-simple-and-usable-2.jpg" alt="User stories and frustrations"><figcaption>When writing user stories, find the common frustrations; for a PVR, watching and recording several programmes at once is a secondary capability. Source: same book, p.79</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Pick an appliance or app with lots of features, and write one change you would make for each of "remove, organise, hide, displace".</li>
+<li>Describe a process that saves managers effort but makes front-line users fill in an extra page of forms.</li>
+</ol>
+<h3 class="book" id="b-seeing-the-big-in-the-small-deconstructing-web-user"><span lang="zh-Hant">見微知著：Web 用戶體驗解構</span></h3>
+<p><strong>Author:</strong> Li Qing</p>
+<p><strong>Scope.</strong> Working at Alibaba and in consulting, Li Qing found that iteration moved too fast for every detail to be lab-tested. This book breaks a site down from overall layout and colour, to the login area, content area and ad area, and then to buttons, feedback, CAPTCHAs, type and tone of voice. Each item is matched with research findings, the practice of well-known sites and key design points. When you are revising one part of an interface, turn straight to that section rather than reading the theory from the start.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A website's experience is a subjective impression formed by its purpose, brand, how smoothly it operates, speed and details together, including whether people can finish their task, whether they like it, and whether they want to come back.</li>
+<li>A single detail shows up in sign-up rates and page views. Building up solutions for each detail in advance reduces the back-and-forth revisions with product managers.</li>
+<li>The book runs from the whole to the parts; if you are changing only one area, you can skip chapters.</li>
+<li>Layouts such as wide-left, narrow-right suit left-to-right, top-to-bottom scanning. They work for sites with lots of content and clear categories, letting people find content by following the navigation.</li>
+<li>Interaction designers, researchers, visual designers and product managers use the same deconstruction; each simply applies it to drawing wireframes, making comparisons or judging options.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before a redesign, break the page into a list: layout, login, content, ads, buttons, error feedback, CAPTCHA, type, tone. Dig into only one item at a time.</li>
+<li>For each item, note: what research or the literature says, how well-known sites do it, which option your site chooses, and why.</li>
+<li>When judging layout, let "is there a lot of content, are the navigation categories clear" decide whether to use wide-left, narrow-right, instead of first picking columns that look nice.</li>
+<li>When you can't test, use live data to compare two detail solutions that are already online.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-seeing-the-big-in-the-small-deconstructing-web-user-1.jpg" alt="Wide-left, narrow-right layout"><figcaption>A left-to-right, top-to-bottom layout makes it easy to find content by following the navigation, and suits sites with lots of content and clear categories. Source: <span lang="zh-Hant">《見微知著：Web 用戶體驗解構》</span>, p.46</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-seeing-the-big-in-the-small-deconstructing-web-user-2.jpg" alt="Title page"><figcaption>Illustration from the book. Source: same book, p.1</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Break a website you visit often into five elements (layout, login, buttons, error messages, tone), and write one sentence on how it currently handles each.</li>
+<li>Would you use the same column layout for a content-heavy site and a campaign page? Give one reason for each.</li>
+</ol>
+<h3 class="book" id="b-walking-with-the-world-s-ui-designers"><span lang="zh-Hant">與世界 UI 設計師同行</span></h3>
+<p><strong>Scope.</strong> This is a portfolio collection of graphical user interfaces, arranged by type of app: restaurants, weather, calendars, travel, transport, music, icons and various GUI kits. Each entry usually gives the designer's name and region. There is no unifying method chapter. Use it to compare side by side "how different apps of the same type can be"; for example, the book shows several weather apps in a row.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The contents page is itself a classification: weather, calendars, city guides, airports, public transport, cycling, music, photography, icons and interface kits are shown separately.</li>
+<li>The same function (weather or calendar) can have very different main screens. What you compare is the information hierarchy and the entry points for actions, not whose illustration is more detailed.</li>
+<li>Works come with their authors and sources, for example Gergely Hangyás from Hungary and Gianpaolo Tucci from Italy.</li>
+<li>Some designs draw the route as an image, treated as an extra service rather than a basic step.</li>
+<li>Later sections also include phone themes, minimal icons and sets of interface components. They can serve as visual vocabulary but should not be treated as guidelines.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Pick one category (only weather, or only calendars), put three main screens side by side, and write down the first action each one prompts you to take.</li>
+<li>Record the designer and link so you can find the original later; don't just save screenshots.</li>
+<li>Ask: if the decoration were removed from this screen, would the core task still be there?</li>
+<li>Split your notes into two columns: "structure I can borrow" and "skin that belongs only to this brand".</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-walking-with-the-world-s-ui-designers-1.jpg" alt="Route drawn as an image"><figcaption>Drawing the final route as an image is described in the text as an extra service; the designer is Gergely Hangyás from Hungary. Source: <span lang="zh-Hant">《與世界 UI 設計師同行》</span>, p.102</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-walking-with-the-world-s-ui-designers-2.jpg" alt="Living space proposal"><figcaption>A proposal by Gianpaolo Tucci from Italy for a Hyundai competition, dealing with living space. Source: same book, p.200</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose two of the weather apps in the book, and write one sentence each on the first action after opening them.</li>
+<li>Choose one page of work and write separately: which part is the task structure, and which part is a visual skin that could be swapped out.</li>
+</ol>
+<h3 class="book" id="b-a-project-guide-to-ux-design-2nd-edition"><span lang="zh-Hant">UX 設計之道：以用戶體驗為中心的 Web 設計（第 2 版）</span></h3>
+<p><strong>Original title:</strong> <em>A Project Guide to UX Design: For User Experience Designers in the Field or in the Making</em>, 2nd edition</p>
+<p><strong>Authors:</strong> Russ Unger, Carolyn Chandler</p>
+<p><strong>Scope.</strong> This is a project handbook for people who don't know how to get user experience work going in a real company, and for people who want to move from visual design into this role. The two authors provide tools and the situations to use them in, and suggest reading at three depths: "surfing, snorkelling and deep diving". The 2nd edition adds remote research tools, Lean UX, designing for mobile devices, and approaches to the visual and emotional layer.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A UX role touches content strategy, research, kick-off meetings, design, prototyping and user testing all at once; the book gives a core set, not an encyclopedia.</li>
+<li>Writing the book is compared to the design process: research, immersion, talking to people and experts, generating concepts, building structure, and only then going into detail.</li>
+<li>Curiosity, passion and empathy are placed in Chapter 1 as the starting point for doing this work.</li>
+<li>Requirements can be assessed with a prioritisation table that shows importance and feasibility together, each rated low, medium or high.</li>
+<li>Methodology can be adapted: the cases in the book are a starting point for making a version that fits your own project.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>At the start of a project, write down whether you are surfing, snorkelling or deep diving, and use that to decide which layer of tools to read this week.</li>
+<li>Make a prioritisation table: each requirement gets an importance score and a feasibility score; do first what is both important and achievable.</li>
+<li>Of the four areas new in the 2nd edition (remote research, Lean, mobile, emotional visual design), go deep only on the one that relates to your project.</li>
+<li>At the kick-off meeting, first agree on "which users we are learning about this time", then bring out the tools.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-a-project-guide-to-ux-design-2nd-edition-1.jpg" alt="Prioritisation worksheet"><figcaption>The prioritisation table marks each requirement for importance and feasibility, rated low, medium or high. Source: <span lang="zh-Hant">《UX 設計之道：以用戶體驗為中心的 Web 設計（第 2 版）》</span>, p.169</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-a-project-guide-to-ux-design-2nd-edition-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: same book, p.19</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>List five requirements for your course project, mark each low, medium or high for importance and feasibility, and circle the two you would do first.</li>
+<li>Are you surfing, snorkelling or deep diving this week? Write down one concrete action that follows (for example one remote interview, or one mobile flow).</li>
+</ol>
+<h3 class="book" id="b-golden-rules-of-ui-design-100-user-interfaces-that-move"><span lang="zh-Hant">UI 設計黃金法則：觸動人心的 100 種用戶界面</span></h3>
+<p><strong>Original title:</strong> <em>Digital Design Essentials: 100 Ways to Design Better Desktop, Web, and Mobile Interfaces</em></p>
+<p><strong>Scope.</strong> This book is organised around the interfaces of one hundred kinds of digital product, from the command line and graphical interfaces to natural interfaces, multi-touch and organic interfaces. It covers desktop, web, mobile and TV interfaces viewed from about ten feet away. Each entry gives the key features of one product type (notepad, email, image editor, shopping cart, payment, forum, phone clock and so on). It is for learning the types, not a redesign diary for a single product.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The user interface is the point of contact between people and digital products. The book quotes Steve Jobs as a reminder: design should show how a product works.</li>
+<li>The front of the book lists a set of lessons to compare the cases against: lightweight, simple, operable, consistent, feedback, error tolerance, user-led.</li>
+<li>Desktop examples include Microsoft Notepad, the University of Washington's Alpine email client, Visual Studio 2012 and image editors.</li>
+<li>Web types run from blogs, directories, shopping carts, payment and accounts all the way to wikis, ratings, CMSs and search-optimised pages.</li>
+<li>Mobile types separate native apps, mobile web and hybrid apps, and list gestures, stylus, voice, Bluetooth and near-field communication separately.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When you take on a new product type, first find the closest type among the hundred entries, copy down its key features, then adapt them to your task.</li>
+<li>Use the set of words at the front of the book to check a screen: can users operate it, can they recover from errors, are the main actions started by the user?</li>
+<li>Record platforms separately: don't merge the interface types of the same function on desktop, browser and phone into one entry.</li>
+<li>When looking at a case, write down "the part this type must have" (for example, cart and payment kept separate), rather than just describing the colours.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-golden-rules-of-ui-design-100-user-interfaces-that-move-1.jpg" alt="HTML5 Tetris"><figcaption>A Tetris game built with HTML5: canvas draws the blocks and animation, CSS3 sets the colours, and local storage saves the scores. Source: <span lang="zh-Hant">《UI 設計黃金法則：觸動人心的 100 種用戶界面》</span>, p.109</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-golden-rules-of-ui-design-100-user-interfaces-that-move-2.jpg" alt="Financial dashboard"><figcaption>A financial information system uses a single-page dashboard to show a data overview and key indicators, with important figures marked in brighter colours. Source: same book, p.35</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>From the book's contents, choose a type you have never designed (for example a ten-foot interface or a knowledge base), and list three features it cannot do without.</li>
+<li>Look at a dashboard and point out which number uses a stronger colour. Is it the indicator users should read first?</li>
+</ol>
+<h3 class="book" id="b-sexy-web-design-creating-interfaces-that-work"><span lang="zh-Hant">Sexy Web Design：Creating Interfaces that Work</span></h3>
+<p><strong>Author:</strong> Elliot Jay Stocks</p>
+<p><strong>Scope.</strong> Written by Elliot Jay Stocks for SitePoint, this book moves from interfaces in real life to interfaces on the web. The opening chapter divides the goals into what a site does, what it looks like, and usability and accessibility, and only then turns to the design process. The tone suits newcomers to the profession, stressing that an interface can be attractive and must also work. The back of the book contains adverts for the publisher's other technical books; those pages are not case studies.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Interfaces existed in real objects before they existed on the web; web design must answer questions of both behaviour and appearance.</li>
+<li>Usability and accessibility stand alongside "what it looks like"; they are not checks added after the visuals are done.</li>
+<li>The design process gets a chapter of its own, used to turn goals into an interface that can be built.</li>
+<li>On the technical side, the book has code examples, plus sidebars such as tips, notes and warnings.</li>
+<li>Some spreads are adverts for other SitePoint books, such as the JavaScript primer by Kevin Yank and Cameron Adams; do not treat them as interface principles.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write three lines of goals for a website: what it does, what it must convey at first glance, and which aspect of accessibility cannot be skipped.</li>
+<li>First find an interface on a real object (a door, a ticket machine, a remote control), and write down which cue could be carried over to the web.</li>
+<li>When you read a code or layout example, note the "content area" and the "repeating background" separately.</li>
+<li>Skip the pure advert pages at the back and go back to the goal list in Chapter 1.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-sexy-web-design-creating-interfaces-that-work-1.jpg" alt="Advert for another book"><figcaption>This page is an advert for another SitePoint book on JavaScript, by Kevin Yank and Cameron Adams. Source: <em>Sexy Web Design: Creating Interfaces that Work</em>, p.177</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-sexy-web-design-creating-interfaces-that-work-2.jpg" alt="Background repeating in both directions"><figcaption>The background image surrounding the content area is set to tile in both directions. Source: same book, p.154</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>List the goals of your next web page in three lines: what it does, what it looks like, accessibility.</li>
+<li>Explain how a background image that "repeats in both directions" and one that "repeats only once" differ at the edges of the content area.</li>
+</ol>
+<h3 class="book" id="b-the-elements-of-user-experience-user-centered-design-for"><span lang="zh-Hant">用戶體驗的要素：以用戶為中心的 Web 設計</span></h3>
+<p><strong>Original title:</strong> <em>The Elements of User Experience: User-Centered Design for the Web</em></p>
+<p><strong>Author:</strong> Jesse James Garrett</p>
+<p><strong>Scope.</strong> This is the website version of Garrett's five-plane model. Around 2000 he noticed that the industry was using information design, information architecture and interface design interchangeably, so he stacked strategy, scope, structure, skeleton and surface from the bottom up into one diagram. The strategy plane holds site objectives, business goals and user needs, and every decision on the planes above must trace back to it. Use it before drawing wireframes, to check whether the project has stated its strategy clearly.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>From bottom to top, the five planes are: strategy, scope, structure, skeleton, surface.</li>
+<li>User needs and site objectives make up the strategy plane, the foundation for every later decision. On many projects this plane is unclear at the start.</li>
+<li>The model is meant to fix confused vocabulary: one document calls something information design, another calls it information architecture, and a third calls all of it interface design.</li>
+<li>The book divides the elements along a basic duality, so that different roles know how their work connects with the neighbouring planes.</li>
+<li>Remember that users are written as specific people. The book mentions a man named David, who studied industrial design and worked at companies including Motorola and DEC.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When starting a project, write two sentences on the current state of each of the five planes. If you can't write one of them, stop at that plane; don't start on the surface.</li>
+<li>On the strategy plane, write business goals and user needs separately, both specific enough to veto a feature.</li>
+<li>In team meetings, agree on terms first: which plane does each of you mean by architecture, skeleton and interface?</li>
+<li>Test requirements against a named person with a work context, instead of writing "users want convenience".</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-the-elements-of-user-experience-user-centered-design-for-1.jpg" alt="The example of David"><figcaption>The text introduces a man named David: he holds an industrial design degree from the Rochester Institute of Technology and has worked at companies including Motorola and DEC. Source: <span lang="zh-Hant">《用戶體驗的要素：以用戶為中心的 Web 設計》</span>, p.9</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-the-elements-of-user-experience-user-centered-design-for-2.jpg" alt="Strategy plane"><figcaption>User needs make up the strategy plane and should be the basis of every design decision; on many projects this plane is unclear at the start. Source: same book, p.52</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Write one sentence for each of the five planes for a course website. If the strategy plane only says "make it look good", rewrite it until it could veto a feature.</li>
+<li>Take a term you have heard (information architecture, interface, content) and explain which of the five planes it belongs to.</li>
+</ol>
+<h3 class="book" id="b-web-designer-magazine-emag"><span lang="zh-Hant">網頁設計（Web Designer eMag）</span></h3>
+<p><strong>Scope.</strong> This material is the <em>Web Designer</em> e-magazine, not a book on method. The file is labelled WD 120 eMag, while the sample page header reads 71 eMag. The content is tutorials and columns: Todd Yard builds a retro shooting game and a Pac-Man-style game, Steve Jenkins handles backgrounds with CSS, and the cover is pixel art by Gary Lucken (Army of Trolls). The magazine uses standard cues to tell readers where they can click, where there is a close-up, and where there is sound.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A single issue covers both game making and web techniques, aimed at hands-on web professionals.</li>
+<li>Cues such as "get interactive" explain what happens when you click; "Closer look" highlights how certain elements are presented; "hear this" signals sound elements.</li>
+<li>The CSS tutorial deals with positioning background images; its author writes both tutorials and a technical Q&amp;A.</li>
+<li>The cover artist moved from games-console pixel art to client work, and pixel art is treated as a craft that can be practised over and over.</li>
+<li>You read the magazine to follow one issue's techniques, not to build a complete user experience model.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When reading an issue, follow only one tutorial through to the end (background positioning, or a small game loop), and finish it before starting the next.</li>
+<li>Notice the magazine's own layer of cues: which part is steps, which is "look closer", and which is sound.</li>
+<li>For a pixel-art assignment, first limit the grid and the number of colours, and only then think about client work.</li>
+<li>Keep notes on tutorial steps separate from notes on that issue's showcase work, so you don't just collect pictures.</li>
+</ul>
+<p><strong>Study cues</strong></p>
+<ol>
+<li>In your own words, explain what each of the three column types in this material does: "clickable explanation", "close-up" and "sound cue".</li>
+<li>Choose CSS backgrounds or a small game, and list the three steps you will follow; don't do two tutorials at once.</li>
+</ol>
+<h3 class="book" id="b-don-t-make-me-think-a-common-sense-approach-to-web-usability"><span lang="zh-Hant">點石成金：訪客至上的網頁設計秘笈</span></h3>
+<p><strong>Original title:</strong> <em>Don't Make Me Think: A Common Sense Approach to Web Usability</em>, 2nd edition</p>
+<p><strong>Author:</strong> Steve Krug</p>
+<p><strong>Scope.</strong> The main text of this volume is the 2nd English edition of <em>Don't Make Me Think</em>, published in Chinese as <span lang="zh-Hant">《點石成金》</span>. The contents run from "don't make me think" to how people really use the web, choosing by rough categories, cutting needless words, street signs and breadcrumbs, and what to do when your boss insists on a different approach. Unlike the volume with the 2nd edition preface, this one is good for working through the chapters and practising "judge for yourself first, then turn to the answer".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The opening chapter asks that things be self-evident. If something can't be completely self-evident, it should at least need very little thought.</li>
+<li>"How people really use the web" is the premise for all the advice that follows, rather than assuming people read carefully.</li>
+<li>Choices can be as rough as "animal, vegetable or mineral": first help people into the right broad category, then give the details.</li>
+<li>Navigation is compared to street signs and breadcrumbs, answering where people are and where they can go.</li>
+<li>The book's exercises first ask readers what the site is, where to start and what works; the answers are on a stated page, forcing you to answer first.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Rewrite the main choices on a home page so that only two or three mutually exclusive broad categories are left, with the details on the next level.</li>
+<li>Cut the filler words and self-introduction from a paragraph of explanation, keeping only short, street-sign-style phrases.</li>
+<li>After finishing a screen, write down your own judgement first, then turn the page to compare with others' answers, and note what you missed.</li>
+<li>Write breadcrumbs as "the levels you have already passed through"; don't make them a second main navigation.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-don-t-make-me-think-a-common-sense-approach-to-web-usability-1.jpg" alt="Where to start"><figcaption>The exercise asks readers whether they know what the site is and where to start, using etour.com as the example; the answer is on a later page. Source: <span lang="zh-Hant">《點石成金：訪客至上的網頁設計秘笈》</span>, p.127</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-don-t-make-me-think-a-common-sense-approach-to-web-usability-2.jpg" alt="What works and what doesn't"><figcaption>Another page asks readers to judge first what works and what doesn't; the answers are on later pages. Source: same book, p.101</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Change a navigation bar into two levels, "three broad categories first, then the details", and write the labels for each level.</li>
+<li>Cover the answers and do the "what site is this, where do I start" test, then write down the element that made you hesitate.</li>
+</ol>
+<h3 class="book" id="b-ios-9-interface-guidelines-analysis-and-practice"><span lang="zh-Hant">iOS 9 界面設計規範剖析及實戰</span></h3>
+<p><strong>Scope.</strong> This book takes apart the interface components of the iOS 9 era and arranges them under UIKit's four categories: bars, content views, controls and temporary views. The first half covers the status bar, navigation bar, toolbar, tab bar and search bar; the second half covers activity views, collection views, maps, modals, scroll views, split views and tables. Use it on iOS assignments to check names and usage, rather than inventing your own set of system bars.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Immersive apps such as games can hide the status bar; ordinary apps keep the time and status visible.</li>
+<li>The search bar has a prominent style (the text uses Mail as an example) and a minimal style (the text uses Music as an example).</li>
+<li>A modal view is separate from the current content, often with a translucent blur behind it; it is used to complete a self-contained task.</li>
+<li>Tables can be grouped or plain rows, and provide controls for adding, deleting, multiple selection and moving to the next level.</li>
+<li>The toolbar has a set of standard icons; tab bars, maps, collections and split views each solve a different information density.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When drawing an iOS screen, first mark which of the four categories each part belongs to; don't draw a temporary view as permanent navigation.</li>
+<li>If search is the main task, use the prominent search bar; if it is a secondary entry point, use the smaller style.</li>
+<li>For tables, first decide between grouped and a single list, then decide whether rows have a disclosure arrow.</li>
+<li>Consider hiding the status bar only on immersive screens, and explain how users can see the time temporarily.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-ios-9-interface-guidelines-analysis-and-practice-1.jpg" alt="Export and version note"><figcaption>A side note on the illustration shows the export step, giving the version at the time as 1.2, last updated in April 2015. Source: <span lang="zh-Hant">《iOS 9 界面設計規範剖析及實戰》</span>, p.116</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-ios-9-interface-guidelines-analysis-and-practice-2.jpg" alt="Content list with search"><figcaption>The nearby text describes a content list with site-wide search, a games entry and programme items; it is not the component specification itself. Source: same book, p.24</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Draw a Mail-style screen and a Music-style screen, marking whether the search bar is prominent or minimal, and where the tab bar is.</li>
+<li>Explain how a modal view differs from pushing to the next level of a table, with an example of each that you have seen on iOS.</li>
+</ol>
+<h3 class="book" id="b-don-t-make-me-think-chinese-translation"><span lang="zh-Hant">不要讓我思考（Don't Make Me Think）</span></h3>
+<p><strong>Original title:</strong> <em>Don't Make Me Think: A Common Sense Approach to Web Usability</em>, 2nd edition</p>
+<p><strong>Author:</strong> Steve Krug</p>
+<p><strong>Scope.</strong> This is the Chinese edition of Krug's book. Its contents page spells out the slogan directly: some things make us think; if you can't make everything self-evident, at least reduce the thinking; and why this matters. The 2nd edition gives "Help! My boss wants me to..." a chapter of its own, about good people facing bad design decisions. The later part stresses that if you objectively cannot give users what they want, at least let them know you understand the inconvenience.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Usability failures are often one specific spot that forces people to stop and think, not necessarily a whole site lacking in aesthetics.</li>
+<li>The 2nd edition still keeps the length down. The three chapters on user testing were merged into one, and the pages saved were used for new content.</li>
+<li>The new "my boss wants me to" chapter deals with pressure from marketing, clients and shareholders, such as collecting too much personal data before people can subscribe.</li>
+<li>The chapter on goodwill admits that some constraints cannot be changed. The example is a university library where each database has its own password, so single sign-on is impossible.</li>
+<li>When you can't fix it, the minimum is to let users see that you know it is inconvenient, rather than pretending the process is smooth.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>On your own pages, circle the spots where "you have to stop and think", and write one sentence for each on what the user is thinking.</li>
+<li>If you can't remove an obstacle, write one line of interface text that admits the inconvenience and points to the next step.</li>
+<li>Prepare for the Chapter 12 scenario: answer "just add a few more required fields" with one concrete consequence, such as fake data or lost users.</li>
+<li>Boil user testing down to one page of conclusions everyone must read; keep the long version separately instead of stuffing it into the main report.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-don-t-make-me-think-chinese-translation-1.jpg" alt="Contents and Chapter 12"><figcaption>The contents page uses "a cat falling with buttered toast strapped to its back" to introduce Chapter 12: good people facing bad design decisions. Source: <span lang="zh-Hant">《不要讓我思考（Don't Make Me Think）》</span>, p.15</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-don-t-make-me-think-chinese-translation-2.jpg" alt="Admitting the inconvenience"><figcaption>If you can't give users what they want (for example, a library where each database has its own password and single sign-on is impossible), at least let them know you understand the inconvenience. Source: same book, p.138</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Find a process that forces several steps, and write one sentence for the screen that admits which step is inconvenient and tells people the next step.</li>
+<li>Suppose your boss asks for three more required fields. Write down one consequence that would produce junk data, to support your objection.</li>
+</ol>
+<h3 class="book" id="b-the-user-is-always-right-a-practical-guide-to-creating-and-2"><span lang="zh-Hant">贏在用戶：Web 人物角色創建和應用實踐指南</span></h3>
+<p><strong>Original title:</strong> <em>The User Is Always Right: A Practical Guide to Creating and Using Personas for the Web</em></p>
+<p><strong>Authors:</strong> Steve Mulder, Ziv Yaar</p>
+<p><strong>Scope.</strong> This volume stresses what personas do for the work: focus, empathy, consensus, efficiency and better decisions. It includes two quick-win stories and uses of personas beyond the website. It assumes readers already know what a persona is, and concentrates on getting managers and teams to treat personas as real people who can question the design. After clustering, the spreadsheet still has to be turned into people with names, photos and stories.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The benefits of personas are given as five points: they focus the team, build empathy, create consensus, raise efficiency and improve decisions.</li>
+<li>A manager can sit in a persona's chair (in the book, Howard from the busy segment) and question everything they see.</li>
+<li>Segments come from clustering; the clustering results are still a table, and only become believable people once names, photos and stories are added.</li>
+<li>The persona is a tool still in development. The book pays tribute to Cooper and Reimann, and also describes how Olsen, Manning and others have taken it into new areas.</li>
+<li>The quick-win stories show that personas are not an appendix to a research report, but something you can use straight away to align decisions.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Once clustering is done, insist on giving each group a name, a photo and a story about their day; never leave just a demographics table.</li>
+<li>When reviewing designs, designate a "Howard's chair": before speaking, state which persona you are speaking for.</li>
+<li>Keep only one main goal per persona, and write other needs as frustrations in the story, so the persona doesn't turn into a feature list.</li>
+<li>Pick one touchpoint beyond the website (phone, shop or email), and walk through it with the same persona.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-the-user-is-always-right-a-practical-guide-to-creating-and-2-1.jpg" alt="Sitting in Howard's chair"><figcaption>Once they know what a persona looks like, managers can sit in the place of busy user Howard and question the design he sees. Source: <span lang="zh-Hant">《贏在用戶：Web 人物角色創建和應用實踐指南》</span>, p.154</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-the-user-is-always-right-a-practical-guide-to-creating-and-2-2.jpg" alt="From clusters to people"><figcaption>Only after clustering produces segments and names, photos and stories are added does a spreadsheet become a believable persona. Source: same book, p.45</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Turn a user table that only has age and occupation into a persona with a name and a "Tuesday morning" story. Eight sentences maximum.</li>
+<li>In your next group review, require everyone to say "I am now so-and-so" before commenting on a screen. Try it once and note which comments went unsaid because of it.</li>
+</ol>
+<h3 class="book" id="b-about-face-the-essentials-of-interaction-design-early"><span lang="zh-Hant">軟件觀念革命：交互設計精髓</span></h3>
+<p><strong>Original title:</strong> <em>About Face 2.0: The Essentials of Interaction Design</em></p>
+<p><strong>Author:</strong> Alan Cooper</p>
+<p><strong>Scope.</strong> This is an earlier Chinese edition of <em>About Face</em>, whose Chinese title ("A Revolution in Software Thinking") stresses a shift in how we think about software. The structure is: first understand users (implementation models and mental models, beginners through to intermediate users, qualitative research, personas, scenarios), then design behaviour and form, and only then details such as the mouse, controls, dialogue boxes and error messages, finally extending to the web and embedded systems. Use it to compare with the later 3rd and 4th editions: this volume puts "designing behaviour" and a large amount of interface detail in the same table of contents.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Interaction design has its own working language. Building only by technology, marketing or tasks produces software that gradually gets abandoned.</li>
+<li>The model in the user's head and the implementation model inside the software are not the same thing; the interface should follow how people understand the task.</li>
+<li>Most people stay for a long time in the intermediate state between beginner and expert, and design should serve this group.</li>
+<li>After qualitative research, model with personas and goals, then use scenarios to turn goals into design.</li>
+<li>The detail chapters cover direct manipulation, selection, drag and drop, menus, toolbars, dialogue box etiquette, eliminating errors, and the web and embedded systems.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Draw two models: how the system works inside, and how the user thinks it works. Write the interface copy to follow the second.</li>
+<li>Design the main path for intermediate users; give beginners just an on-ramp, and tuck expert features where they don't get in the way.</li>
+<li>Write each goal as a scenario, then decide which controls are needed, instead of filling the screen with menus first.</li>
+<li>In complex screens, unselected objects are sometimes drawn as outlines only, to reduce the rendering load; the selected state must still be distinguishable.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-about-face-the-essentials-of-interaction-design-early-1.jpg" alt="How the development process evolved"><figcaption>The book reviews the software development process: at first programmers did everything; software built only for technology, marketing or tasks, rather than for user goals, gets abandoned. Source: <span lang="zh-Hant">《軟件觀念革命：交互設計精髓》</span>, p.59</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-about-face-the-essentials-of-interaction-design-early-2.jpg" alt="Outlines for unselected objects"><figcaption>In complex scenes, unselected objects are sometimes drawn as outlines only to lighten rendering; transparency is still computationally expensive. Source: same book, p.391</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a feature you use, and write two sentences on each: its implementation model (what the program actually does) and its mental model (what you think it does).</li>
+<li>Point out a command meant only for experts that sits in the way of the main path, and explain where it should be moved.</li>
+</ol>
+<h3 class="book" id="b-designing-the-obvious-a-common-sense-approach-to-web"><span lang="zh-Hant">一目瞭然：Web 軟件顯性設計之路</span></h3>
+<p><strong>Original title:</strong> <em>Designing the Obvious: A Common Sense Approach to Web Application Design</em></p>
+<p><strong>Scope.</strong> This book defines "obvious design" as the quality that great software should have, and shows how to turn that quality into goals. Its framework is three statements: know what to build, know what makes it great, know the best way to build it. The chapters run from understanding users and then designing for activities and mental models, through building only what is enough, getting beginners started at once, error-proofing, consistency and reduction, to "improving matters more than innovating". The subject is web software, not marketing campaign pages.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Obvious design requires software behaviour to match how people understand the task, rather than laying internal data structures straight onto the interface.</li>
+<li>"Understand users, then ignore them" means: after research, design for activities and mental models, and don't build every feature request into the interface. General-purpose features can be removed.</li>
+<li>The chapter on beginners discusses welcome screens, blank states, instructive hints, default values, card sorting and one-click actions, so people don't have to read a manual first.</li>
+<li>Errors can be handled with error-proofing devices (poka-yoke): prevention, detection, and turning an error into a chance for people to feel they did it right.</li>
+<li>Consistency is like stairs, whose rise and depth must stay steady; but the book also allows for "intelligent inconsistency". Improving an existing process takes priority over inventing a whole new metaphor.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Open a project with three questions: what are we building, what is the standard for great, and what makes this way of building it good?</li>
+<li>Make a list of "general-purpose features" and ask of each one: if it were deleted, would the mainstream task fail?</li>
+<li>Design a welcome and defaults for first-time users: typeface, type size, image size and file name all need usable defaults. The book's example sets the file name to the page title by default.</li>
+<li>Check whether neighbouring steps are as predictable as stairs; break consistency only when there is a clear reason.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-designing-the-obvious-a-common-sense-approach-to-web-1.jpg" alt="Stair height must be steady"><figcaption>Each step on a staircase must have a steady height and depth, or people trip; the book uses this metaphor to show that neighbouring steps in an interface must also be predictable. Source: <span lang="zh-Hant">《一目瞭然：Web 軟件顯性設計之路》</span>, p.149</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-designing-the-obvious-a-common-sense-approach-to-web-2.jpg" alt="Editor defaults"><figcaption>Headings, body text and images all have a default typeface, type size and dimensions; the file name defaults to the page title. Source: same book, p.108</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>List three defaults you would hard-code for a form, and explain which step new users skip as a result.</li>
+<li>Find a wizard where "the rules change at every step", and using the stairs metaphor, point out the step where people are most likely to trip.</li>
+</ol>
+<h3 class="book" id="b-just-that-simple-usability-and-user-experience-in-web"><span lang="zh-Hant">就這麼簡單：Web 開發中的可用性和用戶體驗</span></h3>
+<p><strong>Scope.</strong> This is an introductory book written in Chinese that distinguishes graphic styling from user interface design. The author argues that many people describe the colour and position of a button as "ergonomically considered" when it is really just personal feeling, without asking users or testing. Real interface work makes a product easier to learn and easier to use, and helps people reach their goals. The book runs from definitions of terms to interaction in web interfaces. Its tone is like a long essay for colleagues, not a platform guideline.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>How an interface looks when finished is not the whole of user interface design. An exciting screen can still be hard to learn.</li>
+<li>Usability and user experience are about how people learn and how they reach their goals.</li>
+<li>Before calling yourself a UI designer, you should be able to show that your conclusions come from observation or testing, not just "I think this is convenient".</li>
+<li>Graphic design, programming and interface design are different roles. Being called an "artworker" is resented because it ignores behaviour and goals.</li>
+<li>The author leaves email and websites for further discussion, and encourages readers to bring their questions to specific cases and keep asking.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For every visual decision, write down the user behaviour you are assuming, and note whether that assumption has been asked about or tested.</li>
+<li>Introduce your role in three sentences: which task you made shorter this time, which learning step you removed, and what users achieve when it succeeds.</li>
+<li>In reviews, ban the phrase "it's ergonomic" on its own. Ask for an observed action or error.</li>
+<li>Score "looks good" and "can be learned" in two separate columns, with evidence for both.</li>
+</ul>
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a button you have designed and write down your reason at the time. Was it personal preference, or did it come from an observation?</li>
+<li>Using the author's definition, explain how the same screen can be eye-catching yet still hard to learn. Give an example you have used.</li>
+</ol>
+<h3 class="book" id="b-microinteractions-designing-with-details"><span lang="zh-Hant">微交互：細節設計成就卓越產品</span></h3>
+<p><strong>Original title:</strong> <em>Microinteractions: Designing with Details</em></p>
+<p><strong>Author:</strong> Dan Saffer</p>
+<p><strong>Scope.</strong> Saffer takes apart the interactions in a product that do one small thing at a time: triggers, rules, feedback, and loops and modes. Norman's foreword uses a phone ringing at a concert, and Aperture throwing only an error with no repair steps when its data was corrupted, to show that details decide whether people are willing to keep using a product. This book does not deal with whole information architectures; it focuses on actions that happen within a few seconds.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Even when the big picture is right, details can still frustrate people. Microinteractions are the moment-to-moment experience, not decoration.</li>
+<li>A microinteraction has a trigger (what starts it), rules (how it works), feedback (how people know what happened), and loops and modes (how it changes over time or with state).</li>
+<li>The fewer modes the better. When the same action means opposite things in "select mode" and "delete mode", mistakes are easy. Ideally there are no modes, or only one.</li>
+<li>Feedback should include the next step. If a message only says the data is corrupted and gives no repair steps, users have to search for help themselves.</li>
+<li>Rules can step in before people make a mistake. Gmail asks before sending whether you forgot an attachment; a USB plug, by contrast, makes people find the right orientation first.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Pick a small action (adjusting volume, sending an email, plugging in a cable) and fill in the four boxes: trigger, rules, feedback, loops. Any empty box is design work still to do.</li>
+<li>Count how many modes the action has. If there is more than one, write down the pair of meanings people will confuse.</li>
+<li>When writing an error message, include an actionable next step, or a button that starts the repair.</li>
+<li>Find a rule like "a reminder before sending": check for one common omission before submission.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-microinteractions-designing-with-details-1.jpg" alt="Modes change the same action"><figcaption>The same item means select in one mode but delete in delete mode; the fewer the modes, the less people get confused. Source: <span lang="zh-Hant">《微交互：細節設計成就卓越產品》</span>, p.143</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-microinteractions-designing-with-details-2.jpg" alt="Attachment reminder before sending"><figcaption>A USB plug with no clear orientation must be turned the right way before it goes in; Gmail asks before sending whether you forgot to add an attachment. Source: same book, p.101</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Analyse "dragging a file to the trash" with the four boxes: what triggers it, what are the rules, what is the feedback, and is there a second mode?</li>
+<li>Rewrite an error message that only says "failed", adding an action users can press next.</li>
+</ol>
+<h3 class="book" id="b-seductive-interaction-design"><span lang="zh-Hant">怦然心動：情感化交互設計指南</span></h3>
+<p><strong>Original title:</strong> <em>Seductive Interaction Design: Creating Playful, Fun, and Effective User Experiences</em></p>
+<p><strong>Author:</strong> Stephen P. Anderson</p>
+<p><strong>Scope.</strong> Anderson connects motivation, feeling and choice from the behavioural sciences to web products. He argues that being usable is not enough: an experience must pass through functional, reliable and usable, and then move towards an appeal that makes people want to stay. The stories in the book include how LinkedIn gets people to complete their profiles, how iLike gets people to name the artists they like, and how emotions change decisions to sign up, share and stay.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The book starts from why people do things, what they feel and how they make particular choices, and only then asks how these principles can be built into interactions.</li>
+<li>Any product people engage with can take emotion into account, business software included.</li>
+<li>In the book, seduction is a set of observable behaviour designs, such as using small challenges to make people willing to keep filling in their details, rather than relying on explanatory text.</li>
+<li>He tries to turn research on things like faces on energy bills, and smell and memory, into emotional cues in the interface.</li>
+<li>Concrete cases include a restaurant bill that comes with a thank-you card marked "do not open", and Facebook reducing account deactivations by telling users at that moment that their friends will no longer be able to contact them.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First check the product for "functional, reliable, usable". If these three layers don't hold up, don't add fun first.</li>
+<li>For a behaviour you want to happen (completing a profile, signing up, sharing), design a small challenge or a sentence that appears at the moment of decision, then see whether the data changes.</li>
+<li>When collecting psychology examples, write down the situation the original research studied, and which interface moment you plan to use it in.</li>
+<li>When reviewing a "fun" idea, ask which existing task it helps.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-seductive-interaction-design-1.jpg" alt="The do-not-open thank-you card"><figcaption>California Pizza Kitchen hands out a thank-you card marked "do not open" after the meal, as an emotional moment within a promotion. Source: <span lang="zh-Hant">《怦然心動：情感化交互設計指南》</span>, p.96</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-seductive-interaction-design-2.jpg" alt="One sentence before deactivation"><figcaption>At deactivation, users are told their friends will no longer be able to contact them; the text reports that this cut the deactivation rate by about 7%. Source: same book, p.66</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a sign-up process and write one sentence that appears only when people are about to leave, explaining which feeling it targets.</li>
+<li>Apply the four layers "functional, reliable, usable, want to come back" to your assignment, and mark the layer that is currently weakest.</li>
+</ol>
+<h3 class="book" id="b-measuring-the-user-experience"><span lang="zh-Hant">用戶體驗度量</span></h3>
+<p><strong>Original title:</strong> <em>Measuring the User Experience: Collecting, Analyzing, and Presenting Usability Metrics</em></p>
+<p><strong>Authors:</strong> Thomas Tullis, William Albert</p>
+<p><strong>Scope.</strong> Tullis and Albert worked on user experience at Fidelity Investments, and this book shows that experience can be measured. Examples include how long it takes to book a flight, how many errors people make when logging in, how many people manage to record the programme they want to watch, and how many people miss a link that needs only one click. Chapter 1 first deals with ten myths, for example that metrics are too slow, too expensive, useless for small improvements, unable to explain causes, less trustworthy than intuition, or unsuitable for new products. Use it after usability testing, to turn what you observed into numbers you can compare.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Usability metrics include task success rate, time, errors, number of clicks or keystrokes, and attitudes such as frustration and delight.</li>
+<li>The value of metrics is in comparing options and iterations, not just in producing another opinion.</li>
+<li>Common myths are rebutted one by one: small improvements can be measured too; noisy numbers are still usable; new products also have behaviour you can measure.</li>
+<li>Combined goals can be reported to managers as "the percentage of participants who met all the set goals".</li>
+<li>Across iterations, the number of unique usability problems should fall; if it does not, the changes have missed the problems that matter most.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each test, define what counts as task success first, then record time and errors. Do not collect impressions only.</li>
+<li>Prepare one percentage for managers: how many people met the whole set of goals you wrote down in advance.</li>
+<li>For each round of revisions, list the "unique problems this round" and compare the count with the last round, rather than only comparing whether the screens look good.</li>
+<li>On a small budget, test the success rate and time for a single task first. That still counts as measurement.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-measuring-the-user-experience-1.jpg" alt="Percentage meeting combined goals"><figcaption>Working out the percentage of participants who met the combined goals shows how many people had a better experience, and it is easy to explain to managers. Source: <span lang="zh-Hant">《用戶體驗度量》</span>, p.185</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-measuring-the-user-experience-2.jpg" alt="Number of problems across iterations"><figcaption>The number of unique usability problems in different design iterations; ideally each round has fewer than the last. Source: same book, p.107</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Set three measurable indicators for "finding office hours on the school website": success rate, time and number of errors. What counts as success?</li>
+<li>Suppose the first round has 12 unique problems and the second has 9. What else do you need to know before you can judge that the most important problems have been solved?</li>
+</ol>
+<h3 class="book" id="b-the-elements-of-user-experience-user-centered-design-for-2"><span lang="zh-Hant">用戶體驗要素：以用戶為中心的產品設計（原書第 2 版）</span></h3>
+<p><strong>Original title:</strong> <em>The Elements of User Experience: User-Centered Design for the Web and Beyond</em>, 2nd edition</p>
+<p><strong>Author:</strong> Jesse James Garrett</p>
+<p><strong>Scope.</strong> The 2nd edition extends the five-plane model from websites to products and services. The concepts are still strategy, scope, structure, skeleton and surface, but Garrett explains that over the past ten years these elements have been applied beyond the Web. The preface retells how the diagram suddenly took shape at a security checkpoint in Austin airport, and how teams online took it up as a shared vocabulary. This edition also describes pinning personas up in the office and using them to ask "Would this be useful to Janet?"</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The 2nd edition is no longer limited to websites; most examples still come from web pages, but the principles apply to products and services.</li>
+<li>"Designing for experience" puts use first. User experience is presented as a business opportunity, not just interface polish.</li>
+<li>The vocabulary of the five planes helps different disciplines work together. The author's original difficulty was that colleagues did not know what an information architect actually does.</li>
+<li>Personas should be concrete enough to pin on the wall. The book's questions are: Would this be useful to Janet? How would Frank react?</li>
+<li>The model came from an effort to gather confusing terminology into one diagram. The title uses "elements" to avoid "components", which sounded too technical.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For a product that is not a website, still fill in all five planes, but rewrite the strategy plane as the goals for using this product, not "site objectives".</li>
+<li>Give your personas names and pin them up. Next to each important decision, note in one sentence how it affects that persona.</li>
+<li>In meetings with engineering and marketing, point to the plane you are talking about, so that not everything gets called "the interface".</li>
+<li>If the team only changes the visuals, ask them to show whether the skeleton and structure planes changed as well.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-the-elements-of-user-experience-user-centered-design-for-2-1.jpg" alt="Personas pinned on the wall"><figcaption>Pin personas up in the office so that when you make decisions you can ask: Would this be useful to Janet? How would Frank react? Source: <span lang="zh-Hant">《用戶體驗要素：以用戶為中心的產品設計（原書第 2 版）》</span> (2nd edition), p.71</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-the-elements-of-user-experience-user-centered-design-for-2-2.jpg" alt="About the translator"><figcaption>The nearby text is the translator's biography, describing their work on internet products and user experience. Source: same book, p.6</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a product that is not a website (a student card, a washing machine or a phone alarm) and write down what its strategy plane and surface plane are.</li>
+<li>Name two personas and write one sentence for each describing how they react to the same feature. The two sentences must differ.</li>
+</ol>
+<h3 class="book" id="b-smashing-magazine-the-art-of-website-ui-design"><span lang="zh-Hant">眾妙之門：網站 UI 設計之道</span></h3>
+<p><strong>Original title:</strong> <em>The Smashing Book</em></p>
+<p><strong>Author:</strong> Smashing Magazine</p>
+<p><strong>Scope.</strong> This is the interface design volume of the Smashing Magazine anthology. It deals with the visible interface on screen: layout, shape, size, colour, contrast and texture. Techniques include using white space to show relationships, using rounded corners to define boundaries, using colour to carry meaning, using shadows to draw the eye back, and emphasising the core action. Fitts's law is used to explain why frequently used buttons should be large. Later, colour schemes are used to show how to make images stand out.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The main purpose of the visible interface is to help people understand what an application can do and how to operate it. Appearance is only part of that.</li>
+<li>Elements placed close together read as related; labels placed above input fields are easier to scan from top to bottom than labels on the left.</li>
+<li>Size signals importance, and also how easy something is to click. The larger the clickable area, the faster the cursor reaches it.</li>
+<li>Colours carry meaning (red often means stop or error, green often means go or success), but you must consider culture and colour blindness, and use shape and texture as a second cue.</li>
+<li>Texture can provide affordance: raised ridges tell people "you can drag here". White space, rounded corners and shadows are used to group, draw boundaries and focus attention.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When laying out a form, put the labels above the fields to cut down left-to-right eye jumps.</li>
+<li>Give the most frequent action a larger clickable area, and lower the contrast of the other actions.</li>
+<li>Every time you use colour to show a state, add one difference that is not colour (an icon or a shape), so that it still works for people with red-green colour blindness.</li>
+<li>Check whether a colour scheme is complementary, double complementary or tetradic, and see whether it separates the main image from the background.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-smashing-magazine-the-art-of-website-ui-design-1.jpg" alt="Double complementary and tetradic colours"><figcaption>The book shows a double complementary palette and four hues spaced evenly around the colour wheel. Source: <span lang="zh-Hant">《眾妙之門：網站 UI 設計之道》</span>, p.163</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-smashing-magazine-the-art-of-website-ui-design-2.jpg" alt="Using colour to make images stand out"><figcaption>Hulu and COLOURlovers use striking colour schemes to separate images from the page. Source: same book, p.174</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Revise a form sketch: move all the labels above the fields and make the main button larger. Write down how the eye's path has changed.</li>
+<li>Choose a red-green status indicator and add one distinction that does not rely on colour, so that colour-blind users can still tell the states apart.</li>
+</ol>
+<h3 class="book" id="b-designing-the-moment-web-interface-design-concepts-in-action"><span lang="zh-Hant">瞬間之美：Web 界面設計如何讓用戶心動</span></h3>
+<p><strong>Original title:</strong> <em>Designing the Moment: Web Interface Design Concepts in Action</em></p>
+<p><strong>Author:</strong> Robert Hoekman, Jr.</p>
+<p><strong>Scope.</strong> Hoekman uses more than thirty stories, ordered the way people use a web application: the first impression in the first thirty seconds, searching, entering and editing data once they are further in, participation, and leaving. He calls his approach "thinking out loud", looking at one moment at a time. His previous book was about principles; this one puts those principles into the details of real interfaces, such as type size, sliders and video players.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Online, people type, edit, search, upload, delete and share, and they also get distracted, make mistakes and change their minds. The interface should help them make decisions in those moments.</li>
+<li>The book is structured around a single visit: the thirty seconds after opening, going deeper, and leaving (for now or for good).</li>
+<li>The first-impressions chapter starts with page layout; search and participation come later.</li>
+<li>Details can strengthen or spoil the experience. In the CNN video player, the volume slider and the text are so small that even a mild vision problem makes them hard to use and read; yet the same player still has parts worth keeping.</li>
+<li>Type size can build hierarchy. Larger type stands out from a list, so the importance of the first link becomes obvious, and its colour also looks heavier.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write the task as a timeline: second 1, second 30, starting to type, leaving. Change only one element at each moment.</li>
+<li>Use "thinking out loud" to record your own hesitations, then decide what was missing at that moment.</li>
+<li>Check the size of interactive controls and of text, especially on sliders and video players.</li>
+<li>When adjusting type size, enlarge only one level, and see whether the first item in the list becomes too heavy as a result.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-designing-the-moment-web-interface-design-concepts-in-action-1.jpg" alt="A volume slider that is too small"><figcaption>The volume slider and text in the CNN.com player are both too small; even a mild vision problem makes them hard to use and read. Source: <span lang="zh-Hant">《瞬間之美：Web 界面設計如何讓用戶心動》</span>, p.110</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-designing-the-moment-web-interface-design-concepts-in-action-2.jpg" alt="Type size creating hierarchy"><figcaption>Larger type stands out from smaller text, so the importance of the first link in the list becomes obvious, and its colour looks darker too. Source: same book, p.58</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Open a web application you use and write down the three things you actually did in the first thirty seconds, and which of them made you pause.</li>
+<li>Find a slider or a small text label and explain whether it fails at "being visible" or at "being easy to hit".</li>
+</ol>
+<h3 class="book" id="b-from-cocoon-to-butterfly-the-growth-path-of-a-ux-designer"><span lang="zh-Hant">破繭成蝶：用戶體驗設計師的成長之路</span></h3>
+<p><strong>Scope.</strong> This is a career-growth book for user experience designers who are about to enter the field or have just started. It first separates design from art, then introduces the related roles, collaboration and career paths. User experience is defined as the subjective feeling of using a product; design, by contrast, must first solve a specific problem. Examples range from a Picasso painting and wireframes to power sockets, the fly printed on a urinal, and app icons whose purpose you cannot guess.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Art can be read differently by everyone, or not understood at all; design must rationally solve a particular person's particular problem. Wireframes, flows and interaction specifications are the half-finished products of that rational process.</li>
+<li>Bad design often comes from drawing wireframes from imagination alone and treating design as personal creative work.</li>
+<li>The order in experience design is: solve the real problem, make the problem easier to solve, then leave an impression. Appearance is only one part of this.</li>
+<li>The book lists the qualities as: rigorous, aimed at a specific problem, never leaving people lost, and allowed to be playful. The lean way to get there is to observe daily life, use the product yourself and listen to feedback.</li>
+<li>If an icon only looks like the style of another product, people cannot guess what it does. Icons that focus on the product name (the book uses Facebook as an example) put recognition on the name.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before you start, write three sentences: who it is for, what problem it solves, and what people can get done when it succeeds. If you cannot write them, do not start drawing.</li>
+<li>Collect examples that "look clever but cannot actually be used", and work out whether each fails on the problem, the operation or only the form.</li>
+<li>When designing an icon, first make sure people can say what the product is, and only then talk about texture and finish.</li>
+<li>In terms of roles, be clear what interaction, visual and research work each deliver, so that no one person judges everything by artistic standards.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-from-cocoon-to-butterfly-the-growth-path-of-a-ux-designer-1.jpg" alt="App icons that are hard to understand"><figcaption>Some icons look like the style of other apps, so people cannot guess what the app does; icons like Facebook's put recognition on the product name. Source: <span lang="zh-Hant">《破繭成蝶：用戶體驗設計師的成長之路》</span>, p.392</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-from-cocoon-to-butterfly-the-growth-path-of-a-ux-designer-2.jpg" alt="A painting by Picasso"><figcaption>A Picasso painting can be understood differently by everyone, or not understood at all; the book uses this to explain the appeal of art. Source: same book, p.17</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Describe your assignment in three sentences: who it is for, what it solves, and what gets done. If the second sentence is "make it look good", rewrite it as a specific difficulty.</li>
+<li>Sketch two icons: one recognised through the name, one through a metaphor. Ask classmates whether they can say what app each one is.</li>
+</ol>
+<h3 class="book" id="b-simple-and-usable-web-mobile-and-interaction-design"><span lang="zh-Hant">簡約至上：交互設計四策略</span></h3>
+<p><strong>Original title:</strong> <em>Simple and Usable Web, Mobile, and Interaction Design</em></p>
+<p><strong>Scope.</strong> This volume begins with "why can't setting up a printer be as simple as plugging in an appliance?" The author compares older set-ups, which meant reading a manual, flipping switches and installing drivers, with a new printer that asks once for the Wi-Fi password and then does the rest itself. The contents stress three kinds of users, explain why expert users should not define the product, and call for observation in the office, at home and outdoors. The four strategies are covered more fully in the illustrations of another volume; the sample of this one puts its effort into identifying mainstream users and writing the key points clearly.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The standard of simplicity comes from a concrete set-up experience: fewer steps for people to do, not a thicker manual.</li>
+<li>The Flip camera, the Volkswagen Beetle and Twitter are given as examples of things that were simple and trustworthy, and so were adopted by huge numbers of people. Complex features become a burden that will not sell when the economy turns down.</li>
+<li>The same thing can feel exciting to experts and get in the way of mainstream users. The book's question is how technology moves away from experts and reaches most people.</li>
+<li>A key point can be described in two ways. If you cannot write it clearly, the difficulty is that the thing is genuinely hard to explain, and it needs rewriting.</li>
+<li>Observation should cover different settings: in the office, at home and outdoors, people face different constraints.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Count the steps in an installation or set-up process. Aim for something close to "plug it in and it works", and write down every step that could be removed.</li>
+<li>List the features only experts would use, and mark that they must not appear on the mainstream user's default path.</li>
+<li>Describe the same key point in two ways (a one-line slogan and a short scenario). If both are vague, you have not yet understood the task.</li>
+<li>Observe the same product in at least two settings, and note how the environment changes what "simple" means.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-simple-and-usable-web-mobile-and-interaction-design-1.jpg" alt="Writing clearly is not easy"><figcaption>The book quotes William Zinsser on writing: very few sentences come out right the first time, and if it feels hard, that is because it is hard. Source: <span lang="zh-Hant">《簡約至上：交互設計四策略》</span>, p.52</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-simple-and-usable-web-mobile-and-interaction-design-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: same book, p.110</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Record the number of steps the last time you set up a new device, and circle two steps you would not have had to do if the product had done them itself.</li>
+<li>Describe "this feature is designed for mainstream users" once in a single sentence and once as a short scenario. Which version is more likely to make classmates think it is meant for experts?</li>
+</ol>
+<h3 class="book" id="b-the-web-designer-s-idea-book"><span lang="zh-Hant">網頁設計創意書</span></h3>
+<p><strong>Original title:</strong> <em>The Web Designer's Idea Book: The Ultimate Guide to Themes, Trends and Styles in Website Design</em></p>
+<p><strong>Scope.</strong> This book presents design patterns by type of website: blogs, forums, event sites, e-commerce, free scripts, churches, personal sites, design firms and photography sites. Each type starts with the expectations that kind of site must meet, then gives specific URLs. The blog section compares ways of highlighting the latest post; the forum section warns against changing things so much that visitors lose their way, while also removing the parts of the default layout that are not needed.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>If a blog highlights the latest post on its home page (large title, date, short summary), new visitors do not have to pick through a long list. NorthxEast, Veerle Pieters, Eleven3 and Design2.0 show different approaches in the book; the last simply shows the full text on the home page.</li>
+<li>Some blogs organise by topic rather than only by date, unlike the default of most blog engines.</li>
+<li>A forum must be distinctive and still match what people expect of a forum. Change too much and visitors get lost; keep the ugly default layout and the brand cannot be recognised.</li>
+<li>Successful forum examples remove elements they do not need and use layers of information to deal with thousands of posts: boards on the outside, and simpler pages once you go in.</li>
+<li>The chapters on site types focus on structure and trade-offs, and the pages often list URLs directly for comparison.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Choose the site type first, and write down the three things users of that type expect to look for (the latest posts on a blog, the boards on a forum, prices in a shop). These must not be hidden.</li>
+<li>Run a hierarchy experiment for the "latest post" on a blog home page: enlarge only the title, or add a summary and date, and see whether people still need to scroll to find where the new content is.</li>
+<li>Each time you add a board to a forum, check that the home page still shows the topics within one screen, rather than laying out seventy thousand posts flat.</li>
+<li>When studying examples, open the URLs in the book and record only the structure (where the latest posts go, how boards are layered). Do not copy the skin.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-the-web-designer-s-idea-book-1.jpg" alt="URLs of blog examples"><figcaption>The page lists the URLs of blog examples side by side, so you can compare different home page approaches. Source: <span lang="zh-Hant">《網頁設計創意書》</span>, p.123</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-the-web-designer-s-idea-book-2.jpg" alt="More website examples"><figcaption>Another page continues to list websites for comparison by URL, rather than giving step-by-step instructions. Source: same book, p.209</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Draw a blog home page and mark the latest post, the list of older posts and the categories. Which area can someone point to within three seconds?</li>
+<li>For a forum with many boards, which level would you put on the home page, and which would only appear once someone enters a board?</li>
+</ol>
+<h3 class="book" id="b-designing-with-the-mind-in-mind-simple-guide-to"><span lang="zh-Hant">認知與設計：理解 UI 設計準則</span></h3>
+<p><strong>Original title:</strong> <em>Designing with the Mind in Mind: Simple Guide to Understanding User Interface Design Rules</em></p>
+<p><strong>Scope.</strong> This volume also starts from the idea that "guidelines are not recipes", and goes on to the direct effects of perception on interfaces: we see according to our expectations, experience, surroundings and goals. The design implications include avoiding ambiguity, staying consistent, understanding goals, and making screens fit the way vision picks out structure. The illustrations apply these points to colour blindness and hard-to-read layouts. Use it to check charts and body text, not to memorise another list of guidelines.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Guidelines come from cognition, which is why the lists by Shneiderman and by Nielsen and Molich look alike: consistency, error prevention, reversibility, and letting people feel in control.</li>
+<li>Conflicting goals need trade-offs, for example a screen that is bright yet saves power, or features that are powerful yet keep the system simple.</li>
+<li>Experience and surroundings rewrite what you see. With the same interface, people with different goals ignore different areas.</li>
+<li>If a chart separates series only by certain colours, some users cannot tell them apart. The book uses a MoneyDance chart as an example.</li>
+<li>Long passages set centred on a patterned background stack several flaws together and make body text very hard to read.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When drawing charts, do not rely on red and green alone to separate series. Add labels, line styles or shapes, and check once with a colour-blindness simulator.</li>
+<li>Use aligned blocks of text and plain backgrounds for body text. Keep centring for short headings.</li>
+<li>For each screen, write down the user's goal at that moment, then remove decoration that competes with that goal for attention.</li>
+<li>When two guidelines conflict, write down which perceptual condition you sacrificed (for example contrast or reversibility), rather than just saying "keep it simple".</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-designing-with-the-mind-in-mind-simple-guide-to-1.jpg" alt="Chart colours that are hard to tell apart"><figcaption>A MoneyDance chart uses colours that some users cannot tell apart; the book also shows how to spot which colours are hard to distinguish. Source: <span lang="zh-Hant">《認知與設計：理解 UI 設計準則》</span>, p.64</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-designing-with-the-mind-in-mind-simple-guide-to-2.jpg" alt="Hard-to-read centred body text"><figcaption>Long passages of centred text on a patterned background combine several flaws and make the website very hard to read. Source: same book, p.53</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Redraw a two-series chart: if the viewer cannot tell red from green, what second cue will you use?</li>
+<li>Find a long centred passage, set it ranged left and remove the patterned background, then write down which change did more for readability.</li>
+</ol>
+<h3 class="book" id="b-designing-with-the-mind-in-mind-simple-guide-to-2"><span lang="zh-Hant">認知與設計：理解 UI 設計準則（第 2 版）</span></h3>
+<p><strong>Original title:</strong> <em>Designing with the Mind in Mind: Simple Guide to Understanding User Interface Design Guidelines</em>, 2nd edition</p>
+<p><strong>Author:</strong> Jeff Johnson</p>
+<p><strong>Scope.</strong> In the 2nd edition Johnson again explains the perception and cognition behind the guidelines, and Norman's comment stresses that it is about how the mind works, not just a list of rules. New emphases include perceptual bias, priming, familiar frames and habits. The illustrations use Escher's figure-ground reversals, and a chart of web technology evolving along a horizontally scrolling timeline, to show how attention and time can be designed. Read it after the 1st edition's point that "expectations shape perception", to see how habits and priming preset what people will see.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Guidelines work because the senses and the brain have stable limits. Knowing those limits lets you judge which guideline holds up better when guidelines conflict.</li>
+<li>Perception is biased: experience, concepts that have just been primed, familiar frames and habits all lead people to an interpretation before they look closely.</li>
+<li>Figure and ground can swap. In Escher's pictures, subject and background change places as attention shifts; if an interface's hierarchy is unclear, people will also mistake what the main subject is.</li>
+<li>A timeline does not have to be animated. The book's chart of web evolution shows the changes from 1993 to 2012 by scrolling horizontally along a time axis.</li>
+<li>The 2nd edition is set against the background of human-computer interaction gradually moving away from purely experience-based rules of thumb: principles can be used to work out new judgements.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When designing a screen, write down the frame you assume users are already used to (a form, a timeline, a dialog box). If that frame is missing, you will need to teach it.</li>
+<li>Check figure and ground: is the main action being upstaged by a background pattern? If necessary, darken the background or remove it.</li>
+<li>When showing time, try horizontal scrolling or a static axis first. Do not assume it has to be animated.</li>
+<li>Before a redesign, list users' habitual actions. If the new design breaks a habit, leave a recognisable entry point in the old position.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-designing-with-the-mind-in-mind-simple-guide-to-2-1.jpg" alt="Escher's figure-ground reversal"><figcaption>Subject and background swap as attention shifts; Escher used this effect to make pictures that can be read in two ways. Source: <span lang="zh-Hant">《認知與設計：理解 UI 設計準則（第 2 版）》</span> (2nd edition), p.38</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-designing-with-the-mind-in-mind-simple-guide-to-2-2.jpg" alt="A horizontally scrolling timeline"><figcaption>The chart of web evolution shows change by scrolling horizontally along a time axis, rather than with animation. Source: same book, p.179</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Find a screen where the background is more eye-catching than the buttons, and write down which area people might mistake for the main subject.</li>
+<li>Use one horizontal timeline (no animation) to lay out four years of your design study, keeping only one event for each year.</li>
+</ol>
+<h3 class="book" id="b-the-user-is-always-right-a-practical-guide-to-creating-and-3"><span lang="zh-Hant">贏在用戶：Web 人物角色創建和應用實踐指南</span></h3>
+<p><strong>Original title:</strong> <em>The User Is Always Right: A Practical Guide to Creating and Using Personas for the Web</em></p>
+<p><strong>Authors:</strong> Steve Mulder, Ziv Yaar</p>
+<p><strong>Scope.</strong> The contents of this volume set out all five steps of Chapter 1, including step four: research findings must be actionable. The sample persona is Francis, a first-time home buyer. The focus moves from "creating a vivid person" to "giving business strategy a single united front". At one end, the illustrations show how clusters become personas; at the other, how personas keep a good strategy from dying when everyone goes their own way in execution.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The five steps form a chain: business results depend on users, you are not your user, you must have direct contact, research must lead to something that can be built, and decisions must be based on those results.</li>
+<li>A persona card records a personal description, user goals and business goals together. Francis comes to the site for things to do with buying a home; the company wants her to complete particular actions.</li>
+<li>Clustering only produces segments; a name, a photo and a story turn the spreadsheet into a person people can discuss.</li>
+<li>Getting everyone to face the same customer and the same opportunity raises the chance that a strategy is actually carried out. Many strategies fail for lack of a united front.</li>
+<li>The authors still call personas a developing tool. In practice they need to make it into meetings and decisions, not stop at a poster.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>At the end of research, do an "actionable" check: does each finding correspond to a design or business decision? Leave findings that do not correspond out of the persona for now.</li>
+<li>Split a Francis-style card into two columns: what she wants to get done, and what we want her to do. Make it explicit when the two columns conflict.</li>
+<li>Use personas to open business discussions, and require every strategy to state which goal of which persona it serves.</li>
+<li>Before a cluster table becomes a poster, delete the columns that cannot guide this quarter's decisions.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-the-user-is-always-right-a-practical-guide-to-creating-and-3-1.jpg" alt="Clusters becoming people"><figcaption>Once clustering has produced segments, adding names, photos and stories turns the spreadsheet into believable people. Source: <span lang="zh-Hant">《贏在用戶：Web 人物角色創建和應用實踐指南》</span>, p.45</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-the-user-is-always-right-a-practical-guide-to-creating-and-3-2.jpg" alt="Aligning strategy with personas"><figcaption>Get everyone to face the same opportunity and the same customer, so that a good business strategy does not die in execution for lack of a united front. Source: same book, p.30</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Write three research findings, and after each add "so the design decision to change this week is...". Leave the one you cannot write a decision for out of the persona for now.</li>
+<li>Write one sentence each for a persona's "user goal" and "business goal". If the two conflict, which one would you satisfy first in the interface?</li>
+</ol>
+<h3 class="book" id="b-experience-du-simple-dependable-user-experience-colour"><span lang="zh-Hant">體驗·度：簡單可依賴的用戶體驗（彩版）</span></h3>
+<p><strong>Scope.</strong> This is a case-study book by Baidu's user experience team, and the preface discusses how designers should understand the company's strengths. The main text treats experience as a complete chain: the company's strengths decide the product direction, the direction decides the features, and only then do the features decide the interaction and visuals, followed by operations. The main case is how Baidu Maps cleaned up its interface: emphasising search, tucking away advanced features, using icons that are clear in meaning, and keeping the visuals fresh. Read it to see how a large product cuts features, not how to add a new module.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Product direction comes from needs that both the company and its users cannot do without. Building your distinctive features on a rival's strength rarely wins. The book uses red packets as an example: Alipay did them first, but WeChat made them take off through people's personal networks.</li>
+<li>The hardest part of features is cutting them. If a news app keeps adding things, from weather all the way to sharing and comments, the discussion drifts away from the news itself.</li>
+<li>Side drawers, tabs and grids are not absolutely right or wrong: when there are many items that are rarely switched, when items need frequent switching, or when each entry is independent, each of the three frameworks suits one of these cases.</li>
+<li>Search is Baidu's strength, so many of its products have search suggestions and history; but how prominent the search entry is depends on how much that product relies on search. Maps, reading and travel are not the same.</li>
+<li>The maps case turns "make the complex simple, be efficient, simplicity measured on the road" into a method: a clean screen, search first, advanced features tucked away, and precise icons.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before writing features, write down the company's strengths and the product direction. Features unrelated to the direction stay out of this version, even if users say they want them.</li>
+<li>When choosing a navigation framework, write down how often people switch and whether the entries are independent, then decide between side drawer, tabs or grid.</li>
+<li>Do not give search completely different interactions across one company's products; then strengthen or weaken the entry point according to how much this product depends on search.</li>
+<li>Use cases like maps for road testing: walk through the main task once on a real road, and note which advanced feature could be tucked away.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/interaction-ux/books/b-experience-du-simple-dependable-user-experience-colour-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《體驗·度：簡單可依賴的用戶體驗（彩版）》</span> (colour edition), p.9</figcaption></figure>
+<figure><img src="assets/interaction-ux/books/b-experience-du-simple-dependable-user-experience-colour-2.jpg" alt="The camera lens on a launch screen"><figcaption>The launch screen of Mopai blends a camera lens into the picture and uses an animation that opens up and down, an idea drawn from selfie products. Source: same book, p.183</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>For a news product, list four features "users might say they want", then cut the two that are unrelated to the product direction and give your reasons.</li>
+<li>If Baidu Maps tucks away its advanced features and keeps search, what does the main task become? Write it in one sentence for someone on foot.</li>
+</ol>
+<!-- BOOKS:END -->
+      </div>
+
+      <nav class="pager" aria-label="Categories"><a href="08_infographics.html" data-label="08 Information Graphics"><span>Previous guide</span><strong>08 Information Graphics</strong><i aria-hidden="true">&rarr;</i></a><a class="next" href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span>Next guide</span><strong>10 Graphic Design Practice</strong><i aria-hidden="true">&rarr;</i></a></nav>
+    </main>
+    <aside class="rail" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a>
+    </aside>
+  </div>
+  <script src="js/guide.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scene.js"></script>
+  <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, theme: "dark", themeVariables: { background: "#101b34", primaryColor: "#1b2b4d", primaryTextColor: "#e6eef8", primaryBorderColor: "#4e6586", lineColor: "#8ea0b8", fontFamily: "Source Sans 3, sans-serif" } });
+  </script>
+</body>
+</html>

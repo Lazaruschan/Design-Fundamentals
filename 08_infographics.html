@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1428">
+  <title>Information Graphics · Design Fundamentals</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/guide.css">
+</head>
+<body class="page-guide">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="loader" id="loader" data-label="08 Information Graphics" aria-hidden="true">
+    <p class="loader-label">SSHD2382 / Design Fundamentals</p>
+    <div class="loader-box">
+      <span class="plus tl"></span><span class="plus tr"></span><span class="plus bl"></span><span class="plus br"></span>
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg>
+    </div>
+    <p class="loader-count" data-count-slots></p>
+    <p class="loader-page"></p>
+  </div>
+  <header class="site-head">
+    <a class="logo" href="index.html" aria-label="Design Fundamentals, home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg><span>Fundamentals<sup>&reg;</sup></span></a>
+    <nav class="head-nav" aria-label="Site">
+      <a class="pill pill-solid" href="index.html#browse" data-magnetic><span data-text="Browse">Browse</span></a>
+      <button class="pill pill-line" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-magnetic><span data-text="Menu">Menu</span><i class="burger" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <div class="menu-panel" id="menu" inert>
+    <div class="menu-inner">
+      <p class="menu-label">(Guides)</p>
+      <ol class="menu-list"><li><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span class="menu-num">01</span><span class="menu-name">Design Basics &amp; Composition</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="02_colour.html" data-label="02 Colour"><span class="menu-num">02</span><span class="menu-name">Colour</span><span class="menu-week">Week 8</span></a></li><li><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span class="menu-num">03</span><span class="menu-name">Typography &amp; Lettering</span><span class="menu-week">Week 9</span></a></li><li><a href="04_layout-grid.html" data-label="04 Layout &amp; Grid Systems"><span class="menu-num">04</span><span class="menu-name">Layout &amp; Grid Systems</span><span class="menu-week">Week 3, 4, 5</span></a></li><li><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span class="menu-num">05</span><span class="menu-name">Logo &amp; Branding</span><span class="menu-week">Week 10, 11</span></a></li><li><a href="06_packaging.html" data-label="06 Packaging"><span class="menu-num">06</span><span class="menu-name">Packaging</span><span class="menu-week">Week 11</span></a></li><li><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span class="menu-num">07</span><span class="menu-name">Book Design &amp; Print</span><span class="menu-week">Week 5, 9</span></a></li><li><a href="08_infographics.html" data-label="08 Information Graphics"><span class="menu-num">08</span><span class="menu-name">Information Graphics</span><span class="menu-week">Week 4</span></a></li><li><a href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span class="menu-num">09</span><span class="menu-name">Interaction, Web &amp; UX</span><span class="menu-week">Week 11 (and 4)</span></a></li><li><a href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span class="menu-num">10</span><span class="menu-name">Graphic Design Practice</span><span class="menu-week">Week 1, 11</span></a></li><li><a href="11_interior.html" data-label="11 Interior Design"><span class="menu-num">11</span><span class="menu-name">Interior Design</span><span class="menu-week">Further reading</span></a></li><li><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span class="menu-num">12</span><span class="menu-name">Architecture &amp; Space</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="13_product.html" data-label="13 Product Design"><span class="menu-num">13</span><span class="menu-name">Product Design</span><span class="menu-week">Week 11 (and 6–7)</span></a></li><li><a href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span class="menu-num">14</span><span class="menu-name">Design &amp; Art History</span><span class="menu-week">Week 1</span></a></li><li><a href="15_theory-psychology.html" data-label="15 Design Theory &amp; Psychology"><span class="menu-num">15</span><span class="menu-name">Design Theory &amp; Psychology</span><span class="menu-week">Week 4, 6–7, 10</span></a></li><li><a href="16_pattern-ornament.html" data-label="16 Pattern &amp; Ornament"><span class="menu-num">16</span><span class="menu-name">Pattern &amp; Ornament</span><span class="menu-week">Week 8 (and 6–7)</span></a></li><li><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span class="menu-num">18</span><span class="menu-name">Magazines &amp; Annuals</span><span class="menu-week">Week 1–13</span></a></li><li><a href="20_advertising.html" data-label="20 Advertising"><span class="menu-num">20</span><span class="menu-name">Advertising</span><span class="menu-week">Week 10, 11</span></a></li></ol>
+      <div class="menu-foot"><span>SSHD2382 Design Fundamentals</span><span>Eighteen guides, thirteen weeks</span><a href="index.html">Home</a></div>
+    </div>
+  </div>
+  <canvas class="scene" id="scene" data-scene="page" data-cat="08" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <p class="side-brand">SSHD2382 / Guides</p>
+      <label class="visually-hidden" for="q">Search categories</label>
+      <input class="search" id="q" type="search" placeholder="Name, term, or category" autocomplete="off">
+      <p class="empty" id="empty" hidden>No category matches.</p>
+      <nav aria-label="Categories"><div class="side-group"><p class="side-label">Categories</p><a href="01_design-basics.html" data-search="01 design basics design basics &amp; composition point, line, plane, composition, and the four design principles week 2, 6–7 1. scope 2. core concepts 3. proportion &amp; geometry 4. principles &amp; methods 5. selected figures 6. source bookshelf 7. study cues 7. each book 藝術·設計的平面構成 藝術·設計的立體構成 藝術·設計的紙的構成 藝術·設計的光的構成 平面設計原理 通用設計法則 美國視覺設計學院叢書：設計元素（平面設計樣式） 寫給大家看的設計書：實例與創意 黃金比例 設計的教室 設計的方法 談繪畫構圖 1000多個圖形元素：獨特的設計元素 設計中的點線面 平面設計法則 設計幾何學：關於比例與構成的研究 藝術·設計的平面構成（繁體版） 探索幾何：平面視覺構建 好造型的設計元素 和諧之美：探索設計中的黃金比例 分寸設計：發現黃金比例恆久之美 設計元素：平面設計樣式（英文原書） 寫給大家看的設計書（第3版） 設計元素：平面設計樣式 國際平面設計基礎教程：規格設計（format） 國際平面設計基礎教程：圖形設計（image） 國際平面設計基礎教程：設計思維（thinking） 寫給大家看的設計書（第4版） 平面設計的七大要素 綜合造型設計基礎 美國視覺設計學院用書：設計元素（平面設計樣式） 視覺原理 設計力：寫給大家的平面設計法則 通用設計法則（英文版） the elements of graphic design: space, unity, page architecture, and type universal principles of design design elements: a graphic style manual robin williams design workshop geometry of design: studies in proportion and composition the design method: a philosophy and process for functional visual communication 1000 graphic elements: special details for distinctive designs the essential principles of graphic design geometry of design: studies in proportion and composition design elements: understanding the rules and knowing when to break them geometry of design: studies in proportion and composition , 2nd edition (revised and updated) design elements: a graphic style manual the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual basics design 01: format basics design 04: image basics design 08: design thinking the non-designer&#x27;s design book: design and typographic principles for the visual novice , 4th edition the 7 essentials of graphic design design elements: a graphic style manual principles of visual perception universal principles of design"><span class="side-num">01</span> Design Basics &amp; Composition</a><a href="02_colour.html" data-search="02 colour colour hue, value, chroma, colour systems, palettes, and colour psychology week 8 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術·設計的色彩構成 寫給大家看的色彩書1：設計配色基礎 寫給大家看的色彩書2：色彩怎麼選，設計怎麼做 梁景紅談：色彩設計法則 配色設計原理 七日掌握設計配色基礎 配色設計從入門到精通 平面設計配色全攻略 美國色彩基礎教材 色彩應用：平面設計配色經典創意 黑白灰設計：摒棄有彩色的設計法則 美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式 觀念之色：中國傳統色彩研究 色彩搭配的黃金法則 新手配色寶典：2000個配色案例不怕你不會 像藝術家一樣思考之三：貝蒂的色彩 國際平面設計基礎教程：colour色彩設計 平面設計綜合配色手冊 色彩怎麼選，設計怎麼做 色彩感知學 色彩構成 色彩設計：日本平面設計師參考手冊 色彩設計的100個亮點 色彩設計的原理 設計入門教室3：色彩設計的原理 設計密碼：綜合配色完全攻略 color basics color design workbook: a real-world guide to using color in graphic design drawing for graphic design: understanding conceptual principles and practical techniques to create unique, effective design solutions color: a course in mastering the art of mixing colors basics design 05: colour 100 bright ideas for colour"><span class="side-num">02</span> Colour</a><a href="03_typography.html" data-search="03 typography typography &amp; lettering letter structure, classification, typesetting, and mixed chinese and latin type week 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book typography 字誌：issue 01 typography 字誌：issue 05_pdf 自由字在：字體設計與創意 中國字體設計人：一字一生 西文字體1：字體的背景知識和使用方法 西文字體2：經典款字體及其表現方法 文字設計的原理_文字設計所必須的信息和技巧 新概念字體基礎&amp;應用_蘇克 説文解字 字言字語 字體傳奇 影響世界的helvetica 治字百方 字型散步 街道文字_小林章 西文排版_排版的基礎和規範 漢字書法之美_蔣勳 文字的故事 意匠文字 設計師的字體世界 文字的力與美 漢字的誘惑 中國美術字史圖説 漢字設計與應用 十二生肖形意字 書法字體設計技巧與應用 平面排版_基本的基本 tokoy tdc vol.28⭐ 排版的風格 字體設計的規則與藝術 tokoy tdc vol.29⭐ 字體呈現3⭐ 字體設計基礎 【會員專供】中國近現代字體應用文獻展 【會員專供】文字設計在中國邀請展 【會員專供】超語境國際文字設計論壇 世界文字發展史_11407704 今日字體 創意字體設計與製作-www.afx365.com 國際平面設計基礎教程-typography字體設計 字型之不思議 字型之不思議 小冊-手寫 字體呈現-q 字體呈現二（完整） 字體呈現小冊一 字體呈現小冊二 字體怡人 字體設計100+1 字體，海報設計部分 展覽，印刷字體部分（雙頁） 序言 排版造型_白井敬尚 文字設計的原理 書於竹帛中國古代的文字記錄_12270059 歐文字體ⅰ 歐文字體ⅱ 自由“字”在 字體設計與創意13696100(1) 設計入門教室 2 文字設計的原理 designing type basics design 03: typography written on bamboo and silk: the beginnings of chinese books and inscriptions"><span class="side-num">03</span> Typography &amp; Lettering</a><a href="04_layout-grid.html" data-search="04 layout grid layout &amp; grid systems grids, hierarchy, and arranging image with text week 3, 4, 5 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 日本版式設計原理_p159 跨平台的視覺設計版式設計原理 破譯文字編排設計 破譯網格設計 美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書 版式設計：日本平面設計師參考手冊 超越平凡的平面設計：怎樣做好版式 版式設計+給你靈感的全球最佳版式創意方案 柵格系統與版式設計 國際版式設計基礎教程 七日掌握版面設計基礎 美國編排設計教程 平面設計中的網格系統 版式設計風暴ⅱ 網格系統與版式設計 創意版式設計_王紹強 版面設計的原理_設計前必須知道的事情 版式設計全攻略(佐) 進階理解版式設計 版式設計：合適最好 版式設計從入門到精通 版面設計網格構成 版式設計原理_案例篇：提升版式設計的55個技巧 秩序之美_網頁中的網格設計 日本版式設計原理 版式設計法則 版式創意大爆炸 版式設計+2版式創意方案 版式設計風暴 [商業版式設計的方法] 版式編排設計 版式設計 今日版式 印刷的終結：戴維·卡森的自由版式設計 國際平面設計基礎教程-grids網格設計 國際平面設計基礎教程-layout版式設計(第2版) 版式設計-www.afx365.com 版式設計原理 版式設計原理-全綵教程 版式設計實用手冊-www.afx365.com 版式設計實用手冊.suni視覺設計.全綵版 版式設計從入門到精通-www.afx365.com 版面設計黃金法則 破譯文字編排設計-www.afx365.com 秩序之美——網頁中的網格設計英文版 編排設計教程 設計入門教室 1 版面設計的原理 超越平凡的平面設計 版式設計原理與應用 typography workbook: a real-world guide to using type in graphic design making and breaking the grid: a graphic design layout workshop graphic designer&#x27;s essential reference: visual elements, techniques, and layout strategies for busy designers before &amp; after page design grid systems: principles of organizing type best practices for graphic designers, grids and page layouts: an essential guide for understanding and applying page design principles typographic systems grid systems: principles of organizing type layout: making it fit: finding the right balance between content and space ordering disorder: grid principles for web design the end of print: the graphic design of david carson basics design 07: grids basics design 02: layout , 2nd edition typography workbook: a real-world guide to using type in graphic design ordering disorder: grid principles for web design typographic systems before &amp; after: how to design cool stuff"><span class="side-num">04</span> Layout &amp; Grid Systems</a><a href="05_logo-branding.html" data-search="05 logo branding logo &amp; branding mark types, identity systems, and brand strategy week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book logo 百年 設計品牌（原田進） 用設計做品牌 品牌設計+：給你靈感的 best 品牌形象方案 品牌設計+：創造 top 品牌的色彩應用方案 品牌設計+：創造 brand 力的動態 logo 設計（1） 標誌設計 logo design 標誌新語 iii really good logos explained designing brand identity 超越 logo 設計 brand 創新與設計：創意、建構和維護精彩品牌標識之完全指南 標誌設計指南 logo design workbook 品牌標誌：top 設計 150 例 消費森林 × 品牌再生：李永銓的設計七大法則 品牌中的色彩 圖案無限：品牌中的圖案 品牌簡單之道 what brand 什麼是品牌設計 品牌 100 一個 logo 的誕生 視覺美食：最佳餐飲品牌設計 溝通時尚品牌 100 個經典 logo 品牌設計之美：冷色調的色彩詮釋 logo：29 個經典的前世今生 logo 百年 品牌至上：logo 設計法則與案例應用解析 品牌識別法則：100 條原理 no logo：顛覆品牌全球統治 脫穎而出的品牌致勝秘密 精簡：無印良品與品牌理念打造 電商品牌形象設計 品牌標誌：頂級設計 150 例 設計品牌 世界標誌大典 1 品牌設計法則（徐適） 日本彩色商標與企業識別 10 解構 logo 設計：300 例國際 logo 分析與解讀 超越 logo 設計：國際頂級平面設計師的成功法則 超越 logo 設計：國際頂級平面設計師的成功法則 logo design love: a guide to creating iconic brand identities designing brand identity: a complete guide to creating, building, and maintaining strong brands logo design workbook: a hands-on guide to creating logos creative solutions: logos: making a strong mark: 150 strategies for logos that last brandsimple: how the best brands keep it simple and succeed what is branding? logo life: life histories of 100 famous logos tm: the untold stories behind 29 classic logos brand identity essentials: 100 principles for designing logos and building brands no logo: taking aim at the brand bullies designing brand identity: an essential guide for the whole branding team creative solutions: logos: making a strong mark: 150 strategies for logos that last deconstructing logo design: 300+ international logos analyzed and explained logo design love: a guide to creating iconic brand identities logo design love: a guide to creating iconic brand identities"><span class="side-num">05</span> Logo &amp; Branding</a><a href="06_packaging.html" data-search="06 packaging packaging structure, the shelf, materials, and brand week 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 創造品牌的包裝設計 現代設計色彩教材叢書：包裝設計色彩 包裝設計藝術：王紹強 紙品包裝結構解析 新包裝 環保包裝設計 50 trade secrets of great design packaging 1000 package designs：a comprehensive guide 拿來就用的包裝設計 食品包裝設計 包裝設計+：給你靈感的包裝方案 包裝設計家：靳埭強與他的設計師朋友 簡約包裝 simply packaging 中式元素視覺傳達：包裝設計 packaging the brand: the relationship between packaging design and brand identity simply packaging"><span class="side-num">06</span> Packaging</a><a href="07_book-print.html" data-search="07 book print book design &amp; print book structure, paper, binding, and print week 5, 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2015 中國最美的書 書籍設計-安德魯 書形：138種創意書籍和印刷紙品設計 如何設計一本畫冊 平面印刷色彩：四色與專色 國際平面設計基礎教程：print&amp;finish印前印後 世界書籍藝術流派 中外裝幀藝術論集 中國古籍版本概要 出版物設計完全手冊 印刷工藝：燙印與凹凸 印前校色實用教程 印前輸出培訓參考：全綵教程-200p 嶄新印通拼版教程 平版印刷拼版手冊 平面設計及印刷業務人員常識備忘手冊 書籍設計 書藝問道 現代圖書設計 範式革命：中國現代書籍設計的發端 1862-1937 電腦印前技術完全手冊（第2版） book design basics design 06: print and finish publication design workbook: a real-world guide to designing magazines, newspapers, and newsletters book design new book design"><span class="side-num">07</span> Book Design &amp; Print</a><a href="08_infographics.html" data-search="08 infographics information graphics visualising information and explaining with diagrams week 4 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 圖解力 以圖釋義：信息圖表設計 信息圖表設計入門 信息圖表設計：全球創意入門" aria-current="page"><span class="side-num">08</span> Information Graphics</a><a href="09_interaction-ux.html" data-search="09 interaction ux interaction, web &amp; ux goal-directed design, usability, and interface principles week 11 (and 4) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book about face 3：交互設計精髓 about face 4：交互設計精髓（中文彩版） android 交互視覺設計規範 贏在用戶：web 人物角色創建和應用實踐指南 don&#x27;t make me think（英文第 2 版） ui 羣英匯：用戶體驗、交互與視覺設計方法論 web 界面設計 形式感：網頁視覺設計創意拓展與快速表現 關鍵設計報告：改變過去影響未來的交互設計法則 點石成金：訪客至上的網頁秘籍 認知與設計：理解 ui 設計準則 簡約至上：交互設計四策略 見微知著：web 用戶體驗解構 與世界 ui 設計師同行 ux 設計之道：以用戶體驗為中心的 web 設計（第 2 版） ui 設計黃金法則：觸動人心的 100 種用戶界面 sexy web design：creating interfaces that work 用戶體驗的要素：以用戶為中心的 web 設計 網頁設計（web designer emag） 點石成金：訪客至上的網頁設計秘笈 ios 9 界面設計規範剖析及實戰 不要讓我思考（don&#x27;t make me think） 贏在用戶：web 人物角色創建和應用實踐指南 軟件觀念革命：交互設計精髓 一目瞭然：web 軟件顯性設計之路 就這麼簡單：web 開發中的可用性和用戶體驗 微交互：細節設計成就卓越產品 怦然心動：情感化交互設計指南 用戶體驗度量 用戶體驗要素：以用戶為中心的產品設計（原書第 2 版） 眾妙之門：網站 ui 設計之道 瞬間之美：web 界面設計如何讓用戶心動 破繭成蝶：用戶體驗設計師的成長之路 簡約至上：交互設計四策略 網頁設計創意書 認知與設計：理解 ui 設計準則 認知與設計：理解 ui 設計準則（第 2 版） 贏在用戶：web 人物角色創建和應用實踐指南 體驗·度：簡單可依賴的用戶體驗（彩版） about face 3: the essentials of interaction design , 3rd edition about face: the essentials of interaction design , 4th edition the user is always right: a practical guide to creating and using personas for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing web interfaces: principles and patterns for rich interactions designing interactions don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing with the mind in mind: simple guide to understanding user interface design rules simple and usable web, mobile, and interaction design a project guide to ux design: for user experience designers in the field or in the making , 2nd edition digital design essentials: 100 ways to design better desktop, web, and mobile interfaces the elements of user experience: user-centered design for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition don&#x27;t make me think: a common sense approach to web usability , 2nd edition the user is always right: a practical guide to creating and using personas for the web about face 2.0: the essentials of interaction design designing the obvious: a common sense approach to web application design microinteractions: designing with details seductive interaction design: creating playful, fun, and effective user experiences measuring the user experience: collecting, analyzing, and presenting usability metrics the elements of user experience: user-centered design for the web and beyond , 2nd edition the smashing book designing the moment: web interface design concepts in action simple and usable web, mobile, and interaction design the web designer&#x27;s idea book: the ultimate guide to themes, trends and styles in website design designing with the mind in mind: simple guide to understanding user interface design rules designing with the mind in mind: simple guide to understanding user interface design guidelines , 2nd edition the user is always right: a practical guide to creating and using personas for the web"><span class="side-num">09</span> Interaction, Web &amp; UX</a><a href="10_graphic-practice.html" data-search="10 graphic practice graphic design practice process, design thinking, creative methods, and practice week 1, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 100 個改變平面設計的觀念 嘿，設計 圖解平面設計規範 40 天成為資深設計師 ideo：設計改變一切 創意之道（the copy book） 非常規標誌設計：6 個不必遵守的基礎原則 最佳設計 100 細則 少即是多：減法設計 視覺傳達設計實踐 1000 retail graphics 高效設計溝通之道（原書第 2 版） 完成設計：從理論到實踐 美國視覺傳達完全教程 零 zerro：世界符號大全 平面與空間 創意工場：提升設計技巧的 80 個挑戰 日本的手感設計 設計的品格 設計並不重要 我的第一本設計書 平面設計過程 小平面 北歐設計 王志弘作品收集 做喜歡的事：25 個亞太創意設計工作室 做喜歡的事：25 個歐美創意設計工作室 設計修辭法 設計與死 設計的覺醒 平面設計死了嗎 放眼德國設計 放眼法國設計 漫遊英國設計 漫步日本設計 荷蘭設計 設計的手感 歲寒三友：詩意設計作品集 廣州美術學院碩士研究生作品集 靳埭強與格呂特納的海報對話 靳埭強設計獎 陳幼堅最新作品 平面設計八人 設計集 設計心法 100+1 靳叔說：設計語錄 設計的圖謀：改變世界的80個日常創意陰謀 遺產與更新：中國設計教育反思 設計師演講錄：icograda 世界設計大會 設計創意流程：用mba思維成就設計高效能 全球優秀93位平面設計師作品集 遊遊遊：說說我的設計私想 對話日本設計 設計師不讀書 設計質 大話設計師 從製造到設計：20世紀德國設計 意東方：設計中的東方元素（一） 49個成就平面設計的關鍵詞 企業形象設計家：靳埭強與他的設計師朋友 海報設計家：靳埭強與他的設計師朋友 生活·心源：靳埭強設計與藝術 靳埭強·身度心道：中國文化為本的設計·繪畫·教育 ideo 設計現象探究：patterns 2010 設計效果圖 設計百年：20世紀平面設計的先驅 設計解決 像設計師那樣思考 圖形設計新元素 如何把國外作品轉化為自己的能力（第二部） 平面設計：我的第2語言 為什麼設計 理性設計 至關重要的設計 解決100個煩惱的100種設計 設計推導學 中國古代設計思想史略 什麼是平面設計？ 創意工場：提升設計技巧的80個挑戰 動畫分鏡台本設計 吳東龍的東京設計生活100 寫給大家看的設計書（第三版） 好設計的造型元素 完成設計：從理論到實踐 宣傳冊設計與製作 平面設計200年 新興實踐：設計的專業、價值與途徑 日本當代插圖集 最全設計規範 服務的細節：完全商品陳列115例 為真實世界的設計 生命的幻象：迪士尼動畫造型設計 異想天開：設計初始 知日・設計力 移動設計 符號與數字：平面中的視覺表達 第三種創新：設計驅動式創新 編輯設計 至關重要的設計 至關重要的設計（布倫納） 蘋果首席設計師：喬納森傳 視覺傳達設計 視覺傳達設計考研手繪 視覺營銷：零售店櫥窗與店內陳列 託尼克：設計為何 設計＋生活：佐藤 設計＋生活：奎內克 設計＋生活：姚爾丹 設計＋生活：孔喬 設計＋生活：府烈茶 設計＋生活：王翰尼 設計＋生活：白同異 設計＋生活：蒙古齊 設計＋生活：雷又西 設計中的錯視 設計五感：亂 設計五感：惡 設計五感：拙 設計五感：精 設計入門教室：設計的基本規則 設計力就是溝通力 設計，在人人設計的時代 設計密碼 設計師不可不知的 100 種世界經典平面設計圖書 設計思維手冊：斯坦福創新方法論 設計思維與方法 設計方法與策略：代爾夫特設計指南 設計的意義 設計的細節：日本經典設計透析 設計與革新：關於未來設計的 50 種思考 設計風尚 5：創意節日宣傳頁設計與製作 設計高手的秘密 設計，在人人設計的時代：社會創新設計導論 這樣擺，最好賣：賣場中的商品陳列技巧 造像量度：佛像唐卡設計比例圖 關於設計的思考 非平面 靳埭強設計獎：平面設計作品集 騰訊網 ued 體驗設計之旅 100 ideas that changed graphic design change by design: how design thinking transforms organizations and inspires innovation the copy book: how 32 of the world&#x27;s best advertising writers write their advertising no rules! logos: radical design solutions that break the rules universal principles of design communicating design: developing web site documentation for design and planning , 2nd edition design evolution: theory into practice graphic communications today creative workshop: 80 challenges to sharpen your design skills graphic design process: from problem to solution: 20 case studies design and the creative process atlas of graphic designers designers don&#x27;t read the graphic design idea book: inspiration from 50 masters a century of graphic design: graphic design pioneers of the 20th century how to think like a great graphic designer graphic design: the new basics graphic design as a second language do you matter? how great design will make people love your company what is graphic design? creative workshop: 80 challenges to sharpen your design skills the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual design evolution: theory into practice graphic style: from victorian to hipster design for the real world: human ecology and social change the illusion of life: disney animation design-driven innovation: changing the rules of competition by radically innovating what things mean editing by design: for designers, art directors, and editors: the classic guide to winning readers do you matter? how great design will make people love your company do you matter? how great design will make people love your company jony ive: the genius behind apple&#x27;s greatest products graphic design solutions visual merchandising: windows and in-store displays for retail why we design design, when everybody designs: an introduction to design for social innovation bibliographic: 100 classic graphic design books delft design guide: design strategies and methods design, form, and chaos design, when everybody designs: an introduction to design for social innovation thoughts on design unflattening"><span class="side-num">10</span> Graphic Design Practice</a><a href="11_interior.html" data-search="11 interior interior design drawings, scale, light, materials, construction, and furnishing further reading 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 零基礎學建築識圖 室內裝飾裝修施工完全圖解教程 室內設計節點手冊：常用節點 室內設計節點手冊：酒店固定傢俱 材料收口 裝飾工藝解析：吊頂篇 裝飾工藝解析：地面篇 裝飾工藝解析：牆面篇 室內設計師必知的100個節點 室內裝飾裝修材料應用與選購 室內設計材料選用實戰手冊 石材應用手冊 設計師的材料清單·室內篇 圖解照明設計 室內照明設計精品教程 室內燈光設計 室內設計師專用燈光設計手冊 室內設計師燈光設計細部解析 照明設計終極聖經 家居色彩設計指南 設計師談家居色彩搭配 設計配色基礎 輕·重·緩·急：搭出耐看配色 人體工程學與室內設計 住宅的設計尺寸剖析書 圖解住宅尺寸與格局設計 室內施工圖實戰教程 室內施工圖製圖標準 室內空間佈局與尺度設計 室內細部設計cad圖集 室內設計尺寸關鍵術 室內設計數據手冊：空間與尺度 室內設計與人體工程學 家裝常用數據尺寸速查 工裝設計尺度數據手冊 人機工程學（第五版） 年輕設計師必修的七堂課 網紅室內設計師ip運營法則 裝修設計師談單簽單一課通 軟裝談單寶典 住宅格局破解術 住宅格局解剖圖鑑 住宅設計剖析手冊 住宅設計解剖書 住得優雅：住宅設計的34個法則 圖解極簡主義設計 室內住宅設計圖解 室內空間設計手冊 室內設計·思維與方法 室內設計基礎 小家越住越大2 打造讓孩子自主學習的住宅 樓梯設計的9個法則 淺談家庭中央空調的使用 牆面設計 裝修設計解剖書 解構收納 設計中的設計 設計師要懂的心理學 室內精細化設計研究 傢俱設計資料圖集 室內設計風格圖文速查 軟裝改造解剖書 軟裝設計元素搭配手冊 軟裝設計師手冊 軟裝風格速查 the lighting bible the interior plan: concepts and exercises 100 things every designer needs to know about people"><span class="side-num">11</span> Interior Design</a><a href="12_architecture-space.html" data-search="12 architecture space architecture &amp; space form, space, order, and proportion week 2, 6–7 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 建築：形式、空間和秩序（第 3 版） 反造型 architecture: form, space, and order , 3rd edition"><span class="side-num">12</span> Architecture &amp; Space</a><a href="13_product.html" data-search="13 product product design minimalism, ten principles of good design, and muji week 11 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 簡約不簡單：極簡風格產品設計 產品極簡主義 無印良品的設計 解密無印良品 20 世紀 50–80 年代中國、德國產品設計回望 無印良品世界觀 創新產品設計與手繪 深澤直人 意識的核心 product design now naoto fukasawa"><span class="side-num">13</span> Product Design</a><a href="14_design-art-history.html" data-search="14 design art history design &amp; art history from manuscripts and arts and crafts through the bauhaus to the digital era week 1 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術簡史 世界平面設計史 醜的歷史 美的歷史 世界當代藝術史 世界現代設計史 中國現代設計與包豪斯 包豪斯道路：歷史、遺澤、世界與中國 包豪斯 運動中的視覺：新包豪斯的基礎 包豪斯：大師和學生們 包豪斯藏品精選集 包豪斯理想：過去與現在 世界現代設計史 中國 外國 工業設計史（第四版） 現代設計百科全書：平面設計的歷史、語言及經典應用 藝術的真相：通往藝術之路 藝術與物理學：時空和光的藝術觀與物理觀 設計藝術史 重要的不是藝術 錢君匋的藝術世界 art: a brief history , 4th edition vision in motion the bauhaus: masters &amp; students by themselves the bauhaus ideal then &amp; now: an illustrated guide to modernist design graphic design, referenced: a visual guide to the language, applications, and history of graphic design gateways to art: understanding the visual arts art &amp; physics: parallel visions in space, time, and light"><span class="side-num">14</span> Design &amp; Art History</a><a href="15_theory-psychology.html" data-search="15 theory psychology design theory &amp; psychology gestalt, cognition, emotional design, and kenya hara week 4, 6–7, 10 1. scope 2. perception 3. cognition &amp; behaviour 4. aesthetics &amp; philosophy 5. principles &amp; methods 6. selected figures 7. source bookshelf 8. study cues 7. each book 審醜：萬物美學 原研哉的設計世界 視覺藝術原理（第八版） 設計心理學 1：日常的設計 設計心理學 2：與複雜共處 設計心理學 3：情感化設計 設計心理學 4：未來設計 日本的八個審美意識 點線面 日式設計美學 康定斯基論點線面 藝術與視知覺 藝術中的精神 圖像與眼睛：圖畫再現心理學的再研究 象徵的圖像：貢布里希圖像文集 設計私語錄：通心粉的孔洞之謎 悲劇的誕生：尼采美學文選 設計中的色彩心理學 設計之美 藝術與視知覺：新編 設計中的設計 設計師要懂心理學（迷你書） 設計心理學 設計心理學（唐納德·a·諾曼） 情感化設計 感性美學 我眼中的設計之美 日式平面美學 淺談設計之美 為什麼設計 重構美學 白 社會心理學（第八版） 藝術與錯覺：圖畫再現的心理學研究 視覺思維 視覺思維（阿恩海姆） 視覺藝術的含義 設計中的設計 設計中的設計（全本） 設計中的設計（原研哉） 設計師要懂心理學 設計心理學（247 頁本） 設計心理學（中文版） 設計美學（廣州美術學院藝術設計教程） 設計與視知覺 象徵的圖像：貢布里希圖像學文集 ugly: the aesthetics of everything prebles&#x27; artforms: an introduction to the visual arts , 8th edition the design of everyday things , revised and expanded edition living with complexity emotional design: why we love (or hate) everyday things the design of future things art and visual perception: a psychology of the creative eye , the new version the image and the eye: further studies in the psychology of pictorial representation symbolic images: studies in the art of the renaissance beautiful thing: an introduction to design art and visual perception: a psychology of the creative eye , the new version 100 things every designer needs to know about people the design of everyday things the design of everyday things emotional design: why we love (or hate) everyday things social psychology , 8th edition art and illusion: a study in the psychology of pictorial representation visual thinking visual thinking meaning in the visual arts: papers in and on art history 100 things every designer needs to know about people the design of everyday things the design of everyday things symbolic images: studies in the art of the renaissance"><span class="side-num">15</span> Design Theory &amp; Psychology</a><a href="16_pattern-ornament.html" data-search="16 pattern ornament pattern &amp; ornament pattern structure, chinese and western motifs, and auspicious meaning week 8 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book (new)世界裝飾紋樣圖典(4000餘種圖案+紋飾百科全書+裝飾藝術寶庫) l&#x27;art arabe 01 秩序感：裝飾藝術的心理學研究 中國紋樣集錦：examples of chinese ornament the grammar of ornament 中國紋樣全集 魏晉南北朝·隋唐·五代卷 世界裝飾圖案-1887-85p圖版 中國紋樣全集 宋·元·明·清卷 中國紋樣全集 戰國·秦·漢卷 中國紋樣全集 新石器時代和商·西周·春秋卷 中國經典紋樣圖鑑 摩洛哥傳統裝飾藝術 敦煌線描 民間美術：湖北挑花、土錦、藍印花布 裝飾文叢特別策劃卷7 貴州傳統蠟染-攝影集 the sense of order: a study in the psychology of decorative art examples of chinese ornament selected from objects in the south kensington museum and other collections"><span class="side-num">16</span> Pattern &amp; Ornament</a><a href="18_magazines-annuals.html" data-search="18 magazines annuals magazines &amp; annuals how to look at annuals and magazines week 1–13 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2021日本平面設計年鑑 45th publication design annual apd亞太設計年鑑no.17(1) brand 12 brand no.36-生活使用手冊2：文創熱量 brand no.37-字己 brand no.38-手工印刷 brand no.39-物料進化 brand no.40-文化時光機1868-1988 brand no.41-看圖説話，你的信息時代 brand no.42.-你好，藝術pdf brand no.43-小物志 brand no.44-貓狗日誌 design 360 雜誌(1) gallery 形錄 全球最佳圖形設計 vol.09 idea 377 novum201901 apd9亞太平面設計年鑑 apd5亞太設計年鑑 中國品牌設計年鑑 2013 日本字體與平面設計大獎年鑑 國家博物館-仙山圖特展 國家博物館-宋末民初上海畫壇 國家博物館-宋代花箋特展 國家博物館-蘇州片及其影響 國家博物館-瓶花與盆景畫特展 國家博物館-書畫菁華特展 idea+10 1 舉一反百的聰明設計法則 idea+10 2 一計點睛的即效設計處方 red-dot-award-concept-2011-2012 red_dot_award_design_concept_2013-2014 brand brand gallery 國際設計年鑑2014 日本品牌與包裝設計年鑑 2016 日本平面創意設計年鑑 2002-2004 疾風迅雷 杉浦康平雜誌設計的半個世紀 眾妙之門：移動web設計精髓（德）smashing雜誌 essentials of mobile design"><span class="side-num">18</span> Magazines &amp; Annuals</a><a href="20_advertising.html" data-search="20 advertising advertising positioning, aida, creative tactics, and point of purchase week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 1001 個廣告法則 pop 廣告設計 智威湯遜手冊 美國廣告設計實用教程 廣告公司的秘密：平面設計師就業寶典 advertising by design: creating visual communications with graphic impact"><span class="side-num">20</span> Advertising</a></div></nav>
+    </aside>
+    <main class="main" id="content" tabindex="-1">
+      <div class="topbar">
+        <button class="side-toggle" type="button">Guides</button>
+        <nav class="jump" aria-label="On this page"><a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a></nav>
+      </div>
+      <p class="kicker"><a href="index.html">SSHD2382</a> · Category 08</p>
+      <div class="digest">
+<h1 id="information-graphics">Information Graphics</h1>
+<p class="meta">Category 08 · Course link: Week 4 Visual Hierarchy · Main references: Hiroyuki Kimura, <span lang="zh-Hant">《圖解力：跟頂級設計師學作信息圖》</span>; <span lang="zh-Hant">《以圖釋義：信息圖表設計》</span>; <span lang="zh-Hant">《信息圖表設計入門》</span> (pictogram section); <span lang="zh-Hant">《信息圖表設計：全球創意入門》</span></p>
+
+<h2 id="1-scope">1. Scope</h2>
+<p>This category has only 4 core books (plus 1 duplicate), but together they cover the complete framework of information graphics:</p>
+<table>
+<thead>
+<tr>
+<th>Book</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span lang="zh-Hant">《圖解力》</span></td>
+<td>Five types of information graphic (diagram, chart and table, graph, map, pictogram) and five key qualities</td>
+</tr>
+<tr>
+<td><span lang="zh-Hant">《以圖釋義》</span></td>
+<td>A seven-step production process + interviews with international designers</td>
+</tr>
+<tr>
+<td><span lang="zh-Hant">《信息圖表設計入門》</span></td>
+<td>Design steps and uses of the pictogram</td>
+</tr>
+<tr>
+<td><span lang="zh-Hant">《全球創意入門》</span></td>
+<td>100 data visualisation cases, 8 ways of representing data</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Infographic</strong> = turning information (data, structure, process, location) into visual form so that people understand it <strong>faster and more accurately</strong>. It sits between design and editing: you have to "understand" before you can "diagram".</p>
+</blockquote>
+<h2 id="2-core-concepts">2. Core Concepts</h2>
+<h3 id="21">2.1 Five Basic Types (<span lang="zh-Hant">《圖解力》</span>)</h3>
+<div class="cards">
+<div><strong>Diagram</strong>Uses shapes and arrows to explain structure, relationships and processes. Examples: organisation charts, flowcharts, concept maps, cross-sections.</div>
+<div><strong>Chart &amp; Table</strong>Organises information in rows and columns for easy comparison. Examples: timetables, comparison tables, matrices.</div>
+<div><strong>Graph</strong>Turns quantities into length, area or position. Examples: bar charts, line charts, pie charts, scatter plots.</div>
+<div><strong>Map</strong>Shows spatial location and distance. Examples: route maps, guide maps, thematic maps, railway line diagrams.</div>
+<div><strong>Pictogram</strong>Replaces words with simplified images, crossing language barriers. Examples: toilets, emergency exits, Olympic sports symbols.</div>
+</div>
+
+<h3 id="22">2.2 Choosing a Graph</h3>
+<div class="chart">
+<svg viewBox="0 0 720 210" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <g transform="translate(20,20)">
+    <rect width="150" height="120" fill="#fff" stroke="#e2e2e8"/>
+    <rect x="20" y="70" width="20" height="40" fill="#5b5b66"/><rect x="50" y="40" width="20" height="70" fill="#c8102e"/><rect x="80" y="55" width="20" height="55" fill="#5b5b66"/><rect x="110" y="85" width="20" height="25" fill="#5b5b66"/>
+    <text x="75" y="145" text-anchor="middle" font-weight="bold" fill="#1d1d1f">Bar</text><text x="75" y="163" text-anchor="middle" fill="#5b5b66">Comparison · Ranking</text>
+  </g>
+  <g transform="translate(195,20)">
+    <rect width="150" height="120" fill="#fff" stroke="#e2e2e8"/>
+    <polyline points="15,95 45,80 75,85 105,50 135,30" fill="none" stroke="#c8102e" stroke-width="3"/><polyline points="15,70 45,75 75,65 105,72 135,68" fill="none" stroke="#5b5b66" stroke-width="2"/>
+    <text x="75" y="145" text-anchor="middle" font-weight="bold" fill="#1d1d1f">Line</text><text x="75" y="163" text-anchor="middle" fill="#5b5b66">Change over time · Trends</text>
+  </g>
+  <g transform="translate(370,20)">
+    <rect width="150" height="120" fill="#fff" stroke="#e2e2e8"/>
+    <circle cx="75" cy="60" r="42" fill="#5b5b66"/><path d="M75 60 L75 18 A42 42 0 0 1 115 73 Z" fill="#c8102e"/><path d="M75 60 L115 73 A42 42 0 0 1 60 100 Z" fill="#e2e2e8"/>
+    <text x="75" y="145" text-anchor="middle" font-weight="bold" fill="#1d1d1f">Pie</text><text x="75" y="163" text-anchor="middle" fill="#5b5b66">Part and whole (≤ 5 items)</text>
+  </g>
+  <g transform="translate(545,20)">
+    <rect width="150" height="120" fill="#fff" stroke="#e2e2e8"/>
+    <g fill="#5b5b66"><circle cx="25" cy="95" r="4"/><circle cx="40" cy="85" r="4"/><circle cx="55" cy="80" r="4"/><circle cx="70" cy="62" r="4"/><circle cx="85" cy="66" r="4"/><circle cx="100" cy="45" r="4"/><circle cx="118" cy="38" r="4"/></g><circle cx="125" cy="90" r="5" fill="#c8102e"/>
+    <text x="75" y="145" text-anchor="middle" font-weight="bold" fill="#1d1d1f">Scatter</text><text x="75" y="163" text-anchor="middle" fill="#5b5b66">Two variables · Outliers</text>
+  </g>
+  <text x="360" y="203" text-anchor="middle" fill="#5b5b66" font-size="11">Mark the key data with one accent colour and keep the rest neutral grey — the simplest and most effective way to build visual hierarchy.</text>
+</svg>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>To show</th>
+<th>Suitable forms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comparison</td>
+<td>Bar chart, dot plot</td>
+</tr>
+<tr>
+<td>Change over time</td>
+<td>Line chart, area chart, timeline</td>
+</tr>
+<tr>
+<td>Composition</td>
+<td>Stacked bar chart, pie chart (fewer than five items), treemap</td>
+</tr>
+<tr>
+<td>Distribution</td>
+<td>Histogram, box plot</td>
+</tr>
+<tr>
+<td>Relationship</td>
+<td>Scatter plot, bubble chart, network diagram</td>
+</tr>
+<tr>
+<td>Flow</td>
+<td>Sankey diagram, parallel sets</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>Thematic map, dot distribution map</td>
+</tr>
+<tr>
+<td>Structure / Process</td>
+<td>Diagram, flowchart, cross-section</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23">2.3 Five Qualities of a Good Information Graphic</h3>
+<p><span lang="zh-Hant">《圖解力》</span> and <span lang="zh-Hant">《以圖釋義》</span> both put forward the same set of criteria:</p>
+<table>
+<thead>
+<tr>
+<th>Quality</th>
+<th>Meaning</th>
+<th>Self-check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Attractive</td>
+<td>Makes people want to look at first glance</td>
+<td>Is there one strong visual entry point?</td>
+</tr>
+<tr>
+<td>Clear</td>
+<td>Information is accurate and cannot be misread</td>
+<td>Are the proportions, scales and units correct?</td>
+</tr>
+<tr>
+<td>Simple</td>
+<td>Keeps the essentials and drops the rest</td>
+<td>If you delete this element, does understanding get worse?</td>
+</tr>
+<tr>
+<td>Flow</td>
+<td>The eye follows a clear reading order that builds time and space</td>
+<td>Do readers know where to start and where to finish?</td>
+</tr>
+<tr>
+<td>Wordless</td>
+<td>Uses images instead of words wherever possible</td>
+<td>Can readers get the main idea without reading the captions?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24">2.4 Three Organising Structures</h3>
+<p>After gathering the material, first decide which "axis" to organise it along (<span lang="zh-Hant">《以圖釋義》</span>):</p>
+<ul>
+<li><strong>Time</strong>: history, steps, schedules → timelines, flowcharts.</li>
+<li><strong>Space</strong>: location, structure, sections → maps, cutaway drawings, exploded views.</li>
+<li><strong>Logic</strong>: categories, cause and effect, comparison, hierarchy → matrices, tree diagrams, Venn diagrams, organisation charts.</li>
+</ul>
+<h2 id="3-principles-methods">3. Principles &amp; Methods</h2>
+<h3 id="31">3.1 Seven-Step Production Process (<span lang="zh-Hant">《以圖釋義》</span>)</h3>
+<pre class="mermaid">flowchart LR
+  a[&quot;1 Choose a topic&quot;] --&gt; b[&quot;2 Gather data&quot;]
+  b --&gt; c[&quot;3 Analyse data&lt;br/&gt;time, space, logic&quot;]
+  c --&gt; d[&quot;4 Decide the form&lt;br/&gt;medium, material, chart type&quot;]
+  d --&gt; e[&quot;5 Sketch&quot;]
+  e --&gt; f[&quot;6 Finalise design&quot;]
+  f --&gt; g[&quot;7 Test and publish&quot;]
+  g -.Feedback.-&gt; c
+</pre>
+<p><span lang="zh-Hant">《圖解力》</span> puts special stress on "<strong>building and rebuilding the framework</strong>": first use sketches to build a framework for understanding, then keep overturning and reorganising it until the structure is as simple as possible and as close as possible to the reader's question.</p>
+<h3 id="32">3.2 Honest Data</h3>
+<ul>
+<li>The value axis of a bar chart should start at 0; otherwise it exaggerates differences.</li>
+<li>Do not use 3D effects that distort areas and angles.</li>
+<li>When area represents quantity, the area (not the diameter) must be proportional to the value.</li>
+<li>State the data source, date and units.</li>
+<li>Colour carries meaning: keep the same data category in the same colour throughout the graphic.</li>
+</ul>
+<h3 id="33">3.3 Steps for Designing Pictograms (<span lang="zh-Hant">《信息圖表設計入門》</span>)</h3>
+<ol>
+<li><strong>Confirm the purpose</strong>: why do you need a pictogram? Will it be used in many places, in small spaces, or across languages?</li>
+<li><strong>Extract the features</strong>: find the most recognisable outline or action of the subject.</li>
+<li><strong>Unify the specifications</strong>: keep line weight, corner radius, proportion and visual weight consistent across the whole icon set.</li>
+<li><strong>Test recognition</strong>: show it at the target size to people from different backgrounds. Can they understand it without reading any words?</li>
+<li><strong>Systematise</strong>: combine it with colour, layout and caption text to form a complete visual language.</li>
+</ol>
+<p>The 1964 Tokyo Olympics were the first to use sports pictograms as a system, influencing every international event and public signage system since.</p>
+<h3 id="34">3.4 Links to Layout and Hierarchy</h3>
+<p>Information graphics are essentially an application of Week 4 visual hierarchy: title → main image → key figures → explanation → source. Accent colour, contrast of size, white space and the grid (see <a href="04_layout-grid.html">04 Layout &amp; Grid</a>) all apply here too.</p>
+<h2 id="4-selected-figures">4. Selected Figures</h2>
+<div class="figs">
+<figure><img src="assets/infographics/simple-map.jpg" alt="Simplified map"><figcaption>A guide map that keeps only the essential streets and landmarks. Source: <span lang="zh-Hant">《圖解力》</span>, p.144</figcaption></figure>
+<figure><img src="assets/infographics/route-map.jpg" alt="Route map"><figcaption>A hand-drawn route recording a day's itinerary. Source: <span lang="zh-Hant">《以圖釋義》</span>, p.218</figcaption></figure>
+<figure><img src="assets/infographics/cutaway.jpg" alt="Cutaway drawing"><figcaption>A cutaway drawing explaining the internal structure of a ship. Source: same book, p.111</figcaption></figure>
+<figure><img src="assets/infographics/radial-chart.jpg" alt="Radial chart"><figcaption>Multi-level category data organised in a radial form. Source: same book, p.48</figcaption></figure>
+<figure><img src="assets/infographics/eco-dashboard.jpg" alt="Environmental infographic"><figcaption>Environmental data presented by contrasting icons and figures. Source: same book, p.191</figcaption></figure>
+<figure><img src="assets/infographics/pictogram.jpg" alt="Pictogram"><figcaption>Pictogram: conveying "person" and "exhibition" with as few shapes as possible. Source: <span lang="zh-Hant">《信息圖表設計入門》</span>, p.36</figcaption></figure>
+<figure><img src="assets/infographics/venn.jpg" alt="Venn diagram"><figcaption>A Venn diagram showing where two concepts overlap. Source: same book, p.56</figcaption></figure>
+<figure><img src="assets/infographics/bloomberg-spread.jpg" alt="Bloomberg infographic"><figcaption>A large editorial infographic across a magazine spread. Source: same book, p.135</figcaption></figure>
+<figure><img src="assets/infographics/parallel-sets.jpg" alt="Parallel sets chart"><figcaption>Parallel axes and connecting lines show how several data sets correspond. Source: <span lang="zh-Hant">《信息圖表設計：全球創意入門》</span>, p.41</figcaption></figure>
+<figure><img src="assets/infographics/movie-colours.jpg" alt="Film colour barcode"><figcaption>A data visualisation that lines up the dominant colour of every frame of a film as a barcode. Source: same book, p.68</figcaption></figure>
+</div>
+
+<h2 id="5-source-bookshelf">5. Source Bookshelf</h2>
+<p>Suggested reading order: <span lang="zh-Hant">《圖解力》</span> (types and qualities) → <span lang="zh-Hant">《以圖釋義》</span> (process) → <span lang="zh-Hant">《信息圖表設計入門》</span> (pictograms) → <span lang="zh-Hant">《全球創意入門》</span> (cases).</p>
+<!-- BOOKSHELF:START -->
+
+<details><summary>Show 4 titles</summary>
+
+- <a href="#b-the-power-of-diagrams">[072]<span lang="zh-Hant">圖解力</span></a>
+- <a href="#b-explaining-with-pictures-information-graphics-design">[134]<span lang="zh-Hant">以圖釋義：信息圖表設計</span></a>
+- <a href="#b-introduction-to-information-graphics-design">[251]<span lang="zh-Hant">信息圖表設計入門</span></a>
+- <a href="#b-information-graphics-design-a-global-creative-primer">[252]<span lang="zh-Hant">信息圖表設計：全球創意入門</span></a>
+
+</details>
+
+<!-- BOOKSHELF:END -->
+
+<h2 id="6-study-cues">6. Study Cues</h2>
+<ol>
+<li>Draw your route to school as a simplified map that keeps only five landmarks.</li>
+<li>Find a graph in a newspaper and check whether its value axis, units and data source are honest.</li>
+<li>Show the same set of data (for example, a week's spending) as a bar chart, a pie chart and a treemap. Which is clearest? Why?</li>
+<li>Design a set of four pictograms for a classroom (no eating or drinking, charging point, recycling, quiet), keeping lines and proportions consistent.</li>
+<li>Score an online infographic against the five qualities (attractive, clear, simple, flow, wordless).</li>
+</ol>
+<!-- BOOKS:START -->
+
+<h2 id="7-each-book">7. Each Book</h2>
+<p>Each book in the bookshelf is described below. Every title above links to its section.</p>
+<h3 class="book" id="b-the-power-of-diagrams"><span lang="zh-Hant">圖解力</span></h3>
+<p><strong>Author:</strong> Hiroyuki Kimura</p>
+<p><strong>Scope.</strong> This is a book of methods for information graphics, not an annual of finished work. Hiroyuki Kimura sorts the information graphics found in newspapers, magazines, books and web pages into several types, and explains how to find a point of view that makes readers want to keep looking. Use it to set up categories before starting an infographic project.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A diagram organises information functionally; an infographic must also meet the needs of reporting, with the layout worked over again and again so that people want to keep reading.</li>
+<li>The main types in the book are: Diagram, Chart and Table, Graph, Map, and Pictogram.</li>
+<li>A good infographic uses metaphors that fit cultural habits, and the designer's point of view must match the reader's.</li>
+<li>If a chronology-type graphic uses only one straight line, it becomes misleading as soon as the scale changes; the form must follow the nature of the data.</li>
+<li>The Malofiej Awards show that the field covers both print and animated online infographics.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First decide which type your material belongs to (process, comparison, statistics, map, symbol), then choose the chart type. Do not start by picking an attractive template.</li>
+<li>Each graphic answers only one question. Write the question in the title.</li>
+<li>Check the proportions: the scales of timelines, maps and bar charts must be honest.</li>
+<li>When you finish, ask: without reading the text, can readers state the conclusion of this graphic within ten seconds?</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/infographics/books/b-the-power-of-diagrams-1.jpg" alt="Scale in a chronology"><figcaption>If a chronology uses only a straight line, the stretched sections cause confusion because of differing scales. Source: Hiroyuki Kimura, <span lang="zh-Hant">《圖解力》</span>, p.96</figcaption></figure>
+<figure><img src="assets/infographics/books/b-the-power-of-diagrams-2.jpg" alt="Transport infographic"><figcaption>An example of using graphics to organise transport and accessibility information. Source: same book, p.205</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Give one example you have seen of each: diagram, chart, graph, map and pictogram.</li>
+<li>Draw a class timeline, first as an evenly spaced straight line, then in a way that shows "which period is especially long". Compare which is more honest.</li>
+</ol>
+<h3 class="book" id="b-explaining-with-pictures-information-graphics-design"><span lang="zh-Hant">以圖釋義：信息圖表設計</span></h3>
+<p><strong>Scope.</strong> This book goes from "what is an infographic" to making one, and interviews a number of designers. It boils down the standard for a good graphic to five words, which makes it useful for assessing your own work.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Attractive, Clear, Simple, Flow, Wordless. Clarity means handing the information to the reader in full; simplicity means removing elements that create a burden.</li>
+<li>The eye moves while reading, so design a path rather than spreading everything evenly.</li>
+<li>Text that is too dense throws away the advantage of an infographic; if an image can say it, do not add another paragraph.</li>
+<li>The techniques in the book include reworking bar charts, turning time into flow, creating visual stimulus, giving information a spatial form, and using scenes to act out data.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Score your graphic on these five words; the lowest one is what to fix in the next draft.</li>
+<li>Write a one-sentence conclusion first, then choose the chart type. If one sentence cannot say it, the topic is still too big.</li>
+<li>When making a bar chart, ask whether it could become "time moving" or "space unfolding" instead of just five bars.</li>
+<li>When you use the designer interviews in the book, note their process, not their illustration style.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/infographics/books/b-explaining-with-pictures-information-graphics-design-1.jpg" alt="Bar chart analysis"><figcaption>A layout using bar charts to compare the shares of income and costs. Source: <span lang="zh-Hant">《以圖釋義：信息圖表設計》</span>, p.210</figcaption></figure>
+<figure><img src="assets/infographics/books/b-explaining-with-pictures-information-graphics-design-2.jpg" alt="Photo and data collage"><figcaption>A set of infographics built mainly on photographs, with the data collaged into the image. Source: same book, p.103</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose an infographic you like and write one sentence each on its strengths or problems in terms of clear, simple and flow.</li>
+<li>Turn a set of five numbers into a bar chart, then into a scene with a reading order. Compare which makes the conclusion easier to remember.</li>
+</ol>
+<h3 class="book" id="b-introduction-to-information-graphics-design"><span lang="zh-Hant">信息圖表設計入門</span></h3>
+<p><strong>Scope.</strong> This is an introductory book that starts from the components. The author argues that you should not begin with one large infographic, but first practise two components: pictograms and diagrams.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Infographics are mostly made of pictograms, diagrams and images. Only once you can make the components can you make the whole graphic.</li>
+<li>Three basic skills should be practised together: organising information clearly, drawing it, and arranging it in a readable order.</li>
+<li>A pictogram is not about drawing an object realistically, but about extracting the features that can be "recognised at a glance". The men's and women's toilet symbols are an example: they convey a convention, not a portrait.</li>
+<li>The book is structured as: cases, pictograms, diagrams, infographics. Only later does it cover scenarios, key points and process.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>This week, make just ten pictograms (some objects, some actions, some places), limited to two colours and one line weight.</li>
+<li>Each diagram expresses only one relationship: sequence, comparison, or cause and effect. Do not make one graphic do three things at once.</li>
+<li>Once the components are done, pick a small topic (for example, "the eight minutes before leaving home in the morning") and combine the components into one graphic.</li>
+<li>Quantity-type graphics suit numerical values; confirm the figures first, then decide how much one symbol stands for.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/infographics/books/b-introduction-to-information-graphics-design-1.jpg" alt="Quantity-type diagram"><figcaption>The quantity type suits numerical values. Source: <span lang="zh-Hant">《信息圖表設計入門》</span>, p.145</figcaption></figure>
+<figure><img src="assets/infographics/books/b-introduction-to-information-graphics-design-2.jpg" alt="Pictogram"><figcaption>A pictogram conveys an agreed meaning, not just a drawing of an object. Source: same book, p.36</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Draw a pictogram each for "queueing, rain, rushing for a train, finding a seat" that classmates can recognise.</li>
+<li>Explain the difference between a "pictogram" and an "illustration", and say which one your drawings are.</li>
+</ol>
+<h3 class="book" id="b-information-graphics-design-a-global-creative-primer"><span lang="zh-Hant">信息圖表設計：全球創意入門</span></h3>
+<p><strong>Scope.</strong> This book is built mainly around about a hundred cases and designer interviews, introducing different ways of representing information. Use it to broaden your view, not as your only step-by-step manual. As you read, ask "what reading problem does this technique solve?"</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Looking good but impossible to understand is the most common failure of infographics. Complexity can stay, but readers must be able to choose whether to look for one minute or one hour.</li>
+<li>The interviewees keep returning to the same points: play first, then do the rational analysis; the relationship with the client sets the pace.</li>
+<li>End readers are usually smarter than designers think. There is no need to make a "for dummies" guide, but the structure must let people find a way in.</li>
+<li>The cases cover guides, timelines, places and everyday data (for example, an introduction to red wine, or a record of one person's day).</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each case you look at, take notes in three lines: what the topic is, what the technique is, and whether any information is left if you strip away the decoration.</li>
+<li>When making your own graphic, first design "a layer that can be read in one minute" and "a layer seen only by those willing to stay longer".</li>
+<li>When collecting styles, keep two separate folders: structures you can borrow, and illustration surfaces you should not borrow.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/infographics/books/b-information-graphics-design-a-global-creative-primer-1.jpg" alt="Infographic about one day"><figcaption>A work that turns the record of one day into a visual structure. Source: <span lang="zh-Hant">《信息圖表設計：全球創意入門》</span>, p.34</figcaption></figure>
+<figure><img src="assets/infographics/books/b-information-graphics-design-a-global-creative-primer-2.jpg" alt="Beginner's guide to red wine"><figcaption>An originally complicated subject condensed into one beginner's guide. Source: same book, p.164</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose two works from the book and write down what each one's "one-minute layer" is.</li>
+<li>In your own next infographic, which part must be seen first, and which part can be hidden in the second layer?</li>
+</ol>
+<!-- BOOKS:END -->
+      </div>
+
+      <nav class="pager" aria-label="Categories"><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span>Previous guide</span><strong>07 Book Design &amp; Print</strong><i aria-hidden="true">&rarr;</i></a><a class="next" href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span>Next guide</span><strong>09 Interaction, Web &amp; UX</strong><i aria-hidden="true">&rarr;</i></a></nav>
+    </main>
+    <aside class="rail" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a>
+    </aside>
+  </div>
+  <script src="js/guide.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scene.js"></script>
+  <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, theme: "dark", themeVariables: { background: "#101b34", primaryColor: "#1b2b4d", primaryTextColor: "#e6eef8", primaryBorderColor: "#4e6586", lineColor: "#8ea0b8", fontFamily: "Source Sans 3, sans-serif" } });
+  </script>
+</body>
+</html>

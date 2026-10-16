@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1428">
+  <title>Colour · Design Fundamentals</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/guide.css">
+</head>
+<body class="page-guide">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="loader" id="loader" data-label="02 Colour" aria-hidden="true">
+    <p class="loader-label">SSHD2382 / Design Fundamentals</p>
+    <div class="loader-box">
+      <span class="plus tl"></span><span class="plus tr"></span><span class="plus bl"></span><span class="plus br"></span>
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg>
+    </div>
+    <p class="loader-count" data-count-slots></p>
+    <p class="loader-page"></p>
+  </div>
+  <header class="site-head">
+    <a class="logo" href="index.html" aria-label="Design Fundamentals, home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg><span>Fundamentals<sup>&reg;</sup></span></a>
+    <nav class="head-nav" aria-label="Site">
+      <a class="pill pill-solid" href="index.html#browse" data-magnetic><span data-text="Browse">Browse</span></a>
+      <button class="pill pill-line" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-magnetic><span data-text="Menu">Menu</span><i class="burger" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <div class="menu-panel" id="menu" inert>
+    <div class="menu-inner">
+      <p class="menu-label">(Guides)</p>
+      <ol class="menu-list"><li><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span class="menu-num">01</span><span class="menu-name">Design Basics &amp; Composition</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="02_colour.html" data-label="02 Colour"><span class="menu-num">02</span><span class="menu-name">Colour</span><span class="menu-week">Week 8</span></a></li><li><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span class="menu-num">03</span><span class="menu-name">Typography &amp; Lettering</span><span class="menu-week">Week 9</span></a></li><li><a href="04_layout-grid.html" data-label="04 Layout &amp; Grid Systems"><span class="menu-num">04</span><span class="menu-name">Layout &amp; Grid Systems</span><span class="menu-week">Week 3, 4, 5</span></a></li><li><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span class="menu-num">05</span><span class="menu-name">Logo &amp; Branding</span><span class="menu-week">Week 10, 11</span></a></li><li><a href="06_packaging.html" data-label="06 Packaging"><span class="menu-num">06</span><span class="menu-name">Packaging</span><span class="menu-week">Week 11</span></a></li><li><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span class="menu-num">07</span><span class="menu-name">Book Design &amp; Print</span><span class="menu-week">Week 5, 9</span></a></li><li><a href="08_infographics.html" data-label="08 Information Graphics"><span class="menu-num">08</span><span class="menu-name">Information Graphics</span><span class="menu-week">Week 4</span></a></li><li><a href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span class="menu-num">09</span><span class="menu-name">Interaction, Web &amp; UX</span><span class="menu-week">Week 11 (and 4)</span></a></li><li><a href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span class="menu-num">10</span><span class="menu-name">Graphic Design Practice</span><span class="menu-week">Week 1, 11</span></a></li><li><a href="11_interior.html" data-label="11 Interior Design"><span class="menu-num">11</span><span class="menu-name">Interior Design</span><span class="menu-week">Further reading</span></a></li><li><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span class="menu-num">12</span><span class="menu-name">Architecture &amp; Space</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="13_product.html" data-label="13 Product Design"><span class="menu-num">13</span><span class="menu-name">Product Design</span><span class="menu-week">Week 11 (and 6–7)</span></a></li><li><a href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span class="menu-num">14</span><span class="menu-name">Design &amp; Art History</span><span class="menu-week">Week 1</span></a></li><li><a href="15_theory-psychology.html" data-label="15 Design Theory &amp; Psychology"><span class="menu-num">15</span><span class="menu-name">Design Theory &amp; Psychology</span><span class="menu-week">Week 4, 6–7, 10</span></a></li><li><a href="16_pattern-ornament.html" data-label="16 Pattern &amp; Ornament"><span class="menu-num">16</span><span class="menu-name">Pattern &amp; Ornament</span><span class="menu-week">Week 8 (and 6–7)</span></a></li><li><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span class="menu-num">18</span><span class="menu-name">Magazines &amp; Annuals</span><span class="menu-week">Week 1–13</span></a></li><li><a href="20_advertising.html" data-label="20 Advertising"><span class="menu-num">20</span><span class="menu-name">Advertising</span><span class="menu-week">Week 10, 11</span></a></li></ol>
+      <div class="menu-foot"><span>SSHD2382 Design Fundamentals</span><span>Eighteen guides, thirteen weeks</span><a href="index.html">Home</a></div>
+    </div>
+  </div>
+  <canvas class="scene" id="scene" data-scene="page" data-cat="02" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <p class="side-brand">SSHD2382 / Guides</p>
+      <label class="visually-hidden" for="q">Search categories</label>
+      <input class="search" id="q" type="search" placeholder="Name, term, or category" autocomplete="off">
+      <p class="empty" id="empty" hidden>No category matches.</p>
+      <nav aria-label="Categories"><div class="side-group"><p class="side-label">Categories</p><a href="01_design-basics.html" data-search="01 design basics design basics &amp; composition point, line, plane, composition, and the four design principles week 2, 6–7 1. scope 2. core concepts 3. proportion &amp; geometry 4. principles &amp; methods 5. selected figures 6. source bookshelf 7. study cues 7. each book 藝術·設計的平面構成 藝術·設計的立體構成 藝術·設計的紙的構成 藝術·設計的光的構成 平面設計原理 通用設計法則 美國視覺設計學院叢書：設計元素（平面設計樣式） 寫給大家看的設計書：實例與創意 黃金比例 設計的教室 設計的方法 談繪畫構圖 1000多個圖形元素：獨特的設計元素 設計中的點線面 平面設計法則 設計幾何學：關於比例與構成的研究 藝術·設計的平面構成（繁體版） 探索幾何：平面視覺構建 好造型的設計元素 和諧之美：探索設計中的黃金比例 分寸設計：發現黃金比例恆久之美 設計元素：平面設計樣式（英文原書） 寫給大家看的設計書（第3版） 設計元素：平面設計樣式 國際平面設計基礎教程：規格設計（format） 國際平面設計基礎教程：圖形設計（image） 國際平面設計基礎教程：設計思維（thinking） 寫給大家看的設計書（第4版） 平面設計的七大要素 綜合造型設計基礎 美國視覺設計學院用書：設計元素（平面設計樣式） 視覺原理 設計力：寫給大家的平面設計法則 通用設計法則（英文版） the elements of graphic design: space, unity, page architecture, and type universal principles of design design elements: a graphic style manual robin williams design workshop geometry of design: studies in proportion and composition the design method: a philosophy and process for functional visual communication 1000 graphic elements: special details for distinctive designs the essential principles of graphic design geometry of design: studies in proportion and composition design elements: understanding the rules and knowing when to break them geometry of design: studies in proportion and composition , 2nd edition (revised and updated) design elements: a graphic style manual the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual basics design 01: format basics design 04: image basics design 08: design thinking the non-designer&#x27;s design book: design and typographic principles for the visual novice , 4th edition the 7 essentials of graphic design design elements: a graphic style manual principles of visual perception universal principles of design"><span class="side-num">01</span> Design Basics &amp; Composition</a><a href="02_colour.html" data-search="02 colour colour hue, value, chroma, colour systems, palettes, and colour psychology week 8 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術·設計的色彩構成 寫給大家看的色彩書1：設計配色基礎 寫給大家看的色彩書2：色彩怎麼選，設計怎麼做 梁景紅談：色彩設計法則 配色設計原理 七日掌握設計配色基礎 配色設計從入門到精通 平面設計配色全攻略 美國色彩基礎教材 色彩應用：平面設計配色經典創意 黑白灰設計：摒棄有彩色的設計法則 美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式 觀念之色：中國傳統色彩研究 色彩搭配的黃金法則 新手配色寶典：2000個配色案例不怕你不會 像藝術家一樣思考之三：貝蒂的色彩 國際平面設計基礎教程：colour色彩設計 平面設計綜合配色手冊 色彩怎麼選，設計怎麼做 色彩感知學 色彩構成 色彩設計：日本平面設計師參考手冊 色彩設計的100個亮點 色彩設計的原理 設計入門教室3：色彩設計的原理 設計密碼：綜合配色完全攻略 color basics color design workbook: a real-world guide to using color in graphic design drawing for graphic design: understanding conceptual principles and practical techniques to create unique, effective design solutions color: a course in mastering the art of mixing colors basics design 05: colour 100 bright ideas for colour" aria-current="page"><span class="side-num">02</span> Colour</a><a href="03_typography.html" data-search="03 typography typography &amp; lettering letter structure, classification, typesetting, and mixed chinese and latin type week 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book typography 字誌：issue 01 typography 字誌：issue 05_pdf 自由字在：字體設計與創意 中國字體設計人：一字一生 西文字體1：字體的背景知識和使用方法 西文字體2：經典款字體及其表現方法 文字設計的原理_文字設計所必須的信息和技巧 新概念字體基礎&amp;應用_蘇克 説文解字 字言字語 字體傳奇 影響世界的helvetica 治字百方 字型散步 街道文字_小林章 西文排版_排版的基礎和規範 漢字書法之美_蔣勳 文字的故事 意匠文字 設計師的字體世界 文字的力與美 漢字的誘惑 中國美術字史圖説 漢字設計與應用 十二生肖形意字 書法字體設計技巧與應用 平面排版_基本的基本 tokoy tdc vol.28⭐ 排版的風格 字體設計的規則與藝術 tokoy tdc vol.29⭐ 字體呈現3⭐ 字體設計基礎 【會員專供】中國近現代字體應用文獻展 【會員專供】文字設計在中國邀請展 【會員專供】超語境國際文字設計論壇 世界文字發展史_11407704 今日字體 創意字體設計與製作-www.afx365.com 國際平面設計基礎教程-typography字體設計 字型之不思議 字型之不思議 小冊-手寫 字體呈現-q 字體呈現二（完整） 字體呈現小冊一 字體呈現小冊二 字體怡人 字體設計100+1 字體，海報設計部分 展覽，印刷字體部分（雙頁） 序言 排版造型_白井敬尚 文字設計的原理 書於竹帛中國古代的文字記錄_12270059 歐文字體ⅰ 歐文字體ⅱ 自由“字”在 字體設計與創意13696100(1) 設計入門教室 2 文字設計的原理 designing type basics design 03: typography written on bamboo and silk: the beginnings of chinese books and inscriptions"><span class="side-num">03</span> Typography &amp; Lettering</a><a href="04_layout-grid.html" data-search="04 layout grid layout &amp; grid systems grids, hierarchy, and arranging image with text week 3, 4, 5 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 日本版式設計原理_p159 跨平台的視覺設計版式設計原理 破譯文字編排設計 破譯網格設計 美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書 版式設計：日本平面設計師參考手冊 超越平凡的平面設計：怎樣做好版式 版式設計+給你靈感的全球最佳版式創意方案 柵格系統與版式設計 國際版式設計基礎教程 七日掌握版面設計基礎 美國編排設計教程 平面設計中的網格系統 版式設計風暴ⅱ 網格系統與版式設計 創意版式設計_王紹強 版面設計的原理_設計前必須知道的事情 版式設計全攻略(佐) 進階理解版式設計 版式設計：合適最好 版式設計從入門到精通 版面設計網格構成 版式設計原理_案例篇：提升版式設計的55個技巧 秩序之美_網頁中的網格設計 日本版式設計原理 版式設計法則 版式創意大爆炸 版式設計+2版式創意方案 版式設計風暴 [商業版式設計的方法] 版式編排設計 版式設計 今日版式 印刷的終結：戴維·卡森的自由版式設計 國際平面設計基礎教程-grids網格設計 國際平面設計基礎教程-layout版式設計(第2版) 版式設計-www.afx365.com 版式設計原理 版式設計原理-全綵教程 版式設計實用手冊-www.afx365.com 版式設計實用手冊.suni視覺設計.全綵版 版式設計從入門到精通-www.afx365.com 版面設計黃金法則 破譯文字編排設計-www.afx365.com 秩序之美——網頁中的網格設計英文版 編排設計教程 設計入門教室 1 版面設計的原理 超越平凡的平面設計 版式設計原理與應用 typography workbook: a real-world guide to using type in graphic design making and breaking the grid: a graphic design layout workshop graphic designer&#x27;s essential reference: visual elements, techniques, and layout strategies for busy designers before &amp; after page design grid systems: principles of organizing type best practices for graphic designers, grids and page layouts: an essential guide for understanding and applying page design principles typographic systems grid systems: principles of organizing type layout: making it fit: finding the right balance between content and space ordering disorder: grid principles for web design the end of print: the graphic design of david carson basics design 07: grids basics design 02: layout , 2nd edition typography workbook: a real-world guide to using type in graphic design ordering disorder: grid principles for web design typographic systems before &amp; after: how to design cool stuff"><span class="side-num">04</span> Layout &amp; Grid Systems</a><a href="05_logo-branding.html" data-search="05 logo branding logo &amp; branding mark types, identity systems, and brand strategy week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book logo 百年 設計品牌（原田進） 用設計做品牌 品牌設計+：給你靈感的 best 品牌形象方案 品牌設計+：創造 top 品牌的色彩應用方案 品牌設計+：創造 brand 力的動態 logo 設計（1） 標誌設計 logo design 標誌新語 iii really good logos explained designing brand identity 超越 logo 設計 brand 創新與設計：創意、建構和維護精彩品牌標識之完全指南 標誌設計指南 logo design workbook 品牌標誌：top 設計 150 例 消費森林 × 品牌再生：李永銓的設計七大法則 品牌中的色彩 圖案無限：品牌中的圖案 品牌簡單之道 what brand 什麼是品牌設計 品牌 100 一個 logo 的誕生 視覺美食：最佳餐飲品牌設計 溝通時尚品牌 100 個經典 logo 品牌設計之美：冷色調的色彩詮釋 logo：29 個經典的前世今生 logo 百年 品牌至上：logo 設計法則與案例應用解析 品牌識別法則：100 條原理 no logo：顛覆品牌全球統治 脫穎而出的品牌致勝秘密 精簡：無印良品與品牌理念打造 電商品牌形象設計 品牌標誌：頂級設計 150 例 設計品牌 世界標誌大典 1 品牌設計法則（徐適） 日本彩色商標與企業識別 10 解構 logo 設計：300 例國際 logo 分析與解讀 超越 logo 設計：國際頂級平面設計師的成功法則 超越 logo 設計：國際頂級平面設計師的成功法則 logo design love: a guide to creating iconic brand identities designing brand identity: a complete guide to creating, building, and maintaining strong brands logo design workbook: a hands-on guide to creating logos creative solutions: logos: making a strong mark: 150 strategies for logos that last brandsimple: how the best brands keep it simple and succeed what is branding? logo life: life histories of 100 famous logos tm: the untold stories behind 29 classic logos brand identity essentials: 100 principles for designing logos and building brands no logo: taking aim at the brand bullies designing brand identity: an essential guide for the whole branding team creative solutions: logos: making a strong mark: 150 strategies for logos that last deconstructing logo design: 300+ international logos analyzed and explained logo design love: a guide to creating iconic brand identities logo design love: a guide to creating iconic brand identities"><span class="side-num">05</span> Logo &amp; Branding</a><a href="06_packaging.html" data-search="06 packaging packaging structure, the shelf, materials, and brand week 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 創造品牌的包裝設計 現代設計色彩教材叢書：包裝設計色彩 包裝設計藝術：王紹強 紙品包裝結構解析 新包裝 環保包裝設計 50 trade secrets of great design packaging 1000 package designs：a comprehensive guide 拿來就用的包裝設計 食品包裝設計 包裝設計+：給你靈感的包裝方案 包裝設計家：靳埭強與他的設計師朋友 簡約包裝 simply packaging 中式元素視覺傳達：包裝設計 packaging the brand: the relationship between packaging design and brand identity simply packaging"><span class="side-num">06</span> Packaging</a><a href="07_book-print.html" data-search="07 book print book design &amp; print book structure, paper, binding, and print week 5, 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2015 中國最美的書 書籍設計-安德魯 書形：138種創意書籍和印刷紙品設計 如何設計一本畫冊 平面印刷色彩：四色與專色 國際平面設計基礎教程：print&amp;finish印前印後 世界書籍藝術流派 中外裝幀藝術論集 中國古籍版本概要 出版物設計完全手冊 印刷工藝：燙印與凹凸 印前校色實用教程 印前輸出培訓參考：全綵教程-200p 嶄新印通拼版教程 平版印刷拼版手冊 平面設計及印刷業務人員常識備忘手冊 書籍設計 書藝問道 現代圖書設計 範式革命：中國現代書籍設計的發端 1862-1937 電腦印前技術完全手冊（第2版） book design basics design 06: print and finish publication design workbook: a real-world guide to designing magazines, newspapers, and newsletters book design new book design"><span class="side-num">07</span> Book Design &amp; Print</a><a href="08_infographics.html" data-search="08 infographics information graphics visualising information and explaining with diagrams week 4 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 圖解力 以圖釋義：信息圖表設計 信息圖表設計入門 信息圖表設計：全球創意入門"><span class="side-num">08</span> Information Graphics</a><a href="09_interaction-ux.html" data-search="09 interaction ux interaction, web &amp; ux goal-directed design, usability, and interface principles week 11 (and 4) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book about face 3：交互設計精髓 about face 4：交互設計精髓（中文彩版） android 交互視覺設計規範 贏在用戶：web 人物角色創建和應用實踐指南 don&#x27;t make me think（英文第 2 版） ui 羣英匯：用戶體驗、交互與視覺設計方法論 web 界面設計 形式感：網頁視覺設計創意拓展與快速表現 關鍵設計報告：改變過去影響未來的交互設計法則 點石成金：訪客至上的網頁秘籍 認知與設計：理解 ui 設計準則 簡約至上：交互設計四策略 見微知著：web 用戶體驗解構 與世界 ui 設計師同行 ux 設計之道：以用戶體驗為中心的 web 設計（第 2 版） ui 設計黃金法則：觸動人心的 100 種用戶界面 sexy web design：creating interfaces that work 用戶體驗的要素：以用戶為中心的 web 設計 網頁設計（web designer emag） 點石成金：訪客至上的網頁設計秘笈 ios 9 界面設計規範剖析及實戰 不要讓我思考（don&#x27;t make me think） 贏在用戶：web 人物角色創建和應用實踐指南 軟件觀念革命：交互設計精髓 一目瞭然：web 軟件顯性設計之路 就這麼簡單：web 開發中的可用性和用戶體驗 微交互：細節設計成就卓越產品 怦然心動：情感化交互設計指南 用戶體驗度量 用戶體驗要素：以用戶為中心的產品設計（原書第 2 版） 眾妙之門：網站 ui 設計之道 瞬間之美：web 界面設計如何讓用戶心動 破繭成蝶：用戶體驗設計師的成長之路 簡約至上：交互設計四策略 網頁設計創意書 認知與設計：理解 ui 設計準則 認知與設計：理解 ui 設計準則（第 2 版） 贏在用戶：web 人物角色創建和應用實踐指南 體驗·度：簡單可依賴的用戶體驗（彩版） about face 3: the essentials of interaction design , 3rd edition about face: the essentials of interaction design , 4th edition the user is always right: a practical guide to creating and using personas for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing web interfaces: principles and patterns for rich interactions designing interactions don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing with the mind in mind: simple guide to understanding user interface design rules simple and usable web, mobile, and interaction design a project guide to ux design: for user experience designers in the field or in the making , 2nd edition digital design essentials: 100 ways to design better desktop, web, and mobile interfaces the elements of user experience: user-centered design for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition don&#x27;t make me think: a common sense approach to web usability , 2nd edition the user is always right: a practical guide to creating and using personas for the web about face 2.0: the essentials of interaction design designing the obvious: a common sense approach to web application design microinteractions: designing with details seductive interaction design: creating playful, fun, and effective user experiences measuring the user experience: collecting, analyzing, and presenting usability metrics the elements of user experience: user-centered design for the web and beyond , 2nd edition the smashing book designing the moment: web interface design concepts in action simple and usable web, mobile, and interaction design the web designer&#x27;s idea book: the ultimate guide to themes, trends and styles in website design designing with the mind in mind: simple guide to understanding user interface design rules designing with the mind in mind: simple guide to understanding user interface design guidelines , 2nd edition the user is always right: a practical guide to creating and using personas for the web"><span class="side-num">09</span> Interaction, Web &amp; UX</a><a href="10_graphic-practice.html" data-search="10 graphic practice graphic design practice process, design thinking, creative methods, and practice week 1, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 100 個改變平面設計的觀念 嘿，設計 圖解平面設計規範 40 天成為資深設計師 ideo：設計改變一切 創意之道（the copy book） 非常規標誌設計：6 個不必遵守的基礎原則 最佳設計 100 細則 少即是多：減法設計 視覺傳達設計實踐 1000 retail graphics 高效設計溝通之道（原書第 2 版） 完成設計：從理論到實踐 美國視覺傳達完全教程 零 zerro：世界符號大全 平面與空間 創意工場：提升設計技巧的 80 個挑戰 日本的手感設計 設計的品格 設計並不重要 我的第一本設計書 平面設計過程 小平面 北歐設計 王志弘作品收集 做喜歡的事：25 個亞太創意設計工作室 做喜歡的事：25 個歐美創意設計工作室 設計修辭法 設計與死 設計的覺醒 平面設計死了嗎 放眼德國設計 放眼法國設計 漫遊英國設計 漫步日本設計 荷蘭設計 設計的手感 歲寒三友：詩意設計作品集 廣州美術學院碩士研究生作品集 靳埭強與格呂特納的海報對話 靳埭強設計獎 陳幼堅最新作品 平面設計八人 設計集 設計心法 100+1 靳叔說：設計語錄 設計的圖謀：改變世界的80個日常創意陰謀 遺產與更新：中國設計教育反思 設計師演講錄：icograda 世界設計大會 設計創意流程：用mba思維成就設計高效能 全球優秀93位平面設計師作品集 遊遊遊：說說我的設計私想 對話日本設計 設計師不讀書 設計質 大話設計師 從製造到設計：20世紀德國設計 意東方：設計中的東方元素（一） 49個成就平面設計的關鍵詞 企業形象設計家：靳埭強與他的設計師朋友 海報設計家：靳埭強與他的設計師朋友 生活·心源：靳埭強設計與藝術 靳埭強·身度心道：中國文化為本的設計·繪畫·教育 ideo 設計現象探究：patterns 2010 設計效果圖 設計百年：20世紀平面設計的先驅 設計解決 像設計師那樣思考 圖形設計新元素 如何把國外作品轉化為自己的能力（第二部） 平面設計：我的第2語言 為什麼設計 理性設計 至關重要的設計 解決100個煩惱的100種設計 設計推導學 中國古代設計思想史略 什麼是平面設計？ 創意工場：提升設計技巧的80個挑戰 動畫分鏡台本設計 吳東龍的東京設計生活100 寫給大家看的設計書（第三版） 好設計的造型元素 完成設計：從理論到實踐 宣傳冊設計與製作 平面設計200年 新興實踐：設計的專業、價值與途徑 日本當代插圖集 最全設計規範 服務的細節：完全商品陳列115例 為真實世界的設計 生命的幻象：迪士尼動畫造型設計 異想天開：設計初始 知日・設計力 移動設計 符號與數字：平面中的視覺表達 第三種創新：設計驅動式創新 編輯設計 至關重要的設計 至關重要的設計（布倫納） 蘋果首席設計師：喬納森傳 視覺傳達設計 視覺傳達設計考研手繪 視覺營銷：零售店櫥窗與店內陳列 託尼克：設計為何 設計＋生活：佐藤 設計＋生活：奎內克 設計＋生活：姚爾丹 設計＋生活：孔喬 設計＋生活：府烈茶 設計＋生活：王翰尼 設計＋生活：白同異 設計＋生活：蒙古齊 設計＋生活：雷又西 設計中的錯視 設計五感：亂 設計五感：惡 設計五感：拙 設計五感：精 設計入門教室：設計的基本規則 設計力就是溝通力 設計，在人人設計的時代 設計密碼 設計師不可不知的 100 種世界經典平面設計圖書 設計思維手冊：斯坦福創新方法論 設計思維與方法 設計方法與策略：代爾夫特設計指南 設計的意義 設計的細節：日本經典設計透析 設計與革新：關於未來設計的 50 種思考 設計風尚 5：創意節日宣傳頁設計與製作 設計高手的秘密 設計，在人人設計的時代：社會創新設計導論 這樣擺，最好賣：賣場中的商品陳列技巧 造像量度：佛像唐卡設計比例圖 關於設計的思考 非平面 靳埭強設計獎：平面設計作品集 騰訊網 ued 體驗設計之旅 100 ideas that changed graphic design change by design: how design thinking transforms organizations and inspires innovation the copy book: how 32 of the world&#x27;s best advertising writers write their advertising no rules! logos: radical design solutions that break the rules universal principles of design communicating design: developing web site documentation for design and planning , 2nd edition design evolution: theory into practice graphic communications today creative workshop: 80 challenges to sharpen your design skills graphic design process: from problem to solution: 20 case studies design and the creative process atlas of graphic designers designers don&#x27;t read the graphic design idea book: inspiration from 50 masters a century of graphic design: graphic design pioneers of the 20th century how to think like a great graphic designer graphic design: the new basics graphic design as a second language do you matter? how great design will make people love your company what is graphic design? creative workshop: 80 challenges to sharpen your design skills the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual design evolution: theory into practice graphic style: from victorian to hipster design for the real world: human ecology and social change the illusion of life: disney animation design-driven innovation: changing the rules of competition by radically innovating what things mean editing by design: for designers, art directors, and editors: the classic guide to winning readers do you matter? how great design will make people love your company do you matter? how great design will make people love your company jony ive: the genius behind apple&#x27;s greatest products graphic design solutions visual merchandising: windows and in-store displays for retail why we design design, when everybody designs: an introduction to design for social innovation bibliographic: 100 classic graphic design books delft design guide: design strategies and methods design, form, and chaos design, when everybody designs: an introduction to design for social innovation thoughts on design unflattening"><span class="side-num">10</span> Graphic Design Practice</a><a href="11_interior.html" data-search="11 interior interior design drawings, scale, light, materials, construction, and furnishing further reading 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 零基礎學建築識圖 室內裝飾裝修施工完全圖解教程 室內設計節點手冊：常用節點 室內設計節點手冊：酒店固定傢俱 材料收口 裝飾工藝解析：吊頂篇 裝飾工藝解析：地面篇 裝飾工藝解析：牆面篇 室內設計師必知的100個節點 室內裝飾裝修材料應用與選購 室內設計材料選用實戰手冊 石材應用手冊 設計師的材料清單·室內篇 圖解照明設計 室內照明設計精品教程 室內燈光設計 室內設計師專用燈光設計手冊 室內設計師燈光設計細部解析 照明設計終極聖經 家居色彩設計指南 設計師談家居色彩搭配 設計配色基礎 輕·重·緩·急：搭出耐看配色 人體工程學與室內設計 住宅的設計尺寸剖析書 圖解住宅尺寸與格局設計 室內施工圖實戰教程 室內施工圖製圖標準 室內空間佈局與尺度設計 室內細部設計cad圖集 室內設計尺寸關鍵術 室內設計數據手冊：空間與尺度 室內設計與人體工程學 家裝常用數據尺寸速查 工裝設計尺度數據手冊 人機工程學（第五版） 年輕設計師必修的七堂課 網紅室內設計師ip運營法則 裝修設計師談單簽單一課通 軟裝談單寶典 住宅格局破解術 住宅格局解剖圖鑑 住宅設計剖析手冊 住宅設計解剖書 住得優雅：住宅設計的34個法則 圖解極簡主義設計 室內住宅設計圖解 室內空間設計手冊 室內設計·思維與方法 室內設計基礎 小家越住越大2 打造讓孩子自主學習的住宅 樓梯設計的9個法則 淺談家庭中央空調的使用 牆面設計 裝修設計解剖書 解構收納 設計中的設計 設計師要懂的心理學 室內精細化設計研究 傢俱設計資料圖集 室內設計風格圖文速查 軟裝改造解剖書 軟裝設計元素搭配手冊 軟裝設計師手冊 軟裝風格速查 the lighting bible the interior plan: concepts and exercises 100 things every designer needs to know about people"><span class="side-num">11</span> Interior Design</a><a href="12_architecture-space.html" data-search="12 architecture space architecture &amp; space form, space, order, and proportion week 2, 6–7 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 建築：形式、空間和秩序（第 3 版） 反造型 architecture: form, space, and order , 3rd edition"><span class="side-num">12</span> Architecture &amp; Space</a><a href="13_product.html" data-search="13 product product design minimalism, ten principles of good design, and muji week 11 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 簡約不簡單：極簡風格產品設計 產品極簡主義 無印良品的設計 解密無印良品 20 世紀 50–80 年代中國、德國產品設計回望 無印良品世界觀 創新產品設計與手繪 深澤直人 意識的核心 product design now naoto fukasawa"><span class="side-num">13</span> Product Design</a><a href="14_design-art-history.html" data-search="14 design art history design &amp; art history from manuscripts and arts and crafts through the bauhaus to the digital era week 1 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術簡史 世界平面設計史 醜的歷史 美的歷史 世界當代藝術史 世界現代設計史 中國現代設計與包豪斯 包豪斯道路：歷史、遺澤、世界與中國 包豪斯 運動中的視覺：新包豪斯的基礎 包豪斯：大師和學生們 包豪斯藏品精選集 包豪斯理想：過去與現在 世界現代設計史 中國 外國 工業設計史（第四版） 現代設計百科全書：平面設計的歷史、語言及經典應用 藝術的真相：通往藝術之路 藝術與物理學：時空和光的藝術觀與物理觀 設計藝術史 重要的不是藝術 錢君匋的藝術世界 art: a brief history , 4th edition vision in motion the bauhaus: masters &amp; students by themselves the bauhaus ideal then &amp; now: an illustrated guide to modernist design graphic design, referenced: a visual guide to the language, applications, and history of graphic design gateways to art: understanding the visual arts art &amp; physics: parallel visions in space, time, and light"><span class="side-num">14</span> Design &amp; Art History</a><a href="15_theory-psychology.html" data-search="15 theory psychology design theory &amp; psychology gestalt, cognition, emotional design, and kenya hara week 4, 6–7, 10 1. scope 2. perception 3. cognition &amp; behaviour 4. aesthetics &amp; philosophy 5. principles &amp; methods 6. selected figures 7. source bookshelf 8. study cues 7. each book 審醜：萬物美學 原研哉的設計世界 視覺藝術原理（第八版） 設計心理學 1：日常的設計 設計心理學 2：與複雜共處 設計心理學 3：情感化設計 設計心理學 4：未來設計 日本的八個審美意識 點線面 日式設計美學 康定斯基論點線面 藝術與視知覺 藝術中的精神 圖像與眼睛：圖畫再現心理學的再研究 象徵的圖像：貢布里希圖像文集 設計私語錄：通心粉的孔洞之謎 悲劇的誕生：尼采美學文選 設計中的色彩心理學 設計之美 藝術與視知覺：新編 設計中的設計 設計師要懂心理學（迷你書） 設計心理學 設計心理學（唐納德·a·諾曼） 情感化設計 感性美學 我眼中的設計之美 日式平面美學 淺談設計之美 為什麼設計 重構美學 白 社會心理學（第八版） 藝術與錯覺：圖畫再現的心理學研究 視覺思維 視覺思維（阿恩海姆） 視覺藝術的含義 設計中的設計 設計中的設計（全本） 設計中的設計（原研哉） 設計師要懂心理學 設計心理學（247 頁本） 設計心理學（中文版） 設計美學（廣州美術學院藝術設計教程） 設計與視知覺 象徵的圖像：貢布里希圖像學文集 ugly: the aesthetics of everything prebles&#x27; artforms: an introduction to the visual arts , 8th edition the design of everyday things , revised and expanded edition living with complexity emotional design: why we love (or hate) everyday things the design of future things art and visual perception: a psychology of the creative eye , the new version the image and the eye: further studies in the psychology of pictorial representation symbolic images: studies in the art of the renaissance beautiful thing: an introduction to design art and visual perception: a psychology of the creative eye , the new version 100 things every designer needs to know about people the design of everyday things the design of everyday things emotional design: why we love (or hate) everyday things social psychology , 8th edition art and illusion: a study in the psychology of pictorial representation visual thinking visual thinking meaning in the visual arts: papers in and on art history 100 things every designer needs to know about people the design of everyday things the design of everyday things symbolic images: studies in the art of the renaissance"><span class="side-num">15</span> Design Theory &amp; Psychology</a><a href="16_pattern-ornament.html" data-search="16 pattern ornament pattern &amp; ornament pattern structure, chinese and western motifs, and auspicious meaning week 8 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book (new)世界裝飾紋樣圖典(4000餘種圖案+紋飾百科全書+裝飾藝術寶庫) l&#x27;art arabe 01 秩序感：裝飾藝術的心理學研究 中國紋樣集錦：examples of chinese ornament the grammar of ornament 中國紋樣全集 魏晉南北朝·隋唐·五代卷 世界裝飾圖案-1887-85p圖版 中國紋樣全集 宋·元·明·清卷 中國紋樣全集 戰國·秦·漢卷 中國紋樣全集 新石器時代和商·西周·春秋卷 中國經典紋樣圖鑑 摩洛哥傳統裝飾藝術 敦煌線描 民間美術：湖北挑花、土錦、藍印花布 裝飾文叢特別策劃卷7 貴州傳統蠟染-攝影集 the sense of order: a study in the psychology of decorative art examples of chinese ornament selected from objects in the south kensington museum and other collections"><span class="side-num">16</span> Pattern &amp; Ornament</a><a href="18_magazines-annuals.html" data-search="18 magazines annuals magazines &amp; annuals how to look at annuals and magazines week 1–13 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2021日本平面設計年鑑 45th publication design annual apd亞太設計年鑑no.17(1) brand 12 brand no.36-生活使用手冊2：文創熱量 brand no.37-字己 brand no.38-手工印刷 brand no.39-物料進化 brand no.40-文化時光機1868-1988 brand no.41-看圖説話，你的信息時代 brand no.42.-你好，藝術pdf brand no.43-小物志 brand no.44-貓狗日誌 design 360 雜誌(1) gallery 形錄 全球最佳圖形設計 vol.09 idea 377 novum201901 apd9亞太平面設計年鑑 apd5亞太設計年鑑 中國品牌設計年鑑 2013 日本字體與平面設計大獎年鑑 國家博物館-仙山圖特展 國家博物館-宋末民初上海畫壇 國家博物館-宋代花箋特展 國家博物館-蘇州片及其影響 國家博物館-瓶花與盆景畫特展 國家博物館-書畫菁華特展 idea+10 1 舉一反百的聰明設計法則 idea+10 2 一計點睛的即效設計處方 red-dot-award-concept-2011-2012 red_dot_award_design_concept_2013-2014 brand brand gallery 國際設計年鑑2014 日本品牌與包裝設計年鑑 2016 日本平面創意設計年鑑 2002-2004 疾風迅雷 杉浦康平雜誌設計的半個世紀 眾妙之門：移動web設計精髓（德）smashing雜誌 essentials of mobile design"><span class="side-num">18</span> Magazines &amp; Annuals</a><a href="20_advertising.html" data-search="20 advertising advertising positioning, aida, creative tactics, and point of purchase week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 1001 個廣告法則 pop 廣告設計 智威湯遜手冊 美國廣告設計實用教程 廣告公司的秘密：平面設計師就業寶典 advertising by design: creating visual communications with graphic impact"><span class="side-num">20</span> Advertising</a></div></nav>
+    </aside>
+    <main class="main" id="content" tabindex="-1">
+      <div class="topbar">
+        <button class="side-toggle" type="button">Guides</button>
+        <nav class="jump" aria-label="On this page"><a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a></nav>
+      </div>
+      <p class="kicker"><a href="index.html">SSHD2382</a> · Category 02</p>
+      <div class="digest">
+<h1 id="colour">Colour</h1>
+<p class="meta">Category 02 · Course link: Week 8 Colour, Texture and Visual Meaning · Main references: Naomi Asakura, <span lang="zh-Hant">《藝術·設計的色彩構成》</span>; Stephen Pentak and Richard Roth, <span lang="zh-Hant">《美國色彩基礎教材》</span>; Josef Albers, <span lang="zh-Hant">《色彩感知學》</span>; Liang Jinghong's <span lang="zh-Hant">《寫給大家看的色彩書》</span> series and <span lang="zh-Hant">《色彩設計法則》</span>; <span lang="zh-Hant">《配色設計原理》</span>; <span lang="zh-Hant">《色彩設計的原理》</span>; Betty Edwards, <span lang="zh-Hant">《貝蒂的色彩》</span>; <span lang="zh-Hant">《觀念之色：中國傳統色彩研究》</span></p>
+
+<h2 id="1-scope">1. Scope</h2>
+<p>This category has about 30 books, which fall into four strands:</p>
+<table>
+<thead>
+<tr>
+<th>Strand</th>
+<th>Key books</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Colour science and systems</td>
+<td>Asakura, <span lang="zh-Hant">《色彩構成》</span>; Cui Shengguo, <span lang="zh-Hant">《色彩構成》</span>; <span lang="zh-Hant">《美國色彩基礎教材》</span></td>
+<td>Light and colour, the three attributes of colour, Munsell / Ostwald / PCCS systems</td>
+</tr>
+<tr>
+<td>Colour perception</td>
+<td>Albers, <span lang="zh-Hant">《色彩感知學》</span>; Betty Edwards, <span lang="zh-Hant">《貝蒂的色彩》</span></td>
+<td>Relativity of colour, simultaneous contrast, colour constancy</td>
+</tr>
+<tr>
+<td>Colour scheme practice</td>
+<td>Liang Jinghong's series, <span lang="zh-Hant">《配色設計原理》</span>, <span lang="zh-Hant">《七日掌握設計配色基礎》</span>, colour scheme handbooks</td>
+<td>Base / secondary / accent colours, tone, step-by-step colour for layouts</td>
+</tr>
+<tr>
+<td>Colour culture</td>
+<td><span lang="zh-Hant">《觀念之色》</span>, the "colour symbolism" chapters of various books</td>
+<td>The five-colour view, proper and intermediate colours, cross-cultural meanings</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid">flowchart LR
+  light[&quot;Light&lt;br/&gt;wavelength, source&quot;] --&gt; perception[&quot;Perception&lt;br/&gt;eye, brain, contrast&quot;]
+  perception --&gt; attributes[&quot;Attributes&lt;br/&gt;hue, value, chroma&quot;]
+  attributes --&gt; systems[&quot;Systems&lt;br/&gt;Munsell PCCS&quot;]
+  systems --&gt; harmony[&quot;Harmony&lt;br/&gt;hue, tone, area&quot;]
+  harmony --&gt; meaning[&quot;Meaning&lt;br/&gt;emotion, culture, brand&quot;]
+</pre>
+<h2 id="2-core-concepts">2. Core Concepts</h2>
+<h3 id="21-light-and-colour">2.1 Light and colour</h3>
+<ul>
+<li>Visible light has wavelengths of about 380–780 nm; a prism splits white light into a spectrum.</li>
+<li><strong>Light-source colour</strong> (the colour of the light itself), <strong>object colour</strong> (the colour an object shows after it reflects or transmits some wavelengths), and <strong>local colour</strong> (the colour we think of as an object's "own" colour under ordinary light).</li>
+<li>The cone cells of the eye distinguish colour, and the rod cells handle light and dark. Colour-blindness test plates (Ishihara) use dots of the same value but different hues to test colour vision.</li>
+</ul>
+<h3 id="22-colour-mixing">2.2 Colour mixing</h3>
+<div class="chart">
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13">
+  <rect x="0" y="0" width="310" height="230" fill="#111"/>
+  <g style="mix-blend-mode:screen">
+    <circle cx="125" cy="90" r="55" fill="#ff0000" style="mix-blend-mode:screen"/>
+    <circle cx="185" cy="90" r="55" fill="#00ff00" style="mix-blend-mode:screen"/>
+    <circle cx="155" cy="140" r="55" fill="#0000ff" style="mix-blend-mode:screen"/>
+  </g>
+  <text x="155" y="220" text-anchor="middle" fill="#fff">Additive mixing · RGB (light)</text>
+  <rect x="330" y="0" width="310" height="230" fill="#fff"/>
+  <circle cx="455" cy="90" r="55" fill="#00ffff" style="mix-blend-mode:multiply"/>
+  <circle cx="515" cy="90" r="55" fill="#ff00ff" style="mix-blend-mode:multiply"/>
+  <circle cx="485" cy="140" r="55" fill="#ffff00" style="mix-blend-mode:multiply"/>
+  <text x="485" y="220" text-anchor="middle" fill="#1d1d1f">Subtractive mixing · CMY (pigment)</text>
+</svg>
+<div class="caption">Additive mixing gets lighter the more you mix (screens, projection); subtractive mixing gets darker (print, paint). A third kind, "neutral mixing" — spatial mixing and rotational mixing — is seen in pointillist painting, halftone printing and colour spinning tops.</div>
+</div>
+
+<ul>
+<li><strong>RGB</strong> is used for screens; <strong>CMYK</strong> is used for print, where K (black) makes up for the impure black that CMY produce when mixed.</li>
+<li>The RGB gamut is larger than the CMYK gamut: vivid greens, blues and oranges on screen "turn grey" in print, so control them with proofs or spot colours (Pantone).</li>
+</ul>
+<h3 id="23-hue-value-chroma">2.3 Hue, Value, Chroma</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>English</th>
+<th>Description</th>
+<th>Role in design</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hue</td>
+<td>Hue</td>
+<td>The "name" of a colour, such as red, yellow or blue</td>
+<td>Recognition, association, warm and cool</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Value / Lightness</td>
+<td>How light or dark it is; yellow has the highest natural value, violet the lowest</td>
+<td>Hierarchy, readability, space</td>
+</tr>
+<tr>
+<td>Chroma</td>
+<td>Chroma / Saturation</td>
+<td>How vivid it is; adding grey, black, white or the complement lowers chroma</td>
+<td>Strength, mood, primary and secondary</td>
+</tr>
+</tbody>
+</table>
+<p>Betty Edwards's <span lang="zh-Hant">《貝蒂的色彩》</span> stresses that <strong>value matters more than hue</strong>. If a painting or a layout still works when photographed in black and white, its colour scheme will usually not go wrong.</p>
+<div class="chart">
+<svg viewBox="0 0 640 120" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <g>
+    <rect x="0" y="10" width="64" height="40" fill="hsl(355,80%,95%)"/><rect x="64" y="10" width="64" height="40" fill="hsl(355,80%,85%)"/><rect x="128" y="10" width="64" height="40" fill="hsl(355,80%,72%)"/><rect x="192" y="10" width="64" height="40" fill="hsl(355,80%,60%)"/><rect x="256" y="10" width="64" height="40" fill="hsl(355,80%,48%)"/><rect x="320" y="10" width="64" height="40" fill="hsl(355,80%,38%)"/><rect x="384" y="10" width="64" height="40" fill="hsl(355,80%,28%)"/><rect x="448" y="10" width="64" height="40" fill="hsl(355,80%,18%)"/><rect x="512" y="10" width="64" height="40" fill="hsl(355,80%,10%)"/><rect x="576" y="10" width="64" height="40" fill="hsl(355,80%,4%)"/>
+    <rect x="0" y="60" width="64" height="40" fill="hsl(355,0%,48%)"/><rect x="64" y="60" width="64" height="40" fill="hsl(355,10%,48%)"/><rect x="128" y="60" width="64" height="40" fill="hsl(355,20%,48%)"/><rect x="192" y="60" width="64" height="40" fill="hsl(355,30%,48%)"/><rect x="256" y="60" width="64" height="40" fill="hsl(355,42%,48%)"/><rect x="320" y="60" width="64" height="40" fill="hsl(355,54%,48%)"/><rect x="384" y="60" width="64" height="40" fill="hsl(355,66%,48%)"/><rect x="448" y="60" width="64" height="40" fill="hsl(355,78%,48%)"/><rect x="512" y="60" width="64" height="40" fill="hsl(355,90%,48%)"/><rect x="576" y="60" width="64" height="40" fill="hsl(355,100%,48%)"/>
+  </g>
+  <text x="320" y="116" text-anchor="middle" fill="#5b5b66">Top: value scale of one hue (Tint → Shade) · Bottom: chroma scale at one value (grey → vivid)</text>
+</svg>
+</div>
+
+<h3 id="24-colour-wheel">2.4 Colour wheel</h3>
+<div class="chart">
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <g stroke="#fff" stroke-width="2">
+    <circle cx="150" cy="50" r="24" fill="#ffe000"/>
+    <circle cx="200" cy="63.4" r="24" fill="#ffb000"/>
+    <circle cx="236.6" cy="100" r="24" fill="#ff8000"/>
+    <circle cx="250" cy="150" r="24" fill="#ff4000"/>
+    <circle cx="236.6" cy="200" r="24" fill="#e00000"/>
+    <circle cx="200" cy="236.6" r="24" fill="#c0006a"/>
+    <circle cx="150" cy="250" r="24" fill="#7a1fa2"/>
+    <circle cx="100" cy="236.6" r="24" fill="#4b2fa8"/>
+    <circle cx="63.4" cy="200" r="24" fill="#1f4fbf"/>
+    <circle cx="50" cy="150" r="24" fill="#00897b"/>
+    <circle cx="63.4" cy="100" r="24" fill="#2e9e3e"/>
+    <circle cx="100" cy="63.4" r="24" fill="#9ccc1e"/>
+  </g>
+  <text x="150" y="146" text-anchor="middle" fill="#1d1d1f">12-hue wheel</text>
+  <text x="150" y="162" text-anchor="middle" fill="#5b5b66">Itten / RYB</text>
+  <g fill="#1d1d1f" font-size="13">
+    <text x="320" y="40" font-weight="bold">Harmony by hue distance</text>
+    <text x="320" y="70">Monochromatic: value / chroma shifts of one hue — unified, calm</text>
+    <text x="320" y="98">Analogous: 30–60° apart on the wheel — harmonious, natural</text>
+    <text x="320" y="126">Contrasting: about 120° apart — lively, clear</text>
+    <text x="320" y="154">Complementary: 180° apart — strongest, each sets off the other</text>
+    <text x="320" y="182">Split-complementary: base colour + both sides of its complement</text>
+    <text x="320" y="210">Triadic: three evenly spaced hues — balanced and rich</text>
+    <text x="320" y="238">Tetradic: two complementary pairs — needs a clear lead colour</text>
+  </g>
+</svg>
+<div class="caption">The closer the hues on the wheel, the more harmonious; the further apart, the more contrasting. But value, chroma and area also decide the actual effect.</div>
+</div>
+
+<h3 id="25-colour-order-systems">2.5 Colour order systems</h3>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Structure</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Munsell</td>
+<td>Hue H, value V (0–10), chroma C; an irregular colour solid</td>
+<td>Built on perceptually equal steps; the most widely used in teaching and science</td>
+</tr>
+<tr>
+<td>Ostwald</td>
+<td>Mixing ratios of pure colour + white + black; a double cone</td>
+<td>Good for deriving harmonious schemes systematically</td>
+</tr>
+<tr>
+<td>PCCS (Japan Color Research Institute)</td>
+<td>24 hues + <strong>Tone</strong> (such as vivid, light, dull, dark)</td>
+<td>Thinks about colour schemes in terms of "tone"; the best fit for design practice</td>
+</tr>
+<tr>
+<td>CMYK / RGB / HSB</td>
+<td>Numerical systems used by devices and software</td>
+<td>HSB is closest to how people describe colour intuitively</td>
+</tr>
+</tbody>
+</table>
+<p>The PCCS idea of "tone" is very useful: different hues in the same tone (for example, all pale tone) harmonise naturally, because their value and chroma match.</p>
+<h3 id="26-interaction-of-colour">2.6 Interaction of colour</h3>
+<p>Albers's central claim is that <strong>colour is the most relative medium</strong> — the same colour looks different on different backgrounds, and different colours can look the same on certain backgrounds.</p>
+<ul>
+<li><strong>Simultaneous contrast</strong>: grey looks greenish on a red ground and reddish on a green ground; a light ground makes a patch look darker, and a dark ground makes it look lighter.</li>
+<li><strong>Successive contrast / After-image</strong>: after staring at one colour, you see its complement.</li>
+<li><strong>One colour as two, two colours as one</strong>: by controlling the background, you can make one colour look like two.</li>
+<li><strong>Transparency</strong>: fill the overlap of two colours with a suitable in-between colour, and you "see" transparency.</li>
+<li><strong>Colour constancy</strong>: the brain automatically subtracts the effect of the light source, so when painting from life you must make a deliberate effort to "see" the actual colour.</li>
+</ul>
+<h2 id="3-principles-methods">3. Principles &amp; Methods</h2>
+<h3 id="31">3.1 Dividing roles in a colour scheme</h3>
+<p>Liang Jinghong and <span lang="zh-Hant">《配色設計原理》</span> give the same advice: decide each colour's <strong>function</strong> first, then choose the actual colour.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Rough proportion</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base / Dominant</td>
+<td>About 60–70%</td>
+<td>Sets the overall impression (usually the background or large areas)</td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>About 20–30%</td>
+<td>Supports the base colour and separates blocks of information</td>
+</tr>
+<tr>
+<td>Accent</td>
+<td>About 5–10%</td>
+<td>Guides the eye; buttons, keywords</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Area principle</strong>: the larger the area, the more you should lower its chroma; a high-chroma colour stands out more in a small area. But communication needs (a brand colour, for example) can override the area principle.</p>
+<h3 id="32">3.2 Steps for building a colour scheme</h3>
+<ol>
+<li><strong>Clarify the goal</strong>: who the audience is, what mood you want, and which medium it will appear in (print / screen).</li>
+<li><strong>Find keywords</strong>: turn words such as "young, healthy, trustworthy" into colour impressions (you can use an image scale: warm–cool × soft–hard).</li>
+<li><strong>Choose the base colour</strong>: take it from the brand, the product, the subject or a photograph.</li>
+<li><strong>Set the tone</strong>: decide whether the whole is vivid, soft, dark or grayish, so the hues harmonise automatically.</li>
+<li><strong>Add accents</strong>: use the complement or a high-chroma colour for small amounts of emphasis.</li>
+<li><strong>Check in black and white</strong>: convert to greyscale and see whether the value hierarchy holds.</li>
+<li><strong>Test in context</strong>: check at real size, on the real material or screen; for print, make proofs.</li>
+</ol>
+<h3 id="33">3.3 Less is more</h3>
+<ul>
+<li>Liang Jinghong sets out levels of colour complexity: pure white → one colour → two colours → many colours → gradients → images → overlays. Each level up makes control harder.</li>
+<li><span lang="zh-Hant">《黑白灰設計》</span> reminds us that once colour is removed, a design has only form, value and white space left, which makes it the best training in fundamentals.</li>
+<li>Two-colour combinations are the foundation of using colour; with three or more colours you need to set up a "rule" (same tone, same hue, or repetition).</li>
+</ul>
+<h3 id="34">3.4 Emotion and culture in colour</h3>
+<table>
+<thead>
+<tr>
+<th>Colour</th>
+<th>Common associations (positive / negative)</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Red</td>
+<td>Passion, celebration, warning / danger, violence</td>
+<td>An auspicious colour in Chinese tradition; in financial charts in mainland China, Hong Kong and Taiwan "red means up, green means down", the opposite of Europe and America</td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td>Bright, lively, attention / cheap, caution</td>
+<td>High value, so it reads poorly on white</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>Trust, technology, calm / cold, melancholy</td>
+<td>The most common colour for corporate and financial brands</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>Nature, health, safety / immaturity</td>
+<td>Large areas of high-chroma green easily look "noisy"</td>
+</tr>
+<tr>
+<td>Black</td>
+<td>Luxury, authority, formality / death, heaviness</td>
+<td>Luxury goods often use black + gold / white</td>
+</tr>
+<tr>
+<td>White</td>
+<td>Purity, simplicity / emptiness, mourning (East Asian tradition)</td>
+<td>White space is also a colour</td>
+</tr>
+</tbody>
+</table>
+<p><span lang="zh-Hant">《觀念之色》</span> points out that Chinese tradition treats <strong><em>qing</em> (blue-green), <em>chi</em> (red), <em>huang</em> (yellow), <em>bai</em> (white) and <em>hei</em> (black)</strong> as the "five proper colours" (<em>zhengse</em>), matched with the five phases and the five directions. Proper colours and intermediate colours (<em>jianse</em>) were ranked, and for a long time colour was a sign of ritual order and social status. This reminds designers that the meaning of colour is a <strong>cultural construction</strong>, not a universal law.</p>
+<h2 id="4-selected-figures">4. Selected Figures</h2>
+<div class="figs">
+<figure><img src="assets/colour/eye-and-vision.jpg" alt="Structure of the eye and a colour-blindness test plate"><figcaption>The structure of the eye and a colour vision test plate. Source: <span lang="zh-Hant">《美國色彩基礎教材》</span>, p.14</figcaption></figure>
+<figure><img src="assets/colour/colour-wheel.jpg" alt="Colour wheel"><figcaption>Colour wheel. Source: <span lang="zh-Hant">《寫給大家看的設計書》</span> (4th edition), p.106</figcaption></figure>
+<figure><img src="assets/colour/simultaneous-contrast.jpg" alt="Simultaneous contrast"><figcaption>How a middle colour changes between two different backgrounds. Source: <span lang="zh-Hant">《美國色彩基礎教材》</span>, p.48</figcaption></figure>
+<figure><img src="assets/colour/contrast-study.jpg" alt="Albers-style colour exercise"><figcaption>An exercise on the relative effect of one colour on different backgrounds. Source: Albers, <span lang="zh-Hant">《色彩感知學》</span>, p.29</figcaption></figure>
+<figure><img src="assets/colour/transparency.jpg" alt="Transparency illusion"><figcaption>Using in-between colours to create the illusion of transparency and overlap. Source: same book, p.102</figcaption></figure>
+<figure><img src="assets/colour/mondrian-boogie.jpg" alt="Mondrian, Broadway Boogie Woogie"><figcaption>Mondrian, <span lang="zh-Hant">《百老匯爵士樂》</span>: small blocks of the three primaries create rhythm. Source: <span lang="zh-Hant">《美國色彩基礎教材》</span>, p.78</figcaption></figure>
+<figure><img src="assets/colour/language-of-colour.jpg" alt="The language of colour"><figcaption>A nineteenth-century "language of colour" chart: colour symbolism has a history. Source: same book, p.142</figcaption></figure>
+<figure><img src="assets/colour/hue-lines.jpg" alt="Colour scheme varying only hue"><figcaption>A colour scheme example that keeps value and chroma uniform and changes the hue. Source: <span lang="zh-Hant">《色彩設計的原理》</span>, p.72</figcaption></figure>
+<figure><img src="assets/colour/main-colour-area.jpg" alt="Area of the base colour"><figcaption>The area of the base colour and the impression of the image. Source: Liang Jinghong, <span lang="zh-Hant">《色彩設計法則》</span>, p.137</figcaption></figure>
+<figure><img src="assets/colour/harmony-chart.jpg" alt="Diagram of colour harmony"><figcaption>An analytical diagram of colour harmony. Source: same book, p.167</figcaption></figure>
+<figure><img src="assets/colour/uniqlo-88-colours.jpg" alt="UNIQLO 88 COLORS"><figcaption>A brand uses the number of its colours as a communication concept. Source: same book, p.89</figcaption></figure>
+</div>
+
+<h2 id="5-source-bookshelf">5. Source Bookshelf</h2>
+<p>Suggested reading order: <span lang="zh-Hant">《寫給大家看的色彩書 1》</span> → <span lang="zh-Hant">《色彩設計的原理》</span> → Albers, <span lang="zh-Hant">《色彩感知學》</span> (with hands-on exercises) → Asakura, <span lang="zh-Hant">《色彩構成》</span> → <span lang="zh-Hant">《觀念之色》</span>.</p>
+<!-- BOOKSHELF:START -->
+
+<details><summary>Show 26 titles</summary>
+
+- <a href="#b-colour-composition-for-art-and-design"><span lang="zh-Hant">藝術·設計的色彩構成</span></a>
+- <a href="#b-colour-book-for-everyone-1-basics-of-design-colour-schemes">[005]<span lang="zh-Hant">寫給大家看的色彩書1：設計配色基礎</span></a>
+- <a href="#b-colour-book-for-everyone-2-how-to-choose-colours-how-to">[006]<span lang="zh-Hant">寫給大家看的色彩書2：色彩怎麼選，設計怎麼做</span></a>
+- <a href="#b-liang-jinghong-on-colour-design-rules">[016]<span lang="zh-Hant">梁景紅談：色彩設計法則</span></a>
+- <a href="#b-principles-of-colour-scheme-design">[053]<span lang="zh-Hant">配色設計原理</span></a>
+- <a href="#b-master-design-colour-basics-in-seven-days">[056]<span lang="zh-Hant">七日掌握設計配色基礎</span></a>
+- <a href="#b-colour-scheme-design-from-beginner-to-expert">[058]<span lang="zh-Hant">配色設計從入門到精通</span></a>
+- <a href="#b-the-complete-guide-to-colour-in-graphic-design">[059]<span lang="zh-Hant">平面設計配色全攻略</span></a>
+- <a href="#b-color-basics">[068]<span lang="zh-Hant">美國色彩基礎教材</span></a>
+- <a href="#b-colour-applications-classic-creative-colour-schemes-in">[070]<span lang="zh-Hant">色彩應用：平面設計配色經典創意</span></a>
+- <a href="#b-black-white-and-grey-design-design-rules-without-chromatic">[133]<span lang="zh-Hant">黑白灰設計：摒棄有彩色的設計法則</span></a>
+- <a href="#b-drawing-for-graphic-design">[242]<span lang="zh-Hant">美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式</span></a>
+- <a href="#b-colours-of-ideas-a-study-of-traditional-chinese-colour">[342]<span lang="zh-Hant">觀念之色：中國傳統色彩研究</span></a>
+- <a href="#b-the-golden-rules-of-colour-combination">[361]<span lang="zh-Hant">色彩搭配的黃金法則</span></a>
+- <a href="#b-colour-scheme-handbook-for-beginners-2000-examples-so-you"><span lang="zh-Hant">新手配色寶典：2000個配色案例不怕你不會</span></a>
+- <a href="#b-color-a-course-in-mastering-the-art-of-mixing-colors"><span lang="zh-Hant">像藝術家一樣思考之三：貝蒂的色彩</span></a>
+- <a href="#b-basics-design-colour"><span lang="zh-Hant">國際平面設計基礎教程：COLOUR色彩設計</span></a>
+- <a href="#b-comprehensive-colour-scheme-handbook-for-graphic-design"><span lang="zh-Hant">平面設計綜合配色手冊</span></a>
+- <a href="#b-how-to-choose-colours-how-to-design"><span lang="zh-Hant">色彩怎麼選，設計怎麼做</span></a>
+- <a href="#b-colour-perception"><span lang="zh-Hant">色彩感知學</span></a>
+- <a href="#b-colour-composition"><span lang="zh-Hant">色彩構成</span></a>
+- <a href="#b-colour-design-a-reference-handbook-for-japanese-graphic"><span lang="zh-Hant">色彩設計：日本平面設計師參考手冊</span></a>
+- <a href="#b-100-bright-ideas-for-colour-design"><span lang="zh-Hant">色彩設計的100個亮點</span></a>
+- <a href="#b-principles-of-colour-design"><span lang="zh-Hant">色彩設計的原理</span></a>
+- <a href="#b-design-basics-classroom-3-principles-of-colour-design"><span lang="zh-Hant">設計入門教室3：色彩設計的原理</span></a>
+- <a href="#b-design-code-the-complete-guide-to-colour-schemes"><span lang="zh-Hant">設計密碼：綜合配色完全攻略</span></a>
+
+</details>
+
+<!-- BOOKSHELF:END -->
+
+<h2 id="6-study-cues">6. Study Cues</h2>
+<ol>
+<li>Why does a green that looks vivid on screen turn grey in print? How should you deal with it?</li>
+<li>Using Albers's method, make one grey square look like two different colours on two backgrounds.</li>
+<li>Convert a recent piece of your work to greyscale: is the hierarchy still clear?</li>
+<li>Explain the PCCS idea of "tone", and build a five-colour scheme within a single tone.</li>
+<li>Design a 60/30/10 colour scheme for an environmental brand, and explain the role of each colour.</li>
+<li>Give two examples of colours with opposite meanings in different cultures, and explain what this means for international brand design.</li>
+</ol>
+<!-- BOOKS:START -->
+
+<h2 id="7-each-book">7. Each Book</h2>
+<p>Each book in the bookshelf is described below. Every title above links to its section.</p>
+<h3 class="book" id="b-colour-composition-for-art-and-design"><span lang="zh-Hant">藝術·設計的色彩構成</span></h3>
+<p><strong>Author:</strong> Naomi Asakura</p>
+<p><strong>Scope.</strong> This is the colour composition textbook in a series on basic form, translated into Chinese by Zhao Yun'an. Asakura splits the course into two parts: first get to know the world of colour and its systems, then mix colours by hand and test how to create beauty and special effects with colour. The preface also warns that taste takes years to refine and cannot stop at memorising the names of systems. Colour in daily life and achromatic composition both follow this thread.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Colour composition is one discipline of basic form. Its aim is to organise colour into form and to serve design practice.</li>
+<li>Learning has two sides: understand colours, their relationships and how colour is used in daily life; and at the same time mix colours yourself to study how effects are produced.</li>
+<li>The book sets out the main colour-mixing systems, including Ostwald, Munsell and the PCCS of the Japan Color Research Institute.</li>
+<li>PCCS starts from the perceptual red, yellow, blue and green, inserts new hues between the main hues to reach twenty-four hues, and places complementary colours (which mix to an achromatic grey) opposite each other.</li>
+<li>Achromatic composition works along the central axis of the colour solid, treating white and black separately first; the strong tone sits right next to the vivid tone and is used for tone-based colour schemes.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Using the same set of shapes, choose one set of colours each by Munsell, Ostwald and PCCS, and write down the practical differences between the three systems when choosing colour.</li>
+<li>Sketch a twenty-four-hue wheel and mark which pairs come close to achromatic when mixed.</li>
+<li>Make a composition using only white, black and grey, and state clearly what white and black are each responsible for.</li>
+<li>Make a strong-tone colour scheme and place a vivid-tone version beside it. Compare where the strength differs when the values are similar.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colour-composition-for-art-and-design-1.jpg" alt="Twenty-four hues"><figcaption>The hue circle grows out of the four main hues of red, yellow, blue and green, with complements placed opposite each other. Source: <span lang="zh-Hant">《藝術·設計的色彩構成》</span>, p.42</figcaption></figure>
+<figure><img src="assets/colour/books/b-colour-composition-for-art-and-design-2.jpg" alt="Strong-tone colour scheme"><figcaption>The strong tone sits next to the vivid tone, and the book uses it to demonstrate tone-based colour schemes. Source: same book, p.102</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Which two things does Asakura ask a colour course to do at the same time? Which one is missed if you only memorise the names of colour solids?</li>
+<li>How do the twenty-four PCCS hues grow from the four main hues? Why are complements placed opposite each other?</li>
+</ol>
+<h3 class="book" id="b-colour-book-for-everyone-1-basics-of-design-colour-schemes"><span lang="zh-Hant">寫給大家看的色彩書1：設計配色基礎</span></h3>
+<p><strong>Author:</strong> Liang Jinghong</p>
+<p><strong>Scope.</strong> This book is about how to build colour schemes in design. Its starting point is how people see colour, not memorising CMYK or RGB values first. Liang Jinghong uses small flat pieces such as business cards to show that two colours are the starting point of using colour, and that rules only begin with three colours. Later chapters apply colour schemes to logos, illustration, layout and trend colours, and use paired feelings (steady and bright, business and leisure) as breakthrough exercises.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>HSB matches the order in which the eye judges colour: first hue, then saturation, and finally brightness. Look up print and screen values only after you know which colour you want.</li>
+<li>Two-colour combinations are the foundation. The white on a business card is not empty; it is setting off the red. Once red and black compete with each other, the white falls back into being background.</li>
+<li>Readers often overlook achromatic colours, but designers must know that black and white are doing work.</li>
+<li>Use few colours. The base colour follows the area principle, but reading psychology and the message sometimes outweigh area.</li>
+<li>The twelve-hue wheel is drawn as a "growing" process. People first identify colour by hue, then move on to three-colour rules and the two ends of opposing feelings.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>In Photoshop, find a specified blue using only the HSB sliders: first set the hue, then "how blue", and finally light and dark. Copy down the RGB values only at the end.</li>
+<li>Make a red and white business card, then add black, and write down why the white's presence weakens.</li>
+<li>Choose a logo, limit it to two colours, then change it to three, and record what the extra colour is responsible for.</li>
+<li>Take a colour set from an outfit or an illustration, apply it to a business card, and note which colour is the base colour and whether area gives way to the message.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colour-book-for-everyone-1-basics-of-design-colour-schemes-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《寫給大家看的色彩書1：設計配色基礎》</span>, p.72</figcaption></figure>
+<figure><img src="assets/colour/books/b-colour-book-for-everyone-1-basics-of-design-colour-schemes-2.jpg" alt="Are many hues too busy?"><figcaption>The book asks whether a bright combination of more than three hues looks too busy. Source: same book, p.91</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>When you see a pair of jeans, why does Liang Jinghong think you should not first ask for CMYK values? What are the three steps of HSB?</li>
+<li>On the same red business card, why does white change from a "setting-off colour" into an easily overlooked background once black is added?</li>
+</ol>
+<h3 class="book" id="b-colour-book-for-everyone-2-how-to-choose-colours-how-to"><span lang="zh-Hant">寫給大家看的色彩書2：色彩怎麼選，設計怎麼做</span></h3>
+<p><strong>Scope.</strong> This volume splits the problem into "how to choose" and "how to use". Before choosing colours, make colour cards: start from one patch of colour and use keywords to gather a feeling into colours that can be communicated. The book states plainly that the most beautiful colour schemes are made by hand, and that neither handy tools nor written rules can replace this distilling. Only the section on using colour moves on to the job of each colour in the picture.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>One colour can match many feelings; only combinations of two or more colours narrow the meaning down. Write down the effect you want first, then choose colours.</li>
+<li>Colour cards are a necessary step in the design process. You can start from a concrete impression such as summer, then split it into nouns and adjectives, concrete and abstract, natural and cultural.</li>
+<li>Feelings can be summed up subjectively, but once they reach the work they still have to pass the group's sense of taste; they cannot stay as personal feelings only.</li>
+<li>Do not turn colour information into fixed symbols. Do not force opposing feelings into the same piece; and train your sensitivity to tell similar feelings apart.</li>
+<li>Not every problem is a colour problem. You can choose colours with mood keywords and colour brainstorming, but first check whether the core difficulty actually lies in colour.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make a set of colour cards for "summer": first list things you can do, such as viewing lotus flowers, surfing or going to the beach, then give each one a colour and write one mood keyword.</li>
+<li>Build your own library of colour cards. On each card, record both a concrete noun and an abstract adjective, so you do not just write "premium" or "clean".</li>
+<li>Take an old piece of work, mark the feelings in it that clash with each other, and cut back until only one group of similar feelings remains.</li>
+<li>Do a colour brainstorm: write the design intent first, then produce eight colours, and finally keep only the three that match the intent, explaining why the others cannot be used.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colour-book-for-everyone-2-how-to-choose-colours-how-to-1.jpg" alt="Impressions of summer"><figcaption>Colour cards start from things you can do in summer, such as viewing lotus flowers, surfing, swimming and sunbathing on the beach. Source: <span lang="zh-Hant">《寫給大家看的色彩書2：色彩怎麼選，設計怎麼做》</span>, p.46</figcaption></figure>
+<figure><img src="assets/colour/books/b-colour-book-for-everyone-2-how-to-choose-colours-how-to-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: same book, p.69</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why does this book put colour cards before colour scheme rules? Does "what colour is your summer?" ask you to hand in colour values or impressions?</li>
+<li>If one piece of work contains two opposing groups of colour feelings, how does the book suggest you deal with it? And what should you train for similar feelings?</li>
+</ol>
+<h3 class="book" id="b-liang-jinghong-on-colour-design-rules"><span lang="zh-Hant">梁景紅談：色彩設計法則</span></h3>
+<p><strong>Author:</strong> Liang Jinghong</p>
+<p><strong>Scope.</strong> This book pulls colour out of the physiology class and back into the design class. Liang Jinghong's colour design rules are just three: balance (combination), focus (theme) and resonance (rhythm). The levels of perception run from pure white, one colour and two colours to many colours, gradients and overlays. The book also admits that individuals have colour barriers, such as being afraid to use black, high chroma or complementary colours, and offers "Train your colour" for self-study.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Contrast, harmony, the colour wheel and warm and cool offer methods of study; after learning them you still cannot design. The rules restate the needs starting from the goal of the image.</li>
+<li>The balance rule retells contrast in terms of visual and psychological balance, and guides choosing and combining colours.</li>
+<li>The focus rule sets the role of each colour, linking colour to the creative theme and the theme of the image, so that it serves visual interaction and the expression of the theme.</li>
+<li>The resonance rule retells tone in terms of rhythm and layers, and is used to organise many colours, layers and colour groups.</li>
+<li>Focus can be read in layers: the first layer is the colour focus of the whole piece. Identical colours placed together echo each other and gain strength, but this does not add layers.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Check an old piece against the three rules: is the combination out of balance, is the theme unfocused, or do the layers lack resonance? Fix only the weakest one.</li>
+<li>Do the same brief in five versions: pure white, one colour, two colours, many colours, gradient and overlay. Write down whether the theme becomes clearer as complexity rises.</li>
+<li>Find a colour you avoid (black, high chroma or complementary colours) and use it once in a small area. Record whether the barrier lies in preference or in control.</li>
+<li>Mark all the patches of the same colour in an image, treat them as one combined area, and then decide whether to split them up to add layers.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-liang-jinghong-on-colour-design-rules-1.jpg" alt="Layers of focus"><figcaption>The first layer of focus is the colour feeling of the whole piece; strong focus leans towards exaggeration, drama and impact. Source: <span lang="zh-Hant">《梁景紅談：色彩設計法則》</span>, p.89</figcaption></figure>
+<figure><img src="assets/colour/books/b-liang-jinghong-on-colour-design-rules-2.jpg" alt="Echoing through resonance"><figcaption>Areas of the same colour should be treated as one whole; resonant echoes add strength but do not add layers. Source: same book, p.111</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Which stage of the design process does each of the three rules (balance, focus, resonance) target?</li>
+<li>When two patches of exactly the same colour echo each other in an image, what happens to strength and to layers?</li>
+</ol>
+<h3 class="book" id="b-principles-of-colour-scheme-design"><span lang="zh-Hant">配色設計原理</span></h3>
+<p><strong>Scope.</strong> This book teaches colour schemes through magazine layouts. Its structure runs "set the whole first, then choose base colours, what to do when a layout has too many colours, photo pages, two-colour printing". Each set shows before and after revisions: a white ground, light-coloured photos, short headlines and body text in ink black, set against problems such as a weak background, too many colours in headlines, colour bands that steal attention from photos, and subheads that are too bright. An interview keeps Issen Okamoto's order: image comes before colour.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A natural, simple layout can be unified by a white ground, without treating the background as an empty space that still needs filling. Photos of small objects look neater when their backgrounds are kept light.</li>
+<li>Headlines should be short; their letter-spacing can be opened up, and their colour should follow the photo content and stay low-key so it does not break up the layout. Use ink black for body text, and support captions with a plainer colour.</li>
+<li>Too many colours on a headline, an over-strong colour band at the bottom, or subheads more glaring than captions all make colour itself the star, and the photos and text become hard to read.</li>
+<li>To unify a spread, you can turn the whole page black, reverse the text out in white, and keep only a colour that already appears in the photos for keywords.</li>
+<li>Issen Okamoto believes colour itself is not what moves people; image and shape come before colour. Colour comes only after the structure of the photos and the organisation of the text. Sometimes black and white is enough.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Take a magazine spread that "somehow feels off" and fix four things: strengthen the background, reduce the headline to one colour, remove the colour band that competes with the photo, and tone down the subheads so they do not overpower the captions.</li>
+<li>Make two versions: a simple one on white, and one on black that narrows the keywords to a single accent colour taken from the photo. Write down which suits the subject better.</li>
+<li>Make a set of two-colour pages. Fix the photo layout and the text hierarchy first and add colour last, then record how much back-and-forth you would add by doing it the other way round.</li>
+<li>Choose a layout you want to fill with many colours. First change it to black and white to check that the image holds up, then add just one colour.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-principles-of-colour-scheme-design-1.jpg" alt="Halation"><figcaption>When the contrast between two colours is too strong, halation appears; they fail to set each other off, and the whole colour scheme is damaged. Source: <span lang="zh-Hant">《配色設計原理》</span>, p.110</figcaption></figure>
+<figure><img src="assets/colour/books/b-principles-of-colour-scheme-design-2.jpg" alt="The psychological effects of colour"><figcaption>The book asks whether a colour scheme must express psychological effects, using the example of having to explain those effects clearly when pitching to a client. Source: same book, p.53</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>In Issen Okamoto's order, which step should colouring a photo page come after? Why does he say you can keep it black and white at first?</li>
+<li>What does each of these damage in a layout: multicoloured headlines, footer colour bands, and over-bright subheads?</li>
+</ol>
+<h3 class="book" id="b-master-design-colour-basics-in-seven-days"><span lang="zh-Hant">七日掌握設計配色基礎</span></h3>
+<p><strong>Scope.</strong> This is a colour scheme book with daily exercises. Day one wakes up your senses, then value, chroma and tone are used to explain impressions, before moving on to the five roles. The later days deal with cheerful colours, noisy colours and dark colours, and ask that the feeling of the colours match the content you want to express. The exercises ask directly which watch is more avant-garde and which colour scheme is steadier.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Value forms its own grey scale: light colours feel light and brisk, dark colours feel heavy. A large value difference feels strong; a small one feels steady and elegant. Food and appetite are also affected by where light and dark fall.</li>
+<li>Chroma and tone are tied together. Dark tones can feel mature, while paler tones lean towards childlike. Small differences feel harmonious; large differences bring variety.</li>
+<li>The five basic roles are the main colour, the supporting colour (the highlight colour), the dominant colour (the background colour), the blending colour and the accent colour. The image is stable only when the roles are set correctly.</li>
+<li>The main colour takes the strongest colour, and its area is often best kept small. The supporting colour takes a contrasting hue; if its area grows or its chroma rises, it steals the spotlight from the main colour.</li>
+<li>The background colour governs the overall feeling even when its area is not large. Change the background behind the same object and the impression can change completely.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Using the same set of snacks, make one version "mostly light colours" and one "mostly dark colours", and write down which holds up better for appetite and for elegance.</li>
+<li>Set a main colour and add only a small patch of contrasting colour as the supporting colour. Then enlarge that patch and record at which step the main colour loses focus.</li>
+<li>Put the same object in three dominant colours, and ask classmates to name three moods from the background alone.</li>
+<li>Group a pile of noisy colours into two tones, light and dark, or bring them into one blue range, and compare whether the neatness comes from hue or from value.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-master-design-colour-basics-in-seven-days-1.jpg" alt="Shuffling the hue order"><figcaption>Shuffling the order of hues and placing them randomly can look cheerful; change the order of the same colours and the feeling suddenly differs. Source: <span lang="zh-Hant">《七日掌握設計配色基礎》</span>, p.50</figcaption></figure>
+<figure><img src="assets/colour/books/b-master-design-colour-basics-in-seven-days-2.jpg" alt="Grouped colour schemes"><figcaption>Eye-catching shapes look neater once brought into a blue range; a chaotic colour scheme also tidies up when grouped into two tones, light and dark. Source: same book, p.65</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Of the five roles, which one governs the whole even in a small area? Which one harms the main colour as its area grows?</li>
+<li>The book links a smaller value difference to elegance and a larger one to energy. Using food as an example, explain why too dark causes problems.</li>
+</ol>
+<h3 class="book" id="b-colour-scheme-design-from-beginner-to-expert"><span lang="zh-Hant">配色設計從入門到精通</span></h3>
+<p><strong>Scope.</strong> The book has a basics part and a themes part. The basics part covers colour theory and a set of colour scheme patterns you can call by name, then uses good and bad examples to teach techniques that strengthen effects, along with three kinds of colour impression: nature, daily life and art. Only the themes part moves into practice with posters, web pages, illustration, products, clothing and home interiors, taking each brief step by step from project background to finished scheme.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Colour is treated as a phenomenon that combines light, object and vision. The green of a leaf depends on how much of that wavelength is reflected; when the lighting changes, the vividness of the green changes too.</li>
+<li>Basic contrasts include value, chroma, legibility, afterimage, advancing and receding, and expanding and contracting.</li>
+<li>The basic patterns can be called up by condition: same value, same chroma, monotone within one hue family, compound schemes with contrasting colours, dark and dull, bright and vivid, greyish, layered, full-hue, as well as accent colour, the red-yellow-blue triad, separating colour, area contrast and making the subject stand out.</li>
+<li>Many colours also need rhythm. The book uses "one makes an accent, three make a rhythm" to avoid schemes that are both busy and dull.</li>
+<li>The order in the case studies is fixed: background first, then step-by-step combining and adjusting, rather than collecting nice colour swatches first.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Pick one pattern name (for example separating colour or area contrast) and make one version each as a colour wheel, a row of swatches and a product.</li>
+<li>Make a small multicolour sketch with only one accent and three points of rhythm; delete any extra colours or fold them into the rhythm.</li>
+<li>Take one impression word each from nature, daily life and art, make a scheme for each, and state whether the set is meant for a poster, a web page or packaging.</li>
+<li>Choose one of the book's applications (a newspaper sports page, a mineral water ad or children's home furnishings). First write one sentence stating a constraint from the project background, then build the colour scheme.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colour-scheme-design-from-beginner-to-expert-1.jpg" alt="Accent and rhythm"><figcaption>One colour makes an accent, three make a rhythm; this way many colours have rhythm without becoming chaotic or dull. Source: <span lang="zh-Hant">《配色設計從入門到精通》</span>, p.77</figcaption></figure>
+<figure><img src="assets/colour/books/b-colour-scheme-design-from-beginner-to-expert-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: same book, p.168</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>In this book's contents, what problem does a same-value scheme solve, and what does a value-contrast scheme solve?</li>
+<li>How would you apply "one makes an accent, three make a rhythm" to a poster with more than five colours?</li>
+</ol>
+<h3 class="book" id="b-the-complete-guide-to-colour-in-graphic-design"><span lang="zh-Hant">平面設計配色全攻略</span></h3>
+<p><strong>Scope.</strong> This book starts with how light becomes colour, then moves on to colour schemes in graphic design. It divides the ways we see colour into light-source colour, transmitted colour and surface colour, and divides colour mixing into subtractive mixing for print and additive mixing for screens and stages. Besides achromatic and chromatic colours, it lists special colours such as gold, silver and fluorescent colours separately.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Without light there is no colour. Light given off directly by a source is light-source colour; light passing through objects such as glass is transmitted colour; light reflected from a surface is surface colour.</li>
+<li>In subtractive mixing the pigment primaries are magenta, yellow and cyan, and mixing all three tends towards black; colour printing adds black on top of this, giving CMYK.</li>
+<li>In additive mixing the light primaries are red, green and blue; mixing makes things lighter, and all three make white. Televisions and computers use RGB.</li>
+<li>Achromatic colours are black, white and the steps of grey, and they are colours too. Only chromatic colours have hue, and their state is set by three values: hue, value and chroma.</li>
+<li>Yellow has the highest value and violet the lowest. Chroma is vividness: adding white makes a colour paler, adding black makes it darker, and adding a grey of the same value lowers only the chroma.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Find one example of the same red as a light-source colour, a transmitted colour and a surface colour, and note whether each should be produced in RGB or CMYK.</li>
+<li>Make a nine-step grey scale, then place a grey-green of the same value next to the middle grey, and write down that the chroma has changed but the value has not.</li>
+<li>Use analogous colours to make a set of logos running from wine red to dark red. In your description you may write only "warm" and "classic", and you may not add a complementary pair.</li>
+<li>Put high-chroma red, yellow and blue on a black ground, then double the black area, and judge whether it can still be used on food packaging.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-the-complete-guide-to-colour-in-graphic-design-1.jpg" alt="Wine red and dark red"><figcaption>Wine red and dark red are based on analogous colours; they carry the warmth of red and give a classic, elegant feeling. Source: <span lang="zh-Hant">《平面設計配色全攻略》</span>, p.149</figcaption></figure>
+<figure><img src="assets/colour/books/b-the-complete-guide-to-colour-in-graphic-design-2.jpg" alt="Pure colours on a black ground"><figcaption>A black ground makes high-chroma red, yellow and blue stand out more; too large an area of black feels hard, which does not suit food packaging. Source: same book, p.172</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Is an apple in a printed piece and an apple on television a surface colour or a transmitted colour? Which kind of mixing does each correspond to?</li>
+<li>When you add white, black, or a grey of the same value to green, how do value and chroma change in each case?</li>
+</ol>
+<h3 class="book" id="b-color-basics"><span lang="zh-Hant">美國色彩基礎教材</span></h3>
+<p><strong>Original title:</strong> <em>Color Basics</em></p>
+<p><strong>Authors:</strong> Stephen Pentak, Richard Roth</p>
+<p><strong>Scope.</strong> This is a basic colour textbook that starts from light and the eye; the Chinese translator is Tang Kaiqing. The first half covers the colour wheel, additive primaries, value, grey scale steps, inherent value and contrasts of the three attributes, as well as mixing illusions such as transparency, middle colours and plaid. Only the second half applies these exercises to two-dimensional and three-dimensional work, and discusses harmony and disharmony.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>An object shows a colour because its surface reflects that band of wavelengths and absorbs the rest. The blue of the sky and the red of sunset come from the different ways short wavelengths scatter in the air.</li>
+<li>White is the sum of coloured light, and black is its absence. Cone cells are sensitive to red, blue and green, which is also the physiological basis of the three light primaries. People with colour weakness often cannot tell red from green.</li>
+<li>Staring for a long time produces an afterimage. Instrument panels use red light so as to disturb the rod cells less, making it easier for drivers to look back at the road at night.</li>
+<li>Warm and cool come mainly from everyday associations. Colour names such as "Sandbar Harbour" are rich in poetry but poor at conveying information; naming colours by hue, value and chroma is precise.</li>
+<li>Middle colours can suggest mixing and transparency. Same value but different hue is another contrast that has to be practised on its own. Analogous combinations can be subtle, such as gold placed beside green.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make a grey scale, find the middle grey, then mark the inherent value of one hue on that scale.</li>
+<li>Do a transparency study: where two colours overlap, you may use only one middle colour, so that viewers can see front and back and the mixing.</li>
+<li>Choose three vague commercial colour names and rewrite them as sentences of "hue + value + chroma", so that classmates can roughly match them without seeing the swatch.</li>
+<li>In the two-dimensional assignment, make one harmonious composition and one deliberately disharmonious one, and use the three attributes to explain where the difference lies.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-color-basics-1.jpg" alt="Colour is light"><figcaption>Colour is light, and depends on both the object's surface and our vision; colour also carries symbols and metaphors. Source: <span lang="zh-Hant">《美國色彩基礎教材》</span>, p.10</figcaption></figure>
+<figure><img src="assets/colour/books/b-color-basics-2.jpg" alt="A screen in analogous colours"><figcaption>A Japanese folding screen combines analogous colours such as gold and green; it shows willows on the Uji Bridge. Source: same book, p.82</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why do night-time instrument panels use red light rather than lighting that strongly stimulates the rod cells?</li>
+<li>What is missing from a colour name such as "Bedouin tan"? Which three attributes would describe the colour precisely?</li>
+</ol>
+<h3 class="book" id="b-colour-applications-classic-creative-colour-schemes-in"><span lang="zh-Hant">色彩應用：平面設計配色經典創意</span></h3>
+<p><strong>Original title:</strong> <em>Color Design Workbook: A Real-World Guide to Using Color in Graphic Design</em></p>
+<p><strong>Scope.</strong> This book teaches colour theory through graphic design projects, rather than leaving theory on the colour wheel. It traces the line from Newton, Goethe, Prang and Ostwald to Itten at the Bauhaus, then divides harmonious relationships into complementary, split complementary, analogous, triadic and monochromatic. The later part turns to information: how colour works like a conversation to communicate a brand.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The core of colour theory is creating colour relationships that produce beauty. Colour wheels, triangles and curves are all tools for choosing colours, combining them and organising palettes.</li>
+<li>Newton gathered the spectrum into a colour circle and found that two opposite colours mixed together tend towards neutral. Goethe started from feeling instead, dividing warm and cool colours into positive and negative, and studied simultaneous contrast and emotion.</li>
+<li>Itten's twelve-hue wheel is based on red, yellow and blue, and considers both light waves and psychology. Ostwald linked harmony to psychological order.</li>
+<li>The types of harmony include complementary, split complementary, analogous, triadic and monochromatic, and are used to organise a palette that is both pleasant and effective.</li>
+<li>A brand can use a dedicated colour that appears again and again to gather seemingly unrelated images and text into one conversation. A dated colour scheme needs fresh research to be renewed.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Using Itten's twelve-hue wheel, make one small sketch each of complementary, split complementary and analogous schemes, and write down which feels most like a "conversation" and which most like a "statement".</li>
+<li>Choose a brand and set one colour that must keep appearing. Apply it to three images with unrelated content, and check whether you can still tell they come from the same organisation.</li>
+<li>Find an industry colour scheme you think is dated, write down where its associations come from, then create a new combination that still conveys the same information.</li>
+<li>Convert an on-screen RGB design to CMYK for print, and record which colour's relationships change after colour separation.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colour-applications-classic-creative-colour-schemes-in-1.jpg" alt="Converting RGB for print"><figcaption>An on-screen image made of coloured light must be converted into process colours that include black before prepress. Source: <span lang="zh-Hant">《色彩應用：平面設計配色經典創意》</span>, p.11</figcaption></figure>
+<figure><img src="assets/colour/books/b-colour-applications-classic-creative-colour-schemes-in-2.jpg" alt="Renewing a dated colour scheme"><figcaption>If a colour scheme already looks dated or overused, research the colours again and update the scheme. Source: same book, p.41</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How do Goethe and Newton differ in where they start with colour? Which concern does this book want designers to inherit?</li>
+<li>For complementary, split complementary and monochromatic schemes, give one brand character you can imagine for each.</li>
+</ol>
+<h3 class="book" id="b-black-white-and-grey-design-design-rules-without-chromatic"><span lang="zh-Hant">黑白灰設計：摒棄有彩色的設計法則</span></h3>
+<p><strong>Author:</strong> Xu Xianhong</p>
+<p><strong>Scope.</strong> This book deals specifically with how to keep designing after giving up chromatic colour. Xu Xianhong writes about "between black and white", from the definitions of white, black, and black with white, to the Daoist idea of "counting the white as black" (<em>ji bai dang hei</em>) and three kinds of beauty: solid and void, emptiness, and naturalness. The second half is a large collection of monochrome brands, packaging, albums and business cards, used to check the rules from the first half rather than to introduce the colour wheel again.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>White is all coloured light entering the eye. It has the highest value, no hue and no warmth or coolness, so it can sit beside any colour; white with black is seen as the extreme of colour contrast.</li>
+<li>Using white does not equal minimalism, and minimalism does not depend on any one colour; empty space does not have to be painted white either. Black can be solemn and elegant, and it sets off bright colours.</li>
+<li>Chinese ink painting uses "ink divides into five colours" (dry, wet, thick, light and burnt) to create a sense of colour without colour, relying on point, line, plane and layers of black, white and grey.</li>
+<li>"Counting the white as black" treats the places without strokes as part of the form too. The book links the way of black and white to Laozi's "know the white, keep to the black".</li>
+<li>A monochrome brand can keep only the necessary information. A strikethrough line or a large area of black can serve as both identity and idea, for example removing what is unnecessary.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Change a poster that was originally in colour into black, white and grey only, and require the empty space to do as much shaping work as the strokes.</li>
+<li>Make a chart of layers using the five blacks (dry, wet, thick, light and burnt), then complete a logo using only three of them.</li>
+<li>Make monochrome packaging for a brand with only the necessary information on it, and ask someone to read the brand name within three seconds.</li>
+<li>Write a short explanation: is your white "no design", or a calculated shape? Point to one empty space that would fall apart if it were filled in.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-black-white-and-grey-design-design-rules-without-chromatic-1.jpg" alt="Chocolate packaging"><figcaption>This chocolate packaging keeps a simple luxury, offering only the necessary information on the layout; its recognisability relies on the strength of the design as a whole. Source: <span lang="zh-Hant">《黑白灰設計：摒棄有彩色的設計法則》</span>, p.153</figcaption></figure>
+<figure><img src="assets/colour/books/b-black-white-and-grey-design-design-rules-without-chromatic-2.jpg" alt="Black strikethrough line"><figcaption>The brand uses a bold black strikethrough line to build its identity and to express breaking conventions and removing what is unnecessary. Source: same book, p.176</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>In a layout or in calligraphy, what does "counting the white as black" ask you to treat empty space as?</li>
+<li>Why might "using a lot of white" still not be minimalism? Give one approach from the book that achieves identity with black and white alone.</li>
+</ol>
+<h3 class="book" id="b-drawing-for-graphic-design"><span lang="zh-Hant">美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式</span></h3>
+<p><strong>Original title:</strong> <em>Drawing for Graphic Design: Understanding Conceptual Principles and Practical Techniques to Create Unique, Effective Design Solutions</em></p>
+<p><strong>Author:</strong> Timothy Samara</p>
+<p><strong>Scope.</strong> The original English title of this book is <em>Drawing for Graphic Design</em>. It is about drawing in graphic design, and colour is only one of its means of creating space and style. Samara treats drawing as the meeting point of observation, craft, narrative and intuition, used to train the eye rather than to hand in a rendering. The structure moves through discovery, process, ideas and work, and the syntax runs from underlays and lines to blocks of colour and brushstrokes.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Drawing from life trains you to analyse shape and construction; non-pictorial abstract exercises force you to deconstruct first and then reconstruct, and carry compositional confidence into other media such as photography.</li>
+<li>Type is drawing too. From the strokes of a small logo to the setting of long texts, it is all abstract line. Hand-drawn lettering can be remade to suit the function of the medium, rather than only picking from a font library.</li>
+<li>Drawing is also narrative: it can show the qualities of objects, call up memories, or use images to discuss problems.</li>
+<li>Even when a concept sketch ends up only as the base for lettering or a photo, it should leave behind an energy that the final version must keep.</li>
+<li>Blocks of colour and brushstrokes are practised within this syntax. A network of dots or an arching pattern can draw intangible things such as sound or gathering as a visible order.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Draw a real object from life, then make a non-pictorial reconstruction using only abstract shapes, and write down the extra compositional decisions in the second one.</li>
+<li>Hand-draw the letters for a headline, without allowing yourself to pick a ready-made typeface, and explain how the strokes suit this medium.</li>
+<li>Make one "underlay" each with blocks of colour and with brushstrokes, so that the photos or text added later have an energy and direction that already exist.</li>
+<li>Draw a process of sound or of a storyline as a distribution of dots or an intermediate invention exercise, so that others can see the sequence.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-drawing-for-graphic-design-1.jpg" alt="A network of dots"><figcaption>A network of dots conveys an orderly gathering, while an arching pattern draws sound and vibration as concrete music. Source: <span lang="zh-Hant">《平面設計中的繪畫、構成、色彩與空間樣式》</span>, p.79</figcaption></figure>
+<figure><img src="assets/colour/books/b-drawing-for-graphic-design-2.jpg" alt="Intermediate invention exercise"><figcaption>An intermediate invention exercise draws the development and merging of a storyline as a visible process. Source: same book, p.159</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why does Samara want designers to make "non-pictorial" work? What do it and drawing from life each train?</li>
+<li>What kind of problem does hand-drawn lettering solve that picking type from a font library cannot?</li>
+</ol>
+<h3 class="book" id="b-colours-of-ideas-a-study-of-traditional-chinese-colour"><span lang="zh-Hant">觀念之色：中國傳統色彩研究</span></h3>
+<p><strong>Scope.</strong> This is a study of traditional Chinese ideas about colour, not a colour scheme handbook. The author argues that traditional colour is first of all a purposeful system of ideas running through dynasties, ranks and daily life, not just a few historical swatches. The book traces the forming of colour thought, proper and intermediate colours, and the colours of each era, back to the black and white, and black, white and red, of the pre-Qin period, and on to the five directions and the five colours.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Contemporary design easily treats Chinese colour as fragments of a broken-off history. What the book wants to restore is the ideas, and the colour events those ideas produced.</li>
+<li>If the discussion looks only at the five proper colours of the five directions, <em>qing</em> (blue-green), <em>chi</em> (red), <em>huang</em> (yellow), <em>bai</em> (white) and <em>hei</em> (black), it overlooks the equally important intermediate colours. Under certain conditions, proper and intermediate colours can swap roles.</li>
+<li>The <span lang="zh-Hant">《禮記》</span> already says "upper garments in proper colours, lower garments in intermediate colours". Proper colours are like a fairly stable structure, and intermediate colours are like words filled in according to context; this is where meaning happens.</li>
+<li>Colour studies are divided into four kinds: principles, application, thought and general surveys. Early Chinese attention to colour took a different path from the optical colour science that followed Newton.</li>
+<li>The colours of each era were shaped by many interacting factors, including the absorption of foreign colours. The colours of state carriages, banners, horses and ceremonial robes were rules of rank and purpose, not free choices.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>List the five proper colours of the five directions, then find five intermediate colours in ritual codes or literature, and state whether they were used at the time on upper garments, lower garments, carriages or banners.</li>
+<li>Choose one dynasty's dress-colour regulations and draw a table of "who must use which colour on which occasion", rather than drawing a modern colour wheel.</li>
+<li>Compare "the five colours" with "the variations of the five colours are more than can ever be seen": explain in your own words what you lose by memorising only five colour names.</li>
+<li>Find a design that is called "Chinese colour" today, and work out whether it uses historical swatches or the idea of rank behind proper and intermediate colours.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colours-of-ideas-a-study-of-traditional-chinese-colour-1.jpg" alt="Colours of carriages and dress"><figcaption>The leather carriage (<em>gelu</em>), the wooden carriage (<em>mulu</em>) and ceremonial robes set the colours of banners, horses and garments by purpose, with one set each for war, hunting and ploughing. Source: <span lang="zh-Hant">《觀念之色：中國傳統色彩研究》</span>, p.154</figcaption></figure>
+<figure><img src="assets/colour/books/b-colours-of-ideas-a-study-of-traditional-chinese-colour-2.jpg" alt="Thirteen Emperors Scroll"><figcaption>Dynastic symbols could change colour; the book compares Emperor Wen of Wei in Yan Liben's <span lang="zh-Hant">《歷代帝王圖》</span> with the record that "under the metal phase, red is worn". Source: same book, p.121</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why can remembering only <em>qing</em>, <em>chi</em>, <em>huang</em>, <em>bai</em> and <em>hei</em> not bring back the colour life of Chinese tradition?</li>
+<li>From at least when does "upper garments in proper colours, lower garments in intermediate colours" show proper and intermediate colours entering the institutions? Can their roles be swapped?</li>
+</ol>
+<h3 class="book" id="b-the-golden-rules-of-colour-combination"><span lang="zh-Hant">色彩搭配的黃金法則</span></h3>
+<p><strong>Author:</strong> Hiropon Tsuge</p>
+<p><strong>Scope.</strong> This is a colour scheme book for beginners. The opening chapter fills in how colour is formed, associations, the three attributes and the imagery of tones; each of the four chapters after it uses before-and-after comparisons. The four chapters have separate tasks: one colour and two colours to limit the number of colours, unifying through harmony, strengthening through eye-catching contrast, and creating imagery with colour. Only the appendix covers two-colour and spot colour methods in Illustrator and Photoshop.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Seeing colour requires light, an object and an eye together. Colour divides into light-source colour and object colour, and object colour further divides into transmitted colour and reflected colour.</li>
+<li>Limiting the number of colours can make the impression stronger. One-colour design is used to make shapes, text and curves stand out; by changing the density or adding texture, one colour can also become many layers.</li>
+<li>Two-colour designs can be unified through warm colours, cool colours, value, hue, chroma, complements or overprinting spot colours. A full-colour image can also be split into two colours.</li>
+<li>Ways to unify include same-hue colours, analogous colours, a single tone, gradients, repetition, a centre of gravity, white and a shared colour.</li>
+<li>Strengthening relies on the power of neutral colours, white plus black, making the main subject stand out, advancing colours, using black and white to support colour, separating colours, and using many colours for richness. The imagery chapter matches these methods to luxury, sport, cuteness, seasons and countries.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make a one-colour poster that looks layered only by changing density and adding one texture. Then make a two-colour version, choosing either complements or overprinted spot colours.</li>
+<li>Take a "before" sketch with chaotic colours and unify it using only same-hue colours or a single tone, keeping the original shapes.</li>
+<li>On an image that is already unified, add only one advancing colour or one patch of black, and write down whether the main subject is strengthened or broken up.</li>
+<li>Make a set of low-value warm colours and dark tones for autumn, and note that it should make people think of red leaves, not spring.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-the-golden-rules-of-colour-combination-1.jpg" alt="Light and dark and three-dimensionality"><figcaption>Overlapping patterns, layer blending and adjusting opacity can create layers and a sense of depth; the stronger the contrast of light and dark, the stronger the three-dimensional effect. Source: <span lang="zh-Hant">《色彩搭配的黃金法則》</span>, p.34</figcaption></figure>
+<figure><img src="assets/colour/books/b-the-golden-rules-of-colour-combination-2.jpg" alt="Autumn colour scheme"><figcaption>Low-value warm colours, deep tones and dark tones make people think of red autumn leaves. Source: same book, p.134</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How can a one-colour design look as if it has many colours without adding any hues?</li>
+<li>Unifying colour and strengthening colour are consecutive chapters in this book. Give one specific technique from the book for each.</li>
+</ol>
+<h3 class="book" id="b-colour-scheme-handbook-for-beginners-2000-examples-so-you"><span lang="zh-Hant">新手配色寶典：2000個配色案例不怕你不會</span></h3>
+<p><strong>Scope.</strong> This is a casebook compiled by the mcoo Colour Research Centre, arranged chapter by chapter by colour family: red, orange, yellow, green, blue, indigo, violet, and finally black, white and grey. Each colour first gets a personality word (such as the boldness of magenta or the refreshing feel of mint green), followed by design tips. The general introduction at the front takes up only a short section, covering order, harmony, and paired feelings such as the seasons, expensive and cheap, and childlike and adult.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>We see an object's colour because light is reflected and absorbed. White light is treated as a mixture of seven colours, and the parts of the spectrum beyond visible light are a separate issue.</li>
+<li>Colour order and colour harmony each have their own meaning and methods, and they come before the thousand-plus colour name examples that follow.</li>
+<li>Emotional colour schemes are arranged in pairs: calm and aggressive, natural and artificial, gorgeous and plain, childlike and adult, sweet and cold, expensive and cheap.</li>
+<li>Each colour name comes with a fixed personality description. Orange is vivid and lively, but you must control both the colour combination and the area so it does not lose this nature.</li>
+<li>For subjects such as food, colour should help create a "juicy" feeling, and the personality of the colour family must match the feel of the item.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Choose one colour name each from red, orange, green, blue and violet, copy only the book's personality word, and find an existing design that matches that word.</li>
+<li>Make an orange food image. First make it look "full of juice", then write down whether its nature would turn noisy if the area were enlarged.</li>
+<li>Choose a pair of feelings (for example expensive and cheap), make a three-colour scheme for each, and do not allow the two schemes to share a hue.</li>
+<li>After working through the examples, check with the harmony methods at the front of the book: does the set of colours have order, or is it just a pile of colour names?</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colour-scheme-handbook-for-beginners-2000-examples-so-you-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《新手配色寶典》</span>, p.61</figcaption></figure>
+<figure><img src="assets/colour/books/b-colour-scheme-handbook-for-beginners-2000-examples-so-you-2.jpg" alt="Orange and food"><figcaption>Orange is vivid and lively, but the colour combination and area still need control; a juicy feel can be used to set off food. Source: same book, p.96</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why is this book's table of contents arranged by colour family rather than by design field? When using it, should you look up the personality word or the colour value first?</li>
+<li>When orange is used for food, what two controls does the book remind you of?</li>
+</ol>
+<h3 class="book" id="b-color-a-course-in-mastering-the-art-of-mixing-colors"><span lang="zh-Hant">像藝術家一樣思考之三：貝蒂的色彩</span></h3>
+<p><strong>Original title:</strong> <em>Color: A Course in Mastering the Art of Mixing Colors</em></p>
+<p><strong>Author:</strong> Betty Edwards</p>
+<p><strong>Scope.</strong> This is a painting-oriented colour course, translated into Chinese by Zhu Min. Edwards divides colour knowledge into three parts: how the brain processes drawing and colour together; paints, brushes and exercises in seeing value with the colour wheel; and harmony, light, simultaneous contrast, colour in nature, symbolism and personal preference. She quotes Itten: if you cannot create masterpieces in ignorance, you should study colour. At the same time she rejects Keats's fear that knowledge will "unweave a rainbow".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Colour is the sensation produced in the viewer's eye, brain and mind after light falls on a surface. The yellow of a lemon belongs to this system, and different people may not see exactly the same thing.</li>
+<li>Intuition can make choices, but intuition plus knowledge is stronger. The book's goals are observing, using, and mixing the hardest thing of all: harmony.</li>
+<li>Value must be looked at on its own. When describing a colour, state its value and chroma together, for example light red, dark red, or a mid-value blue-green.</li>
+<li>After harmony, you also have to deal with light, colour constancy and simultaneous contrast, and then look at how nature has already worked out these relationships.</li>
+<li>Symbolic meaning and personal preference must be understood separately. Knowing your own habits with colour stops you from mistaking preference for the only correct harmony.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Choose a set of paints and adjust only value, not hue, making at least five steps, and label them with "value step X, chroma step Y".</li>
+<li>Paint two colours side by side and use simultaneous contrast to make the same grey look different, then write down which surrounding colour is doing the work.</li>
+<li>Paint a small patch of a natural object from life. Mark the value first, then decide the hue, and check whether you jumped straight to a colour you prefer.</li>
+<li>In one paragraph, list three colours you use often, compare them with the book's table of symbols, and separate which are habits and which are required by the brief.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-color-a-course-in-mastering-the-art-of-mixing-colors-1.jpg" alt="Value and chroma"><figcaption>When naming a colour, state both value and chroma clearly, for example light red, dark red, or a blue-green at a given value step. Source: <span lang="zh-Hant">《像藝術家一樣思考之三：貝蒂的色彩》</span>, p.84</figcaption></figure>
+<figure><img src="assets/colour/books/b-color-a-course-in-mastering-the-art-of-mixing-colors-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: same book, p.119</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How does Edwards respond to the idea that "knowing too much colour theory takes away the joy"? When does she think ignorance is enough, and when is knowledge needed?</li>
+<li>Why does she ask you to see value with the colour wheel, rather than just memorising the names of hues?</li>
+</ol>
+<h3 class="book" id="b-basics-design-colour"><span lang="zh-Hant">國際平面設計基礎教程：COLOUR色彩設計</span></h3>
+<p><strong>Original title:</strong> <em>Basics Design 05: Colour</em></p>
+<p><strong>Scope.</strong> This basic course treats colour as a tool of graphic design: to attract, to guide, and to convey information through cultural associations. Its structure moves from basics, techniques and colour modes to applications and symbolism, and each example comes with the client, the studio and a colour summary. The colour reference pages list the moods of common colours, but warn that these associations differ between countries and cultures and cannot be used as a global guide.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>When we first see something, colour is often the first element we remember. Associations are shaped by culture, psychology, age and preference, and designers use them to predict how viewers will respond.</li>
+<li>Technical vocabulary (value, tone, saturation, colour mode) is for talking with designers, printers and clients, not just for exams.</li>
+<li>RGB corresponds to the three primaries of light and is used for television and electronic screens. You need to choose the right mode for the job and calibrate, so the result is close to what you imagined.</li>
+<li>One colour can carry several layers of mood words: red, for example, runs from excitement and safety to seduction, and yellow from hope to warning. Creative work can go beyond this chart.</li>
+<li>The examples stress how a small number of colours work: a blue main body plus two gradients, a touch of orange on a large field of white, or green added to a blue seen as conservative to warm it up.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write a three-line colour summary for one of your small projects: who the client is, what mood is wanted, and which colours were actually used. Compare it with how the book's examples are written.</li>
+<li>Choose a colour from the reference pages and write down the book's associations, then write a different association from your own culture, and explain why the book's cannot simply be applied.</li>
+<li>Redo a "Coil"-style exercise: one main colour plus two gradients, with the colour wrapping around the subject rather than being spread evenly.</li>
+<li>Mark the same design for two modes, print and screen, and list the colour that must change.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-basics-design-colour-1.jpg" alt="Natural colour bars"><figcaption>A combination of natural colour bars creates a soft, low-distraction feeling; the example also states the client, the designer and a colour summary. Source: <span lang="zh-Hant">《COLOUR色彩設計》</span>, p.27</figcaption></figure>
+<figure><img src="assets/colour/books/b-basics-design-colour-2.jpg" alt="Colour symbolism"><figcaption>Colour can convey specific information; what this section asks you to look at is cultural background and symbolism, not just the colour patches themselves. Source: same book, p.8</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why does this book insist that every example states the client, the studio and a colour summary?</li>
+<li>When can the mood words on the colour reference pages not be used directly? Which example in the book deliberately changes a colour's fixed impression?</li>
+</ol>
+<h3 class="book" id="b-comprehensive-colour-scheme-handbook-for-graphic-design"><span lang="zh-Hant">平面設計綜合配色手冊</span></h3>
+<p><strong>Scope.</strong> The first half of the handbook is about understanding colour: what colour is, the three attributes, contrast and combination. Only the second half covers colour plans and practical examples, with examples as specific as education, real estate, technology and personal web pages. It keeps separating "a colour" from "colour": a colour name on its own has no value; value appears in its relationship with the environment and the space.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Colour is the effect of light stimulating the eye and then reaching the visual centre of the brain. Only recombining two or more colours for a purpose counts as colour composition.</li>
+<li>What we usually call "a colour" is not yet colour. A colour must interact with other colours and with space in a specific environment to form colour relationships. Red can mean celebration or danger, depending on the surrounding colours.</li>
+<li>In 1666 Newton used a prism to split light into seven colours. Visible light runs from about 380 to 780 nanometres, with ultraviolet and infrared beyond. Different wavelengths correspond to different colour sensations.</li>
+<li>Light-source colour is the colour of the light from a luminous body; object colour is the sensation that enters the eye after the light is absorbed and reflected by an object. Full-spectrum light contains all wavelengths; monochromatic light has only one.</li>
+<li>Each chroma key has its own character, but once the hue key and value key change, the psychological effect of the same chroma changes too.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Put the same red into two settings (next to a festive object, next to a danger sign), and write down that its "colour" has not changed but its "colour relationship" has.</li>
+<li>Draw a band of visible wavelengths and mark what your eyes cannot see beyond the red end and the violet end.</li>
+<li>Choose a type of web page (education, real estate or technology). First write down the colour relationship this type needs, then build the colour scheme, rather than starting with a colour name you like.</li>
+<li>Make two images with similar chroma, changing only the value key, and ask others whether the mood changes too.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-comprehensive-colour-scheme-handbook-for-graphic-design-1.jpg" alt="Chroma keys"><figcaption>Each chroma key has its own character, but once the hue key and value key change, the psychological effect changes too. Source: <span lang="zh-Hant">《平面設計綜合配色手冊》</span>, p.24</figcaption></figure>
+<figure><img src="assets/colour/books/b-comprehensive-colour-scheme-handbook-for-graphic-design-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: same book, p.155</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Using the book's example, explain why the "colour" red on its own cannot decide between celebration and danger.</li>
+<li>What is the difference between light-source colour and object colour? When white paper turns yellow under yellow light, which one has changed?</li>
+</ol>
+<h3 class="book" id="b-how-to-choose-colours-how-to-design"><span lang="zh-Hant">色彩怎麼選，設計怎麼做</span></h3>
+<p><strong>Scope.</strong> This volume reduces every colour problem to two stages: whether you chose correctly, and whether you use the chosen colours brilliantly. The first half is still colour cards, mood keywords and colour brainstorming; the second half uses a "colour balance scale" to handle the image, setting the main colour, supporting colour, dominant colour, blending colour and accent colour, and discussing area, centre of gravity, left-right face-offs and territory. A chapter on culture questions fixed impressions, such as whether the sea can only be blue.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Choosing colour means linking feelings to colours. Using colour means controlling relationships: balancing, adding a little lift, deleting colours that damage the image, and building a system.</li>
+<li>Be careful with colours in the brand area. The balance scale can be used again and again to swap colours, align with the client's intent, and tighten the details.</li>
+<li>The main colour should raise the appeal; the supporting colour gives support; the background is the dominant colour; the blending colour softens anything that drifts loose; the accent colour makes the image lively. Many colours are not necessarily truly many colours.</li>
+<li>Distribution decides the centre of gravity: top and bottom show the colour's weight, while left and right can be set up as a face-off. There are also duotones, cross-shaped contrasts, low colour quantity against high colour quantity, differences of area, and rhythm.</li>
+<li>Large areas of dark colour lean towards steadiness; large areas of light colour lean towards liveliness. However many colours there are, they can be grouped into a few large groups by colour tendency. Complex relationships suit dreamlike or eye-catching effects, and must match the meaning you want to express.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make a colour balance scale for an image whose colours are already chosen: list the brand colours to keep, the lift colour to add, and the one colour to delete.</li>
+<li>On one layout, mark the main colour, supporting colour, dominant colour, blending colour and accent colour. Add whichever is missing, and do not use the strongest colour for all five.</li>
+<li>Make one version with a top-bottom distribution and one with a left-right distribution, and write down where the centre of gravity is and whether it has turned into a face-off between two armies.</li>
+<li>Choose a fixed impression (the sea equals blue, or rare equals expensive). Make one version following convention, then one that breaks it, and state whether the break is for talking point or for culture.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-how-to-choose-colours-how-to-design-1.jpg" alt="Area and weight"><figcaption>The same kind of colour feels different when it covers a large area: a large dark area looks steady, a large light area looks lively. Source: <span lang="zh-Hant">《色彩怎麼選，設計怎麼做》</span>, p.174</figcaption></figure>
+<figure><img src="assets/colour/books/b-how-to-choose-colours-how-to-design-2.jpg" alt="Colour tendency"><figcaption>Complex colour relationships suit dreamlike or eye-catching expression; however many colours there are, they can still be grouped into a few large groups by colour tendency. Source: same book, p.153</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What does each of "choosing correctly" and "using brilliantly" ask you to deliver? Which two actions will the colour balance scale force you to take at least?</li>
+<li>Why might a multicolour design still not be multicoloured? What role does colour tendency play here?</li>
+</ol>
+<h3 class="book" id="b-colour-perception"><span lang="zh-Hant">色彩感知學</span></h3>
+<p><strong>Scope.</strong> This book does not teach you how to make colours look good together. It teaches you to see your own seeing. The author argues that when colour theory loses touch with making, it should step back to an earlier question: what a person actually feels equals the facts plus physiology and psychology. The method is to set limited conditions for each exercise, to use experiment in place of system, and to ask readers to look at the image first and read the text afterwards. Newton recorded the objective existence of colour; Goethe recorded the subjective creation of the eye. Both show that the colour in the eye is no longer the colour as it really is.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Language easily makes aesthetic experience sound mystical. These exercises avoid beauty and are used to reflect on subjectivity, forcing viewers to see both the object and themselves.</li>
+<li>What you feel now depends on what you felt just before and what you are about to feel. If one hand gets used to cold water and the other to hot water, and both then go into warm water, they feel different temperatures. Illusions in colour cannot be ignored either.</li>
+<li>Physically equal mixing does not automatically become visually equal steps. Evenly spaced colour steps need unequal amounts of paint.</li>
+<li>The exercises cover: the range of colour change, the direction and degree of change, colour texture (touch within sight), a colour disappearing from the field of view, the illusion of fluting, the illusion of layering, dissolving edges, and light and shadow.</li>
+<li>Non-figurative geometry can also suggest space. For example, a colour patch gets brighter the closer it is to the light source, and a stretched shape carries a spatial logic of its own.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>After the hot-and-cold hands analogy, make a colour version: stare at a strong colour first, then look at a neutral colour, and write down where the lingering sensation comes from.</li>
+<li>Mix a set of greys or single-hue steps that you think are evenly spaced, then adjust them until they look evenly spaced. Record why the paint cannot be added in equal amounts.</li>
+<li>Complete one sheet each of "a colour disappears" and "dissolving edges". Write the conditions on the back, and let others look first and read the conditions afterwards.</li>
+<li>Use non-figurative colour patches to show "brighter closer to the light source". Do not draw a light bulb. Ask classmates to point out which side the light is on.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colour-perception-1.jpg" alt="Light and the suggestion of space"><figcaption>From left to right the colour patches get closer to the light source; the stretching in the lower part shows that this colour logic contains a suggestion of space. Source: <span lang="zh-Hant">《色彩感知學》</span>, p.103</figcaption></figure>
+<figure><img src="assets/colour/books/b-colour-perception-2.jpg" alt="Visually equal steps"><figcaption>Colour components that are physically equal do not look like equal intervals; visually equal steps need unequal mixtures. Source: same book, p.74</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why does the book say the exercises do not discuss beauty? Which part of "what you actually feel = facts + physiology/psychology" are you asked to write down in your assignment?</li>
+<li>Why can you not make colour steps that look evenly spaced by mixing equal amounts of paint?</li>
+</ol>
+<h3 class="book" id="b-colour-composition"><span lang="zh-Hant">色彩構成</span></h3>
+<p><strong>Author:</strong> Cui Shengguo</p>
+<p><strong>Scope.</strong> Cui Shengguo's textbook starts with the meaning, definition and teaching requirements of colour composition, then moves on to light and colour, object colour and the three attributes of colour. It gives the wavelength range of visible light, and uses shop windows, lighting, metal products and posters to show that objects have no colour of their own: the colour you see is decided by the surface and the light falling on it together. The later contrast exercises ask you to work freely within the overall colour relationships, not to apply formulas.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Colour needs a light source, an object and normal visual perception. White light is a mixture of seven single colours of light. Red has the longest wavelength and the lowest refractive index; violet is the opposite.</li>
+<li>Amplitude corresponds to lightness and darkness; wavelength corresponds to the kind of coloured light. Visible light runs from about 380 to 780 nanometres. Infrared and ultraviolet can only be seen with instruments.</li>
+<li>Object colour comes from the way a surface absorbs and reflects light. The same surface looks reddish orange under yellow light and reddish grey under green light. When the coloured light and the object colour are complementary, the result tends towards blackish grey. No colour that you see under white light will turn white under coloured light.</li>
+<li>Local colour is our fixed idea of what things look like, such as red fruit or a blue sea. It helps us recognise things, but it is not a paint that the object carries.</li>
+<li>Contrast can be handled imaginatively. A full range of hues suits a rich, showy effect. In a poster, the meaning of the forms and the colour must work together, for example a yellow foetus, green ecology and blood-red animals.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Light the same red object with three light sources (white, yellow, green), or simulate this with coloured paper. Record the colour you see each time, and explain which one comes close to the blackish grey of complementary colours.</li>
+<li>Draw two versions of a metal product, changing only the colour reflected from the surroundings, not the shape of the product.</li>
+<li>Make a full-hue contrast study. First write down the overall colour relationship you want to keep, then add variation within it. Avoid spreading all twelve hues evenly.</li>
+<li>Make a public service poster in which the meaning of the forms and the colours must explain each other. Write down what each colour is arguing for.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colour-composition-1.jpg" alt="Full-hue contrast"><figcaption>Contrast should be handled flexibly within the overall colour relationships; a full-hue scheme can be used for richness and splendour. Source: <span lang="zh-Hant">《色彩構成》</span>, p.57</figcaption></figure>
+<figure><img src="assets/colour/books/b-colour-composition-2.jpg" alt="Public service poster"><figcaption>A yellow foetus, green ecology and blood-red animals use the meaning of form and colour together to speak about the environment. Source: same book, p.98</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why does Cui Shengguo say that objects have no colour of their own? Under yellow light and under green light, which way does the same surface shift?</li>
+<li>Local colour helps us recognise things. Which should go into an observation record: local colour, or "the object colour as changed by the light source at this moment"?</li>
+</ol>
+<h3 class="book" id="b-colour-design-a-reference-handbook-for-japanese-graphic"><span lang="zh-Hant">色彩設計：日本平面設計師參考手冊</span></h3>
+<p><strong>Scope.</strong> This handbook has two parts. The first uses short texts with illustrations to cover colour and light, the colour wheel, HSB, web-safe colours, CMYK and RGB, and lightness. It gives whole pages to the extreme values a single colour holds in a culture, red for example. The second part starts from software. Using before-and-after edits in Photoshop, InDesign and Illustrator, it teaches essential settings such as saturation, spot colour inks and curves.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Without light you cannot tell colours or shapes apart. The brain combines the reflected colour information with what it knows from objects it has met before, and only then recognises "a purple bottle".</li>
+<li>Newton split white light into a spectrum. Visible light is electromagnetic radiation of about 380 to 780 nanometres; the shorter the wavelength, the higher the energy. Beyond the red end lies infrared; beyond the other end lies ultraviolet.</li>
+<li>In Japanese, <em>aka</em>, <em>shu</em>, <em>akane</em>, <em>hi</em> and <em>ni</em> are not the same red. Vermilion (<em>shu</em>) can stand for divine power and wealth, but has also been linked with blood and prisoners. Signal red exists only to stand out.</li>
+<li>In design, colour is often seen first. The job of the culture pages is to understand these extreme impressions; the software pages are there to get the colour accurate.</li>
+<li>When adjusting saturation, watch the preview and stop; too much looks unnatural. The curves for a spot colour (such as DIC) and for black ink should be adjusted separately, so that the image becomes softer rather than just dirtier.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write a short user guide for "red". It must include both of the opposite associations in the book (sacred or wealthy, and blood or warning). Then decide which side your design stands on.</li>
+<li>Place three objects in a description of a darkroom. Write down whether, without light, you lose colour or shape, and how the two are lost together.</li>
+<li>Raise the saturation of a landscape photo in Photoshop. Stop at the point where the sky still looks natural, and note what goes wrong if you push further right.</li>
+<li>In your layout software, adjust one curve for black ink and one for a spot colour. Compare darkening only the black with also adjusting the spot colour: which looks softer?</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-colour-design-a-reference-handbook-for-japanese-graphic-1.jpg" alt="Adjusting saturation"><figcaption>Pushing saturation to the right can turn the sky a vivid orange; too far looks unnatural, so watch the preview and stop. Source: <span lang="zh-Hant">《色彩設計：日本平面設計師參考手冊》</span>, p.165</figcaption></figure>
+<figure><img src="assets/colour/books/b-colour-design-a-reference-handbook-for-japanese-graphic-2.jpg" alt="Ink curves"><figcaption>The curves for black ink and for the DIC spot colour are adjusted separately; lowering the black midtones and adjusting the spot colour makes the image softer. Source: same book, p.213</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What are at least two contradictory cultural associations of red in the book? And what does signal red exist for?</li>
+<li>Adjusting saturation and adjusting spot colour curves each prevent which kind of "unnatural" result?</li>
+</ol>
+<h3 class="book" id="b-100-bright-ideas-for-colour-design"><span lang="zh-Hant">色彩設計的100個亮點</span></h3>
+<p><strong>Original title:</strong> <em>100 Bright Ideas for Colour</em></p>
+<p><strong>Scope.</strong> The 100 bright ideas in this book are ideas for colouring rooms and objects, not for on-screen colour schemes. It moves quickly from "what colour is, how to choose it, how to mix it" to tools: MDF board, primer, paint, varnish, brushes and masking tape. Each idea states the rough working time and materials. Projects include a chequered wall, a distressed table, coloured washes, fabric squares, a dragged wall finish and hand-painted cushions.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Set the base colour of a room first. Furniture, doors and windows are the next layer. They are usually stronger than the base colour and are there to complement it, not to overpower it.</li>
+<li>A chequered wall uses masking and varnish to separate matt from gloss. For a distressed table, paint it white first, then leave a band of the base colour showing 2 cm in from the edge. The second colour must be thin enough to let the white show through.</li>
+<li>A coloured wash can be made by mixing wallpaper paste with paint. After brushing it on, wipe it with a cloth to blend the brushstrokes, or leave streaks of texture on purpose.</li>
+<li>Dragging uses a glaze mixed from coloured paint, glaze and water. While it is wet, drag a brush through it to make a woven texture. A wall must be finished in one go.</li>
+<li>You can print colour onto fabric yourself. Orange with lemon yellow, a yellow chair, an old radio and gerberas create nostalgia with objects rather than with a colour wheel.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write two layers of colour for a room: the base colour, and a stronger colour for furniture, doors and windows. Explain why the second layer is still subordinate to the first.</li>
+<li>Simulate the distressed table process on paper: white base, an edge band, a thin second colour. Write down what you lose if the second colour is painted too solidly.</li>
+<li>Make a small dragged or wiped sample. Note that it must be finished while wet, and record the working time.</li>
+<li>Use three ready-made objects (a chair, an appliance, flowers) to set up a nostalgic corner. Photograph or draw them first, then work out the colours they share, rather than choosing colours first and then shopping.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-100-bright-ideas-for-colour-design-1.jpg" alt="Orange and lemon yellow"><figcaption>Yellow dining chairs, an orange 1950s radio and bright gerberas are put together to create a nostalgic theme. Source: <span lang="zh-Hant">《色彩設計的100個亮點》</span>, p.52</figcaption></figure>
+<figure><img src="assets/colour/books/b-100-bright-ideas-for-colour-design-2.jpg" alt="Layers of colour in a room"><figcaption>Furniture, doors and windows form the next layer of a room's colour; they are usually stronger than the base colour and complement it. Source: same book, p.6</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why do the book's "bright ideas" list tools, working times and drying times? How is it used differently from a colour swatch book?</li>
+<li>What kind of time limit in the process do the distressed table and the dragged wall both stress?</li>
+</ol>
+<h3 class="book" id="b-principles-of-colour-design"><span lang="zh-Hant">色彩設計的原理</span></h3>
+<p><strong>Scope.</strong> This book first deals with something that is easy to skip: how to talk about colour. "Bright red", "blue like the sea" or "overcast grey" may call up a different image for the listener than for the speaker. Screens, print, time, lighting and culture also make the same colour look different. Only after sorting out how to express colour does the book move on to schemes where hue, lightness or saturation is kept consistent, and to complementary colours and the drift of fashionable colours around the colour wheel.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A colour does not have a single appearance. Screen and print differ, colours fade, and morning or evening, indoors or outdoors, and the viewer's experience and culture all rewrite how it feels.</li>
+<li>Expressing colour correctly is the first step in using colour scheme rules. A poetic comparison cannot guarantee that both people mean the same colour.</li>
+<li>We see colour because there is light. In the dark there is no colour; colour exists only where there is light. Here colour is described simply as light.</li>
+<li>In practice, keep these apart: warm and cool, image scales, colour names, and schemes with consistent hue, consistent lightness or consistent saturation.</li>
+<li>Complementary colours are pairs opposite each other on the colour wheel. They give the strongest contrast and can make a design showy and full of impact. Fashionable hues drift slightly around the wheel, for example from an orange-leaning red towards a purplish red.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Describe a colour to a classmate using only comparisons. After they mix it, describe it again using hue, lightness and saturation, and compare the errors in the two attempts.</li>
+<li>Look at the same artwork on screen and then print it out. Write down which relationship (warm and cool, or saturation) has changed.</li>
+<li>Make two colour schemes, A and B, so that B's complementary contrast is clearly stronger than A's. Note whether this design actually needs that impact.</li>
+<li>Mark a red that is common today on the colour wheel, then mark the next step it might move to. Make a small sketch for each.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-principles-of-colour-design-1.jpg" alt="Complementary contrast"><figcaption>Pairs opposite each other on the colour wheel are complementary; complementary contrast is the strongest and can make a design look showy and striking. Source: <span lang="zh-Hant">《色彩設計的原理》</span>, p.77</figcaption></figure>
+<figure><img src="assets/colour/books/b-principles-of-colour-design-2.jpg" alt="Hue drift"><figcaption>Fashionable hues drift slightly around the colour wheel, for example from a red close to orange towards a purplish red. Source: same book, p.145</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why are the words "bright red" not enough for someone else to mix the same colour? What other situations that change a colour does the book mention?</li>
+<li>The book treats complementary colours as the strongest contrast. Which briefs suit them, and which only need a consistent hue?</li>
+</ol>
+<h3 class="book" id="b-design-basics-classroom-3-principles-of-colour-design"><span lang="zh-Hant">設計入門教室3：色彩設計的原理</span></h3>
+<p><strong>Scope.</strong> This volume retells the principles of colour in the style of an introductory class. It focuses on the wavelengths of light, the three ways we see colour, and how this knowledge feeds into colour schemes. Light-source colour, transmitted colour and reflected colour are illustrated separately: the sun and lamps, coloured cellophane on stage, and paint on the surface of objects. Only in the later part does it use white space, area and the original colours of photographs to discuss showy versus plain and natural versus eye-catching.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Visible light is only one band of the electromagnetic spectrum. Longer wavelengths lean red, middle ones green and shorter ones blue. A prism separates light by wavelength, and it looks like a rainbow.</li>
+<li>Light-source colour is the light itself; in daily life we hardly think of it as "a colour". Transmitted colour adds colour over a light source; screens and televisions belong here. Reflected colour is the colour of most objects: the surface absorbs most wavelengths and the rest enters the eye.</li>
+<li>When the spectral make-up and colour temperature of the light source change, reflected colour changes. Clothes that look bright in the shop look dull at home; butchers' and greengrocers' stalls change their lighting on purpose. Sunshine, shade, incandescent bulbs and fluorescent tubes each push objects towards a different colour.</li>
+<li>The number of colours can run to several million, but common colour names are far fewer. The common colours that can be named in the Japanese Industrial Standards are far fewer than the colours the eye can tell apart.</li>
+<li>With more white space and smaller coloured areas, even a showy scheme becomes plain; make the areas of a plain scheme larger and it becomes showy. If an advertisement needs to grab attention, keeping the original colours of a photograph may not be enough.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>In three sentences, give one example each of light-source colour, transmitted colour and reflected colour, and say which one your assignment will finally be seen as.</li>
+<li>Look at the same colour sample by a window, in shade and under warm yellow lamplight. Write down which comes closest to the colour you will deliver.</li>
+<li>Make two small sketches with exactly the same colours, changing only the white space and the size of the colour areas, so that one becomes plain and the other showy.</li>
+<li>Choose a photograph with natural colours and make two versions: "keep the original colours" and "change the colours to stand out". State whether it is a keepsake photo or an advertisement.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-design-basics-classroom-3-principles-of-colour-design-1.jpg" alt="White space and area"><figcaption>With more white space and smaller coloured areas, even a showy scheme becomes plain; with larger areas, a plain scheme becomes showy. Source: <span lang="zh-Hant">《設計入門教室3：色彩設計的原理》</span>, p.120</figcaption></figure>
+<figure><img src="assets/colour/books/b-design-basics-classroom-3-principles-of-colour-design-2.jpg" alt="Original colours of a photograph"><figcaption>Keeping a photograph's original colours strengthens a natural impression; for an eye-catching advertisement, the original colours may not be striking enough. Source: same book, p.79</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Clothes look different in the shop and at home. What property of the light source does the book say has changed the reflected colour?</li>
+<li>How do white space and coloured area swap "plain" and "showy"? Is this the same method as adding more hues?</li>
+</ol>
+<h3 class="book" id="b-design-code-the-complete-guide-to-colour-schemes"><span lang="zh-Hant">設計密碼：綜合配色完全攻略</span></h3>
+<p><strong>Author:</strong> Song Yujie</p>
+<p><strong>Scope.</strong> Song Yujie's guide starts with light and colour, the three primaries, mixing and colour families, then explains each colour family in detail. It applies the same method to graphic design, web, interiors, fashion, packaging, display, make-up and photography. The three primaries of light and the three primaries of pigment are kept strictly apart. Under each colour name it gives both a colour impression and colour values, so you can go from a feeling to numbers you can use.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Without light there is no colour. Thomas Young proposed that the three primaries of light are not red, yellow and blue, but red, green and blue-violet, lights that cannot be mixed from other coloured lights. The three pigment primaries are a separate set: mixing two gives a secondary colour, and mixing all three gives a tertiary colour.</li>
+<li>Tertiary colours are used most in design, because they are both rich and restrained. Tertiary colours also include the many greys made by mixing primaries with black, white and grey.</li>
+<li>Light-source colour rewrites objects. White paper is white under white light and yellow under yellow light; a sunset can make different objects all lean orange.</li>
+<li>Object colours divide into opaque and transparent: for the first you look at reflection, for the second at transmission. Blue glass, for example, lets only blue light through. Local colour is a generalisation people make after removing the effects of light and surroundings; some painters even deny that it exists.</li>
+<li>A colour should be written down with both its impression and its values. For example, a blue linked with water and sky can be clear and calm and also carry a set of CMYK or RGB values. Grey tones are used to make an image feel relaxed.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make a chart of secondary and tertiary colours with pigments, and note next to it that these colours cannot be predicted by the rules for mixing light.</li>
+<li>Choose four colour names from one colour family. For each, write one line of impression and one line of colour values, and specify whether it is for packaging, web or fashion.</li>
+<li>Pair a colour photograph with grey tones. Write down whether the relaxed feeling comes from the grey or from the main colour itself.</li>
+<li>Look at the colour of the same sheet of white paper under two light sources, and use the result to explain why you cannot just record local colour.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/colour/books/b-design-code-the-complete-guide-to-colour-schemes-1.jpg" alt="Grey tones and colour values"><figcaption>Pairing with grey tones can feel relaxed; the book writes down impressions such as fresh and calm together with the matching colour values. Source: <span lang="zh-Hant">《設計密碼：綜合配色完全攻略》</span>, p.128</figcaption></figure>
+<figure><img src="assets/colour/books/b-design-code-the-complete-guide-to-colour-schemes-2.jpg" alt="Tutorial clip lengths"><figcaption>The bonus tutorials list the length of each clip, such as red colour schemes and RGB versus CMYK. Source: same book, p.6</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why can the three primaries of light and the three primaries of pigment not share one set of mixing rules? Tertiary colours are common in design because of what character?</li>
+<li>How is local colour generalised? When objects all turn orange at sunset, what colour does that show you are usually seeing?</li>
+</ol>
+<!-- BOOKS:END -->
+      </div>
+
+      <nav class="pager" aria-label="Categories"><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span>Previous guide</span><strong>01 Design Basics &amp; Composition</strong><i aria-hidden="true">&rarr;</i></a><a class="next" href="03_typography.html" data-label="03 Typography &amp; Lettering"><span>Next guide</span><strong>03 Typography &amp; Lettering</strong><i aria-hidden="true">&rarr;</i></a></nav>
+    </main>
+    <aside class="rail" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a>
+    </aside>
+  </div>
+  <script src="js/guide.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scene.js"></script>
+  <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, theme: "dark", themeVariables: { background: "#101b34", primaryColor: "#1b2b4d", primaryTextColor: "#e6eef8", primaryBorderColor: "#4e6586", lineColor: "#8ea0b8", fontFamily: "Source Sans 3, sans-serif" } });
+  </script>
+</body>
+</html>

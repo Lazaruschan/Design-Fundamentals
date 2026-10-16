@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1428">
+  <title>Layout &amp; Grid Systems · Design Fundamentals</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/guide.css">
+</head>
+<body class="page-guide">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="loader" id="loader" data-label="04 Layout &amp; Grid Systems" aria-hidden="true">
+    <p class="loader-label">SSHD2382 / Design Fundamentals</p>
+    <div class="loader-box">
+      <span class="plus tl"></span><span class="plus tr"></span><span class="plus bl"></span><span class="plus br"></span>
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg>
+    </div>
+    <p class="loader-count" data-count-slots></p>
+    <p class="loader-page"></p>
+  </div>
+  <header class="site-head">
+    <a class="logo" href="index.html" aria-label="Design Fundamentals, home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg><span>Fundamentals<sup>&reg;</sup></span></a>
+    <nav class="head-nav" aria-label="Site">
+      <a class="pill pill-solid" href="index.html#browse" data-magnetic><span data-text="Browse">Browse</span></a>
+      <button class="pill pill-line" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-magnetic><span data-text="Menu">Menu</span><i class="burger" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <div class="menu-panel" id="menu" inert>
+    <div class="menu-inner">
+      <p class="menu-label">(Guides)</p>
+      <ol class="menu-list"><li><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span class="menu-num">01</span><span class="menu-name">Design Basics &amp; Composition</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="02_colour.html" data-label="02 Colour"><span class="menu-num">02</span><span class="menu-name">Colour</span><span class="menu-week">Week 8</span></a></li><li><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span class="menu-num">03</span><span class="menu-name">Typography &amp; Lettering</span><span class="menu-week">Week 9</span></a></li><li><a href="04_layout-grid.html" data-label="04 Layout &amp; Grid Systems"><span class="menu-num">04</span><span class="menu-name">Layout &amp; Grid Systems</span><span class="menu-week">Week 3, 4, 5</span></a></li><li><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span class="menu-num">05</span><span class="menu-name">Logo &amp; Branding</span><span class="menu-week">Week 10, 11</span></a></li><li><a href="06_packaging.html" data-label="06 Packaging"><span class="menu-num">06</span><span class="menu-name">Packaging</span><span class="menu-week">Week 11</span></a></li><li><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span class="menu-num">07</span><span class="menu-name">Book Design &amp; Print</span><span class="menu-week">Week 5, 9</span></a></li><li><a href="08_infographics.html" data-label="08 Information Graphics"><span class="menu-num">08</span><span class="menu-name">Information Graphics</span><span class="menu-week">Week 4</span></a></li><li><a href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span class="menu-num">09</span><span class="menu-name">Interaction, Web &amp; UX</span><span class="menu-week">Week 11 (and 4)</span></a></li><li><a href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span class="menu-num">10</span><span class="menu-name">Graphic Design Practice</span><span class="menu-week">Week 1, 11</span></a></li><li><a href="11_interior.html" data-label="11 Interior Design"><span class="menu-num">11</span><span class="menu-name">Interior Design</span><span class="menu-week">Further reading</span></a></li><li><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span class="menu-num">12</span><span class="menu-name">Architecture &amp; Space</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="13_product.html" data-label="13 Product Design"><span class="menu-num">13</span><span class="menu-name">Product Design</span><span class="menu-week">Week 11 (and 6–7)</span></a></li><li><a href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span class="menu-num">14</span><span class="menu-name">Design &amp; Art History</span><span class="menu-week">Week 1</span></a></li><li><a href="15_theory-psychology.html" data-label="15 Design Theory &amp; Psychology"><span class="menu-num">15</span><span class="menu-name">Design Theory &amp; Psychology</span><span class="menu-week">Week 4, 6–7, 10</span></a></li><li><a href="16_pattern-ornament.html" data-label="16 Pattern &amp; Ornament"><span class="menu-num">16</span><span class="menu-name">Pattern &amp; Ornament</span><span class="menu-week">Week 8 (and 6–7)</span></a></li><li><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span class="menu-num">18</span><span class="menu-name">Magazines &amp; Annuals</span><span class="menu-week">Week 1–13</span></a></li><li><a href="20_advertising.html" data-label="20 Advertising"><span class="menu-num">20</span><span class="menu-name">Advertising</span><span class="menu-week">Week 10, 11</span></a></li></ol>
+      <div class="menu-foot"><span>SSHD2382 Design Fundamentals</span><span>Eighteen guides, thirteen weeks</span><a href="index.html">Home</a></div>
+    </div>
+  </div>
+  <canvas class="scene" id="scene" data-scene="page" data-cat="04" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <p class="side-brand">SSHD2382 / Guides</p>
+      <label class="visually-hidden" for="q">Search categories</label>
+      <input class="search" id="q" type="search" placeholder="Name, term, or category" autocomplete="off">
+      <p class="empty" id="empty" hidden>No category matches.</p>
+      <nav aria-label="Categories"><div class="side-group"><p class="side-label">Categories</p><a href="01_design-basics.html" data-search="01 design basics design basics &amp; composition point, line, plane, composition, and the four design principles week 2, 6–7 1. scope 2. core concepts 3. proportion &amp; geometry 4. principles &amp; methods 5. selected figures 6. source bookshelf 7. study cues 7. each book 藝術·設計的平面構成 藝術·設計的立體構成 藝術·設計的紙的構成 藝術·設計的光的構成 平面設計原理 通用設計法則 美國視覺設計學院叢書：設計元素（平面設計樣式） 寫給大家看的設計書：實例與創意 黃金比例 設計的教室 設計的方法 談繪畫構圖 1000多個圖形元素：獨特的設計元素 設計中的點線面 平面設計法則 設計幾何學：關於比例與構成的研究 藝術·設計的平面構成（繁體版） 探索幾何：平面視覺構建 好造型的設計元素 和諧之美：探索設計中的黃金比例 分寸設計：發現黃金比例恆久之美 設計元素：平面設計樣式（英文原書） 寫給大家看的設計書（第3版） 設計元素：平面設計樣式 國際平面設計基礎教程：規格設計（format） 國際平面設計基礎教程：圖形設計（image） 國際平面設計基礎教程：設計思維（thinking） 寫給大家看的設計書（第4版） 平面設計的七大要素 綜合造型設計基礎 美國視覺設計學院用書：設計元素（平面設計樣式） 視覺原理 設計力：寫給大家的平面設計法則 通用設計法則（英文版） the elements of graphic design: space, unity, page architecture, and type universal principles of design design elements: a graphic style manual robin williams design workshop geometry of design: studies in proportion and composition the design method: a philosophy and process for functional visual communication 1000 graphic elements: special details for distinctive designs the essential principles of graphic design geometry of design: studies in proportion and composition design elements: understanding the rules and knowing when to break them geometry of design: studies in proportion and composition , 2nd edition (revised and updated) design elements: a graphic style manual the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual basics design 01: format basics design 04: image basics design 08: design thinking the non-designer&#x27;s design book: design and typographic principles for the visual novice , 4th edition the 7 essentials of graphic design design elements: a graphic style manual principles of visual perception universal principles of design"><span class="side-num">01</span> Design Basics &amp; Composition</a><a href="02_colour.html" data-search="02 colour colour hue, value, chroma, colour systems, palettes, and colour psychology week 8 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術·設計的色彩構成 寫給大家看的色彩書1：設計配色基礎 寫給大家看的色彩書2：色彩怎麼選，設計怎麼做 梁景紅談：色彩設計法則 配色設計原理 七日掌握設計配色基礎 配色設計從入門到精通 平面設計配色全攻略 美國色彩基礎教材 色彩應用：平面設計配色經典創意 黑白灰設計：摒棄有彩色的設計法則 美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式 觀念之色：中國傳統色彩研究 色彩搭配的黃金法則 新手配色寶典：2000個配色案例不怕你不會 像藝術家一樣思考之三：貝蒂的色彩 國際平面設計基礎教程：colour色彩設計 平面設計綜合配色手冊 色彩怎麼選，設計怎麼做 色彩感知學 色彩構成 色彩設計：日本平面設計師參考手冊 色彩設計的100個亮點 色彩設計的原理 設計入門教室3：色彩設計的原理 設計密碼：綜合配色完全攻略 color basics color design workbook: a real-world guide to using color in graphic design drawing for graphic design: understanding conceptual principles and practical techniques to create unique, effective design solutions color: a course in mastering the art of mixing colors basics design 05: colour 100 bright ideas for colour"><span class="side-num">02</span> Colour</a><a href="03_typography.html" data-search="03 typography typography &amp; lettering letter structure, classification, typesetting, and mixed chinese and latin type week 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book typography 字誌：issue 01 typography 字誌：issue 05_pdf 自由字在：字體設計與創意 中國字體設計人：一字一生 西文字體1：字體的背景知識和使用方法 西文字體2：經典款字體及其表現方法 文字設計的原理_文字設計所必須的信息和技巧 新概念字體基礎&amp;應用_蘇克 説文解字 字言字語 字體傳奇 影響世界的helvetica 治字百方 字型散步 街道文字_小林章 西文排版_排版的基礎和規範 漢字書法之美_蔣勳 文字的故事 意匠文字 設計師的字體世界 文字的力與美 漢字的誘惑 中國美術字史圖説 漢字設計與應用 十二生肖形意字 書法字體設計技巧與應用 平面排版_基本的基本 tokoy tdc vol.28⭐ 排版的風格 字體設計的規則與藝術 tokoy tdc vol.29⭐ 字體呈現3⭐ 字體設計基礎 【會員專供】中國近現代字體應用文獻展 【會員專供】文字設計在中國邀請展 【會員專供】超語境國際文字設計論壇 世界文字發展史_11407704 今日字體 創意字體設計與製作-www.afx365.com 國際平面設計基礎教程-typography字體設計 字型之不思議 字型之不思議 小冊-手寫 字體呈現-q 字體呈現二（完整） 字體呈現小冊一 字體呈現小冊二 字體怡人 字體設計100+1 字體，海報設計部分 展覽，印刷字體部分（雙頁） 序言 排版造型_白井敬尚 文字設計的原理 書於竹帛中國古代的文字記錄_12270059 歐文字體ⅰ 歐文字體ⅱ 自由“字”在 字體設計與創意13696100(1) 設計入門教室 2 文字設計的原理 designing type basics design 03: typography written on bamboo and silk: the beginnings of chinese books and inscriptions"><span class="side-num">03</span> Typography &amp; Lettering</a><a href="04_layout-grid.html" data-search="04 layout grid layout &amp; grid systems grids, hierarchy, and arranging image with text week 3, 4, 5 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 日本版式設計原理_p159 跨平台的視覺設計版式設計原理 破譯文字編排設計 破譯網格設計 美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書 版式設計：日本平面設計師參考手冊 超越平凡的平面設計：怎樣做好版式 版式設計+給你靈感的全球最佳版式創意方案 柵格系統與版式設計 國際版式設計基礎教程 七日掌握版面設計基礎 美國編排設計教程 平面設計中的網格系統 版式設計風暴ⅱ 網格系統與版式設計 創意版式設計_王紹強 版面設計的原理_設計前必須知道的事情 版式設計全攻略(佐) 進階理解版式設計 版式設計：合適最好 版式設計從入門到精通 版面設計網格構成 版式設計原理_案例篇：提升版式設計的55個技巧 秩序之美_網頁中的網格設計 日本版式設計原理 版式設計法則 版式創意大爆炸 版式設計+2版式創意方案 版式設計風暴 [商業版式設計的方法] 版式編排設計 版式設計 今日版式 印刷的終結：戴維·卡森的自由版式設計 國際平面設計基礎教程-grids網格設計 國際平面設計基礎教程-layout版式設計(第2版) 版式設計-www.afx365.com 版式設計原理 版式設計原理-全綵教程 版式設計實用手冊-www.afx365.com 版式設計實用手冊.suni視覺設計.全綵版 版式設計從入門到精通-www.afx365.com 版面設計黃金法則 破譯文字編排設計-www.afx365.com 秩序之美——網頁中的網格設計英文版 編排設計教程 設計入門教室 1 版面設計的原理 超越平凡的平面設計 版式設計原理與應用 typography workbook: a real-world guide to using type in graphic design making and breaking the grid: a graphic design layout workshop graphic designer&#x27;s essential reference: visual elements, techniques, and layout strategies for busy designers before &amp; after page design grid systems: principles of organizing type best practices for graphic designers, grids and page layouts: an essential guide for understanding and applying page design principles typographic systems grid systems: principles of organizing type layout: making it fit: finding the right balance between content and space ordering disorder: grid principles for web design the end of print: the graphic design of david carson basics design 07: grids basics design 02: layout , 2nd edition typography workbook: a real-world guide to using type in graphic design ordering disorder: grid principles for web design typographic systems before &amp; after: how to design cool stuff" aria-current="page"><span class="side-num">04</span> Layout &amp; Grid Systems</a><a href="05_logo-branding.html" data-search="05 logo branding logo &amp; branding mark types, identity systems, and brand strategy week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book logo 百年 設計品牌（原田進） 用設計做品牌 品牌設計+：給你靈感的 best 品牌形象方案 品牌設計+：創造 top 品牌的色彩應用方案 品牌設計+：創造 brand 力的動態 logo 設計（1） 標誌設計 logo design 標誌新語 iii really good logos explained designing brand identity 超越 logo 設計 brand 創新與設計：創意、建構和維護精彩品牌標識之完全指南 標誌設計指南 logo design workbook 品牌標誌：top 設計 150 例 消費森林 × 品牌再生：李永銓的設計七大法則 品牌中的色彩 圖案無限：品牌中的圖案 品牌簡單之道 what brand 什麼是品牌設計 品牌 100 一個 logo 的誕生 視覺美食：最佳餐飲品牌設計 溝通時尚品牌 100 個經典 logo 品牌設計之美：冷色調的色彩詮釋 logo：29 個經典的前世今生 logo 百年 品牌至上：logo 設計法則與案例應用解析 品牌識別法則：100 條原理 no logo：顛覆品牌全球統治 脫穎而出的品牌致勝秘密 精簡：無印良品與品牌理念打造 電商品牌形象設計 品牌標誌：頂級設計 150 例 設計品牌 世界標誌大典 1 品牌設計法則（徐適） 日本彩色商標與企業識別 10 解構 logo 設計：300 例國際 logo 分析與解讀 超越 logo 設計：國際頂級平面設計師的成功法則 超越 logo 設計：國際頂級平面設計師的成功法則 logo design love: a guide to creating iconic brand identities designing brand identity: a complete guide to creating, building, and maintaining strong brands logo design workbook: a hands-on guide to creating logos creative solutions: logos: making a strong mark: 150 strategies for logos that last brandsimple: how the best brands keep it simple and succeed what is branding? logo life: life histories of 100 famous logos tm: the untold stories behind 29 classic logos brand identity essentials: 100 principles for designing logos and building brands no logo: taking aim at the brand bullies designing brand identity: an essential guide for the whole branding team creative solutions: logos: making a strong mark: 150 strategies for logos that last deconstructing logo design: 300+ international logos analyzed and explained logo design love: a guide to creating iconic brand identities logo design love: a guide to creating iconic brand identities"><span class="side-num">05</span> Logo &amp; Branding</a><a href="06_packaging.html" data-search="06 packaging packaging structure, the shelf, materials, and brand week 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 創造品牌的包裝設計 現代設計色彩教材叢書：包裝設計色彩 包裝設計藝術：王紹強 紙品包裝結構解析 新包裝 環保包裝設計 50 trade secrets of great design packaging 1000 package designs：a comprehensive guide 拿來就用的包裝設計 食品包裝設計 包裝設計+：給你靈感的包裝方案 包裝設計家：靳埭強與他的設計師朋友 簡約包裝 simply packaging 中式元素視覺傳達：包裝設計 packaging the brand: the relationship between packaging design and brand identity simply packaging"><span class="side-num">06</span> Packaging</a><a href="07_book-print.html" data-search="07 book print book design &amp; print book structure, paper, binding, and print week 5, 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2015 中國最美的書 書籍設計-安德魯 書形：138種創意書籍和印刷紙品設計 如何設計一本畫冊 平面印刷色彩：四色與專色 國際平面設計基礎教程：print&amp;finish印前印後 世界書籍藝術流派 中外裝幀藝術論集 中國古籍版本概要 出版物設計完全手冊 印刷工藝：燙印與凹凸 印前校色實用教程 印前輸出培訓參考：全綵教程-200p 嶄新印通拼版教程 平版印刷拼版手冊 平面設計及印刷業務人員常識備忘手冊 書籍設計 書藝問道 現代圖書設計 範式革命：中國現代書籍設計的發端 1862-1937 電腦印前技術完全手冊（第2版） book design basics design 06: print and finish publication design workbook: a real-world guide to designing magazines, newspapers, and newsletters book design new book design"><span class="side-num">07</span> Book Design &amp; Print</a><a href="08_infographics.html" data-search="08 infographics information graphics visualising information and explaining with diagrams week 4 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 圖解力 以圖釋義：信息圖表設計 信息圖表設計入門 信息圖表設計：全球創意入門"><span class="side-num">08</span> Information Graphics</a><a href="09_interaction-ux.html" data-search="09 interaction ux interaction, web &amp; ux goal-directed design, usability, and interface principles week 11 (and 4) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book about face 3：交互設計精髓 about face 4：交互設計精髓（中文彩版） android 交互視覺設計規範 贏在用戶：web 人物角色創建和應用實踐指南 don&#x27;t make me think（英文第 2 版） ui 羣英匯：用戶體驗、交互與視覺設計方法論 web 界面設計 形式感：網頁視覺設計創意拓展與快速表現 關鍵設計報告：改變過去影響未來的交互設計法則 點石成金：訪客至上的網頁秘籍 認知與設計：理解 ui 設計準則 簡約至上：交互設計四策略 見微知著：web 用戶體驗解構 與世界 ui 設計師同行 ux 設計之道：以用戶體驗為中心的 web 設計（第 2 版） ui 設計黃金法則：觸動人心的 100 種用戶界面 sexy web design：creating interfaces that work 用戶體驗的要素：以用戶為中心的 web 設計 網頁設計（web designer emag） 點石成金：訪客至上的網頁設計秘笈 ios 9 界面設計規範剖析及實戰 不要讓我思考（don&#x27;t make me think） 贏在用戶：web 人物角色創建和應用實踐指南 軟件觀念革命：交互設計精髓 一目瞭然：web 軟件顯性設計之路 就這麼簡單：web 開發中的可用性和用戶體驗 微交互：細節設計成就卓越產品 怦然心動：情感化交互設計指南 用戶體驗度量 用戶體驗要素：以用戶為中心的產品設計（原書第 2 版） 眾妙之門：網站 ui 設計之道 瞬間之美：web 界面設計如何讓用戶心動 破繭成蝶：用戶體驗設計師的成長之路 簡約至上：交互設計四策略 網頁設計創意書 認知與設計：理解 ui 設計準則 認知與設計：理解 ui 設計準則（第 2 版） 贏在用戶：web 人物角色創建和應用實踐指南 體驗·度：簡單可依賴的用戶體驗（彩版） about face 3: the essentials of interaction design , 3rd edition about face: the essentials of interaction design , 4th edition the user is always right: a practical guide to creating and using personas for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing web interfaces: principles and patterns for rich interactions designing interactions don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing with the mind in mind: simple guide to understanding user interface design rules simple and usable web, mobile, and interaction design a project guide to ux design: for user experience designers in the field or in the making , 2nd edition digital design essentials: 100 ways to design better desktop, web, and mobile interfaces the elements of user experience: user-centered design for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition don&#x27;t make me think: a common sense approach to web usability , 2nd edition the user is always right: a practical guide to creating and using personas for the web about face 2.0: the essentials of interaction design designing the obvious: a common sense approach to web application design microinteractions: designing with details seductive interaction design: creating playful, fun, and effective user experiences measuring the user experience: collecting, analyzing, and presenting usability metrics the elements of user experience: user-centered design for the web and beyond , 2nd edition the smashing book designing the moment: web interface design concepts in action simple and usable web, mobile, and interaction design the web designer&#x27;s idea book: the ultimate guide to themes, trends and styles in website design designing with the mind in mind: simple guide to understanding user interface design rules designing with the mind in mind: simple guide to understanding user interface design guidelines , 2nd edition the user is always right: a practical guide to creating and using personas for the web"><span class="side-num">09</span> Interaction, Web &amp; UX</a><a href="10_graphic-practice.html" data-search="10 graphic practice graphic design practice process, design thinking, creative methods, and practice week 1, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 100 個改變平面設計的觀念 嘿，設計 圖解平面設計規範 40 天成為資深設計師 ideo：設計改變一切 創意之道（the copy book） 非常規標誌設計：6 個不必遵守的基礎原則 最佳設計 100 細則 少即是多：減法設計 視覺傳達設計實踐 1000 retail graphics 高效設計溝通之道（原書第 2 版） 完成設計：從理論到實踐 美國視覺傳達完全教程 零 zerro：世界符號大全 平面與空間 創意工場：提升設計技巧的 80 個挑戰 日本的手感設計 設計的品格 設計並不重要 我的第一本設計書 平面設計過程 小平面 北歐設計 王志弘作品收集 做喜歡的事：25 個亞太創意設計工作室 做喜歡的事：25 個歐美創意設計工作室 設計修辭法 設計與死 設計的覺醒 平面設計死了嗎 放眼德國設計 放眼法國設計 漫遊英國設計 漫步日本設計 荷蘭設計 設計的手感 歲寒三友：詩意設計作品集 廣州美術學院碩士研究生作品集 靳埭強與格呂特納的海報對話 靳埭強設計獎 陳幼堅最新作品 平面設計八人 設計集 設計心法 100+1 靳叔說：設計語錄 設計的圖謀：改變世界的80個日常創意陰謀 遺產與更新：中國設計教育反思 設計師演講錄：icograda 世界設計大會 設計創意流程：用mba思維成就設計高效能 全球優秀93位平面設計師作品集 遊遊遊：說說我的設計私想 對話日本設計 設計師不讀書 設計質 大話設計師 從製造到設計：20世紀德國設計 意東方：設計中的東方元素（一） 49個成就平面設計的關鍵詞 企業形象設計家：靳埭強與他的設計師朋友 海報設計家：靳埭強與他的設計師朋友 生活·心源：靳埭強設計與藝術 靳埭強·身度心道：中國文化為本的設計·繪畫·教育 ideo 設計現象探究：patterns 2010 設計效果圖 設計百年：20世紀平面設計的先驅 設計解決 像設計師那樣思考 圖形設計新元素 如何把國外作品轉化為自己的能力（第二部） 平面設計：我的第2語言 為什麼設計 理性設計 至關重要的設計 解決100個煩惱的100種設計 設計推導學 中國古代設計思想史略 什麼是平面設計？ 創意工場：提升設計技巧的80個挑戰 動畫分鏡台本設計 吳東龍的東京設計生活100 寫給大家看的設計書（第三版） 好設計的造型元素 完成設計：從理論到實踐 宣傳冊設計與製作 平面設計200年 新興實踐：設計的專業、價值與途徑 日本當代插圖集 最全設計規範 服務的細節：完全商品陳列115例 為真實世界的設計 生命的幻象：迪士尼動畫造型設計 異想天開：設計初始 知日・設計力 移動設計 符號與數字：平面中的視覺表達 第三種創新：設計驅動式創新 編輯設計 至關重要的設計 至關重要的設計（布倫納） 蘋果首席設計師：喬納森傳 視覺傳達設計 視覺傳達設計考研手繪 視覺營銷：零售店櫥窗與店內陳列 託尼克：設計為何 設計＋生活：佐藤 設計＋生活：奎內克 設計＋生活：姚爾丹 設計＋生活：孔喬 設計＋生活：府烈茶 設計＋生活：王翰尼 設計＋生活：白同異 設計＋生活：蒙古齊 設計＋生活：雷又西 設計中的錯視 設計五感：亂 設計五感：惡 設計五感：拙 設計五感：精 設計入門教室：設計的基本規則 設計力就是溝通力 設計，在人人設計的時代 設計密碼 設計師不可不知的 100 種世界經典平面設計圖書 設計思維手冊：斯坦福創新方法論 設計思維與方法 設計方法與策略：代爾夫特設計指南 設計的意義 設計的細節：日本經典設計透析 設計與革新：關於未來設計的 50 種思考 設計風尚 5：創意節日宣傳頁設計與製作 設計高手的秘密 設計，在人人設計的時代：社會創新設計導論 這樣擺，最好賣：賣場中的商品陳列技巧 造像量度：佛像唐卡設計比例圖 關於設計的思考 非平面 靳埭強設計獎：平面設計作品集 騰訊網 ued 體驗設計之旅 100 ideas that changed graphic design change by design: how design thinking transforms organizations and inspires innovation the copy book: how 32 of the world&#x27;s best advertising writers write their advertising no rules! logos: radical design solutions that break the rules universal principles of design communicating design: developing web site documentation for design and planning , 2nd edition design evolution: theory into practice graphic communications today creative workshop: 80 challenges to sharpen your design skills graphic design process: from problem to solution: 20 case studies design and the creative process atlas of graphic designers designers don&#x27;t read the graphic design idea book: inspiration from 50 masters a century of graphic design: graphic design pioneers of the 20th century how to think like a great graphic designer graphic design: the new basics graphic design as a second language do you matter? how great design will make people love your company what is graphic design? creative workshop: 80 challenges to sharpen your design skills the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual design evolution: theory into practice graphic style: from victorian to hipster design for the real world: human ecology and social change the illusion of life: disney animation design-driven innovation: changing the rules of competition by radically innovating what things mean editing by design: for designers, art directors, and editors: the classic guide to winning readers do you matter? how great design will make people love your company do you matter? how great design will make people love your company jony ive: the genius behind apple&#x27;s greatest products graphic design solutions visual merchandising: windows and in-store displays for retail why we design design, when everybody designs: an introduction to design for social innovation bibliographic: 100 classic graphic design books delft design guide: design strategies and methods design, form, and chaos design, when everybody designs: an introduction to design for social innovation thoughts on design unflattening"><span class="side-num">10</span> Graphic Design Practice</a><a href="11_interior.html" data-search="11 interior interior design drawings, scale, light, materials, construction, and furnishing further reading 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 零基礎學建築識圖 室內裝飾裝修施工完全圖解教程 室內設計節點手冊：常用節點 室內設計節點手冊：酒店固定傢俱 材料收口 裝飾工藝解析：吊頂篇 裝飾工藝解析：地面篇 裝飾工藝解析：牆面篇 室內設計師必知的100個節點 室內裝飾裝修材料應用與選購 室內設計材料選用實戰手冊 石材應用手冊 設計師的材料清單·室內篇 圖解照明設計 室內照明設計精品教程 室內燈光設計 室內設計師專用燈光設計手冊 室內設計師燈光設計細部解析 照明設計終極聖經 家居色彩設計指南 設計師談家居色彩搭配 設計配色基礎 輕·重·緩·急：搭出耐看配色 人體工程學與室內設計 住宅的設計尺寸剖析書 圖解住宅尺寸與格局設計 室內施工圖實戰教程 室內施工圖製圖標準 室內空間佈局與尺度設計 室內細部設計cad圖集 室內設計尺寸關鍵術 室內設計數據手冊：空間與尺度 室內設計與人體工程學 家裝常用數據尺寸速查 工裝設計尺度數據手冊 人機工程學（第五版） 年輕設計師必修的七堂課 網紅室內設計師ip運營法則 裝修設計師談單簽單一課通 軟裝談單寶典 住宅格局破解術 住宅格局解剖圖鑑 住宅設計剖析手冊 住宅設計解剖書 住得優雅：住宅設計的34個法則 圖解極簡主義設計 室內住宅設計圖解 室內空間設計手冊 室內設計·思維與方法 室內設計基礎 小家越住越大2 打造讓孩子自主學習的住宅 樓梯設計的9個法則 淺談家庭中央空調的使用 牆面設計 裝修設計解剖書 解構收納 設計中的設計 設計師要懂的心理學 室內精細化設計研究 傢俱設計資料圖集 室內設計風格圖文速查 軟裝改造解剖書 軟裝設計元素搭配手冊 軟裝設計師手冊 軟裝風格速查 the lighting bible the interior plan: concepts and exercises 100 things every designer needs to know about people"><span class="side-num">11</span> Interior Design</a><a href="12_architecture-space.html" data-search="12 architecture space architecture &amp; space form, space, order, and proportion week 2, 6–7 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 建築：形式、空間和秩序（第 3 版） 反造型 architecture: form, space, and order , 3rd edition"><span class="side-num">12</span> Architecture &amp; Space</a><a href="13_product.html" data-search="13 product product design minimalism, ten principles of good design, and muji week 11 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 簡約不簡單：極簡風格產品設計 產品極簡主義 無印良品的設計 解密無印良品 20 世紀 50–80 年代中國、德國產品設計回望 無印良品世界觀 創新產品設計與手繪 深澤直人 意識的核心 product design now naoto fukasawa"><span class="side-num">13</span> Product Design</a><a href="14_design-art-history.html" data-search="14 design art history design &amp; art history from manuscripts and arts and crafts through the bauhaus to the digital era week 1 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術簡史 世界平面設計史 醜的歷史 美的歷史 世界當代藝術史 世界現代設計史 中國現代設計與包豪斯 包豪斯道路：歷史、遺澤、世界與中國 包豪斯 運動中的視覺：新包豪斯的基礎 包豪斯：大師和學生們 包豪斯藏品精選集 包豪斯理想：過去與現在 世界現代設計史 中國 外國 工業設計史（第四版） 現代設計百科全書：平面設計的歷史、語言及經典應用 藝術的真相：通往藝術之路 藝術與物理學：時空和光的藝術觀與物理觀 設計藝術史 重要的不是藝術 錢君匋的藝術世界 art: a brief history , 4th edition vision in motion the bauhaus: masters &amp; students by themselves the bauhaus ideal then &amp; now: an illustrated guide to modernist design graphic design, referenced: a visual guide to the language, applications, and history of graphic design gateways to art: understanding the visual arts art &amp; physics: parallel visions in space, time, and light"><span class="side-num">14</span> Design &amp; Art History</a><a href="15_theory-psychology.html" data-search="15 theory psychology design theory &amp; psychology gestalt, cognition, emotional design, and kenya hara week 4, 6–7, 10 1. scope 2. perception 3. cognition &amp; behaviour 4. aesthetics &amp; philosophy 5. principles &amp; methods 6. selected figures 7. source bookshelf 8. study cues 7. each book 審醜：萬物美學 原研哉的設計世界 視覺藝術原理（第八版） 設計心理學 1：日常的設計 設計心理學 2：與複雜共處 設計心理學 3：情感化設計 設計心理學 4：未來設計 日本的八個審美意識 點線面 日式設計美學 康定斯基論點線面 藝術與視知覺 藝術中的精神 圖像與眼睛：圖畫再現心理學的再研究 象徵的圖像：貢布里希圖像文集 設計私語錄：通心粉的孔洞之謎 悲劇的誕生：尼采美學文選 設計中的色彩心理學 設計之美 藝術與視知覺：新編 設計中的設計 設計師要懂心理學（迷你書） 設計心理學 設計心理學（唐納德·a·諾曼） 情感化設計 感性美學 我眼中的設計之美 日式平面美學 淺談設計之美 為什麼設計 重構美學 白 社會心理學（第八版） 藝術與錯覺：圖畫再現的心理學研究 視覺思維 視覺思維（阿恩海姆） 視覺藝術的含義 設計中的設計 設計中的設計（全本） 設計中的設計（原研哉） 設計師要懂心理學 設計心理學（247 頁本） 設計心理學（中文版） 設計美學（廣州美術學院藝術設計教程） 設計與視知覺 象徵的圖像：貢布里希圖像學文集 ugly: the aesthetics of everything prebles&#x27; artforms: an introduction to the visual arts , 8th edition the design of everyday things , revised and expanded edition living with complexity emotional design: why we love (or hate) everyday things the design of future things art and visual perception: a psychology of the creative eye , the new version the image and the eye: further studies in the psychology of pictorial representation symbolic images: studies in the art of the renaissance beautiful thing: an introduction to design art and visual perception: a psychology of the creative eye , the new version 100 things every designer needs to know about people the design of everyday things the design of everyday things emotional design: why we love (or hate) everyday things social psychology , 8th edition art and illusion: a study in the psychology of pictorial representation visual thinking visual thinking meaning in the visual arts: papers in and on art history 100 things every designer needs to know about people the design of everyday things the design of everyday things symbolic images: studies in the art of the renaissance"><span class="side-num">15</span> Design Theory &amp; Psychology</a><a href="16_pattern-ornament.html" data-search="16 pattern ornament pattern &amp; ornament pattern structure, chinese and western motifs, and auspicious meaning week 8 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book (new)世界裝飾紋樣圖典(4000餘種圖案+紋飾百科全書+裝飾藝術寶庫) l&#x27;art arabe 01 秩序感：裝飾藝術的心理學研究 中國紋樣集錦：examples of chinese ornament the grammar of ornament 中國紋樣全集 魏晉南北朝·隋唐·五代卷 世界裝飾圖案-1887-85p圖版 中國紋樣全集 宋·元·明·清卷 中國紋樣全集 戰國·秦·漢卷 中國紋樣全集 新石器時代和商·西周·春秋卷 中國經典紋樣圖鑑 摩洛哥傳統裝飾藝術 敦煌線描 民間美術：湖北挑花、土錦、藍印花布 裝飾文叢特別策劃卷7 貴州傳統蠟染-攝影集 the sense of order: a study in the psychology of decorative art examples of chinese ornament selected from objects in the south kensington museum and other collections"><span class="side-num">16</span> Pattern &amp; Ornament</a><a href="18_magazines-annuals.html" data-search="18 magazines annuals magazines &amp; annuals how to look at annuals and magazines week 1–13 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2021日本平面設計年鑑 45th publication design annual apd亞太設計年鑑no.17(1) brand 12 brand no.36-生活使用手冊2：文創熱量 brand no.37-字己 brand no.38-手工印刷 brand no.39-物料進化 brand no.40-文化時光機1868-1988 brand no.41-看圖説話，你的信息時代 brand no.42.-你好，藝術pdf brand no.43-小物志 brand no.44-貓狗日誌 design 360 雜誌(1) gallery 形錄 全球最佳圖形設計 vol.09 idea 377 novum201901 apd9亞太平面設計年鑑 apd5亞太設計年鑑 中國品牌設計年鑑 2013 日本字體與平面設計大獎年鑑 國家博物館-仙山圖特展 國家博物館-宋末民初上海畫壇 國家博物館-宋代花箋特展 國家博物館-蘇州片及其影響 國家博物館-瓶花與盆景畫特展 國家博物館-書畫菁華特展 idea+10 1 舉一反百的聰明設計法則 idea+10 2 一計點睛的即效設計處方 red-dot-award-concept-2011-2012 red_dot_award_design_concept_2013-2014 brand brand gallery 國際設計年鑑2014 日本品牌與包裝設計年鑑 2016 日本平面創意設計年鑑 2002-2004 疾風迅雷 杉浦康平雜誌設計的半個世紀 眾妙之門：移動web設計精髓（德）smashing雜誌 essentials of mobile design"><span class="side-num">18</span> Magazines &amp; Annuals</a><a href="20_advertising.html" data-search="20 advertising advertising positioning, aida, creative tactics, and point of purchase week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 1001 個廣告法則 pop 廣告設計 智威湯遜手冊 美國廣告設計實用教程 廣告公司的秘密：平面設計師就業寶典 advertising by design: creating visual communications with graphic impact"><span class="side-num">20</span> Advertising</a></div></nav>
+    </aside>
+    <main class="main" id="content" tabindex="-1">
+      <div class="topbar">
+        <button class="side-toggle" type="button">Guides</button>
+        <nav class="jump" aria-label="On this page"><a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a></nav>
+      </div>
+      <p class="kicker"><a href="index.html">SSHD2382</a> · Category 04</p>
+      <div class="digest">
+<h1 id="layout-grid-systems">Layout &amp; Grid Systems</h1>
+<p class="meta">Category 04 · Course link: Week 3 Grid Systems, Week 4 Visual Hierarchy, Week 5 Image, Text and Layout Composition · Main references: Josef Müller-Brockmann, <span lang="zh-Hant">《平面設計中的網格系統》</span>; Timothy Samara, <span lang="zh-Hant">《破譯網格設計》</span> and <span lang="zh-Hant">《破譯文字編排設計》</span>; Kimberly Elam, <span lang="zh-Hant">《網格系統與版式設計》</span> and <span lang="zh-Hant">《編排設計教程》</span>; Gavin Ambrose, <span lang="zh-Hant">《國際平面設計基礎教程：GRIDS／LAYOUT》</span>; Khoi Vinh, <span lang="zh-Hant">《秩序之美》</span>; <span lang="zh-Hant">《日本版式設計原理》</span>; <span lang="zh-Hant">《版式設計原理》</span>; Tsuyoshi Sasaki, <span lang="zh-Hant">《版式設計全攻略》</span>; John McWade, <span lang="zh-Hant">《超越平凡的平面設計》</span></p>
+
+<h2 id="1-scope">1. Scope</h2>
+<p>Layout deals with <strong>the position, size and relationships of the elements on a page</strong>; the grid is the invisible structure that gives those relationships a regular order. The roughly 60 books in this category fall into these groups:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Key books</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Swiss grid classics</td>
+<td>Müller-Brockmann, <span lang="zh-Hant">《網格系統》</span></td>
+<td>Rational, systematic, modular</td>
+</tr>
+<tr>
+<td>Grid textbooks</td>
+<td>Samara, Ambrose, Elam</td>
+<td>Parts of the grid, grid types, breaking the grid</td>
+</tr>
+<tr>
+<td>Japanese practical books</td>
+<td><span lang="zh-Hant">《日本版式設計原理》</span>, <span lang="zh-Hant">《版式設計原理》</span>, <span lang="zh-Hant">《設計入門教室》</span></td>
+<td>Before/After comparisons, problem-led</td>
+</tr>
+<tr>
+<td>Collections of work</td>
+<td><span lang="zh-Hant">《版式設計+》</span>, <span lang="zh-Hant">《創意版式設計》</span></td>
+<td>Sources of inspiration</td>
+</tr>
+<tr>
+<td>Anti-grid</td>
+<td>David Carson, <span lang="zh-Hant">《印刷的終結》</span></td>
+<td>Intuitive, deconstructed, expressive</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-core-concepts">2. Core Concepts</h2>
+<h3 id="21-anatomy-of-a-grid">2.1 Anatomy of a grid</h3>
+<div class="chart">
+<svg viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+  <rect x="10" y="10" width="300" height="380" fill="#fff" stroke="#1d1d1f"/>
+  <rect x="40" y="40" width="240" height="320" fill="none" stroke="#c8102e" stroke-dasharray="4 3"/>
+  <g fill="#fbe9ec" stroke="#c8102e" stroke-width=".6">
+    <rect x="40" y="40" width="72" height="98"/><rect x="124" y="40" width="72" height="98"/><rect x="208" y="40" width="72" height="98"/>
+    <rect x="40" y="151" width="72" height="98"/><rect x="124" y="151" width="72" height="98"/><rect x="208" y="151" width="72" height="98"/>
+    <rect x="40" y="262" width="72" height="98"/><rect x="124" y="262" width="72" height="98"/><rect x="208" y="262" width="72" height="98"/>
+  </g>
+  <rect x="124" y="151" width="156" height="209" fill="#c8102e" opacity=".22"/>
+  <line x1="20" y1="151" x2="300" y2="151" stroke="#1d1d1f" stroke-width="1.6"/>
+  <rect x="40" y="18" width="80" height="10" fill="#1d1d1f"/>
+  <text x="240" y="377" fill="#1d1d1f">12</text>
+  <g fill="#1d1d1f" font-size="12">
+    <line x1="312" y1="40" x2="340" y2="40" stroke="#5b5b66"/><text x="345" y="44">Margin: edge space that frames the type area</text>
+    <line x1="160" y1="95" x2="340" y2="80" stroke="#5b5b66"/><text x="345" y="84">Column: a vertical area that holds content</text>
+    <line x1="118" y1="120" x2="340" y2="120" stroke="#5b5b66"/><text x="345" y="124">Gutter: the gap between columns</text>
+    <line x1="244" y1="190" x2="340" y2="160" stroke="#5b5b66"/><text x="345" y="164">Module: a unit where columns and rows cross</text>
+    <line x1="300" y1="151" x2="340" y2="200" stroke="#5b5b66"/><text x="345" y="204">Flowline: a horizontal line that guides the eye</text>
+    <line x1="230" y1="300" x2="340" y2="240" stroke="#5b5b66"/><text x="345" y="244">Spatial zone: several modules joined</text>
+    <line x1="120" y1="23" x2="340" y2="280" stroke="#5b5b66"/><text x="345" y="284">Marker: running head, folio, section name</text>
+    <line x1="246" y1="373" x2="340" y2="320" stroke="#5b5b66"/><text x="345" y="324">Page numbers also sit inside the grid</text>
+  </g>
+</svg>
+<div class="caption">A 3 × 3 modular grid: every element can sit on a module or on a group of modules (a spatial zone), so the layout stays unified even when it varies a lot.</div>
+</div>
+
+<h3 id="22">2.2 Types of Grid</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Standard term</th>
+<th>Structure</th>
+<th>Used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single-column / manuscript grid</td>
+<td>Manuscript grid</td>
+<td>One large text area plus margins</td>
+<td>Novels, reports, long texts</td>
+</tr>
+<tr>
+<td>Multi-column grid</td>
+<td>Column grid</td>
+<td>2–6 columns</td>
+<td>Magazines, newspapers, brochures</td>
+</tr>
+<tr>
+<td>Modular grid</td>
+<td>Modular grid</td>
+<td>Columns × rows = modules</td>
+<td>Image-heavy or information-dense layouts, websites</td>
+</tr>
+<tr>
+<td>Hierarchical grid</td>
+<td>Hierarchical grid</td>
+<td>Divided as the content needs, not necessarily into equal parts</td>
+<td>Web pages, posters</td>
+</tr>
+<tr>
+<td>Baseline grid</td>
+<td>Baseline grid</td>
+<td>Horizontal lines spaced at one line of leading</td>
+<td>Aligning text across several columns</td>
+</tr>
+<tr>
+<td>Compound grid</td>
+<td>Compound grid</td>
+<td>Two grids laid over each other (for example 2 columns + 3 columns = 6 columns)</td>
+<td>Publications that need flexibility</td>
+</tr>
+</tbody>
+</table>
+<p>Müller-Brockmann's key point: the number of columns and the height of the modules should be derived from <strong>the body text size and leading</strong>. The module height is best set to a whole number of lines, so that the tops of images line up with the text baselines.</p>
+<h3 id="23-elam">2.3 Elam's Eight Typographic Systems</h3>
+<p>Kimberly Elam's <span lang="zh-Hant">《編排設計教程》</span> sorts the non-grid ways of organising a layout into eight "systems". They are especially useful for posters and covers:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Principle</th>
+<th>Visual effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Axial</td>
+<td>All elements are arranged to the left and right of a single axis</td>
+<td>Simple, directional</td>
+</tr>
+<tr>
+<td>Radial</td>
+<td>Elements spread outwards from a central point</td>
+<td>Dynamic, focused</td>
+</tr>
+<tr>
+<td>Dilatational</td>
+<td>Elements expand outwards in concentric circles</td>
+<td>Rhythmic, rippling</td>
+</tr>
+<tr>
+<td>Random</td>
+<td>No obvious rule</td>
+<td>Free, but needs careful control</td>
+</tr>
+<tr>
+<td>Grid</td>
+<td>Vertical and horizontal divisions</td>
+<td>Stable, ordered</td>
+</tr>
+<tr>
+<td>Transitional</td>
+<td>Informal layered bands</td>
+<td>Flowing, natural</td>
+</tr>
+<tr>
+<td>Modular</td>
+<td>Built from standard units</td>
+<td>Systematic</td>
+</tr>
+<tr>
+<td>Bilateral</td>
+<td>Symmetrical about a central axis</td>
+<td>Formal, classic</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24-visual-hierarchy">2.4 Visual hierarchy</h3>
+<p>Readers decide the reading order on a page by <strong>the strength of the contrasts</strong>. Hierarchy can be built with size, weight, colour, position, white space and images.</p>
+<pre class="mermaid">flowchart TB
+  l1[&quot;Primary&lt;br/&gt;headline, key visual — seen at a glance&quot;] --&gt; l2[&quot;Secondary&lt;br/&gt;subhead, standfirst, captions — decide whether to read on&quot;]
+  l2 --&gt; l3[&quot;Tertiary&lt;br/&gt;body text, details, data — reading in depth&quot;]
+  l3 --&gt; l4[&quot;Support&lt;br/&gt;page numbers, sources, copyright — read only when needed&quot;]
+</pre>
+<h3 id="25-reading-paths">2.5 Reading paths</h3>
+<div class="chart">
+<svg viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <g fill="none" stroke="#1d1d1f"><rect x="20" y="10" width="170" height="160"/><rect x="235" y="10" width="170" height="160"/><rect x="450" y="10" width="170" height="160"/></g>
+  <g fill="none" stroke="#c8102e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="35,30 175,30 35,150 175,150"/>
+    <polyline points="250,28 390,28"/><polyline points="250,70 350,70"/><polyline points="250,28 250,155"/><polyline points="250,110 300,110"/>
+    <polyline points="535,30 535,150"/><polyline points="465,30 605,30"/>
+  </g>
+  <g fill="#c8102e"><circle cx="175" cy="150" r="5"/><circle cx="390" cy="28" r="5"/><circle cx="535" cy="150" r="5"/></g>
+  <text x="105" y="195" text-anchor="middle">Z pattern: posters, ads, single pages</text>
+  <text x="320" y="195" text-anchor="middle">F pattern: web, text-heavy pages</text>
+  <text x="535" y="195" text-anchor="middle">Axis: vertical text, symmetry</text>
+</svg>
+<div class="caption">Readers scan the top left first, then move in the direction the layout suggests. With vertical Chinese text, the direction changes to right to left and top to bottom.</div>
+</div>
+
+<h3 id="26">2.6 Paper and Proportion</h3>
+<ul>
+<li><strong>ISO 216 (A/B/C series)</strong>: the aspect ratio is 1:√2, so the proportion stays the same when a sheet is folded in half. A0 has an area of 1 square metre.</li>
+<li><strong>Type-area ratio</strong>: the share of the page taken up by the type area. A high ratio carries more information and feels busy (magazines, advertising); a low ratio leaves more white space and feels upmarket (art books, poetry collections).</li>
+<li>Traditional book margins: the inner (binding) margin is the narrowest, then the head and the outer margin, and the foot margin is the widest. This makes the two text areas of a spread read visually as one unit.</li>
+</ul>
+<h2 id="3-principles-methods">3. Principles &amp; Methods</h2>
+<h3 id="31">3.1 Steps for Building a Grid</h3>
+<ol>
+<li><strong>Assess the material</strong>: how much text, how many images, how much data? Are the images landscape or portrait? Are there several languages?</li>
+<li><strong>Decide the format and margins</strong>: consider binding, reading distance and cost.</li>
+<li><strong>Work from the body text</strong>: set the type size and leading first, then the column width (a sensible number of characters per line) and the number of columns.</li>
+<li><strong>Set modules and the baseline</strong>: module height = a whole number of lines; the gutter usually equals one line of leading or one character width.</li>
+<li><strong>Draw thumbnails</strong>: test different layout combinations with lots of small sketches.</li>
+<li><strong>Build styles</strong>: set up master pages, paragraph styles and character styles in InDesign to keep everything consistent.</li>
+<li><strong>Break the grid</strong>: where you need emphasis, deliberately span columns, bleed or offset. But "you can only break a grid you already have".</li>
+</ol>
+<h3 id="32-before-after">3.2 Common Layout Problems and Fixes (from the Before / After pages of Japanese practical books)</h3>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Symptom</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No lead element</td>
+<td>Every image is the same size, so the eye has nowhere to go</td>
+<td>Enlarge one main image and shrink the others to create a "jump rate"</td>
+</tr>
+<tr>
+<td>Messy alignment</td>
+<td>The left edges of the text are ragged</td>
+<td>Use consistent alignment lines and reduce the number of alignment points</td>
+</tr>
+<tr>
+<td>Meaningless white space</td>
+<td>Small random gaps everywhere</td>
+<td>Gather the space together so it becomes white space with a shape</td>
+</tr>
+<tr>
+<td>Information not grouped</td>
+<td>Headings, captions and body text are all the same distance apart</td>
+<td>Tight within groups, loose between groups (proximity)</td>
+</tr>
+<tr>
+<td>Image direction</td>
+<td>People in the photos face off the page</td>
+<td>Have people look towards the inside of the layout to guide reading</td>
+</tr>
+<tr>
+<td>Poor cropping</td>
+<td>The top of the head or the body is cut off at a joint</td>
+<td>Crop according to the composition and avoid cutting at joints</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-jump-rate">3.3 Jump rate</h3>
+<p>Japanese layout books often use the term "jump rate" to describe the <strong>difference in size</strong> between headline and body text, or between the main image and the secondary images:</p>
+<ul>
+<li>High jump rate → lively, punchy, popular (fashion magazines, supermarket flyers).</li>
+<li>Low jump rate → calm, intellectual, upmarket (literature, academic work, luxury goods).</li>
+</ul>
+<h3 id="34">3.4 Web Grids</h3>
+<p>Khoi Vinh's view in <span lang="zh-Hant">《秩序之美》</span>: <strong>a grid's first job is to solve problems, and looking good comes second; the simpler the grid, the more effective it is.</strong> Web grids need to take into account:</p>
+<ul>
+<li>Responsive breakpoints (4 columns on phones, 8 on tablets, 12 on desktops)</li>
+<li>Margins and padding</li>
+<li>How the priority of the content is reordered on narrow screens</li>
+</ul>
+<h2 id="4-selected-figures">4. Selected Figures</h2>
+<div class="figs">
+<figure><img src="assets/layout-grid/iso-paper.jpg" alt="ISO paper proportions"><figcaption>How A-series paper sizes divide into one another. Source: Josef Müller-Brockmann, <span lang="zh-Hant">《平面設計中的網格系統》</span>, p.20</figcaption></figure>
+<figure><img src="assets/layout-grid/text-columns.jpg" alt="Text columns"><figcaption>An example of setting the column width and grid from the body text. Source: same book, p.70</figcaption></figure>
+<figure><img src="assets/layout-grid/grid-variations.jpg" alt="Grid variations"><figcaption>Many combinations of image and text areas on the same grid. Source: same book, p.97</figcaption></figure>
+<figure><img src="assets/layout-grid/modular-grid-spread.jpg" alt="Modular grid spread"><figcaption>Grid lines marking the structure of a magazine spread. Source: Ambrose, <span lang="zh-Hant">《GRIDS 網格設計》</span>, p.10</figcaption></figure>
+<figure><img src="assets/layout-grid/axial-poster.jpg" alt="Axial poster"><figcaption>An Elam exercise: organising the text of a poster along an axis. Source: Elam, <span lang="zh-Hant">《柵格系統與版式設計》</span>, p.10</figcaption></figure>
+<figure><img src="assets/layout-grid/grid-analysis.jpg" alt="Compositional analysis"><figcaption>Analysing a composition with diagonals and rectangles. Source: same book, p.77</figcaption></figure>
+<figure><img src="assets/layout-grid/constructivist-diagonal.jpg" alt="Constructivist diagonal composition"><figcaption>Diagonal composition and movement in Constructivism. Source: same book, p.93</figcaption></figure>
+<figure><img src="assets/layout-grid/radial-system.jpg" alt="Radial system"><figcaption>The radial system: text rotates outwards from a centre. Source: Elam, <span lang="zh-Hant">《美國編排設計教程》</span>, p.63</figcaption></figure>
+<figure><img src="assets/layout-grid/dilatational-system.jpg" alt="Dilatational system"><figcaption>The dilatational system: concentric circles combined with line segments. Source: same book, p.83</figcaption></figure>
+<figure><img src="assets/layout-grid/japanese-layout.jpg" alt="Japanese magazine layout"><figcaption>A magazine layout that builds rhythm through differences in image size. Source: <span lang="zh-Hant">《日本版式設計原理》</span>, p.90</figcaption></figure>
+</div>
+
+<h2 id="5-source-bookshelf">5. Source Bookshelf</h2>
+<p>Suggested reading order: <span lang="zh-Hant">《設計入門教室 1：版面設計的原理》</span> → <span lang="zh-Hant">《破譯網格設計》</span> → Müller-Brockmann, <span lang="zh-Hant">《平面設計中的網格系統》</span> → Elam, <span lang="zh-Hant">《編排設計教程》</span> → <span lang="zh-Hant">《秩序之美》</span> (web) → David Carson (to understand the opposite of the grid).</p>
+<!-- BOOKSHELF:START -->
+
+<details><summary>Show 48 titles</summary>
+
+- <a href="#b-japanese-layout-design-principles-p159"><span lang="zh-Hant">日本版式設計原理_p159</span></a>
+- <a href="#b-cross-platform-visual-design-layout-design-principles"><span lang="zh-Hant">跨平台的視覺設計版式設計原理</span></a>
+- <a href="#b-typography-workbook">[019]<span lang="zh-Hant">破譯文字編排設計</span></a>
+- <a href="#b-making-and-breaking-the-grid">[020]<span lang="zh-Hant">破譯網格設計</span></a>
+- <a href="#b-graphic-designer-s-essential-reference">[029]<span lang="zh-Hant">美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書</span></a>
+- <a href="#b-layout-design-a-reference-handbook-for-japanese-graphic">[048]<span lang="zh-Hant">版式設計：日本平面設計師參考手冊</span></a>
+- <a href="#b-beyond-ordinary-graphic-design-how-to-get-layout-right">[050]<span lang="zh-Hant">超越平凡的平面設計：怎樣做好版式</span></a>
+- <a href="#b-layout-design-the-world-s-best-creative-layout-solutions-to">[060]<span lang="zh-Hant">版式設計+給你靈感的全球最佳版式創意方案</span></a>
+- <a href="#b-grid-systems-principles-of-organizing-type">[074]<span lang="zh-Hant">柵格系統與版式設計</span></a>
+- <a href="#b-international-basic-course-in-layout-design">[079]<span lang="zh-Hant">國際版式設計基礎教程</span></a>
+- <a href="#b-master-the-basics-of-page-layout-in-seven-days">[080]<span lang="zh-Hant">七日掌握版面設計基礎</span></a>
+- <a href="#b-typographic-systems">[094]<span lang="zh-Hant">美國編排設計教程</span></a>
+- <a href="#b-grid-systems-in-graphic-design">[120]<span lang="zh-Hant">平面設計中的網格系統</span></a>
+- <a href="#b-layout-design-storm-ii">[127]<span lang="zh-Hant">版式設計風暴Ⅱ</span></a>
+- <a href="#b-grid-systems-principles-of-organizing-type-2">[150]<span lang="zh-Hant">網格系統與版式設計</span></a>
+- <a href="#b-creative-layout-design-wang-shaoqiang">[172]<span lang="zh-Hant">創意版式設計_王紹強</span></a>
+- <a href="#b-the-principles-of-page-layout-what-you-must-know-before-you">[174]<span lang="zh-Hant">版面設計的原理_設計前必須知道的事情</span></a>
+- <a href="#b-the-complete-guide-to-layout-design-sasaki">[176]<span lang="zh-Hant">版式設計全攻略(佐)</span></a>
+- <a href="#b-understanding-layout-design-advanced">[177]<span lang="zh-Hant">進階理解版式設計</span></a>
+- <a href="#b-layout-making-it-fit">[178]<span lang="zh-Hant">版式設計：合適最好</span></a>
+- <a href="#b-layout-design-from-beginner-to-expert">[179]<span lang="zh-Hant">版式設計從入門到精通</span></a>
+- <a href="#b-page-layout-grid-composition">[180]<span lang="zh-Hant">版面設計網格構成</span></a>
+- <a href="#b-layout-design-principles-case-studies-55-techniques-to">[181]<span lang="zh-Hant">版式設計原理_案例篇：提升版式設計的55個技巧</span></a>
+- <a href="#b-ordering-disorder-grid-principles-for-web-design">[184]<span lang="zh-Hant">秩序之美_網頁中的網格設計</span></a>
+- <a href="#b-japanese-layout-design-principles">[187]<span lang="zh-Hant">日本版式設計原理</span></a>
+- <a href="#b-rules-of-layout-design">[254]<span lang="zh-Hant">版式設計法則</span></a>
+- <a href="#b-the-big-bang-of-layout-ideas">[255]<span lang="zh-Hant">版式創意大爆炸</span></a>
+- <a href="#b-layout-design-2-creative-layout-solutions">[256]<span lang="zh-Hant">版式設計+2版式創意方案</span></a>
+- <a href="#b-layout-design-storm">[351]<span lang="zh-Hant">版式設計風暴</span></a>
+- <a href="#b-methods-of-commercial-layout-design"><span lang="zh-Hant">[商業版式設計的方法]</span></a>
+- <a href="#b-layout-and-composition-design"><span lang="zh-Hant">版式編排設計</span></a>
+- <a href="#b-layout-design-book"><span lang="zh-Hant">版式設計</span></a>
+- <a href="#b-layout-today"><span lang="zh-Hant">今日版式</span></a>
+- <a href="#b-the-end-of-print-the-graphic-design-of-david-carson"><span lang="zh-Hant">印刷的終結：戴維·卡森的自由版式設計</span></a>
+- <a href="#b-basics-design-grids"><span lang="zh-Hant">國際平面設計基礎教程-GRIDS網格設計</span></a>
+- <a href="#b-basics-design-layout-2nd-edition"><span lang="zh-Hant">國際平面設計基礎教程-LAYOUT版式設計(第2版)</span></a>
+- <a href="#b-layout-design-www-afx365-com"><span lang="zh-Hant">版式設計-www.afx365.com</span></a>
+- <a href="#b-principles-of-layout-design"><span lang="zh-Hant">版式設計原理</span></a>
+- <a href="#b-principles-of-layout-design-full-colour-tutorial"><span lang="zh-Hant">版式設計原理-全綵教程</span></a>
+- <a href="#b-practical-handbook-of-layout-design-www-afx365-com"><span lang="zh-Hant">版式設計實用手冊-www.afx365.com</span></a>
+- <a href="#b-practical-handbook-of-layout-design-suni-visual-design-full"><span lang="zh-Hant">版式設計實用手冊.SUNI視覺設計.全綵版</span></a>
+- <a href="#b-layout-design-from-beginner-to-expert-www-afx365-com"><span lang="zh-Hant">版式設計從入門到精通-www.afx365.com</span></a>
+- <a href="#b-golden-rules-of-layout-design"><span lang="zh-Hant">版面設計黃金法則</span></a>
+- <a href="#b-decoding-typographic-design-www-afx365-com"><span lang="zh-Hant">破譯文字編排設計-www.afx365.com</span></a>
+- <a href="#b-ordering-disorder-grid-principles-for-web-design-english"><span lang="zh-Hant">秩序之美——網頁中的網格設計英文版</span></a>
+- <a href="#b-typographic-systems-2"><span lang="zh-Hant">編排設計教程</span></a>
+- <a href="#b-design-basics-classroom-1-principles-of-layout"><span lang="zh-Hant">設計入門教室 1 版面設計的原理</span></a>
+- <a href="#b-before-after-page-design"><span lang="zh-Hant">超越平凡的平面設計 版式設計原理與應用</span></a>
+
+</details>
+
+<!-- BOOKSHELF:END -->
+
+<h2 id="6-study-cues">6. Study Cues</h2>
+<ol>
+<li>Using 10 pt type on 14 pt leading for the body text, design a 6-column × 8-row modular grid for an A4 magazine. Write down the column width and the gutter.</li>
+<li>Take one set of material (a headline, three images, 500 words of body text) and make two versions: one with a high jump rate and one with a low jump rate.</li>
+<li>Use three of Elam's eight systems to sketch three thumbnail posters for the same lecture.</li>
+<li>Take a magazine, draw its grid lines on a photocopy, and point out where it deliberately "breaks the grid".</li>
+<li>Explain why the foot margin is the widest in traditional books.</li>
+<li>Design a 12-column desktop grid for a website, then explain how you would reorder the priority of the content on a phone.</li>
+</ol>
+<!-- BOOKS:START -->
+
+<h2 id="7-each-book">7. Each Book</h2>
+<p>Each book in the bookshelf is described below. Every title above links to its section.</p>
+<h3 class="book" id="b-japanese-layout-design-principles-p159"><span lang="zh-Hant">日本版式設計原理_p159</span></h3>
+<p><strong>Scope.</strong> This is a scan of <span lang="zh-Hant">《日本版式設計原理》</span>. What you can see is mainly the layout chapter, which uses before-and-after comparisons to show what makes a magazine spread organised, interesting and clean. It does not build a mathematical grid. Instead it revises page by page for each client and readership (a men's magazine for readers in their thirties, a homewares magazine for women in their twenties, a lifestyle magazine). For the full set of image techniques, see <span lang="zh-Hant">《日本版式設計原理》</span> later on.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>When there are many images, first contain them in a square coordinate grid. Change the way you divide it, and the character of the layout changes with it.</li>
+<li>If every image is the same size, the layout has no tension and release. The sizes must differ before you can see what is primary and what is secondary.</li>
+<li>Interest does not come from adding decoration but from the content: the page uses a vintage texture and a border in French flag colours only because it introduces French flea markets.</li>
+<li>A clean, elegant look relies on white space, controlled type sizes and few bright colours. Heavy bold type plus big red turns a chilled tea into shouting.</li>
+<li>When a vertical headline, a horizontal summary and vertical body text run together, the eye's path breaks. The text direction must let you keep reading.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First write down the impression the client wants (organised, interesting, upmarket), then find three places on the "before" page that go against it.</li>
+<li>For pages with many images, lay down the square grid first, then enlarge just one image.</li>
+<li>Check the gutter of the spread: do not let the fold cut the main image in half.</li>
+<li>After revising, reread the page in the target reader's words: have the opening date, the product names or the tone been drowned out by colour?</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-japanese-layout-design-principles-p159-1.jpg" alt="Opening flyer for a wellness salon"><figcaption>An A4 opening flyer has to explain both the concept and the date. Source: <span lang="zh-Hant">《日本版式設計原理》</span>, p.40</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-japanese-layout-design-principles-p159-2.jpg" alt="Spread that makes the main image stand out"><figcaption>Do not trap the main image in the gutter; cut-out images can give the layout rhythm. Source: same book, p.119</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>A page has six images. Write down which one you would enlarge and how you would fit the other five into the square grid.</li>
+<li>Set the same phrase, "Ise cold tea", once in heavy bold with big red and once in a light weight with generous white space. Which looks like a premium food product, and which looks like a sale sign?</li>
+</ol>
+<h3 class="book" id="b-cross-platform-visual-design-layout-design-principles"><span lang="zh-Hant">跨平台的視覺設計版式設計原理</span></h3>
+<p><strong>Scope.</strong> This book starts from "what is layout?" and compares magazines, books, posters, direct mail and business cards, as well as web pages, phones and tablets. Its focus is the difference between an undesigned and a designed version of the same copy, and the need for the designer to agree the final form clearly with the editor, the printer or the person in charge of the website. It is useful for setting up a working order before your first real job.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Layout is not mechanically lining up ready-made material. First know which medium it is for and what it has to carry.</li>
+<li>However good the content, the wrong layout lowers the value of the information. The book shows an undesigned and a designed version of a recruitment page for a children's English class.</li>
+<li>Pages are usually hard to read for three reasons at once: the typeface does not suit the content, the size and position of the images give no lead element, and readers do not know where to start.</li>
+<li>Each medium has different constraints. For paper, check with the printer; for screens, check with the person in charge of the website.</li>
+<li>Dividing up the picture area is the first step: within a limited layout, decide first how the elements form groups.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before you start, write three lines: medium, reader, and who produces the final output (print or web).</li>
+<li>Label an existing draft "hard to read", then change only the type sizes, the alignment and one main image. Do not change the illustration style first.</li>
+<li>Split headline, selling points and body text into three levels, with only one type size per level.</li>
+<li>Draw one thumbnail each for a book, a poster and a phone, and check which level disappears on a small screen.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-cross-platform-visual-design-layout-design-principles-1.jpg" alt="A page of work from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《跨平台的視覺設計版式設計原理》</span>, p.70</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-cross-platform-visual-design-layout-design-principles-2.jpg" alt="Product photos with contrasting sizes"><figcaption>The main image is enlarged and the other photos are kept at similar sizes; a diagram then sets out the product information clearly. Source: same book, p.103</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Take a piece of recruitment copy and list three reasons readers would get lost in it before it is designed.</li>
+<li>For the same event information, note which sentence must be seen first on the poster and which on the phone.</li>
+</ol>
+<h3 class="book" id="b-typography-workbook"><span lang="zh-Hant">破譯文字編排設計</span></h3>
+<p><strong>Original title:</strong> <em>Typography Workbook: A Real-World Guide to Using Type in Graphic Design</em></p>
+<p><strong>Author:</strong> Timothy Samara</p>
+<p><strong>Scope.</strong> This is Samara's handbook on type, not a set of grid construction drawings. It sorts its principles into letters, words, paragraphs and pages, each with an explanation and examples, about a hundred in all. The division of labour with <span lang="zh-Hant">《破譯網格設計》</span> is this: that book decides how columns and modules are built, while this one decides how type works inside those cells. Some of the principles contradict each other, and the book says so up front.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Learn the rules that professionals agree on before you earn the right to break them. The calligraphy teacher Donald Jackson is quoted in support: rules can be broken successfully.</li>
+<li>The principles of type hold across media. As screens get smaller and readers get older, the demand for clarity only goes up.</li>
+<li>Letters can be used as shapes, and so can their counters (the negative space), with no need to draw anything extra.</li>
+<li>Typefaces carry historical associations. Choosing a typeface means choosing a tone of voice, not just picking something that looks good.</li>
+<li>The medium rewrites the rules: very large type on a poster can bleed and be tightly tracked, while type on a label has to be layered through weight and leading.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For a type assignment, check at four levels: letter, word, paragraph and whole page. Do not just check whether the headline looks good.</li>
+<li>Each time you "break a rule", write down which rule it breaks and why readers can still understand the result.</li>
+<li>If a headline has to fill the layout, tighten the tracking first, then consider adding one colour, rather than adding another illustration.</li>
+<li>For information-heavy labels, layer with size and weight, use leading only to separate the groups, and keep the column itself tight.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-typography-workbook-1.jpg" alt="Huge type filling a cover"><figcaption>With tight tracking, type can be set as large as possible and can even spill over the frame. Source: Timothy Samara, <span lang="zh-Hant">《破譯文字編排設計》</span>, p.38</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-typography-workbook-2.jpg" alt="Layered label text"><figcaption>The label is layered through size, weight and leading, while the column stays compact. Source: same book, p.60</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a letter and make a mark using only its counter, without adding any other shapes.</li>
+<li>Write down two principles of type that conflict with each other, and explain which one a poster should follow.</li>
+</ol>
+<h3 class="book" id="b-making-and-breaking-the-grid"><span lang="zh-Hant">破譯網格設計</span></h3>
+<p><strong>Original title:</strong> <em>Making and Breaking the Grid: A Graphic Design Layout Workshop</em></p>
+<p><strong>Author:</strong> Timothy Samara</p>
+<p><strong>Scope.</strong> This is Samara's grid handbook. It fills in what Müller-Brockmann did not develop: how to choose a grid today. The book first names the parts (columns, modules, white space, spatial zones, flowlines, markers), then covers the basic structures, and then asks you to assess your material first. What it adds is an order of decisions: content and constraints first, the grid second. It also shows how to be considerate to readers by not using too many type styles.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Whether to use one column or two depends on the weight and complexity of the text, not on how many columns the designer wants.</li>
+<li>Count your constraints first: finished size, page count, colours, charts, headings, text boxes.</li>
+<li>Continuous reading needs a steady text texture. Do not give each column its own type size, leading, column width and line-breaking method.</li>
+<li>If a column is too narrow and also justified, gaps open up between words. It is better to use smaller type or switch to ranged left.</li>
+<li>A few sizes and weights are enough for hierarchy. With too many styles, readers cannot find the main point.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First work out how much area the body text needs; only what is left goes to images and tables.</li>
+<li>For detailed listings such as catalogues and schedules, use coloured modules to separate dates, web addresses and calls to action, rather than changing the typeface for each item.</li>
+<li>For long texts, check the number of characters per line; if the column is too narrow, give up justification.</li>
+<li>When you finish, count the type styles. If there are more than three, cut back to headings, body text and notes.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-making-and-breaking-the-grid-1.jpg" alt="Coloured modules separating information"><figcaption>Coloured modules pull the dates, web address and call to action out from the rest of the text. Source: Timothy Samara, <span lang="zh-Hant">《破譯網格設計》</span>, p.92</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-making-and-breaking-the-grid-2.jpg" alt="Colour bars and white space change reading speed"><figcaption>The address sits in a colour bar; outlines and white space change how fast you read. Source: same book, p.41</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How many columns should the inside pages of a novel with nothing but long text use, and how many a product catalogue with both tables and images? Give your reasons.</li>
+<li>Cut the five type styles on a page down to three. Mark which three stay and which level of information each one handles.</li>
+</ol>
+<h3 class="book" id="b-graphic-designer-s-essential-reference"><span lang="zh-Hant">美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書</span></h3>
+<p><strong>Original title:</strong> <em>Graphic Designer's Essential Reference: Visual Elements, Techniques, and Layout Strategies for Busy Designers</em></p>
+<p><strong>Author:</strong> Timothy Samara</p>
+<p><strong>Scope.</strong> The English title is <em>Graphic Designer's Essential Reference</em>. It is not another grid textbook but a studio quick reference: form and space, scale and contrast, visual hierarchy, layering, symmetry and asymmetry, and image treatment. Compared with <span lang="zh-Hant">《破譯網格設計》</span>, what it adds is visual strategy beyond the grid, for handling negative space, sequence and photographs.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>When composing, see objects first as points, lines and planes, not as "a teapot or a spoon".</li>
+<li>Negative space is a shape, not a background waiting to be filled. Ask whether the gaps are tight or loose, and whether they run parallel to the solid forms or against them.</li>
+<li>Hierarchy comes from a clear order, not from making everything big.</li>
+<li>A set of related items (for example a series of CDs) can change its images, but the logic of the forms and the typefaces should echo each other.</li>
+<li>Change the framing of the same subject (narrow vertical, three-quarter, close-up) and the sense of division, diagonals and symmetry changes completely.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>At the sketch stage, fill in the photos as silhouettes, keeping only points, lines and planes, and then decide the layout.</li>
+<li>Trace the negative shapes along the four edges of the layout and between the objects, count them, and remove the most fragmented ones.</li>
+<li>When setting the order, keep only one first glance: the largest, the darkest or the most isolated element.</li>
+<li>For a series, first write one shared visual rule, then let each piece change its content.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-graphic-designer-s-essential-reference-1.jpg" alt="A series in which forms and typefaces echo each other"><figcaption>The images in a series can differ, but the forms and the type style must still match. Source: Timothy Samara, <em>Graphic Designer's Essential Reference</em>, p.214</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-graphic-designer-s-essential-reference-2.jpg" alt="Comparison of three framings"><figcaption>A narrow vertical, a three-quarter close shot and a tight close-up change the division, the diagonals and the symmetry. Source: same book, p.157</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a still life and write down one point, one line, one plane and two negative shapes in it.</li>
+<li>A set of three posters may only change the photograph. Write down the visual rule you would not change.</li>
+</ol>
+<h3 class="book" id="b-layout-design-a-reference-handbook-for-japanese-graphic"><span lang="zh-Hant">版式設計：日本平面設計師參考手冊</span></h3>
+<p><strong>Scope.</strong> This book ties layout ideas to InDesign operations: triangular composition, point symmetry and visual order, as well as data merge, master pages, paragraph styles and punctuation squeezing. What it adds is "how an idea lands in the software", not grid theory. It suits people who already know the effect they want but not where to find the command.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Triangular composition anchors the page and gives stability; point symmetry gives lightness. Do not mix the two kinds of order into one system.</li>
+<li>If type on a full-bleed photo clashes with the colours of the image, use high-contrast white or solid black type rather than adding another block of colour.</li>
+<li>A large headline can interlock with the body text and take up the height of a whole paragraph. The jump rate should match the energy of the background: do not pair a quiet image with a screaming red.</li>
+<li>For repetitive pages (greeting cards, envelopes), use data merge. The type is still a design decision; do not fall back on a print function that only offers the default font.</li>
+<li>Paragraph styles, character styles and punctuation squeezing are part of layout. Without styles, spreads cannot stay consistent.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each layout idea, make one Before and one After; the After changes only one variable (composition, type colour or jump rate).</li>
+<li>When building master pages, put the page numbers, column guides and bleed on the master, so you do not have to drag them onto each text page.</li>
+<li>For projects such as postcards, first organise the data in a table, then generate the pieces with data merge, and finally spot-check only the type and the line breaks.</li>
+<li>For Chinese or Japanese copy, set up separate punctuation squeezing; do not reuse the default spacing meant for English.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-a-reference-handbook-for-japanese-graphic-1.jpg" alt="High-contrast type on a full-bleed image"><figcaption>When type has to sit on a full-bleed image, use high-contrast white or black so it does not merge into the picture. Source: <span lang="zh-Hant">《版式設計：日本平面設計師參考手冊》</span>, p.235</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-a-reference-handbook-for-japanese-graphic-2.jpg" alt="Large headline with a high jump rate"><figcaption>The large headline interlocks with the body text, and the jump rate of the red echoes the energetic background. Source: same book, p.188</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>For a sports photo and for a still life, write one sentence each: should the headline use a high or a low jump rate?</li>
+<li>List four things you would put on an InDesign master page, and one thing that must stay on the text pages.</li>
+</ol>
+<h3 class="book" id="b-beyond-ordinary-graphic-design-how-to-get-layout-right"><span lang="zh-Hant">超越平凡的平面設計：怎樣做好版式</span></h3>
+<p><strong>Original title:</strong> <em>Before &amp; After Page Design</em></p>
+<p><strong>Author:</strong> John McWade</p>
+<p><strong>Scope.</strong> This is a <em>Before &amp; After</em> book of layout projects, with chapters on brochures, letterhead and business folders. McWade covers paste-up and platemaking through to the arrival of desktop publishing in 1985, but the main text teaches how small business pieces can have one visual centre of gravity. It differs from <em>Beyond Ordinary Graphic Design: Layout Principles and Applications</em> later on: that book breaks down methods (focal point, proximity, taking colours from images), while this one applies the methods to whole printed pieces.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Design should serve the one sentence you really want to say. A promotional page can use an outstretched hand and a huge "sold", with the centre of gravity in the middle of the page.</li>
+<li>Making an insert from the same paper stock adds content without starting another print job. What you save is budget, not ideas.</li>
+<li>A small insert with mixed information should let different customers each find their own layer, rather than turning into a poster.</li>
+<li>Cutting, copying and pasting have existed since the days of handwork; software has not done away with composition.</li>
+<li>Business layouts can be small, but every page should point to an action that has not happened yet (a meeting, a partnership, a sale).</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First write down the action the page should bring about, then put it at the visual centre with one image and one word.</li>
+<li>When adding pages to a brochure, prefer an insert on the same paper, and check the folding and the cost.</li>
+<li>For letterhead and folders, fix the position of the logo, the address and one rule first, and only then talk about decoration.</li>
+<li>Mark the visual centre of gravity on every page. If it is not on the word you want, change the size, not the colour scheme.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-beyond-ordinary-graphic-design-how-to-get-layout-right-1.jpg" alt="Composition centred on closing a sale"><figcaption>An outstretched hand and a huge "sold" put the visual centre of gravity in the middle of the page. Source: John McWade, <span lang="zh-Hant">《超越平凡的平面設計：怎樣做好版式》</span>, p.160</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-beyond-ordinary-graphic-design-how-to-get-layout-right-2.jpg" alt="Promotional insert on the same paper stock"><figcaption>A small full-colour insert on the same paper stock adds content and saves money at the same time. Source: same book, p.79</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Design a cover for a meeting that has not started yet: which image and which word go in the centre?</li>
+<li>An eight-page booklet needs two more pages of promotion. Explain whether you would change the paper, and why.</li>
+</ol>
+<h3 class="book" id="b-layout-design-the-world-s-best-creative-layout-solutions-to"><span lang="zh-Hant">版式設計+給你靈感的全球最佳版式創意方案</span></h3>
+<p><strong>Scope.</strong> This is a collection of design projects, arranged by category starting with books; it is not a step-by-step tutorial. As you read, ask what reading or production problem each project solves. The difference from <span lang="zh-Hant">《版式設計+2》</span> is that this volume starts with books and describes how designers split existing material into several strands that can be read side by side.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A book is not just images and text placed into a format. Size, typeface and materials all change the result; the layer most often overlooked is the micro level.</li>
+<li>The approach of <em>Liner Notes</em> is to split the original book into strands such as "letterpress" and "views", and to build a "stage" with pauses so that several strands of content can be read in parallel.</li>
+<li>This idea of a stage comes from Brecht's epic theatre: the same kind of question is played again in a different setting, so readers do not get absorbed into a single narrative.</li>
+<li>Binding can also be a concept. Using fewer staples is sometimes clearer than adding another image.</li>
+<li>When looking at a collection of projects, separate "structures you can borrow" from "surfaces you should not copy".</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Take notes on each case in three lines: what the constraints are, what the structure is, and whether any information is left once the style is removed.</li>
+<li>When you meet a design with "three strands in one book", draw which strand the reader follows on the first reading and which on the third.</li>
+<li>Only collect techniques whose purpose you can name (parallel reading, binding, stage-like pauses).</li>
+<li>For your own book, decide the format and the paper first and then the type, not the other way round.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-the-world-s-best-creative-layout-solutions-to-1.jpg" alt="Credits for an Audi Canada project"><figcaption>Beside an illustration in the book, the design and photography credits for an Audi Canada project are listed. Source: <span lang="zh-Hant">《版式設計+》</span>, p.155</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-the-world-s-best-creative-layout-solutions-to-2.jpg" alt="Book design with fewer staples"><figcaption>Using fewer staples is itself the idea behind this book design. Source: same book, p.46</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a case and write down what structure would remain if the decoration were removed.</li>
+<li>In your own next book, which constraint (page count, staple binding, two languages) could become the form?</li>
+</ol>
+<h3 class="book" id="b-grid-systems-principles-of-organizing-type"><span lang="zh-Hant">柵格系統與版式設計</span></h3>
+<p><strong>Original title:</strong> <em>Grid Systems: Principles of Organizing Type</em></p>
+<p><strong>Author:</strong> Kimberly Elam</p>
+<p><strong>Scope.</strong> These are Elam's composition exercises. They are not a publication grid derived from the body text in Müller-Brockmann's sense, nor her later eight typographic systems. Students arrange rectangles in 1:2:3 proportions and circles on a square format, practising grouping, voids, edges and axes, and the rule of thirds. What it adds is getting the relationships right with very few elements. For the analysis of historical posters, see the other scan of this book ([150] in the bookshelf).</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The length of each element must land on the horizontal grid units; elements may not overlap or extend beyond the format. The constraint itself is the brief.</li>
+<li>The 1:2:3 proportion makes the size hierarchy clear. The circle's diameter is about a quarter of a small grid unit, and also close to the width of the longest rectangle.</li>
+<li>Without grouping, viewers have to look at seven or eight things at once, and the voids are many and fragmented. After grouping, the empty spaces become fewer and larger.</li>
+<li>Rectangles of the same width can form a group, and so can different ones. Grouping is for rhythm, not for locking similar items together.</li>
+<li>Connections from edge to edge and from axis to axis are more reliable than putting objects where they "look balanced".</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Start with a square format, not a rectangular sheet, so you are not distracted by the proportions of the paper.</li>
+<li>Change only one kind of relationship at a time: group first, then check how many voids there are.</li>
+<li>Try three arrangements of two medium rectangles: one horizontal and one vertical, both horizontal, both vertical. Keep the version with the largest void.</li>
+<li>Outline the empty spaces in red pen. If there are more than six and they are all thin, keep grouping.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-grid-systems-principles-of-organizing-type-1.jpg" alt="Voids that grow larger after grouping"><figcaption>After grouping, the empty rectangles become fewer and larger. Source: Kimberly Elam, <span lang="zh-Hant">《柵格系統與版式設計》</span>, p.14</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-grid-systems-principles-of-organizing-type-2.jpg" alt="Orientation of two rectangles"><figcaption>Rectangles two grid units wide can be one horizontal and one vertical, or both run in the same direction. Source: same book, p.53</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Place three 1:2:3 rectangles on a 3×3 grid. Write down which position turns the empty space into one area rather than three.</li>
+<li>Explain what problem "grouping" solves and what problem "alignment" solves.</li>
+</ol>
+<h3 class="book" id="b-international-basic-course-in-layout-design"><span lang="zh-Hant">國際版式設計基礎教程</span></h3>
+<p><strong>Original title:</strong> <em>Best Practices for Graphic Designers, Grids and Page Layouts: An Essential Guide for Understanding and Applying Page Design Principles</em></p>
+<p><strong>Authors:</strong> Gavin Ambrose, Paul Harris</p>
+<p><strong>Scope.</strong> This is the grid volume in AVA's basics series, and it opens with a quotation from Müller-Brockmann: people instinctively put information in order. What it adds is not a new formula but a set of names for the parts you can point to, plus case studies from working designers. Compared with the <em>Grids</em> volume, what you see here are the grid types (manuscript, multi-column, modular) and "how to avoid being cropped on small screens"; <em>Grids</em> says more about why grids save decisions, and about active and passive space.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The job of layout is to make complex information readable. Typeface, colour and images can add appeal, but cohesion comes from a structure that has been thought through.</li>
+<li>You must be able to name the parts: margins, flowlines, columns, modules, spatial zones, markers. If you cannot name them, you cannot fix them.</li>
+<li>Manuscript grids, multi-column grids and modular grids are different tools. First see which kind of reading the material calls for, then choose.</li>
+<li>Massimo Vignelli's view appears in a case study: a strategic grid is not a style option but a condition for the design to work at all.</li>
+<li>Web pages and mobile screens need layered grids, so that key content stays on screen even in the worst display conditions.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When analysing any page, mark the six parts above in pencil, and write "none" for any that are missing.</li>
+<li>In case-study notes, record decisions, not style: why did they use this number of columns?</li>
+<li>For screen designs, draw in the height of the first screen; key sentences must not fall below that line.</li>
+<li>After quoting the classics, redo one manuscript grid and one multi-column grid with your own material.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-international-basic-course-in-layout-design-1.jpg" alt="Layout example from the book"><figcaption>Illustration from the book. Source: Ambrose and Harris, <span lang="zh-Hant">《國際版式設計基礎教程》</span>, p.142</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-international-basic-course-in-layout-design-2.jpg" alt="Layered grid on a small screen"><figcaption>Small screens need a layered grid so that key content is not cropped off the screen. Source: same book, p.112</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>On a magazine spread, mark the margins, the columns, the flowlines and one spatial zone.</li>
+<li>Put a sentence that must be seen onto the first screen of a phone. Write down what you cut to make it fit.</li>
+</ol>
+<h3 class="book" id="b-master-the-basics-of-page-layout-in-seven-days"><span lang="zh-Hant">七日掌握版面設計基礎</span></h3>
+<p><strong>Scope.</strong> This is a seven-day introduction by Japan's Visual Design Research Institute. It argues that most of a layout's success depends on the "choice of style", not on decoration added afterwards. Each day the same content is given different styles: cheap cosmetics, a trustworthy business card, a club recruitment poster. It teaches tone and visual strength, not column calculations.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Choose the wrong style and the information is communicated wrongly. A free format with lots of white space does not suit a serious traditional event.</li>
+<li>Enlarging the name on a business card raises its energy and its sense of trust; shrinking the type, increasing the white space and centring everything makes it upmarket. The two go in opposite directions.</li>
+<li>Visual strength is how strong the images are compared with the text. Bright, clear illustrations rate highest; landscape photos are often lower.</li>
+<li>Adding just one suitable illustration can change how friendly a recruitment poster feels. You do not need to change all the type first.</li>
+<li>Judgement means deciding whether the content should feel popular, professional or upmarket, and then choosing the style.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make two versions of the same business card: one with an enlarged name, one with smaller type and more white space. Ask someone to say which version the sense of trust comes from.</li>
+<li>Before you start, choose a style name (aspirational, upmarket, friendly), and only then begin work.</li>
+<li>If a page feels too cold, add just one image with high visual strength; do not add colour blocks, diagonals and borders at the same time.</li>
+<li>Check one design each for a traditional event, a children's event and a luxury product by asking "would this style say the wrong thing?"</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-master-the-basics-of-page-layout-in-seven-days-1.jpg" alt="Style examples from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《七日掌握版面設計基礎》</span>, p.73</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-master-the-basics-of-page-layout-in-seven-days-2.jpg" alt="Free format unsuited to a traditional event"><figcaption>Using a free format for a serious traditional event means choosing the wrong style. Source: same book, p.55</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose one style each for a graduation ceremony and a club recruitment drive, and write down the style you must not use.</li>
+<li>Explain visual strength. Rank an illustration, a portrait photo and a seascape photo from highest to lowest.</li>
+</ol>
+<h3 class="book" id="b-typographic-systems"><span lang="zh-Hant">美國編排設計教程</span></h3>
+<p><strong>Original title:</strong> <em>Typographic Systems</em></p>
+<p><strong>Author:</strong> Kimberly Elam</p>
+<p><strong>Scope.</strong> This is a scan of Elam's <span lang="zh-Hant">《編排設計教程》</span>. The summary table of the eight systems is in the other <span lang="zh-Hant">《編排設計教程》</span> section; what this copy contributes is a thorough treatment of the axial system and of the circle. A circle can act as a starting point, a stopping point, a source of tension or an organiser, without needing columns first. It fills in something that neither Müller-Brockmann nor Samara treats as a main topic: poster-style type can be organised with an axis and a few abstract elements.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>If you always use the software's default leading, hierarchy will never appear. Design happens while you adjust the leading and the spacing.</li>
+<li>The axial system: lines of type hang to the left or right of a straight axis. Several axes along the page edges still count as the same kind of order.</li>
+<li>A circle placed in the top left quarter often becomes an entry point; placed at the bottom right, it often becomes a stopping point.</li>
+<li>A circle close to lines of type creates tension, because the eye wants to leave the circle to read the words.</li>
+<li>Abstract elements such as lines and tones handle emphasis and layering, so you do not need many typefaces.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Using the same text and changing only the leading, make loose, medium and tight versions, and choose where the boundaries between groups should fall.</li>
+<li>Axial exercise: start with one axis, then try three axes along the page edges; the text must still read along the axes.</li>
+<li>Move only the circle, not the type, to make one version with a starting point and one with a stopping point.</li>
+<li>Keep all the type at one weight, so that the organisation has to come from the reading path rather than from bold.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-typographic-systems-1.jpg" alt="Lines of type organised along an axis"><figcaption>Lines of type align on a straight axis; several axes along the page edges can also organise the text. Source: Kimberly Elam, <span lang="zh-Hant">《美國編排設計教程》</span>, p.66</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-typographic-systems-2.jpg" alt="A circle as a base for lines of type"><figcaption>A grey circle supports the black type, and the focal point can fall outside the layout; the white word "Design" extends beyond the circle. Source: same book, p.53</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Make an axial poster with eight lines of type. Is the axis on the left or the right? Write down where reading begins.</li>
+<li>Move a circle from the top left to the bottom right, and explain how the entry point and the stopping point swap.</li>
+</ol>
+<h3 class="book" id="b-grid-systems-in-graphic-design"><span lang="zh-Hant">平面設計中的網格系統</span></h3>
+<p><strong>Author:</strong> Josef Müller-Brockmann</p>
+<p><strong>Scope.</strong> This is the working handbook of the grid classic: why grids exist, typographic measurement, body and display typefaces (from Garamond and Baskerville to Helvetica and Univers), and only then the structure of grids. What it adds is an attitude and a method of calculation: the grid is an objective order that can be analysed, and columns and modules should be derived from the measurements of the text. For the theoretical appendix on proportion and picture structure, see <span lang="zh-Hant">《版面設計網格構成》</span>.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Most people use grids without knowing why they exist. If you do not study the principles, you will only treat grids as decorative lines.</li>
+<li>Using a grid expresses a position: systematic, clear, replacing the subjective with the objective, with work the public can understand.</li>
+<li>The choice and measurement of type is not an appendix. The body text size and leading determine the column width, and only then does the grid hold up.</li>
+<li>A grid helps designers solve problems faster and lets others carry the design on, instead of it being a one-off flash of inspiration.</li>
+<li>What you show the client is a model. Prefabricated units of equal size reduce misunderstandings on both sides, and the structure can still be adjusted.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Set the body typeface and leading first, then measure a sensible number of characters per line, and only then decide the number of columns.</li>
+<li>Test the same body text in two serifs and two sans serifs, and compare their grey values, not their "personality".</li>
+<li>When talking to clients, bring a page model that can be taken apart, not just a rendering.</li>
+<li>On every page, check that the edges of the images fall on the horizontal lines derived from the leading.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-grid-systems-in-graphic-design-1.jpg" alt="Grid applied to an architectural plate"><figcaption>A plate in the book presents a house by Richard Meier (1965–1967). Source: Müller-Brockmann, <span lang="zh-Hant">《平面設計中的網格系統》</span>, p.116</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-grid-systems-in-graphic-design-2.jpg" alt="A model of equal-sized panels for discussion"><figcaption>A model built from prefabricated panels of equal size makes it easy to discuss the work with the client and to adjust it later. Source: same book, p.156</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Using 10 pt type on 14 pt leading, explain why you are not yet in a position to decide on "six columns" first.</li>
+<li>In one paragraph, explain how the grid embodies "the objective replacing the subjective", rather than "every page looking the same".</li>
+</ol>
+<h3 class="book" id="b-layout-design-storm-ii"><span lang="zh-Hant">版式設計風暴Ⅱ</span></h3>
+<p><strong>Scope.</strong> This volume is a picture collection of layouts. The scan has almost no chapters on method; what you can read is mostly magazine covers from around 2006 (for example the July issue of <em>PC World</em>) and fragments of contents pages, and the pictures carry a resource site's watermark. Treat it as a sample of styles, not a tutorial. The one sentence of method is clearer in the captions of <span lang="zh-Hant">《版式設計風暴》</span>.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Consumer magazine covers have a fixed hierarchy: masthead, price, off-sale date, one main cover line and several secondary cover lines.</li>
+<li>The main line (for example "product of the year" or "how to build it") takes the largest area; the other cover lines queue up by type size.</li>
+<li>Technology magazines often have many short lines competing for space. Without hierarchy, the cover turns into a contents page.</li>
+<li>The value of a picture collection is seeing how real covers set an order within one second, not looking at a particular decoration.</li>
+<li>Do not copy letter-spacing from watermarked or incomplete pages. Borrow only the hierarchy you can see clearly.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Cover up the cover image and keep only the text; mark the first, second and third glance.</li>
+<li>Count the cover lines. If there are more than seven, point out which ones could move to the inside pages.</li>
+<li>Compare two magazines: in which one do the price and the off-sale date steal attention from the main line?</li>
+<li>When copying, redraw the structural lines; do not trace the watermarks and scanning marks.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-storm-ii-1.jpg" alt="Layout image with a watermark"><figcaption>Illustration from the book; the page carries a resource site's watermark. Source: <span lang="zh-Hant">《版式設計風暴Ⅱ》</span>, p.105</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-storm-ii-2.jpg" alt="Another layout image with a watermark"><figcaption>Illustration from the book; the page carries a resource site's watermark. Source: same book, p.253</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Using the logic of covers like <em>PC World</em>, write one main cover line and three secondary lines for a student magazine, and set the order of their type sizes.</li>
+<li>Explain why you would not copy the letter-spacing from this scan.</li>
+</ol>
+<h3 class="book" id="b-grid-systems-principles-of-organizing-type-2"><span lang="zh-Hant">網格系統與版式設計</span></h3>
+<p><strong>Original title:</strong> <em>Grid Systems: Principles of Organizing Type</em></p>
+<p><strong>Author:</strong> Kimberly Elam</p>
+<p><strong>Scope.</strong> This is the same Elam book as the other <span lang="zh-Hant">《柵格系統與版式設計》</span> scan ([074] in the bookshelf): the 3×3 grid, the rule of thirds, grouping and voids. What this copy adds is the second half, which uses the same way of seeing to read other people's work (Zurich posters, Kandinsky, <em>National-Zeitung</em>, a Bauhaus catalogue), plus case studies such as an AIDS poster, the Cuban Revolution, Levi's jeans and "If the glove doesn't fit". What it adds is analysis, not another set of parts.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A grey block of set text is itself a rectangle. Layout has to communicate and also manage the texture of these rectangles.</li>
+<li>The four intersections of a 3×3 grid are natural focal points. Whichever point a level sits near becomes more important.</li>
+<li>Exceptions are allowed: an element rotated so that it clashes with the others is variety within unity. But not every piece can be an exception.</li>
+<li>Willi Kunz divides typography into the macro level (clear and obvious) and the micro level (subtle, seen only subconsciously). Both levels need to be designed.</li>
+<li>The case studies are for practising "how the rectangles of this famous layout are aligned", not for collecting styles.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Take a historical poster, lay a 3×3 grid over it, and mark the words that fall on the intersections.</li>
+<li>Paint the body text grey and look only at the sizes of the rectangles and how they touch.</li>
+<li>In your own assignment, allow only one "clashing" element, and write down why it is not just tilted at random.</li>
+<li>Describe each case study in two sentences: what the macro level is and what the micro level is.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-grid-systems-principles-of-organizing-type-2-1.jpg" alt="One exception within unity"><figcaption>The direction of a single element can clash with the others, as variety within unity. Source: Kimberly Elam, <span lang="zh-Hant">《網格系統與版式設計》</span>, p.76</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-grid-systems-principles-of-organizing-type-2-2.jpg" alt="Macro and micro typography"><figcaption>Kunz distinguishes two kinds of typography: a clear, obvious level and a level so subtle that it is read almost subconsciously. Source: same book, p.99</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Place a headline and an image on a 3×3 grid so that the headline falls on one of the four intersections. Explain which point you chose.</li>
+<li>Choose a poster you like and write one sentence each on its macro level and its micro level.</li>
+</ol>
+<h3 class="book" id="b-creative-layout-design-wang-shaoqiang"><span lang="zh-Hant">創意版式設計_王紹強</span></h3>
+<p><strong>Author:</strong> Wang Shaoqiang (editor)</p>
+<p><strong>Scope.</strong> This is a collection of layout projects along the lines of <em>Page Unlimited</em>, edited by Wang Shaoqiang. It covers book design and other work, and the preface appears in Chinese, French, Spanish and Italian. It does not teach grid steps. What it adds is a question for judging work: the difference between good and excellent often lies in the micro level, which is the first thing dropped when time runs short.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Typography is arranging letters so that they work well and are a pleasure to read. Layout is not just choosing a nice picture.</li>
+<li>Judging design is like judging a chef: making ordinary ingredients taste good is harder than making good ingredients taste good.</li>
+<li>Format, typeface and materials all change the result. Good materials are only the starting point.</li>
+<li>Micro-level treatment (spacing, alignment, paper) separates good from excellent. Most people will not consciously see it, but they will feel it.</li>
+<li>When rushing to a deadline, this is the first layer to be sacrificed, so build time for it into your process.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each case, write down the materials first: format, binding, spot colours or die-cutting. If you have not noted them, you have not finished looking.</li>
+<li>Redo a page from a case you like using "ordinary materials", keeping only its structure.</li>
+<li>Before handing in, set aside one round for adjusting spacing and alignment only, with no image changes allowed.</li>
+<li>Use the chef comparison from the preface to judge your own assignment: are you relying on the materials or on the treatment?</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-creative-layout-design-wang-shaoqiang-1.jpg" alt="Layout example from the book"><figcaption>Illustration from the book. Source: Wang Shaoqiang (ed.), <span lang="zh-Hant">《創意版式設計》</span>, p.216</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-creative-layout-design-wang-shaoqiang-2.jpg" alt="Another layout example from the book"><figcaption>Illustration from the book. Source: same book, p.108</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Find a piece of work and write down separately "what the materials give" and "what the treatment gives".</li>
+<li>In your last assignment, which piece of micro-level treatment was cut because of the deadline? What would change if you put it back?</li>
+</ol>
+<h3 class="book" id="b-the-principles-of-page-layout-what-you-must-know-before-you"><span lang="zh-Hant">版面設計的原理_設計前必須知道的事情</span></h3>
+<p><strong>Scope.</strong> This book and <span lang="zh-Hant">《設計入門教室 1：版面設計的原理》</span> come from the same course. The pages here set out the process as: organise the information, separate it into sizes, then make it readable through proximity and alignment. Gestalt psychology is its foundation. The images in the Classroom volume go further into stripes and contrasts of value; this volume puts more weight on drawing readers into a story.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The basic process is to organise, visualise and arrange. If you only list the elements, the thing you most want to say gets blurred.</li>
+<li>People see the whole and the relationships first; this is Gestalt. Design should use this, not fight it.</li>
+<li>Proximity: things of the same kind (name and job title, address and phone number) go close together; unrelated things are pulled apart. A business card is the smallest exercise.</li>
+<li>Think about alignment and eye movement together. If people do not know where to look first, order has not yet been established.</li>
+<li>To turn readers from onlookers into participants, the layout should leave room for a story they can imagine, rather than filling every line.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before any small design, sort the elements into groups that must sit close together, and circle them in pencil.</li>
+<li>Make two versions of the same business card, "all scattered" and "grouped", and ask someone to find the phone number within three seconds.</li>
+<li>Make important things bigger and secondary things smaller. Do not use colour to rescue a layout with no difference in size.</li>
+<li>Understand the text first, then decide which two paragraphs should sit together.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-the-principles-of-page-layout-what-you-must-know-before-you-1.jpg" alt="A layout that invites readers to imagine"><figcaption>Work that lets readers use their imagination turns onlookers into participants. Source: <span lang="zh-Hant">《版面設計的原理》</span>, p.137</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-the-principles-of-page-layout-what-you-must-know-before-you-2.jpg" alt="Similar elements placed close together"><figcaption>Information of the same kind is easy to find when it sits close together; unrelated elements should be deliberately separated. Source: same book, p.15</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Rearrange your business card: which elements must sit close together, and which must be pulled apart?</li>
+<li>Use Gestalt to explain why people see the empty space in the middle of a group of squares before they see each individual square.</li>
+</ol>
+<h3 class="book" id="b-the-complete-guide-to-layout-design-sasaki"><span lang="zh-Hant">版式設計全攻略(佐)</span></h3>
+<p><strong>Author:</strong> Tsuyoshi Sasaki</p>
+<p><strong>Scope.</strong> This is a handbook organised by format and number of columns: vertical text in one to five columns on a portrait page, horizontal text in one to four columns, plus unequal column widths, landscape formats and square formats. What it adds are choices that only arise when setting Chinese and Japanese: vertical and horizontal text feel different, and odd and even numbers of columns divide the page differently. It is not the mathematics of the Swiss grid, but "how many columns this format can take".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Four or more columns of vertical text do not suit pages smaller than A4 or B5. The number of columns has to be decided together with the format.</li>
+<li>Horizontal text tends to feel friendlier than vertical text; but two columns of horizontal text on a portrait page make each line short, which is hard to read on a small page.</li>
+<li>Odd numbers of columns bring variety and freshness; even numbers suit dividing the layout in half and then in half again.</li>
+<li>Unequal column widths (for example three columns split as 2+1) add a rhythm that equal columns lack.</li>
+<li>Completely free mixing of images and text has no standard and is the hardest of all. If the leader lines on a diagram are not at a consistent angle, freedom turns into mess.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Choose the format and vertical or horizontal text first, then pick one column type from the book. Do not try eight at once.</li>
+<li>When a single page has to tell a complete story, consider five or more columns or a square format; for long texts, go back to fewer columns.</li>
+<li>On black-and-white pages, use reversed backgrounds for contrast instead of relying on mid-greys.</li>
+<li>Use only one angle for leader lines across the whole page; use enlarged details only to sort out crowded annotations.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-the-complete-guide-to-layout-design-sasaki-1.jpg" alt="Leader lines at a consistent angle"><figcaption>Leader lines on a diagram should share one angle; details can then be enlarged. Source: Tsuyoshi Sasaki, <span lang="zh-Hant">《版式設計全攻略》</span>, p.156</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-the-complete-guide-to-layout-design-sasaki-2.jpg" alt="Reversed black and white backgrounds"><figcaption>A black-and-white page can reverse the background between top and bottom or left and right, with no need for grey in between. Source: same book, p.54</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>You need to set a long text on an A5 portrait page. Would you choose vertical or horizontal text? How many columns? Why avoid four columns of vertical text?</li>
+<li>Change three equal columns into "two columns plus one". What do you plan to put in the extra column?</li>
+</ol>
+<h3 class="book" id="b-understanding-layout-design-advanced"><span lang="zh-Hant">進階理解版式設計</span></h3>
+<p><strong>Scope.</strong> This book moves forward through questions and answers: each section has a before, a checklist of problems, an after and the theory. Topics include magazine inside pages, product pages and the relationship between image and text across a spread. It suits people who can already line things up but whose work still looks "scattered". Compared with introductory books, what it adds is continuity across the spread and the type-area ratio.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Scattered elements, shapeless white space, loose images and inconsistent text direction are all the same kind of failure.</li>
+<li>A spread with text first and images second is hard to follow. People usually look at the image first and are then willing to read.</li>
+<li>If the left page is text and the right page is an image with no line or colour linking them, readers will think they are two separate articles.</li>
+<li>If the type-area ratio is too low and the white space is random, the page looks weak. White space should be small in amount and have a shape, not a gap left all the way round.</li>
+<li>Adjust visual strength to the content: a subtle subject should not be too strong; only subjects that need to be noticed should be turned up. Illustrations are usually stronger than photos, and portraits stronger than landscapes.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When revising, go through the checklist item by item: white space, whether the images are grouped, text direction, and whether two people or two pages are linked.</li>
+<li>On a spread, default to image first and text second, then use a line to carry the eye across.</li>
+<li>Before shrinking the margins, ask whether the white space forms a shape. If it does not, shrinking will only make it more crowded.</li>
+<li>Choose a symmetrical or asymmetrical single column according to the amount of image and text; do not use the same set-up in every issue.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-understanding-layout-design-advanced-1.jpg" alt="Themed treatment for shopping-mall floors"><figcaption>Themed treatment for the floors of a shopping mall uses scenes to turn the description of each space into a readable layout. Source: <span lang="zh-Hant">《進階理解版式設計》</span>, p.95</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-understanding-layout-design-advanced-2.jpg" alt="Symmetrical and asymmetrical grids"><figcaption>When the amounts of image and text are similar, a left-right symmetrical layout is common; when the content is uneven, use an asymmetrical single column. Source: same book, p.64</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>A spread currently has text on the left and an image on the right. Write down two things readers might misunderstand, and the one linking element you would add.</li>
+<li>Use visual strength to explain why a landscape photo is not a good main image for recruiting children.</li>
+</ol>
+<h3 class="book" id="b-layout-making-it-fit"><span lang="zh-Hant">版式設計：合適最好</span></h3>
+<p><strong>Original title:</strong> <em>Layout: Making It Fit: Finding the Right Balance Between Content and Space</em></p>
+<p><strong>Scope.</strong> The English title is <em>Layout: Making It Fit</em>. The whole book deals with one dilemma: too much space and too little information, or too little space and too much information. It is not a grid handbook. What it adds is treating "empty" and "crowded" as positive choices, used to convey luxury, urgency or credibility.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>What designers struggle with most is often uneven space. This book takes apart work at both extremes.</li>
+<li>Above all, avoid spreading things evenly. Impact appears only when you deliberately create too much space or too little.</li>
+<li>Space changes the tone: emptiness can mean luxury, crowding can mean liveliness or credibility, depending on the audience.</li>
+<li>Passively accepting a constraint and actively creating contrast are not the same thing. You need to be able to do both.</li>
+<li>Kress and van Leeuwen's ideas are used as a reminder: the structure of a layout is itself expressive, not just a container.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each design, first decide whether it is empty or crowded. If empty, increase the contrast and the cropping; if crowded, move secondary information into an appendix or a smaller group of type.</li>
+<li>Do not spread white space evenly around all four sides. Gather it into one area.</li>
+<li>When looking at cases, record the proportions: is the image or the caption bigger, and how is the square cropped?</li>
+<li>Use posters like those by Why Not Associates to ask yourself: is the crowding because there is too much content, or because it is the tone you want?</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-making-it-fit-1.jpg" alt="A layout tightened through proportion and cropping"><figcaption>Size proportions, the pairing of image and text, and where the square is cropped all tighten the layout. Source: <span lang="zh-Hant">《版式設計：合適最好》</span>, p.150</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-making-it-fit-2.jpg" alt="Credits for a conference poster"><figcaption>Beside an illustration in the book is John Sayles's note on his poster for an AIGA conference in Seattle. Source: same book, p.83</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Using the same 200 words, make one layout that is "almost empty" and one that is "almost full". Describe the character of each in one sentence.</li>
+<li>Point to your most recent assignment where you spread white space evenly around all four sides, and change it so that only one area of white space remains.</li>
+</ol>
+<h3 class="book" id="b-layout-design-from-beginner-to-expert"><span lang="zh-Hant">版式設計從入門到精通</span></h3>
+<p><strong>Scope.</strong> This is a tutorial with chapters by medium: principles, compositional elements, process, space, grids and colour, then newspapers, business cards, posters, magazines, books and outdoor advertising. Each medium is introduced with its characteristics, followed by examples. The copy marked afx365 later on is a different scan, and only that one has a chapter on packaging. The visible contribution of this copy is taking the same set of principles into specific newspaper and business-card layouts.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Medium comes before style. Newspapers, business cards and posters differ in reading distance and amount of information, so their layout features cannot be copied from one to another.</li>
+<li>A business card can arrange its information on a diagonal, sit it on a dark background to keep it readable, and then let a reduced background pattern show its details.</li>
+<li>A magazine spread can use a tilted portrait to create movement, but the text needs its own base (for example a black block) so that the photo does not swallow the hierarchy.</li>
+<li>The colour chapter treats colour as wayfinding, space and rhythm, not as a final coat of paint.</li>
+<li>The value of the examples lies in "how this medium is usually laid out", not in the name of a particular hotel or property developer.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When starting a project, turn to the "characteristics" page for that medium, copy down two constraints, and then start the layout.</li>
+<li>Make one version of a business card and of a poster on a dark background and one on white, and compare which one keeps its hierarchy.</li>
+<li>If the photo is tilted, do not tilt the text as well. Use a flat block of colour to bring the type back into line.</li>
+<li>In newspaper exercises, use only columns and headline hierarchy; poster-style full-bleed images are not allowed.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-from-beginner-to-expert-1.jpg" alt="Diagonal business card on a dark background"><figcaption>The business card information runs on a diagonal on a black background; the reduced background pattern shows more detail. Source: <span lang="zh-Hant">《版式設計從入門到精通》</span>, p.140</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-from-beginner-to-expert-2.jpg" alt="Tilted portrait with a black text base"><figcaption>The portrait is tilted to create movement; on the right-hand page a black block supports the text so that the hierarchy stays clear. Source: same book, p.177</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Write one constraint each for a newspaper inside page and a business card that the other cannot borrow.</li>
+<li>A tilted photo plus three lines of text: where do you put the text so that it does not tilt too?</li>
+</ol>
+<h3 class="book" id="b-page-layout-grid-composition"><span lang="zh-Hant">版面設計網格構成</span></h3>
+<p><strong>Author:</strong> Josef Müller-Brockmann</p>
+<p><strong>Scope.</strong> This volume also comes from Müller-Brockmann's writing on grids, but the scan shows theory rather than construction: perception, proportion and picture structure, with <em>Proportions</em>, <em>Grid systems</em> and <em>Structure of pictures</em> visible in the contents. What it adds is "why the parts must fit together". For how to derive the column width from the type size, still read <span lang="zh-Hant">《平面設計中的網格系統》</span>.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>How people see relationships is shaped by culture and viewing habits. The grid does not ignore this; it makes relationships something you can check.</li>
+<li>Alberti's definition is quoted to explain beauty: the parts fit each other so well that adding, removing or changing anything would make it worse.</li>
+<li>Max Bill's view is that beauty comes from function and also acts as function. Looking good is not a coat painted on after construction is finished.</li>
+<li>Proportion has its own chapter, and so does picture structure. The grid does not only manage text columns.</li>
+<li>If parts are deliberately set apart from each other, it must be a decision, not a failure to align.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Check a page against Alberti's sentence: which element, if removed, would make the page better? If there is one, the parts do not yet fit.</li>
+<li>Draw the proportional relationships first (page, type area, images), then fill in the content.</li>
+<li>Analyse the internal structure of an image to see whether its divisions use the same proportions as the page grid.</li>
+<li>Compare this book's "fitting together" with Elam's "grouping": one says the whole cannot be added to or reduced, the other says elements should form groups.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-page-layout-grid-composition-1.jpg" alt="Contents page on proportion and picture structure"><figcaption>The contents page lists proportion, grid systems and picture structure. Source: Müller-Brockmann, <span lang="zh-Hant">《版面設計網格構成》</span>, p.7</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-page-layout-grid-composition-2.jpg" alt="Grid plate from the book"><figcaption>Illustration from the book. Source: same book, p.96</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Look at a page of your own work by Alberti's standard: point out one element that could be removed to make the page better.</li>
+<li>Explain whether you would read this book or <span lang="zh-Hant">《平面設計中的網格系統》</span> first, and what the second one adds.</li>
+</ol>
+<h3 class="book" id="b-layout-design-principles-case-studies-55-techniques-to"><span lang="zh-Hant">版式設計原理_案例篇：提升版式設計的55個技巧</span></h3>
+<p><strong>Scope.</strong> This book breaks layout into fifty-five either-or questions, with chapters on text, colour, images and web pages. Each question comes with a prompt, such as "which one looks more like the Italian flag?" or "which way should the person look?". It is good for quick self-testing, but it cannot replace a grid book.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Judgement comes before technique. Every question forces you to give a reason for choosing between two versions.</li>
+<li>The colour chapter sets questions by impression: honest and steady, older people, delicious, Japanese style, seasons. With the wrong colour scheme, the message is wrong however stable the balance is.</li>
+<li>If the visual weight of a layout is all piled into the top half, it will not stand steady. This is caused by text and images together, and alignment alone cannot fix it.</li>
+<li>The image chapter practises jump rate, grouping, direction, squares, cropping, division, main and secondary images, and tone separately. People in photos should look into the page.</li>
+<li>The web chapter is about scanning: can the offer be seen at first glance, does the colour scheme help people find things, does the text force the eye to move around too often?</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>After finishing each page, ask yourself one question in the style of the book, and write down why you did not choose the other version.</li>
+<li>For colour, change only one impression word (summer, Japanese style, trustworthy); do not chase three words at once.</li>
+<li>When cropping, write down "the element I most want to keep". If you kept the wrong one, crop again; do not try to fix it by adding text.</li>
+<li>In web designs, put the offer where the first glance falls, and move everything else into the second level.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-principles-case-studies-55-techniques-to-1.jpg" alt="Flyer with its weight too high"><figcaption>When the visual weight piles up in the top half, the layout looks unstable. Source: <span lang="zh-Hant">《版式設計原理・案例篇》</span>, p.20</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-principles-case-studies-55-techniques-to-2.jpg" alt="Grey setting off saturated colours"><figcaption>Mid-tones and greys hold the whole design down, so the saturated colours can stand out. Source: same book, p.92</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a set of colours for a summer jazz dance, and write down why you rejected another set.</li>
+<li>In two photos of people in conversation, which way should the faces point? If they face off the page, how does the reading break?</li>
+</ol>
+<h3 class="book" id="b-ordering-disorder-grid-principles-for-web-design"><span lang="zh-Hant">秩序之美_網頁中的網格設計</span></h3>
+<p><strong>Original title:</strong> <em>Ordering Disorder: Grid Principles for Web Design</em></p>
+<p><strong>Author:</strong> Khoi Vinh</p>
+<p><strong>Scope.</strong> Vinh writes about grids on screen, not a web version of print grids. He asks readers to read separate books on print and interface design as well. What this copy adds is three working principles and a sequence of steps from constraints and sketches to a specific website. The English edition is the one that explains clearly how the units are subdivided into sixteen columns. There is no HTML or CSS tutorial here.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A grid solves problems first; looking good comes second.</li>
+<li>The grid is part of the user experience, not just visual decoration. It tells people where the information is.</li>
+<li>The simpler the grid, the more effective it is. Complicated overlaps are not forgiven just because they are on a screen.</li>
+<li>The benefits of print grids still apply: order, predictability, ease of adding new content, and different designs working well together.</li>
+<li>Mathematics such as the Fibonacci sequence is just one kind of order from history. Order on the web also has to cope with the number of columns changing with the width.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write down the constraints first: the types of content, the areas that must stay fixed (logo, search) and the optional columns.</li>
+<li>When sketching, decide the number of columns first, then which column the search box falls in. Do not draw the visual style first.</li>
+<li>If search should look like an empty line rather than a box, let it occupy a column rather than float outside the columns.</li>
+<li>Inside pages should not copy the portrait size from the directory page. Within the same grid, columns can play different roles.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-ordering-disorder-grid-principles-for-web-design-1.jpg" alt="Search placed at the top of the right column"><figcaption>Search sits in the far-right column above the logo, designed as an empty line rather than a box. Source: Khoi Vinh, <span lang="zh-Hant">《秩序之美》</span>, p.94</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-ordering-disorder-grid-principles-for-web-design-2.jpg" alt="Different roles in three columns"><figcaption>The centre column keeps the visual focus; the portraits in the left column do not need to copy the directory page; the right column holds events. Source: same book, p.146</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>On a twelve-column desktop grid, which columns do the logo and the search box each take? Write down why you would not centre them.</li>
+<li>Use Vinh's three principles to critique a website where "every page has a different number of columns".</li>
+</ol>
+<h3 class="book" id="b-japanese-layout-design-principles"><span lang="zh-Hant">日本版式設計原理</span></h3>
+<p><strong>Scope.</strong> This is the complete <span lang="zh-Hant">《日本版式設計原理》</span>, with four chapters on layout, text, colour and images, still using before-and-after comparisons. Compared with the p159 scan earlier, what it adds is the image chapter: how to leave an impression with very few images, how to bring food photography into a layout, and cropping and tone. The square coordinate grid and "do not make every image the same size" come up again in the layout chapter; there is no need to treat them as a second theory.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Write down the impression the client wants first. The problems on the "before" pages (tilted images, fragmented white space, outlines sticking out) come from a lack of organisation, not a lack of decoration.</li>
+<li>If the opening date is the most important information on the flyer, it must really be the largest in the hierarchy, not just written in a corner.</li>
+<li>When images are limited, rely on cropping, tone and one main image, rather than shrinking the few images you have so that they "look like a lot".</li>
+<li>For subjects such as food, tone and cropping decide whether the page whets the appetite; that is a separate matter from the headline size.</li>
+<li>A very full layout can still work. The book mentions Takahashi's attitude: crowded material is no excuse for making a page tacky.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>On each page, fix only the one failure the book names: imbalance, no tension and release, an awkward eye path, a date that is not big enough.</li>
+<li>When there are fewer than three images, decide the cropping and tone first, before thinking about decoration.</li>
+<li>On a flyer, circle "the single most important fact" in pen, and check whether it is what you see first.</li>
+<li>When comparing with the p159 scan, only add the exercises from the image chapter; do not redo the square-grid exercises you have already done.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-japanese-layout-design-principles-1.jpg" alt="Flyer that does not emphasise the opening date"><figcaption>The opening date should be the most important item, but this version does not make it stand out. Source: <span lang="zh-Hant">《日本版式設計原理》</span>, p.41</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-japanese-layout-design-principles-2.jpg" alt="A finished result demanded even with lots of material"><figcaption>Even when material crowds the layout, you still have to produce usable work instead of using tackiness as an excuse. Source: same book, p.141</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>A restaurant page has only two photos. How do you still give it a main image and a secondary one?</li>
+<li>On an opening flyer, how would you rank the type sizes of the date, the shop name and the address?</li>
+</ol>
+<h3 class="book" id="b-rules-of-layout-design"><span lang="zh-Hant">版式設計法則</span></h3>
+<p><strong>Scope.</strong> This book presents layout as a series of "rules": the tension of points, the weight, style and length of lines, bleed and cropping of images, five kinds of colour scheme, full-bleed layouts, division, symmetry, tilting, radiating and triangles. It is a dictionary of elements, not a system. Use it to expand your vocabulary, but do not apply every rule on the same page.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A point can stay a point, line up into a line or cluster into a plane. The three states give the layout flexibility, cohesion or tension; they are not levels of decoration.</li>
+<li>The weight, solidity (solid or dashed) and length of a line each carry a mood. Curves against straight lines make the most obvious clash, because their forms are opposite.</li>
+<li>If the edges of a bleed image are too busy, you can add a black frame outside the bleed. It defines the boundary and also helps the image speak.</li>
+<li>The position, area, direction and collage of images change the mood of the whole page. If the direction does not flow, the layout will not "come alive".</li>
+<li>Colour schemes are grouped into same-hue, similar, adjacent, contrasting and complementary. Choose one relationship first, then think about style.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Choose only one compositional rule per page (tilted, radiating or triangular), and write it in the corner of your sheet.</li>
+<li>In line exercises, change only one property: weight, solid or dashed, or length.</li>
+<li>After finishing a bleed image, look at all four edges. If one edge is messy, tidy it with a frame or by cropping; do not add corner ornaments.</li>
+<li>For colour, first rule out four of the relationships, keep one, and use it for the headline and the background.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-rules-of-layout-design-1.jpg" alt="Black frame outside a bleed image"><figcaption>A black frame outside the bleed line tidies the edges of the image and also strengthens the content. Source: <span lang="zh-Hant">《版式設計法則》</span>, p.125</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-rules-of-layout-design-2.jpg" alt="Contrast between curves and straight lines"><figcaption>Curves and straight lines have opposite forms, and placing them together makes the layout more expressive. Source: same book, p.33</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Using the same three points, make three layouts in which they act as a "point", a "line" and a "plane". What mood does each suggest?</li>
+<li>Choose either a same-hue or a complementary scheme, and explain why the other one does not suit your subject.</li>
+</ol>
+<h3 class="book" id="b-the-big-bang-of-layout-ideas"><span lang="zh-Hant">版式創意大爆炸</span></h3>
+<p><strong>Author:</strong> Wang Shaoqiang (compiler)</p>
+<p><strong>Scope.</strong> This is another Chinese edition in the <em>Page Unlimited</em> line, subtitled as a survey of global layout trends and cases, and again edited by Wang Shaoqiang. Compared with <span lang="zh-Hant">《創意版式設計》</span>, what this volume adds is how a single art book can use structure to carry an archive: sequences of thumbnails, the division into chapters, and re-editing someone else's book into a new one. It is still not a grid tutorial.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A very thick book can show thirty years of change through "thumbnails of every old booklet"; the structure itself becomes the history.</li>
+<li>Re-editing an existing text (for example dividing Sontag's writing on images into chapters, adding photos and emphasising certain sentences) can produce a new book. Where the emphasis falls is an editorial decision.</li>
+<li>An artist's monograph has to include archives, sketches and informal photos, so the layout must hold the formal and the informal at the same time.</li>
+<li>The cases are mainly books, and the studios and clients are recorded, so that you can follow the method rather than the style.</li>
+<li>Trend collections go out of date. What lasts is "what quantity problem this structure solved".</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each piece, write down the page count, how the chapters are divided, and which layer is a set of thumbnails or an index.</li>
+<li>Practise re-editing an existing article into three chapters, using only type weight to mark emphasis and adding no illustrations.</li>
+<li>If the content is an archive, design the index pages first and the reading pages second.</li>
+<li>Do not copy the surface of the Yayoi Kusama monograph; borrow only the rhythm of "formal pages plus sketch pages".</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-the-big-bang-of-layout-ideas-1.jpg" alt="A publication divided into sections by character"><figcaption>Beside an illustration in the book, the photography is credited to Greg Marino; the content is divided into sections by film character. Source: Wang Shaoqiang, <span lang="zh-Hant">《版式創意大爆炸》</span>, p.118</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-the-big-bang-of-layout-ideas-2.jpg" alt="Artist's book including sketches and archives"><figcaption>This book gathers Yayoi Kusama's archives, sketches and photos into a single volume. Source: same book, p.66</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>If you had thirty booklets to collect into one book, what structure would let people understand their order?</li>
+<li>If you cannot use colour for "emphasis", what two other typographic means could you use?</li>
+</ol>
+<h3 class="book" id="b-layout-design-2-creative-layout-solutions"><span lang="zh-Hant">版式設計+2版式創意方案</span></h3>
+<p><strong>Author:</strong> Duben Books (editor)</p>
+<p><strong>Scope.</strong> This is the sequel to <span lang="zh-Hant">《版式設計+》</span>, edited by Duben Books and translated by Ouyang Hui. The contents start with magazines and newspapers, then move on to single sheets and booklets. What it adds is periodical cases: how student journals, anniversary publications and community magazines keep one style through die-cutting, tri-folds and two languages. Do not repeat your notes on the book "stage" from the first volume.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A free themed journal can change its theme every issue, but the layout needs enough flexibility for it to still look like the same publication.</li>
+<li>A bright main colour plus a die-cut cover is one way to make "modern" clear, but the inside text must still be readable.</li>
+<li>An anniversary book that picks out the number with die-cutting and divides its chapters with full tri-fold photos is clearer than one with lots of small subheadings.</li>
+<li>Even when printed in two languages, a community publication can keep a local character (the book's example is Nordic).</li>
+<li>When student work goes into a publication, there can be two platforms (digital and print), but there should be one set of layout rules.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When designing a periodical, first decide three things that may change each issue and three that may not.</li>
+<li>For dividing chapters, try a large image spread once, rather than only colour bars.</li>
+<li>For bilingual copy, first decide which language is the main line; the other gives way through type size or leading.</li>
+<li>From this volume, collect only magazine structures; for book structures, go back to the first volume.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-2-creative-layout-solutions-1.jpg" alt="Contents page sorted by medium"><figcaption>The contents page sorts the cases into magazines, newspapers, and single sheets and booklets. Source: <span lang="zh-Hant">《版式設計+2》</span>, p.6</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-2-creative-layout-solutions-2.jpg" alt="Bilingual community magazine keeping a Nordic style"><figcaption>The community publication is printed in two versions, and the design still keeps a Nordic character. Source: same book, p.40</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>For a magazine that changes its theme every issue, list three layout rules you would not change.</li>
+<li>On a bilingual inside page, how much smaller should the secondary language be than the main one so that they do not compete?</li>
+</ol>
+<h3 class="book" id="b-layout-design-storm"><span lang="zh-Hant">版式設計風暴</span></h3>
+<p><strong>Scope.</strong> Like <span lang="zh-Hant">《版式設計風暴Ⅱ》</span>, this book is a picture collection, and the scan is still mixed with magazine covers from 2006. The difference is that this volume's captions contain one practical piece of advice on commercial layout: how a product page can break out of the grid, and whether the person or the product should be brighter. Volume II has little more than watermarked images, so take this volume as the reference for method.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>An image can break out of the grid, but it should not be too large; otherwise the balance of the grid is lost and the break has nothing to contrast with.</li>
+<li>If the person is a supporting element, their saturation, brightness and contrast should all be lower than the product's, with cooler surroundings, so that the product holds attention.</li>
+<li>The cover collection still shows the cover-line hierarchy of consumer magazines, read in the same way as in Volume II.</li>
+<li>Pages without body text can only serve as samples. Do not learn Chinese typesetting from incomplete English covers.</li>
+<li>Breaking the grid is something you do once there is a grid. You need balance first before "not too large" means anything.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>On a product page, draw the grid first, then let only one image bleed, and limit the number of columns it takes.</li>
+<li>Lower the contrast of the image of the person by one step and keep the product image at its original contrast; put them side by side and check which is seen first.</li>
+<li>Use cool colours only in the supporting areas, never on the product.</li>
+<li>If two images on a page are both breaking the grid, cut down to one.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-storm-1.jpg" alt="Layout where the product is brighter than the person"><figcaption>An image that breaks the grid should not be too large; the person is darker and cooler than the product, so the product stands out. Source: <span lang="zh-Hant">《版式設計風暴》</span>, p.192</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-storm-2.jpg" alt="Layout image from the book"><figcaption>Illustration from the book. Source: same book, p.240</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>A page has a product and a model. Write down whose contrast you would lower, and the maximum number of columns the grid-breaking image may take.</li>
+<li>Explain why "breaking the grid" requires a grid in the first place.</li>
+</ol>
+<h3 class="book" id="b-methods-of-commercial-layout-design"><span lang="zh-Hant">[商業版式設計的方法]</span></h3>
+<p><strong>Scope.</strong> This is a commercial introduction that runs from points, lines and planes and black, white and grey to how to start a layout: reading habits, levels of information, grouping and columns. It presents the grid as the way to make type, images and graphics consistent. It is not as deep as Samara or Müller-Brockmann, but its order is clear, which makes it suitable for your first commercial job.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Readers usually go from left to right and top to bottom, and they see things that are close as a group and things that are far apart as separate. You can go against this, but you need a reason.</li>
+<li>Large and dark means important; small and light means secondary. White space has a shape too.</li>
+<li>Information levels should stop at three or four. Any more becomes another kind of mess.</li>
+<li>Before you start, write an outline: first, second and third-level headings and body text, like a tree.</li>
+<li>Columns and grids are the tools of order for commercial work. The book quotes the view that the grid makes it possible to coordinate type, images and graphics.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write the information tree first, then choose the type sizes. Without a tree, do not open the software.</li>
+<li>Mark the main and secondary elements in a black, white and grey draft; the hierarchy must work before colour goes on.</li>
+<li>Check the distances in each group: tight within groups, loose between groups.</li>
+<li>If you want to go against the reading direction, explain it with arrows or numbers, not just by tilting things.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-methods-of-commercial-layout-design-1.jpg" alt="Using a grid to coordinate type and images"><figcaption>The grid is used to make type, images and graphics consistent with each other. Source: <span lang="zh-Hant">《商業版式設計的方法》</span>, p.54</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-methods-of-commercial-layout-design-2.jpg" alt="Text and graphics acting as points"><figcaption>A point can be a figurative graphic or a block of text, set against a large area of white space. Source: same book, p.9</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Write four levels of information for a promotion. If you get to a fifth level, which level should be cut?</li>
+<li>Point to a design where you deliberately went against top-to-bottom reading, and write down why.</li>
+</ol>
+<h3 class="book" id="b-layout-and-composition-design"><span lang="zh-Hant">版式編排設計</span></h3>
+<p><strong>Authors:</strong> Zhang Peng, Wang Zhimin (chief editors)</p>
+<p><strong>Scope.</strong> This follows a textbook format: definition, brief history, types and visual flow, text, graphics, applications. It describes current trends in layout as creativity, individuality, emotion and technology. It is useful for building vocabulary, but the case captions are dense, so you need to condense them into principles yourself.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Layout covers type size, leading, the position of illustrations and tables, decoration and colour. Today it also includes the order and emotion it conveys.</li>
+<li>Creativity is divided into two kinds: aimed at the subject, and aimed at the form of the layout. Both need to happen together.</li>
+<li>Individuality is not chaos. The book discusses deliberate mystery, lack of rules or humour, used to make people stop.</li>
+<li>Visual flow has direction. Diagonal arrangements, letters along a slanted line and elements on a diagonal all strengthen movement and space.</li>
+<li>Body text is set in columns to break the stiffness of full-width text, and also to give headings more than one way to be inserted.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each assignment, write one sentence on "subject creativity" and one on "layout creativity". If you only have the first, the layout has not started yet.</li>
+<li>When you try a diagonal flow, there must still be a path that can be read to the end; do not aim only for movement.</li>
+<li>For long texts, set them full width first, then change to two columns, and compare where the headings can go.</li>
+<li>Use the brief history in the book to give your style an earlier reference point, so you do not just call it "modern".</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-and-composition-design-1.jpg" alt="Slanted and diagonal arrangements"><figcaption>Slanted arrangements, letters along a diagonal line and elements on the diagonal all strengthen the sense of movement. Source: Zhang Peng and Wang Zhimin, <span lang="zh-Hant">《版式編排設計》</span>, p.84</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-and-composition-design-2.jpg" alt="Headings after splitting into columns"><figcaption>Body text is set in columns to avoid the stiffness of full-width text, and to give more variety in how headings are inserted. Source: same book, p.103</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>For the same event, write one sentence of subject creativity and one sentence of layout creativity.</li>
+<li>Change a block of full-width text into two columns. Where are the new places you can now put the heading?</li>
+</ol>
+<h3 class="book" id="b-layout-design-book"><span lang="zh-Hant">版式設計</span></h3>
+<p><strong>Scope.</strong> This is <span lang="zh-Hant">《版式設計》</span> from the "Century Designers" series (series editor Li Wei). The first two chapters cover principles: a clear theme, unity of form and content, and overall arrangement; then points, lines and planes are used to discuss space. Later, composition is grouped into types such as tilted, symmetrical, centre of gravity, triangular, juxtaposed, free and four-corner. It is a textbook of principles; the scanned examples are rather blurry, and the principles are clearer than the images.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The purpose of layout is order, and making the theme stand out through a comfortable organisation. It relies on layering, main and secondary elements, visual order and logic.</li>
+<li>Enlarge the main subject to make it the visual centre; arrange different kinds of information as groups; add white space around the main subject so that the emphasis works.</li>
+<li>With only form or only content, a layout is empty. First understand the theme, then find a form that suits both the content and the feeling.</li>
+<li>Lines can divide space and create fields of force, while line frames contain space. Points and planes each build different layers.</li>
+<li>The composition types are a toolbox. The free type still needs a whole; it does not cancel the principles.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write the theme sentence first, then decide whether the visual centre is an image or a headline.</li>
+<li>Increase the white space around the main subject; do not emphasise the same spot with both a frame and a background colour.</li>
+<li>Do a division exercise with one kind of line: only divide, add no images, and see whether the space already has a main and a secondary area.</li>
+<li>Choose one composition type from the book and write down why it suits the content, not just why it looks good.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-book-1.jpg" alt="Advertising layout from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《版式設計》</span>, p.158</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-book-2.jpg" alt="Card composition from the book"><figcaption>Illustration from the book. Source: same book, p.51</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Emphasise a headline with "white space around it" instead of a frame. Write down which side you left open.</li>
+<li>Choose either a symmetrical or a centre-of-gravity composition, and explain how it speaks for your theme.</li>
+</ol>
+<h3 class="book" id="b-layout-today"><span lang="zh-Hant">今日版式</span></h3>
+<p><strong>Scope.</strong> This is a handbook of specifications and type: ISO and North American paper sizes, the point system, ciceros and picas, metric units, then type anatomy and classification (old style, transitional, modern, slab serif, grotesque, neo-grotesque). Only the second half moves on to page layout. What it adds is the language of measurement you need before you build a grid.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The A series has a fixed aspect ratio, which stays the same when a sheet is folded in half. ANSI sizes have two aspect ratios, so enlarging or reducing them often means trimming off white space.</li>
+<li>Type classification is for choosing and pairing typefaces, not for memorising history. Serif, sans serif, script and decorative are the first level.</li>
+<li>Old style has low contrast and an inclined axis; transitional is more vertical; modern has very strong thick-thin contrast and horizontal serifs; slab serifs are thick and square.</li>
+<li>Among sans serifs, grotesques keep a few traits from the serif era (varying stroke weight, a lowercase g with a tail). Neo-grotesques remove them.</li>
+<li>A grid with an odd number of columns always leaves one column empty, whether you group it in twos or threes, and the rhythm comes from that empty column.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before starting, write down the paper series and aspect ratio. If it is not ISO, mark where you will need to trim when scaling.</li>
+<li>Choose one of old style, transitional or modern for the body text, and write down whether you want weak or strong contrast.</li>
+<li>For a sans-serif headline, first decide between grotesque and neo-grotesque; do not just write "sans serif".</li>
+<li>Try a five- or seven-column page, deliberately leave one column empty, and see whether a rhythm appears.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-today-1.jpg" alt="The two aspect ratios of ANSI paper"><figcaption>ANSI sizes have two aspect ratios, so unlike ISO sizes they cannot be scaled without trimming. Source: <span lang="zh-Hant">《今日版式》</span>, p.7</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-today-2.jpg" alt="Empty space left by an odd number of columns"><figcaption>An odd number of columns still leaves one empty column after grouping, which gives the page its rhythm. Source: same book, p.150</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Explain why A4 folded in half twice keeps the same proportion, while an ANSI letter sheet often has to be trimmed when it is enlarged.</li>
+<li>Choose a category (old style, modern, neo-grotesque and so on) for the body text of a novel and for its cover title, and give your reasons.</li>
+</ol>
+<h3 class="book" id="b-the-end-of-print-the-graphic-design-of-david-carson"><span lang="zh-Hant">印刷的終結：戴維·卡森的自由版式設計</span></h3>
+<p><strong>Original title:</strong> <em>The End of Print: The Graphic Design of David Carson</em></p>
+<p><strong>Author:</strong> David Carson</p>
+<p><strong>Scope.</strong> This book presents Carson's work and conversations; it is not a list of bad examples to set against the grid. The introduction explains that he wanted print, which had lost its hold on people, to speak again to readers who now live with television and radio. Its relationship to all the grid books before it is this: those books teach how order helps reading, while this one shows that even when order is disrupted, a thread must remain.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The available techniques include changing typefaces and sizes, odd letterforms, extremely full or extremely empty pages, mistakes, disorder and enlarged conceptual words.</li>
+<li>Starting with magazines such as <span lang="zh-Hant">《滑板走天下》</span>, he reworked the relationships between headings, notes, body text, images and margins.</li>
+<li>He often starts from one enlarged concept word, which both carries the content and acts as a graphic.</li>
+<li>Surface chaos often still has direction. For example, a line drawn under the s of "sunday" hints at the theme.</li>
+<li>The interviews in the book link this approach to the word "deconstruction", but Carson's starting point was magazine editing, not a theoretical term.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First lay out a page clearly on a grid, then break it in only one place, and leave a clue that can still be read (an underline, one oversized word, a patch of empty space).</li>
+<li>When copying, ask: if the chaos were removed, would the theme still be there? If not, it is only surface.</li>
+<li>The concept word must really come from the text; do not pick a good-looking English word first.</li>
+<li>Use empty pages and full pages in pairs. With only full pages, readers have nowhere to pause.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-the-end-of-print-the-graphic-design-of-david-carson-1.jpg" alt="Interview about deconstruction"><figcaption>An interview discusses how the word "deconstruction" came to be applied to Carson's magazine work. Source: <span lang="zh-Hant">《印刷的終結》</span>, p.144</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-the-end-of-print-the-graphic-design-of-david-carson-2.jpg" alt="A line under a letter hinting at the theme"><figcaption>The days of the week are laid out, and a line under the s of "sunday" hints at the theme. Source: same book, p.109</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Take a short text and enlarge one of its words until it works as a graphic. The word must be the real point of the text. Write down which one you chose.</li>
+<li>What reading clue did you leave in your "chaos"? If you removed it, could the page still be understood?</li>
+</ol>
+<h3 class="book" id="b-basics-design-grids"><span lang="zh-Hant">國際平面設計基礎教程-GRIDS網格設計</span></h3>
+<p><strong>Original title:</strong> <em>Basics Design 07: Grids</em></p>
+<p><strong>Authors:</strong> Gavin Ambrose, Paul Harris</p>
+<p><strong>Scope.</strong> This is AVA's <em>GRIDS</em>. The chapters run from needs, elements and basics through types and applications to grids on the web. Compared with the <span lang="zh-Hant">《國際版式設計基礎教程》</span> volume, what it adds is the "why": a grid makes decisions faster and gives even small things like page numbers a pulse. It also covers positive and negative space and how we read. Historical manuscripts and later newspapers are set side by side to show that the basic structure has not changed for centuries.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The grid is the structure for every element. It improves precision and consistency, and it saves time spent hesitating.</li>
+<li>A page number placed in the margin can become an anchor for the whole design, not a figure added at the end.</li>
+<li>The wide margins of manuscript pages were originally for marginal notes; today they can become part of the design. An image that crosses the gutter creates movement.</li>
+<li>Medieval manuscripts and modern newspapers still share columns, margins and hierarchy. The medium changed, but the reading structure did not change completely.</li>
+<li>Framing the left page and bleeding the right page is a change of pace that urges the reader to turn the page. The perimeter is itself an element.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>When making a magazine, treat the page number as a graphic and check that it sits on the same line on every page.</li>
+<li>Compare a manuscript page with a newspaper page and circle three elements that are still the same.</li>
+<li>Spread exercise: frame the left page and bleed the right page. Change only this one thing and see whether movement appears.</li>
+<li>Mark the positive (content) and negative (empty) areas. The negative areas must have a shape.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-basics-design-grids-1.jpg" alt="Entry point at the top left"><figcaption>The entry point sits at the top left and sets up the structure of the page. Source: Ambrose and Harris, <em>Grids</em>, p.23</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-basics-design-grids-2.jpg" alt="Spread with a framed page and a bleed page"><figcaption>The left image is framed and the right one bleeds. The change of pace makes the reader want to turn the page. Source: same book, p.128</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Explain how a page number can become the "pulse" of a design rather than a decoration.</li>
+<li>Draw a spread: which page is framed and which bleeds? What action does the contrast urge?</li>
+</ol>
+<h3 class="book" id="b-basics-design-layout-2nd-edition"><span lang="zh-Hant">國際平面設計基礎教程-LAYOUT版式設計(第2版)</span></h3>
+<p><strong>Original title:</strong> <em>Basics Design 02: Layout</em>, 2nd edition</p>
+<p><strong>Authors:</strong> Gavin Ambrose, Paul Harris</p>
+<p><strong>Scope.</strong> This is the second edition of AVA's <em>Layout</em>, which states at the start: An AVA Book. It defines layout as the management of spreads and page space so that people can find information. Here the grid is one tool among several. Compared with the two GRIDS books, it adds that content comes before any golden rule, and that the same management applies to publications, websites, moving images and packaging.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A good layout arranges complex information so it can be found. It must be both practical and attractive, whatever the medium.</li>
+<li>There is no single golden rule. A guide and an encyclopedia have different layouts because their content is different.</li>
+<li>The book quotes Josef Müller-Brockmann again: seeing the grid as order shows that the designer works to a plan. It then adds that the grid and order are still only tools.</li>
+<li>Layout can also spark ideas, not just tidy things up. The condition is that choices become easier, not more arbitrary.</li>
+<li>A page can be very calm: a simple page colour, two binding holes in the gutter, a text column as wide as the image. Or it can use a narrow head margin, a wide foot margin and a bleed on one side to create horizontal movement.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First write down whether this content is closer to a guide or an encyclopedia, then decide the columns and hierarchy.</li>
+<li>When moving across media, carry over only the structure (hierarchy, margins, one bleed image), not the paper's proportions.</li>
+<li>Use column width to control images: when image width equals the text column, the series stays stable.</li>
+<li>Do not make the head and foot margins equal. Try a narrow head and wide foot first, and see whether the page is pushed upwards.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-basics-design-layout-2nd-edition-1.jpg" alt="Page where column width equals image width"><figcaption>A simple page colour, two binding holes in the gutter, and a text column the same width as the image. Source: Ambrose and Harris, <em>Layout</em>, 2nd edition, p.122</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-basics-design-layout-2nd-edition-2.jpg" alt="Narrow head margin and bleed on the right"><figcaption>A narrow head margin, a wide foot margin and an image bleeding to the right create horizontal movement. Source: same book, p.75</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>For an exhibition booklet and an encyclopedia entry, how would putting content first change the number of columns?</li>
+<li>Explain why this book calls the grid a tool. What does it cover, and what does the <em>GRIDS</em> volume cover?</li>
+</ol>
+<h3 class="book" id="b-layout-design-www-afx365-com"><span lang="zh-Hant">版式設計-www.afx365.com</span></h3>
+<p><strong>Scope.</strong> This is a model textbook for the higher education self-study exam, carrying the watermark of a prepress website. It moves from definitions, media and principles to grids and forms. The useful part is how it sorts layouts into a few types: aligned, centred, overlapping, scattered, tilted and free. It uses David Carson to show that a free layout can still leave clues. Do not use the watermarked pages to study letter-spacing.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>An aligned layout gathers images and text into blocks with straight edges. It suits rigorous content; its weakness is that it can easily feel dull.</li>
+<li>A centred layout is symmetrical along the centre line. It suits posters with little information and a single theme.</li>
+<li>Overlapping uses one thing covering another to show order, and the space takes on a sense of transparency.</li>
+<li>In a scattered layout, elements are spread like dots. Each local area has its own focus, but the whole still needs heavier and lighter parts.</li>
+<li>A free layout breaks the grid but must still leave reading clues. The book uses Carson's enlargement, added rules and reversed-out type as examples; it is not encouraging chaos on every page.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Pick one of the six types first and write it in the corner of the page. Do not switch halfway.</li>
+<li>Use only aligned layouts for rigorous content; use centred layouts only for posters with very little information.</li>
+<li>If you use overlapping, mark what is in front and what is behind. The overlap must match the reading order.</li>
+<li>For a free layout, you must be able to draw a path with a pen that a reader can still follow.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-www-afx365-com-1.jpg" alt="Diagonal visual flow"><figcaption>A diagonal flow catches the eye more than a horizontal or vertical one, and is also less stable. Source: <span lang="zh-Hant">《版式設計》</span>, p.20</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-www-afx365-com-2.jpg" alt="Harmonious text arrangement"><figcaption>Different typefaces and type sizes must combine into one harmonious group, rather than each speaking its own lines. Source: same book, p.47</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Choose a layout type for a lab report and one for a party poster, and explain why they cannot be swapped.</li>
+<li>Draw a scattered layout and mark where the heaviest point is.</li>
+</ol>
+<h3 class="book" id="b-principles-of-layout-design"><span lang="zh-Hant">版式設計原理</span></h3>
+<p><strong>Scope.</strong> This is a Japanese practical book that combines theory with before-and-after examples, and includes interviews with Masayoshi Nakajo and Mitsunobu Hosoyamada. The visible exercises range from magazine margins and toy shop flyers to map captions. The full-colour tutorial volume defines "type area ratio"; this volume adds diagnosis: text that gets trimmed off, faces running into the gutter, supporting information that looks like a heading, and a main product that is not enlarged.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>If the margins are crammed with text, a slightly off trim makes it unreadable and uncomfortable. The fore-edge must leave room for error.</li>
+<li>A magazine gutter swallows faces and text near the centre fold. Do not place important things against the fold.</li>
+<li>If supporting information is set as large as a heading, readers do not know where to start.</li>
+<li>Empty space must have a reason. An awkward patch of white under an illustration looks like a printing error.</li>
+<li>The main product (the yellow teddy bear in the book) must really come first in size. If the red frame is crooked, the zoning fails.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Use the book's checklist: fore-edge, gutter, size of supporting text, meaningless white space, primary and secondary, dividing lines.</li>
+<li>Keep similar elements close, and give a photo and its caption a shared edge.</li>
+<li>Among eight product images, enlarge only one and keep the rest at similar sizes.</li>
+<li>If a map has too few buildings, use junctions and street names as landmarks instead. Do not invent landmarks that do not exist.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-principles-of-layout-design-1.jpg" alt="Art editor's portfolio page"><figcaption>Beside the illustration, the book introduces art editor Tomoko Mizui and the advertising she created for a brand. Source: <span lang="zh-Hant">《版式設計原理》</span>, p.70</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-principles-of-layout-design-2.jpg" alt="Map using street names as landmarks"><figcaption>When there are not enough landmarks, crossroads and street names can serve as landmarks. Source: same book, p.148</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>On a magazine spread, the model's face is close to the centre fold. Which way would you move the face?</li>
+<li>One of eight products is the lead item. Write down the size relationship between the lead item and the other seven, and one number of colours you would not use.</li>
+</ol>
+<h3 class="book" id="b-principles-of-layout-design-full-colour-tutorial"><span lang="zh-Hant">版式設計原理-全綵教程</span></h3>
+<p><strong>Scope.</strong> This is a scan of the full-colour tutorial for the previous book, <span lang="zh-Hant">《版式設計原理》</span>. The before-and-after examples (toys, dialogues, cropping people) appear again. What it adds is the type area ratio: once the format is set, first fix the head margin, foot margin and the white space on all four sides. The share of the page taken by the type area directly changes how much information it holds and how it feels. William Morris's proportions are given, with a note that they do not suit square-character scripts such as Japanese and must be reset for the medium.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>A high type area ratio means more information and a busy page; a low ratio means less information and a quiet page. Set it according to the medium; do not centre every book the same way.</li>
+<li>For multi-page print, consider the fore-edge and gutter together with the binding. The type areas of facing pages should mirror each other, so one side is not wide and the other narrow.</li>
+<li>One ratio listed in the book for head, gutter, fore-edge and foot is about 1:1.5:2:3; Morris's English tradition is close to 1:1.2:1.44:1.73.</li>
+<li>Grouping does not mean walling content off with lines. It means letting things that are related in meaning visibly relate.</li>
+<li>Do not crop people across the top of the head; have faces look into the page; place photos of elders or teachers higher on the page.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>After setting the format, first write down whether the type area ratio is high or low, then measure the four margins. The foot margin is usually larger than the head.</li>
+<li>Before printing facing pages, check whether the gutter will swallow any text.</li>
+<li>Fix layouts where "the white space has no reason": gather the white together, or create rhythm through photo sizes.</li>
+<li>On a dialogue page, turn the two faces towards each other, not out past the binding.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-principles-of-layout-design-full-colour-tutorial-1.jpg" alt="Magazine with generous white space"><figcaption>The white space in <em>TITLE</em> is presented as treatment worth learning from; the art director is Tetsuji Kawamura. Source: <span lang="zh-Hant">《版式設計原理》</span>, full-colour tutorial, p.17</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-principles-of-layout-design-full-colour-tutorial-2.jpg" alt="Grouping rather than isolating"><figcaption>Grouping should show how content is connected in meaning, not wall areas off with lines. Source: same book, p.25</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>For a poetry collection and a supermarket flyer, which has the higher type area ratio? How would you divide the four margins?</li>
+<li>Why does the book say Morris's proportions cannot be used directly for setting Japanese or Chinese?</li>
+</ol>
+<h3 class="book" id="b-practical-handbook-of-layout-design-www-afx365-com"><span lang="zh-Hant">版式設計實用手冊-www.afx365.com</span></h3>
+<p><strong>Scope.</strong> This book approaches layout through paper and binding: letterpress paper, newsprint, offset paper, coated art paper and embossed paper, along with perfect binding, case binding, comb binding and saddle stitching. Only then does it build grids from proportions or from unit cells, and give solutions for newspapers, covers, packaging, advertisements and posters. The SUNI full-colour edition is another scan of the same handbook. This volume is clearer on paper, binding, and "placing a triangle or circle at the start of a long text".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Paper and binding limit layout. Saddle stitching and perfect binding handle spreads and gutters completely differently.</li>
+<li>A grid can come from proportional relationships, or grow outwards from one unit cell. Both starting points are valid.</li>
+<li>A symmetrical grid is for balance, not for every commercial job.</li>
+<li>In a text-heavy magazine, place an accent shape (triangle, circle) where the information begins to lead the reader in, rather than decorating the whole page.</li>
+<li>When there are few images and a high image area ratio (about 65% in one example in the book), character comes from how the images are cropped, not from more borders.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Choose the binding method before setting the gutter. Do not use the same numbers for the centre of a saddle-stitched and a perfect-bound book.</li>
+<li>When building a grid, state whether the starting point is a proportion or a unit cell.</li>
+<li>In long texts, place one geometric shape only at the start of each section, not at every paragraph.</li>
+<li>If a cover already has a high image area ratio, reduce the text and let the image speak.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-practical-handbook-of-layout-design-www-afx365-com-1.jpg" alt="Accent shape at the start of the information"><figcaption>When there is a lot of text, a triangle or circle placed where the information begins guides the reading. Source: <span lang="zh-Hant">《版式設計實用手冊》</span>, p.77</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-practical-handbook-of-layout-design-www-afx365-com-2.jpg" alt="Book page with a high image area ratio"><figcaption>With few graphics and little text and an image area ratio of about 65%, the impact comes from the image itself. Source: same book, p.100</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>A 16-page zine is saddle-stitched. How much gutter would you leave so the text does not fall into the staple fold? Give your reasons; you do not need to fix an exact number of millimetres.</li>
+<li>Using "growing a grid from a unit cell", explain whether your first unit is a line of text or an image.</li>
+</ol>
+<h3 class="book" id="b-practical-handbook-of-layout-design-suni-visual-design-full"><span lang="zh-Hant">版式設計實用手冊.SUNI視覺設計.全綵版</span></h3>
+<p><strong>Scope.</strong> This is the SUNI full-colour edition of the previous practical handbook, with the same paper, binding and later chapters (periodicals, newspapers, covers, packaging, advertising). The application shown more clearly in this volume is the business card: staggered text can create rhythm. The page on accent shapes guiding long texts also appears again. If you keep only one of the two at hand, read the afx365 volume for paper and binding, and this volume for business cards and full-colour cases.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Business card text that is fully aligned feels steady; staggered text feels light and lively. Staggered text still needs a hidden alignment.</li>
+<li>A periodical can build character with a cut-off corner, large white space, speech bubbles, enlarged type or diagonal images. Use only one at a time.</li>
+<li>The newspaper chapter stresses modules, traditional columns and rules. This is the order of long texts, not a poster technique.</li>
+<li>The packaging and advertising chapters link layout to consumer psychology: white space, tilt, primary and secondary must all serve "what is seen first".</li>
+<li>Full colour tempts you to add colour. Yet the strength of many examples in the book still comes from the columns and one accent shape.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Make two versions of a business card, one flush and one staggered. On the staggered version, draw the hidden alignment line in pencil.</li>
+<li>For the periodical exercise, choose only one technique from the book (white space, speech bubbles or diagonals).</li>
+<li>For the newspaper exercise, check that the column width is already readable before adding rules.</li>
+<li>When comparing with the black-and-white scan, add only the business card exercise unique to this volume.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-practical-handbook-of-layout-design-suni-visual-design-full-1.jpg" alt="Staggered business card text"><figcaption>Staggered text on a business card gives the layout rhythm, but the information must still read clearly. Source: <span lang="zh-Hant">《版式設計實用手冊》</span>, full-colour edition, p.172</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-practical-handbook-of-layout-design-suni-visual-design-full-2.jpg" alt="Accent shape in a periodical"><figcaption>A text-heavy periodical places a triangle or circle where the information begins to lead the reader in. Source: same book, p.79</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>On a business card, which text can be staggered, and which must share an alignment line?</li>
+<li>Explain which kind of exercise you would use this volume for, and which the volume marked afx365.</li>
+</ol>
+<h3 class="book" id="b-layout-design-from-beginner-to-expert-www-afx365-com"><span lang="zh-Hant">版式設計從入門到精通-www.afx365.com</span></h3>
+<p><strong>Scope.</strong> This is another scan of <span lang="zh-Hant">《版式設計從入門到精通》</span>. The chapters on principles, composition, grids, colour, newspapers, business cards, posters, magazines and books are all there, and the pages carry a prepress site watermark. What it adds is the packaging chapter: teapots, pasta, medicine bottle labels and CD sleeves. The earlier volume already covered diagonals and hierarchy with business cards and magazine portraits; this volume adds "how an abstract shape can both separate and connect text".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Packaging layouts must keep the hierarchy on curved surfaces or small areas. Bottle labels and sleeves can rely on many type sizes even less than posters can.</li>
+<li>Text can be layered by position (centre right), weight and size, without first adding colour bars.</li>
+<li>One abstract shape can do two jobs: divide areas, and at the same time connect the separated text again.</li>
+<li>In a group of images, the one at the top left that is both large and at the visual starting point becomes the main image. Use size and position together.</li>
+<li>Do not copy watermarks and URLs into your assignments. Take only the hierarchy and grouping.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Use only two type sizes and one abstract shape on a bottle label. Move any extra information to the back of the pack.</li>
+<li>Before drawing an abstract shape, mark what it separates and what it connects. If it can only do one of these, redraw it.</li>
+<li>In a three-image layout, put the largest at the top left and shrink the others, then check that the first glance feels stable.</li>
+<li>For packaging assignments, also make a flat net to confirm the hierarchy survives the folds.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-layout-design-from-beginner-to-expert-www-afx365-com-1.jpg" alt="Abstract shape dividing and connecting text"><figcaption>The text sits centre right and is layered by weight and size; the abstract shape both divides the areas and connects the text. Source: <span lang="zh-Hant">《版式設計從入門到精通》</span>, p.209</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-layout-design-from-beginner-to-expert-www-afx365-com-2.jpg" alt="Main image at the top left"><figcaption>The image at the top left is both large and at the starting point, so it becomes the main image. Source: same book, p.59</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Set two type sizes for a CD sleeve. Which one do the album title and the track list each use?</li>
+<li>Draw a shape that separates the heading from the body text while belonging to both. Say in one sentence how it connects them.</li>
+</ol>
+<h3 class="book" id="b-golden-rules-of-layout-design"><span lang="zh-Hant">版面設計黃金法則</span></h3>
+<p><strong>Scope.</strong> The core of this book is conversations with Japanese magazine art directors and their pages, including interviews with Mitsunobu Hosoyamada and Takahito Noguchi. Only after that come step-by-step sections on combining text, photography and feature openers. What it adds is judgement from the editorial floor: as styles become simpler, typefaces and details become stricter. It is not about grid formulas.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Hosoyamada thinks styles are becoming softer and simpler, but simplicity demands stricter details. Choose the wrong typeface and the whole will not work.</li>
+<li>He hopes design can offer proposals for "how to live", as Muji does, rather than just dressing up consumer information. His references are Kohei Sugiura and Ikko Tanaka.</li>
+<li>Horizontal setting fits more characters per line than vertical setting. A striped background like the Stars and Stripes must give way to the text, or the blend that only horizontal setting can achieve will fail.</li>
+<li>An oversized number can be just rhythm and background; it does not have to indicate reading order. When you use one, it must not become annoying.</li>
+<li>Noguchi stresses that art directors talk with editors on the job. A layout rule that cannot enter the production process is just taste.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Choose the typeface first, then add images. If the type is already off-putting, do not try to rescue it with pictures.</li>
+<li>In a horizontally set layout, count the characters per line. The background pattern should run parallel to the lines or clearly stay out of their way.</li>
+<li>If a large number is only background, lower its contrast so it is not read as the first piece of information.</li>
+<li>When reading the interviews, note one sentence that could change your next page, not the biography.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-golden-rules-of-layout-design-1.jpg" alt="Horizontal setting with a striped background"><figcaption>Horizontal setting fits more characters per line; the striped background must give way to the text so they do not clash. Source: <span lang="zh-Hant">《版面設計黃金法則》</span>, p.46</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-golden-rules-of-layout-design-2.jpg" alt="Oversized numbers used only for rhythm"><figcaption>Here the oversized numbers are background rhythm, not a real sequence. Source: same book, p.128</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>If your layout is already very simple, which two details are most likely to give you away?</li>
+<li>How would you design a giant page number so that it is not read as a heading?</li>
+</ol>
+<h3 class="book" id="b-decoding-typographic-design-www-afx365-com"><span lang="zh-Hant">破譯文字編排設計-www.afx365.com</span></h3>
+<p><strong>Original title:</strong> <em>Typography Workbook: A Real-World Guide to Using Type in Graphic Design</em></p>
+<p><strong>Author:</strong> Timothy Samara</p>
+<p><strong>Scope.</strong> This is another scan of <span lang="zh-Hant">《破譯文字編排設計》</span>, with the same principles for letters, words, paragraphs and pages, and a prepress site watermark on the pages. The earlier volume's images showed covers filled with oversized type and label hierarchy; this volume adds two finer examples: building a graphic from the counter of a lowercase g, and removing the "windows" (rivers) in justified text through type weight.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Principles overlap and even contradict each other. No single book can cover all of typography; its aim is to be clear to readers at every level.</li>
+<li>An all-lowercase heading can still build hierarchy with italics, size and colour.</li>
+<li>The counter of a letter can extend into a graphic. The book's example plays with the g in "green", giving it a tail and horns.</li>
+<li>In justified text, when a window of white space opens in the middle of a line, a heavier weight hierarchy can cancel out that space with a different rhythm.</li>
+<li>Project records (such as the Royal College of Art's two-way text) remind you that principles must land on real commissions.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Try a heading in all lowercase once, building hierarchy only with italics and colour, with no capitals.</li>
+<li>Choose a letter with a clear counter and let a graphic grow out of that counter.</li>
+<li>Justify a paragraph, circle the rivers, then change one weight or line break at a time until the window disappears.</li>
+<li>Divide the work with the earlier volume: go to that one for filled covers and labels, and keep counters and rivers for practice with this one.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-decoding-typographic-design-www-afx365-com-1.jpg" alt="Graphic growing from the letter g"><figcaption>An all-lowercase heading is layered with italics, size and colour; the graphic grows a tail and horns from the g in "green". Source: Timothy Samara, <span lang="zh-Hant">《破譯文字編排設計》</span>, p.103</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-decoding-typographic-design-www-afx365-com-2.jpg" alt="Removing windows in justified text"><figcaption>Windows of white space in justified lines must be removed through weight and hierarchy; otherwise that patch stops working as a deliberate "window". Source: same book, p.32</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Make a mark from the counter of a lowercase letter. Which letter did you choose, and what meaning does the extension carry?</li>
+<li>In a justified paragraph, circle one river and write whether you would change the line break or the weight.</li>
+</ol>
+<h3 class="book" id="b-ordering-disorder-grid-principles-for-web-design-english"><span lang="zh-Hant">秩序之美——網頁中的網格設計英文版</span></h3>
+<p><strong>Original title:</strong> <em>Ordering Disorder: Grid Principles for Web Design</em></p>
+<p><strong>Author:</strong> Khoi Vinh</p>
+<p><strong>Scope.</strong> This is the English edition of <em>Ordering Disorder: Grid Principles for Web Design</em>, with chapters on introduction, concepts, process, execution and conclusion. The Chinese edition already covers "solve the problem first, the grid belongs to the experience, the simpler the more effective"; this volume adds the arithmetic of units, and why he puts his talent into creating order. The back of the title page notes that one page is intentionally left blank.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>His story is that the world is messy when there are no constraints, so he defines design as building order for the work.</li>
+<li>The process chapter subdivides the columns further. The book's example is two columns of three units each, which ends up as a sixteen-unit grid.</li>
+<li>Units come before the look of the columns. Columns are made from units; you do not draw four lines first and explain them later.</li>
+<li>A page left intentionally blank is also a structural statement: emptiness is a decision, not a missing page.</li>
+<li>Use the English edition to check the steps in the Chinese edition. When principles conflict, follow the process he wrote down, not the fashion of a particular website screenshot.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Set the smallest unit first, then build columns from units. Write sentences like "two columns of three units each" beside your sketch.</li>
+<li>Check that your number of columns divides evenly into your units. If it does not, change the unit rather than ending up with half-units.</li>
+<li>When reading the Chinese and English editions side by side, compare only the process: constraints, sketches, execution. Do not compare the translation style.</li>
+<li>For a blank page or blank column, write "intentional" in your notes so it is not mistaken for unfinished work.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-ordering-disorder-grid-principles-for-web-design-english-1.jpg" alt="Title page of the English edition"><figcaption>Title page of the English edition; the back notes that this page is intentionally left blank. Source: Khoi Vinh, <em>Ordering Disorder</em>, p.4</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-ordering-disorder-grid-principles-for-web-design-english-2.jpg" alt="Grid subdivided into sixteen units"><figcaption>An existing division is split further into two columns of three units each, giving a sixteen-unit grid. Source: same book, p.73</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Starting from one unit, explain how you reach sixteen units. Which step is "two columns of three units each"?</li>
+<li>Which of the three principles from the Chinese edition does your sixteen-unit sketch follow?</li>
+</ol>
+<h3 class="book" id="b-typographic-systems-2"><span lang="zh-Hant">編排設計教程</span></h3>
+<p><strong>Original title:</strong> <em>Typographic Systems</em></p>
+<p><strong>Author:</strong> Kimberly Elam</p>
+<p><strong>Scope.</strong> This is the Elam volume that sets out all eight systems in full. The details of the axial system and the start and stop points of circles have already been practised in <span lang="zh-Hant">《美國編排設計教程》</span>. What this volume adds is a method of comparison: the same eight lines of text are set in axial, radial, dilatational, random, grid, transitional, modular and bilateral systems. It requires the type weight to stay the same at first; abstract elements and tone come in the second round.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Letterpress and the grid are no longer the only forms of order. The eight systems handle shorter, more dynamic information, especially posters and covers.</li>
+<li>Axial hangs text left and right of one axis; radial spreads out from one focal point; dilatational spreads like concentric circles; bilateral pairs text symmetrically along an axis.</li>
+<li>The modular system builds with a set of standard units; the transitional system uses informal bands of layers; the random system has no obvious rules, so it needs even more control.</li>
+<li>The grid is only one of these eight, not the general name for all of them.</li>
+<li>Only when you compare with the same text can you see the differences. Change the copy, and you cannot tell whether the system or the content made the difference.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Fix eight lines of text and one weight, and make axial, grid and bilateral versions first.</li>
+<li>Only in the second round add circles, lines or blocks of colour, and check whether they strengthen the system or start a new one.</li>
+<li>A random layout must still point to the next line to read; otherwise it is just scattered.</li>
+<li>Do not force radial or dilatational systems onto long texts. Keep those for short information.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-typographic-systems-2-1.jpg" alt="Contrast between horizontal bands and left alignment"><figcaption>Left alignment works against horizontal movement and pulls the eye downwards; a horizontal colour band gathers the text into a row. Source: Kimberly Elam, <span lang="zh-Hant">《編排設計教程》</span>, p.107</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-typographic-systems-2-2.jpg" alt="Student system exercises"><figcaption>An illustration from the book, with names of student work and first drafts beside it. Source: same book, p.142</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Using the same eight lines, make one axial layout and one bilateral layout. How do the reading paths differ?</li>
+<li>Why does this book require one weight at first? If you started with bold, what comparison would you lose?</li>
+</ol>
+<h3 class="book" id="b-design-basics-classroom-1-principles-of-layout"><span lang="zh-Hant">設計入門教室 1 版面設計的原理</span></h3>
+<p><strong>Scope.</strong> This is the first volume of <span lang="zh-Hant">《設計入門教室》</span>, and teaches the same lesson as <span lang="zh-Hant">《版面設計的原理：設計前必須知道的事情》</span>: organising, proximity, alignment and eye movement. That volume stresses how readers enter the story; the images in this one go further, into visualisation: striped patterns, and lowering the brightness of the background so that a photo stands out through contrast.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The three steps of design are organising the information, visualising the key points, then arranging. Visualising includes enlarging the key part of a date, or replacing a paragraph of address with a map.</li>
+<li>Gestalt: people see relationships first. Put similar things close together and unrelated things apart, and a business card becomes readable.</li>
+<li>Make important things large and unimportant things small. When everything around is noisy, even the loudest voice cannot be heard.</li>
+<li>For repetitions such as stripes, coloured lines are easier to pair with other styles than complex patterns. Repetition itself can be the content.</li>
+<li>A photo placed straight onto a busy background has no emphasis if the contrast is too low. Lower the background's brightness and the same photo stands out.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Hand in exercises in three steps: a list of elements, the one act of visualisation, and the final arrangement. Without the second step, it is not finished.</li>
+<li>When using stripes as a background, limit yourself to two colours and one line spacing so the pattern does not overpower the heading.</li>
+<li>When a photo does not stand out, adjust the background brightness first rather than adding an outline.</li>
+<li>Divide the work with the previous volume: if you have already done proximity and alignment, use this one only for "contrast" and "repeated patterns".</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-design-basics-classroom-1-principles-of-layout-1.jpg" alt="Simple coloured stripes"><figcaption>Stripes made from coloured lines are simple and easy to pair with different styles. Source: <span lang="zh-Hant">《設計入門教室 1》</span>, p.133</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-design-basics-classroom-1-principles-of-layout-2.jpg" alt="Lowering the background to make a photo stand out"><figcaption>Only after the background brightness is lowered is the same photo emphasised through contrast. Source: same book, p.104</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Turn a paragraph of address into a map. Which words did you delete so that it counts as visualisation rather than just adding a picture?</li>
+<li>A photo on a patterned background is hard to see. Would you change the background, add an outline or add text first? Answer in this book's order.</li>
+</ol>
+<h3 class="book" id="b-before-after-page-design"><span lang="zh-Hant">超越平凡的平面設計 版式設計原理與應用</span></h3>
+<p><strong>Original title:</strong> <em>Before &amp; After: How to Design Cool Stuff</em></p>
+<p><strong>Author:</strong> John McWade</p>
+<p><strong>Scope.</strong> This is McWade's book of principles, separate from his project book <span lang="zh-Hant">《怎樣做好版式》</span>. The sequence here is: take a visual inventory, find the focal point, objects and space, get as close as possible, the natural grid, take colours from the image, then choose a typeface that matches the image's texture. What it adds is a repeatable way to start; for complete designs of brochures and letterheads, still read the other book.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The rules can be short: find the focal point, keep related things close, and respect the alignments already present on the page.</li>
+<li>Pick colours from the image with the eyedropper and arrange them by hue and value. These colours automatically match the image, because they were in it to begin with.</li>
+<li>Cool colours feel distant and rational; warm colours feel soft. Put the same image on different colours and what recedes into the background and what comes forward can swap.</li>
+<li>Type should match the texture of the image. When leaves are fine and dense, the rhythm of a serif face is closer than a plain sans serif. Glypha is given as an example of clear strokes and repeated shapes.</li>
+<li>The title page after the cover should be simpler and more secondary. Consistency comes from restraint, not from making the cover again.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Start with a visual inventory: one focal point, one group of elements that must stay close, and two lines that already exist on the page.</li>
+<li>Take six colours from the main image, split them into a cool row and a warm row, and allow the heading only one of them.</li>
+<li>When choosing type, shrink the typeface into a small grey block and set it beside the texture of the photo. If they do not match, change the typeface; do not fix it with an outline.</li>
+<li>Make four simpler versions of the title page, and choose the one with one element fewer than the cover.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/layout-grid/books/b-before-after-page-design-1.jpg" alt="Portrait on a cool background"><figcaption>Cool colours suit direct, serious messages; the darker the background, the more the face seems to float off the page. Source: John McWade, <span lang="zh-Hant">《超越平凡的平面設計：版式設計原理與應用》</span>, p.36</figcaption></figure>
+<figure><img src="assets/layout-grid/books/b-before-after-page-design-2.jpg" alt="Title page simpler than the cover"><figcaption>The title page should be simpler and more secondary than the cover, so that consistency holds. Source: same book, p.92</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Take three colours from a photo and arrange them from dark to light. Which one would you use for the heading so it does not compete with the subject?</li>
+<li>The cover already has a logo, a photo and one sentence. Which one would you remove for the title page?</li>
+</ol>
+<!-- BOOKS:END -->
+      </div>
+
+      <nav class="pager" aria-label="Categories"><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span>Previous guide</span><strong>03 Typography &amp; Lettering</strong><i aria-hidden="true">&rarr;</i></a><a class="next" href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span>Next guide</span><strong>05 Logo &amp; Branding</strong><i aria-hidden="true">&rarr;</i></a></nav>
+    </main>
+    <aside class="rail" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a>
+    </aside>
+  </div>
+  <script src="js/guide.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scene.js"></script>
+  <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, theme: "dark", themeVariables: { background: "#101b34", primaryColor: "#1b2b4d", primaryTextColor: "#e6eef8", primaryBorderColor: "#4e6586", lineColor: "#8ea0b8", fontFamily: "Source Sans 3, sans-serif" } });
+  </script>
+</body>
+</html>

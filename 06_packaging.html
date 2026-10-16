@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1428">
+  <title>Packaging · Design Fundamentals</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/guide.css">
+</head>
+<body class="page-guide">
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="loader" id="loader" data-label="06 Packaging" aria-hidden="true">
+    <p class="loader-label">SSHD2382 / Design Fundamentals</p>
+    <div class="loader-box">
+      <span class="plus tl"></span><span class="plus tr"></span><span class="plus bl"></span><span class="plus br"></span>
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg>
+    </div>
+    <p class="loader-count" data-count-slots></p>
+    <p class="loader-page"></p>
+  </div>
+  <header class="site-head">
+    <a class="logo" href="index.html" aria-label="Design Fundamentals, home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><rect x="22.5" y="3.5" width="14" height="14"/><path d="M3.5 36.5 11 22.5l7.5 14z"/><path d="M22.5 36.5l14-14"/></svg><span>Fundamentals<sup>&reg;</sup></span></a>
+    <nav class="head-nav" aria-label="Site">
+      <a class="pill pill-solid" href="index.html#browse" data-magnetic><span data-text="Browse">Browse</span></a>
+      <button class="pill pill-line" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-magnetic><span data-text="Menu">Menu</span><i class="burger" aria-hidden="true"></i></button>
+    </nav>
+  </header>
+  <div class="menu-panel" id="menu" inert>
+    <div class="menu-inner">
+      <p class="menu-label">(Guides)</p>
+      <ol class="menu-list"><li><a href="01_design-basics.html" data-label="01 Design Basics &amp; Composition"><span class="menu-num">01</span><span class="menu-name">Design Basics &amp; Composition</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="02_colour.html" data-label="02 Colour"><span class="menu-num">02</span><span class="menu-name">Colour</span><span class="menu-week">Week 8</span></a></li><li><a href="03_typography.html" data-label="03 Typography &amp; Lettering"><span class="menu-num">03</span><span class="menu-name">Typography &amp; Lettering</span><span class="menu-week">Week 9</span></a></li><li><a href="04_layout-grid.html" data-label="04 Layout &amp; Grid Systems"><span class="menu-num">04</span><span class="menu-name">Layout &amp; Grid Systems</span><span class="menu-week">Week 3, 4, 5</span></a></li><li><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span class="menu-num">05</span><span class="menu-name">Logo &amp; Branding</span><span class="menu-week">Week 10, 11</span></a></li><li><a href="06_packaging.html" data-label="06 Packaging"><span class="menu-num">06</span><span class="menu-name">Packaging</span><span class="menu-week">Week 11</span></a></li><li><a href="07_book-print.html" data-label="07 Book Design &amp; Print"><span class="menu-num">07</span><span class="menu-name">Book Design &amp; Print</span><span class="menu-week">Week 5, 9</span></a></li><li><a href="08_infographics.html" data-label="08 Information Graphics"><span class="menu-num">08</span><span class="menu-name">Information Graphics</span><span class="menu-week">Week 4</span></a></li><li><a href="09_interaction-ux.html" data-label="09 Interaction, Web &amp; UX"><span class="menu-num">09</span><span class="menu-name">Interaction, Web &amp; UX</span><span class="menu-week">Week 11 (and 4)</span></a></li><li><a href="10_graphic-practice.html" data-label="10 Graphic Design Practice"><span class="menu-num">10</span><span class="menu-name">Graphic Design Practice</span><span class="menu-week">Week 1, 11</span></a></li><li><a href="11_interior.html" data-label="11 Interior Design"><span class="menu-num">11</span><span class="menu-name">Interior Design</span><span class="menu-week">Further reading</span></a></li><li><a href="12_architecture-space.html" data-label="12 Architecture &amp; Space"><span class="menu-num">12</span><span class="menu-name">Architecture &amp; Space</span><span class="menu-week">Week 2, 6–7</span></a></li><li><a href="13_product.html" data-label="13 Product Design"><span class="menu-num">13</span><span class="menu-name">Product Design</span><span class="menu-week">Week 11 (and 6–7)</span></a></li><li><a href="14_design-art-history.html" data-label="14 Design &amp; Art History"><span class="menu-num">14</span><span class="menu-name">Design &amp; Art History</span><span class="menu-week">Week 1</span></a></li><li><a href="15_theory-psychology.html" data-label="15 Design Theory &amp; Psychology"><span class="menu-num">15</span><span class="menu-name">Design Theory &amp; Psychology</span><span class="menu-week">Week 4, 6–7, 10</span></a></li><li><a href="16_pattern-ornament.html" data-label="16 Pattern &amp; Ornament"><span class="menu-num">16</span><span class="menu-name">Pattern &amp; Ornament</span><span class="menu-week">Week 8 (and 6–7)</span></a></li><li><a href="18_magazines-annuals.html" data-label="18 Magazines &amp; Annuals"><span class="menu-num">18</span><span class="menu-name">Magazines &amp; Annuals</span><span class="menu-week">Week 1–13</span></a></li><li><a href="20_advertising.html" data-label="20 Advertising"><span class="menu-num">20</span><span class="menu-name">Advertising</span><span class="menu-week">Week 10, 11</span></a></li></ol>
+      <div class="menu-foot"><span>SSHD2382 Design Fundamentals</span><span>Eighteen guides, thirteen weeks</span><a href="index.html">Home</a></div>
+    </div>
+  </div>
+  <canvas class="scene" id="scene" data-scene="page" data-cat="06" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <p class="side-brand">SSHD2382 / Guides</p>
+      <label class="visually-hidden" for="q">Search categories</label>
+      <input class="search" id="q" type="search" placeholder="Name, term, or category" autocomplete="off">
+      <p class="empty" id="empty" hidden>No category matches.</p>
+      <nav aria-label="Categories"><div class="side-group"><p class="side-label">Categories</p><a href="01_design-basics.html" data-search="01 design basics design basics &amp; composition point, line, plane, composition, and the four design principles week 2, 6–7 1. scope 2. core concepts 3. proportion &amp; geometry 4. principles &amp; methods 5. selected figures 6. source bookshelf 7. study cues 7. each book 藝術·設計的平面構成 藝術·設計的立體構成 藝術·設計的紙的構成 藝術·設計的光的構成 平面設計原理 通用設計法則 美國視覺設計學院叢書：設計元素（平面設計樣式） 寫給大家看的設計書：實例與創意 黃金比例 設計的教室 設計的方法 談繪畫構圖 1000多個圖形元素：獨特的設計元素 設計中的點線面 平面設計法則 設計幾何學：關於比例與構成的研究 藝術·設計的平面構成（繁體版） 探索幾何：平面視覺構建 好造型的設計元素 和諧之美：探索設計中的黃金比例 分寸設計：發現黃金比例恆久之美 設計元素：平面設計樣式（英文原書） 寫給大家看的設計書（第3版） 設計元素：平面設計樣式 國際平面設計基礎教程：規格設計（format） 國際平面設計基礎教程：圖形設計（image） 國際平面設計基礎教程：設計思維（thinking） 寫給大家看的設計書（第4版） 平面設計的七大要素 綜合造型設計基礎 美國視覺設計學院用書：設計元素（平面設計樣式） 視覺原理 設計力：寫給大家的平面設計法則 通用設計法則（英文版） the elements of graphic design: space, unity, page architecture, and type universal principles of design design elements: a graphic style manual robin williams design workshop geometry of design: studies in proportion and composition the design method: a philosophy and process for functional visual communication 1000 graphic elements: special details for distinctive designs the essential principles of graphic design geometry of design: studies in proportion and composition design elements: understanding the rules and knowing when to break them geometry of design: studies in proportion and composition , 2nd edition (revised and updated) design elements: a graphic style manual the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual basics design 01: format basics design 04: image basics design 08: design thinking the non-designer&#x27;s design book: design and typographic principles for the visual novice , 4th edition the 7 essentials of graphic design design elements: a graphic style manual principles of visual perception universal principles of design"><span class="side-num">01</span> Design Basics &amp; Composition</a><a href="02_colour.html" data-search="02 colour colour hue, value, chroma, colour systems, palettes, and colour psychology week 8 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術·設計的色彩構成 寫給大家看的色彩書1：設計配色基礎 寫給大家看的色彩書2：色彩怎麼選，設計怎麼做 梁景紅談：色彩設計法則 配色設計原理 七日掌握設計配色基礎 配色設計從入門到精通 平面設計配色全攻略 美國色彩基礎教材 色彩應用：平面設計配色經典創意 黑白灰設計：摒棄有彩色的設計法則 美國視覺設計學院用書：平面設計中的繪畫、構成、色彩與空間樣式 觀念之色：中國傳統色彩研究 色彩搭配的黃金法則 新手配色寶典：2000個配色案例不怕你不會 像藝術家一樣思考之三：貝蒂的色彩 國際平面設計基礎教程：colour色彩設計 平面設計綜合配色手冊 色彩怎麼選，設計怎麼做 色彩感知學 色彩構成 色彩設計：日本平面設計師參考手冊 色彩設計的100個亮點 色彩設計的原理 設計入門教室3：色彩設計的原理 設計密碼：綜合配色完全攻略 color basics color design workbook: a real-world guide to using color in graphic design drawing for graphic design: understanding conceptual principles and practical techniques to create unique, effective design solutions color: a course in mastering the art of mixing colors basics design 05: colour 100 bright ideas for colour"><span class="side-num">02</span> Colour</a><a href="03_typography.html" data-search="03 typography typography &amp; lettering letter structure, classification, typesetting, and mixed chinese and latin type week 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book typography 字誌：issue 01 typography 字誌：issue 05_pdf 自由字在：字體設計與創意 中國字體設計人：一字一生 西文字體1：字體的背景知識和使用方法 西文字體2：經典款字體及其表現方法 文字設計的原理_文字設計所必須的信息和技巧 新概念字體基礎&amp;應用_蘇克 説文解字 字言字語 字體傳奇 影響世界的helvetica 治字百方 字型散步 街道文字_小林章 西文排版_排版的基礎和規範 漢字書法之美_蔣勳 文字的故事 意匠文字 設計師的字體世界 文字的力與美 漢字的誘惑 中國美術字史圖説 漢字設計與應用 十二生肖形意字 書法字體設計技巧與應用 平面排版_基本的基本 tokoy tdc vol.28⭐ 排版的風格 字體設計的規則與藝術 tokoy tdc vol.29⭐ 字體呈現3⭐ 字體設計基礎 【會員專供】中國近現代字體應用文獻展 【會員專供】文字設計在中國邀請展 【會員專供】超語境國際文字設計論壇 世界文字發展史_11407704 今日字體 創意字體設計與製作-www.afx365.com 國際平面設計基礎教程-typography字體設計 字型之不思議 字型之不思議 小冊-手寫 字體呈現-q 字體呈現二（完整） 字體呈現小冊一 字體呈現小冊二 字體怡人 字體設計100+1 字體，海報設計部分 展覽，印刷字體部分（雙頁） 序言 排版造型_白井敬尚 文字設計的原理 書於竹帛中國古代的文字記錄_12270059 歐文字體ⅰ 歐文字體ⅱ 自由“字”在 字體設計與創意13696100(1) 設計入門教室 2 文字設計的原理 designing type basics design 03: typography written on bamboo and silk: the beginnings of chinese books and inscriptions"><span class="side-num">03</span> Typography &amp; Lettering</a><a href="04_layout-grid.html" data-search="04 layout grid layout &amp; grid systems grids, hierarchy, and arranging image with text week 3, 4, 5 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 日本版式設計原理_p159 跨平台的視覺設計版式設計原理 破譯文字編排設計 破譯網格設計 美國視覺設計學院用書：圖形、色彩、文字、編排、網絡設計參考書 版式設計：日本平面設計師參考手冊 超越平凡的平面設計：怎樣做好版式 版式設計+給你靈感的全球最佳版式創意方案 柵格系統與版式設計 國際版式設計基礎教程 七日掌握版面設計基礎 美國編排設計教程 平面設計中的網格系統 版式設計風暴ⅱ 網格系統與版式設計 創意版式設計_王紹強 版面設計的原理_設計前必須知道的事情 版式設計全攻略(佐) 進階理解版式設計 版式設計：合適最好 版式設計從入門到精通 版面設計網格構成 版式設計原理_案例篇：提升版式設計的55個技巧 秩序之美_網頁中的網格設計 日本版式設計原理 版式設計法則 版式創意大爆炸 版式設計+2版式創意方案 版式設計風暴 [商業版式設計的方法] 版式編排設計 版式設計 今日版式 印刷的終結：戴維·卡森的自由版式設計 國際平面設計基礎教程-grids網格設計 國際平面設計基礎教程-layout版式設計(第2版) 版式設計-www.afx365.com 版式設計原理 版式設計原理-全綵教程 版式設計實用手冊-www.afx365.com 版式設計實用手冊.suni視覺設計.全綵版 版式設計從入門到精通-www.afx365.com 版面設計黃金法則 破譯文字編排設計-www.afx365.com 秩序之美——網頁中的網格設計英文版 編排設計教程 設計入門教室 1 版面設計的原理 超越平凡的平面設計 版式設計原理與應用 typography workbook: a real-world guide to using type in graphic design making and breaking the grid: a graphic design layout workshop graphic designer&#x27;s essential reference: visual elements, techniques, and layout strategies for busy designers before &amp; after page design grid systems: principles of organizing type best practices for graphic designers, grids and page layouts: an essential guide for understanding and applying page design principles typographic systems grid systems: principles of organizing type layout: making it fit: finding the right balance between content and space ordering disorder: grid principles for web design the end of print: the graphic design of david carson basics design 07: grids basics design 02: layout , 2nd edition typography workbook: a real-world guide to using type in graphic design ordering disorder: grid principles for web design typographic systems before &amp; after: how to design cool stuff"><span class="side-num">04</span> Layout &amp; Grid Systems</a><a href="05_logo-branding.html" data-search="05 logo branding logo &amp; branding mark types, identity systems, and brand strategy week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book logo 百年 設計品牌（原田進） 用設計做品牌 品牌設計+：給你靈感的 best 品牌形象方案 品牌設計+：創造 top 品牌的色彩應用方案 品牌設計+：創造 brand 力的動態 logo 設計（1） 標誌設計 logo design 標誌新語 iii really good logos explained designing brand identity 超越 logo 設計 brand 創新與設計：創意、建構和維護精彩品牌標識之完全指南 標誌設計指南 logo design workbook 品牌標誌：top 設計 150 例 消費森林 × 品牌再生：李永銓的設計七大法則 品牌中的色彩 圖案無限：品牌中的圖案 品牌簡單之道 what brand 什麼是品牌設計 品牌 100 一個 logo 的誕生 視覺美食：最佳餐飲品牌設計 溝通時尚品牌 100 個經典 logo 品牌設計之美：冷色調的色彩詮釋 logo：29 個經典的前世今生 logo 百年 品牌至上：logo 設計法則與案例應用解析 品牌識別法則：100 條原理 no logo：顛覆品牌全球統治 脫穎而出的品牌致勝秘密 精簡：無印良品與品牌理念打造 電商品牌形象設計 品牌標誌：頂級設計 150 例 設計品牌 世界標誌大典 1 品牌設計法則（徐適） 日本彩色商標與企業識別 10 解構 logo 設計：300 例國際 logo 分析與解讀 超越 logo 設計：國際頂級平面設計師的成功法則 超越 logo 設計：國際頂級平面設計師的成功法則 logo design love: a guide to creating iconic brand identities designing brand identity: a complete guide to creating, building, and maintaining strong brands logo design workbook: a hands-on guide to creating logos creative solutions: logos: making a strong mark: 150 strategies for logos that last brandsimple: how the best brands keep it simple and succeed what is branding? logo life: life histories of 100 famous logos tm: the untold stories behind 29 classic logos brand identity essentials: 100 principles for designing logos and building brands no logo: taking aim at the brand bullies designing brand identity: an essential guide for the whole branding team creative solutions: logos: making a strong mark: 150 strategies for logos that last deconstructing logo design: 300+ international logos analyzed and explained logo design love: a guide to creating iconic brand identities logo design love: a guide to creating iconic brand identities"><span class="side-num">05</span> Logo &amp; Branding</a><a href="06_packaging.html" data-search="06 packaging packaging structure, the shelf, materials, and brand week 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 創造品牌的包裝設計 現代設計色彩教材叢書：包裝設計色彩 包裝設計藝術：王紹強 紙品包裝結構解析 新包裝 環保包裝設計 50 trade secrets of great design packaging 1000 package designs：a comprehensive guide 拿來就用的包裝設計 食品包裝設計 包裝設計+：給你靈感的包裝方案 包裝設計家：靳埭強與他的設計師朋友 簡約包裝 simply packaging 中式元素視覺傳達：包裝設計 packaging the brand: the relationship between packaging design and brand identity simply packaging" aria-current="page"><span class="side-num">06</span> Packaging</a><a href="07_book-print.html" data-search="07 book print book design &amp; print book structure, paper, binding, and print week 5, 9 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2015 中國最美的書 書籍設計-安德魯 書形：138種創意書籍和印刷紙品設計 如何設計一本畫冊 平面印刷色彩：四色與專色 國際平面設計基礎教程：print&amp;finish印前印後 世界書籍藝術流派 中外裝幀藝術論集 中國古籍版本概要 出版物設計完全手冊 印刷工藝：燙印與凹凸 印前校色實用教程 印前輸出培訓參考：全綵教程-200p 嶄新印通拼版教程 平版印刷拼版手冊 平面設計及印刷業務人員常識備忘手冊 書籍設計 書藝問道 現代圖書設計 範式革命：中國現代書籍設計的發端 1862-1937 電腦印前技術完全手冊（第2版） book design basics design 06: print and finish publication design workbook: a real-world guide to designing magazines, newspapers, and newsletters book design new book design"><span class="side-num">07</span> Book Design &amp; Print</a><a href="08_infographics.html" data-search="08 infographics information graphics visualising information and explaining with diagrams week 4 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 圖解力 以圖釋義：信息圖表設計 信息圖表設計入門 信息圖表設計：全球創意入門"><span class="side-num">08</span> Information Graphics</a><a href="09_interaction-ux.html" data-search="09 interaction ux interaction, web &amp; ux goal-directed design, usability, and interface principles week 11 (and 4) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book about face 3：交互設計精髓 about face 4：交互設計精髓（中文彩版） android 交互視覺設計規範 贏在用戶：web 人物角色創建和應用實踐指南 don&#x27;t make me think（英文第 2 版） ui 羣英匯：用戶體驗、交互與視覺設計方法論 web 界面設計 形式感：網頁視覺設計創意拓展與快速表現 關鍵設計報告：改變過去影響未來的交互設計法則 點石成金：訪客至上的網頁秘籍 認知與設計：理解 ui 設計準則 簡約至上：交互設計四策略 見微知著：web 用戶體驗解構 與世界 ui 設計師同行 ux 設計之道：以用戶體驗為中心的 web 設計（第 2 版） ui 設計黃金法則：觸動人心的 100 種用戶界面 sexy web design：creating interfaces that work 用戶體驗的要素：以用戶為中心的 web 設計 網頁設計（web designer emag） 點石成金：訪客至上的網頁設計秘笈 ios 9 界面設計規範剖析及實戰 不要讓我思考（don&#x27;t make me think） 贏在用戶：web 人物角色創建和應用實踐指南 軟件觀念革命：交互設計精髓 一目瞭然：web 軟件顯性設計之路 就這麼簡單：web 開發中的可用性和用戶體驗 微交互：細節設計成就卓越產品 怦然心動：情感化交互設計指南 用戶體驗度量 用戶體驗要素：以用戶為中心的產品設計（原書第 2 版） 眾妙之門：網站 ui 設計之道 瞬間之美：web 界面設計如何讓用戶心動 破繭成蝶：用戶體驗設計師的成長之路 簡約至上：交互設計四策略 網頁設計創意書 認知與設計：理解 ui 設計準則 認知與設計：理解 ui 設計準則（第 2 版） 贏在用戶：web 人物角色創建和應用實踐指南 體驗·度：簡單可依賴的用戶體驗（彩版） about face 3: the essentials of interaction design , 3rd edition about face: the essentials of interaction design , 4th edition the user is always right: a practical guide to creating and using personas for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing web interfaces: principles and patterns for rich interactions designing interactions don&#x27;t make me think: a common sense approach to web usability , 2nd edition designing with the mind in mind: simple guide to understanding user interface design rules simple and usable web, mobile, and interaction design a project guide to ux design: for user experience designers in the field or in the making , 2nd edition digital design essentials: 100 ways to design better desktop, web, and mobile interfaces the elements of user experience: user-centered design for the web don&#x27;t make me think: a common sense approach to web usability , 2nd edition don&#x27;t make me think: a common sense approach to web usability , 2nd edition the user is always right: a practical guide to creating and using personas for the web about face 2.0: the essentials of interaction design designing the obvious: a common sense approach to web application design microinteractions: designing with details seductive interaction design: creating playful, fun, and effective user experiences measuring the user experience: collecting, analyzing, and presenting usability metrics the elements of user experience: user-centered design for the web and beyond , 2nd edition the smashing book designing the moment: web interface design concepts in action simple and usable web, mobile, and interaction design the web designer&#x27;s idea book: the ultimate guide to themes, trends and styles in website design designing with the mind in mind: simple guide to understanding user interface design rules designing with the mind in mind: simple guide to understanding user interface design guidelines , 2nd edition the user is always right: a practical guide to creating and using personas for the web"><span class="side-num">09</span> Interaction, Web &amp; UX</a><a href="10_graphic-practice.html" data-search="10 graphic practice graphic design practice process, design thinking, creative methods, and practice week 1, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 100 個改變平面設計的觀念 嘿，設計 圖解平面設計規範 40 天成為資深設計師 ideo：設計改變一切 創意之道（the copy book） 非常規標誌設計：6 個不必遵守的基礎原則 最佳設計 100 細則 少即是多：減法設計 視覺傳達設計實踐 1000 retail graphics 高效設計溝通之道（原書第 2 版） 完成設計：從理論到實踐 美國視覺傳達完全教程 零 zerro：世界符號大全 平面與空間 創意工場：提升設計技巧的 80 個挑戰 日本的手感設計 設計的品格 設計並不重要 我的第一本設計書 平面設計過程 小平面 北歐設計 王志弘作品收集 做喜歡的事：25 個亞太創意設計工作室 做喜歡的事：25 個歐美創意設計工作室 設計修辭法 設計與死 設計的覺醒 平面設計死了嗎 放眼德國設計 放眼法國設計 漫遊英國設計 漫步日本設計 荷蘭設計 設計的手感 歲寒三友：詩意設計作品集 廣州美術學院碩士研究生作品集 靳埭強與格呂特納的海報對話 靳埭強設計獎 陳幼堅最新作品 平面設計八人 設計集 設計心法 100+1 靳叔說：設計語錄 設計的圖謀：改變世界的80個日常創意陰謀 遺產與更新：中國設計教育反思 設計師演講錄：icograda 世界設計大會 設計創意流程：用mba思維成就設計高效能 全球優秀93位平面設計師作品集 遊遊遊：說說我的設計私想 對話日本設計 設計師不讀書 設計質 大話設計師 從製造到設計：20世紀德國設計 意東方：設計中的東方元素（一） 49個成就平面設計的關鍵詞 企業形象設計家：靳埭強與他的設計師朋友 海報設計家：靳埭強與他的設計師朋友 生活·心源：靳埭強設計與藝術 靳埭強·身度心道：中國文化為本的設計·繪畫·教育 ideo 設計現象探究：patterns 2010 設計效果圖 設計百年：20世紀平面設計的先驅 設計解決 像設計師那樣思考 圖形設計新元素 如何把國外作品轉化為自己的能力（第二部） 平面設計：我的第2語言 為什麼設計 理性設計 至關重要的設計 解決100個煩惱的100種設計 設計推導學 中國古代設計思想史略 什麼是平面設計？ 創意工場：提升設計技巧的80個挑戰 動畫分鏡台本設計 吳東龍的東京設計生活100 寫給大家看的設計書（第三版） 好設計的造型元素 完成設計：從理論到實踐 宣傳冊設計與製作 平面設計200年 新興實踐：設計的專業、價值與途徑 日本當代插圖集 最全設計規範 服務的細節：完全商品陳列115例 為真實世界的設計 生命的幻象：迪士尼動畫造型設計 異想天開：設計初始 知日・設計力 移動設計 符號與數字：平面中的視覺表達 第三種創新：設計驅動式創新 編輯設計 至關重要的設計 至關重要的設計（布倫納） 蘋果首席設計師：喬納森傳 視覺傳達設計 視覺傳達設計考研手繪 視覺營銷：零售店櫥窗與店內陳列 託尼克：設計為何 設計＋生活：佐藤 設計＋生活：奎內克 設計＋生活：姚爾丹 設計＋生活：孔喬 設計＋生活：府烈茶 設計＋生活：王翰尼 設計＋生活：白同異 設計＋生活：蒙古齊 設計＋生活：雷又西 設計中的錯視 設計五感：亂 設計五感：惡 設計五感：拙 設計五感：精 設計入門教室：設計的基本規則 設計力就是溝通力 設計，在人人設計的時代 設計密碼 設計師不可不知的 100 種世界經典平面設計圖書 設計思維手冊：斯坦福創新方法論 設計思維與方法 設計方法與策略：代爾夫特設計指南 設計的意義 設計的細節：日本經典設計透析 設計與革新：關於未來設計的 50 種思考 設計風尚 5：創意節日宣傳頁設計與製作 設計高手的秘密 設計，在人人設計的時代：社會創新設計導論 這樣擺，最好賣：賣場中的商品陳列技巧 造像量度：佛像唐卡設計比例圖 關於設計的思考 非平面 靳埭強設計獎：平面設計作品集 騰訊網 ued 體驗設計之旅 100 ideas that changed graphic design change by design: how design thinking transforms organizations and inspires innovation the copy book: how 32 of the world&#x27;s best advertising writers write their advertising no rules! logos: radical design solutions that break the rules universal principles of design communicating design: developing web site documentation for design and planning , 2nd edition design evolution: theory into practice graphic communications today creative workshop: 80 challenges to sharpen your design skills graphic design process: from problem to solution: 20 case studies design and the creative process atlas of graphic designers designers don&#x27;t read the graphic design idea book: inspiration from 50 masters a century of graphic design: graphic design pioneers of the 20th century how to think like a great graphic designer graphic design: the new basics graphic design as a second language do you matter? how great design will make people love your company what is graphic design? creative workshop: 80 challenges to sharpen your design skills the non-designer&#x27;s design book: design and typographic principles for the visual novice , 3rd edition design elements: a graphic style manual design evolution: theory into practice graphic style: from victorian to hipster design for the real world: human ecology and social change the illusion of life: disney animation design-driven innovation: changing the rules of competition by radically innovating what things mean editing by design: for designers, art directors, and editors: the classic guide to winning readers do you matter? how great design will make people love your company do you matter? how great design will make people love your company jony ive: the genius behind apple&#x27;s greatest products graphic design solutions visual merchandising: windows and in-store displays for retail why we design design, when everybody designs: an introduction to design for social innovation bibliographic: 100 classic graphic design books delft design guide: design strategies and methods design, form, and chaos design, when everybody designs: an introduction to design for social innovation thoughts on design unflattening"><span class="side-num">10</span> Graphic Design Practice</a><a href="11_interior.html" data-search="11 interior interior design drawings, scale, light, materials, construction, and furnishing further reading 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 零基礎學建築識圖 室內裝飾裝修施工完全圖解教程 室內設計節點手冊：常用節點 室內設計節點手冊：酒店固定傢俱 材料收口 裝飾工藝解析：吊頂篇 裝飾工藝解析：地面篇 裝飾工藝解析：牆面篇 室內設計師必知的100個節點 室內裝飾裝修材料應用與選購 室內設計材料選用實戰手冊 石材應用手冊 設計師的材料清單·室內篇 圖解照明設計 室內照明設計精品教程 室內燈光設計 室內設計師專用燈光設計手冊 室內設計師燈光設計細部解析 照明設計終極聖經 家居色彩設計指南 設計師談家居色彩搭配 設計配色基礎 輕·重·緩·急：搭出耐看配色 人體工程學與室內設計 住宅的設計尺寸剖析書 圖解住宅尺寸與格局設計 室內施工圖實戰教程 室內施工圖製圖標準 室內空間佈局與尺度設計 室內細部設計cad圖集 室內設計尺寸關鍵術 室內設計數據手冊：空間與尺度 室內設計與人體工程學 家裝常用數據尺寸速查 工裝設計尺度數據手冊 人機工程學（第五版） 年輕設計師必修的七堂課 網紅室內設計師ip運營法則 裝修設計師談單簽單一課通 軟裝談單寶典 住宅格局破解術 住宅格局解剖圖鑑 住宅設計剖析手冊 住宅設計解剖書 住得優雅：住宅設計的34個法則 圖解極簡主義設計 室內住宅設計圖解 室內空間設計手冊 室內設計·思維與方法 室內設計基礎 小家越住越大2 打造讓孩子自主學習的住宅 樓梯設計的9個法則 淺談家庭中央空調的使用 牆面設計 裝修設計解剖書 解構收納 設計中的設計 設計師要懂的心理學 室內精細化設計研究 傢俱設計資料圖集 室內設計風格圖文速查 軟裝改造解剖書 軟裝設計元素搭配手冊 軟裝設計師手冊 軟裝風格速查 the lighting bible the interior plan: concepts and exercises 100 things every designer needs to know about people"><span class="side-num">11</span> Interior Design</a><a href="12_architecture-space.html" data-search="12 architecture space architecture &amp; space form, space, order, and proportion week 2, 6–7 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 建築：形式、空間和秩序（第 3 版） 反造型 architecture: form, space, and order , 3rd edition"><span class="side-num">12</span> Architecture &amp; Space</a><a href="13_product.html" data-search="13 product product design minimalism, ten principles of good design, and muji week 11 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 簡約不簡單：極簡風格產品設計 產品極簡主義 無印良品的設計 解密無印良品 20 世紀 50–80 年代中國、德國產品設計回望 無印良品世界觀 創新產品設計與手繪 深澤直人 意識的核心 product design now naoto fukasawa"><span class="side-num">13</span> Product Design</a><a href="14_design-art-history.html" data-search="14 design art history design &amp; art history from manuscripts and arts and crafts through the bauhaus to the digital era week 1 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 藝術簡史 世界平面設計史 醜的歷史 美的歷史 世界當代藝術史 世界現代設計史 中國現代設計與包豪斯 包豪斯道路：歷史、遺澤、世界與中國 包豪斯 運動中的視覺：新包豪斯的基礎 包豪斯：大師和學生們 包豪斯藏品精選集 包豪斯理想：過去與現在 世界現代設計史 中國 外國 工業設計史（第四版） 現代設計百科全書：平面設計的歷史、語言及經典應用 藝術的真相：通往藝術之路 藝術與物理學：時空和光的藝術觀與物理觀 設計藝術史 重要的不是藝術 錢君匋的藝術世界 art: a brief history , 4th edition vision in motion the bauhaus: masters &amp; students by themselves the bauhaus ideal then &amp; now: an illustrated guide to modernist design graphic design, referenced: a visual guide to the language, applications, and history of graphic design gateways to art: understanding the visual arts art &amp; physics: parallel visions in space, time, and light"><span class="side-num">14</span> Design &amp; Art History</a><a href="15_theory-psychology.html" data-search="15 theory psychology design theory &amp; psychology gestalt, cognition, emotional design, and kenya hara week 4, 6–7, 10 1. scope 2. perception 3. cognition &amp; behaviour 4. aesthetics &amp; philosophy 5. principles &amp; methods 6. selected figures 7. source bookshelf 8. study cues 7. each book 審醜：萬物美學 原研哉的設計世界 視覺藝術原理（第八版） 設計心理學 1：日常的設計 設計心理學 2：與複雜共處 設計心理學 3：情感化設計 設計心理學 4：未來設計 日本的八個審美意識 點線面 日式設計美學 康定斯基論點線面 藝術與視知覺 藝術中的精神 圖像與眼睛：圖畫再現心理學的再研究 象徵的圖像：貢布里希圖像文集 設計私語錄：通心粉的孔洞之謎 悲劇的誕生：尼采美學文選 設計中的色彩心理學 設計之美 藝術與視知覺：新編 設計中的設計 設計師要懂心理學（迷你書） 設計心理學 設計心理學（唐納德·a·諾曼） 情感化設計 感性美學 我眼中的設計之美 日式平面美學 淺談設計之美 為什麼設計 重構美學 白 社會心理學（第八版） 藝術與錯覺：圖畫再現的心理學研究 視覺思維 視覺思維（阿恩海姆） 視覺藝術的含義 設計中的設計 設計中的設計（全本） 設計中的設計（原研哉） 設計師要懂心理學 設計心理學（247 頁本） 設計心理學（中文版） 設計美學（廣州美術學院藝術設計教程） 設計與視知覺 象徵的圖像：貢布里希圖像學文集 ugly: the aesthetics of everything prebles&#x27; artforms: an introduction to the visual arts , 8th edition the design of everyday things , revised and expanded edition living with complexity emotional design: why we love (or hate) everyday things the design of future things art and visual perception: a psychology of the creative eye , the new version the image and the eye: further studies in the psychology of pictorial representation symbolic images: studies in the art of the renaissance beautiful thing: an introduction to design art and visual perception: a psychology of the creative eye , the new version 100 things every designer needs to know about people the design of everyday things the design of everyday things emotional design: why we love (or hate) everyday things social psychology , 8th edition art and illusion: a study in the psychology of pictorial representation visual thinking visual thinking meaning in the visual arts: papers in and on art history 100 things every designer needs to know about people the design of everyday things the design of everyday things symbolic images: studies in the art of the renaissance"><span class="side-num">15</span> Design Theory &amp; Psychology</a><a href="16_pattern-ornament.html" data-search="16 pattern ornament pattern &amp; ornament pattern structure, chinese and western motifs, and auspicious meaning week 8 (and 6–7) 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book (new)世界裝飾紋樣圖典(4000餘種圖案+紋飾百科全書+裝飾藝術寶庫) l&#x27;art arabe 01 秩序感：裝飾藝術的心理學研究 中國紋樣集錦：examples of chinese ornament the grammar of ornament 中國紋樣全集 魏晉南北朝·隋唐·五代卷 世界裝飾圖案-1887-85p圖版 中國紋樣全集 宋·元·明·清卷 中國紋樣全集 戰國·秦·漢卷 中國紋樣全集 新石器時代和商·西周·春秋卷 中國經典紋樣圖鑑 摩洛哥傳統裝飾藝術 敦煌線描 民間美術：湖北挑花、土錦、藍印花布 裝飾文叢特別策劃卷7 貴州傳統蠟染-攝影集 the sense of order: a study in the psychology of decorative art examples of chinese ornament selected from objects in the south kensington museum and other collections"><span class="side-num">16</span> Pattern &amp; Ornament</a><a href="18_magazines-annuals.html" data-search="18 magazines annuals magazines &amp; annuals how to look at annuals and magazines week 1–13 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 2021日本平面設計年鑑 45th publication design annual apd亞太設計年鑑no.17(1) brand 12 brand no.36-生活使用手冊2：文創熱量 brand no.37-字己 brand no.38-手工印刷 brand no.39-物料進化 brand no.40-文化時光機1868-1988 brand no.41-看圖説話，你的信息時代 brand no.42.-你好，藝術pdf brand no.43-小物志 brand no.44-貓狗日誌 design 360 雜誌(1) gallery 形錄 全球最佳圖形設計 vol.09 idea 377 novum201901 apd9亞太平面設計年鑑 apd5亞太設計年鑑 中國品牌設計年鑑 2013 日本字體與平面設計大獎年鑑 國家博物館-仙山圖特展 國家博物館-宋末民初上海畫壇 國家博物館-宋代花箋特展 國家博物館-蘇州片及其影響 國家博物館-瓶花與盆景畫特展 國家博物館-書畫菁華特展 idea+10 1 舉一反百的聰明設計法則 idea+10 2 一計點睛的即效設計處方 red-dot-award-concept-2011-2012 red_dot_award_design_concept_2013-2014 brand brand gallery 國際設計年鑑2014 日本品牌與包裝設計年鑑 2016 日本平面創意設計年鑑 2002-2004 疾風迅雷 杉浦康平雜誌設計的半個世紀 眾妙之門：移動web設計精髓（德）smashing雜誌 essentials of mobile design"><span class="side-num">18</span> Magazines &amp; Annuals</a><a href="20_advertising.html" data-search="20 advertising advertising positioning, aida, creative tactics, and point of purchase week 10, 11 1. scope 2. core concepts 3. principles &amp; methods 4. selected figures 5. source bookshelf 6. study cues 7. each book 1001 個廣告法則 pop 廣告設計 智威湯遜手冊 美國廣告設計實用教程 廣告公司的秘密：平面設計師就業寶典 advertising by design: creating visual communications with graphic impact"><span class="side-num">20</span> Advertising</a></div></nav>
+    </aside>
+    <main class="main" id="content" tabindex="-1">
+      <div class="topbar">
+        <button class="side-toggle" type="button">Guides</button>
+        <nav class="jump" aria-label="On this page"><a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a></nav>
+      </div>
+      <p class="kicker"><a href="index.html">SSHD2382</a> · Category 06</p>
+      <div class="digest">
+<h1 id="packaging">Packaging</h1>
+<p class="meta">Category 06 · Course link: Week 11 Strategic Design and Future Workflows · Main references: <span lang="zh-Hant">《創造品牌的包裝設計》</span>; Wang Shaoqiang, <span lang="zh-Hant">《包裝設計藝術》</span>; <span lang="zh-Hant">《紙品包裝結構解析》</span>; <span lang="zh-Hant">《環保包裝設計》</span>; Stafford Cliff, <em>50 Trade Secrets of Great Design Packaging</em>; GRIP, <em>1000 Package Designs</em>; <span lang="zh-Hant">《拿來就用的包裝設計》</span>; <span lang="zh-Hant">《食品包裝設計》</span>; <span lang="zh-Hant">《包裝設計色彩》</span>; <span lang="zh-Hant">《簡約包裝 Simply Packaging》</span>; <span lang="zh-Hant">《包裝設計家：靳埭強與他的設計師朋友》</span>; <span lang="zh-Hant">《中式元素視覺傳達：包裝設計》</span></p>
+
+<h2 id="1-scope">1. Scope</h2>
+<p>This category has 14 books. Together they cover these aspects of packaging:</p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Question</th>
+<th>Key books</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strategy</td>
+<td>How does packaging "speak" and sell for the brand on the shelf?</td>
+<td><span lang="zh-Hant">《創造品牌的包裝設計》</span>, Stafford Cliff, <em>50 Trade Secrets</em></td>
+</tr>
+<tr>
+<td>Structure</td>
+<td>How is a carton cut, folded and glued? How do materials protect the product?</td>
+<td><span lang="zh-Hant">《紙品包裝結構解析》</span>, <span lang="zh-Hant">《拿來就用的包裝設計》</span></td>
+</tr>
+<tr>
+<td>Surface</td>
+<td>How do colour, type, images and cultural elements shape the look of a pack?</td>
+<td><span lang="zh-Hant">《包裝設計色彩》</span>, <span lang="zh-Hant">《中式元素》</span>, <span lang="zh-Hant">《食品包裝設計》</span>, <span lang="zh-Hant">《簡約包裝》</span></td>
+</tr>
+<tr>
+<td>Responsibility</td>
+<td>How can we reduce waste and extend use?</td>
+<td><span lang="zh-Hant">《環保包裝設計》</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-core-concepts">2. Core Concepts</h2>
+<h3 id="21">2.1 The Four Functions of Packaging</h3>
+<div class="cards">
+<div><strong>Protect</strong>Guards against impact, moisture, light and counterfeiting, and keeps things fresh. This is the main reason packaging exists.</div>
+<div><strong>Contain</strong>Organises liquids, powders and loose items into units that can be measured and carried.</div>
+<div><strong>Convenience</strong>Easy to open, hold and pour; resealable; easy to stack and display.</div>
+<div><strong>Communicate</strong>Brand, product name, flavour or size, ingredients, legal information, plus emotion and values.</div>
+</div>
+
+<h3 id="22">2.2 Levels of Packaging</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Examples</th>
+<th>Design focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary</td>
+<td>Bottles, cans, bags</td>
+<td>Touches the product directly; material safety; user experience</td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>Cartons, outer sleeves</td>
+<td>The display face on the shelf; brand communication</td>
+</tr>
+<tr>
+<td>Tertiary</td>
+<td>Shipping cartons, pallets</td>
+<td>Logistics efficiency, stacking strength, labelling</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23-4p-4c">2.3 From 4P to 4C</h3>
+<p>Packaging is part of the marketing mix. The traditional <strong>4Ps</strong> (Product, Price, Place, Promotion) start from the company; the <strong>4Cs</strong> (Consumer, Cost, Convenience, Communication) start from the consumer. A good packaging brief should answer both sets of questions: what is sold, where it is sold and at what price—and who buys it, why they buy it and how they use it.</p>
+<h3 id="24">2.4 Information Hierarchy on the Display Panel</h3>
+<div class="chart">
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <rect x="40" y="20" width="180" height="260" rx="6" fill="#fff" stroke="#1d1d1f" stroke-width="2"/>
+  <rect x="70" y="36" width="120" height="22" fill="#c8102e"/><text x="130" y="52" text-anchor="middle" fill="#fff" font-weight="bold">BRAND</text>
+  <text x="130" y="98" text-anchor="middle" font-size="22" font-weight="bold" fill="#1d1d1f">Product</text>
+  <circle cx="130" cy="160" r="42" fill="#e9e3d6" stroke="#5b5b66"/><text x="130" y="164" text-anchor="middle" fill="#5b5b66">Product image</text>
+  <rect x="62" y="218" width="136" height="18" fill="#f3f0ea" stroke="#5b5b66"/><text x="130" y="231" text-anchor="middle" fill="#1d1d1f">Variant: flavour / size</text>
+  <text x="130" y="262" text-anchor="middle" fill="#5b5b66" font-size="10">Net weight 250 g · certification marks</text>
+  <g fill="#1d1d1f">
+    <line x1="200" y1="47" x2="300" y2="47" stroke="#c8102e"/><text x="310" y="51">① Brand: builds trust; same position across the range</text>
+    <line x1="190" y1="92" x2="300" y2="92" stroke="#c8102e"/><text x="310" y="96">② Product name: what is it?</text>
+    <line x1="172" y1="160" x2="300" y2="160" stroke="#c8102e"/><text x="310" y="164">③ Image: stirs appetite or emotion, shows use</text>
+    <line x1="198" y1="227" x2="300" y2="227" stroke="#c8102e"/><text x="310" y="231">④ Variant: colour / text separates flavours, sizes</text>
+    <line x1="180" y1="260" x2="300" y2="260" stroke="#c8102e"/><text x="310" y="264">⑤ Legal and supporting info: weight, certification</text>
+  </g>
+</svg>
+</div>
+<div class="caption">Shoppers usually have only a few seconds in front of the shelf. The main display panel should be read in this order: "brand → product name → image → variant → details". Ingredients, nutrition labels and similar information go on the back or sides.</div>
+
+<h3 id="25">2.5 Range Packaging</h3>
+<p>When one brand has several products, a <strong>fixed layout + variable colours or patterns</strong> builds a family look. Shoppers first recognise the brand from a distance, then move closer and tell the flavours apart by colour. Many of the jam, cheese and snack cases in <span lang="zh-Hant">《食品包裝設計》</span> use this "consistent format, colour-coded" strategy.</p>
+<h2 id="3-principles-methods">3. Principles &amp; Methods</h2>
+<h3 id="31-dieline">3.1 Carton Structure and the Flat Net (Dieline)</h3>
+<div class="chart">
+<svg viewBox="0 0 640 340" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+  <g fill="#fff" stroke="#1d1d1f" stroke-width="1.6">
+    <path d="M40 100 H400 L425 112 V248 L400 260 H40 Z"/>
+    <path d="M40 100 V45 Q40 30 55 30 H145 Q160 30 160 45 V100"/>
+    <path d="M160 100 Q165 70 210 66 L220 100"/>
+    <path d="M340 100 Q345 70 390 66 L400 100"/>
+    <path d="M220 260 V315 Q220 330 235 330 H325 Q340 330 340 315 V260"/>
+    <path d="M160 260 L170 294 Q210 290 220 260"/>
+    <path d="M340 260 L350 294 Q390 290 400 260"/>
+  </g>
+  <g stroke="#c8102e" stroke-dasharray="5 4" stroke-width="1.3">
+    <line x1="160" y1="100" x2="160" y2="260"/><line x1="220" y1="100" x2="220" y2="260"/>
+    <line x1="340" y1="100" x2="340" y2="260"/><line x1="400" y1="100" x2="400" y2="260"/>
+    <line x1="40" y1="100" x2="160" y2="100"/><line x1="40" y1="52" x2="160" y2="52"/>
+    <line x1="220" y1="260" x2="340" y2="260"/><line x1="220" y1="308" x2="340" y2="308"/>
+    <line x1="160" y1="100" x2="220" y2="100"/><line x1="340" y1="100" x2="400" y2="100"/>
+    <line x1="160" y1="260" x2="220" y2="260"/><line x1="340" y1="260" x2="400" y2="260"/>
+  </g>
+  <g text-anchor="middle" fill="#1d1d1f">
+    <text x="100" y="185" font-weight="bold">Front</text><text x="190" y="185">Side</text>
+    <text x="280" y="185" font-weight="bold">Back</text><text x="370" y="185">Side</text>
+    <text x="412" y="185" font-size="9">Glue</text>
+    <text x="100" y="80">Lid</text><text x="100" y="44" font-size="9">Tuck</text>
+    <text x="190" y="92" font-size="9">Dust flap</text><text x="280" y="290">Bottom lid</text>
+  </g>
+  <g font-size="12" fill="#1d1d1f">
+    <line x1="460" y1="120" x2="500" y2="120" stroke="#1d1d1f" stroke-width="1.6"/><text x="508" y="124">Cut</text>
+    <line x1="460" y1="145" x2="500" y2="145" stroke="#c8102e" stroke-dasharray="5 4"/><text x="508" y="149">Fold / Crease</text>
+    <text x="460" y="185">Box style:</text><text x="460" y="203">Reverse tuck end box</text>
+    <text x="460" y="235" fill="#5b5b66">Top and bottom lids</text><text x="460" y="252" fill="#5b5b66">join the front and back;</text><text x="460" y="269" fill="#5b5b66">one die, one glue line</text>
+  </g>
+</svg>
+</div>
+<div class="caption">The most common carton: four panels + a glue flap + top and bottom lids with dust flaps. <span lang="zh-Hant">《紙品包裝結構解析》</span> and <span lang="zh-Hant">《拿來就用的包裝設計》</span> contain hundreds of nets that you can use directly as a structural starting point.</div>
+
+<p>Common structure types:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Features</th>
+<th>Typical uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuck end</td>
+<td>Simple structure, low cost</td>
+<td>Medicines, cosmetics, snacks</td>
+</tr>
+<tr>
+<td>Crash lock / Snap lock</td>
+<td>Self-locking base, carries more weight</td>
+<td>Heavier bottles and jars</td>
+</tr>
+<tr>
+<td>Lid and base</td>
+<td>Two pieces, feels premium</td>
+<td>Gift boxes, shoe boxes, jewellery</td>
+</tr>
+<tr>
+<td>Sleeve and tray</td>
+<td>Opening feels like a ritual</td>
+<td>Chocolate, stationery, business cards</td>
+</tr>
+<tr>
+<td>Carry box</td>
+<td>Handle formed in one piece</td>
+<td>Takeaway, cakes, multi-item sets</td>
+</tr>
+<tr>
+<td>Pillow box</td>
+<td>Curved creases, no glue needed</td>
+<td>Small gifts, accessories</td>
+</tr>
+<tr>
+<td>Display / PDQ</td>
+<td>Opens straight into a shelf display</td>
+<td>Retail counters</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32">3.2 Materials and Finishing</h3>
+<ul>
+<li><strong>Paper</strong>: white card, grey-back board, kraft paper, corrugated board (E-flute, B-flute, etc.), speciality papers.</li>
+<li><strong>Other</strong>: glass, PET plastic, aluminium cans, tinplate, wood, fabric, moulded pulp.</li>
+<li><strong>Finishing</strong>: foil stamping, embossing, spot UV, lamination, die-cut windows, windows with film patches. The more finishes you add, the higher the cost and the harder the pack is to recycle.</li>
+</ul>
+<h3 id="33">3.3 Strategies for Eco Packaging</h3>
+<pre class="mermaid">flowchart LR
+  reduce[&quot;Reduce&lt;br/&gt;less material, smaller size&quot;] --&gt; reuse[&quot;Reuse&lt;br/&gt;second use, refillable&quot;]
+  reuse --&gt; recycle[&quot;Recycle&lt;br/&gt;single material, easy to separate&quot;]
+  recycle --&gt; renew[&quot;Renew&lt;br/&gt;degradable, recycled material&quot;]
+</pre>
+<p>Common approaches in the cases in <span lang="zh-Hant">《環保包裝設計》</span>: use structure instead of glue and tape; form the pack from a single sheet; make the packaging part of the product (for example, it becomes a plant pot, a hanger or a toy); reduce ink coverage; avoid paper–plastic laminates that cannot be separated.</p>
+<h3 id="34">3.4 Colour and Cultural Elements</h3>
+<ul>
+<li><strong>Colour first</strong>: <span lang="zh-Hant">《包裝設計色彩》</span> points out that colour is the first signal people notice on the shelf. Category conventions (milk often uses white and blue, coffee brown and black) are a shortcut, but also a frame you can break.</li>
+<li><strong>Chinese elements</strong>: paper-cutting, calligraphy, auspicious motifs (the characters <em>shou</em> ("longevity") and <em>fu</em> ("good fortune"), cloud patterns), traditional colours (Chinese red, dark blue-green, gold) and so on. Used well, they build a cultural identity; avoid piling up symbols without translating them into a modern form. The work of Kan Tai-keung and his designer friends shows how to transform traditional elements with a minimal approach.</li>
+</ul>
+<h3 id="35-stafford-cliff">3.5 Stafford Cliff's Tips (Summary)</h3>
+<ul>
+<li>A pack should be recognised from <strong>three metres away</strong> and understood within <strong>thirty centimetres</strong>.</li>
+<li><strong>The act of opening</strong> is itself part of the brand experience.</li>
+<li>One strong idea beats ten decorations.</li>
+</ul>
+<h2 id="4-selected-figures">4. Selected Figures</h2>
+<div class="figs">
+<figure><img src="assets/packaging/carry-box-dieline.jpg" alt="Carry box net"><figcaption>Net of a carry box with a handle formed in one piece. Source: <span lang="zh-Hant">《紙品包裝結構解析》</span>, p.119</figcaption></figure>
+<figure><img src="assets/packaging/dieline-blueprint.jpg" alt="Dieline"><figcaption>A box dieline ready to use as it is. Source: <span lang="zh-Hant">《拿來就用的包裝設計》</span>, p.71</figcaption></figure>
+<figure><img src="assets/packaging/pillow-box-dieline.jpg" alt="Pillow box net"><figcaption>Net of a box style that needs no glue. Source: same book, p.313</figcaption></figure>
+<figure><img src="assets/packaging/structure-sketch.jpg" alt="Structural sketch"><figcaption>Sketch of a paper structure that holds a container in place. Source: <span lang="zh-Hant">《環保包裝設計》</span>, p.140</figcaption></figure>
+<figure><img src="assets/packaging/structural-box.jpg" alt="Structural packaging"><figcaption>A folded paper structure supports the vessel and reduces filler. Source: same book, p.211</figcaption></figure>
+<figure><img src="assets/packaging/scanwood-utensils.jpg" alt="Scanwood"><figcaption>A "tree root" image links the wooden kitchen tools to their natural material. Source: <span lang="zh-Hant">《創造品牌的包裝設計》</span>, p.191</figcaption></figure>
+<figure><img src="assets/packaging/series-tubs.jpg" alt="Range packaging"><figcaption>Range packaging with a consistent layout + colour coding. Source: <span lang="zh-Hant">《食品包裝設計》</span>, p.21</figcaption></figure>
+<figure><img src="assets/packaging/shelf-series.jpg" alt="Range on the shelf"><figcaption>Strong blocks of colour form a family identity on the shelf. Source: same book, p.231</figcaption></figure>
+<figure><img src="assets/packaging/chinese-gift-series.jpg" alt="Chinese-style gift packaging"><figcaption>A range of gift packaging using Chinese elements. Source: <span lang="zh-Hant">《中式元素視覺傳達：包裝設計》</span>, p.60</figcaption></figure>
+<figure><img src="assets/packaging/longevity-papercut.jpg" alt="Paper-cut of the longevity character"><figcaption>A modern reworking of the character <em>shou</em> ("longevity") and paper-cutting. Source: same book, p.147</figcaption></figure>
+</div>
+
+<h2 id="5-source-bookshelf">5. Source Bookshelf</h2>
+<p>Suggested reading order: <span lang="zh-Hant">《創造品牌的包裝設計》</span> (strategy) → <span lang="zh-Hant">《紙品包裝結構解析》</span> (structure) → <span lang="zh-Hant">《環保包裝設計》</span> → <span lang="zh-Hant">《食品包裝設計》</span> and GRIP, <em>1000 Package Designs</em> (case libraries).</p>
+<!-- BOOKSHELF:START -->
+
+<details><summary>Show 14 titles</summary>
+
+- <a href="#b-packaging-design-that-builds-brands">[030]<span lang="zh-Hant">創造品牌的包裝設計</span></a>
+- <a href="#b-modern-design-colour-textbook-series-colour-in-packaging">[052]<span lang="zh-Hant">現代設計色彩教材叢書：包裝設計色彩</span></a>
+- <a href="#b-the-art-of-packaging-design-wang-shaoqiang">[106]<span lang="zh-Hant">包裝設計藝術：王紹強</span></a>
+- <a href="#b-paper-packaging-structures-explained">[166]<span lang="zh-Hant">紙品包裝結構解析</span></a>
+- <a href="#b-new-packaging">[167]<span lang="zh-Hant">新包裝</span></a>
+- <a href="#b-eco-packaging-design">[168]<span lang="zh-Hant">環保包裝設計</span></a>
+- <a href="#b-50-trade-secrets-of-great-design-packaging-staff">[169]<span lang="zh-Hant">50 Trade Secrets of Great Design Packaging</span></a>
+- <a href="#b-1000-package-designs-a-comprehensive-guide">[170]<span lang="zh-Hant">1000 Package Designs：A Comprehensive Guide</span></a>
+- <a href="#b-ready-to-use-packaging-design">[171]<span lang="zh-Hant">拿來就用的包裝設計</span></a>
+- <a href="#b-food-packaging-design">[191]<span lang="zh-Hant">食品包裝設計</span></a>
+- <a href="#b-packaging-design-packaging-solutions-to-inspire-you">[193]<span lang="zh-Hant">包裝設計+：給你靈感的包裝方案</span></a>
+- <a href="#b-packaging-designers-kan-tai-keung-and-his-designer-friends">[274]<span lang="zh-Hant">包裝設計家：靳埭強與他的設計師朋友</span></a>
+- <a href="#b-simply-packaging">[323]<span lang="zh-Hant">簡約包裝 Simply Packaging</span></a>
+- <a href="#b-chinese-elements-in-visual-communication-packaging-design"><span lang="zh-Hant">中式元素視覺傳達：包裝設計</span></a>
+
+</details>
+
+<!-- BOOKSHELF:END -->
+
+<h2 id="6-study-cues">6. Study Cues</h2>
+<ol>
+<li>Take a pack from home. List its primary, secondary and tertiary packaging, and assess what each level does.</li>
+<li>Take a carton apart and lay it flat. Trace its cut lines and fold lines, and identify which structure type it is.</li>
+<li>Design range packaging for one product in three flavours: keep the layout fixed and change only the colour and one image element.</li>
+<li>In a supermarket, photograph ten packs from the same category and sum up the category's colour conventions. Will your design follow them or break them?</li>
+<li>Redesign an over-packaged product and use Reduce–Reuse–Recycle–Renew to explain your improvements.</li>
+</ol>
+<!-- BOOKS:START -->
+
+<h2 id="7-each-book">7. Each Book</h2>
+<p>Each book in the bookshelf is described below. Every title above links to its section.</p>
+<h3 class="book" id="b-packaging-design-that-builds-brands"><span lang="zh-Hant">創造品牌的包裝設計</span></h3>
+<p><strong>Original title:</strong> <em>Packaging the Brand: The Relationship Between Packaging Design and Brand Identity</em></p>
+<p><strong>Author:</strong> Zhang Fumei</p>
+<p><strong>Scope.</strong> This book asks whether packaging design is decorating a product or building a brand. It starts from Beatrice Warde's <span lang="zh-Hant">《透明的高腳杯》</span>, then compares two positions: "packaging is branding" and "packaging and branding are not the same thing". It uses the 4Ps, the 4Cs, Cloud Nine, and the difference between new and established brands to show the decisions a designer has to make in a saturated market. Before a brand packaging assignment, use the book's questions to settle your position first, then work on the form.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Warde's 1932 talk compared printing to a crystal goblet: design can be finely decorated, or it can be neutral and let the content show itself. The book carries this question straight over to packaging.</li>
+<li>A pack is at once a story, a message, a medium and a conversation between buyer and seller. It is not just a container with graphics printed on it.</li>
+<li>Richard Gerstman argues that packaging is branding; another view treats packaging as only one channel alongside advertising, PR and the web. The Coca-Cola can is used as an example: take away the type, colour and imagery, and what is left is just a metal can.</li>
+<li>When products in a category differ very little, the decision to buy often happens at the moment of looking at the pack, and it can grow into a long-term emotional bond.</li>
+<li>The book asks designers to answer five things: their role, their ethical position, whether product or brand comes first, the truth of design, and what you bring to the project. The 4Ps and 4Cs are tools for turning these judgements into the marketing mix.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before you start, write one sentence: should this pack, like the goblet, let the product be seen, or should the design itself speak? Write both sentences, then delete one.</li>
+<li>Take away the logo, colours and type for a moment and keep only the container. If the brand value disappears with them, state in your assignment notes which elements cannot be removed.</li>
+<li>Use the 4Ps and the 4Cs to list one decision each that would change the box style, material or layout. Do not just write slogans.</li>
+<li>Make a one-page brief from the book's five questions. If you cannot answer "what do you bring?", that is where the concept is still empty.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-packaging-design-that-builds-brands-1.jpg" alt="Kitchenware brand packaging"><figcaption>Sandro Kvernmo's packaging for the Norwegian kitchenware brand Bjorklund uses imagery to signal high quality and win over local food lovers. Source: <span lang="zh-Hant">《創造品牌的包裝設計》</span>, p.38</figcaption></figure>
+<figure><img src="assets/packaging/books/b-packaging-design-that-builds-brands-2.jpg" alt="Barcodes and identification labels"><figcaption>Barcodes, the Universal Product Code and laser identification labels are discussed as part of automated information management in logistics and retail. Source: <span lang="zh-Hant">《創造品牌的包裝設計》</span>, p.175</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Warde's goblet metaphor asks whether design should add decoration or present the content transparently. Which debate in the Coca-Cola can example is the same argument?</li>
+<li>Choose a pack you are working on. Write one concrete decision each from the 4Ps and the 4Cs, and explain whether you chose "neutral delivery" or "letting the design show its personality".</li>
+</ol>
+<h3 class="book" id="b-modern-design-colour-textbook-series-colour-in-packaging"><span lang="zh-Hant">現代設計色彩教材叢書：包裝設計色彩</span></h3>
+<p><strong>Scope.</strong> This textbook connects colour theory to packaging. The first half covers NCS, PCCS, light, and hue, value and chroma. The second half covers the definition of packaging and the roles of packaging colour: organising, use, memory, image, classification and grading, and protection. When choosing colours for packaging, use it to check whether a palette is classifying, being remembered, or just being bright.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The book uses NCS as its language of analysis, because colour perception is a physiological and psychological reality, which is not the same thing as physical or chemical wavelength. Design looks at effect and symbolism, not just the spectrum.</li>
+<li>Without light there is no colour. Newton's seven colours are used to explain hue as the appearance of visible light; the reddish morning sun and the blue sky are explained by wavelength and how light passes through the atmosphere.</li>
+<li>Value can stand apart from hue and be shown in black, white and grey alone. The book uses the light and dark tones of ink-wash painting to show this. Chroma is vividness versus dullness: within the red family, orange-red, vermilion, peach-red and crimson are all lower in chroma than pure red.</li>
+<li>Packaging is defined as the containers, materials and operations used in distribution to protect, transport and promote goods. Visual communication includes material, form, trademark, colour, text, pattern and photography.</li>
+<li>Packaging colour has six functions: organising, use, memory, image, classification and grading, and protection. A section on children's packaging links contrasting colours, cartoons, fairy tales and crayon drawing to bright, vivid colours.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For a packaging range, fill in a table with the hue, value and chroma of each item. The range must be easy to sort, and each single item must be memorable.</li>
+<li>Set the value structure in black and white first, then add colour. If the grades cannot be told apart on the shelf once hue is removed, the value structure has failed.</li>
+<li>If a children's or food assignment uses high chroma, state whether it serves image or classification. Do not claim to achieve all six functions at once.</li>
+<li>When you borrow a traditional palette, state whether you are keeping its contrast relationships or its symbolism, and avoid copying a whole page.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-modern-design-colour-textbook-series-colour-in-packaging-1.jpg" alt="Packaging colour on the shelf"><figcaption>Packaging colour must grab attention first on the supermarket shelf and silently push the product in front of shoppers. Source: <span lang="zh-Hant">《現代設計色彩教材叢書：包裝設計色彩》</span>, p.6</figcaption></figure>
+<figure><img src="assets/packaging/books/b-modern-design-colour-textbook-series-colour-in-packaging-2.jpg" alt="Form and colour in children's packaging"><figcaption>Contrasting colours create energy; cartoon, fairy-tale and crayon styles paired with bright, vivid colours express children's liveliness. Source: <span lang="zh-Hant">《現代設計色彩教材叢書：包裝設計色彩》</span>, p.71</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why does the book use NCS rather than relying only on physical wavelength to analyse packaging colour? What problem in telling colours apart does each of hue, value and chroma solve?</li>
+<li>Choose a set of colours for a children's food product. Write how it handles "memory" and "classification and grading", and name which property (hue, value or chroma) does most of the work.</li>
+</ol>
+<h3 class="book" id="b-the-art-of-packaging-design-wang-shaoqiang"><span lang="zh-Hant">包裝設計藝術：王紹強</span></h3>
+<p><strong>Scope.</strong> This is a collection of packaging cases arranged by scenes from daily life, in three groups: enjoying life, improving quality of life, and savouring life. Entries range from ribbons, a carbon-dating pen, headphones and lampshades to Nike, jeans, wine, olive oil and chocolate. Use it to find ideas for structure and reuse; do not treat it as a step-by-step textbook.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Each case is named after its product and given a page number, so the unit of reading is a single piece of work, not an abstract principle. The three groups separate everyday goods, body care, and food and drink.</li>
+<li>The headphone case states its goals precisely: use less material, use recyclable material, and let the packaging become a headphone stand or protective case in its second life.</li>
+<li>For selling T-shirts, recyclable tins hold different types of clothing. The tins are managed and labelled through a computer system, so the packaging itself is the stock interface.</li>
+<li>The "improving quality of life" group includes teeth whitening, perfume, Nike women's sport, a jeans promotion and hair dye. Here the packaging must handle both use and display.</li>
+<li>The "savouring life" group focuses on spirits, oil, water, tea, chocolate and ready meals, such as Pravda vodka, Lintar olive oil, ZEALONG oolong tea and HEMA takeaway packaging.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each case, write three lines: the life scene it serves, what material it saves or recycles, and what the packaging can still do after it is opened.</li>
+<li>For your assignment, choose one of the three groups first. Borrow only that group's use scenarios, not the luxury surfaces of the other groups.</li>
+<li>If the packaging is meant to be reused, mark a "protective state" and a "second-use state" on the structural drawing. Both states must hold up.</li>
+<li>For brands with larger ranges (such as "six scents"), set the rules for one item first, then copy them to the rest, so that each item does not go its own way.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-the-art-of-packaging-design-wang-shaoqiang-1.jpg" alt="Reusable headphone packaging"><figcaption>This headphone packaging uses recyclable material to cut down on material. Once opened, it can serve as a headphone stand or a protective case. Source: <span lang="zh-Hant">《包裝設計藝術：王紹強》</span> (Wang Shaoqiang), p.41</figcaption></figure>
+<figure><img src="assets/packaging/books/b-the-art-of-packaging-design-wang-shaoqiang-2.jpg" alt="T-shirts in tins"><figcaption>Recyclable tins hold different types of T-shirt, and each type is managed and labelled by a computer system. Source: <span lang="zh-Hant">《包裝設計藝術：王紹強》</span> (Wang Shaoqiang), p.100</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What is the second use of the headphone packaging in the book? Which structural decision separates it from "just printing the box nicely"?</li>
+<li>Choose a product type from "improving quality of life" or "savouring life", and draw a paper or tin structure that works in both its protective state and its second-use state.</li>
+</ol>
+<h3 class="book" id="b-paper-packaging-structures-explained"><span lang="zh-Hant">紙品包裝結構解析</span></h3>
+<p><strong>Scope.</strong> This book is entirely about how cartons fold, how they open and how they stand up on the shelf. The overview lists protection, convenience and innovation. The analysis of types divides structures into those that help storage and display (stacking, hanging, pop-up display, windows) and those that help use (carrying, easy opening). Chapter 3 compares these types through cases such as Sakura tissues, a chocolate box, pies, seasoning jars and sweets. For a carton assignment, choose the structure type first, then draw the dieline.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Pop-up POP displays usually use a folding carton made from one sheet. When the lid opens, it sits at about 90 degrees to the line of sight and echoes the product inside, so you must design both the opened and the closed views.</li>
+<li>A window box cuts a window in one face of an opaque box and covers it with plastic film or cellophane, to show the detail of food, textiles and fine goods.</li>
+<li>Elsa Deplanne's glued chocolate box uses gold to suggest luxury and shows its contents as soon as it is opened. A candle case gathers a triangular antiprism into a single base board that folds inwards to become a candle holder, so no material is wasted.</li>
+<li>Carry packs come as bags or boxes, and their handles must fold away and pull out. A paper carrier bag for animal amulets from the Kiwi shop has small air holes; a Chinese takeaway box strings several compartments together with cord and switches to recyclable paper.</li>
+<li>Easy-open designs must consider the size and position of the opening and how it relates to the graphics on the surface. The Paulin screw boxes use 100% recyclable material, and several boxes lock together into a small cabinet through their structure alone, without glue.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First circle one type on your brief: stacking, hanging, pop-up display, window, carrying or easy opening. Focus each assignment on one type; a second type can only play a supporting role.</li>
+<li>For a pop-up display, draw two views: the shelf face when closed, and the display face when opened at right angles to the line of sight.</li>
+<li>Before you add a window, write down which detail the customer needs to see. The position of the window serves only that detail.</li>
+<li>Whenever you claim that no glue is used, draw how the tabs or folds lock in both states: in transit and on display.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-paper-packaging-structures-explained-1.jpg" alt="Forest guardian packaging"><figcaption>This packaging combines a pop-up display with a window and turns animals into forest guardians, reminding people to care for animals and nature. Source: <span lang="zh-Hant">《紙品包裝結構解析》</span>, p.40</figcaption></figure>
+<figure><img src="assets/packaging/books/b-paper-packaging-structures-explained-2.jpg" alt="Diagram of protective performance"><figcaption>Protection is listed as the basic performance of paper structures: first of all, protecting the product itself. Source: <span lang="zh-Hant">《紙品包裝結構解析》</span>, p.13</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What shelf problem does the pop-up POP display solve, and what does the window box solve? What did the chocolate box and the candle case each save?</li>
+<li>Draw a glue-free paper structure for a box of small parts or a takeaway meal. Mark the position of the opening, and show how the handle folds away or the tabs lock during transport.</li>
+</ol>
+<h3 class="book" id="b-new-packaging"><span lang="zh-Hant">新包裝</span></h3>
+<p><strong>Scope.</strong> This is a collection of cases organised around new materials and new structures, with a foreword by the strategic creative director of a Scandinavian design lab. Projects are grouped under quality of life and enjoyment of life, and each case lists the design agency, creative director, client and country. Use it to learn how to carry a structure through to the end on a limited budget, not to collect luxury photos.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The foreword ties eco design to the designer's curiosity: only after mastering material, structure and identity does a piece of work become easy to recognise.</li>
+<li>The Hush candle packaging uses bold Pantone colours and polished art paper on the outside, but the real action is inside: when you open it, the pleated base unfolds outwards and presents the candle to you. Aloof Design achieved this on a limited budget.</li>
+<li>De Beers' luxury identity was handled by Dew Gibbons, and its rhombus shape comes from the facets of a diamond. Inni jewellery turns simple geometric points into a complex three-dimensional interior, and treats the feel of the material as part of the design.</li>
+<li>When twentytwentyone reissued classics by Lucienne and Robin Day, the packaging used recycled kraft paper, Irish linen and wood. It was screen-printed and assembled without glue, and kept costs down with few images and few processes.</li>
+<li>The Marks &amp; Spencer packaging concept required one structure to serve several gift categories. The merchandise packaging for the MALBA museum was designed, illustrated and produced by DUOIDO.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For each case, note only four things: what the structure does when opened, how the material feels, which process was cut, and where the budget limits are stated.</li>
+<li>If the concept depends on "the moment of opening", first make a paper model that opens and closes, check which way the pleats unfold, and only then think about printing.</li>
+<li>For a glue-free structure, write out the assembly order. If it takes more than five steps, go back to the principle of the Robin Day tea towel case: cut the processes.</li>
+<li>If a luxury assignment borrows a rhombus or a layered bottle, state which physical feature of the product the geometry corresponds to, such as cut facets or mouthfeel.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-new-packaging-1.jpg" alt="Design conditions in the foreword"><figcaption>The foreword page links easily recognisable work to the designer's curiosity about issues such as the environment. Source: <span lang="zh-Hant">《新包裝》</span>, p.10</figcaption></figure>
+<figure><img src="assets/packaging/books/b-new-packaging-2.jpg" alt="Layered olive oil bottle"><figcaption>The bottle is divided into three layers that grow larger from top to bottom, expressing the purity and smooth taste of the olive oil. It draws on Michael Young's layered bottle approach. Source: <span lang="zh-Hant">《新包裝》</span>, p.200</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Which structural action creates the surprise in the Hush candle packaging? Which product feature does the De Beers rhombus correspond to, and which does Inni's three-dimensional interior correspond to?</li>
+<li>Make a gift carton within a low budget you set yourself, with no glue allowed. Write down the two processes you cut, and what the customer sees first on opening.</li>
+</ol>
+<h3 class="book" id="b-eco-packaging-design"><span lang="zh-Hant">環保包裝設計</span></h3>
+<p><strong>Author:</strong> Pan Xiaoxiao</p>
+<p><strong>Scope.</strong> This book runs from Tony Ibbotson's argument for eco design to materials and labelling. It explains why eco packaging is urgent, then covers natural, handmade and composite materials, as well as reduction, recyclability, biodegradability, reusability and eco-friendly inks. Applications follow, such as the Dulce Plai honey jar and Pizza Shigaraki packaging. For a sustainability assignment, use it to choose one strategy and to be able to say where the material goes after it leaves the bin.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The book calls the present "the plastic age": plastic is cheap and durable but does not biodegrade, and its life cycle often outlasts the product it protects. Examples of killer whales and pilot whales swallowing packaging show that the bin is not the end of the story.</li>
+<li>Eco design should not be added as an afterthought. Guzman y Gomez's Mexican fast-food takeaway switched from card to recyclable plant-based packaging with the logo printed directly on it, so that the feel of the material matches the brand's simple, rustic food.</li>
+<li>To judge whether a pack is eco-friendly, look at the material type (natural, handmade or composite) and whether it is about reduction, recycling, degradation or reuse.</li>
+<li>Eco-friendly inks and eco labels are listed separately, so that you do not change the material while still printing with problematic inks.</li>
+<li>The cases stress the unexpected and multiple uses: a fully biodegradable book and its packaging use degradable paper, soy ink, walnut wood and cloth; a corrugated structure does without adhesives and fittings to cut carbon emissions.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Write the strategy on the first line of your brief, and choose only one main strategy: reduce, recyclable, degradable or reusable. Anything else can only be a side effect.</li>
+<li>Write down the next stop in the material's life cycle: what it is recycled into, what conditions it needs to degrade, or what object it becomes in its second use. If you cannot name the next stop, you cannot call it eco-friendly.</li>
+<li>Specify the ink separately in the print specification. If eco-friendly ink is not possible, admit in your notes that this part is unfinished.</li>
+<li>Check against the labels in the book, and use only the one that really matches your material and the recycling system.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-eco-packaging-design-1.jpg" alt="Biodegradable book and packaging"><figcaption>This book and its packaging are made from degradable paper, soy ink, walnut wood and cloth; the materials themselves open up the possibility of reuse. Source: <span lang="zh-Hant">《環保包裝設計》</span>, p.221</figcaption></figure>
+<figure><img src="assets/packaging/books/b-eco-packaging-design-2.jpg" alt="Corrugated structure without adhesive"><figcaption>The corrugated board holds itself in place by its own structure, with no adhesives or fittings, which cuts carbon emissions. Source: <span lang="zh-Hant">《環保包裝設計》</span>, p.142</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Which examples does the book use to show that the life cycle of plastic packaging outlasts the product? Which material did Guzman y Gomez's takeaway change, and which brand practice did it keep?</li>
+<li>Turn a campus takeaway box into a recyclable or biodegradable design. State the main strategy, the ink choice, and the next stop for the material after use.</li>
+</ol>
+<h3 class="book" id="b-50-trade-secrets-of-great-design-packaging-staff"><span lang="zh-Hant">50 Trade Secrets of Great Design Packaging</span></h3>
+<p><strong>Scope.</strong> This book uses interviews to record the working secrets of packaging designers, rather than showing finished work. The author asks each person how they start, what brief they received, what process they use, and how they know a solution is right. Students should read it as a set of process interviews: pay attention to touch, material and "sketches the client never saw", rather than just memorising brand names.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The interviewees call packaging the most emotional and the most physical kind of design. They refuse to show clients flat sketches alone, because touch, reflection and a three-dimensional object in the hand are what trigger a response.</li>
+<li>Plastic, ceramics, paper and card offer different possibilities. Texture, surface treatment and construction methods on board can reflect both product quality and recycling issues.</li>
+<li>Glass creates difference through transparency and weight; special moulds benefit from computer visualisation, which cuts the cost of machine sampling. Designers must know what can and cannot be made.</li>
+<li>The stories come from original sketches that designers were willing to show but that even their clients had never seen, so the focus is the process of judgement, not the final photography.</li>
+<li>Items in the contents include Verjuice, Boots herbal products, Mondeo, Chivas Brothers and Black Wattle, showing that even ordinary products (such as water) can be given a new personality.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Review your own assignment with the book's four questions: how did you start, what was the brief, what was the process, and on what grounds do you say this solution is right?</li>
+<li>Before a review, prepare a model that can be held in the hand. Flat drawings are only an appendix, because the book's criteria include touch and reflection.</li>
+<li>When you choose a material, write two lines: one effect it can achieve, and one effect it cannot achieve, which you therefore give up.</li>
+<li>Keep one sketch that you did not show the "client", and note beside it why it was later rejected.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-50-trade-secrets-of-great-design-packaging-staff-1.jpg" alt="Photo and colour block marking a range"><figcaption>One approach combines a simple photo with a block of colour to mark the product range. Source: <em>50 Trade Secrets of Great Design Packaging</em>, p.134</figcaption></figure>
+<figure><img src="assets/packaging/books/b-50-trade-secrets-of-great-design-packaging-staff-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <em>50 Trade Secrets of Great Design Packaging</em>, p.6</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why do the interviewed designers refuse to show only flat sketches? What possibilities are pointed out for glass and for board?</li>
+<li>Use the book's four questions to write half a page of process notes, and attach a sketch that you left out of the final artwork but that explains your judgement.</li>
+</ol>
+<h3 class="book" id="b-1000-package-designs-a-comprehensive-guide"><span lang="zh-Hant">1000 Package Designs：A Comprehensive Guide</span></h3>
+<p><strong>Scope.</strong> This is a numbered packaging catalogue arranged by design agency, and much of this reprint copy consists of images and agency names. The readable passage is Firebelly Design's own account of "successful design": believe in ideas, be passionate about the message, follow your judgement; the client hands over the brand, and the design gives back integrity. Use it as a visual index and for comparison; do not read it as a theory textbook.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The book is organised by agency, with roughly continuous numbering, so you look things up by page rather than through chapters on method.</li>
+<li>Firebelly defines success as a conversation: ideas are heard, passion earns trust, intuition earns respect. The reward is integrity, understanding and design that moves people.</li>
+<li>Agencies that appear again and again in the sample include Sagmeister Inc., Turner Duckworth, Milton Glaser, Inc., Design Bridge, Concrete Design Communications and Chronicle Books.</li>
+<li>Categories range from books and fragrance (L'Oréal and Diesel fragrances) to packaging experiments between commerce and art. Geographically, the entries include the USA, the UK, Canada, Australia, Austria and Venezuela.</li>
+<li>Pages often show only the agency, country and number. When reading, first check whether something is index information or a description of the work.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Before making a mood board, copy out ten entries by number: agency, country, the category you can see, and one graphic or structural decision. If you cannot fill all four columns, do not add the entry to your references.</li>
+<li>Find two agencies in the same category (for example, both doing fragrance or books) and compare only how they build identity, not how fine the printing is.</li>
+<li>Test your concept with Firebelly's three sentences: can the idea be heard, can the message be trusted, and is the judgement specific enough to become a form?</li>
+<li>When you use this book as a reference, keep "agency names you can verify" separate from "images you cannot see clearly", so that you do not treat damaged pages as facts about a case.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-1000-package-designs-a-comprehensive-guide-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <em>1000 Package Designs: A Comprehensive Guide</em>, p.274</figcaption></figure>
+<figure><img src="assets/packaging/books/b-1000-package-designs-a-comprehensive-guide-2.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <em>1000 Package Designs: A Comprehensive Guide</em>, p.88</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Which three conditions does Firebelly use to define a successful design conversation? By what unit are the catalogue's entries mainly arranged?</li>
+<li>Choose packs by two agencies in the book and write one form decision you can point to in each. Then use "integrity" to explain what your own assignment still lacks.</li>
+</ol>
+<h3 class="book" id="b-ready-to-use-packaging-design"><span lang="zh-Hant">拿來就用的包裝設計</span></h3>
+<p><strong>Scope.</strong> This book runs from what packaging is to structure, printing, visual communication and creative expression, and it is a good way to build vocabulary when you start out in packaging. It divides value into protection and storage, aesthetics, promotion and commerce, and divides elements into object, material, form, protective technology and visual communication. The cases demonstrate these terms; they do not replace your own research.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Packaging developed from leaves, shells and animal skins to the new materials that followed the Industrial Revolution, and its function expanded from protection and storage to branding, stimulating consumption and aesthetics.</li>
+<li>Its direct value is to deliver the product to people undamaged and to deal with corrosion, shelf life and protection. Aesthetics and promotion support each other, but in the end they still serve commerce and extra use value.</li>
+<li>A PET milk bottle uses black-and-white cow patches as its graphics and through them points to its British origin. After the redesign, the bottle is easier to spot among similar products.</li>
+<li>Wooden packaging on a Canadian lumberjack theme can be taken apart into a hanger, coasters or a money box. The bark textures of pine, birch and maple hint at the colours of the clothes. It targets 12- to 24-year-olds and also promotes sustainable use.</li>
+<li>An egg pack holds the eggs with perforations on both sides; squeeze the bottom end and an egg drops into your hand. The material is recyclable card. Another red, white and blue pack uses stars and the Christian Ichthys symbol as its identity.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Divide the concept page into five boxes: object, material, form, protection, visual communication. Start the renderings only when you can fill all five.</li>
+<li>For every "extra value" you add (aesthetics, promotion, reuse), write down which protective function it does not compromise.</li>
+<li>If you use a cultural symbol to point to origin, like cow patches or lumberjacks, first write down whether the audience can recognise it without reading an explanation.</li>
+<li>For packaging that comes apart, list every part after disassembly and make sure each one is still a complete object, not a fragment.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-ready-to-use-packaging-design-1.jpg" alt="Later chapters in the contents"><figcaption>This contents page points ahead to printing processes, visual communication, and creativity and expression in packaging design. Source: <span lang="zh-Hant">《拿來就用的包裝設計》</span>, p.9</figcaption></figure>
+<figure><img src="assets/packaging/books/b-ready-to-use-packaging-design-2.jpg" alt="Biscuit packaging concept"><figcaption>Chapter 4 uses Les Maudits Biscuits as an example of creativity and expression in packaging; the design studio is Packaging UQAM. Source: <span lang="zh-Hant">《拿來就用的包裝設計》</span>, p.286</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How does the book distinguish the direct value of packaging from the aesthetic, promotional and commercial value added later? Which visuals do the milk bottle and the lumberjack wooden box each use to point to their origin?</li>
+<li>Make a perforated or squeeze-to-release card structure for a fragile food, and explain what use the material can return to after it is opened or used up.</li>
+</ol>
+<h3 class="book" id="b-food-packaging-design"><span lang="zh-Hant">食品包裝設計</span></h3>
+<p><strong>Scope.</strong> This book centres on three questions: can packaging tell a story, where does inspiration come from, and why does food need packaging? The answers are gathered into protection, convenience and boosting sales, then applied to trusting the brand, highlighting the food's features, and range packaging. The preface uses the shopping bag Memo Productions made for Tarry Market to show that a low budget can still tell a brand story.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The book gives three reasons for food packaging: protect the food, bring convenience, boost sales. The design choice that follows is whether to trust the power of the brand or to put the features of the food itself first.</li>
+<li>Range packaging is illustrated by Salvatierra, Sweet Son and Coastal Catch: a set of packs must share one story while each one highlights how its food is different.</li>
+<li>Tarry Market's takeaway bag had a small budget. The studio refused to simply print a logo on the front and back. Instead it made a bag worth showing off, like the bags from Via Monte Napoleone in Milan, and covered it in the language of old-style printing.</li>
+<li>Customers were happy to take the bags home, keep them and use them again. The book uses this result to connect the shop's industrial past, its American roots and its care for the details of ingredients.</li>
+<li>The farm illustrations are limited to no more than three colours each and gain richness through overprinting. A Greek case uses the hand as an image of the spiritual and the sacred, in collaboration with a Byzantine icon painter; it was designed by mousegraphics.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>First choose the main reason from the three: protection, convenience or promotion. The story can only strengthen that one; it cannot replace shelf life or the way the pack opens.</li>
+<li>For a range assignment, use one shared set of rules (logo position, colour limit) plus one food feature per item. The feature must belong to the food itself, not to a decorative theme.</li>
+<li>For a low-budget design, write down "where the savings are" and "why it is still worth carrying around", following the example of the Tarry Market bag.</li>
+<li>If the illustrations are limited to three colours, first decide the fourth effect that overprinting can create, then decide which food feature can be recognised with just those three colours.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-food-packaging-design-1.jpg" alt="Illustration of a farming scene"><figcaption>The illustrations show traditional farm work, each in no more than three colours, with overprinted colours making simple pictures richer. Source: <span lang="zh-Hant">《食品包裝設計》</span>, p.176</figcaption></figure>
+<figure><img src="assets/packaging/books/b-food-packaging-design-2.jpg" alt="Packaging using the hand as an image"><figcaption>The designers use the hand as an image of the spiritual and the sacred, and worked with a Byzantine icon painter to strengthen the symbolism; the agency is mousegraphics of Greece. Source: <span lang="zh-Hant">《食品包裝設計》</span>, p.143</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Which approach did the Tarry Market bag reject when the budget was limited? What three reasons does the book give for food packaging?</li>
+<li>Write shared range rules for a set of three food products, and highlight only one food feature on each. Use no more than three colours.</li>
+</ol>
+<h3 class="book" id="b-packaging-design-packaging-solutions-to-inspire-you"><span lang="zh-Hant">包裝設計+：給你靈感的包裝方案</span></h3>
+<p><strong>Scope.</strong> This is a collection of packaging solutions from around the world. Each project lists its purpose, design company, creative director, designer, client and country. The book stresses that packaging builds a connection between product and consumer, and that it brings out culture, corporate values and the designer's personal style. Use it to find comparisons for assignments on naming, labelling and cross-category extension, but do not copy whole pages.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Build Your Own was a Christmas gift and business introduction with a print run of 5,000: blank, high-quality wine bottles carry labels with close-ups of staff faces, so that clients think of the studio when they give the bottles as gifts. It was designed by Tony Ibbotson and Andi Yanto of The Creative Method in Australia.</li>
+<li>Marlborough Sun built a wine's naming, branding and labels from scratch. A newspaper style lets the label be redone every year and gives each grape variety its own personality, while humour helps it stand out on the shelf.</li>
+<li>Niagara mineral water, by Alexey Kurchin of Hattomonkey, shows that even a featureless product category like water still relies on naming and labelling to build identity.</li>
+<li>The Flight 001 world clock uses thin, light wood and shows three time zones at once; the packaging and the product together solve the traveller's nuisance of resetting the time. It was designed by Adam Muledi of the USA.</li>
+<li>BMW's PURE skincare is the car brand's extension into skincare. The packaging has to connect with the existing company, not just look like an ordinary skincare bottle.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>Take notes on each reference project using the book's fields: purpose, company, client, country, print run or material limits. Do not borrow cases that lack a stated purpose.</li>
+<li>When making a label, first decide whether it is a fixed identity or, like a newspaper, can change with the year or variety. The two need different grids.</li>
+<li>For a cross-category extension (cars to skincare, a travel shop to clocks), write one rule inherited from the original brand, such as material, geometry or use scenario.</li>
+<li>For an assignment that is both a gift and a self-introduction, spell out how "people" are put into the label: as faces, as working hours, or as a line that only that client would understand.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-packaging-design-packaging-solutions-to-inspire-you-1.jpg" alt="Drink bottle and label"><figcaption>Arthur Schreiber of Studio IN supervised bottle production and label printing for BioBiss in Russia. Source: <span lang="zh-Hant">《包裝設計+：給你靈感的包裝方案》</span>, p.40</figcaption></figure>
+<figure><img src="assets/packaging/books/b-packaging-design-packaging-solutions-to-inspire-you-2.jpg" alt="Cider-themed packaging"><figcaption>ilovedust created packaging linked to the brand theme for Sea Cider in the UK. Source: <span lang="zh-Hant">《包裝設計+：給你靈感的包裝方案》</span>, p.123</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Whose faces are on the Build Your Own labels, and how large was the print run? Why does Marlborough Sun use a newspaper-style label that can change every year?</li>
+<li>Plan a cross-category extension for a brand that already has a main business. Write down one visual rule it inherits and one nuisance in use that the new packaging must solve.</li>
+</ol>
+<h3 class="book" id="b-packaging-designers-kan-tai-keung-and-his-designer-friends"><span lang="zh-Hant">包裝設計家：靳埭強與他的設計師朋友</span></h3>
+<p><strong>Scope.</strong> This book centres on the work of Kan Tai-keung and his designer friends and on conversations with them; one of its main focuses is the Japanese designer Shin Matsunaga. The packaging cases concentrate on wine labels, coffee, dairy products, toys, petrol and household detergents. When reading, take separate notes on "how the label shape breaks the mould" and "how the container shape explains its use".</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>The T'Gallant wine range seeks novelty through irregular label shapes. Osborn's is elegant in style, with birds drawn here and there with a flat-nib pen, lifting the wine to a refined level. Tarrawarra and Hidden Creek likewise stand out through their label shapes.</li>
+<li>For the knitwear detergent, the key is not the label illustration but the shape of the container: it must be easy to use and make it clear at a glance what the product does.</li>
+<li>Shin Matsunaga created the visual identity for the 1989 Pan-Pacific International Design Conference in Tokyo, using clean geometry without falling into cliché. Kan Tai-keung met him at that conference.</li>
+<li>Matsunaga graduated from Tokyo University of the Arts in 1964 and from 1971 worked as a designer in Shiseido's advertising department. He later set up his own office and continued to design packaging for Shiseido. He stresses that designers must persevere and absorb local culture, and he once worked with a photographer to record everyday life and landscapes in Japan.</li>
+<li>He describes how the special features in <em>CREATION</em>, <em>HQ</em> and <em>GRAPHIS</em> were each edited in a different way. He also explains that part of his name, read as "eternal truth", stands for pursuing true design in a peaceful world. Posters, packaging and corporate identity are his three most outstanding areas of work.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For wine labels or poster-style labels, draw the silhouette of the shape first. If the silhouette looks no different from a rectangular label, the "breakthrough" does not hold.</li>
+<li>Test everyday containers by their side silhouette first: without seeing any text, can classmates tell whether it holds detergent, food or fuel?</li>
+<li>When reading designer conversations, pick out only three lines that would change your assignment, such as perseverance, local culture and truth, and pair each with a form decision of your own.</li>
+<li>If a geometric graphic is meant to be clean, limit the number of elements first, then check whether it still identifies that event or that brand.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-packaging-designers-kan-tai-keung-and-his-designer-friends-1.jpg" alt="Illustration from the book"><figcaption>Illustration from the book. Source: <span lang="zh-Hant">《包裝設計家：靳埭強與他的設計師朋友》</span>, p.92</figcaption></figure>
+<figure><img src="assets/packaging/books/b-packaging-designers-kan-tai-keung-and-his-designer-friends-2.jpg" alt="Design conference poster"><figcaption>Shin Matsunaga explains that his name, read as "eternal truth", stands for pursuing true design in peace; the same page shows his 1989 poster for the Pan-Pacific Design Conference in Tokyo. Source: <span lang="zh-Hant">《包裝設計家：靳埭強與他的設計師朋友》</span>, p.42</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>What makes the T'Gallant and Osborn's wine labels look different? What does Shin Matsunaga think the younger generation easily overlooks behind his success?</li>
+<li>Draw the side silhouette of a container for a household detergent so that someone can tell its use without reading any text. Then write down one feature you took from local everyday goods rather than from label decoration.</li>
+</ol>
+<h3 class="book" id="b-simply-packaging"><span lang="zh-Hant">簡約包裝 Simply Packaging</span></h3>
+<p><strong>Original title:</strong> <em>Simply Packaging</em></p>
+<p><strong>Scope.</strong> This is a collection of cases written as short project notes; each entry gives the client, design direction, year and a paragraph of description. The content ranges from paper samples and gift and catalogue packaging to a Nike invitation, an Air Max shoebox and the usability details of a sandwich box. Use it to learn how "less material" can become a form you can feel with your hands.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>Industrial production and sustainability are summed up in the same sentence: the less material, the better. FormaFantasma even calls sustainability the last form of luxury.</li>
+<li>Heiwa Paper needed one sample to represent a whole range of heavy papers. CoDesign believed that what moves people is the experience of use, not graphics, so it made the paper sample into a dumbbell that lets people feel the weight of the paper in their hands.</li>
+<li>The Pedder Group packaging gathers a free gift, a CD catalogue and a press release into one piece. It has to be easy to use and worth keeping.</li>
+<li>"Museum For Sale" is the catalogue of a travelling museum. It presents the Carmen Canton Ego art centre as a box, and the box itself is one of the exhibits.</li>
+<li>The sandwich packaging leaves finger slots so that customers can slip their fingers in and lift the food out. ECOPOLO makes every piece slightly different, putting mass production and uniqueness side by side.</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>For a minimal assignment, list the materials first, then cut until nothing more can go. Each time you cut something, note whether the feel and the protection are still there.</li>
+<li>Do not make a paper or material sample as a shrunken booklet. Turn it into a shape that can be gripped and whose weight or thickness can be felt, such as an everyday object like a dumbbell.</li>
+<li>If a pack also serves as a gift and a catalogue, list the opening order: what is touched first, what is read next, and what is kept at the end.</li>
+<li>Check functional details (finger slots, handles, openings) with photos or step diagrams of one-handed use; do not rely on decoration to fix them.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-simply-packaging-1.jpg" alt="Finger slots in a sandwich box"><figcaption>The pack leaves finger slots so that customers can slip their fingers in and lift the sandwich out. Source: <span lang="zh-Hant">《簡約包裝 Simply Packaging》</span>, p.102</figcaption></figure>
+<figure><img src="assets/packaging/books/b-simply-packaging-2.jpg" alt="ECOPOLO pieces, each slightly different"><figcaption>Within mass production, ECOPOLO makes every piece slightly different, so each one is unique. Source: <span lang="zh-Hant">《簡約包裝 Simply Packaging》</span>, p.72</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>Why was the Heiwa paper sample made into a dumbbell rather than a swatch book? Do ECOPOLO's "every piece is different" and "the less material, the better" point to the same kind of simplicity?</li>
+<li>Add a structure that serves only a hand action (a finger slot, a handle or a shape whose weight you can feel) to a heavy paper sample or a takeaway food pack, and delete one graphic you had planned to print.</li>
+</ol>
+<h3 class="book" id="b-chinese-elements-in-visual-communication-packaging-design"><span lang="zh-Hant">中式元素視覺傳達：包裝設計</span></h3>
+<p><strong>Scope.</strong> This book uses cases to show how Chinese visual elements can become part of packaging, rather than just being pasted on as patterns. Projects include a Wuqiang New Year print gift box, Slow Matter's revival of New Year prints, mid-autumn mooncakes based on movable type, Gejiu tin carving, the shadow-puppet pack "A Good Show" and "Lasting Together at Festival Time". For cultural packaging, use it to check whether the craft has entered the structure and the opening process.</p>
+<p><strong>Main ideas</strong></p>
+<ul>
+<li>"Everything as You Wish" by Slow Matter takes Bi Gan, the civil god of wealth, as its theme; it took six months and more than thirty versions of the image to finalise. Ma Xiqin, an inheritor of the Wuqiang New Year print tradition, carved the blocks and printed them, and the prints were then mounted onto the New Year gift box.</li>
+<li>A one-piece framed tea box turns the New Year print into both packaging and a framed picture: the core panel of the lid is removable and held by magnets, so the picture can be changed after a year. The patent number is given in the case, stressing that the structure is an invention and not just decoration.</li>
+<li>The 2018 mid-autumn poetry mooncakes by Xinyu Creative use movable type as their concept. The team chose the final texts from about fifty poems, adjusted the Song-style characters into mould characters 3.5 cm in size and 2.5 cm high, and chose Japanese Momoyama pastry to control the baking.</li>
+<li>Beyond protection and transport, the mooncake box has to achieve three kinds of interaction: guiding, engaging and creating an experience. The base borrows the type tray from movable-type printing, and three layers of "walls" control the volume, reducing material and shipping costs.</li>
+<li>Other cases write the craft straight into the title: the shadow-puppet pack is divided into four acts (wind, flowers, snow and moon), the tin carving corresponds to the rainforest, and "Flower Moon Night" was made for Ximing Tea. Another mooncake wrapper unfolds and pieces together into the <span lang="zh-Hant">《蘭亭集序》</span>, with a bookmark that plays on the story of "eating ink".</li>
+</ul>
+<p><strong>Methods</strong></p>
+<ul>
+<li>After choosing a craft, write out its processes (block carving, typesetting, carving, shadow play). The opening sequence must then take people through at least two of those steps.</li>
+<li>If a cultural symbol should not simply be thrown away (the replaceable New Year print panel is one answer), explain how the packaging will still be used after a year or a season.</li>
+<li>Control the volume: when drawing a three-layer structure, mark the width and height of each layer, and write which layer is for display and which is for saving shipping space.</li>
+<li>If poems or type are to be moulded, first set the smallest readable size and a stroke weight that will not blur when baked or embossed.</li>
+</ul>
+<div class="figs">
+<figure><img src="assets/packaging/books/b-chinese-elements-in-visual-communication-packaging-design-1.jpg" alt="Flower Moon Night tea packaging"><figcaption>"Flower Moon Night" was designed by 7654321 Studio for Ximing Tea in Fuzhou, with separate credits for illustration and photography. Source: <span lang="zh-Hant">《中式元素視覺傳達：包裝設計》</span>, p.119</figcaption></figure>
+<figure><img src="assets/packaging/books/b-chinese-elements-in-visual-communication-packaging-design-2.jpg" alt="Mooncake packaging that forms a calligraphy model"><figcaption>Once unfolded, the wrapping papers piece together into the <span lang="zh-Hant">《蘭亭集序》</span>, and the bookmark plays on "eating ink"; the "Lasting Together at Festival Time" mooncake packaging in the same set was designed by Xinyu Creative in Beijing. Source: <span lang="zh-Hant">《中式元素視覺傳達：包裝設計》</span>, p.199</figcaption></figure>
+</div>
+
+<p><strong>Study cues</strong></p>
+<ol>
+<li>How does the "Everything as You Wish" gift box keep the New Year print as a picture after the festival? What three functions must the opening process of the movable-type mooncake packaging fulfil?</li>
+<li>Choose New Year prints, movable type or shadow puppetry, and draw the opening sequence for a festive food pack. Mark the step at which the audience sees the craft, and which layer of the structure is there to reduce shipping volume.</li>
+</ol>
+<!-- BOOKS:END -->
+      </div>
+
+      <nav class="pager" aria-label="Categories"><a href="05_logo-branding.html" data-label="05 Logo &amp; Branding"><span>Previous guide</span><strong>05 Logo &amp; Branding</strong><i aria-hidden="true">&rarr;</i></a><a class="next" href="07_book-print.html" data-label="07 Book Design &amp; Print"><span>Next guide</span><strong>07 Book Design &amp; Print</strong><i aria-hidden="true">&rarr;</i></a></nav>
+    </main>
+    <aside class="rail" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#1-scope">1. Scope</a><a href="#2-core-concepts">2. Core Concepts</a><a href="#3-principles-methods">3. Principles &amp; Methods</a><a href="#4-selected-figures">4. Selected Figures</a><a href="#5-source-bookshelf">5. Source Bookshelf</a><a href="#6-study-cues">6. Study Cues</a><a href="#7-each-book">7. Each Book</a>
+    </aside>
+  </div>
+  <script src="js/guide.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scene.js"></script>
+  <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, theme: "dark", themeVariables: { background: "#101b34", primaryColor: "#1b2b4d", primaryTextColor: "#e6eef8", primaryBorderColor: "#4e6586", lineColor: "#8ea0b8", fontFamily: "Source Sans 3, sans-serif" } });
+  </script>
+</body>
+</html>
