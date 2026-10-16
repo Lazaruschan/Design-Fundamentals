@@ -118,12 +118,22 @@ git config --get user.email >nul 2>&1
 if errorlevel 1 git config user.email "Lazaruschan@users.noreply.github.com"
 exit /b 0
 
+:git_auth
+REM Empty credential.helper stops Git Credential Manager from sending a saved
+REM password that GitHub accepts instead of the token pasted for this run.
+set "GIT_TERMINAL_PROMPT=0"
+set "GCM_INTERACTIVE=Never"
+git -c credential.helper= -c http.extraHeader="AUTHORIZATION: bearer %GITHUB_TOKEN%" %*
+set "GIT_RC=!ERRORLEVEL!"
+exit /b !GIT_RC!
+
 :sync_and_push
-set "AUTH=AUTHORIZATION: bearer %GITHUB_TOKEN%"
 echo ==^> Checking %REMOTE%
-git -c http.extraHeader="%AUTH%" ls-remote "%REPO_URL%" "refs/heads/%BRANCH%" > "%TEMP%\df-guide-remote.txt"
+call :git_auth ls-remote "%REPO_URL%" "refs/heads/%BRANCH%" > "%TEMP%\df-guide-remote.txt"
 if errorlevel 1 (
-  echo Error: could not reach GitHub. Check the token and that the repo exists.
+  echo Error: GitHub rejected the token, or the repo cannot be reached.
+  echo The token needs repo access for Lazaruschan/Design-Fundamentals.
+  echo A classic token needs the repo scope. A fine-grained token needs Contents: Read and write.
   del /q /f "%TEMP%\df-guide-remote.txt" >nul 2>&1
   exit /b 1
 )
@@ -137,7 +147,7 @@ if not defined HAS_REMOTE (
 )
 
 echo ==^> Syncing with %REMOTE%/%BRANCH%
-git -c http.extraHeader="%AUTH%" fetch "%REMOTE%" "%BRANCH%"
+call :git_auth fetch "%REMOTE%" "%BRANCH%"
 if errorlevel 1 exit /b 1
 
 set "BEHIND=0"
@@ -150,7 +160,7 @@ if not "!BEHIND!"=="0" (
 
 :do_push
 echo ==^> Pushing to %REMOTE%/%BRANCH%
-git -c http.extraHeader="%AUTH%" push -u "%REMOTE%" "%BRANCH%"
+call :git_auth push -u "%REMOTE%" "%BRANCH%"
 if errorlevel 1 exit /b 1
 exit /b 0
 
