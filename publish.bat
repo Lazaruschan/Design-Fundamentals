@@ -10,7 +10,6 @@ REM The token is used only for this run. It is not written into this file or the
 REM After push: Settings - Pages - Deploy from branch - main / (root)
 
 cd /d "%~dp0"
-set "DF_BAT_DIR=%~dp0"
 if /i "%~1"=="--no-pause" set "NO_PAUSE=1"
 
 set "REPO_URL=https://github.com/Lazaruschan/Design-Fundamentals.git"
@@ -56,6 +55,7 @@ echo ==^> Staging website files
 git add -- .gitignore .nojekyll README.md publish.bat index.html css js design
 for %%f in (*.html) do git add -- "%%f"
 if exist "_build_site.py" git add -- "_build_site.py"
+if exist "assets" git add -- assets
 if errorlevel 1 goto :fail
 
 git rm --cached --ignore-unmatch -- github-token.txt .env .env.local >nul 2>&1
@@ -120,30 +120,15 @@ if errorlevel 1 git config user.email "Lazaruschan@users.noreply.github.com"
 exit /b 0
 
 :git_auth
-REM Empty credential.helper stops Git Credential Manager from sending a saved
-REM password that GitHub accepts instead of the token pasted for this run.
+REM GitHub's git server accepts this token as Basic auth. A Bearer header is rejected.
+REM Empty credential.helper stops a saved Windows login from replacing that header.
 set "GIT_TERMINAL_PROMPT=0"
 set "GCM_INTERACTIVE=Never"
-set "GIT_TRACE_CURL=1"
-set "GIT_TRACE_CURL_NO_DATA=1"
-set "DF_LOG=c:\Users\louis\OneDrive\0. 21_Education\SSHD2382 Design Fundamentals\debug-e9d749.log"
-set "DF_OP=%1"
-set "DF_PHASE=before"
-set "DF_RUN=post-fix"
-REM #region agent log
-powershell -NoProfile -File "%DF_BAT_DIR%debug-auth-log.ps1"
-REM #endregion
 powershell -NoProfile -Command "[IO.File]::WriteAllText((Join-Path $env:TEMP 'df-basic.txt'), [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes('x-access-token:' + $env:GITHUB_TOKEN)))"
 set /p "DF_BASIC="<"%TEMP%\df-basic.txt"
 del /q /f "%TEMP%\df-basic.txt" >nul 2>&1
-git -c credential.helper= -c "http.extraHeader=AUTHORIZATION: Basic !DF_BASIC!" %* >"%TEMP%\df-git-out.txt" 2>"%TEMP%\df-git-err.txt"
+git -c credential.helper= -c "http.extraHeader=AUTHORIZATION: Basic !DF_BASIC!" %*
 set "GIT_RC=!ERRORLEVEL!"
-set "DF_PHASE=after"
-REM #region agent log
-powershell -NoProfile -File "%DF_BAT_DIR%debug-auth-log.ps1"
-REM #endregion
-type "%TEMP%\df-git-out.txt"
-findstr /i /c:"fatal:" /c:"remote:" /c:"invalid" /c:"Username" /c:"Authentication" "%TEMP%\df-git-err.txt" >&2
 exit /b !GIT_RC!
 
 :sync_and_push
