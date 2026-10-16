@@ -129,10 +129,14 @@ set "GIT_TRACE_CURL_NO_DATA=1"
 set "DF_LOG=c:\Users\louis\OneDrive\0. 21_Education\SSHD2382 Design Fundamentals\debug-e9d749.log"
 set "DF_OP=%1"
 set "DF_PHASE=before"
+set "DF_RUN=post-fix"
 REM #region agent log
 powershell -NoProfile -File "%DF_BAT_DIR%debug-auth-log.ps1"
 REM #endregion
-git -c credential.helper= -c "http.extraHeader=AUTHORIZATION: bearer %GITHUB_TOKEN%" %* >"%TEMP%\df-git-out.txt" 2>"%TEMP%\df-git-err.txt"
+powershell -NoProfile -Command "[IO.File]::WriteAllText((Join-Path $env:TEMP 'df-basic.txt'), [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes('x-access-token:' + $env:GITHUB_TOKEN)))"
+set /p "DF_BASIC="<"%TEMP%\df-basic.txt"
+del /q /f "%TEMP%\df-basic.txt" >nul 2>&1
+git -c credential.helper= -c "http.extraHeader=AUTHORIZATION: Basic !DF_BASIC!" %* >"%TEMP%\df-git-out.txt" 2>"%TEMP%\df-git-err.txt"
 set "GIT_RC=!ERRORLEVEL!"
 set "DF_PHASE=after"
 REM #region agent log
