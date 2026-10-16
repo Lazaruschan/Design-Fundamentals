@@ -123,7 +123,7 @@ REM Empty credential.helper stops Git Credential Manager from sending a saved
 REM password that GitHub accepts instead of the token pasted for this run.
 set "GIT_TERMINAL_PROMPT=0"
 set "GCM_INTERACTIVE=Never"
-git -c credential.helper= -c http.extraHeader="AUTHORIZATION: bearer %GITHUB_TOKEN%" %*
+git -c credential.helper= -c "http.extraHeader=AUTHORIZATION: bearer %GITHUB_TOKEN%" %*
 set "GIT_RC=!ERRORLEVEL!"
 exit /b !GIT_RC!
 
