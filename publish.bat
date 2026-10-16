@@ -123,8 +123,20 @@ REM Empty credential.helper stops Git Credential Manager from sending a saved
 REM password that GitHub accepts instead of the token pasted for this run.
 set "GIT_TERMINAL_PROMPT=0"
 set "GCM_INTERACTIVE=Never"
-git -c credential.helper= -c "http.extraHeader=AUTHORIZATION: bearer %GITHUB_TOKEN%" %*
+set "GIT_TRACE_CURL=1"
+set "GIT_TRACE_CURL_NO_DATA=1"
+set "DF_LOG=c:\Users\louis\OneDrive\0. 21_Education\SSHD2382 Design Fundamentals\debug-e9d749.log"
+set "DF_OP=%1"
+REM #region agent log
+powershell -NoProfile -Command "$t=$env:GITHUB_TOKEN; $p='empty'; if($t){ if($t.StartsWith('github_pat_')){$p='fine'} elseif($t.StartsWith('ghp_')){$p='classic'} elseif($t.StartsWith('gho_')){$p='oauth'} else {$p='other'} }; $helpers=((git -c credential.helper= config --show-origin --get-regexp credential 2>&1 | Out-String) -replace '\s+',' ').Trim(); $obj=[ordered]@{sessionId='e9d749';runId='pre-fix';hypothesisId='A-D';location='publish.bat:git_auth';message='before git auth';data=@{op=$env:DF_OP;tokenDefined=[bool]$t;tokenLength=$(if($t){$t.Length}else{0});tokenPrefix=$p;hasWhitespace=$(if($t){[bool]($t -match '\s')}else{$false});hasBang=$(if($t){$t.Contains('!')}else{$false});clearedHelperOutput=$helpers};timestamp=[DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds()} | ConvertTo-Json -Compress | Add-Content -LiteralPath $env:DF_LOG"
+REM #endregion
+git -c credential.helper= -c "http.extraHeader=AUTHORIZATION: bearer %GITHUB_TOKEN%" %* >"%TEMP%\df-git-out.txt" 2>"%TEMP%\df-git-err.txt"
 set "GIT_RC=!ERRORLEVEL!"
+REM #region agent log
+powershell -NoProfile -Command "$err=Get-Content -LiteralPath (Join-Path $env:TEMP 'df-git-err.txt') -Raw -ErrorAction SilentlyContinue; if(-not $err){$err=''}; $status=''; $m=[regex]::Match($err,'HTTP/1\.[01] (\d+)'); if($m.Success){$status=$m.Groups[1].Value}; $obj=[ordered]@{sessionId='e9d749';runId='pre-fix';hypothesisId='A-E';location='publish.bat:git_auth';message='after git auth';data=@{gitRc=[int]$env:GIT_RC;httpStatus=$status;authHeaders=([regex]::Matches($err,'Send header: AUTHORIZATION:')).Count;basicHeaders=([regex]::Matches($err,'Authorization: Basic')).Count;invalidCredentials=[bool]($err -match 'invalid credentials');usernamePrompt=[bool]($err -match 'could not read Username');repoDenied=[bool]($err -match 'Repository not found|Write access|403')};timestamp=[DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds()} | ConvertTo-Json -Compress | Add-Content -LiteralPath $env:DF_LOG"
+REM #endregion
+type "%TEMP%\df-git-out.txt"
+findstr /i /c:"fatal:" /c:"remote:" /c:"invalid" /c:"Username" /c:"Authentication" "%TEMP%\df-git-err.txt" >&2
 exit /b !GIT_RC!
 
 :sync_and_push
